@@ -47,3 +47,23 @@ class FlipperIrTest {
         assertEquals(listOf("Cool_hi"), r.extraButtons().map { it.name })
     }
 }
+
+class ModelMatcherTest {
+    private val t = { s: String -> app.irremote.data.ModelMatcher.tokens(s) }
+    private val score = { b: String, m: String, s: String -> app.irremote.data.ModelMatcher.score(b, m, t(s)) }
+
+    @Test fun readsStickerTokens() {
+        assertEquals(listOf("SAMSUNG", "AA5900443A", "UE40D5000"), t("Samsung\nAA59-00443A  UE40D5000 ..").take(3))
+    }
+
+    @Test fun modelCodeOutranksBrand() {
+        val exact = score("Samsung", "Samsung AA59-00443A", "AA59-00443A SAMSUNG")
+        val brandOnly = score("Samsung", "Samsung UE40D5000", "AA59-00443A SAMSUNG")
+        assertTrue(exact > brandOnly)
+        assertEquals(0, score("LG", "LG 42LB", "AA59-00443A SAMSUNG"))
+    }
+
+    @Test fun longerStickerCodeContainsDatabaseModel() {
+        assertTrue(score("Samsung", "Samsung UE40D5000", "UE40D5000AWXXC") > 0)
+    }
+}

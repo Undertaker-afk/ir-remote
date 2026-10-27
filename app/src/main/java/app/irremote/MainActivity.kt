@@ -14,6 +14,19 @@ import app.irremote.ui.*
 class MainActivity : ComponentActivity() {
     private val vm: AppViewModel by viewModels()
 
+    override fun onKeyDown(keyCode: Int, event: android.view.KeyEvent): Boolean {
+        if ((keyCode == android.view.KeyEvent.KEYCODE_VOLUME_UP || keyCode == android.view.KeyEvent.KEYCODE_VOLUME_DOWN) &&
+            vm.handleVolumeKey(keyCode == android.view.KeyEvent.KEYCODE_VOLUME_UP)
+        ) return true
+        return super.onKeyDown(keyCode, event)
+    }
+
+    override fun onKeyUp(keyCode: Int, event: android.view.KeyEvent): Boolean {
+        val volume = keyCode == android.view.KeyEvent.KEYCODE_VOLUME_UP || keyCode == android.view.KeyEvent.KEYCODE_VOLUME_DOWN
+        if (volume && vm.volumeKeys && vm.current is Screen.Remote) return true
+        return super.onKeyUp(keyCode, event)
+    }
+
     override fun onNewIntent(intent: android.content.Intent) {
         super.onNewIntent(intent)
         intent.getStringExtra("remote_id")?.let { vm.openRemote(it) }
@@ -29,6 +42,7 @@ class MainActivity : ComponentActivity() {
                     Screen.Home -> HomeScreen(vm)
                     Screen.Categories -> CategoriesScreen(vm)
                     Screen.Search -> SearchScreen(vm)
+                    Screen.Scan -> ScanScreen(vm)
                     is Screen.Brands -> BrandsScreen(vm, s.category)
                     is Screen.Wizard -> WizardScreen(vm, s.category, s.brand)
                     is Screen.Remote -> RemoteScreen(vm, s.id)

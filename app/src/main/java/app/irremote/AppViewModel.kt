@@ -21,6 +21,7 @@ sealed interface Screen {
     data object Home : Screen
     data object Categories : Screen
     data object Search : Screen
+    data object Scan : Screen
     data class Brands(val category: Category) : Screen
     data class Wizard(val category: Category, val brand: String) : Screen
     data class Remote(val id: String) : Screen
@@ -60,9 +61,42 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     private fun publishShortcuts() = Shortcuts.publish(getApplication(), saved.toList())
 
-    /** Every bundled remote, for model search. */
-    suspend fun everything(): List<Pair<Category, IrRemote>> =
-        Category.entries.filter { it != Category.CUSTOM }.flatMap { c -> db.brands(c).flatMap { b -> b.remotes.map { c to it } } }
+    private var everythingCache: List<Pair<Category, IrRemote>>? = null
+
+    /** Every bundled remote, for model search and the sticker scanner. */
+    suspend fun everything(): List<Pair<Category, IrRemote>> = everythingCache ?: Category.entries.filter { it != Category.CUSTOM }
+        .flatMap { c -> db.brands(c).flatMap { b -> b.remotes.map { c to it } } }.also { everythingCache = it }
+
+    // ---- phone volume keys drive the open remote
+    private val prefs = app.getSharedPreferences("settings", android.content.Context.MODE_PRIVATE)
+    var volumeKeys by mutableStateOf(prefs.getBoolean("volume_keys", false))
+        private set
+
+    fun toggleVolumeKeys(on: Boolean) {
+        volumeKeys = on
+        prefs.edit().putBoolean("volume_keys", on).apply()
+    }
+
+    /** @return true if the key was used (and must not change the phone volume). */
+    fun handleVolumeKey(up: Boolean): Boolean {
+        if (!volumeKeys) return false
+        val id = (current as? Screen.Remote)?.id ?: return false
+        val r = saved.firstOrNull { it.id == id } ?: return false
+        val proto = AcProtocols.byId(r.acProtocol)
+        if (proto != null) { // A/C: volume keys change the set temperature
+            val old = r.acState ?: return false
+            setAcState(id, old.copy(power = true, temp = (old.temp + if (up) 1 else -1).coerceIn(proto.minTemp, proto.maxTemp)))
+            return true
+        }
+        val button = r.remote.find(if (up) Slot.VOL_UP else Slot.VOL_DOWN) ?: return false
+        press(button)
+        return true
+    }
+
+    fun setCustom(id: String, custom: List<CustomKey>) {
+        val i = saved.indexOfFirst { it.id == id }
+        if (i >= 0) { saved[i] = saved[i].copy(custom = custom); persist() }
+    }
 
     val current: Screen get() = stack.last()
     fun push(s: Screen) { stack.add(s) }

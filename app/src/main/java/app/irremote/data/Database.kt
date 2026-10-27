@@ -5,6 +5,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import app.irremote.ir.ac.AcState
 import java.io.File
+import java.net.URLDecoder
+import java.net.URLEncoder
 
 class Brand(val name: String, val remotes: List<IrRemote>)
 
@@ -60,7 +62,7 @@ class SavedStore(context: Context) {
         var buttons = ArrayList<IrButton>()
         fun flush() {
             val h = head ?: return
-            out.add(SavedRemote(h[0], Category.fromDir(h[1]), h[2], IrRemote(brand, h.getOrElse(3) { "" }, buttons), h.getOrNull(5)?.ifEmpty { null }, AcState.parse(h.getOrNull(6))))
+            out.add(SavedRemote(h[0], Category.fromDir(h[1]), h[2], IrRemote(brand, h.getOrElse(3) { "" }, buttons), h.getOrNull(5)?.ifEmpty { null }, AcState.parse(h.getOrNull(6)), decodeCustom(h.getOrNull(7))))
             buttons = ArrayList()
         }
         file.forEachLine { line ->
@@ -81,12 +83,20 @@ class SavedStore(context: Context) {
         val tmp = File(file.parentFile, "remotes.txt.tmp")
         tmp.bufferedWriter().use { w ->
             for (s in list) {
-                w.write("@@${s.id}\t${s.category.dir}\t${s.name.clean()}\t${s.remote.model.clean()}\t${s.remote.brand.clean()}\t${s.acProtocol ?: ""}\t${s.acState?.serialize() ?: ""}\n")
+                w.write("@@${s.id}\t${s.category.dir}\t${s.name.clean()}\t${s.remote.model.clean()}\t${s.remote.brand.clean()}\t${s.acProtocol ?: ""}\t${s.acState?.serialize() ?: ""}\t${encodeCustom(s.custom)}\n")
                 for (b in s.remote.buttons) w.write("${b.name.clean()}\t${b.encoded}\n")
             }
         }
         tmp.renameTo(file)
     }
+
+    private fun enc(s: String) = URLEncoder.encode(s, "UTF-8")
+    private fun dec(s: String) = URLDecoder.decode(s, "UTF-8")
+    private fun encodeCustom(l: List<CustomKey>) = l.joinToString(";") { "${enc(it.button)}|${enc(it.label)}" }
+    private fun decodeCustom(s: String?): List<CustomKey> =
+        if (s.isNullOrEmpty()) emptyList() else s.split(';').mapNotNull { e ->
+            e.split('|').takeIf { it.size == 2 }?.let { CustomKey(dec(it[0]), dec(it[1])) }
+        }
 
     private fun String.clean() = replace('\t', ' ').replace('\n', ' ')
 }

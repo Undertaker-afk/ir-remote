@@ -6,6 +6,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.CameraAlt
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -36,7 +37,11 @@ fun SearchScreen(vm: AppViewModel) {
 
     Scaffold(
         containerColor = MaterialTheme.colorScheme.background,
-        topBar = { TopBar(stringResource(R.string.search_models), onBack = { vm.pop() }) },
+        topBar = {
+            TopBar(stringResource(R.string.search_models), onBack = { vm.pop() }) {
+                IconButton(onClick = { vm.push(Screen.Scan) }) { Icon(Icons.Filled.CameraAlt, stringResource(R.string.scan_title)) }
+            }
+        },
     ) { pad ->
         Column(Modifier.padding(pad)) {
             OutlinedTextField(

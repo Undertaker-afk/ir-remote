@@ -3,6 +3,7 @@ package app.irremote.ui
 import android.net.Uri
 import android.provider.OpenableColumns
 import android.widget.Toast
+import androidx.activity.compose.BackHandler
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.ExperimentalFoundationApi
@@ -14,6 +15,7 @@ import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -332,6 +334,8 @@ fun slotIcon(s: Slot) = when (s) {
 
 // ---------------------------------------------------------------- Remote
 
+private enum class RemoteView { STANDARD, ALL, CUSTOM }
+
 private val AllKeysCategories = setOf(Category.AC, Category.FAN, Category.LIGHT, Category.CLEANER)
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
@@ -345,7 +349,20 @@ fun RemoteScreen(vm: AppViewModel, id: String) {
     val haptic = LocalHapticFeedback.current
 
     val mapped = Slot.entries.count { remote.find(it) != null }
-    var showAll by remember(id) { mutableStateOf(saved.category in AllKeysCategories || mapped < 4) }
+    var view by remember(id) {
+        mutableStateOf(
+            when {
+                saved.custom.isNotEmpty() -> RemoteView.CUSTOM
+                saved.category in AllKeysCategories || mapped < 4 -> RemoteView.ALL
+                else -> RemoteView.STANDARD
+            }
+        )
+    }
+    var editing by remember { mutableStateOf(false) }
+    if (editing) {
+        LayoutEditor(saved, onCancel = { editing = false }, onSave = { vm.setCustom(id, it); view = if (it.isEmpty()) RemoteView.STANDARD else RemoteView.CUSTOM; editing = false })
+        return
+    }
     var sheet by remember { mutableStateOf<String?>(null) }
     var menu by remember { mutableStateOf(false) }
     var renaming by remember { mutableStateOf(false) }
@@ -364,7 +381,17 @@ fun RemoteScreen(vm: AppViewModel, id: String) {
                 Box {
                     IconButton(onClick = { menu = true }) { Icon(Icons.Filled.MoreVert, null) }
                     DropdownMenu(menu, { menu = false }) {
-                        DropdownMenuItem(text = { Text(stringResource(R.string.all_keys)) }, onClick = { showAll = !showAll; menu = false })
+                        DropdownMenuItem(text = { Text(stringResource(R.string.standard_layout)) }, onClick = { view = RemoteView.STANDARD; menu = false })
+                        DropdownMenuItem(text = { Text(stringResource(R.string.all_keys)) }, onClick = { view = RemoteView.ALL; menu = false })
+                        if (saved.custom.isNotEmpty()) {
+                            DropdownMenuItem(text = { Text(stringResource(R.string.my_layout)) }, onClick = { view = RemoteView.CUSTOM; menu = false })
+                        }
+                        DropdownMenuItem(text = { Text(stringResource(R.string.edit_layout)) }, onClick = { editing = true; menu = false })
+                        DropdownMenuItem(
+                            text = { Text(stringResource(R.string.volume_keys)) },
+                            trailingIcon = { Checkbox(vm.volumeKeys, null) },
+                            onClick = { vm.toggleVolumeKeys(!vm.volumeKeys) },
+                        )
                         DropdownMenuItem(text = { Text(stringResource(R.string.rename)) }, onClick = { renaming = true; menu = false })
                         DropdownMenuItem(text = { Text(stringResource(R.string.delete)) }, onClick = { menu = false; vm.delete(id) })
                     }
@@ -372,12 +399,15 @@ fun RemoteScreen(vm: AppViewModel, id: String) {
             }
         },
     ) { pad ->
-        if (showAll) {
+        if (view != RemoteView.STANDARD) {
+            val keys = if (view == RemoteView.CUSTOM) {
+                saved.custom.mapNotNull { k -> remote.buttons.firstOrNull { it.name == k.button }?.let { k.label to it } }
+            } else remote.buttons.map { it.name to it }
             LazyVerticalGrid(
                 GridCells.Fixed(3), Modifier.padding(pad).padding(horizontal = 16.dp),
                 horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp),
             ) {
-                items(remote.buttons) { b -> TextKey(b.name) { fire(b) } }
+                items(keys) { (label, b) -> TextKey(label) { fire(b) } }
             }
         } else Column(
             Modifier.padding(pad).fillMaxSize().padding(horizontal = 24.dp, vertical = 8.dp),
@@ -489,5 +519,60 @@ private fun DPad(remote: IrRemote, fire: (IrButton?) -> Unit) {
         RoundKey(size = 88, enabled = ok != null, onPress = { fire(ok) }) {
             Text(stringResource(R.string.ok), fontSize = 20.sp)
         }
+    }
+}
+
+
+// ---------------------------------------------------------------- Custom layout editor
+
+/** Pick buttons, rename them and order them; the result becomes the remote's "my layout" grid. */
+@Composable
+private fun LayoutEditor(saved: SavedRemote, onCancel: () -> Unit, onSave: (List<CustomKey>) -> Unit) {
+    val chosen = remember { mutableStateListOf<CustomKey>().apply { addAll(saved.custom.filter { k -> saved.remote.buttons.any { it.name == k.button } }) } }
+    var renaming by remember { mutableStateOf<Int?>(null) }
+    BackHandler(onBack = onCancel)
+
+    Scaffold(
+        containerColor = MaterialTheme.colorScheme.background,
+        topBar = {
+            TopBar(stringResource(R.string.edit_layout), onBack = onCancel) {
+                TextButton(onClick = { onSave(chosen.toList()) }) { Text(stringResource(R.string.done)) }
+            }
+        },
+    ) { pad ->
+        LazyColumn(Modifier.padding(pad).padding(horizontal = 16.dp)) {
+            item { Text(stringResource(R.string.my_layout), Modifier.padding(vertical = 8.dp), color = MaterialTheme.colorScheme.primary, fontSize = 13.sp) }
+            itemsIndexed(chosen) { i, k ->
+                Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+                    Column(Modifier.weight(1f).clickable { renaming = i }.padding(vertical = 8.dp)) {
+                        Text(k.label, fontSize = 17.sp)
+                        if (k.label != k.button) Text(k.button, fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
+                    IconButton(onClick = { if (i > 0) { val t = chosen[i]; chosen[i] = chosen[i - 1]; chosen[i - 1] = t } }, enabled = i > 0) {
+                        Icon(Icons.Filled.KeyboardArrowUp, stringResource(R.string.move_up))
+                    }
+                    IconButton(onClick = { if (i < chosen.size - 1) { val t = chosen[i]; chosen[i] = chosen[i + 1]; chosen[i + 1] = t } }, enabled = i < chosen.size - 1) {
+                        Icon(Icons.Filled.KeyboardArrowDown, stringResource(R.string.move_down))
+                    }
+                    IconButton(onClick = { chosen.removeAt(i) }) { Icon(Icons.Filled.Close, stringResource(R.string.remove_key)) }
+                }
+            }
+            item { Text(stringResource(R.string.all_keys), Modifier.padding(top = 20.dp, bottom = 8.dp), color = MaterialTheme.colorScheme.primary, fontSize = 13.sp) }
+            items(saved.remote.buttons.filter { b -> chosen.none { it.button == b.name } }) { b ->
+                Row(Modifier.fillMaxWidth().clickable { chosen.add(CustomKey(b.name, b.name.replace('_', ' '))) }.padding(vertical = 12.dp), verticalAlignment = Alignment.CenterVertically) {
+                    Text(b.name.replace('_', ' '), Modifier.weight(1f), fontSize = 16.sp)
+                    Icon(Icons.Filled.Add, stringResource(R.string.add_key))
+                }
+            }
+        }
+    }
+    renaming?.let { i ->
+        var text by remember(i) { mutableStateOf(chosen[i].label) }
+        AlertDialog(
+            onDismissRequest = { renaming = null },
+            confirmButton = { TextButton(onClick = { if (text.isNotBlank()) chosen[i] = chosen[i].copy(label = text.trim()); renaming = null }) { Text(stringResource(R.string.ok)) } },
+            dismissButton = { TextButton(onClick = { renaming = null }) { Text(stringResource(R.string.cancel)) } },
+            text = { OutlinedTextField(text, { text = it }, singleLine = true) },
+        )
     }
 }

@@ -62,4 +62,19 @@
     <string name="keys_count">%1$d keys</string>
     <string name="shortcut_power">%1$s power</string>
     <string name="quick_failed">Quick action failed: %1$s</string>
+    <string name="standard_layout">Standard layout</string>
+    <string name="my_layout">My layout</string>
+    <string name="edit_layout">Edit my layout</string>
+    <string name="done">Done</string>
+    <string name="add_key">Add key</string>
+    <string name="remove_key">Remove key</string>
+    <string name="move_up">Move up</string>
+    <string name="move_down">Move down</string>
+    <string name="volume_keys">Phone volume buttons control this remote</string>
+    <string name="scan_title">Find my code</string>
+    <string name="scan_hint">Photograph the model sticker on the device or its remote. The text is read on this phone and matched against the database.</string>
+    <string name="take_photo">Take photo</string>
+    <string name="pick_photo">Pick photo</string>
+    <string name="scan_recognized">Recognised text (editable)</string>
+    <string name="scan_failed">Could not read the photo.</string>
 </resources>

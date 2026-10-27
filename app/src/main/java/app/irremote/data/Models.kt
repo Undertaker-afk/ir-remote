@@ -72,4 +72,9 @@ data class SavedRemote(
     /** Set for "smart" A/C remotes that generate whole-state frames instead of replaying recorded keys. */
     val acProtocol: String? = null,
     val acState: AcState? = null,
+    /** User-built layout: chosen buttons in order, with optional renamed labels. Empty = none. */
+    val custom: List<CustomKey> = emptyList(),
 )
+
+/** One key on a user's custom layout; [button] is the original button name, [label] what the user sees. */
+data class CustomKey(val button: String, val label: String)

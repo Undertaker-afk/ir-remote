@@ -62,4 +62,19 @@
     <string name="keys_count">%1$d Tasten</string>
     <string name="shortcut_power">%1$s Ein/Aus</string>
     <string name="quick_failed">Schnellaktion fehlgeschlagen: %1$s</string>
+    <string name="standard_layout">Standardlayout</string>
+    <string name="my_layout">Mein Layout</string>
+    <string name="edit_layout">Mein Layout bearbeiten</string>
+    <string name="done">Fertig</string>
+    <string name="add_key">Taste hinzufügen</string>
+    <string name="remove_key">Taste entfernen</string>
+    <string name="move_up">Nach oben</string>
+    <string name="move_down">Nach unten</string>
+    <string name="volume_keys">Lautstärketasten steuern diese Fernbedienung</string>
+    <string name="scan_title">Code finden</string>
+    <string name="scan_hint">Das Typenschild am Gerät oder an der Fernbedienung fotografieren. Der Text wird auf dem Telefon gelesen und mit der Datenbank abgeglichen.</string>
+    <string name="take_photo">Foto aufnehmen</string>
+    <string name="pick_photo">Foto wählen</string>
+    <string name="scan_recognized">Erkannter Text (bearbeitbar)</string>
+    <string name="scan_failed">Das Foto konnte nicht gelesen werden.</string>
 </resources>

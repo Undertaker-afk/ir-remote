@@ -19,7 +19,12 @@ An open-source Android universal IR remote in the style of Mi Remote, driven by 
    state frames like a real A/C remote. The wizard tries the protocols that fit the brand first, then recorded keys.
    Frame layouts follow [IRremoteESP8266](https://github.com/crankyoldgit/IRremoteESP8266) and the unit tests check them
    against its test vectors. Not yet: Daikin, Mitsubishi, Samsung, Fujitsu, Panasonic A/C.
-8. **Shortcuts and automation**
+8. **Find my code**: photograph a model sticker (or pick a photo); text is read on-device with ML Kit and matched against
+   the database, model codes outranking brand names. The recognised text is editable.
+9. **Custom layout**: per remote, choose any buttons, rename and order them ("Edit my layout" in the remote menu).
+10. **Volume keys**: optionally let the phone's volume buttons send the remote's volume up/down (or temperature up/down on
+    smart A/C remotes) while that remote is open.
+11. **Shortcuts and automation**
    - Long-press the app icon for "open" and "power" shortcuts of your most recent remotes (Google Assistant can launch
      shortcuts by name).
    - Headless intent, usable from Tasker, MacroDroid, routines or `adb`:
