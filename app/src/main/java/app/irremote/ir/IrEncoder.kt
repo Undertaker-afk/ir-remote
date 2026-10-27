@@ -1,5 +1,7 @@
 package app.irremote.ir
 
+import app.irremote.ir.ac.Pulses
+
 /**
  * Turns database signals into mark/space timings. Protocol framing follows the Flipper Zero
  * firmware encoders so that the Flipper-IRDB "parsed" entries replay correctly.
@@ -11,7 +13,8 @@ object IrEncoder {
         "NEC", "NECext", "NEC42", "NEC42ext", "Samsung32", "RC5", "RC5X", "RC6",
         "SIRC", "SIRC15", "SIRC20", "Kaseikyo", "RCA", "Pioneer",
         // irdb-only framings
-        "NECx", "Panasonic", "JVC",
+        "NECx", "Panasonic", "JVC", "Mitsubishi", "Aiwa", "Proton", "Akai", "Fujitsu", "RCA38", "PanasonicOld",
+        "Pioneer40", "DenonK", "MCE", "Denon", "Sharp",
     )
 
     fun encode(signal: IrSignal): Transmission? = when (signal) {
@@ -67,6 +70,66 @@ object IrEncoder {
                 val d = (a and 0xFF).toInt(); val sd = ((a shr 8) and 0xFF).toInt(); val f = (c and 0xFF).toInt()
                 kaseikyoFrame(intArrayOf(0x02, 0x20, d, sd, f, d xor sd xor f))
             }
+            "Mitsubishi" -> Pulses().apply {
+                bits((a and 0xFF) or ((c and 0xFF) shl 8), 16, false, 300, 2100, 900)
+                mark(300); space(24000)
+            }.build(32600)
+            "Aiwa" -> {
+                val d = a and 0xFF; val sd = (a shr 8) and 0x1F; val f = c and 0xFF
+                val word = d or (sd shl 8) or ((d.inv() and 0xFF) shl 13) or ((sd.inv() and 0x1F) shl 21) or (f shl 26) or ((f.inv() and 0xFF) shl 34)
+                Pulses().apply {
+                    mark(8800); space(4400)
+                    bits(word, 42, false, 550, 1650, 550)
+                    mark(550); space(23100)
+                }.build(38000)
+            }
+            "Proton" -> Pulses().apply {
+                mark(8000); space(4000)
+                bits(a and 0xFF, 8, false, 500, 1500, 500)
+                mark(500); space(4000)
+                bits(c and 0xFF, 8, false, 500, 1500, 500)
+                mark(500); space(63000 - total())
+            }.build(38500)
+            "Akai" -> Pulses().apply {
+                bits((a and 0x7) or ((c and 0x7F) shl 3), 10, false, 289, 1821, 751)
+                mark(289); space(25300 - total())
+            }.build(38000)
+            "Fujitsu" -> {
+                val d = a and 0xFF; val sd = (a shr 8) and 0xFF
+                Pulses().apply {
+                    mark(8 * 432); space(4 * 432)
+                    bits(0x14L or (0x63L shl 8) or (d shl 24) or (sd shl 32) or ((c and 0xFF) shl 40), 48, false, 432, 3 * 432, 432)
+                    mark(432); space(110 * 432)
+                }.build(37000)
+            }
+            "RCA38" -> Pulses().apply {
+                mark(8 * 460); space(8 * 460)
+                val d = a and 0xF; val f = c and 0xFF
+                bits((d shl 20) or (f shl 12) or ((d.inv() and 0xF) shl 8) or (f.inv() and 0xFF), 24, true, 460, 4 * 460, 2 * 460)
+                mark(460); space(16 * 460)
+            }.build(38700)
+            "PanasonicOld" -> Pulses().apply {
+                mark(4 * 833); space(4 * 833)
+                val d = a and 0x1F; val f = c and 0x3F
+                bits(d or (f shl 5) or ((d.inv() and 0x1F) shl 11) or ((f.inv() and 0x3F) shl 16), 22, false, 833, 3 * 833, 833)
+                mark(833); space(44000)
+            }.build(57600)
+            "Pioneer40" -> pulseDistance(
+                40000, 16 * 564, 8 * 564, 564, 3 * 564, 564, 564, 564, 108000,
+                bits = (a and 0xFFFF) or ((c and 0xFF) shl 16) or ((c.inv() and 0xFF) shl 24), count = 32,
+            )
+            "DenonK" -> {
+                val d = a and 0xF; val sd = (a shr 4) and 0xF; val f = c and 0xFFF
+                val chk = ((d shl 4) xor sd xor (f shl 4) xor (f shr 4)) and 0xFF
+                Pulses().apply {
+                    mark(8 * 432); space(4 * 432)
+                    bits(0x84L or (0x50L shl 8) or (d shl 20) or (sd shl 24) or (f shl 28) or (chk shl 40), 48, false, 432, 3 * 432, 432)
+                    mark(432); space(173 * 432)
+                }.build(37000)
+            }
+            "Denon" -> denonLike(a, c, 0, 3)
+            "Sharp" -> denonLike(a, c, 1, 2)
+            "MCE" -> mce(a, c)
             "SIRC" -> sirc((c and 0x7F) or ((a and 0x1F) shl 7), 12)
             "SIRC15" -> sirc((c and 0x7F) or ((a and 0xFF) shl 7), 15)
             "SIRC20" -> sirc((c and 0x7F) or ((a and 0x1FFF) shl 7), 20)
@@ -95,7 +158,7 @@ object IrEncoder {
         val p = IntList()
         repeat(repeats) {
             val start = p.size
-            p.add(preMark); p.add(preSpace)
+            if (preMark > 0) { p.add(preMark); p.add(preSpace) }
             for (i in 0 until count) {
                 if ((bits ushr i) and 1L == 1L) { p.add(b1Mark); p.add(b1Space) } else { p.add(b0Mark); p.add(b0Space) }
             }
@@ -142,6 +205,37 @@ object IrEncoder {
         for (i in 0 until 6) bits = bits or ((d[i].toLong() and 0xFF) shl (8 * i))
         val u = 432
         return pulseDistance(37000, 8 * u, 4 * u, u, 3 * u, u, u, u, 130000, bits, 48)
+    }
+
+    /** Denon/Sharp 15-bit frames: the key followed by a copy with inverted function bits. */
+    private fun denonLike(address: Long, command: Long, e1: Int, e2: Int): Transmission {
+        val d = address and 0x1F
+        val f = command and 0xFF
+        val p = Pulses()
+        for ((fn, e) in listOf(f to e1, (f.inv() and 0xFF) to e2)) {
+            val start = p.total()
+            p.bits(d or (fn shl 5) or (e.toLong() shl 13), 15, false, 264, 1848, 792)
+            p.mark(264)
+            p.space(67000 - (p.total() - start))
+        }
+        return p.build(38000)
+    }
+
+    /** Windows Media Center remotes: RC6 mode 6A, 36 kHz. */
+    private fun mce(address: Long, command: Long): Transmission {
+        val d = address and 0x7F
+        val sd = (address shr 8) and 0xFF
+        val m = Manchester(444)
+        fun bit(b: Int, units: Int = 1) { if (b == 1) { m.half(true, units); m.half(false, units) } else { m.half(false, units); m.half(true, units) } }
+        fun field(v: Long, n: Int) { for (i in n - 1 downTo 0) bit(((v shr i) and 1L).toInt()) }
+        bit(1); field(6, 3)
+        bit(0, 2)               // fixed double-length trailer bit
+        field(0x80, 8)          // OEM1
+        field(sd, 8)
+        bit(0)                  // toggle
+        field(d, 7)
+        field(command and 0xFF, 8)
+        return Transmission(36000, m.toPattern(leadMark = 2666, leadSpace = 889))
     }
 
     /** Manchester helper: accumulates half-bit levels and merges equal neighbours into single durations. */

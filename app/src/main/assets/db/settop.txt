@@ -1,7 +1,116 @@
+@ABS	SAT_8776 8,0
+Key_0	P:Aiwa:8:0
+Key_1	P:Aiwa:8:1
+Key_2	P:Aiwa:8:2
+Key_3	P:Aiwa:8:3
+Key_4	P:Aiwa:8:4
+Key_5	P:Aiwa:8:5
+Key_6	P:Aiwa:8:6
+Key_7	P:Aiwa:8:7
+Key_8	P:Aiwa:8:8
+Key_9	P:Aiwa:8:9
+Key_Menu	P:Aiwa:8:a
+Key_Epg	P:Aiwa:8:b
+Key_Power	P:Aiwa:8:c
+Key_Info	P:Aiwa:8:d
+Key_Channelup	P:Aiwa:8:e
+Key_Channeldown	P:Aiwa:8:f
+Key_Volumeup	P:Aiwa:8:10
+Key_Volumedown	P:Aiwa:8:11
+Key_Right	P:Aiwa:8:12
+Key_Tv	P:Aiwa:8:13
+Key_Exit	P:Aiwa:8:14
+Key_Left	P:Aiwa:8:15
+Key_Ok	P:Aiwa:8:16
+Key_Text	P:Aiwa:8:18
+X_Key_Music	P:Aiwa:8:19
+Key_Mute	P:Aiwa:8:1a
+Key_Down	P:Aiwa:8:1c
+Key_Up	P:Aiwa:8:1d
+Key_Audio	P:Aiwa:8:1e
+Key_Again	P:Aiwa:8:1f
+@ADB	SAT_ICAN3000 8,0
+Key_0	P:Aiwa:8:0
+Key_1	P:Aiwa:8:1
+Key_2	P:Aiwa:8:2
+Key_3	P:Aiwa:8:3
+Key_4	P:Aiwa:8:4
+Key_5	P:Aiwa:8:5
+Key_6	P:Aiwa:8:6
+Key_7	P:Aiwa:8:7
+Key_8	P:Aiwa:8:8
+Key_9	P:Aiwa:8:9
+Key_Menu	P:Aiwa:8:a
+X_Key_Options	P:Aiwa:8:b
+Key_Power	P:Aiwa:8:c
+Key_Info	P:Aiwa:8:d
+Key_Channelup	P:Aiwa:8:e
+Key_Channeldown	P:Aiwa:8:f
+Key_Volumeup	P:Aiwa:8:10
+Key_Volumedown	P:Aiwa:8:11
+Key_Right	P:Aiwa:8:12
+Key_Epg	P:Aiwa:8:13
+Key_Exit	P:Aiwa:8:14
+Key_Left	P:Aiwa:8:15
+Key_Ok	P:Aiwa:8:16
+Ppv	P:Aiwa:8:18
+Key_Cyclewindows	P:Aiwa:8:19
+Key_Mute	P:Aiwa:8:1a
+Av	P:Aiwa:8:1b
+Key_Down	P:Aiwa:8:1c
+Key_Up	P:Aiwa:8:1d
+Key_Text	P:Aiwa:8:1e
+Key_Back	P:Aiwa:8:1f
+Key_Red	P:Aiwa:8:20
+Key_Green	P:Aiwa:8:21
+Key_Yellow	P:Aiwa:8:22
+Key_Blue	P:Aiwa:8:23
 @Adelphia	Cable Box 1,-1
 Volume +	P:SIRC:1:12
 Volume -	P:SIRC:1:13
 Mute	P:SIRC:1:14
+@Adelphia	Cable Box 27,-1
+Curser Up	P:PanasonicOld:1b:2
+Curser Left	P:PanasonicOld:1b:3
+Curser Right	P:PanasonicOld:1b:4
+Pause	P:PanasonicOld:1b:5
+Guide	P:PanasonicOld:1b:6
+Power	P:PanasonicOld:1b:7
+Info	P:PanasonicOld:1b:8
+Curser Down	P:PanasonicOld:1b:b
+Curser Select	P:PanasonicOld:1b:c
+Last	P:PanasonicOld:1b:e
+1	P:PanasonicOld:1b:10
+2	P:PanasonicOld:1b:11
+3	P:PanasonicOld:1b:12
+4	P:PanasonicOld:1b:13
+5	P:PanasonicOld:1b:14
+6	P:PanasonicOld:1b:15
+7	P:PanasonicOld:1b:16
+8	P:PanasonicOld:1b:17
+9	P:PanasonicOld:1b:18
+Live Tv	P:PanasonicOld:1b:1a
+Channel +	P:PanasonicOld:1b:1d
+Channel -	P:PanasonicOld:1b:1e
+Fav	P:PanasonicOld:1b:1f
+List	P:PanasonicOld:1b:26
+Replay	P:PanasonicOld:1b:27
+Fwd	P:PanasonicOld:1b:28
+Rwd	P:PanasonicOld:1b:29
+Exit	P:PanasonicOld:1b:2c
+A	P:PanasonicOld:1b:2f
+B	P:PanasonicOld:1b:30
+C	P:PanasonicOld:1b:31
+Play	P:PanasonicOld:1b:33
+Stop	P:PanasonicOld:1b:34
+Record	P:PanasonicOld:1b:35
+Page +	P:PanasonicOld:1b:36
+Page -	P:PanasonicOld:1b:37
+Settings	P:PanasonicOld:1b:39
+Aspect	P:PanasonicOld:1b:3a
+0	P:PanasonicOld:1b:3e
+Menu	P:PanasonicOld:1b:3e
+Vod	P:PanasonicOld:1b:3e
 @Allsat	Unknown_sat 8,-1
 Key_0	P:RC5X:8:0
 Key_1	P:RC5X:8:1
@@ -696,6 +805,41 @@ Info	R:38000:33:9023,4491,515,4491,515,4490,516,2223,511,2229,515,4490,516,4489,
 0	R:38000:33:9023,4490,515,2224,510,2230,514,2225,509,2231,513,2226,508,2232,512,2227,507,2233,511,2228,516,2223,511,2229,515,2224,510,2230,514,2225,509,2231,513,2226,508,42201,9024,2225,509,88300,9024,2224,510
 Settings	R:38000:33:9022,4492,513,4491,514,2225,509,2231,513,4492,513,4491,515,2224,510,2230,514,2225,509,2231,513,2226,508,2232,512,2227,517,2223,511,4494,512,4493,512,2227,507,30873,9024,2224,510,88304,9022,2226,508,88306,9019,2229,515
 Menu	R:38000:33:9022,4492,513,4492,513,2226,508,2231,513,4493,512,4492,514,2225,539,2201,543,2196,538,2202,542,2197,537,2203,511,2228,536,2203,541,4464,542,4464,511,2227,537,30844,9023,2225,509,88299,9016,2232,512,88296,9020,2227,517
+@Comcast	Cable Box 1,-1
+Volume +	P:Sharp:1:14
+Volume -	P:Sharp:1:15
+Mute	P:Sharp:1:17
+@Comcast	Cable Box 14,-1
+Ff	P:RCA38:e:1c
+@Comcast	Cable Box 15,-1
+Volume -	P:RCA38:f:2e
+Volume +	P:RCA38:f:2f
+Mute	P:RCA38:f:3f
+@Comcast	Cable Box 27,-1
+Up	P:PanasonicOld:1b:2
+Left	P:PanasonicOld:1b:3
+Right	P:PanasonicOld:1b:4
+Guide	P:PanasonicOld:1b:6
+Power	P:PanasonicOld:1b:7
+Down	P:PanasonicOld:1b:b
+Enter	P:PanasonicOld:1b:c
+Select	P:PanasonicOld:1b:c
+1	P:PanasonicOld:1b:10
+2	P:PanasonicOld:1b:11
+3	P:PanasonicOld:1b:12
+4	P:PanasonicOld:1b:13
+5	P:PanasonicOld:1b:14
+6	P:PanasonicOld:1b:15
+7	P:PanasonicOld:1b:16
+8	P:PanasonicOld:1b:17
+9	P:PanasonicOld:1b:18
+0	P:PanasonicOld:1b:19
+Channel +	P:PanasonicOld:1b:1d
+Channel -	P:PanasonicOld:1b:1e
+A	P:PanasonicOld:1b:2f
+B	P:PanasonicOld:1b:30
+C	P:PanasonicOld:1b:31
+Menu	P:PanasonicOld:1b:39
 @Comcast	Xfinity XiOneSC-b
 Power	P:Kaseikyo:200280:3d0
 Ch+	P:Kaseikyo:200280:200
@@ -1288,6 +1432,9 @@ Tv	R:38000:33:268,837,268,1523,268,1661,268,2759,268,1249,268,1249,269,1248,269,
 Profile	R:38000:33:295,812,294,1497,295,1634,296,2735,293,1223,295,1224,294,1222,296,1634,294,13019,295,812,294,1635,295,675,294,1638,292,810,295,674,295,674,295,674,294,80010,294,809,296,1497,295,1632,298,2734,294,1220,297,1223,295,1220,297,1632,297,13015,296,809,296,2732,296,1770,296,1633,297,811,294,672,296,673,296,673,296,13013,295,808,297,1497,295,1635,295,2733,295,1222,296,1250,268,1222,295,1633,296,13021,291,810,296,2595,296,1910,296,1634,296,810,296,673,295,672,296,673,296
 Cd	R:38000:33:299,808,298,1494,298,1633,297,2728,300,1219,299,1218,300,1219,299,1630,300,13043,271,806,300,2181,298,670,299,1631,299,1768,299,1355,300,670,298,670,298,80031,271,807,299,1494,298,1631,299,2729,299,1217,301,1221,297,1219,299,1630,300,13016,300,807,299,1082,298,1766,301,1632,298,1769,298,1356,299,670,299,671,298,36129,300,807,299,1495,297,1631,299,2729,299,1219,299,1220,298,1223,295,1632,298,13016,298,808,298,945,299,1906,298,1632,299,1769,297,1357,298,670,299,671,297
 Cu	R:38000:33:299,805,301,1493,300,1631,299,2730,299,1217,301,1221,298,1218,300,1631,299,13018,299,807,299,2041,302,670,299,1631,299,1766,301,1492,300,669,300,669,300,80031,300,807,299,1492,301,1631,299,2729,300,1217,301,1219,300,1220,298,1631,299,13018,299,806,300,944,299,1767,300,1632,299,1768,299,1492,300,669,300,668,301,13012,299,807,299,1493,299,1630,300,2729,300,1219,299,1219,300,1219,298,1630,300,13016,300,806,300,835,271,1906,299,1632,299,1768,298,1494,298,669,300,670,299
+@Echostar	Satelite DVR 2,-1
+Channel +	P:Denon:2:f1
+Channel -	P:Denon:2:f2
 @Echostar	Satellite 4,-1
 Volume +	P:NECext:fb04:fd02
 Volume -	P:NECext:fb04:fc03
@@ -1774,6 +1921,15 @@ Add	P:NECext:fd02:e817
 Fine-	P:NECext:fd02:e718
 Sleep	P:NECext:fd02:e51a
 Recall	P:NECext:fd02:e41b
+@Grundig	Satellite 2,-1
+Mode	P:Proton:2:9
+0	P:Proton:2:d
+Display	P:Proton:2:e
+8	P:Proton:2:11
+9	P:Proton:2:12
+Channel -	P:Proton:2:13
+Channel +	P:Proton:2:17
+Power	P:Proton:2:1f
 @Hauppauge	Hauppauge R-005
 HOME	P:RC5:1c:3b
 POWER	P:RC5:1c:3d
@@ -3222,6 +3378,8 @@ Hd/Sd	P:NECext:fb0c:c738
 Mute	P:NECext:bf40:ef10
 Volume +	P:NECext:bf40:e51a
 Volume -	P:NECext:bf40:e11e
+@Mitsubishi	DSS 71,-1
+Mute	P:Mitsubishi:47:32
 @Mitsubishi	Satellite 12,251
 Channel +	P:NECext:fb0c:fd02
 Channel -	P:NECext:fb0c:fc03
@@ -3262,6 +3420,10 @@ Volume -	P:SIRC:1:13
 Mute	P:SIRC:1:14
 Tv	P:SIRC:1:15
 Input	P:SIRC:1:25
+@Motorola	Cable Box 15,-1
+Volume -	P:RCA38:f:2e
+Volume +	P:RCA38:f:2f
+Mute	P:RCA38:f:3f
 @Motorola	Cable Box 170,-1
 Volume +	P:NECext:55aa:f50a
 Volume -	P:NECext:55aa:f40b
@@ -3282,6 +3444,8 @@ Volume +	P:NECext:bf40:e51a
 Volume -	P:NECext:bf40:e11e
 @Motorola	Cable Box 68,-1
 Vcr	P:NECext:bb44:ed12
+@Motorola	Cable Box 9,-1
+Audio	P:PanasonicOld:9:20
 @Motorola	DSS 1,-1
 Input	P:SIRC:1:25
 @MSI	DigiVox MiniII
@@ -3392,6 +3556,30 @@ Yellow	P:NECext:3383:b748
 Red	P:NECext:3383:b946
 Green	P:NECext:3383:b847
 Blue	P:NECext:3383:b649
+@Novaplex	Cable Box 27,-1
+Power	P:PanasonicOld:1b:7
+Display	P:PanasonicOld:1b:8
+Sleep	P:PanasonicOld:1b:9
+Menu	P:PanasonicOld:1b:a
+--->	P:PanasonicOld:1b:b
+Select	P:PanasonicOld:1b:c
+Last	P:PanasonicOld:1b:e
+Buy	P:PanasonicOld:1b:f
+1	P:PanasonicOld:1b:10
+2	P:PanasonicOld:1b:11
+3	P:PanasonicOld:1b:12
+4	P:PanasonicOld:1b:13
+5	P:PanasonicOld:1b:14
+6	P:PanasonicOld:1b:15
+7	P:PanasonicOld:1b:16
+8	P:PanasonicOld:1b:17
+9	P:PanasonicOld:1b:18
+0	P:PanasonicOld:1b:19
+Channel +	P:PanasonicOld:1b:1d
+Channel -	P:PanasonicOld:1b:1e
+Volume +	P:PanasonicOld:1b:20
+Volume -	P:PanasonicOld:1b:21
+Mute	P:PanasonicOld:1b:22
 @Octagon	Octagon SF8008
 POWER	P:NEC:7:59
 1	P:NEC:7:52
@@ -3626,6 +3814,42 @@ SCL_AR	P:NEC:50:3c
 SCL_ROT	P:NEC:50:28
 SCL_ZOOM	P:NEC:50:27
 SCL_PAN	P:NEC:50:13
+@Pace	Unknown_xsat 34,-1
+Key_Power	P:Proton:22:0
+Key_1	P:Proton:22:1
+Key_2	P:Proton:22:2
+Key_3	P:Proton:22:3
+Key_4	P:Proton:22:4
+Key_5	P:Proton:22:5
+Key_6	P:Proton:22:6
+Key_7	P:Proton:22:7
+Key_8	P:Proton:22:8
+Key_9	P:Proton:22:9
+Key_0	P:Proton:22:a
+Key_Mute	P:Proton:22:b
+Key_Info	P:Proton:22:c
+Key_Green	P:Proton:22:d
+Key_Volumeup	P:Proton:22:e
+Key_Volumedown	P:Proton:22:f
+Key_Audio	P:Proton:22:10
+Freeze	P:Proton:22:11
+Key_Enter	P:Proton:22:12
+Skip_Down	P:Proton:22:13
+Format	P:Proton:22:14
+Key_Menu	P:Proton:22:16
+Key_Red	P:Proton:22:18
+Tv/Radio	P:Proton:22:19
+Key_Yellow	P:Proton:22:1a
+Key_Blue	P:Proton:22:1b
+Key_Up	P:Proton:22:1c
+Key_Down	P:Proton:22:1d
+Key_Left	P:Proton:22:1e
+Key_Right	P:Proton:22:1f
+Key_Ok	P:Proton:22:58
+Key_Aux	P:Proton:22:9c
+Input	P:Proton:22:9d
+Key_Quit	P:Proton:22:9e
+Skip_Up	P:Proton:22:9f
 @Panasonic	HDTV Tuner 128,2
 1	P:Panasonic:280:a0
 2	P:Panasonic:280:a1
@@ -3651,6 +3875,29 @@ Cursor Down	P:Panasonic:280:cb
 Cursor Left	P:Panasonic:280:cd
 Cursor Right	P:Panasonic:280:ce
 Last	P:Panasonic:280:d1
+@Philips	DSS 39,-1
+0	P:RC6:27:0
+1	P:RC6:27:1
+2	P:RC6:27:2
+3	P:RC6:27:3
+4	P:RC6:27:4
+5	P:RC6:27:5
+6	P:RC6:27:6
+7	P:RC6:27:7
+8	P:RC6:27:8
+9	P:RC6:27:9
+Channel +	P:RC6:27:20
+Channel -	P:RC6:27:21
+Exit	P:RC6:27:55
+Cursor Up	P:RC6:27:58
+Cursor Down	P:RC6:27:59
+Cursor Left	P:RC6:27:5a
+Cursor Right	P:RC6:27:5b
+Enter	P:RC6:27:5c
+Jump	P:RC6:27:83
+Guide	P:RC6:27:cc
+@Pioneer	Cable Box 170,-1
+Power	P:Pioneer40:55aa:1c
 @Pioneer	Cable Box 172,-1
 0	P:NECext:53ac:ff00
 1	P:NECext:53ac:fe01
@@ -4018,6 +4265,46 @@ Key_Red	P:RC5X:18:38
 Key_Green	P:RC5X:18:39
 Key_Yellow	P:RC5X:18:3a
 Key_Blue	P:RC5X:18:3b
+@Scientific Atlanta	Cable Box 27,-1
+Cursor Up	P:PanasonicOld:1b:2
+Cursor Left	P:PanasonicOld:1b:3
+Cursor Right	P:PanasonicOld:1b:4
+Guide	P:PanasonicOld:1b:6
+Power	P:PanasonicOld:1b:7
+Info	P:PanasonicOld:1b:8
+Display	P:PanasonicOld:1b:8
+End	P:PanasonicOld:1b:a
+Cursor Down	P:PanasonicOld:1b:b
+Select	P:PanasonicOld:1b:c
+Bypass	P:PanasonicOld:1b:d
+Last	P:PanasonicOld:1b:e
+1	P:PanasonicOld:1b:10
+2	P:PanasonicOld:1b:11
+3	P:PanasonicOld:1b:12
+4	P:PanasonicOld:1b:13
+5	P:PanasonicOld:1b:14
+6	P:PanasonicOld:1b:15
+7	P:PanasonicOld:1b:16
+8	P:PanasonicOld:1b:17
+9	P:PanasonicOld:1b:18
+0	P:PanasonicOld:1b:19
+Prg	P:PanasonicOld:1b:1a
+Au	P:PanasonicOld:1b:1b
+Off	P:PanasonicOld:1b:1c
+Channel +	P:PanasonicOld:1b:1d
+Channel -	P:PanasonicOld:1b:1e
+Favorite	P:PanasonicOld:1b:1f
+Rcl	P:PanasonicOld:1b:1f
+A	P:PanasonicOld:1b:2f
+B	P:PanasonicOld:1b:30
+C	P:PanasonicOld:1b:31
+Page +	P:PanasonicOld:1b:36
+Page -	P:PanasonicOld:1b:37
+Settings	P:PanasonicOld:1b:39
+@Scientific Atlanta	Cable Box 71,-1
+Volume +	P:Mitsubishi:47:22
+Volume -	P:Mitsubishi:47:2a
+Mute	P:Mitsubishi:47:32
 @SkyQ	SkyQ
 Power	R:38000:33:2701,848,502,414,449,413,499,830,481,852,922,411,499,413,450,438,449,438,474,413,450,437,475,413,506,381,953,796,533,381,506,381,450,438,449,437,450,437,896,435,476,855,922,853,476,412,474,413,473,415,472,417,916,416,469,863,468,419,468,116173,2701,853,499,412,476,411,476,855,476,856,919,412,472,416,470,418,469,418,470,418,469,418,469,418,470,418,915,860,470,418,470,418,470,418,469,418,469,418,915,416,470,862,915,860,469,418,469,418,469,418,469,418,915,417,469,862,470,418,469,116175,2699,852,502,412,475,412,475,855,476,857,918,414,471,418,469,419,468,419,468,420,468,420,467,420,468,420,913,863,467,420,468,420,467,420,467,420,468,421,912,419,467,865,913,863,467,444,444,444,443,422,466,445,888,443,443,889,443,445,442
 RAW_55	R:38000:33:2719,856,472,415,473,415,472,833,499,834,942,415,472,416,471,415,472,415,471,416,472,416,471,415,471,416,915,831,474,440,447,441,473,414,474,414,473,414,918,857,473,416,914,418,468,889,887,889,886,446,441,890,886,446,440
@@ -4925,6 +5212,47 @@ Key_Info	P:RC5X:18:2d
 Key_Blue	P:RC5X:18:2e
 Key_Tv	P:RC5X:18:2f
 Key_Exit	P:RC5X:18:31
+@Uniden	Satellite 1,-1
+Skew	P:Denon:1:9
+Video	P:Denon:1:a
+Audio	P:Denon:1:b
+Mute	P:Denon:1:c
+3-F	P:Denon:1:d
+2-T	P:Denon:1:e
+1-G	P:Denon:1:f
+Polarity	P:Denon:1:10
+Set Up	P:Denon:1:11
+Text	P:Denon:1:12
+Cancel	P:Denon:1:13
+Volume -	P:Denon:1:14
+West	P:Denon:1:15
+Channel -	P:Denon:1:16
+East	P:Denon:1:17
+Help	P:Denon:1:18
+Next	P:Denon:1:1a
+Volume +	P:Denon:1:1c
+Channel +	P:Denon:1:1e
+Message	P:Denon:1:20
+Menu	P:Denon:1:25
+0-B	P:Denon:1:26
+Call	P:Denon:1:27
+Power	P:Denon:1:28
+Freeze	P:Denon:1:29
+Scan	P:Denon:1:2a
+Pip	P:Denon:1:2b
+View	P:Denon:1:2c
+9-K	P:Denon:1:2d
+8-R	P:Denon:1:2e
+7-S	P:Denon:1:2f
+Review	P:Denon:1:30
+Ti/Bw	P:Denon:1:31
+C/Ku	P:Denon:1:32
+Aux	P:Denon:1:33
+Enter	P:Denon:1:34
+6-C	P:Denon:1:35
+5-W	P:Denon:1:36
+4-D	P:Denon:1:37
+Sat/Tv	P:Denon:1:38
 @universum	SAT 97,135
 off	P:NECext:8761:ff00
 Vl	P:NECext:8761:fd02
@@ -4976,6 +5304,24 @@ Key_Radio	P:RC5X:f:44
 Key_Tv	P:RC5X:f:45
 Key_Menu	P:RC5X:f:52
 Key_Ok	P:RC5X:f:57
+@UPC	Unknown_SAT 39,-1
+Key_0	P:RC6:27:0
+Key_1	P:RC6:27:1
+Key_2	P:RC6:27:2
+Key_3	P:RC6:27:3
+Key_4	P:RC6:27:4
+Key_5	P:RC6:27:5
+Key_6	P:RC6:27:6
+Key_7	P:RC6:27:7
+Key_8	P:RC6:27:8
+Key_9	P:RC6:27:9
+Key_Power	P:RC6:27:c
+Key_Mute	P:RC6:27:d
+Key_Volumeup	P:RC6:27:10
+Key_Volumedown	P:RC6:27:11
+Key_Channelup	P:RC6:27:20
+Key_Channeldown	P:RC6:27:21
+Key_Info	P:RC6:27:cb
 @US Electronics	Cable Box 0,-1
 Mute	P:RC5X:0:d
 Volume +	P:RC5X:0:10
@@ -5286,6 +5632,42 @@ Key_Volumedown	P:NECext:fe01:e21d
 Key_Vcr	P:NECext:fe01:be41
 Key_Radio	P:NECext:fe01:bd42
 Key_Menu	P:NECext:fe01:b14e
+@xsat	Unknown_xsat 34,-1
+Key_Power	P:Proton:22:0
+Key_1	P:Proton:22:1
+Key_2	P:Proton:22:2
+Key_3	P:Proton:22:3
+Key_4	P:Proton:22:4
+Key_5	P:Proton:22:5
+Key_6	P:Proton:22:6
+Key_7	P:Proton:22:7
+Key_8	P:Proton:22:8
+Key_9	P:Proton:22:9
+Key_0	P:Proton:22:a
+Key_Mute	P:Proton:22:b
+Key_Info	P:Proton:22:c
+Key_Green	P:Proton:22:d
+Key_Volumeup	P:Proton:22:e
+Key_Volumedown	P:Proton:22:f
+Key_Audio	P:Proton:22:10
+Freeze	P:Proton:22:11
+Key_Enter	P:Proton:22:12
+Skip_Down	P:Proton:22:13
+Format	P:Proton:22:14
+Key_Menu	P:Proton:22:16
+Key_Red	P:Proton:22:18
+Tv/Radio	P:Proton:22:19
+Key_Yellow	P:Proton:22:1a
+Key_Blue	P:Proton:22:1b
+Key_Up	P:Proton:22:1c
+Key_Down	P:Proton:22:1d
+Key_Left	P:Proton:22:1e
+Key_Right	P:Proton:22:1f
+Key_Ok	P:Proton:22:58
+Key_Aux	P:Proton:22:9c
+Input	P:Proton:22:9d
+X_Key_Quit	P:Proton:22:9e
+Skip_Up	P:Proton:22:9f
 @Yamaha	DVR 120,-1
 Standby/On	P:NECext:8778:f00f
 Power Toggle	P:NECext:8778:f00f
@@ -5373,6 +5755,11 @@ Return	P:NECext:837c:48b7
 Enter	P:NECext:837c:47b8
 Previous	P:NECext:837c:46b9
 Next	P:NECext:837c:45ba
+@Yamaha	DVR 71,-1
+Tv Power	P:Mitsubishi:47:2
+Tv Vol +	P:Mitsubishi:47:22
+Tv Vol -	P:Mitsubishi:47:2a
+Tv Input	P:Mitsubishi:47:3a
 @Zinwell	Satellite Receiver 64,223
 1	P:NECext:df40:fe01
 2	P:NECext:df40:fd02

@@ -92,4 +92,31 @@ class IrEncoderTest {
     @Test fun jvcIsSixteenBits() {
         assertEquals(2 + 32 + 1 + 1, enc("JVC", 3, 5).pattern.size)
     }
+
+    @Test fun irdbProtocolsProduceWellFormedFrames() {
+        for (proto in listOf("Mitsubishi", "Aiwa", "Proton", "Akai", "Fujitsu", "RCA38", "PanasonicOld", "Pioneer40", "DenonK", "Denon", "Sharp", "MCE")) {
+            val t = enc(proto, 0x05, 0x12)
+            assertTrue(proto, t.pattern.size % 2 == 0 && t.pattern.all { it > 0 } && t.pattern.size > 4)
+        }
+    }
+
+    @Test fun denonSendsKeyThenInvertedCopyEvery67ms() {
+        val p = enc("Denon", 0x02, 0x34).pattern
+        assertEquals(2 * 67000, p.sum())
+        assertEquals(2 * (15 * 2 + 2), p.size)
+    }
+
+    @Test fun mitsubishiHasNoHeaderAndSixteenBits() {
+        val p = enc("Mitsubishi", 1, 2).pattern
+        assertEquals(16 * 2 + 2, p.size)
+        assertEquals(300, p[0])
+    }
+
+    @Test fun denonKChecksum() {
+        // D=1 S=2 F=0x123: ((D<<4) ^ S ^ (F<<4) ^ (F>>4)) & 0xFF
+        val expected = ((1 shl 4) xor 2 xor (0x123 shl 4) xor (0x123 shr 4)) and 0xFF
+        val p = enc("DenonK", 1 or (2 shl 4), 0x123).pattern
+        val bits = (0 until 48).map { i -> if (p[3 + i * 2] == 3 * 432) 1 else 0 }
+        assertEquals(expected, (40 until 48).sumOf { bits[it] shl (it - 40) })
+    }
 }

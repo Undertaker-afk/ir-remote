@@ -1,3 +1,20 @@
+@3M	Projector 134,-1
+Standby/On	P:Fujitsu:8686:0
+Video	P:Fujitsu:8686:5
+Video 1	P:Fujitsu:8686:5
+Rgb	P:Fujitsu:8686:8
+Focus +	P:Fujitsu:8686:15
+Focus -	P:Fujitsu:8686:16
+Zoom +	P:Fujitsu:8686:17
+Zoom -	P:Fujitsu:8686:18
+Menu	P:Fujitsu:8686:21
+Blank	P:Fujitsu:8686:2a
+Volume +	P:Fujitsu:8686:30
+Volume -	P:Fujitsu:8686:31
+Mute	P:Fujitsu:8686:32
+Magnify	P:Fujitsu:8686:3f
+Timer	P:Fujitsu:8686:56
+Freeze	P:Fujitsu:8686:63
 @ABOX	Abox T22
 Power	P:NEC:2:1d
 Input_	P:NEC:2:1f
@@ -67,6 +84,32 @@ Power	P:NECext:1308:7887
 8	P:SIRC:b:7
 Power	P:SIRC:b:15
 Standby	P:SIRC:b:3b
+@AmPro	Video Projector 134,-1
+Power	P:Fujitsu:8686:0
+Video 1	P:Fujitsu:8686:5
+Video 2	P:Fujitsu:8686:6
+Rgb1	P:Fujitsu:8686:8
+O.S.D.	P:Fujitsu:8686:a
+Svideo 1	P:Fujitsu:8686:d
+Svideo 2	P:Fujitsu:8686:e
+Input Mode Status	P:Fujitsu:8686:10
+Focus ^	P:Fujitsu:8686:15
+Focus V	P:Fujitsu:8686:16
+Zoom ^	P:Fujitsu:8686:17
+Zoom V	P:Fujitsu:8686:18
+Adjust Mode Picture	P:Fujitsu:8686:20
+Input Mode	P:Fujitsu:8686:21
+Adjust Mode Stand	P:Fujitsu:8686:24
+Adjust Mode Function	P:Fujitsu:8686:30
+Volume V	P:Fujitsu:8686:31
+Mute	P:Fujitsu:8686:32
+Menu	P:Fujitsu:8686:40
+Adjust Mode <	P:Fujitsu:8686:41
+>	P:Fujitsu:8686:41
+Adjust Mode >	P:Fujitsu:8686:42
+<	P:Fujitsu:8686:42
+Volume ^	P:Fujitsu:8686:51
+Set	P:Fujitsu:8686:5b
 @AmPro	Video Projector 85,-1
 Source	P:NECext:aa55:fe01
 Mute	P:NECext:aa55:fc03
@@ -1558,6 +1601,54 @@ Vol_up	P:NECext:6b86:f10e
 Back	P:NECext:6b86:b14e
 Hamburger	P:NECext:6b86:b24d
 Playpause	P:NECext:6b86:f609
+@Harman Kardon	Video Projector 1,-1
+1	P:Sharp:1:1
+2	P:Sharp:1:2
+3	P:Sharp:1:3
+4	P:Sharp:1:4
+5	P:Sharp:1:5
+6	P:Sharp:1:6
+7	P:Sharp:1:7
+8	P:Sharp:1:8
+9	P:Sharp:1:9
+0	P:Sharp:1:a
+Enter	P:Sharp:1:b
+Channel ^	P:Sharp:1:11
+Channel V	P:Sharp:1:12
+Volume ^	P:Sharp:1:14
+Volume V	P:Sharp:1:15
+Off.On	P:Sharp:1:16
+Mute	P:Sharp:1:17
+Source	P:Sharp:1:18
+Menu	P:Sharp:1:1b
+Select V	P:Sharp:1:20
+Select ^	P:Sharp:1:49
+Adj >	P:Sharp:1:4f
+Adj <	P:Sharp:1:50
+@Harman Video	Video Projector 1,-1
+1	P:Sharp:1:1
+2	P:Sharp:1:2
+3	P:Sharp:1:3
+4	P:Sharp:1:4
+5	P:Sharp:1:5
+6	P:Sharp:1:6
+7	P:Sharp:1:7
+8	P:Sharp:1:8
+9	P:Sharp:1:9
+0	P:Sharp:1:a
+Enter	P:Sharp:1:b
+Channel ^	P:Sharp:1:11
+Channel V	P:Sharp:1:12
+Volume ^	P:Sharp:1:14
+Volume V	P:Sharp:1:15
+Off.On	P:Sharp:1:16
+Mute	P:Sharp:1:17
+Source	P:Sharp:1:18
+Menu	P:Sharp:1:1b
+Select V	P:Sharp:1:20
+Select ^	P:Sharp:1:49
+Adj >	P:Sharp:1:4f
+Adj <	P:Sharp:1:50
 @Hitachi	Hitachi CP-X2011 Projector
 POWER	P:NECext:4587:e817
 FREEZE	P:NECext:4587:4bb4
@@ -1890,6 +1981,19 @@ Rear Left Corner	P:NECext:4e87:639c
 Down (V)	P:NECext:4e87:629d
 Rear Right Corner	P:NECext:4e87:619e
 Enter	P:NECext:4e87:609f
+@InFocus	Video Projector 2,1
+Volume +	P:Aiwa:102:e
+Volume -	P:Aiwa:102:f
+Standby (On/Off)	P:Aiwa:102:10
+Lite Show	P:Aiwa:102:11
+Next ^	P:Aiwa:102:12
+Prog	P:Aiwa:102:17
+Freeze Esc	P:Aiwa:102:18
+Menu Edit	P:Aiwa:102:19
+Mic >	P:Aiwa:102:1b
+Mute <	P:Aiwa:102:1d
+Select Enter	P:Aiwa:102:1e
+Prev V	P:Aiwa:102:1f
 @InFocus	Video Projector 78,135
 Brightness +	P:NECext:874e:fc03
 Brightness -	P:NECext:874e:f807
@@ -2257,6 +2361,10 @@ Aspect -Full	P:RC5X:0:7e
 Aspect -Squeeze	P:RC5X:0:7e
 Full	P:RC5X:0:7e
 Full (Aspect)	P:RC5X:0:7e
+@Marantz	Video Projector 13,-1
+Comp 1	P:Sharp:d:1a
+Power On	P:Sharp:d:56
+Power Off	P:Sharp:d:96
 @Maxell	Maxell MC-EU5001
 Power	P:NECext:4587:e817
 Input	P:NECext:4587:f708
@@ -2346,6 +2454,40 @@ Down	P:NECext:df00:b748
 0	P:NECext:df00:f30c
 Mouse	P:NECext:df00:bd42
 Del	P:NECext:df00:ef10
+@Mitsubishi	Video Projector 71,-1
+1	P:Mitsubishi:47:0
+9	P:Mitsubishi:47:1
+2	P:Mitsubishi:47:8
+0	P:Mitsubishi:47:9
+3	P:Mitsubishi:47:10
+4	P:Mitsubishi:47:18
+Display	P:Mitsubishi:47:1b
+5	P:Mitsubishi:47:20
+6	P:Mitsubishi:47:28
+7	P:Mitsubishi:47:30
+Menu 1	P:Mitsubishi:47:33
+8	P:Mitsubishi:47:38
+Power On	P:Mitsubishi:47:42
+Power Off	P:Mitsubishi:47:4a
+Esc	P:Mitsubishi:47:52
+Test	P:Mitsubishi:47:5e
+>	P:Mitsubishi:47:64
+<	P:Mitsubishi:47:6c
+Menu 2	P:Mitsubishi:47:73
+^	P:Mitsubishi:47:74
+V	P:Mitsubishi:47:7c
+Pic Mute	P:Mitsubishi:47:92
+Mem List	P:Mitsubishi:47:9d
+Normal	P:Mitsubishi:47:9f
+Crt R	P:Mitsubishi:47:a1
+Input A	P:Mitsubishi:47:a4
+Crt G	P:Mitsubishi:47:a9
+Input B	P:Mitsubishi:47:ac
+Crt B	P:Mitsubishi:47:b1
+Func	P:Mitsubishi:47:b3
+Enter	P:Mitsubishi:47:bb
+Input Video	P:Mitsubishi:47:f5
+Input Y/C	P:Mitsubishi:47:fd
 @NEC	NEC RD-448E Projector
 Zoom	R:38000:33:213,23767,9061,4388,611,500,612,498,590,525,590,1647,613,1618,612,500,612,499,613,504,611,1619,613,496,615,502,614,1618,613,503,613,1623,613,1650,586,1623,613,1622,614,1623,613,1619,613,496,615,498,613,529,586,1618,614,496,615,498,613,498,613,502,614,1623,669,1565,671,1562,670,446,613,1618,613,498,590,522,612,499,613,498,589,549,586,499,589,548,563,525,591,1673,563,1673,563,1674,562,1674,562,1673,563,1673,586,1650,586,1658,587,14405,9031,2182,586
 ZoomIN	R:38000:33:9031,4414,589,523,588,523,588,527,588,1648,588,1670,562,548,563,548,563,553,562,1669,563,548,563,552,563,1669,562,552,563,1673,563,1673,563,1669,562,548,563,548,563,549,562,549,562,554,561,1670,562,554,561,1675,561,1675,561,1675,561,1675,561,1675,561,1671,561,555,560,1671,561,550,561,550,561,550,561,550,561,550,561,550,561,550,561,550,561,555,561,1675,561,1675,561,1675,561,1675,561,1675,561,1675,561,1675,561,1684,561,14431,9005,2208,560,96119,9034,2204,562
@@ -2990,6 +3132,37 @@ Right arrow	R:36045:33:9044,4476,578,574,548,576,548,576,546,578,546,576,548,550
 Down arrow	R:36045:33:9042,4486,558,580,532,580,534,580,536,582,536,580,532,580,530,582,540,584,546,1672,572,1674,574,1672,574,1672,572,1672,572,1672,574,1670,574,1676,574,578,546,1672,572,578,546,580,546,578,546,580,546,1670,576,582,546,1672,572,580,544,1672,572,1674,572,1674,572,1672,572,580,546,1670,572
 Settings	R:36045:33:9054,4484,572,580,544,580,546,580,546,580,544,582,544,580,546,580,544,584,546,1674,572,1672,572,1674,572,1674,572,1674,572,1674,572,1674,572,1678,570,1674,572,580,544,1674,570,558,570,1672,572,580,544,580,546,584,546,580,546,1672,574,580,546,1672,572,580,546,1674,574,1672,572,1674,574
 Back	R:36045:33:9050,4484,574,578,544,580,546,580,542,582,546,580,546,554,572,578,546,584,546,1674,572,1674,574,1674,572,1674,572,1674,572,1674,572,1674,572,1676,572,1674,572,1672,574,1672,572,580,546,554,570,554,572,1672,572,584,544,580,544,580,544,580,546,1674,574,1672,572,1672,574,580,546,1672,574
+@Runco	Video Projector 1,-1
+Composite	P:Sharp:1:1
+Composite Input	P:Sharp:1:1
+Svhs	P:Sharp:1:2
+S-Video	P:Sharp:1:2
+S-Video Input	P:Sharp:1:2
+Component	P:Sharp:1:3
+Component Input	P:Sharp:1:3
+Hdtv	P:Sharp:1:4
+Computer	P:Sharp:1:5
+Pass-Thru	P:Sharp:1:5
+Pass Through	P:Sharp:1:5
+Anamorrphic	P:Sharp:1:7
+Anamorphic	P:Sharp:1:7
+Standard	P:Sharp:1:8
+4 X 3	P:Sharp:1:8
+4:3	P:Sharp:1:8
+Letterbox	P:Sharp:1:9
+Power On	P:Sharp:1:a
+Power Off	P:Sharp:1:b
+Cursor Up	P:Sharp:1:11
+Ratio Up	P:Sharp:1:11
+Cursor Down	P:Sharp:1:12
+Ratio Down	P:Sharp:1:12
+Cursor Right	P:Sharp:1:14
+Input Down	P:Sharp:1:14
+Cursor Left	P:Sharp:1:15
+Input Up	P:Sharp:1:15
+Power	P:Sharp:1:16
+Menu	P:Sharp:1:17
+Enter	P:Sharp:1:2f
 @Runco	Video Projector 24,247
 R	P:NECext:f718:ff00
 B	P:NECext:f718:fd02
@@ -3146,6 +3319,17 @@ Menu_help	R:38000:33:352,1744,353,694,354,1743,354,1745,352,696,352,696,352,695,
 Auto_sync	R:38000:33:268,1829,268,777,272,1828,269,1827,270,778,271,778,270,1828,269,779,269,1827,270,1828,269,1828,269,1827,270,1827,270,1827,270,778,270,40629,269,1826,271,778,270,1827,270,1827,270,778,270,1827,270,777,271,1826,271,778,270,778,270,780,268,778,271,777,272,779,269,1827,270,44840,270,1827,270,778,270,1827,270,1828,269,779,269,780,268,1827,270,777,271,1827,270,1827,270,1827,270,1829,268,1828,269,1828,269,779,269
 Eco+quiet	R:38000:33:267,1830,267,779,269,1829,268,1830,267,779,269,1830,267,780,268,779,270,1829,268,1828,269,781,267,780,268,779,269,1829,268,781,267,43778,267,1830,267,780,268,1829,268,1828,269,780,268,780,268,1828,269,1828,269,780,268,780,269,1829,268,1829,268,1829,268,779,269,1829,268,41695,268,1829,268,780,268,1828,269,1829,268,779,269,1828,269,780,268,780,269,1829,268,1829,268,780,268,780,268,780,268,1829,268,781,268
 Resize	R:38000:33:268,1828,269,778,270,1827,270,1826,271,778,270,777,271,1828,269,1827,271,1827,270,1828,269,779,269,1829,268,780,268,1829,268,779,269,41680,268,1829,268,780,268,1829,268,1828,270,778,270,1827,270,779,269,779,269,779,269,779,269,1829,268,779,270,1828,269,779,269,1828,269,43792,269,1828,269,779,269,1828,269,1828,269,781,267,779,270,1828,269,1827,270,1828,269,1829,268,779,269,1828,269,780,268,1828,269,779,270
+@Sharp	Video Projector 13,-1
+Input Select	P:Sharp:d:13
+Volume +	P:Sharp:d:14
+Volume -	P:Sharp:d:15
+Power	P:Sharp:d:16
+Mute	P:Sharp:d:17
+Status	P:Sharp:d:39
+Enter	P:Sharp:d:57
+Adjustment +	P:Sharp:d:9c
+Adjustment -	P:Sharp:d:9d
+Menu	P:Sharp:d:c4
 @SMART	SMART Projectors
 POWER	P:NECext:ca8b:ed12
 INPUT	P:NECext:ca8b:eb14
@@ -4005,6 +4189,30 @@ Input: D4	P:NECext:2ed1:22dd
 Still	P:NECext:2ed1:20df
 Aspect Toggle	P:NECext:2ed1:15ea
 Input 1A	P:NECext:2ed1:cf3
+@Yamaha	Projector 240,-1
+Power On	P:Proton:f0:41
+Power Standby	P:Proton:f0:42
+Keystone	P:Proton:f0:43
+Setting Iris	P:Proton:f0:54
+Input D-Sub	P:Proton:f0:60
+Input Comp	P:Proton:f0:64
+Input Video	P:Proton:f0:65
+Input S-Video	P:Proton:f0:66
+Input Hdmi	P:Proton:f0:70
+Cursor Right	P:Proton:f0:81
+Cursor Up	P:Proton:f0:82
+Cursor Down	P:Proton:f0:83
+Menu	P:Proton:f0:86
+Cursor Enter	P:Proton:f0:87
+Aspect Normal	P:Proton:f0:91
+Aspect Squeeze	P:Proton:f0:92
+Aspect Smart Zoom	P:Proton:f0:95
+Hide	P:Proton:f0:a6
+Setting Contrast	P:Proton:f0:d0
+Setting Brightness	P:Proton:f0:d1
+Setting Color Temp	P:Proton:f0:d4
+Aspect Toggle	P:Proton:f0:e2
+Memory 1	P:Proton:f0:e4
 @Yamaha	Sound Projector 120,-1
 Power Tog	P:NECext:8778:f00f
 0	P:NECext:8778:ef10

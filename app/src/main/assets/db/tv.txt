@@ -1237,12 +1237,59 @@ Vol_dn	P:NEC:80:8b
 Ch_next	P:NEC:80:9b
 Ch_prev	P:NEC:80:8f
 Mute	P:NEC:80:d0
+@Daewoo	TV 20,-1
+Code1 Vid 4	P:Proton:14:c
+Code1 Vid 3	P:Proton:14:e
+Code1 Power Off	P:Proton:14:15
+Code1 Power On	P:Proton:14:15
+Code4 Power Off	P:Proton:14:15
+Code4 Power On	P:Proton:14:15
+Code1 Vide 2	P:Proton:14:23
+Code1 Vid 5	P:Proton:14:2c
+Code1 Vid 1	P:Proton:14:2d
 @Daewoo	TV 4,-1
 Code2 Power On	P:NECext:fb04:f708
 Code2 Power Off	P:NECext:fb04:f708
 @Daewoo	TV 6,6
 Code3 Power Off	P:NECx:606:f
 Code3 Power On	P:NECx:606:f
+@Dell	TV 0,28
+Power	P:MCE:1c00:1
+Chan Up	P:MCE:1c00:2
+Chan Dn	P:MCE:1c00:3
+Vol Dn	P:MCE:1c00:4
+Vol Up	P:MCE:1c00:5
+Enter	P:MCE:1c00:6
+Ok	P:MCE:1c00:6
+Input Source	P:MCE:1c00:7
+Menu	P:MCE:1c00:8
+Mute	P:MCE:1c00:9
+Sleep	P:MCE:1c00:b
+Pip	P:MCE:1c00:c
+Pop/Pbp	P:MCE:1c00:d
+Swap	P:MCE:1c00:e
+Audio	P:MCE:1c00:f
+Pict	P:MCE:1c00:10
+Wide	P:MCE:1c00:11
+Prev Chan	P:MCE:1c00:12
+Pos	P:MCE:1c00:15
+Pip Sel	P:MCE:1c00:1d
+Guide	P:MCE:1c00:21
+Info	P:MCE:1c00:22
+0	P:MCE:1c00:30
+1	P:MCE:1c00:31
+2	P:MCE:1c00:32
+3	P:MCE:1c00:33
+4	P:MCE:1c00:34
+5	P:MCE:1c00:35
+6	P:MCE:1c00:36
+7	P:MCE:1c00:37
+8	P:MCE:1c00:38
+9	P:MCE:1c00:39
+Up	P:MCE:1c00:60
+Dn	P:MCE:1c00:61
+Left	P:MCE:1c00:62
+Right	P:MCE:1c00:63
 @Denver	Denver LED-3271
 Power	P:NECext:7f00:f50a
 Mute	P:NECext:7f00:af50
@@ -2249,6 +2296,360 @@ Power	P:NECext:c738:ed12
 Tv/Vcr	P:NECext:c738:ec13
 100	P:NECext:c738:ea15
 Mute	P:NECext:c738:e718
+@Fujitsu	Monitor 132,-1
+Power On	P:Fujitsu:8484:1
+Power Off	P:Fujitsu:8484:2
+Input	P:Fujitsu:8484:3
+Video	P:Fujitsu:8484:5
+Rgb	P:Fujitsu:8484:8
+Rgb2: D-Sub15	P:Fujitsu:8484:9
+Rgb3: 5 Bnc	P:Fujitsu:8484:a
+S-Video	P:Fujitsu:8484:b
+Component	P:Fujitsu:8484:c
+Rgb1: Dvi-D	P:Fujitsu:8484:e
+Shift 1	P:Fujitsu:8484:10
+Volume Up	P:Fujitsu:8484:20
+Shift 2	P:Fujitsu:8484:20
+Vol +	P:Fujitsu:8484:20
+Volume Down	P:Fujitsu:8484:21
+Vol -	P:Fujitsu:8484:21
+Shift 3	P:Fujitsu:8484:30
+Arrow Left	P:Fujitsu:8484:3e
+Adj Left	P:Fujitsu:8484:3e
+Arrow Right	P:Fujitsu:8484:3f
+Adj Right	P:Fujitsu:8484:3f
+Menu	P:Fujitsu:8484:40
+Shift 4	P:Fujitsu:8484:40
+Arrow Up	P:Fujitsu:8484:41
+Adj Up	P:Fujitsu:8484:41
+Arrow Down	P:Fujitsu:8484:42
+Adj Down	P:Fujitsu:8484:42
+Enter	P:Fujitsu:8484:5b
+Set	P:Fujitsu:8484:5b
+Wide	P:Fujitsu:8484:80
+Aspect Toggle	P:Fujitsu:8484:80
+Aspect Auto	P:Fujitsu:8484:81
+Aspect Normal	P:Fujitsu:8484:82
+Aspect Wide1	P:Fujitsu:8484:83
+Aspect Wide2	P:Fujitsu:8484:84
+Aspect Zoom1	P:Fujitsu:8484:85
+Aspect Zoom2	P:Fujitsu:8484:86
+Lock (Hidden)	P:Fujitsu:8484:e0
+Mode (Hidden)	P:Fujitsu:8484:fa
+@Fujitsu	Monitor 132,138
+Power On	P:Fujitsu:8a84:1
+Power Off	P:Fujitsu:8a84:2
+Display	P:Fujitsu:8a84:8
+Aspect Wide (Tog)	P:Fujitsu:8a84:10
+Aspect Auto	P:Fujitsu:8a84:11
+Aspect Normal	P:Fujitsu:8a84:12
+Aspect Wide1	P:Fujitsu:8a84:13
+Aspect Wide2	P:Fujitsu:8a84:14
+Aspect Zoom1	P:Fujitsu:8a84:15
+Aspect Zoom2	P:Fujitsu:8a84:16
+Adj Left	P:Fujitsu:8a84:20
+Adj Right	P:Fujitsu:8a84:21
+Menu	P:Fujitsu:8a84:22
+Adj Up	P:Fujitsu:8a84:23
+Adj Down	P:Fujitsu:8a84:24
+Enter	P:Fujitsu:8a84:26
+Picture Mode	P:Fujitsu:8a84:44
+Picture Memory	P:Fujitsu:8a84:48
+@Fujitsu	Monitor 132,139
+Power Toggle	P:Fujitsu:8b84:0
+Video 1	P:Fujitsu:8b84:40
+Video 2	P:Fujitsu:8b84:41
+Video 3	P:Fujitsu:8b84:42
+Video 4	P:Fujitsu:8b84:43
+Rgb1: Dvi-D	P:Fujitsu:8b84:68
+Rgb2: D-Sub15	P:Fujitsu:8b84:69
+@Fujitsu	Monitor 132,140
+Vol +	P:Fujitsu:8c84:10
+Vol -	P:Fujitsu:8c84:11
+Mute	P:Fujitsu:8c84:12
+@Fujitsu	Plasma 132,-1
+Power	P:Fujitsu:8484:0
+Power On	P:Fujitsu:8484:1
+On	P:Fujitsu:8484:1
+Power - On	P:Fujitsu:8484:1
+Power Off	P:Fujitsu:8484:2
+Off	P:Fujitsu:8484:2
+Power - Off	P:Fujitsu:8484:2
+Mode	P:Fujitsu:8484:3
+Video	P:Fujitsu:8484:5
+Video 1 2 3	P:Fujitsu:8484:5
+Input - Video	P:Fujitsu:8484:5
+Video 1	P:Fujitsu:8484:5
+Input 1 - Composite	P:Fujitsu:8484:6
+Composite	P:Fujitsu:8484:6
+Rgb	P:Fujitsu:8484:8
+Rgb 1 2	P:Fujitsu:8484:8
+Input - Rgb	P:Fujitsu:8484:8
+Input Rgb2 - (D-Sub)	P:Fujitsu:8484:9
+Rgb Dsub	P:Fujitsu:8484:9
+Rgb2: D-Sub15	P:Fujitsu:8484:9
+Rgb-Bnc	P:Fujitsu:8484:a
+Rgb3: 5 Bnc	P:Fujitsu:8484:a
+Input 2 - S-Video	P:Fujitsu:8484:b
+S-Video	P:Fujitsu:8484:b
+Componet	P:Fujitsu:8484:c
+Component	P:Fujitsu:8484:c
+Hidden 1	P:Fujitsu:8484:d
+Input Rgb1 - Dvi	P:Fujitsu:8484:e
+Rgb Dvi	P:Fujitsu:8484:e
+Rgb1: Dvi-D	P:Fujitsu:8484:e
+Shift 1	P:Fujitsu:8484:10
+Vol +	P:Fujitsu:8484:20
+Volume - Up	P:Fujitsu:8484:20
+Volume +	P:Fujitsu:8484:20
+Volume Up	P:Fujitsu:8484:20
+Shift 2	P:Fujitsu:8484:20
+Vol Up	P:Fujitsu:8484:20
+Vol -	P:Fujitsu:8484:21
+Volume - Down	P:Fujitsu:8484:21
+Volume -	P:Fujitsu:8484:21
+Volume Down	P:Fujitsu:8484:21
+Vol Dn	P:Fujitsu:8484:21
+Shift 3	P:Fujitsu:8484:30
+Cur Left	P:Fujitsu:8484:3e
+Cursor - Left	P:Fujitsu:8484:3e
+Cursor Left	P:Fujitsu:8484:3e
+Arrow Left	P:Fujitsu:8484:3e
+Left	P:Fujitsu:8484:3e
+Adj Left	P:Fujitsu:8484:3e
+Cursor Lf	P:Fujitsu:8484:3e
+Cur Right	P:Fujitsu:8484:3f
+Cursor - Right	P:Fujitsu:8484:3f
+Cursor Right	P:Fujitsu:8484:3f
+Arrow Right	P:Fujitsu:8484:3f
+Right	P:Fujitsu:8484:3f
+Adj Right	P:Fujitsu:8484:3f
+Cursor Rt	P:Fujitsu:8484:3f
+Menu	P:Fujitsu:8484:40
+Shift 4	P:Fujitsu:8484:40
+Cur Up	P:Fujitsu:8484:41
+Cursor - Up	P:Fujitsu:8484:41
+Cursor Up	P:Fujitsu:8484:41
+Adjust >	P:Fujitsu:8484:41
+Arrow Up	P:Fujitsu:8484:41
+Up	P:Fujitsu:8484:41
+Adj Up	P:Fujitsu:8484:41
+Cur Down	P:Fujitsu:8484:42
+Cursor - Down	P:Fujitsu:8484:42
+Adjust <	P:Fujitsu:8484:42
+Arrow Down	P:Fujitsu:8484:42
+Down	P:Fujitsu:8484:42
+Adj Down	P:Fujitsu:8484:42
+Cursor Dn	P:Fujitsu:8484:42
+Cursor - Enter	P:Fujitsu:8484:5b
+Cursor Down	P:Fujitsu:8484:5b
+Enter	P:Fujitsu:8484:5b
+Set	P:Fujitsu:8484:5b
+Hidden 4	P:Fujitsu:8484:67
+Hidden 6	P:Fujitsu:8484:68
+Hidden 5	P:Fujitsu:8484:69
+Wide	P:Fujitsu:8484:80
+Scrn.Mode-Wide	P:Fujitsu:8484:80
+Aspect Toggle	P:Fujitsu:8484:80
+Aspect Auto	P:Fujitsu:8484:81
+Scrn.Mode-Normal	P:Fujitsu:8484:82
+Normal	P:Fujitsu:8484:82
+Aspect Normal	P:Fujitsu:8484:82
+Scrn.Mode-Wide1	P:Fujitsu:8484:83
+Scrn.Mode-Wide2	P:Fujitsu:8484:83
+Wide 1	P:Fujitsu:8484:83
+Wide 2	P:Fujitsu:8484:83
+Aspect Wide1	P:Fujitsu:8484:83
+Aspect Wide2	P:Fujitsu:8484:84
+Scrn.Mode-Zoom1	P:Fujitsu:8484:85
+Zoom1	P:Fujitsu:8484:85
+Aspect Zoom1	P:Fujitsu:8484:85
+Scrn.Mode-Zoom2	P:Fujitsu:8484:86
+Zoom 2	P:Fujitsu:8484:86
+Aspect Zoom2	P:Fujitsu:8484:86
+Hidden 8	P:Fujitsu:8484:8a
+Lock (Hidden)	P:Fujitsu:8484:e0
+Hidden 7	P:Fujitsu:8484:e0
+Mode (Hidden)	P:Fujitsu:8484:fa
+Hidden 3	P:Fujitsu:8484:fa
+@Fujitsu	Plasma 132,129
+Hidden 2	P:Fujitsu:8184:0
+Hidden 9	P:Fujitsu:8184:3e
+Hidden 10	P:Fujitsu:8184:3f
+Hidden 11	P:Fujitsu:8184:41
+Hidden 13	P:Fujitsu:8184:42
+Hidden 12	P:Fujitsu:8184:5b
+Hidden 14	P:Fujitsu:8184:fa
+@Fujitsu	Plasma 132,130
+Wide 2	P:Fujitsu:8284:14
+@Fujitsu	Plasma 132,134
+Zoom 2	P:Fujitsu:8684:16
+@Fujitsu	Plasma 132,136
+Auto	P:Fujitsu:8884:11
+@Fujitsu	Plasma 132,138
+Power	P:Fujitsu:8a84:0
+C Down	P:Fujitsu:8a84:0
+Power On	P:Fujitsu:8a84:1
+Discrete On	P:Fujitsu:8a84:1
+Power Off	P:Fujitsu:8a84:2
+Discrete Off	P:Fujitsu:8a84:2
+Display	P:Fujitsu:8a84:8
+Wide	P:Fujitsu:8a84:10
+Wide (Toggle)	P:Fujitsu:8a84:10
+Aspect Wide (Tog)	P:Fujitsu:8a84:10
+Aspect Auto	P:Fujitsu:8a84:11
+Auto	P:Fujitsu:8a84:11
+Aspect	P:Fujitsu:8a84:12
+Aspect Normal	P:Fujitsu:8a84:12
+Normal	P:Fujitsu:8a84:12
+Aspect Wide 1	P:Fujitsu:8a84:13
+Wide 1	P:Fujitsu:8a84:13
+Aspect Wide1	P:Fujitsu:8a84:13
+Aspect Wide 2	P:Fujitsu:8a84:14
+Wide 2	P:Fujitsu:8a84:14
+Aspect Wide2	P:Fujitsu:8a84:14
+Aspect Zoom 1	P:Fujitsu:8a84:15
+Zoom 1	P:Fujitsu:8a84:15
+Aspect Zoom1	P:Fujitsu:8a84:15
+Aspect Zoom 2	P:Fujitsu:8a84:16
+Zoom 2	P:Fujitsu:8a84:16
+Aspect Zoom2	P:Fujitsu:8a84:16
+Cursor Left	P:Fujitsu:8a84:20
+Left	P:Fujitsu:8a84:20
+Adj. <	P:Fujitsu:8a84:20
+Adj Left	P:Fujitsu:8a84:20
+Arrow Left	P:Fujitsu:8a84:20
+Cursor Lf	P:Fujitsu:8a84:20
+C Left	P:Fujitsu:8a84:20
+Cursor Right	P:Fujitsu:8a84:21
+Right	P:Fujitsu:8a84:21
+Adj. >	P:Fujitsu:8a84:21
+Adj Right	P:Fujitsu:8a84:21
+Arrow Right	P:Fujitsu:8a84:21
+Cursor Rt	P:Fujitsu:8a84:21
+C Right	P:Fujitsu:8a84:21
+Menu	P:Fujitsu:8a84:22
+Menu/Exit	P:Fujitsu:8a84:22
+Cursor Up	P:Fujitsu:8a84:23
+Up	P:Fujitsu:8a84:23
+Adj. Up	P:Fujitsu:8a84:23
+Adj Up	P:Fujitsu:8a84:23
+Arrow Up	P:Fujitsu:8a84:23
+C Up	P:Fujitsu:8a84:23
+Cursor Down	P:Fujitsu:8a84:24
+Down	P:Fujitsu:8a84:24
+Adj. Dn.	P:Fujitsu:8a84:24
+Adj Down	P:Fujitsu:8a84:24
+Arrow Down	P:Fujitsu:8a84:24
+Cursor Dn	P:Fujitsu:8a84:24
+Enter	P:Fujitsu:8a84:26
+Cursor Select /Enter	P:Fujitsu:8a84:26
+Select	P:Fujitsu:8a84:26
+Cursor Enter	P:Fujitsu:8a84:26
+Off-Timer	P:Fujitsu:8a84:41
+Timer	P:Fujitsu:8a84:41
+Off Timer	P:Fujitsu:8a84:41
+Mode	P:Fujitsu:8a84:44
+Picture Mode	P:Fujitsu:8a84:44
+Pic Mode	P:Fujitsu:8a84:44
+Memory	P:Fujitsu:8a84:48
+Picture Memory	P:Fujitsu:8a84:48
+Pic Memory	P:Fujitsu:8a84:48
+@Fujitsu	Plasma 132,139
+Power	P:Fujitsu:8b84:0
+Power Toggle	P:Fujitsu:8b84:0
+Tv	P:Fujitsu:8b84:e
+Input Tv	P:Fujitsu:8b84:e
+Video	P:Fujitsu:8b84:16
+Input Video	P:Fujitsu:8b84:16
+Rgb	P:Fujitsu:8b84:17
+Input Rgb	P:Fujitsu:8b84:17
+Video1	P:Fujitsu:8b84:40
+Video 1	P:Fujitsu:8b84:40
+Video 1-Composite	P:Fujitsu:8b84:40
+Vid 1	P:Fujitsu:8b84:40
+Input1-Composite	P:Fujitsu:8b84:40
+Video 1 Composite	P:Fujitsu:8b84:40
+Video 2	P:Fujitsu:8b84:41
+Video 2 (S)	P:Fujitsu:8b84:41
+Video 2-S Video	P:Fujitsu:8b84:41
+Vid 2	P:Fujitsu:8b84:41
+Input2-S-Video	P:Fujitsu:8b84:41
+Video 2 S-Video	P:Fujitsu:8b84:41
+Video 2 / S-Video	P:Fujitsu:8b84:41
+Video 3	P:Fujitsu:8b84:42
+Input 3 - Component1	P:Fujitsu:8b84:42
+Video 3 (Back)	P:Fujitsu:8b84:42
+Video 3-Component	P:Fujitsu:8b84:42
+Vid 3	P:Fujitsu:8b84:42
+Input3-Component1	P:Fujitsu:8b84:42
+Video 3 / Comp 1	P:Fujitsu:8b84:42
+Video 4	P:Fujitsu:8b84:43
+Input 4 - Component2	P:Fujitsu:8b84:43
+Video 4 (Front)	P:Fujitsu:8b84:43
+Video 4-Component	P:Fujitsu:8b84:43
+Input4-Component2	P:Fujitsu:8b84:43
+Video 4 / Comp 2	P:Fujitsu:8b84:43
+Video 5	P:Fujitsu:8b84:44
+Input 5 - Hdmi	P:Fujitsu:8b84:44
+Video 5 (Hdmi)	P:Fujitsu:8b84:44
+Video 5-Hdmi	P:Fujitsu:8b84:44
+Input5-Hdmi	P:Fujitsu:8b84:44
+Video 5 / Hdmi	P:Fujitsu:8b84:44
+Rgb 1	P:Fujitsu:8b84:68
+Rgb1	P:Fujitsu:8b84:68
+Rgb 1: Dvi-D	P:Fujitsu:8b84:68
+Rgb1: Dvi-D	P:Fujitsu:8b84:68
+Rgb 1 / Dvi-D	P:Fujitsu:8b84:68
+Rgb 2	P:Fujitsu:8b84:69
+Rgb2	P:Fujitsu:8b84:69
+Rgb 2: D-Sub15P	P:Fujitsu:8b84:69
+Rgb2: D-Sub15	P:Fujitsu:8b84:69
+Rgb3/Video4	P:Fujitsu:8b84:6a
+Rgb 3/ Video 4	P:Fujitsu:8b84:6a
+Rgb3/Video 4	P:Fujitsu:8b84:6a
+Rgb 3/Vid 4	P:Fujitsu:8b84:6a
+Input4 - #2	P:Fujitsu:8b84:6a
+Rgb 3/Video 4	P:Fujitsu:8b84:6a
+@Fujitsu	Plasma 132,141
+Channel +	P:Fujitsu:8d84:b
+Channel -	P:Fujitsu:8d84:c
+Ch Return	P:Fujitsu:8d84:e
+Channel Return	P:Fujitsu:8d84:e
+Mts/Stereo	P:Fujitsu:8d84:12
+Antenna	P:Fujitsu:8d84:30
+Cable	P:Fujitsu:8d84:31
+1	P:Fujitsu:8d84:40
+2	P:Fujitsu:8d84:41
+3	P:Fujitsu:8d84:42
+4	P:Fujitsu:8d84:43
+5	P:Fujitsu:8d84:44
+6	P:Fujitsu:8d84:45
+7	P:Fujitsu:8d84:46
+8	P:Fujitsu:8d84:47
+9	P:Fujitsu:8d84:48
+0	P:Fujitsu:8d84:4a
+.	P:Fujitsu:8d84:58
+Favorite	P:Fujitsu:8d84:5a
+Info	P:Fujitsu:8d84:5b
+Guide	P:Fujitsu:8d84:5c
+Cc	P:Fujitsu:8d84:5d
+@Fujitsu	Plasma 140,132
+Wide 1	P:Fujitsu:848c:13
+@Fujitsu	TV 132,-1
+Power - On	P:Fujitsu:8484:1
+Power - Off	P:Fujitsu:8484:2
+Input - Video	P:Fujitsu:8484:5
+Input - Rgb	P:Fujitsu:8484:8
+Volume - Up	P:Fujitsu:8484:20
+Volume - Down	P:Fujitsu:8484:21
+Cursor - Left	P:Fujitsu:8484:3e
+Cursor - Right	P:Fujitsu:8484:3f
+Menu	P:Fujitsu:8484:40
+Cursor - Up	P:Fujitsu:8484:41
+Cursor - Down	P:Fujitsu:8484:42
+Cursor - Enter	P:Fujitsu:8484:5b
+Wide	P:Fujitsu:8484:80
 @Funai	Funai
 Power	P:NECext:e084:df20
 Source	R:38000:33:9103,4350,689,440,635,466,634,1592,636,467,632,468,631,469,630,471,628,1601,627,500,601,500,601,500,601,500,601,500,601,1628,601,1628,601,1628,601,500,601,500,601,500,601,500,601,500,601,500,601,1628,601,500,601,1628,601,1628,601,1628,601,1628,601,1628,601,1628,601,500,601,1628,601,43367,9046,2158,626,95445,9046,2156,628,95420,9071,2155,628,95417,9073,2155,628,95443,9046,2183,601
@@ -2338,6 +2739,30 @@ Info	P:NEC:20:f
 Fav	P:NEC:20:45
 F_list	P:NEC:20:12
 C_list	P:NEC:20:51
+@GE	TV 15,-1
+Clear	P:RCA38:f:6
+Reset	P:RCA38:f:12
+Prev Channel	P:RCA38:f:27
+Power	P:RCA38:f:2a
+Channel -	P:RCA38:f:2c
+Channel +	P:RCA38:f:2d
+Volume -	P:RCA38:f:2e
+Volume +	P:RCA38:f:2f
+0	P:RCA38:f:30
+1	P:RCA38:f:31
+2	P:RCA38:f:32
+3	P:RCA38:f:33
+4	P:RCA38:f:34
+5	P:RCA38:f:35
+6	P:RCA38:f:36
+7	P:RCA38:f:37
+8	P:RCA38:f:38
+9	P:RCA38:f:39
+Display	P:RCA38:f:3c
+Mute	P:RCA38:f:3f
+Menu	P:RCA38:f:52
+Skip	P:RCA38:f:53
+Input Source	P:RCA38:f:a3
 @Gericom	Plasma 3,-1
 7	P:NECext:fc03:ff00
 Mute	P:NECext:fc03:fc03
@@ -2775,6 +3200,92 @@ Red	P:NEC:4:aa
 Green	P:NEC:4:a9
 Yellow	P:NEC:4:1e
 Blue	P:NEC:4:4b
+@Hewlett Packard	Plasma 18,17
+0	P:MCE:1112:0
+1	P:MCE:1112:1
+2	P:MCE:1112:2
+3	P:MCE:1112:3
+4	P:MCE:1112:4
+5	P:MCE:1112:5
+6	P:MCE:1112:6
+7	P:MCE:1112:7
+8	P:MCE:1112:8
+9	P:MCE:1112:9
+Last	P:MCE:1112:a
+Power	P:MCE:1112:c
+Mute	P:MCE:1112:d
+Mute Toggle	P:MCE:1112:d
+Volume +	P:MCE:1112:10
+Volume -	P:MCE:1112:11
+Channel +	P:MCE:1112:1e
+Channel -	P:MCE:1112:1f
+Menu	P:MCE:1112:54
+Exit	P:MCE:1112:55
+Cursor Up	P:MCE:1112:58
+Cursor Down	P:MCE:1112:59
+Cursor Left	P:MCE:1112:5a
+Cursor Right	P:MCE:1112:5b
+Cursor Enter	P:MCE:1112:5c
+Cursor Select	P:MCE:1112:5c
+Swap	P:MCE:1112:63
+Source	P:MCE:1112:8b
+Photo	P:MCE:1112:a4
+Sap/Mts	P:MCE:1112:a7
+Sap	P:MCE:1112:a7
+Sleep	P:MCE:1112:a8
+Aspect	P:MCE:1112:a9
+Fav	P:MCE:1112:ab
+.	P:MCE:1112:ac
+. (Dot)	P:MCE:1112:ac
+Return	P:MCE:1112:d7
+Split	P:MCE:1112:d8
+Bbe	P:MCE:1112:db
+Recall	P:MCE:1112:dc
+@Hewlett Packard	Plasma 2,17
+Power On	P:MCE:1102:0
+Power Off	P:MCE:1102:1
+Input Tv	P:MCE:1102:a
+Input Av1	P:MCE:1102:d
+Input Av2	P:MCE:1102:e
+Input Av3	P:MCE:1102:f
+Input S-Video	P:MCE:1102:12
+Input Ypbrpr1	P:MCE:1102:13
+Input Ypbrpr2	P:MCE:1102:14
+Input Hdmi	P:MCE:1102:15
+Input Dvi	P:MCE:1102:17
+Input Rgb	P:MCE:1102:18
+Mute On	P:MCE:1102:19
+Mute Off	P:MCE:1102:1a
+@Hewlett Packard	TV 2,17
+Power On	P:MCE:1102:0
+Power Off	P:MCE:1102:1
+Tuner 1	P:MCE:1102:a
+Input Tv	P:MCE:1102:a
+Tuner 2	P:MCE:1102:b
+Tuner 3	P:MCE:1102:c
+Av 1	P:MCE:1102:d
+Input Av1	P:MCE:1102:d
+Av 2	P:MCE:1102:e
+Input Av2	P:MCE:1102:e
+Av 3	P:MCE:1102:f
+Input Av3	P:MCE:1102:f
+Sv 1	P:MCE:1102:10
+Sv 2	P:MCE:1102:11
+Sv 3	P:MCE:1102:12
+Input S-Video	P:MCE:1102:12
+Yprpb 1	P:MCE:1102:13
+Input Ypbrpr1	P:MCE:1102:13
+Yprpb 2	P:MCE:1102:14
+Input Ypbrpr2	P:MCE:1102:14
+Hdmi 1	P:MCE:1102:15
+Input Hdmi	P:MCE:1102:15
+Hdmi 2	P:MCE:1102:16
+Rgb 1	P:MCE:1102:17
+Input Dvi	P:MCE:1102:17
+Rgb 2	P:MCE:1102:18
+Input Rgb	P:MCE:1102:18
+Mute On	P:MCE:1102:19
+Mute Off	P:MCE:1102:1a
 @Hieneking Media	Hieneking Media Schule
 Power	P:NECext:7d02:b946
 Up	P:NECext:7d02:b748
@@ -5885,6 +6396,7 @@ Multimedia	P:NECext:fb04:6798
 Tv Guide	P:NECext:fb04:56a9
 Info	P:NECext:fb04:55aa
 Guide	P:NECext:fb04:54ab
+Componet	P:NECext:fb04:40bf
 Component 1	P:NECext:fb04:40bf
 Power On	P:NECext:fb04:3bc4
 Power Off	P:NECext:fb04:3ac5
@@ -6938,6 +7450,34 @@ Audio	P:NECext:fb04:f20d
 9	P:NECext:fb04:e619
 Recall	P:NECext:fb04:e51a
 Display	P:NECext:fb04:e41b
+@Mitsubishi	Monitor 1,-1
+1	P:Sharp:1:1
+2	P:Sharp:1:2
+3	P:Sharp:1:3
+4	P:Sharp:1:4
+5	P:Sharp:1:5
+6	P:Sharp:1:6
+7	P:Sharp:1:7
+8	P:Sharp:1:8
+9	P:Sharp:1:9
+0	P:Sharp:1:a
+100	P:Sharp:1:b
+Channel ^	P:Sharp:1:11
+Channel V	P:Sharp:1:12
+Input	P:Sharp:1:13
+Vol +	P:Sharp:1:14
+Vol -	P:Sharp:1:15
+Power	P:Sharp:1:16
+Mute	P:Sharp:1:17
+Display	P:Sharp:1:1b
+Preview	P:Sharp:1:1c
+Menu	P:Sharp:1:20
+Qv	P:Sharp:1:2f
+@Mitsubishi	Monitor 119,-1
+Skip Search	P:Mitsubishi:77:3
+Audio Tv/Vcr	P:Mitsubishi:77:5
+Audio Vcr/Tv	P:Mitsubishi:77:5
+Repeat	P:Mitsubishi:77:17
 @Mitsubishi	Monitor 130,100
 Set/Stellen	P:NECext:6482:ff00
 Set	P:NECext:6482:ff00
@@ -6973,6 +7513,8 @@ Down	P:NECext:6482:b34c
 4	P:NECext:6482:ab54
 5	P:NECext:6482:aa55
 6	P:NECext:6482:a956
+@Mitsubishi	Monitor 2,-1
+Vcr/Tv	P:PanasonicOld:2:2a
 @Mitsubishi	Monitor 4,-1
 ^	P:NECext:fb04:ff00
 ^ (Channel)	P:NECext:fb04:ff00
@@ -7001,6 +7543,660 @@ Off Timer	P:NECext:fb04:f10e
 8	P:NECext:fb04:e718
 9	P:NECext:fb04:e619
 Quick View	P:NECext:fb04:e51a
+@Mitsubishi	Monitor 71,-1
+Tv 1 (Sun)	P:Mitsubishi:47:0
+1 (Sun)	P:Mitsubishi:47:0
+Tv 1	P:Mitsubishi:47:0
+1	P:Mitsubishi:47:0
+Tv 9	P:Mitsubishi:47:1
+9	P:Mitsubishi:47:1
+Tv Power	P:Mitsubishi:47:2
+Power	P:Mitsubishi:47:2
+Color +	P:Mitsubishi:47:4
+Ext1	P:Mitsubishi:47:5
+Tv/Vcr	P:Mitsubishi:47:5
+Tv Cancel	P:Mitsubishi:47:7
+Cancel	P:Mitsubishi:47:7
+Tv	P:Mitsubishi:47:7
+Tv 2 (Mon)	P:Mitsubishi:47:8
+2 (Mon)	P:Mitsubishi:47:8
+Tv 2	P:Mitsubishi:47:8
+2	P:Mitsubishi:47:8
+Tv 0	P:Mitsubishi:47:9
+0	P:Mitsubishi:47:9
+Tv Ch ^	P:Mitsubishi:47:a
+Ch ^	P:Mitsubishi:47:a
+Tv Channel ^	P:Mitsubishi:47:a
+Scan ^ (Ch ^)	P:Mitsubishi:47:a
+Channel ^	P:Mitsubishi:47:a
+Scan ^(Ch ^)	P:Mitsubishi:47:a
+Tv Ch^	P:Mitsubishi:47:a
+Scan^(Ch^)	P:Mitsubishi:47:a
+Reset	P:Mitsubishi:47:b
+Color -	P:Mitsubishi:47:c
+Ext2	P:Mitsubishi:47:d
+Tv Q.V.	P:Mitsubishi:47:f
+Q.V. (Quick View)	P:Mitsubishi:47:f
+Tv Qv	P:Mitsubishi:47:f
+Qv	P:Mitsubishi:47:f
+Q.V.	P:Mitsubishi:47:f
+Tv 3 (Tue)	P:Mitsubishi:47:10
+3 (Tue)	P:Mitsubishi:47:10
+3	P:Mitsubishi:47:10
+Tv 3	P:Mitsubishi:47:10
+Tv Ch V	P:Mitsubishi:47:12
+Ch V	P:Mitsubishi:47:12
+Tv Channel V	P:Mitsubishi:47:12
+Scan V (Ch V)	P:Mitsubishi:47:12
+Channel V	P:Mitsubishi:47:12
+Scan V(Ch V)	P:Mitsubishi:47:12
+Tv Chv	P:Mitsubishi:47:12
+Scanv(Chv)	P:Mitsubishi:47:12
+Expand	P:Mitsubishi:47:13
+Tv Off-T Otr	P:Mitsubishi:47:17
+Off-T Otr	P:Mitsubishi:47:17
+Tv Off-T/Otr	P:Mitsubishi:47:17
+Off-T/Otr	P:Mitsubishi:47:17
+Off-T	P:Mitsubishi:47:17
+Off-Tv/Qtr	P:Mitsubishi:47:17
+Off Timer	P:Mitsubishi:47:17
+Tv Sleep	P:Mitsubishi:47:17
+Tv 4 (Wed)	P:Mitsubishi:47:18
+4 (Wed)	P:Mitsubishi:47:18
+Tv 4	P:Mitsubishi:47:18
+4	P:Mitsubishi:47:18
+Input V	P:Mitsubishi:47:1a
+Ant A/B	P:Mitsubishi:47:1a
+Inputv	P:Mitsubishi:47:1a
+Tv Disp	P:Mitsubishi:47:1b
+Disp (Display)	P:Mitsubishi:47:1b
+Disp	P:Mitsubishi:47:1b
+Data On Screen	P:Mitsubishi:47:1b
+Display	P:Mitsubishi:47:1b
+Tv Info	P:Mitsubishi:47:1b
+Tv 5 (Thu)	P:Mitsubishi:47:20
+5 (Thu)	P:Mitsubishi:47:20
+Tv 5	P:Mitsubishi:47:20
+5	P:Mitsubishi:47:20
+Vol ^	P:Mitsubishi:47:22
+Volume ^	P:Mitsubishi:47:22
+Contrast +	P:Mitsubishi:47:23
+Repeat	P:Mitsubishi:47:27
+Tv 6 (Fri)	P:Mitsubishi:47:28
+6 (Fri)	P:Mitsubishi:47:28
+Tv 6	P:Mitsubishi:47:28
+6	P:Mitsubishi:47:28
+Vol V	P:Mitsubishi:47:2a
+Volume V	P:Mitsubishi:47:2a
+Contrast -	P:Mitsubishi:47:2b
+Tv 7 (Sat)	P:Mitsubishi:47:30
+7 (Sat)	P:Mitsubishi:47:30
+Tv 7	P:Mitsubishi:47:30
+7	P:Mitsubishi:47:30
+Mute	P:Mitsubishi:47:32
+Muting	P:Mitsubishi:47:32
+Tint +	P:Mitsubishi:47:33
+Slow	P:Mitsubishi:47:34
+Tv Enter	P:Mitsubishi:47:35
+Enter	P:Mitsubishi:47:35
+Index -	P:Mitsubishi:47:36
+Tv 8 (M-F)	P:Mitsubishi:47:38
+8 (M-F)	P:Mitsubishi:47:38
+Tv 8	P:Mitsubishi:47:38
+8	P:Mitsubishi:47:38
+Tv Input	P:Mitsubishi:47:3a
+Input	P:Mitsubishi:47:3a
+Tv Input ^	P:Mitsubishi:47:3a
+Input ^	P:Mitsubishi:47:3a
+Video/Tv	P:Mitsubishi:47:3a
+Input^	P:Mitsubishi:47:3a
+Tint -	P:Mitsubishi:47:3b
+Next	P:Mitsubishi:47:3d
+Skip	P:Mitsubishi:47:3d
+Index +	P:Mitsubishi:47:3e
+Tv Video	P:Mitsubishi:47:40
+Video	P:Mitsubishi:47:40
+Tv Video ^	P:Mitsubishi:47:40
+Video ^	P:Mitsubishi:47:40
+Function Video	P:Mitsubishi:47:40
+Video^	P:Mitsubishi:47:40
+Tv Adj >	P:Mitsubishi:47:41
+Adj >	P:Mitsubishi:47:41
+Tv Adjust ^	P:Mitsubishi:47:41
+Adj ^	P:Mitsubishi:47:41
+Adjust ^	P:Mitsubishi:47:41
+Adj(Adjust) ^	P:Mitsubishi:47:41
+Adjust^	P:Mitsubishi:47:41
+Tv Video V	P:Mitsubishi:47:48
+Video V	P:Mitsubishi:47:48
+Videov	P:Mitsubishi:47:48
+Tv Adj <	P:Mitsubishi:47:49
+Adj <	P:Mitsubishi:47:49
+Tv Adjust V	P:Mitsubishi:47:49
+Adj V	P:Mitsubishi:47:49
+Adjust V	P:Mitsubishi:47:49
+Adj(Adjust) V	P:Mitsubishi:47:49
+Adjustv	P:Mitsubishi:47:49
+Tv Exch V	P:Mitsubishi:47:49
+Sqv	P:Mitsubishi:47:4e
+Tv Sqv	P:Mitsubishi:47:4e
+Tv Audio	P:Mitsubishi:47:50
+Audio	P:Mitsubishi:47:50
+Tv Audio ^	P:Mitsubishi:47:50
+Audio ^	P:Mitsubishi:47:50
+Function Audio	P:Mitsubishi:47:50
+Audio^	P:Mitsubishi:47:50
+Tv Mode	P:Mitsubishi:47:52
+Mode	P:Mitsubishi:47:52
+Tv Menu	P:Mitsubishi:47:52
+Menu	P:Mitsubishi:47:52
+Tv Audio V	P:Mitsubishi:47:58
+Audio V	P:Mitsubishi:47:58
+Audiov	P:Mitsubishi:47:58
+Tv Source	P:Mitsubishi:47:5f
+Source	P:Mitsubishi:47:5f
+-2	P:Mitsubishi:47:5f
+<	P:Mitsubishi:47:65
+Tv <	P:Mitsubishi:47:65
+-5	P:Mitsubishi:47:66
+Unknown	P:Mitsubishi:47:66
+Freeze	P:Mitsubishi:47:67
+Pause(Freeze)	P:Mitsubishi:47:67
+Freeze(Pause)	P:Mitsubishi:47:67
+Pip Freeze(Pause)	P:Mitsubishi:47:67
+>	P:Mitsubishi:47:6d
+Tv >	P:Mitsubishi:47:6d
+Tv Position	P:Mitsubishi:47:6e
+Position	P:Mitsubishi:47:6e
+-4	P:Mitsubishi:47:6e
+Rec (Starsight)	P:Mitsubishi:47:75
+Tv Pip Ch ^	P:Mitsubishi:47:76
+Tv Pip	P:Mitsubishi:47:77
+Pip	P:Mitsubishi:47:77
+-1	P:Mitsubishi:47:77
+Home	P:Mitsubishi:47:7d
+Tv Home	P:Mitsubishi:47:7d
+Tv Pip Ch V	P:Mitsubishi:47:7e
+Tv Exch	P:Mitsubishi:47:7f
+Exch	P:Mitsubishi:47:7f
+Exch (Exchange)	P:Mitsubishi:47:7f
+-3	P:Mitsubishi:47:7f
+Ext 1	P:Mitsubishi:47:80
+Mono-Chrome	P:Mitsubishi:47:81
+Cont	P:Mitsubishi:47:83
+Ext 2	P:Mitsubishi:47:88
+Bright	P:Mitsubishi:47:8b
+Ext 3	P:Mitsubishi:47:90
+Sharpness	P:Mitsubishi:47:93
+Set +	P:Mitsubishi:47:94
+Vtr	P:Mitsubishi:47:98
+S-Video	P:Mitsubishi:47:99
+Color	P:Mitsubishi:47:9b
+Set -	P:Mitsubishi:47:9c
+Separate	P:Mitsubishi:47:a1
+Tint	P:Mitsubishi:47:a3
+H.Size	P:Mitsubishi:47:a4
+Over/Under	P:Mitsubishi:47:a7
+16	P:Mitsubishi:47:a8
+On Green	P:Mitsubishi:47:a9
+Balance	P:Mitsubishi:47:ab
+V.Size	P:Mitsubishi:47:ac
+64	P:Mitsubishi:47:b0
+Treble	P:Mitsubishi:47:b3
+H.Pos	P:Mitsubishi:47:b4
+Superimp	P:Mitsubishi:47:b7
+Auto	P:Mitsubishi:47:b8
+Bass	P:Mitsubishi:47:bb
+V.Pos	P:Mitsubishi:47:bc
+@Mitsubishi	Monitor 87,-1
+Vcr 1 (Sun)	P:Mitsubishi:57:0
+Vcr 1	P:Mitsubishi:57:0
+Vcra 1	P:Mitsubishi:57:0
+Vcr 9	P:Mitsubishi:57:1
+Vcra 9	P:Mitsubishi:57:1
+Vcr Power	P:Mitsubishi:57:2
+Vcra Power	P:Mitsubishi:57:2
+Vcr Play >	P:Mitsubishi:57:4
+Vcr Play	P:Mitsubishi:57:4
+Vcra Play >	P:Mitsubishi:57:4
+Video/Tv	P:Mitsubishi:57:5
+Vcr/Tv	P:Mitsubishi:57:5
+Tv/Vcr	P:Mitsubishi:57:5
+Vcra Tv/Vcr	P:Mitsubishi:57:5
+Vcra Vcr/Tv	P:Mitsubishi:57:5
+Vcr 2 (Mon)	P:Mitsubishi:57:8
+Vcr 2	P:Mitsubishi:57:8
+Vcra 2	P:Mitsubishi:57:8
+Vcr 0	P:Mitsubishi:57:9
+Vcra 0	P:Mitsubishi:57:9
+Vcr Ch ^	P:Mitsubishi:57:a
+Vcr Channel ^	P:Mitsubishi:57:a
+Vcr Cancel	P:Mitsubishi:57:b
+Vcra Cancel	P:Mitsubishi:57:b
+Vcr Rec	P:Mitsubishi:57:c
+Vcra Rec	P:Mitsubishi:57:c
+Index +	P:Mitsubishi:57:e
+Vcra >	P:Mitsubishi:57:e
+Vcr 3 (Tue)	P:Mitsubishi:57:10
+Vcr 3	P:Mitsubishi:57:10
+Vcra 3	P:Mitsubishi:57:10
+Vcr Ch V	P:Mitsubishi:57:12
+Vcr Channel V	P:Mitsubishi:57:12
+Vcr Stop []	P:Mitsubishi:57:14
+Vcr Stop	P:Mitsubishi:57:14
+Vcra Stop []	P:Mitsubishi:57:14
+Index -	P:Mitsubishi:57:16
+Vcra <	P:Mitsubishi:57:16
+Vcr 4 (Wed)	P:Mitsubishi:57:18
+Vcr 4	P:Mitsubishi:57:18
+Vcra 4	P:Mitsubishi:57:18
+Vcr Input V	P:Mitsubishi:57:1a
+Vcr Input ^	P:Mitsubishi:57:1a
+Vcr Pause	P:Mitsubishi:57:1c
+Vcra Pause	P:Mitsubishi:57:1c
+Vcr 5 (Thu)	P:Mitsubishi:57:20
+Vcr 5	P:Mitsubishi:57:20
+Vcra 5	P:Mitsubishi:57:20
+Vcr Ff/Srch >>	P:Mitsubishi:57:24
+Vcr Ff/Search >>	P:Mitsubishi:57:24
+Vcra Ff/Fwd >>	P:Mitsubishi:57:24
+Vcr Q.V.	P:Mitsubishi:57:25
+Vcr Qv	P:Mitsubishi:57:25
+Qv	P:Mitsubishi:57:25
+Vcra Sqv/Qv	P:Mitsubishi:57:25
+Vcr Disp	P:Mitsubishi:57:27
+Vcra Info	P:Mitsubishi:57:27
+Vcr 6 (Fri)	P:Mitsubishi:57:28
+Vcr 6	P:Mitsubishi:57:28
+Vcra 6	P:Mitsubishi:57:28
+Vcr Rew/Srch <<	P:Mitsubishi:57:2c
+Vcr Rew/Search <<	P:Mitsubishi:57:2c
+Vcra Rew/Rev <<	P:Mitsubishi:57:2c
+Vcr Off-T Otr	P:Mitsubishi:57:2f
+Vcr Off-T/Otr	P:Mitsubishi:57:2f
+Off-T	P:Mitsubishi:57:2f
+Vcra Sleep	P:Mitsubishi:57:2f
+Vcr 7 (Sat)	P:Mitsubishi:57:30
+Vcr 7	P:Mitsubishi:57:30
+Vcra 7	P:Mitsubishi:57:30
+Quick Program	P:Mitsubishi:57:33
+Vcr Enter	P:Mitsubishi:57:35
+Enter	P:Mitsubishi:57:35
+Vcra Enter	P:Mitsubishi:57:35
+Vcr 8 (M-F)	P:Mitsubishi:57:38
+Vcr 8	P:Mitsubishi:57:38
+Vcra 8	P:Mitsubishi:57:38
+Vcr Input	P:Mitsubishi:57:3a
+Vcra Input	P:Mitsubishi:57:3a
+Vcr Video	P:Mitsubishi:57:40
+Vcr Video ^	P:Mitsubishi:57:40
+Vcra Video	P:Mitsubishi:57:40
+Vcr Adj >	P:Mitsubishi:57:41
+Vcr Adjust ^	P:Mitsubishi:57:41
+^	P:Mitsubishi:57:41
+Vcra Adjust ^	P:Mitsubishi:57:41
+Vcr Video V	P:Mitsubishi:57:48
+Vcr Adj <	P:Mitsubishi:57:49
+Vcr Adjust V	P:Mitsubishi:57:49
+V	P:Mitsubishi:57:49
+Vcra Exch V	P:Mitsubishi:57:49
+Vcr Audio	P:Mitsubishi:57:50
+Vcr Audio ^	P:Mitsubishi:57:50
+Vcra Audio	P:Mitsubishi:57:50
+Vcr Mode	P:Mitsubishi:57:52
+Vcr Menu	P:Mitsubishi:57:52
+Vcra Menu	P:Mitsubishi:57:52
+Vcr Audio V	P:Mitsubishi:57:58
+1	P:Mitsubishi:57:80
+Vcrb 1	P:Mitsubishi:57:80
+9	P:Mitsubishi:57:81
+Vcrb 9	P:Mitsubishi:57:81
+Power	P:Mitsubishi:57:82
+Vcrb Power	P:Mitsubishi:57:82
+Play >	P:Mitsubishi:57:84
+Vcrb Play >	P:Mitsubishi:57:84
+Vcrb Tv/Vcr	P:Mitsubishi:57:85
+Vcrb Vcr/Tv	P:Mitsubishi:57:85
+2	P:Mitsubishi:57:88
+Vcrb 2	P:Mitsubishi:57:88
+0	P:Mitsubishi:57:89
+Vcrb 0	P:Mitsubishi:57:89
+Ch ^ (Scan ^)	P:Mitsubishi:57:8a
+Vcrb Channel ^	P:Mitsubishi:57:8a
+Cancel	P:Mitsubishi:57:8b
+Vcrb Cancel	P:Mitsubishi:57:8b
+Rec	P:Mitsubishi:57:8c
+Vcrb Rec	P:Mitsubishi:57:8c
+Zero Stop	P:Mitsubishi:57:8d
+Slow +	P:Mitsubishi:57:8e
+Index Srch +	P:Mitsubishi:57:8e
+Vcrb >	P:Mitsubishi:57:8e
+3	P:Mitsubishi:57:90
+Vcrb 3	P:Mitsubishi:57:90
+Ch V (Scan V)	P:Mitsubishi:57:92
+Vcrb Channel V	P:Mitsubishi:57:92
+Stop []	P:Mitsubishi:57:94
+Vcrb Stop []	P:Mitsubishi:57:94
+Slow -	P:Mitsubishi:57:96
+Index Srch -	P:Mitsubishi:57:96
+Vcrb <	P:Mitsubishi:57:96
+4	P:Mitsubishi:57:98
+Vcrb 4	P:Mitsubishi:57:98
+Pause	P:Mitsubishi:57:9c
+Vcrb Pause	P:Mitsubishi:57:9c
+5	P:Mitsubishi:57:a0
+Vcrb 5	P:Mitsubishi:57:a0
+Ff/Srch >>	P:Mitsubishi:57:a4
+Vcrb Ff/Fwd >>	P:Mitsubishi:57:a4
+Fast Play	P:Mitsubishi:57:a5
+Q.V.	P:Mitsubishi:57:a5
+Vcrb Sqv/Qv	P:Mitsubishi:57:a5
+Display	P:Mitsubishi:57:a7
+Vcrb Info	P:Mitsubishi:57:a7
+6	P:Mitsubishi:57:a8
+Vcrb 6	P:Mitsubishi:57:a8
+Rew/Srch <<	P:Mitsubishi:57:ac
+Vcrb Rew/Rev <<	P:Mitsubishi:57:ac
+Off-T Otr	P:Mitsubishi:57:af
+Vcrb Sleep	P:Mitsubishi:57:af
+7	P:Mitsubishi:57:b0
+Vcrb 7	P:Mitsubishi:57:b0
+Slow >	P:Mitsubishi:57:b4
+Vcrb Enter	P:Mitsubishi:57:b5
+8	P:Mitsubishi:57:b8
+Vcrb 8	P:Mitsubishi:57:b8
+Input Select	P:Mitsubishi:57:ba
+Input	P:Mitsubishi:57:ba
+Vcrb Input	P:Mitsubishi:57:ba
+Video	P:Mitsubishi:57:c0
+Vcrb Video	P:Mitsubishi:57:c0
+Vcrb Adjust ^	P:Mitsubishi:57:c1
+Vcrb Exch V	P:Mitsubishi:57:c9
+Audio	P:Mitsubishi:57:d0
+Vcrb Audio	P:Mitsubishi:57:d0
+Menu	P:Mitsubishi:57:d2
+Vcrb Menu	P:Mitsubishi:57:d2
+Adjust -	P:Mitsubishi:57:f3
+Adjust +	P:Mitsubishi:57:f4
+@Mitsubishi	TV 1,-1
+1	P:Sharp:1:1
+2	P:Sharp:1:2
+3	P:Sharp:1:3
+4	P:Sharp:1:4
+5	P:Sharp:1:5
+6	P:Sharp:1:6
+7	P:Sharp:1:7
+8	P:Sharp:1:8
+9	P:Sharp:1:9
+0	P:Sharp:1:a
+100	P:Sharp:1:b
+Channel +	P:Sharp:1:11
+Channel -	P:Sharp:1:12
+Input Source	P:Sharp:1:13
+Volume +	P:Sharp:1:14
+Volume -	P:Sharp:1:15
+Power	P:Sharp:1:16
+Mute	P:Sharp:1:17
+Display	P:Sharp:1:1b
+Menu	P:Sharp:1:20
+@Mitsubishi	TV 119,-1
+Cable Input V	P:Mitsubishi:77:1a
+Cable Input ^	P:Mitsubishi:77:3a
+@Mitsubishi	TV 71,-1
+1	P:Mitsubishi:47:0
+Tv 1	P:Mitsubishi:47:0
+9	P:Mitsubishi:47:1
+Tv 9	P:Mitsubishi:47:1
+Power	P:Mitsubishi:47:2
+Tv Power	P:Mitsubishi:47:2
+St/Sap/Mono	P:Mitsubishi:47:3
+Color +	P:Mitsubishi:47:4
+External 1	P:Mitsubishi:47:5
+Cancel	P:Mitsubishi:47:7
+Tv Cancel	P:Mitsubishi:47:7
+Tv	P:Mitsubishi:47:7
+2	P:Mitsubishi:47:8
+Tv 2	P:Mitsubishi:47:8
+0	P:Mitsubishi:47:9
+Tv 0	P:Mitsubishi:47:9
+Channel +	P:Mitsubishi:47:a
+Channel Up	P:Mitsubishi:47:a
+Scan ^ (Ch ^)	P:Mitsubishi:47:a
+Tv Channel ^	P:Mitsubishi:47:a
+Scan ^(Ch ^)	P:Mitsubishi:47:a
+Channel ^	P:Mitsubishi:47:a
+Reset	P:Mitsubishi:47:b
+Color -	P:Mitsubishi:47:c
+External 2	P:Mitsubishi:47:d
+Quick View	P:Mitsubishi:47:f
+Q/V	P:Mitsubishi:47:f
+Qv	P:Mitsubishi:47:f
+Tv Qv	P:Mitsubishi:47:f
+Q.V.	P:Mitsubishi:47:f
+Q / V	P:Mitsubishi:47:f
+Rcl	P:Mitsubishi:47:f
+3	P:Mitsubishi:47:10
+Tv 3	P:Mitsubishi:47:10
+Channel -	P:Mitsubishi:47:12
+Channel Down	P:Mitsubishi:47:12
+Scan V (Ch V)	P:Mitsubishi:47:12
+Tv Channel V	P:Mitsubishi:47:12
+Scan V(Ch V)	P:Mitsubishi:47:12
+Channel V	P:Mitsubishi:47:12
+Exp	P:Mitsubishi:47:13
+Audio Expansion	P:Mitsubishi:47:13
+Off-T	P:Mitsubishi:47:17
+Timer	P:Mitsubishi:47:17
+Off-T/Otr	P:Mitsubishi:47:17
+Tv Sleep	P:Mitsubishi:47:17
+Sleep	P:Mitsubishi:47:17
+4	P:Mitsubishi:47:18
+Tv 4	P:Mitsubishi:47:18
+Input -	P:Mitsubishi:47:1a
+Ant A/B	P:Mitsubishi:47:1a
+Input V	P:Mitsubishi:47:1a
+Antenna	P:Mitsubishi:47:1a
+Display	P:Mitsubishi:47:1b
+Disp	P:Mitsubishi:47:1b
+Tv Info	P:Mitsubishi:47:1b
+Info	P:Mitsubishi:47:1b
+Display Recall	P:Mitsubishi:47:1b
+Channel Lock	P:Mitsubishi:47:1f
+5	P:Mitsubishi:47:20
+Tv 5	P:Mitsubishi:47:20
+Volume +	P:Mitsubishi:47:22
+Volume Up	P:Mitsubishi:47:22
+Vol ^	P:Mitsubishi:47:22
+Volume ^	P:Mitsubishi:47:22
+Contrast +	P:Mitsubishi:47:23
+6	P:Mitsubishi:47:28
+Tv 6	P:Mitsubishi:47:28
+Volume -	P:Mitsubishi:47:2a
+Volume Down	P:Mitsubishi:47:2a
+Vol V	P:Mitsubishi:47:2a
+Volume V	P:Mitsubishi:47:2a
+Contrast -	P:Mitsubishi:47:2b
+Mono	P:Mitsubishi:47:2f
+7	P:Mitsubishi:47:30
+Tv 7	P:Mitsubishi:47:30
+Input; Vga	P:Mitsubishi:47:31
+Mute	P:Mitsubishi:47:32
+Muting	P:Mitsubishi:47:32
+Av Memory	P:Mitsubishi:47:33
+Tint +	P:Mitsubishi:47:33
+Enter	P:Mitsubishi:47:35
+Enter/Exch	P:Mitsubishi:47:35
+Tv Enter	P:Mitsubishi:47:35
+Exch	P:Mitsubishi:47:35
+Sub	P:Mitsubishi:47:36
+Sap	P:Mitsubishi:47:37
+8	P:Mitsubishi:47:38
+Tv 8	P:Mitsubishi:47:38
+Input +	P:Mitsubishi:47:3a
+Tv/Ext1/2	P:Mitsubishi:47:3a
+Input ^	P:Mitsubishi:47:3a
+Tv Input	P:Mitsubishi:47:3a
+Input	P:Mitsubishi:47:3a
+Device	P:Mitsubishi:47:3a
+Input Source	P:Mitsubishi:47:3a
+Tint -	P:Mitsubishi:47:3b
+Format	P:Mitsubishi:47:3e
+Stereo	P:Mitsubishi:47:3f
+Video ^	P:Mitsubishi:47:40
+Video	P:Mitsubishi:47:40
+Tv Video	P:Mitsubishi:47:40
+Cursor Up	P:Mitsubishi:47:41
+Adjust ^	P:Mitsubishi:47:41
+Up	P:Mitsubishi:47:41
+Tv Adjust ^	P:Mitsubishi:47:41
+Adjust	P:Mitsubishi:47:41
+Arrow Up	P:Mitsubishi:47:41
+On	P:Mitsubishi:47:42
+Power On	P:Mitsubishi:47:42
+Function	P:Mitsubishi:47:43
+Function <	P:Mitsubishi:47:45
+Video V	P:Mitsubishi:47:48
+Cursor Down	P:Mitsubishi:47:49
+Adjust V	P:Mitsubishi:47:49
+Down	P:Mitsubishi:47:49
+Tv Exch V	P:Mitsubishi:47:49
+Tv Adjust V	P:Mitsubishi:47:49
+Arrow Down	P:Mitsubishi:47:49
+Off	P:Mitsubishi:47:4a
+Power Off	P:Mitsubishi:47:4a
+Ant B	P:Mitsubishi:47:4c
+Input: Antenna B	P:Mitsubishi:47:4c
+Sqv	P:Mitsubishi:47:4e
+Tv Sqv	P:Mitsubishi:47:4e
+Audio ^	P:Mitsubishi:47:50
+Audio	P:Mitsubishi:47:50
+Tv Audio	P:Mitsubishi:47:50
+Menu	P:Mitsubishi:47:52
+Tv Menu	P:Mitsubishi:47:52
+Munu	P:Mitsubishi:47:52
+Unknown #2	P:Mitsubishi:47:54
+Audio V	P:Mitsubishi:47:58
+Input; Video 5	P:Mitsubishi:47:59
+Ant A	P:Mitsubishi:47:5a
+Input: Antenna A	P:Mitsubishi:47:5a
+Function >	P:Mitsubishi:47:5c
+Unknown #1	P:Mitsubishi:47:5c
+Pip Source	P:Mitsubishi:47:5f
+Tv Source	P:Mitsubishi:47:5f
+Source	P:Mitsubishi:47:5f
+Pip Input	P:Mitsubishi:47:5f
+Input; Comp 2	P:Mitsubishi:47:61
+Input 1	P:Mitsubishi:47:62
+Input: Video 1	P:Mitsubishi:47:62
+Tv Guide	P:Mitsubishi:47:63
+Guide	P:Mitsubishi:47:63
+Cursor Left	P:Mitsubishi:47:65
+Left	P:Mitsubishi:47:65
+Tv <	P:Mitsubishi:47:65
+Tv Adjust <	P:Mitsubishi:47:65
+Arrow Left	P:Mitsubishi:47:65
+Freeze (Pause)	P:Mitsubishi:47:67
+Input; Comp 1	P:Mitsubishi:47:69
+Input 2	P:Mitsubishi:47:6a
+Input: Video 2	P:Mitsubishi:47:6a
+Cursor Right	P:Mitsubishi:47:6d
+Right	P:Mitsubishi:47:6d
+Tv >	P:Mitsubishi:47:6d
+Tv Adjust >	P:Mitsubishi:47:6d
+Arrow Right	P:Mitsubishi:47:6d
+Position	P:Mitsubishi:47:6e
+Pip Audio	P:Mitsubishi:47:6f
+Input: Dtv Ant	P:Mitsubishi:47:71
+Input 3	P:Mitsubishi:47:72
+Input: Video 3	P:Mitsubishi:47:72
+Pip Chan +	P:Mitsubishi:47:76
+Pip Channel +	P:Mitsubishi:47:76
+Pip	P:Mitsubishi:47:77
+Pip On/Off	P:Mitsubishi:47:77
+Tv Pip	P:Mitsubishi:47:77
+Pip/Pop	P:Mitsubishi:47:77
+Input: Dtv	P:Mitsubishi:47:79
+Input; Video 4	P:Mitsubishi:47:7a
+Home	P:Mitsubishi:47:7d
+Tv Home	P:Mitsubishi:47:7d
+Pip Chan -	P:Mitsubishi:47:7e
+Pip Channel -	P:Mitsubishi:47:7e
+@Mitsubishi	TV 87,-1
+Vcr/Tv	P:Mitsubishi:57:5
+V/Tv	P:Mitsubishi:57:5
+Vcra Tv/Vcr	P:Mitsubishi:57:5
+Tv Pip Vcr Ch ^	P:Mitsubishi:57:a
+Tv Pip Vcr Ch V	P:Mitsubishi:57:12
+Vcra Input V	P:Mitsubishi:57:1a
+Quick Program	P:Mitsubishi:57:33
+Vcra Input ^	P:Mitsubishi:57:3a
+Input	P:Mitsubishi:57:3a
+Vcrb Tv/Vcr	P:Mitsubishi:57:85
+Vcrb Input V	P:Mitsubishi:57:9a
+Vcrb Input ^	P:Mitsubishi:57:ba
+@Mitsubishi	Unknown_tv 71,-1
+Key_1	P:Mitsubishi:47:0
+Key_9	P:Mitsubishi:47:1
+Key_Power	P:Mitsubishi:47:2
+St/Mono	P:Mitsubishi:47:3
+Key_Text	P:Mitsubishi:47:6
+Key_2	P:Mitsubishi:47:8
+Key_0	P:Mitsubishi:47:9
+Key_Channelup	P:Mitsubishi:47:a
+Colour-Select	P:Mitsubishi:47:c
+Status	P:Mitsubishi:47:d
+Key_Last	P:Mitsubishi:47:f
+Key_3	P:Mitsubishi:47:10
+Key_1-	P:Mitsubishi:47:11
+Key_Channeldown	P:Mitsubishi:47:12
+Audio-Select	P:Mitsubishi:47:13
+Hold	P:Mitsubishi:47:15
+Key_4	P:Mitsubishi:47:18
+Key_2-	P:Mitsubishi:47:19
+Cancel/Time	P:Mitsubishi:47:1d
+Store	P:Mitsubishi:47:1e
+Display	P:Mitsubishi:47:1f
+Key_5	P:Mitsubishi:47:20
+Key_Volumeup	P:Mitsubishi:47:22
+Key_Mode	P:Mitsubishi:47:25
+Index	P:Mitsubishi:47:26
+Key_Blue	P:Mitsubishi:47:27
+Key_6	P:Mitsubishi:47:28
+Key_Volumedown	P:Mitsubishi:47:2a
+Size	P:Mitsubishi:47:2c
+Turnright	P:Mitsubishi:47:2d
+S\*\*\*\*	P:Mitsubishi:47:2e
+Key_Red	P:Mitsubishi:47:2f
+Key_7	P:Mitsubishi:47:30
+Key_Mute	P:Mitsubishi:47:32
+Key_Video	P:Mitsubishi:47:33
+Turnleft	P:Mitsubishi:47:35
+Browse	P:Mitsubishi:47:36
+Key_Green	P:Mitsubishi:47:37
+Key_8	P:Mitsubishi:47:38
+Input	P:Mitsubishi:47:3a
+Key_Audio	P:Mitsubishi:47:3b
+Reveal	P:Mitsubishi:47:3e
+Key_Yellow	P:Mitsubishi:47:3f
+Key_Right	P:Mitsubishi:47:41
+Preset	P:Mitsubishi:47:45
+Demo	P:Mitsubishi:47:46
+Key_Left	P:Mitsubishi:47:49
+Prevmenu	P:Mitsubishi:47:4b
+Key_Menu	P:Mitsubishi:47:52
+Realname	P:Mitsubishi:47:5b
+Key_Cyclewindows	P:Mitsubishi:47:5f
+Key_Up	P:Mitsubishi:47:64
+Aft	P:Mitsubishi:47:65
+Still	P:Mitsubishi:47:67
+Key_Down	P:Mitsubishi:47:6c
+Key_Next	P:Mitsubishi:47:6d
+Position	P:Mitsubishi:47:6e
+Degauss	P:Mitsubishi:47:73
+Band	P:Mitsubishi:47:75
+Pip	P:Mitsubishi:47:77
+Key_Enter	P:Mitsubishi:47:7b
+Exchange	P:Mitsubishi:47:7f
 @Mivar	Mivar LCD TV
 Power	P:NECext:fb00:f50a
 Vol_up	P:NECext:fb00:a758
@@ -7217,6 +8413,36 @@ Right	P:NECext:7f00:f10e
 Down	P:NECext:7f00:f20d
 Left	P:NECext:7f00:f00f
 Enter	P:NECext:7f00:ef10
+@NET TV	TV 2,-1
+Display	P:Proton:2:0
+Ch/Time Set ^	P:Proton:2:1
+Ch/Time Set V	P:Proton:2:2
+Volume ^	P:Proton:2:3
+Volume V	P:Proton:2:4
+Tv/Catv	P:Proton:2:5
+Sleep	P:Proton:2:7
+Return	P:Proton:2:8
+Mute	P:Proton:2:9
+Timer	P:Proton:2:a
+Cursor	P:Proton:2:b
+Cancel	P:Proton:2:c
+Tv/Av(Vga)	P:Proton:2:d
+Power	P:Proton:2:e
+Mts	P:Proton:2:f
+0	P:Proton:2:10
+1	P:Proton:2:11
+2	P:Proton:2:12
+3	P:Proton:2:13
+4	P:Proton:2:14
+5	P:Proton:2:15
+6	P:Proton:2:16
+7	P:Proton:2:17
+8	P:Proton:2:18
+9	P:Proton:2:19
+Normal	P:Proton:2:35
+Function	P:Proton:2:58
+Function Level ^	P:Proton:2:59
+Function Level V	P:Proton:2:5a
 @Nevir	NEVIR NVR-7409-39HD-N
 Standby	P:NEC:1:10
 Source	P:NEC:1:12
@@ -8355,6 +9581,27 @@ Sd Record	P:Panasonic:980:d5
 Previous	P:Panasonic:980:dc
 Next	P:Panasonic:980:dd
 Netflix	P:Panasonic:980:f2
+@Panasonic	Unknown_TV 0,-1
+Key_Mute	P:PanasonicOld:0:0
+R-Tune	P:PanasonicOld:0:a
+Key_Sleep	P:PanasonicOld:0:b
+TV/Video	P:PanasonicOld:0:d
+Key_Again	P:PanasonicOld:0:f
+Key_1	P:PanasonicOld:0:10
+Key_2	P:PanasonicOld:0:11
+Key_3	P:PanasonicOld:0:12
+Key_4	P:PanasonicOld:0:13
+Key_5	P:PanasonicOld:0:14
+Key_6	P:PanasonicOld:0:15
+Key_7	P:PanasonicOld:0:16
+Key_8	P:PanasonicOld:0:17
+Key_9	P:PanasonicOld:0:18
+Key_0	P:PanasonicOld:0:19
+Key_Power	P:PanasonicOld:0:20
+Key_Channelup	P:PanasonicOld:0:22
+Key_Channeldown	P:PanasonicOld:0:23
+Key_Volumeup	P:PanasonicOld:0:24
+Key_Volumedown	P:PanasonicOld:0:25
 @PDi	PD108-420
 Power	P:RC5:0:c
 Mute	P:RC5:0:d
@@ -9139,6 +10386,78 @@ AV Profile	R:38000:33:8545,4190,579,487,579,1539,578,486,580,1537,580,486,580,15
 Pic-In-Pic Mode	R:38000:33:8547,4191,578,487,579,1538,579,486,580,1538,579,487,579,1537,580,487,579,1537,580,1539,578,485,581,1537,580,487,579,1539,578,486,580,1537,580,489,577,489,577,1536,581,1537,580,1536,581,1537,580,486,580,1536,581,486,580,1537,580,486,580,486,580,486,580,489,577,1537,580,487,579,1537,580,25289,8544,4190,578,1539,578,1538,579,1538,579,1539,578,488,578,1539,577,485,581,1538,578,489,577,488,578,488,578,485,581,1538,579,486,580,1538,579,487,579,486,580,484,582,490,576,488,578,486,580,1539,578,486,580,487,579,1538,579,1538,579,1538,579,1538,579,1536,581,486,580,1537,580,1536,580,25287,8545,4191,577,487,579,1538,579,486,580,1536,580,485,581,1538,578,488,578,1539,578,1535,582,485,581,1536,580,487,579,1536,581,488,578,1537,580,486,580,486,580,1538,578,1539,578,1536,580,1536,580,513,553,1538,579,485,581,1538,578,488,578,487,579,485,581,486,580,1536,580,488,578,1538,578,25287,8544,4190,578,1538,579,1538,579,1537,579,1536,581,484,582,1564,553,486,580,1537,580,486,580,489,577,486,580,488,578,1536,581,486,580,1537,579,489,577,487,579,487,579,487,579,485,581,486,580,1539,578,488,578,487,579,1538,579,1538,578,1539,577,1537,579,1538,578,488,578,1537,580,1536,580
 Pic-In-Pic Swap	R:38000:33:8541,4188,579,487,578,1538,578,488,578,1537,579,486,580,1537,579,485,581,1537,579,1537,579,489,576,1532,584,487,578,1537,579,490,576,1535,581,486,580,486,579,1538,578,1538,578,1537,579,1539,577,487,579,1538,578,487,579,1538,578,486,580,487,579,489,576,489,577,1538,578,487,578,1536,580,25278,8541,4188,578,1538,578,1536,580,1537,579,1538,578,486,579,1536,580,486,579,1563,553,513,552,489,577,486,580,487,579,1536,580,489,576,1538,578,485,581,1538,578,487,579,1539,577,487,579,488,577,1537,579,487,579,487,578,487,579,1537,579,487,579,1537,579,1537,579,487,579,1537,579,1539,577,25279,8539,4188,579,488,577,1537,579,486,579,1537,579,488,578,1535,581,486,580,1537,579,1536,580,486,579,1536,580,486,579,1538,578,486,580,1538,578,488,577,487,579,1537,579,1537,579,1538,578,1537,579,485,581,1538,578,489,577,1537,579,487,579,487,578,488,578,488,577,1538,578,486,580,1537,579,25276,8542,4187,579,1538,578,1536,579,1535,581,1539,577,489,577,1536,580,488,578,1537,579,487,578,488,578,488,577,485,581,1538,578,486,579,1538,578,485,581,1537,579,486,580,1537,579,485,580,488,578,1537,579,486,580,486,579,486,580,1538,578,486,580,1535,581,1536,580,486,580,1541,575,1538,578
 Pic-In-Pic Move	R:38000:33:8537,4189,577,487,578,1539,577,513,552,1536,580,487,579,1538,578,485,580,1535,581,1537,579,487,578,1537,579,486,579,1534,582,486,579,1542,574,485,581,487,578,1535,581,1535,580,1537,579,1537,579,485,581,1537,579,485,580,1540,576,485,581,486,579,488,577,485,580,1537,579,486,579,1536,580,25275,8540,4187,579,1537,579,1537,579,1537,578,1536,580,488,577,1537,579,486,579,1537,579,484,581,487,578,486,579,513,552,1537,579,488,577,1563,552,490,576,1538,578,1533,582,1536,579,486,580,487,578,1536,580,486,580,488,577,486,580,487,578,487,578,1537,579,1535,581,486,579,1536,580,1536,579,25274,8541,4187,579,484,581,1538,578,486,579,1536,579,486,580,1535,580,488,577,1536,580,1535,580,486,580,1536,580,487,578,1537,579,487,578,1539,576,487,579,485,580,1537,579,1539,576,1537,579,1538,577,487,579,1535,581,486,580,1538,577,486,579,486,580,484,581,487,579,1537,578,489,577,1535,581,25273,8542,4187,579,1537,578,1538,578,1536,580,1536,580,486,579,1538,577,487,579,1536,580,487,578,489,576,488,578,486,579,1536,580,487,578,1536,579,487,579,1536,580,1536,580,1535,580,484,581,486,579,1538,578,486,580,488,577,486,579,487,578,488,578,1539,576,1536,579,487,579,1538,577,1536,580
+@Pioneer	TV 170,-1
+0	P:Pioneer40:55aa:0
+1	P:Pioneer40:55aa:1
+2	P:Pioneer40:55aa:2
+3	P:Pioneer40:55aa:3
+4	P:Pioneer40:55aa:4
+5	P:Pioneer40:55aa:5
+6	P:Pioneer40:55aa:6
+7	P:Pioneer40:55aa:7
+8	P:Pioneer40:55aa:8
+9	P:Pioneer40:55aa:9
+Volume +	P:Pioneer40:55aa:a
+Vol +	P:Pioneer40:55aa:a
+Volume -	P:Pioneer40:55aa:b
+Vol -	P:Pioneer40:55aa:b
+Tv	P:Pioneer40:55aa:c
+Tv Input Sel	P:Pioneer40:55aa:c
+Ld Input Sel	P:Pioneer40:55aa:d
+Input 2	P:Pioneer40:55aa:e
+Video2 Input Sel	P:Pioneer40:55aa:e
+Video 1	P:Pioneer40:55aa:f
+Input 1	P:Pioneer40:55aa:f
+Video1 Input Sel	P:Pioneer40:55aa:f
+Channel +	P:Pioneer40:55aa:10
+Ch +	P:Pioneer40:55aa:10
+Channel -	P:Pioneer40:55aa:11
+Ch -	P:Pioneer40:55aa:11
+Pip On/Off	P:Pioneer40:55aa:14
+P In P	P:Pioneer40:55aa:14
+Ch Scan	P:Pioneer40:55aa:15
+Shift	P:Pioneer40:55aa:17
+Still	P:Pioneer40:55aa:18
+Power	P:Pioneer40:55aa:1c
+Mts	P:Pioneer40:55aa:1e
+Ch Enter	P:Pioneer40:55aa:1f
+Enter	P:Pioneer40:55aa:1f
+Std/Av Mem	P:Pioneer40:55aa:43
+Sleep	P:Pioneer40:55aa:48
+Muting	P:Pioneer40:55aa:49
+Mute	P:Pioneer40:55aa:49
+Display	P:Pioneer40:55aa:4a
+Video 3	P:Pioneer40:55aa:56
+Input 3	P:Pioneer40:55aa:56
+Video3 Input Sel	P:Pioneer40:55aa:56
+Input	P:Pioneer40:55aa:57
+Return	P:Pioneer40:55aa:5c
+Ch Return	P:Pioneer40:55aa:5c
+Menu Set	P:Pioneer40:55aa:8a
+Set	P:Pioneer40:55aa:8a
+Menu	P:Pioneer40:55aa:8b
+Cursor Right	P:Pioneer40:55aa:94
+>	P:Pioneer40:55aa:94
+Cursor Left	P:Pioneer40:55aa:95
+<	P:Pioneer40:55aa:95
+Cursor Up	P:Pioneer40:55aa:96
+^	P:Pioneer40:55aa:96
+Cursor Down	P:Pioneer40:55aa:97
+V	P:Pioneer40:55aa:97
+Mode	P:Pioneer40:55aa:d3
+Input: Antenna	P:Pioneer40:55aa:d3
+Input: Dvd/Ld	P:Pioneer40:55aa:d3
+Input: Video 1	P:Pioneer40:55aa:d3
+Input: Video 3	P:Pioneer40:55aa:d3
+Auto	P:Pioneer40:55aa:d3
+Pip Ch -	P:Pioneer40:55aa:d3
+Pip Ch +	P:Pioneer40:55aa:d3
+Cc Mode	P:Pioneer40:55aa:d3
+Cinema Wide	P:Pioneer40:55aa:d3
+Strobe	P:Pioneer40:55aa:d6
+Swap	P:Pioneer40:55aa:d7
+Multi	P:Pioneer40:55aa:d9
+Input 4	P:Pioneer40:55aa:de
 @Platinum	Platinum PT2020LED
 Power	P:NECext:7f00:ea15
 Vol_up	P:NECext:7f00:e41b
@@ -9196,6 +10515,76 @@ Ok	P:Samsung32:e:46
 Vol+	P:Samsung32:e:14
 Vol-	P:Samsung32:e:15
 Google	P:Samsung32:e:82
+@Proscan	TV 15,-1
+Menu	P:RCA38:f:8
+Freeze	P:RCA38:f:c
+Pip	P:RCA38:f:1b
+Previous Channel	P:RCA38:f:27
+Channel -	P:RCA38:f:2c
+Channel +	P:RCA38:f:2d
+Volume -	P:RCA38:f:2e
+Volume +	P:RCA38:f:2f
+0	P:RCA38:f:30
+1	P:RCA38:f:31
+2	P:RCA38:f:32
+3	P:RCA38:f:33
+4	P:RCA38:f:34
+5	P:RCA38:f:35
+6	P:RCA38:f:36
+7	P:RCA38:f:37
+8	P:RCA38:f:38
+9	P:RCA38:f:39
+Power On	P:RCA38:f:3a
+Power Off	P:RCA38:f:3b
+Display	P:RCA38:f:3c
+Mute	P:RCA38:f:3f
+Cinema	P:RCA38:f:90
+Split Screen	P:RCA38:f:91
+Input Source	P:RCA38:f:a3
+Swap	P:RCA38:f:c3
+@Proton	TV 17,-1
+Volume +	P:Proton:11:2
+Level+	P:Proton:11:3
+Volume -	P:Proton:11:6
+Level-	P:Proton:11:7
+Power	P:Proton:11:8
+Mute	P:Proton:11:9
+Tv/Video	P:Proton:11:a
+Display	P:Proton:11:d
+Select	P:Proton:11:9e
+@Proton	TV 2,-1
+Av3 Input	P:Proton:2:4
+Ant1 / Rgb	P:Proton:2:5
+Ant2	P:Proton:2:9
+Tv Tuner	P:Proton:2:a
+Av2 Input	P:Proton:2:b
+Av1 Input	P:Proton:2:f
+@Proton	TV 3,-1
+Power	P:Proton:3:0
+Tv/Av	P:Proton:3:4
+Recall	P:Proton:3:5
+Channel -	P:Proton:3:6
+Channel +	P:Proton:3:7
+Rgb1/2	P:Proton:3:9
+Volume -	P:Proton:3:a
+Volume +	P:Proton:3:b
+Sleep	P:Proton:3:c
+Mute	P:Proton:3:f
+Cursor	P:Proton:3:10
+Select	P:Proton:3:11
+Level-	P:Proton:3:12
+Level+	P:Proton:3:13
+1	P:Proton:3:14
+2	P:Proton:3:15
+3	P:Proton:3:16
+Reset	P:Proton:3:17
+4	P:Proton:3:18
+5	P:Proton:3:19
+6	P:Proton:3:1a
+7	P:Proton:3:1c
+8	P:Proton:3:1d
+9	P:Proton:3:1e
+0	P:Proton:3:1f
 @Proton	TV 4,-1
 Channel +	P:NECext:fb04:ff00
 Channel -	P:NECext:fb04:fe01
@@ -9427,6 +10816,58 @@ Input	P:NEC:a0:1a
 Exit	P:NEC:a0:10
 Ch_next	P:NEC:a0:3
 Ch_prev	P:NEC:a0:1f
+@RCA	TV 14,-1
+Video 1	P:RCA38:e:3a
+@RCA	TV 15,-1
+Antenna	P:RCA38:f:5
+Clear	P:RCA38:f:6
+Menu	P:RCA38:f:8
+Pip Freeze	P:RCA38:f:c
+Reset	P:RCA38:f:12
+Pip Move	P:RCA38:f:14
+Pip On/Off	P:RCA38:f:1b
+Pip On / Off	P:RCA38:f:1b
+Previous Channel	P:RCA38:f:27
+Power	P:RCA38:f:2a
+Channel -	P:RCA38:f:2c
+Channel +	P:RCA38:f:2d
+Volume -	P:RCA38:f:2e
+Volume +	P:RCA38:f:2f
+0	P:RCA38:f:30
+1	P:RCA38:f:31
+2	P:RCA38:f:32
+3	P:RCA38:f:33
+4	P:RCA38:f:34
+5	P:RCA38:f:35
+6	P:RCA38:f:36
+7	P:RCA38:f:37
+8	P:RCA38:f:38
+9	P:RCA38:f:39
+Power On	P:RCA38:f:3a
+Power Off	P:RCA38:f:3b
+Display	P:RCA38:f:3c
+Mute	P:RCA38:f:3f
+Skip	P:RCA38:f:53
+Commercial Skip	P:RCA38:f:53
+Srs	P:RCA38:f:5a
+-	P:RCA38:f:64
++	P:RCA38:f:65
+Input	P:RCA38:f:a3
+Swap	P:RCA38:f:c3
+Pip Swap	P:RCA38:f:c3
+Channel Control	P:RCA38:f:e5
+@RCA	TV 7,-1
+Video 2	P:RCA38:7:3a
+@RCA	Unknown_TV 15,-1
+Go_Back	P:RCA38:f:27
+Key_Power	P:RCA38:f:2a
+Key_Volumedown	P:RCA38:f:2c
+Key_Volumeup	P:RCA38:f:2d
+Left_Arrow	P:RCA38:f:2e
+Right_Arrow	P:RCA38:f:2f
+Key_Info	P:RCA38:f:3c
+Key_Play	P:RCA38:f:3f
+Key_Ok	P:RCA38:f:f4
 @remotec	Unknown_TV 0,-1
 tv-0	P:RC5X:0:0
 tv-1	P:RC5X:0:1
@@ -11808,6 +13249,17 @@ Right	P:NECext:7f00:a758
 Ok	P:NECext:7f00:a55a
 Exit	P:NECext:7f00:b14e
 Info	P:NECext:7f00:f40b
+@Sharp	Monitor 1,-1
+Audio/Video	P:Sharp:1:13
+Arrow Right	P:Sharp:1:14
+Volume Up	P:Sharp:1:14
+Arrow Down	P:Sharp:1:15
+Arrow Left	P:Sharp:1:15
+Volume Down	P:Sharp:1:15
+Power	P:Sharp:1:16
+Mute	P:Sharp:1:17
+Arrow Up	P:Sharp:1:57
+Menu	P:Sharp:1:c4
 @Sharp	Sharp 13VT-L100
 Power	R:38000:33:264,1848,264,792,264,792,264,792,264,792,264,792,264,1848,264,1848,264,792,264,1848,264,792,264,792,264,792,264,1848,264,792,264,43560,264,1848,264,792,264,792,264,792,264,792,264,1848,264,792,264,792,264,1848,264,792,264,1848,264,1848,264,1848,264,792,264,1848,264,43560
 Ch_next	R:38000:33:264,1848,264,792,264,792,264,792,264,792,264,1848,264,792,264,792,264,792,264,1848,264,792,264,792,264,792,264,1848,264,792,264,43560,264,1848,264,792,264,792,264,792,264,792,264,792,264,1848,264,1848,264,1848,264,792,264,1848,264,1848,264,1848,264,792,264,1848,264,43560
@@ -12030,6 +13482,27 @@ Menu	R:38000:33:3498,1571,519,357,490,1209,491,357,492,1181,518,357,492,1207,491
 Power	R:38000:33:195,1833,300,766,280,760,275,790,276,737,309,731,304,1801,301,1804,309,731,304,1801,270,795,282,758,277,762,273,1832,270,769,246,45851,326,1780,302,739,307,785,282,732,303,736,310,1795,307,732,303,763,303,1775,307,733,334,1798,273,1832,270,1810,251,814,273,1780,281,43762,302,1804,309,758,277,737,330,762,284,730,305,734,301,1803,310,1796,306,733,302,1829,273,767,279,734,301,791,275,1804,278,762,253,45870,307,1798,304,763,272,767,279,787,279,760,275,1829,284,730,305,734,301,1804,309,757,278,1827,275,1804,278,1828,274,765,270,1835,278,43740,303,1776,306,787,279,760,275,765,281,759,307,758,277,1775,307,1799,303,736,299,1832,281,759,276,763,304,736,299,1832,281,733,302,45820,306,1800,302,764,282,758,277,788,278,762,284,1821,281,732,303,736,310,1796,307,733,302,1829,273,1806,276,1830,272,767,268,1837,245,43772,302,1778,304,789,277,762,284,756,279,786,249,765,301,1777,336,1770,301,764,282,1824,278,761,274,765,301,738,308,1824,278,761,274
 Menu	R:38000:33:283,1745,378,690,335,705,330,735,311,729,306,707,359,706,329,710,336,704,362,703,332,1744,358,710,336,704,331,1771,331,737,309,47997,281,1721,381,687,307,733,334,758,277,736,310,1741,361,1744,358,1747,366,1714,357,1748,334,735,331,1746,336,1717,416,705,299,1725,377,41639,361,1692,379,741,284,756,279,734,332,760,275,738,308,731,335,730,305,735,311,702,333,1769,333,735,311,703,363,1739,332,736,330,47871,334,1772,330,738,308,732,303,789,277,736,310,1766,305,1775,338,1768,334,1771,331,1748,334,761,274,1776,306,1800,333,735,249,1828,274,41664,306,1774,328,792,223,790,256,784,282,783,252,787,259,755,280,811,255,758,277,762,273,1830,283,785,250,815,251,1800,250,817,280
 Mute	R:38000:33:254,1721,360,681,354,738,308,706,329,711,355,1774,307,1772,361,1744,327,687,359,1772,299,742,335,705,330,736,279,1825,298,742,283,44773,384,1721,360,707,308,707,359,733,302,711,335,705,361,704,331,708,338,1766,336,704,331,1773,329,1776,306,1773,360,681,323,1782,331,44726,411,1722,328,686,360,733,302,711,335,705,361,1742,329,1803,330,1749,332,708,327,1777,335,705,330,710,325,741,274,1830,303,737,278,44778,359,1747,355,712,303,711,355,711,335,705,330,709,337,703,363,703,332,1770,332,709,337,1767,335,1771,300,1752,360,733,302,1776,326,44731,355,1751,330,711,355,737,309,705,330,710,336,1793,309,1771,331,1774,307,706,360,1771,300,740,326,714,332,735,280,1798,325,741,274
+@Sharp	TV 1,-1
+2	P:Sharp:1:2
+3	P:Sharp:1:3
+4	P:Sharp:1:4
+5	P:Sharp:1:5
+6	P:Sharp:1:6
+7	P:Sharp:1:7
+8	P:Sharp:1:8
+9	P:Sharp:1:9
+0	P:Sharp:1:a
+100	P:Sharp:1:b
+Channel +	P:Sharp:1:11
+Channel -	P:Sharp:1:12
+Tv/Video	P:Sharp:1:13
+Volume +	P:Sharp:1:14
+Volume -	P:Sharp:1:15
+Power	P:Sharp:1:16
+Mute	P:Sharp:1:17
+Display	P:Sharp:1:1b
+Menu	P:Sharp:1:20
+Flashback	P:Sharp:1:2f
 @Silver	Silver LE410004
 Power	P:NECext:f700:f30c
 Vol_up	P:NECext:f700:ef10
@@ -13834,6 +15307,44 @@ Right	P:NECext:c7ea:d22d
 Mute	P:NECext:c7ea:df20
 Vol_up	P:NECext:c7ea:f00f
 Vol_dn	P:NECext:c7ea:ef10
+@TCL	TV 15,-1
+Seek Back	P:RCA38:f:0
+Fav	P:RCA38:f:5
+Clear	P:RCA38:f:6
+Menu	P:RCA38:f:8
+Guide	P:RCA38:f:1a
+Go Back	P:RCA38:f:27
+Power	P:RCA38:f:2a
+Channel -	P:RCA38:f:2c
+Channel +	P:RCA38:f:2d
+Volume -	P:RCA38:f:2e
+Volume +	P:RCA38:f:2f
+0	P:RCA38:f:30
+1	P:RCA38:f:31
+2	P:RCA38:f:32
+3	P:RCA38:f:33
+4	P:RCA38:f:34
+5	P:RCA38:f:35
+6	P:RCA38:f:36
+7	P:RCA38:f:37
+8	P:RCA38:f:38
+9	P:RCA38:f:39
+Tv	P:RCA38:f:3a
+Info	P:RCA38:f:3c
+Mute	P:RCA38:f:3f
+Arrow Left	P:RCA38:f:56
+Arrow Right	P:RCA38:f:57
+Arrow Down	P:RCA38:f:58
+Arrow Up	P:RCA38:f:59
+Media	P:RCA38:f:61
+Mts	P:RCA38:f:78
+Period	P:RCA38:f:93
+Input	P:RCA38:f:a3
+Seek Forward	P:RCA38:f:d8
+Stop	P:RCA38:f:e4
+Play Pause	P:RCA38:f:e8
+Pic	P:RCA38:f:ec
+Ok	P:RCA38:f:f4
 @Technika	TECHNIKA 22880
 Power	P:RC5:1:c
 Screen	P:RC5:1:b
@@ -14523,6 +16034,29 @@ Home	P:NECext:7d02:609f
 Play_pause	P:NECext:7d02:a45b
 Rewind	P:NECext:7d02:e916
 Fast_forward	P:NECext:7d02:e817
+@Trutech	Unknown_TV 0,1
+Key_5	P:Aiwa:100:1
+Key_6	P:Aiwa:100:2
+qview	P:Aiwa:100:3
+Key_8	P:Aiwa:100:4
+Key_9	P:Aiwa:100:5
+Key_Ok	P:Aiwa:100:8
+input	P:Aiwa:100:a
+Key_3	P:Aiwa:100:f
+Key_Channelup	P:Aiwa:100:10
+Key_Power	P:Aiwa:100:12
+Key_Volumeup	P:Aiwa:100:13
+Key_Channeldown	P:Aiwa:100:14
+Key_1	P:Aiwa:100:16
+Key_Volumedown	P:Aiwa:100:17
+Key_7	P:Aiwa:100:19
+Key_2	P:Aiwa:100:1a
+Key_0	P:Aiwa:100:1b
+Key_Menu	P:Aiwa:100:1e
+Key_4	P:Aiwa:100:1f
+Key_Cancel	P:Aiwa:100:48
+Key_Sleep	P:Aiwa:100:4a
+Key_Mute	P:Aiwa:100:4b
 @United	United tv
 Power	P:NEC:40:12
 Source	P:NEC:40:14

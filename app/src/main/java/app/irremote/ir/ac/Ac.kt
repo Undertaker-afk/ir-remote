@@ -53,9 +53,11 @@ object AcProtocols {
 }
 
 /** Accumulates mark/space durations; consecutive marks (or spaces) are merged. */
-internal class Pulses {
+class Pulses {
     private val list = ArrayList<Int>()
     private var mark = true
+
+    fun total(): Int = list.sum()
 
     fun mark(us: Int) = put(true, us)
     fun space(us: Int) = put(false, us)

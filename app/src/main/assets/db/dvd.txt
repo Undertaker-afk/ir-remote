@@ -76,6 +76,72 @@ info	P:NECext:ed10:af50
 tv sys	P:NECext:ed10:a25d
 3	P:NECext:ed10:a15e
 setup	P:NECext:ed10:a05f
+@Aiwa	VCR 127,0
+Power	P:Aiwa:7f:0
+1	P:Aiwa:7f:1
+2	P:Aiwa:7f:2
+3	P:Aiwa:7f:3
+4	P:Aiwa:7f:4
+5	P:Aiwa:7f:5
+6	P:Aiwa:7f:6
+7	P:Aiwa:7f:7
+8	P:Aiwa:7f:8
+9	P:Aiwa:7f:9
+0	P:Aiwa:7f:a
+Ch	P:Aiwa:7f:c
+Tv/Vcr	P:Aiwa:7f:d
+Input	P:Aiwa:7f:e
+Display	P:Aiwa:7f:10
+Counter Display	P:Aiwa:7f:10
+Fast Forward >>	P:Aiwa:7f:11
+F.Fwd >> / >>	P:Aiwa:7f:11
+Rewind <<	P:Aiwa:7f:12
+Rew << / <<	P:Aiwa:7f:12
+Record / Otr	P:Aiwa:7f:14
+-Rec/Qtr-	P:Aiwa:7f:14
+Play	P:Aiwa:7f:15
+Play >	P:Aiwa:7f:15
+Pause/Still	P:Aiwa:7f:17
+Stop	P:Aiwa:7f:1a
+Stop []	P:Aiwa:7f:1a
+100	P:Aiwa:7f:1b
+T-Rec	P:Aiwa:7f:1e
+Clear	P:Aiwa:7f:1f
+Cancel	P:Aiwa:7f:1f
+Channel +	P:Aiwa:7f:40
+Channel Up ^	P:Aiwa:7f:40
+Channel -	P:Aiwa:7f:41
+Channel Down V	P:Aiwa:7f:41
+Zero Return	P:Aiwa:7f:45
+Tracking +	P:Aiwa:7f:46
+Tracking -	P:Aiwa:7f:47
+Eject	P:Aiwa:7f:48
+Reset	P:Aiwa:7f:4c
+Counter Reset	P:Aiwa:7f:4c
+Index Search	P:Aiwa:7f:4d
+T. Speed	P:Aiwa:7f:50
+Tape Speed	P:Aiwa:7f:50
+Counter Memory	P:Aiwa:7f:51
+Counter Clock	P:Aiwa:7f:56
+A-Tr	P:Aiwa:7f:5c
+Menu	P:Aiwa:7f:81
+Cursor Right	P:Aiwa:7f:83
+Cursor >	P:Aiwa:7f:83
+Cursor Left	P:Aiwa:7f:84
+Cursor <	P:Aiwa:7f:84
+Search/Index >>	P:Aiwa:7f:85
+Variable Search >>	P:Aiwa:7f:85
+Search/Index <<	P:Aiwa:7f:86
+Variable Search <<	P:Aiwa:7f:86
+Index Mark	P:Aiwa:7f:87
+Index Erase	P:Aiwa:7f:88
+Cursor Up	P:Aiwa:7f:8d
+Cursor ^	P:Aiwa:7f:8d
+Cursor Down	P:Aiwa:7f:8e
+Cursor V	P:Aiwa:7f:8e
+Summer Time	P:Aiwa:7f:90
+Ok	P:Aiwa:7f:9f
+Freeze	P:Aiwa:7f:c1
 @Aiwa	VCR 130,111
 Pal-Scam/Ntsc1/Ntsc2	P:NECext:6f82:ec13
 Tracking +	P:NECext:6f82:e817
@@ -684,6 +750,11 @@ Select	P:NECext:f807:a25d
 Cursor Right	P:NECext:f807:a15e
 Return	P:NECext:f807:a05f
 Osd	P:NECext:f807:46b9
+@Carver	Laser Disc 102,0
+Play	P:Aiwa:66:6
+Stop	P:Aiwa:66:7
+Ff	P:Aiwa:66:1c
+Rew	P:Aiwa:66:1d
 @Cary Audio Design	DVD Player 23,-1
 Power	P:RC5X:17:0
 Open/Close	P:RC5X:17:1
@@ -761,6 +832,44 @@ Key_Subtitle	P:NECext:ff00:aa55
 Key_Menu	P:NECext:ff00:a857
 X_Key_0+	P:NECext:ff00:a659
 Key_Setup	P:NECext:ff00:a15e
+@Cce	Unknown_VCR-CCE 21,-1
+0	P:Proton:15:0
+1	P:Proton:15:1
+2	P:Proton:15:2
+3	P:Proton:15:3
+4	P:Proton:15:4
+5	P:Proton:15:5
+6	P:Proton:15:6
+7	P:Proton:15:7
+8	P:Proton:15:8
+9	P:Proton:15:9
+00	P:Proton:15:a
+Menu	P:Proton:15:b
+Input	P:Proton:15:c
+Stop	P:Proton:15:d
+Play	P:Proton:15:e
+Ff	P:Proton:15:f
+Rew	P:Proton:15:10
+Pause	P:Proton:15:11
+Rec	P:Proton:15:12
+3S	P:Proton:15:13
+End_Down	P:Proton:15:14
+Power	P:Proton:15:15
+Tv/Vcr	P:Proton:15:16
+Ch_Up	P:Proton:15:17
+Ch_Down	P:Proton:15:18
+End_Up	P:Proton:15:19
+Start_Down	P:Proton:15:1a
+Speed	P:Proton:15:1b
+Left	P:Proton:15:1c
+Start_Up	P:Proton:15:1d
+Hi-Rew	P:Proton:15:1e
+Right	P:Proton:15:1f
+Reset	P:Proton:15:21
+Rew_Stop	P:Proton:15:25
+Minus	P:Proton:15:31
+Plus	P:Proton:15:35
+Slow	P:Proton:15:39
 @Century Concept	Unknown_dvd 0,246
 Key_Select	P:NECext:f600:7f80
 Key_Menu	P:NECext:f600:7e81
@@ -992,6 +1101,14 @@ Stop T0	P:RC5X:14:36
 Stop T1	P:RC5X:14:36
 A-B T0	P:RC5X:14:3b
 A-B T1	P:RC5X:14:3b
+@Classe Audio	DVD Player 200,-1
+Mute	P:RC6:c8:d
+Volume +	P:RC6:c8:d
+Volume -	P:RC6:c8:11
+F1	P:RC6:c8:38
+F2	P:RC6:c8:39
+F3	P:RC6:c8:86
+F4	P:RC6:c8:87
 @Classe Audio	DVD Player 25,-1
 Mute T0	P:RC5X:19:d
 Mute T1	P:RC5X:19:d
@@ -999,6 +1116,60 @@ Vol+ T0	P:RC5X:19:10
 Vol+ T1	P:RC5X:19:10
 Vol- T0	P:RC5X:19:11
 Vol- T1	P:RC5X:19:11
+@Classe Audio	DVD Player 4,-1
+0	P:RC6:4:0
+1	P:RC6:4:1
+2	P:RC6:4:2
+3	P:RC6:4:3
+4	P:RC6:4:4
+5	P:RC6:4:5
+6	P:RC6:4:6
+7	P:RC6:4:7
+8	P:RC6:4:8
+9	P:RC6:4:9
+Standby	P:RC6:4:c
+Info	P:RC6:4:e
+Display	P:RC6:4:f
+Time	P:RC6:4:12
+Repeat	P:RC6:4:1d
+Skip >>	P:RC6:4:20
+Skip <<	P:RC6:4:21
+Still Forward	P:RC6:4:24
+Still Reverse	P:RC6:4:25
+Scan >>	P:RC6:4:28
+Scan <<	P:RC6:4:29
+Play	P:RC6:4:2c
+Pause	P:RC6:4:30
+Stop	P:RC6:4:31
+Jump	P:RC6:4:40
+Eject	P:RC6:4:42
+Open/Close	P:RC6:4:42
+Prog.	P:RC6:4:44
+Subtitle	P:RC6:4:4b
+Audio Mode	P:RC6:4:4e
+Surround Sound	P:RC6:4:52
+Setup	P:RC6:4:54
+Home	P:RC6:4:55
+Cursor Up	P:RC6:4:58
+Cursor Down	P:RC6:4:59
+Cursor Left	P:RC6:4:5a
+Cursor Right	P:RC6:4:5b
+Cursor Select	P:RC6:4:5c
+Enter	P:RC6:4:5c
+Title	P:RC6:4:71
+10+	P:RC6:4:78
+Angle	P:RC6:4:85
+Auto Resolution	P:RC6:4:89
+480I/576I	P:RC6:4:8a
+480P/576P	P:RC6:4:8b
+720P	P:RC6:4:8c
+1080I	P:RC6:4:8d
+1080P	P:RC6:4:8e
+On (Operate)	P:RC6:4:96
+Disc Menu	P:RC6:4:d1
+Subtitle On/Off	P:RC6:4:e3
+Step Forward	P:RC6:4:f6
+Zoom	P:RC6:4:f7
 @Coby	DVD Player 0,-1
 Select	P:NECext:ff00:f906
 Power	P:NECext:ff00:f30c
@@ -1177,6 +1348,50 @@ Bookmark	P:NECext:cd72:aa55
 Key_Subtitle	P:NECext:cd72:a758
 Key_Pause	P:NECext:cd72:a659
 Fow	P:NECext:cd72:a25d
+@Daewoo	DVD Player 21,-1
+0	P:Proton:15:0
+1	P:Proton:15:1
+2	P:Proton:15:2
+3	P:Proton:15:3
+4	P:Proton:15:4
+5	P:Proton:15:5
+6	P:Proton:15:6
+7	P:Proton:15:7
+8	P:Proton:15:8
+9	P:Proton:15:9
+100	P:Proton:15:a
+Setup	P:Proton:15:b
+Output	P:Proton:15:c
+Stop	P:Proton:15:d
+Pause	P:Proton:15:e
+Play	P:Proton:15:e
+Menu	P:Proton:15:11
+Rec	P:Proton:15:12
+Search >>	P:Proton:15:13
+Skip >>	P:Proton:15:13
+Search <<	P:Proton:15:14
+Skip <<	P:Proton:15:14
+Power	P:Proton:15:15
+Tv/Vcr	P:Proton:15:16
+Curser Up	P:Proton:15:17
+Curser Down	P:Proton:15:18
+Curser Right	P:Proton:15:19
+Curser Left	P:Proton:15:1a
+Angle/Digest Speed	P:Proton:15:1b
+Search	P:Proton:15:1d
+Open/Close	P:Proton:15:1e
+Display	P:Proton:15:1f
+Title/Pb	P:Proton:15:20
+Zoom	P:Proton:15:21
+Enter	P:Proton:15:23
+Subtitle	P:Proton:15:25
+Vcr	P:Proton:15:26
+Dvd	P:Proton:15:27
+Repeat	P:Proton:15:29
+Program	P:Proton:15:2c
+Audio Mode	P:Proton:15:37
+A-B	P:Proton:15:3c
+Side A/B	P:Proton:15:3c
 @Daewoo	Unknown_DVDS150 32,-1
 Key_Setup	P:NECext:df20:fd02
 Resume	P:NECext:df20:f906
@@ -1221,6 +1436,43 @@ Display	P:NECext:df20:a758
 Key_Forward	P:NECext:df20:a659
 Key_Play	P:NECext:df20:a35c
 Key_Stop	P:NECext:df20:a25d
+@Daewoo	Unknown_VCR 21,-1
+0	P:Proton:15:0
+1	P:Proton:15:1
+2	P:Proton:15:2
+3	P:Proton:15:3
+4	P:Proton:15:4
+5	P:Proton:15:5
+6	P:Proton:15:6
+7	P:Proton:15:7
+8	P:Proton:15:8
+9	P:Proton:15:9
+fi	P:Proton:15:a
+stop	P:Proton:15:d
+play	P:Proton:15:e
+ffwd	P:Proton:15:f
+rew	P:Proton:15:10
+pause	P:Proton:15:11
+rec	P:Proton:15:12
+frame	P:Proton:15:13
+power	P:Proton:15:15
+Tv/Vcr	P:Proton:15:16
+pr+	P:Proton:15:17
+pr-	P:Proton:15:18
+A.Sel	P:Proton:15:1a
+Sp/Lp	P:Proton:15:1b
+T.R	P:Proton:15:1c
+timer	P:Proton:15:1d
+Pal/Sec	P:Proton:15:1f
+eject	P:Proton:15:21
+menu	P:Proton:15:22
+Ok	P:Proton:15:29
+left	P:Proton:15:31
+index+	P:Proton:15:33
+right	P:Proton:15:35
+Av	P:Proton:15:36
+00:00	P:Proton:15:37
+index-	P:Proton:15:3f
 @Daewoo	Unknown_VCR 49,-1
 +Ch	P:NECext:ce31:fe01
 -Ch	P:NECext:ce31:fd02
@@ -1253,6 +1505,42 @@ Key_Power	P:NECext:ce31:a45b
 ShowView	P:NECext:ce31:738c
 Preset	P:NECext:ce31:619e
 Menu/Tv	P:NECext:ce31:35ca
+@Daewoo	VCR 21,-1
+0	P:Proton:15:0
+1	P:Proton:15:1
+2	P:Proton:15:2
+3	P:Proton:15:3
+4	P:Proton:15:4
+5	P:Proton:15:5
+6	P:Proton:15:6
+7	P:Proton:15:7
+8	P:Proton:15:8
+9	P:Proton:15:9
+Stop	P:Proton:15:d
+Play	P:Proton:15:e
+Fast Forward >>	P:Proton:15:f
+Rewind <<	P:Proton:15:10
+Pause	P:Proton:15:11
+Record Otr	P:Proton:15:12
+Atr	P:Proton:15:13
+Vcr Power	P:Proton:15:15
+Tv/Vcr	P:Proton:15:16
+Ch Track +	P:Proton:15:17
+Ch Track -	P:Proton:15:18
+100	P:Proton:15:1a
+Speed	P:Proton:15:1b
+Display	P:Proton:15:1d
+Cm Skip	P:Proton:15:1e
+Child Lock	P:Proton:15:1f
+Eject	P:Proton:15:21
+Menu	P:Proton:15:22
+Clear	P:Proton:15:29
+Slow -	P:Proton:15:31
+Index +	P:Proton:15:33
+Slow +	P:Proton:15:35
+Input	P:Proton:15:36
+Program	P:Proton:15:39
+Index -	P:Proton:15:3f
 @Dantax	DVD Player 0,-1
 Stop	P:NECext:ff00:fb04
 Pause	P:NECext:ff00:fa05
@@ -1297,6 +1585,53 @@ Cursor Right	P:NECext:ff00:a45b
 Program	P:NECext:ff00:a35c
 Go To	P:NECext:ff00:a25d
 Display	P:NECext:ff00:a05f
+@Denon	Blu-Ray 2,1
+1	P:DenonK:12:2
+2	P:DenonK:12:3
+3	P:DenonK:12:4
+4	P:DenonK:12:5
+5	P:DenonK:12:6
+6	P:DenonK:12:7
+7	P:DenonK:12:8
+8	P:DenonK:12:9
+9	P:DenonK:12:a
+Subtitle	P:DenonK:12:d
+Audio	P:DenonK:12:e
+Angle	P:DenonK:12:f
+Open/Close	P:DenonK:12:10
+Pop Up Menu	P:DenonK:12:11
+Return	P:DenonK:12:12
+Repeat	P:DenonK:12:13
+Pause	P:DenonK:12:16
+Stop	P:DenonK:12:17
+Track >>	P:DenonK:12:18
+Track <<	P:DenonK:12:19
+Scan >>	P:DenonK:12:1a
+Scan <<	P:DenonK:12:1b
+Play	P:DenonK:12:1c
+Clear	P:DenonK:12:1d
+Display	P:DenonK:12:1e
+Random	P:DenonK:12:1f
+Cursor Up	P:DenonK:12:20
+Cursor Down	P:DenonK:12:21
+Cursor Right	P:DenonK:12:22
+Cursor Left	P:DenonK:12:23
+Power On	P:DenonK:12:28
+Power Off	P:DenonK:12:29
+A-B Repeat	P:DenonK:12:2a
+Cursor Enter	P:DenonK:12:2b
+Setup	P:DenonK:12:2c
+Top Menu	P:DenonK:12:2d
+Search	P:DenonK:12:2f
+0	P:DenonK:12:30
+Zoom	P:DenonK:12:30
+Mode	P:DenonK:12:31
+Red	P:DenonK:12:32
+Green	P:DenonK:12:33
+Blue	P:DenonK:12:34
+Yellow	P:DenonK:12:35
+Dimmer	P:DenonK:12:39
+Pure Direct	P:DenonK:12:3e
 @Denon	DVD Player 176,0
 Stop	P:Panasonic:b0:0
 Stop []	P:Panasonic:b0:0
@@ -1374,6 +1709,268 @@ Top Menu	P:Panasonic:b0:9b
 Title	P:Panasonic:b0:9b
 V.S.S	P:Panasonic:b0:9e
 V.S.S.	P:Panasonic:b0:9e
+@Denon	DVD Player 2,-1
+0	P:Denon:2:f1
+@Denon	DVD Player 2,1
+0	P:DenonK:12:1
+1	P:DenonK:12:2
+2	P:DenonK:12:3
+3	P:DenonK:12:4
+4	P:DenonK:12:5
+5	P:DenonK:12:6
+6	P:DenonK:12:7
+7	P:DenonK:12:8
+8	P:DenonK:12:9
+9	P:DenonK:12:a
+Pause	P:DenonK:12:16
+Stop	P:DenonK:12:17
+Skip >>	P:DenonK:12:18
+Skip <<	P:DenonK:12:19
+Ff	P:DenonK:12:1a
+Rew	P:DenonK:12:1b
+Play	P:DenonK:12:1c
+Up	P:DenonK:12:20
+Down	P:DenonK:12:21
+Right	P:DenonK:12:22
+Left	P:DenonK:12:23
+Power On	P:DenonK:12:28
+Power Off	P:DenonK:12:29
+Enter	P:DenonK:12:2b
+Set Up	P:DenonK:12:2c
+Menu	P:DenonK:12:2d
+@Denon	DVD Player 4,-1
+Search Mode	P:Denon:4:9e
+Zoom	P:Denon:4:9f
+Picture Adjust	P:Denon:4:a0
+Pict. Adjust	P:Denon:4:a0
+Picadj	P:Denon:4:a0
+Pic Adj	P:Denon:4:a0
+Dimmer	P:Denon:4:a1
+Pure Direct Memory	P:Denon:4:a2
+P.D. Memory	P:Denon:4:a2
+@Denon	DVD Player 6,-1
+Power Off	P:Denon:6:c0
+Off	P:Denon:6:c0
+Dvd Off	P:Denon:6:c0
+Super Audio Cd Setup	P:Denon:6:cd
+Cd/Stereo/Multi	P:Denon:6:cd
+Super Audio Cd Set	P:Denon:6:cd
+Hdmi/Dvi Format	P:Denon:6:d0
+Hdmi Format	P:Denon:6:d0
+Pure Direct Select	P:Denon:6:d4
+Hdmi/Dvi Select	P:Denon:6:d5
+Hdmi/ Dvi Select	P:Denon:6:d5
+Hdmi Select	P:Denon:6:d5
+Disc Exchange	P:Denon:6:fa
+Page -	P:Denon:6:fd
+Page-	P:Denon:6:fd
+Page --	P:Denon:6:fd
+Page +	P:Denon:6:fe
+Page+	P:Denon:6:fe
+Group	P:Denon:6:ff
+@Denon	DVD Player 8,-1
+Sacd Setup	P:Denon:8:7e
+Sasc Setup	P:Denon:8:7e
+Super Audio Cd	P:Denon:8:7e
+Super Audio Cd Setup	P:Denon:8:7e
+Super Audio Cd Set	P:Denon:8:7e
+0	P:Denon:8:81
+6	P:Denon:8:81
+1	P:Denon:8:82
+2	P:Denon:8:83
+3	P:Denon:8:84
+4	P:Denon:8:85
+5	P:Denon:8:86
+7	P:Denon:8:88
+8	P:Denon:8:89
+9	P:Denon:8:8a
++10	P:Denon:8:8c
+10	P:Denon:8:8c
+>= 10	P:Denon:8:8c
+>10	P:Denon:8:8c
+Subtitle	P:Denon:8:8d
+Audio Mode	P:Denon:8:8e
+Audio	P:Denon:8:8e
+Angle	P:Denon:8:8f
+Open/Close	P:Denon:8:90
+Menu	P:Denon:8:91
+Return	P:Denon:8:92
+Exit	P:Denon:8:92
+Reapeat	P:Denon:8:94
+Repeat	P:Denon:8:94
+Skip +	P:Denon:8:98
+Skip Forward	P:Denon:8:98
+Skip>>	P:Denon:8:98
+Skip >>	P:Denon:8:98
+Next Track	P:Denon:8:98
+Skip >>I	P:Denon:8:98
+Frame >>	P:Denon:8:98
+Skip>>I	P:Denon:8:98
+Track >>	P:Denon:8:98
+Skip -	P:Denon:8:99
+Skip Reverse	P:Denon:8:99
+Skip<<	P:Denon:8:99
+Next	P:Denon:8:99
+Skip <<	P:Denon:8:99
+Previous Track	P:Denon:8:99
+Skip I<<	P:Denon:8:99
+Frame <<	P:Denon:8:99
+I<<Skip	P:Denon:8:99
+<<Skip	P:Denon:8:99
+Track <<	P:Denon:8:99
+Fast Forward	P:Denon:8:9a
+Slow/Fast Forward	P:Denon:8:9a
+Slow>	P:Denon:8:9a
+Previous	P:Denon:8:9a
+Shuttle Forward	P:Denon:8:9a
+Search >>	P:Denon:8:9a
+Search >> Slow	P:Denon:8:9a
+>>	P:Denon:8:9a
+Scan >>	P:Denon:8:9a
+Ff	P:Denon:8:9a
+Slow>>	P:Denon:8:9a
+>>>	P:Denon:8:9a
+Fwd	P:Denon:8:9a
+Rewind	P:Denon:8:9b
+Slow/Fast Reverse	P:Denon:8:9b
+Slow<	P:Denon:8:9b
+Shuttle Reverse	P:Denon:8:9b
+Search <<	P:Denon:8:9b
+Search << Slow	P:Denon:8:9b
+Slow Motion -	P:Denon:8:9b
+<<	P:Denon:8:9b
+Scan <<	P:Denon:8:9b
+Rew	P:Denon:8:9b
+<<Slow	P:Denon:8:9b
+<<<	P:Denon:8:9b
+Rev	P:Denon:8:9b
+Mode	P:Denon:8:9c
+Pause	P:Denon:8:9d
+Pause/Still	P:Denon:8:9d
+Still/Pause	P:Denon:8:9d
+Play	P:Denon:8:a0
+Play >	P:Denon:8:a0
+Stop	P:Denon:8:a1
+Program/Direct	P:Denon:8:a2
+Prog/Dir.	P:Denon:8:a2
+Prog/Direct	P:Denon:8:a2
+Prog/Dir	P:Denon:8:a2
+Program/Dir	P:Denon:8:a2
+Prog./Direct	P:Denon:8:a2
+Clear	P:Denon:8:a3
+Disc 1	P:Denon:8:a4
+Disc 2	P:Denon:8:a5
+Disc 3	P:Denon:8:a6
+Display	P:Denon:8:a7
+Info	P:Denon:8:a7
+Disc 4	P:Denon:8:a8
+Disc 5	P:Denon:8:a9
+Random	P:Denon:8:aa
+Disc Skip	P:Denon:8:ab
+Cursor Up	P:Denon:8:ac
+Up	P:Denon:8:ac
+C-Up	P:Denon:8:ac
+Menu Up	P:Denon:8:ac
+Curser Up	P:Denon:8:ac
+C Up	P:Denon:8:ac
+Up Arrow	P:Denon:8:ac
+Cursor Down	P:Denon:8:ad
+Down	P:Denon:8:ad
+Cursor Dn	P:Denon:8:ad
+C-Down	P:Denon:8:ad
+Menu Down	P:Denon:8:ad
+Curser Dn	P:Denon:8:ad
+C Dn	P:Denon:8:ad
+Dn	P:Denon:8:ad
+Down Arrow	P:Denon:8:ad
+Cursor Right	P:Denon:8:ae
+Right	P:Denon:8:ae
+Cursor Rt	P:Denon:8:ae
+C-Rt	P:Denon:8:ae
+Menu Right	P:Denon:8:ae
+Curser Rt	P:Denon:8:ae
+C Rt	P:Denon:8:ae
+Right Arrow	P:Denon:8:ae
+Cursor Left	P:Denon:8:af
+Left	P:Denon:8:af
+Cursor Lf	P:Denon:8:af
+C-Lf	P:Denon:8:af
+Menu Left	P:Denon:8:af
+Curser Left	P:Denon:8:af
+C Lf	P:Denon:8:af
+Left Arrow	P:Denon:8:af
+Power On	P:Denon:8:b1
+On	P:Denon:8:b1
+Power	P:Denon:8:b1
+Dvd On	P:Denon:8:b1
+Srs.Ts	P:Denon:8:b6
+V.S.S.	P:Denon:8:b6
+Srs Ts	P:Denon:8:b6
+Virtual	P:Denon:8:b6
+V.S.S	P:Denon:8:b6
+Ntsc/Pal	P:Denon:8:b7
+Marker	P:Denon:8:b9
+A-B Repeat	P:Denon:8:ba
+A-B	P:Denon:8:ba
+Repeat A-B	P:Denon:8:ba
+Side A/B	P:Denon:8:ba
+Cursor Enter	P:Denon:8:bb
+Enter	P:Denon:8:bb
+Select	P:Denon:8:bb
+Cursor Select	P:Denon:8:bb
+Setup	P:Denon:8:bc
+Set Up	P:Denon:8:bc
+Top Menu	P:Denon:8:bd
+Title	P:Denon:8:bd
+Top Mennu	P:Denon:8:bd
+Test Return	P:Denon:8:bd
+Call	P:Denon:8:be
+Fl Display	P:Denon:8:bf
+@Denon	Laser Disc 168,-1
+0	P:Pioneer40:57a8:0
+1	P:Pioneer40:57a8:1
+2	P:Pioneer40:57a8:2
+3	P:Pioneer40:57a8:3
+4	P:Pioneer40:57a8:4
+5	P:Pioneer40:57a8:5
+6	P:Pioneer40:57a8:6
+7	P:Pioneer40:57a8:7
+8	P:Pioneer40:57a8:8
+9	P:Pioneer40:57a8:9
+D/A.Cx	P:Pioneer40:57a8:c
+Scan >>	P:Pioneer40:57a8:10
+Scan <<	P:Pioneer40:57a8:11
+Chapter/Frame Time	P:Pioneer40:57a8:13
+Stop/Eject []	P:Pioneer40:57a8:16
+Play >	P:Pioneer40:57a8:17
+Pause	P:Pioneer40:57a8:18
+Power	P:Pioneer40:57a8:1c
+Edit	P:Pioneer40:57a8:1d
+Audio Monitor	P:Pioneer40:57a8:1e
++10	P:Pioneer40:57a8:1f
+Jog Forward +	P:Pioneer40:57a8:20
+Jog Reverse -	P:Pioneer40:57a8:24
+Shut.Fwd(Full Sp)	P:Pioneer40:57a8:2b
+Shut.Rev(Full Sp)	P:Pioneer40:57a8:2f
+D-Level Control	P:Pioneer40:57a8:37
+On Screen	P:Pioneer40:57a8:43
+Repeat B	P:Pioneer40:57a8:44
+C (Clear)	P:Pioneer40:57a8:45
+Multi Speed -	P:Pioneer40:57a8:46
+Multi Speed +	P:Pioneer40:57a8:47
+Repeat A	P:Pioneer40:57a8:48
+Program	P:Pioneer40:57a8:4c
+Disc Side A	P:Pioneer40:57a8:4d
+Disc Side B	P:Pioneer40:57a8:4e
+Still/Step <	P:Pioneer40:57a8:50
+Skip >>	P:Pioneer40:57a8:52
+Skip <<	P:Pioneer40:57a8:53
+Still/Step >	P:Pioneer40:57a8:54
+Multi Speed <	P:Pioneer40:57a8:55
+Multi Speed >	P:Pioneer40:57a8:58
+Hilite/Intro	P:Pioneer40:57a8:5a
+Strobe	P:Pioneer40:57a8:5b
+One Shot Memory	P:Pioneer40:57a8:5d
 @Denver	Unknown_DVD-228 4,-1
 program	P:NECext:fb04:ff00
 Key_Forward	P:NECext:fb04:fd02
@@ -1632,9 +2229,206 @@ Key_Angle	P:NECext:2287:8679
 Key_Subtitle	P:NECext:2287:857a
 Key_Audio	P:NECext:2287:847b
 X_Key_Vsurr	P:NECext:2287:7e81
+@Emerson	VCR 21,-1
+0	P:Proton:15:0
+1	P:Proton:15:1
+2	P:Proton:15:2
+3	P:Proton:15:3
+4	P:Proton:15:4
+5	P:Proton:15:5
+6	P:Proton:15:6
+7	P:Proton:15:7
+8	P:Proton:15:8
+9	P:Proton:15:9
+100	P:Proton:15:a
+Menu	P:Proton:15:b
+Input	P:Proton:15:c
+Stop	P:Proton:15:d
+Play	P:Proton:15:e
+Fast Forward >>	P:Proton:15:f
+Rewind <<	P:Proton:15:10
+P/S	P:Proton:15:11
+Record	P:Proton:15:12
+Slow	P:Proton:15:13
+Power	P:Proton:15:15
+Tv/Vcr	P:Proton:15:16
+Ch +	P:Proton:15:17
+Ch -	P:Proton:15:18
+Speed	P:Proton:15:1b
+Clear	P:Proton:15:1c
+Eject	P:Proton:15:1e
+Display	P:Proton:15:1f
+Cm.Skip	P:Proton:15:29
 @Emerson	VCR 4,-1
 Volume +	P:NECext:fb04:fd02
 Volume -	P:NECext:fb04:fc03
+@Escient	DVD Library 1,22
+Rr	P:MCE:1601:20
+@Escient	DVD Player 1,22
+0	P:MCE:1601:0
+2	P:MCE:1601:2
+4	P:MCE:1601:4
+6	P:MCE:1601:6
+8	P:MCE:1601:8
+Ch/Page +	P:MCE:1601:d
+Power	P:MCE:1601:f
+Guide Toggle	P:MCE:1601:14
+Openglobe	P:MCE:1601:15
+Arrow Down	P:MCE:1601:17
+Arrow Right	P:MCE:1601:19
+View Toggle	P:MCE:1601:1c
+Rew	P:MCE:1601:20
+Rr	P:MCE:1601:20
+Ff	P:MCE:1601:22
+Record	P:MCE:1601:23
+Stop	P:MCE:1601:24
+Pause	P:MCE:1601:25
+Movies	P:MCE:1601:26
+Iradio	P:MCE:1601:2a
+Disc +	P:MCE:1601:2b
+Add To Favorites	P:MCE:1601:2d
+Audio	P:MCE:1601:30
+Power On	P:MCE:1601:41
+Power Off	P:MCE:1601:42
+Playmode-Normal	P:MCE:1601:43
+Playmode-Rpt Track	P:MCE:1601:44
+Playmode-Rpt Title	P:MCE:1601:45
+Playmode-Rpt Group	P:MCE:1601:46
+Playmode-Rand Title	P:MCE:1601:47
+Playmode-Rand Group	P:MCE:1601:48
+View By Artist	P:MCE:1601:49
+View By Title	P:MCE:1601:4a
+View By Song	P:MCE:1601:4b
+View By Cover	P:MCE:1601:4c
+Player	P:MCE:1601:4d
+@Escient	DVD Player 2,22
+0	P:MCE:1602:0
+2	P:MCE:1602:2
+4	P:MCE:1602:4
+6	P:MCE:1602:6
+8	P:MCE:1602:8
+Ch/Page -	P:MCE:1602:e
+Power	P:MCE:1602:f
+Enter	P:MCE:1602:10
+Mode	P:MCE:1602:11
+Options	P:MCE:1602:13
+Guide Toggle	P:MCE:1602:14
+Arrow Up	P:MCE:1602:16
+Arrow Left	P:MCE:1602:18
+Select	P:MCE:1602:1a
+View Toggle	P:MCE:1602:1c
+Play	P:MCE:1602:21
+Ff	P:MCE:1602:22
+Record	P:MCE:1602:23
+Stop	P:MCE:1602:24
+Iradio	P:MCE:1602:2a
+Music	P:MCE:1602:2c
+Add To Favorites	P:MCE:1602:2d
+Disc -	P:MCE:1602:32
+Power On	P:MCE:1602:41
+Power Off	P:MCE:1602:42
+Playmode-Normal	P:MCE:1602:43
+Playmode-Rpt Track	P:MCE:1602:44
+Playmode-Rpt Title	P:MCE:1602:45
+Playmode-Rpt Group	P:MCE:1602:46
+Playmode-Rand Title	P:MCE:1602:47
+Playmode-Rand Group	P:MCE:1602:48
+View By Artist	P:MCE:1602:49
+View By Title	P:MCE:1602:4a
+View By Song	P:MCE:1602:4b
+View By Cover	P:MCE:1602:4c
+Player	P:MCE:1602:4d
+Guide	P:MCE:1602:4e
+@Escient	DVD Player 3,22
+0	P:MCE:1603:0
+2	P:MCE:1603:2
+3	P:MCE:1603:3
+5	P:MCE:1603:5
+7	P:MCE:1603:7
+9	P:MCE:1603:9
+Ch/Page +	P:MCE:1603:d
+Openglobe	P:MCE:1603:15
+Arrow Down	P:MCE:1603:17
+Arrow Right	P:MCE:1603:19
+Select	P:MCE:1603:1a
+Info	P:MCE:1603:1b
+Ff	P:MCE:1603:22
+Stop	P:MCE:1603:24
+Pause	P:MCE:1603:25
+Movies	P:MCE:1603:26
+Disc +	P:MCE:1603:2b
+Play Favorites	P:MCE:1603:2e
+Random	P:MCE:1603:2f
+Audio	P:MCE:1603:30
+Macro	P:MCE:1603:31
+Repeat	P:MCE:1603:33
+Power On	P:MCE:1603:41
+Power Off	P:MCE:1603:42
+Playmode-Normal	P:MCE:1603:43
+Playmode-Rpt Track	P:MCE:1603:44
+Playmode-Rpt Title	P:MCE:1603:45
+Playmode-Rpt Group	P:MCE:1603:46
+Playmode-Rand Title	P:MCE:1603:47
+Playmode-Rand Group	P:MCE:1603:48
+View By Artist	P:MCE:1603:49
+View By Title	P:MCE:1603:4a
+View By Song	P:MCE:1603:4b
+View By Cover	P:MCE:1603:4c
+Player	P:MCE:1603:4d
+Guide	P:MCE:1603:4e
+@Escient	DVD Player 4,22
+0	P:MCE:1604:0
+1	P:MCE:1604:1
+2	P:MCE:1604:2
+4	P:MCE:1604:4
+6	P:MCE:1604:6
+8	P:MCE:1604:8
+Volume Up	P:MCE:1604:a
+Mute	P:MCE:1604:c
+Ch/Page Up	P:MCE:1604:d
+Ch/Page +	P:MCE:1604:d
+Power	P:MCE:1604:f
+Enter	P:MCE:1604:10
+Mode	P:MCE:1604:11
+Setup/Sleep	P:MCE:1604:12
+Setup	P:MCE:1604:12
+Option/Input	P:MCE:1604:13
+Options	P:MCE:1604:13
+Guide	P:MCE:1604:14
+Guide Toggle	P:MCE:1604:14
+Arrow Down	P:MCE:1604:17
+Arrow Left	P:MCE:1604:18
+Arrow Right	P:MCE:1604:19
+Arrow Select	P:MCE:1604:1a
+Menu/View	P:MCE:1604:1c
+Rew	P:MCE:1604:20
+Play	P:MCE:1604:21
+Ff	P:MCE:1604:22
+Record	P:MCE:1604:23
+Movies	P:MCE:1604:26
+Subtitle	P:MCE:1604:27
+Iradio	P:MCE:1604:2a
+Disc +	P:MCE:1604:2b
+Music	P:MCE:1604:2c
+Add	P:MCE:1604:2d
+Add To Favorites	P:MCE:1604:2d
+Random	P:MCE:1604:2f
+Audio	P:MCE:1604:30
+Prev	P:MCE:1604:32
+Repeat	P:MCE:1604:33
+Power On	P:MCE:1604:41
+Power Off	P:MCE:1604:42
+Playmode-Normal	P:MCE:1604:43
+Playmode-Rpt Track	P:MCE:1604:44
+Playmode-Rpt Title	P:MCE:1604:45
+Playmode-Rpt Group	P:MCE:1604:46
+Playmode-Rand Title	P:MCE:1604:47
+Playmode-Rand Group	P:MCE:1604:48
+View By Artist	P:MCE:1604:49
+View By Title	P:MCE:1604:4a
+View By Song	P:MCE:1604:4b
+View By Cover	P:MCE:1604:4c
+Player	P:MCE:1604:4d
 @Esoteric Audio	DVD Player 133,32
 Open/Close	P:NECext:2085:ff00
 Play	P:NECext:2085:fe01
@@ -1681,6 +2475,50 @@ Function Memory	P:NECext:2085:a45b
 Last Memory	P:NECext:2085:a35c
 Condition Memory	P:NECext:2085:a25d
 Video Off	P:NECext:2085:a15e
+@Faroudja	DVD Player 163,-1
+Stop	P:Pioneer40:5ca3:98
+0	P:Pioneer40:5ca3:99
+1	P:Pioneer40:5ca3:99
+2	P:Pioneer40:5ca3:99
+3	P:Pioneer40:5ca3:99
+4	P:Pioneer40:5ca3:99
+5	P:Pioneer40:5ca3:99
+6	P:Pioneer40:5ca3:99
+7	P:Pioneer40:5ca3:99
+8	P:Pioneer40:5ca3:99
+9	P:Pioneer40:5ca3:99
++10	P:Pioneer40:5ca3:99
+Angle	P:Pioneer40:5ca3:99
+Audio	P:Pioneer40:5ca3:99
+Clear	P:Pioneer40:5ca3:99
+Condition Memory	P:Pioneer40:5ca3:99
+Cursor Down	P:Pioneer40:5ca3:99
+Cursor Enter	P:Pioneer40:5ca3:99
+Cursor Left	P:Pioneer40:5ca3:99
+Cursor Right	P:Pioneer40:5ca3:99
+Cursor Up	P:Pioneer40:5ca3:99
+Display	P:Pioneer40:5ca3:99
+Last Memory	P:Pioneer40:5ca3:99
+Menu	P:Pioneer40:5ca3:99
+Open/Close	P:Pioneer40:5ca3:99
+Power	P:Pioneer40:5ca3:99
+Program	P:Pioneer40:5ca3:99
+Random	P:Pioneer40:5ca3:99
+Repeat	P:Pioneer40:5ca3:99
+Repeat A-B	P:Pioneer40:5ca3:99
+Return	P:Pioneer40:5ca3:99
+Search Mode	P:Pioneer40:5ca3:99
+Setup	P:Pioneer40:5ca3:99
+Step/Slow <<	P:Pioneer40:5ca3:99
+Step/Slow >>	P:Pioneer40:5ca3:99
+Subtitle	P:Pioneer40:5ca3:99
+Top Menu	P:Pioneer40:5ca3:99
+Scan >>	P:Pioneer40:5ca3:9a
+Scan <<	P:Pioneer40:5ca3:9b
+Skip >>	P:Pioneer40:5ca3:9c
+Skip <<	P:Pioneer40:5ca3:9d
+Play	P:Pioneer40:5ca3:9e
+Pause	P:Pioneer40:5ca3:9f
 @Fisher	RVR-4000
 POWER	P:NEC:35:1d
 REW	P:NEC:35:19
@@ -1713,6 +2551,58 @@ CH-	P:NEC:35:e
 8	P:NEC:35:8
 9	P:NEC:35:9
 0	P:NEC:35:0
+@FSC	DVD Player 4,15
+0	P:MCE:f04:0
+1	P:MCE:f04:1
+2	P:MCE:f04:2
+3	P:MCE:f04:3
+4	P:MCE:f04:4
+5	P:MCE:f04:5
+6	P:MCE:f04:6
+7	P:MCE:f04:7
+8	P:MCE:f04:8
+9	P:MCE:f04:9
+Clear	P:MCE:f04:a
+Enter	P:MCE:f04:b
+Power	P:MCE:f04:c
+Windows Mc	P:MCE:f04:d
+Mute	P:MCE:f04:e
+Info	P:MCE:f04:f
+Vol+	P:MCE:f04:10
+Vol-	P:MCE:f04:11
+Ch+	P:MCE:f04:12
+Ch-	P:MCE:f04:13
+Frame >>	P:MCE:f04:14
+Scan >>	P:MCE:f04:14
+Search >>	P:MCE:f04:14
+Frame <<	P:MCE:f04:15
+Scan <<	P:MCE:f04:15
+Search <<	P:MCE:f04:15
+Play	P:MCE:f04:16
+Record	P:MCE:f04:17
+Pause	P:MCE:f04:18
+Stop	P:MCE:f04:19
+Skip >>	P:MCE:f04:1a
+Skip <<	P:MCE:f04:1b
+Cursor Oben	P:MCE:f04:1e
+Cursor Unten	P:MCE:f04:1f
+Cursor Links	P:MCE:f04:20
+Cursor Rechts	P:MCE:f04:21
+Ok	P:MCE:f04:22
+Back	P:MCE:f04:23
+Dvd Menue	P:MCE:f04:24
+Live Tv	P:MCE:f04:25
+Guide	P:MCE:f04:26
+My Tv	P:MCE:f04:46
+My Music	P:MCE:f04:47
+Recorded Tv	P:MCE:f04:48
+My Pictures	P:MCE:f04:49
+My Videos	P:MCE:f04:4a
+Teletext	P:MCE:f04:5a
+Rot	P:MCE:f04:5b
+Gruen	P:MCE:f04:5c
+Gelb	P:MCE:f04:5d
+Blau	P:MCE:f04:5e
 @GAMEFACTORY	Unknown_PS2DVD 0,246
 Key_Select	P:NECext:f600:ff00
 Key_Menu	P:NECext:f600:fe01
@@ -1735,6 +2625,40 @@ Special	P:NECext:f600:ee11
 @GE	VCR 11,-1
 Chanel Up	P:SIRC:b:10
 Chanel Dn	P:SIRC:b:11
+@GE	VCR 14,-1
+tv_vcr	P:RCA38:e:5
+clear_reset	P:RCA38:e:6
+program	P:RCA38:e:8
+tracking_left	P:RCA38:e:a
+tracking_right	P:RCA38:e:b
+Key_Slow	P:RCA38:e:10
+counter_memory	P:RCA38:e:12
+Key_Play	P:RCA38:e:15
+Key_Record	P:RCA38:e:17
+Key_Pause	P:RCA38:e:19
+Key_Fastforward	P:RCA38:e:1c
+Key_Rewind	P:RCA38:e:1d
+Key_Stop	P:RCA38:e:1f
+add_delete	P:RCA38:e:24
+Key_Power	P:RCA38:e:2a
+Key_Channeldown	P:RCA38:e:2c
+Key_Channelup	P:RCA38:e:2d
+Key_0	P:RCA38:e:30
+Key_1	P:RCA38:e:31
+Key_2	P:RCA38:e:32
+Key_3	P:RCA38:e:33
+Key_4	P:RCA38:e:34
+Key_5	P:RCA38:e:35
+Key_6	P:RCA38:e:36
+Key_7	P:RCA38:e:37
+Key_8	P:RCA38:e:38
+Key_9	P:RCA38:e:39
+display	P:RCA38:e:3c
+Key_Ejectcd	P:RCA38:e:40
+otr_start	P:RCA38:e:44
+otr_length	P:RCA38:e:45
+speed	P:RCA38:e:46
+input	P:RCA38:e:47
 @GE	VCR 26,73
 Tv/Vcr	P:SIRC20:93a:1a
 @General	Unknown_VCR 22,-1
@@ -2265,6 +3189,67 @@ A-B	P:NECext:7282:906f
 Display	P:NECext:7282:4cb3
 Pic+	P:NECext:7282:4bb4
 Pic-	P:NECext:7282:4ab5
+@Hitachi	DVD Player 102,0
+0	P:Aiwa:66:80
+1	P:Aiwa:66:81
+2	P:Aiwa:66:82
+3	P:Aiwa:66:83
+4	P:Aiwa:66:84
+5	P:Aiwa:66:85
+6	P:Aiwa:66:86
+7	P:Aiwa:66:87
+8	P:Aiwa:66:88
+9	P:Aiwa:66:89
+Setup	P:Aiwa:66:8b
+Open/Close	P:Aiwa:66:8c
+Audio	P:Aiwa:66:8e
+Display	P:Aiwa:66:8f
+Subtitle	P:Aiwa:66:90
+Power	P:Aiwa:66:91
+Angle	P:Aiwa:66:92
+Top Menu	P:Aiwa:66:93
+Menu	P:Aiwa:66:94
+Return	P:Aiwa:66:95
+Cursor Up	P:Aiwa:66:97
+Cursor Down	P:Aiwa:66:98
+Cursor Right	P:Aiwa:66:99
+Cursor Left	P:Aiwa:66:9a
+Enter	P:Aiwa:66:9b
+Search <<	P:Aiwa:66:9c
+Repeat	P:Aiwa:66:9d
+Search >>	P:Aiwa:66:9e
+Skip <<	P:Aiwa:66:9f
+Play/Pause	P:Aiwa:66:a0
+Skip >>	P:Aiwa:66:a1
+Stop	P:Aiwa:66:a2
+Clear	P:Aiwa:66:a4
+Step	P:Aiwa:66:a6
+Mode	P:Aiwa:66:a7
+A-B	P:Aiwa:66:a8
+Book Mark	P:Aiwa:66:a9
+Zoom	P:Aiwa:66:aa
+3D	P:Aiwa:66:ab
+@Hitachi	VCR 0,-1
+Mute	P:PanasonicOld:0:0
+Tv Volume ^	P:PanasonicOld:0:1
+Last Ch	P:PanasonicOld:0:a
+Tv Mute	P:PanasonicOld:0:b
+Tv Volume V	P:PanasonicOld:0:d
+Tv 1 (Q Z)	P:PanasonicOld:0:10
+Tv 2 (A B C)	P:PanasonicOld:0:11
+Tv 3 (D E F)	P:PanasonicOld:0:12
+Tv 4 (G H I)	P:PanasonicOld:0:13
+Tv 5 (J K L)	P:PanasonicOld:0:14
+Tv 6 (M N O)	P:PanasonicOld:0:15
+Tv 7 (P R S)	P:PanasonicOld:0:16
+Tv 8 (T U V Am)	P:PanasonicOld:0:17
+Tv 9 (W X Y Pm)	P:PanasonicOld:0:18
+Tv 0 (? !)	P:PanasonicOld:0:19
+Tv Operate	P:PanasonicOld:0:20
+Tv Programme ^	P:PanasonicOld:0:22
+Tv Programme V	P:PanasonicOld:0:23
+Vol ^	P:PanasonicOld:0:24
+Vol V	P:PanasonicOld:0:25
 @Hitachi	VCR 40,-1
 Tv 1	P:NECext:d728:ff00
 Tv 2	P:NECext:d728:fe01
@@ -3242,6 +4227,49 @@ Pause	P:NECext:ed85:e51a
 Stop	P:NECext:ed85:e619
 Fast_ba	P:NECext:ed85:e11e
 Fast_fo	P:NECext:ed85:e01f
+@Instant Replay	VCR 2,-1
+Stop []	P:PanasonicOld:2:0
+Eject	P:PanasonicOld:2:1
+Rew/Search <<	P:PanasonicOld:2:2
+Ff/Search >>	P:PanasonicOld:2:3
+Pause/Still	P:PanasonicOld:2:6
+Rec	P:PanasonicOld:2:8
+Record	P:PanasonicOld:2:8
+Play >	P:PanasonicOld:2:a
+Slow >	P:PanasonicOld:2:f
+1 (Am)	P:PanasonicOld:2:10
+1 Am	P:PanasonicOld:2:10
+2 (Pm)	P:PanasonicOld:2:11
+2 Pm	P:PanasonicOld:2:11
+3	P:PanasonicOld:2:12
+4	P:PanasonicOld:2:13
+5	P:PanasonicOld:2:14
+6	P:PanasonicOld:2:15
+7	P:PanasonicOld:2:16
+8	P:PanasonicOld:2:17
+9	P:PanasonicOld:2:18
+0	P:PanasonicOld:2:19
+Power	P:PanasonicOld:2:20
+Ch Scan ^	P:PanasonicOld:2:22
+Ch Scan V	P:PanasonicOld:2:23
+Speed	P:PanasonicOld:2:25
+Vcr/Tv	P:PanasonicOld:2:2a
+Counter Memory	P:PanasonicOld:2:32
+Reset	P:PanasonicOld:2:33
+Clear Reset	P:PanasonicOld:2:33
+Tracking ^	P:PanasonicOld:2:38
+V-Lock Tracking ^	P:PanasonicOld:2:38
+Tracking V	P:PanasonicOld:2:39
+V-Lock Tracking V	P:PanasonicOld:2:39
+Standby	P:PanasonicOld:2:3e
+Otr	P:PanasonicOld:2:3f
+@Instant Replay	VCR 25,-1
+Input	P:PanasonicOld:19:5
+Recall	P:PanasonicOld:19:33
+@Instant Replay	VCR 3,-1
+Add/Dlt	P:PanasonicOld:3:1d
+Add/Delete	P:PanasonicOld:3:1d
+Prog	P:PanasonicOld:3:2c
 @Instant Replay	VCR 96,-1
 S.Tracking +	P:NECext:9f60:ff00
 S.Tracking -	P:NECext:9f60:fe01
@@ -3277,6 +4305,52 @@ Unknown	P:NECext:9f60:ba45
 Repeat	P:NECext:9f60:b847
 @Instant Replay	VCR 97,-1
 Record	P:NECext:9e61:eb14
+@Integra	Blu-Ray 210,31
+0	P:NECext:1fd2:ff00
+1	P:NECext:1fd2:ff00
+2	P:NECext:1fd2:ff00
+3	P:NECext:1fd2:ff00
+4	P:NECext:1fd2:ff00
+5	P:NECext:1fd2:ff00
+6	P:NECext:1fd2:ff00
+7	P:NECext:1fd2:ff00
+8	P:NECext:1fd2:ff00
+9	P:NECext:1fd2:ff00
+A - Red	P:NECext:1fd2:ff00
+A-B	P:NECext:1fd2:ff00
+Angle	P:NECext:1fd2:ff00
+Audio	P:NECext:1fd2:ff00
+B - Green	P:NECext:1fd2:ff00
+C - Blue	P:NECext:1fd2:ff00
+Clear	P:NECext:1fd2:ff00
+Cursor Down	P:NECext:1fd2:ff00
+Cursor Left	P:NECext:1fd2:ff00
+Cursor Right	P:NECext:1fd2:ff00
+Cursor Up	P:NECext:1fd2:ff00
+D - Yellow	P:NECext:1fd2:ff00
+Display	P:NECext:1fd2:ff00
+Enter	P:NECext:1fd2:ff00
+Mode	P:NECext:1fd2:ff00
+Open/Close	P:NECext:1fd2:ff00
+Pause	P:NECext:1fd2:ff00
+Pip	P:NECext:1fd2:ff00
+Play	P:NECext:1fd2:ff00
+Pop-Up Menu/Menu	P:NECext:1fd2:ff00
+Power	P:NECext:1fd2:ff00
+Power On	P:NECext:1fd2:ff00
+Repeat	P:NECext:1fd2:ff00
+Resolution	P:NECext:1fd2:ff00
+Return	P:NECext:1fd2:ff00
+Scan -	P:NECext:1fd2:ff00
+Scan +	P:NECext:1fd2:ff00
+Search	P:NECext:1fd2:ff00
+Setup	P:NECext:1fd2:ff00
+Standby	P:NECext:1fd2:ff00
+Stop	P:NECext:1fd2:ff00
+Subtitle	P:NECext:1fd2:ff00
+Top Menu	P:NECext:1fd2:ff00
+Track -	P:NECext:1fd2:ff00
+Track +	P:NECext:1fd2:ff00
 @Integra	DVD Player 210,43
 Pwr On-Off	P:NECext:2bd2:fb04
 Power	P:NECext:2bd2:fb04
@@ -3665,6 +4739,30 @@ Cursor Up A	P:RC5X:19:56
 Cursor Up B	P:RC5X:19:56
 Play/Pause A	P:RC5X:19:57
 Play/Pause B	P:RC5X:19:57
+@JENSEN	VCR 1,-1
+Stop	P:Akai:1:3
+On	P:Akai:1:5
+Fast Forward >>	P:Akai:1:6
+Rewind <<	P:Akai:1:7
+Off	P:Akai:1:a
+Play	P:Akai:1:c
+Pause	P:Akai:1:d
+Scan >>	P:Akai:1:14
+Scan <<	P:Akai:1:15
+Ch Dn	P:Akai:1:18
+Ch Up	P:Akai:1:19
+Enter	P:Akai:1:4e
+0	P:Akai:1:4f
+1	P:Akai:1:50
+2	P:Akai:1:51
+3	P:Akai:1:52
+4	P:Akai:1:53
+5	P:Akai:1:54
+6	P:Akai:1:55
+7	P:Akai:1:56
+8	P:Akai:1:57
+9	P:Akai:1:58
+Record	P:Akai:1:6d
 @JVC	DVD Player 179,-1
 Stop	P:JVC:b3:43
 Open/Close	P:JVC:b3:44
@@ -3810,9 +4908,13 @@ Title/Group	P:JVC:ef:ee
 Title / Group	P:JVC:ef:ee
 @JVC	DVD Player 26,-1
 Power - 5	P:RC5X:1a:10
+Power - 6A	P:RC6:1a:10
 Stop - 5	P:RC5X:1a:13
+Stop - 6A	P:RC6:1a:13
 Open/Close - 5	P:RC5X:1a:14
+Open/Close - 6A	P:RC6:1a:14
 Play - 5	P:RC5X:1a:1c
+Play - 6A	P:RC6:1a:1c
 @JVC	DVD Recorder 111,-1
 Stop / Clear	P:JVC:6f:3
 Slow Motion +	P:JVC:6f:6
@@ -4068,14 +5170,64 @@ R.A.Edit	P:JVC:43:dd
 In/Out	P:JVC:43:de
 jog_cw	P:JVC:43:ed
 @JVC	VCR 1,-1
+Stop []	P:Akai:1:3
+Stop	P:Akai:1:3
+Eject	P:Akai:1:4
+On	P:Akai:1:5
+Ffwd/Shut.Srch >>	P:Akai:1:6
+Ff/Shut.Srch >>	P:Akai:1:6
+Ff >>/Shuttle >>	P:Akai:1:6
+Ffwd >>	P:Akai:1:6
+Rew/Shut.Srch <<	P:Akai:1:7
+Rew <</Shuttle <<	P:Akai:1:7
+Rew <<	P:Akai:1:7
+Slow >	P:Akai:1:8
+Off	P:Akai:1:a
+Power	P:Akai:1:b
+Play >	P:Akai:1:c
+Pause/Still	P:Akai:1:d
 Tv Ch/Set +	P:SIRC:1:10
 Tv Ch/Set -	P:SIRC:1:11
 Volume +	P:SIRC:1:12
+Tv/Video	P:Akai:1:13
 Volume -	P:SIRC:1:13
+Video/Tv	P:Akai:1:13
+Search Fwd >>	P:Akai:1:14
 Tv Power	P:SIRC:1:15
 Tv Menu (Ra Edit)	P:SIRC:1:15
 Tv Menu	P:SIRC:1:15
+Search Rev <<	P:Akai:1:15
+Fr Adv	P:Akai:1:16
+Channel -	P:Akai:1:18
+Channel +	P:Akai:1:19
+Channel	P:Akai:1:19
 Tv Tv/Video	P:SIRC:1:25
+Audio Dub/Play	P:Akai:1:2c
+Sp/Ep	P:Akai:1:41
+Am/Pm	P:Akai:1:42
+Cancel	P:Akai:1:46
+Prog	P:Akai:1:47
+Enter	P:Akai:1:4e
+0	P:Akai:1:4f
+0/Repeat	P:Akai:1:4f
+1	P:Akai:1:50
+2	P:Akai:1:51
+3	P:Akai:1:52
+3/Tue	P:Akai:1:52
+4	P:Akai:1:53
+4/Wed	P:Akai:1:53
+5	P:Akai:1:54
+5/Thu	P:Akai:1:54
+6	P:Akai:1:55
+6/Fri	P:Akai:1:55
+7	P:Akai:1:56
+7/Sat	P:Akai:1:56
+8	P:Akai:1:57
+8/1 St/2 Nd	P:Akai:1:57
+9	P:Akai:1:58
+9/Daily	P:Akai:1:58
+Rec	P:Akai:1:6c
+Rec/Play	P:Akai:1:6c
 @JVC	VCR 131,-1
 Tape Stop []	P:JVC:83:3
 Tape >>	P:JVC:83:6
@@ -5406,6 +6558,37 @@ Scan >>	P:RC5X:1b:34
 Play	P:RC5X:1b:35
 Stop	P:RC5X:1b:36
 A-B	P:RC5X:1b:3f
+@Lexicon	DVD Player 4,-1
+0	P:RC6:4:0
+1	P:RC6:4:1
+2	P:RC6:4:2
+3	P:RC6:4:3
+4	P:RC6:4:4
+5	P:RC6:4:5
+6	P:RC6:4:6
+7	P:RC6:4:7
+8	P:RC6:4:8
+9	P:RC6:4:9
+Power Off	P:RC6:4:c
+Display	P:RC6:4:f
+Skip >>	P:RC6:4:20
+Skip <<	P:RC6:4:21
+Play	P:RC6:4:2c
+Power On	P:RC6:4:2c
+Pause	P:RC6:4:30
+Stop	P:RC6:4:31
+Open/Close	P:RC6:4:42
+Subtitle	P:RC6:4:4b
+Audio Mode	P:RC6:4:4e
+Menu	P:RC6:4:54
+Up	P:RC6:4:58
+Down	P:RC6:4:59
+Left	P:RC6:4:5a
+Right	P:RC6:4:5b
+Enter	P:RC6:4:5c
+Top Menu	P:RC6:4:71
+Setup	P:RC6:4:82
+Angle	P:RC6:4:85
 @LG	Blu-Ray 45,45
 Power	P:NECx:2d2d:30
 Play	P:NECx:2d2d:31
@@ -6004,6 +7187,36 @@ Search <<	P:NECext:f70a:a35c
 Mute	P:RC5X:0:d
 Volume -	P:RC5X:0:14
 Volume +	P:RC5X:0:15
+@Loewe	DVD Player 4,-1
+0	P:RC6:4:0
+1	P:RC6:4:1
+2	P:RC6:4:2
+3	P:RC6:4:3
+4	P:RC6:4:4
+5	P:RC6:4:5
+6	P:RC6:4:6
+7	P:RC6:4:7
+8	P:RC6:4:8
+9	P:RC6:4:9
+Power	P:RC6:4:c
+Mute	P:RC6:4:f
+V = Knapp	P:RC6:4:1d
+T	P:RC6:4:20
+I (Info)	P:RC6:4:22
+Play	P:RC6:4:2c
+Pause	P:RC6:4:30
+Stopp	P:RC6:4:31
+Bild Knapp	P:RC6:4:4b
+Ljud Knapp	P:RC6:4:4e
+Cursor Upp	P:RC6:4:58
+Cursor Ner	P:RC6:4:59
+Nster	P:RC6:4:5a
+Ger	P:RC6:4:5b
+Cursor Ok	P:RC6:4:5c
+E (Exit)	P:RC6:4:83
+Pip Knapp	P:RC6:4:85
+Epg Knapp	P:RC6:4:c8
+M (Meny)	P:RC6:4:d1
 @Loewe	DVD Player 45,45
 Power	P:NECx:2d2d:30
 Play	P:NECx:2d2d:31
@@ -6183,6 +7396,40 @@ Angle	P:NECext:2287:8679
 Subtitle	P:NECext:2287:857a
 Audio	P:NECext:2287:847b
 Zoom	P:NECext:2287:7e81
+@Magnavox	DVD Player 4,-1
+0	P:RC6:4:0
+1	P:RC6:4:1
+2	P:RC6:4:2
+3	P:RC6:4:3
+4	P:RC6:4:4
+5	P:RC6:4:5
+6	P:RC6:4:6
+7	P:RC6:4:7
+8	P:RC6:4:8
+9	P:RC6:4:9
+Power	P:RC6:4:c
+Mute	P:RC6:4:d
+Display	P:RC6:4:f
+Repeat	P:RC6:4:1d
+Next	P:RC6:4:20
+Prev	P:RC6:4:21
+Play	P:RC6:4:2c
+Pause	P:RC6:4:30
+Stop	P:RC6:4:31
+Repeat A-B	P:RC6:4:3b
+Subtitle	P:RC6:4:4b
+Audio Mode	P:RC6:4:4e
+Menu Disc	P:RC6:4:54
+Cursor Up	P:RC6:4:58
+Cursor Down	P:RC6:4:59
+Cursor Left	P:RC6:4:5a
+Cursor Right	P:RC6:4:5b
+Cursor Ok	P:RC6:4:5c
+Menu System	P:RC6:4:82
+Title	P:RC6:4:83
+Angle	P:RC6:4:85
+Preview	P:RC6:4:d5
+Zoom	P:RC6:4:f7
 @Magnavox	DVD Recorder 135,34
 Channel -	P:NECext:2287:ca35
 Record	P:NECext:2287:c03f
@@ -6611,6 +7858,54 @@ Key_5	P:NECext:ff00:b14e
 Key_8	P:NECext:ff00:b04f
 prog	P:NECext:ff00:ae51
 display	P:NECext:ff00:ac53
+@Marantz	DVD 4,-1
+0	P:RC6:4:0
+1	P:RC6:4:1
+2	P:RC6:4:2
+3	P:RC6:4:3
+4	P:RC6:4:4
+5	P:RC6:4:5
+6	P:RC6:4:6
+7	P:RC6:4:7
+8	P:RC6:4:8
+9	P:RC6:4:9
+Power	P:RC6:4:c
+Display	P:RC6:4:f
+Dimmer	P:RC6:4:13
+Random	P:RC6:4:1c
+Repeat	P:RC6:4:1d
+Chapter +	P:RC6:4:20
+Chapter -	P:RC6:4:21
+Foward	P:RC6:4:28
+Rewind	P:RC6:4:29
+Play	P:RC6:4:2c
+Pause	P:RC6:4:30
+Stop	P:RC6:4:31
+Clear	P:RC6:4:3a
+A-B	P:RC6:4:3b
+Open/Close	P:RC6:4:42
+Program	P:RC6:4:45
+Subtitle	P:RC6:4:4b
+Audio	P:RC6:4:4e
+S.Mode	P:RC6:4:50
+Menu	P:RC6:4:54
+Up	P:RC6:4:58
+Down	P:RC6:4:59
+Left	P:RC6:4:5a
+Right	P:RC6:4:5b
+Enter	P:RC6:4:5c
+Top Menu	P:RC6:4:71
++10	P:RC6:4:78
+Setup	P:RC6:4:82
+Return	P:RC6:4:83
+Angle	P:RC6:4:85
+Video Adjust	P:RC6:4:96
+Search	P:RC6:4:c8
+Page	P:RC6:4:ca
+Condition	P:RC6:4:cc
+Marker	P:RC6:4:ee
+Zoom	P:RC6:4:f7
+Video On/Off	P:RC6:4:ff
 @Marantz	DVD 69,-1
 Pause	P:NECext:ba45:ff00
 1	P:NECext:ba45:fe01
@@ -6657,7 +7952,134 @@ Open/Close	P:NECext:ba45:af5
 @Marantz	DVD Player 20,-1
 Angle	P:RC5X:14:42
 @Marantz	DVD Player 4,-1
-A-B	P:RC5X:4:3b
+0	P:RC6:4:0
+1	P:RC6:4:1
+2	P:RC6:4:2
+3	P:RC6:4:3
+4	P:RC6:4:4
+5	P:RC6:4:5
+6	P:RC6:4:6
+7	P:RC6:4:7
+8	P:RC6:4:8
+9	P:RC6:4:9
+Power On/Standby	P:RC6:4:c
+Power Off	P:RC6:4:c
+Power	P:RC6:4:c
+Display	P:RC6:4:f
+Osd	P:RC6:4:f
+Dimmer	P:RC6:4:13
+Audio Ex	P:RC6:4:13
+Random	P:RC6:4:1c
+Repeat	P:RC6:4:1d
+Next	P:RC6:4:20
+Skip >>	P:RC6:4:20
+Chapter +	P:RC6:4:20
+Previous	P:RC6:4:21
+Skip <<	P:RC6:4:21
+Chapter -	P:RC6:4:21
+Slow Forward	P:RC6:4:22
+Slow Motion +	P:RC6:4:22
+Slow Backward	P:RC6:4:23
+Slow Motion -	P:RC6:4:23
+Fast Forward	P:RC6:4:28
+Scan >>	P:RC6:4:28
+Forward	P:RC6:4:28
+Foward	P:RC6:4:28
+Rewind	P:RC6:4:29
+Scan <<	P:RC6:4:29
+Reverse	P:RC6:4:29
+Play	P:RC6:4:2c
+Power On	P:RC6:4:2c
+Pause	P:RC6:4:30
+Jog/Pause	P:RC6:4:30
+Stop	P:RC6:4:31
+Clear	P:RC6:4:3a
+Repeat A-B	P:RC6:4:3b
+A-B	P:RC6:4:3b
+Open/Close	P:RC6:4:42
++10	P:RC6:4:42
+Program	P:RC6:4:45
+Subtitle	P:RC6:4:4b
+Audio	P:RC6:4:4e
+Audio Mode	P:RC6:4:4e
+Sound Mode	P:RC6:4:50
+Sacd Mode	P:RC6:4:50
+Search Mode	P:RC6:4:50
+Surround	P:RC6:4:50
+S. Mode	P:RC6:4:50
+S.Mode	P:RC6:4:50
+Surr.	P:RC6:4:52
+Menu	P:RC6:4:54
+Up	P:RC6:4:58
+Cursor Up	P:RC6:4:58
+Arrow Up	P:RC6:4:58
+Down	P:RC6:4:59
+Cursor Down	P:RC6:4:59
+Arrow Down	P:RC6:4:59
+Left	P:RC6:4:5a
+Cursor Left	P:RC6:4:5a
+Arrow Left	P:RC6:4:5a
+Right	P:RC6:4:5b
+Cursor Right	P:RC6:4:5b
+Arrow Right	P:RC6:4:5b
+Enter	P:RC6:4:5c
+Cursor - Enter	P:RC6:4:5c
+Top Menu	P:RC6:4:71
+Title	P:RC6:4:71
+Return	P:RC6:4:71
+10	P:RC6:4:78
+Disk Skip	P:RC6:4:7f
+Disc Skip	P:RC6:4:7f
+Discskip	P:RC6:4:7f
+Setup	P:RC6:4:82
+Set-Up	P:RC6:4:82
+Set Up	P:RC6:4:82
+Angle	P:RC6:4:85
+Video Adjust	P:RC6:4:96
+Disk -1	P:RC6:4:b3
+Disk 1	P:RC6:4:b3
+Disk -2	P:RC6:4:b4
+Disk 2	P:RC6:4:b4
+Disk -3	P:RC6:4:b5
+Disk 3	P:RC6:4:b5
+Disk -4	P:RC6:4:b6
+Disk 4	P:RC6:4:b6
+Disk -5	P:RC6:4:b7
+Disk 5	P:RC6:4:b7
+Ntsc/Pal	P:RC6:4:c5
+Hdmi	P:RC6:4:c6
+Search Mode1	P:RC6:4:c8
+T-C	P:RC6:4:c8
+Search	P:RC6:4:c8
+Page	P:RC6:4:ca
+Function Memo	P:RC6:4:cb
+Condition Memo	P:RC6:4:cc
+Condition	P:RC6:4:cc
+Group	P:RC6:4:d2
+Play Mode	P:RC6:4:d3
+Mode	P:RC6:4:d3
+Digest	P:RC6:4:d5
+Scan	P:RC6:4:d5
+Last Memo	P:RC6:4:d7
+Resume	P:RC6:4:d7
+Vocal	P:RC6:4:e7
+Marker 1	P:RC6:4:ee
+Marker	P:RC6:4:ee
+Marker 2	P:RC6:4:f0
+Search Mode2	P:RC6:4:f1
+Frame <<	P:RC6:4:f5
+Page Up	P:RC6:4:f5
+Page +	P:RC6:4:f5
+Frame >>	P:RC6:4:f6
+Page Down	P:RC6:4:f6
+Page -	P:RC6:4:f6
+Page Dn	P:RC6:4:f6
+Zoom	P:RC6:4:f7
+Video On/Off	P:RC6:4:ff
+@Marantz	DVD Player 41,-1
+Power Off -Discrete1	P:RC6:29:c9
+Power On -Discrete2	P:RC6:29:c9
+Power Off -Discrete2	P:RC6:29:ca
 @Marantz	Marantz BD8002
 Power	R:38000:33:873,931,873,931,1763,943,873,1833,873,931,873,897,907,3546,873,931,873,1834,872,931,1763,943,873,931,873,931,873,931,873,931,873,1834,1762,75052,873,932,872,932,1762,944,872,1834,872,932,872,932,872,3547,872,932,872,1834,872,932,1762,944,872,932,872,932,872,932,872,932,872,1835,1761,75054,871,932,872,934,1760,944,872,1834,872,932,872,932,872,3547,872,932,872,1836,870,932,1762,945,871,932,872,932,872,932,872,932,872,1834,1762
 Setup	R:38000:33:899,905,1789,918,898,905,899,1808,898,906,898,905,899,4422,1789,1820,1789,1820,1788,918,898,906,898,903,901,905,899,906,898,907,897,75015,898,906,1788,919,897,905,899,1809,897,937,867,906,898,4422,1789,1821,1788,1820,1788,918,898,906,898,906,898,906,898,906,898,905,899,75015,898,906,1788,918,898,905,899,1809,897,906,898,906,898,4423,1788,1821,1788,1821,1787,920,897,905,899,906,898,906,898,906,898,906,898
@@ -6846,6 +8268,32 @@ Clear	P:NECext:5080:b04f
 << Reverse	P:NECext:5080:a55a
 >> Fast Forward	P:NECext:5080:a45b
 10+	P:NECext:5080:a35c
+@McIntosh	Laser Disc 168,-1
+0	P:Pioneer40:57a8:0
+1	P:Pioneer40:57a8:1
+2	P:Pioneer40:57a8:2
+3	P:Pioneer40:57a8:3
+4	P:Pioneer40:57a8:4
+5	P:Pioneer40:57a8:5
+6	P:Pioneer40:57a8:6
+7	P:Pioneer40:57a8:7
+8	P:Pioneer40:57a8:8
+9	P:Pioneer40:57a8:9
+Scan >>	P:Pioneer40:57a8:10
+Scan <<	P:Pioneer40:57a8:11
+Chapter	P:Pioneer40:57a8:13
+Stop/Eject	P:Pioneer40:57a8:16
+Play	P:Pioneer40:57a8:17
+Pause	P:Pioneer40:57a8:18
+Power	P:Pioneer40:57a8:1c
+Audio Mode	P:Pioneer40:57a8:1e
+10 +	P:Pioneer40:57a8:1f
+Disc Side A	P:Pioneer40:57a8:4d
+Disc Side B	P:Pioneer40:57a8:4e
+Step -	P:Pioneer40:57a8:50
+Next	P:Pioneer40:57a8:52
+Back	P:Pioneer40:57a8:53
+Step +	P:Pioneer40:57a8:54
 @Memorex	DVD Player 0,-1
 5	P:NECext:ff00:7f80
 1	P:NECext:ff00:7e81
@@ -6999,6 +8447,66 @@ Top Menu	P:RC5X:13:79
 Titre	P:RC5X:13:79
 @Meridian	DVD Player 69,-1
 Menu	P:NECext:ba45:7b84
+@MGA	VCR 87,-1
+2	P:Mitsubishi:57:0
+10	P:Mitsubishi:57:1
+Power	P:Mitsubishi:57:2
+Play	P:Mitsubishi:57:4
+Video/Tv	P:Mitsubishi:57:5
+Slow Play	P:Mitsubishi:57:6
+3	P:Mitsubishi:57:8
+11	P:Mitsubishi:57:9
+Record	P:Mitsubishi:57:c
+Slow Motion +	P:Mitsubishi:57:e
+4	P:Mitsubishi:57:10
+12	P:Mitsubishi:57:11
+Stop	P:Mitsubishi:57:14
+Slow Motion -	P:Mitsubishi:57:16
+5	P:Mitsubishi:57:18
+13	P:Mitsubishi:57:19
+Pause	P:Mitsubishi:57:1c
+6	P:Mitsubishi:57:20
+U1	P:Mitsubishi:57:21
+Fast Forward >>	P:Mitsubishi:57:24
+7	P:Mitsubishi:57:28
+U2	P:Mitsubishi:57:29
+Rewind <<	P:Mitsubishi:57:2c
+8	P:Mitsubishi:57:30
+U3	P:Mitsubishi:57:31
+Ff Advance	P:Mitsubishi:57:34
+9	P:Mitsubishi:57:38
+U4	P:Mitsubishi:57:39
+@Micromega	DVD Player 4,-1
+0	P:RC6:4:0
+1	P:RC6:4:1
+2	P:RC6:4:2
+3	P:RC6:4:3
+4	P:RC6:4:4
+5	P:RC6:4:5
+6	P:RC6:4:6
+7	P:RC6:4:7
+8	P:RC6:4:8
+9	P:RC6:4:9
+Power	P:RC6:4:c
+Osd	P:RC6:4:f
+Skip >>	P:RC6:4:20
+Skip <<	P:RC6:4:21
+Slow Motion -	P:RC6:4:22
+Play	P:RC6:4:2c
+Pause	P:RC6:4:30
+Stop	P:RC6:4:31
+Eject	P:RC6:4:42
+Subtitle	P:RC6:4:4b
+Audio Mode	P:RC6:4:4e
+Cursor Up	P:RC6:4:58
+Cursor Down	P:RC6:4:59
+Cursor Left	P:RC6:4:5a
+Cursor Right	P:RC6:4:5b
+Ok	P:RC6:4:5c
+Return	P:RC6:4:83
+Angle	P:RC6:4:85
+T-C	P:RC6:4:c8
+Menu	P:RC6:4:d1
 @Mintek	DVD Player 0,153
 Exit	P:NECext:9900:fd02
 Enter	P:NECext:9900:f708
@@ -7025,6 +8533,803 @@ Cursor Up	P:NECext:9900:a35c
 Cursor Down	P:NECext:9900:a25d
 Cursor Left	P:NECext:9900:a15e
 Cursor Right	P:NECext:9900:a05f
+@Mitsubishi	DVD 103,-1
+1	P:Mitsubishi:67:0
+9	P:Mitsubishi:67:1
+Power	P:Mitsubishi:67:2
+Play >	P:Mitsubishi:67:4
+Last Play	P:Mitsubishi:67:5
+2	P:Mitsubishi:67:8
+0	P:Mitsubishi:67:9
+Clear	P:Mitsubishi:67:b
+Memory	P:Mitsubishi:67:c
+T/C	P:Mitsubishi:67:f
+3	P:Mitsubishi:67:10
+Stop []	P:Mitsubishi:67:14
+Repeat	P:Mitsubishi:67:17
+4	P:Mitsubishi:67:18
+Display	P:Mitsubishi:67:1b
+Pause	P:Mitsubishi:67:1c
++10	P:Mitsubishi:67:1e
+5	P:Mitsubishi:67:20
+Skip >>	P:Mitsubishi:67:24
+Fwd >>	P:Mitsubishi:67:25
+6	P:Mitsubishi:67:28
+Skip <<	P:Mitsubishi:67:2c
+Rev <<	P:Mitsubishi:67:2d
+7	P:Mitsubishi:67:30
+Slow >	P:Mitsubishi:67:34
+Enter	P:Mitsubishi:67:35
+Open/Close	P:Mitsubishi:67:36
+8	P:Mitsubishi:67:38
+A-B Repeat	P:Mitsubishi:67:3d
+Random	P:Mitsubishi:67:3e
+Title	P:Mitsubishi:67:40
+Cursor ^	P:Mitsubishi:67:41
+Cursor V	P:Mitsubishi:67:49
+Audio	P:Mitsubishi:67:50
+Menu	P:Mitsubishi:67:52
+Set Up	P:Mitsubishi:67:60
+Subtitle	P:Mitsubishi:67:63
+Angle	P:Mitsubishi:67:64
+Cursor <	P:Mitsubishi:67:65
+Subtitle On Off	P:Mitsubishi:67:67
+Cursor >	P:Mitsubishi:67:6d
+Return	P:Mitsubishi:67:6f
+@Mitsubishi	DVD Player 103,-1
+1	P:Mitsubishi:67:0
+9	P:Mitsubishi:67:1
+Power	P:Mitsubishi:67:2
+Play	P:Mitsubishi:67:4
+Play >	P:Mitsubishi:67:4
+Last Play	P:Mitsubishi:67:5
+2	P:Mitsubishi:67:8
+0	P:Mitsubishi:67:9
+Clear	P:Mitsubishi:67:b
+Memory	P:Mitsubishi:67:c
+T/C	P:Mitsubishi:67:f
+3	P:Mitsubishi:67:10
+Stop	P:Mitsubishi:67:14
+Stop []	P:Mitsubishi:67:14
+Repeat	P:Mitsubishi:67:17
+4	P:Mitsubishi:67:18
+Display	P:Mitsubishi:67:1b
+Pause	P:Mitsubishi:67:1c
+Pause/Step />	P:Mitsubishi:67:1c
++10	P:Mitsubishi:67:1e
+5	P:Mitsubishi:67:20
+Skip >>	P:Mitsubishi:67:24
+Scan >>	P:Mitsubishi:67:25
+Search >>	P:Mitsubishi:67:25
+Fwd >>	P:Mitsubishi:67:25
+Fl Dimmer	P:Mitsubishi:67:27
+6	P:Mitsubishi:67:28
+3D-Dnr	P:Mitsubishi:67:2b
+Skip <<	P:Mitsubishi:67:2c
+Scan <<	P:Mitsubishi:67:2d
+Search <<	P:Mitsubishi:67:2d
+Rev <<	P:Mitsubishi:67:2d
+7	P:Mitsubishi:67:30
+Slow Motion -	P:Mitsubishi:67:34
+Slow Motion +	P:Mitsubishi:67:34
+Slow Motion >>	P:Mitsubishi:67:34
+Slow >	P:Mitsubishi:67:34
+Enter	P:Mitsubishi:67:35
+Cursor Enter	P:Mitsubishi:67:35
+Open/Close	P:Mitsubishi:67:36
+8	P:Mitsubishi:67:38
+Side A/B	P:Mitsubishi:67:3d
+A-B Repeat	P:Mitsubishi:67:3d
+A-B Rpt	P:Mitsubishi:67:3d
+Random	P:Mitsubishi:67:3e
+Title	P:Mitsubishi:67:40
+Up	P:Mitsubishi:67:41
+Cursor ^	P:Mitsubishi:67:41
+Cursor Up	P:Mitsubishi:67:41
+Down	P:Mitsubishi:67:49
+Cursor V	P:Mitsubishi:67:49
+Cursor Down	P:Mitsubishi:67:49
+Audio Mode	P:Mitsubishi:67:50
+Audio	P:Mitsubishi:67:50
+Menu	P:Mitsubishi:67:52
+Set Up	P:Mitsubishi:67:60
+Set-Up	P:Mitsubishi:67:60
+Subtitle	P:Mitsubishi:67:63
+Sub-Title	P:Mitsubishi:67:63
+Angle	P:Mitsubishi:67:64
+Frame <<	P:Mitsubishi:67:65
+Left	P:Mitsubishi:67:65
+Cursor <	P:Mitsubishi:67:65
+Cursor Left	P:Mitsubishi:67:65
+Zoom	P:Mitsubishi:67:66
+Sub On	P:Mitsubishi:67:67
+Sub-Title On/Off	P:Mitsubishi:67:67
+Subtitle On Off	P:Mitsubishi:67:67
+Frame >>	P:Mitsubishi:67:6d
+Right	P:Mitsubishi:67:6d
+Cursor >	P:Mitsubishi:67:6d
+Cursor Right	P:Mitsubishi:67:6d
+Return	P:Mitsubishi:67:6f
+@Mitsubishi	DVD Player 71,-1
+Tv 1	P:Mitsubishi:47:0
+Tv 9	P:Mitsubishi:47:1
+Tv Power	P:Mitsubishi:47:2
+Tv Cancel	P:Mitsubishi:47:7
+Tv 2	P:Mitsubishi:47:8
+Tv 0	P:Mitsubishi:47:9
+Tv Channel ^	P:Mitsubishi:47:a
+Tv 3	P:Mitsubishi:47:10
+Tv Channel V	P:Mitsubishi:47:12
+Tv 4	P:Mitsubishi:47:18
+Tv Display	P:Mitsubishi:47:1b
+Tv 5	P:Mitsubishi:47:20
+Volume ^	P:Mitsubishi:47:22
+Tv 6	P:Mitsubishi:47:28
+Volume V	P:Mitsubishi:47:2a
+Tv 7	P:Mitsubishi:47:30
+Mute	P:Mitsubishi:47:32
+Tv Enter	P:Mitsubishi:47:35
+Tv 8	P:Mitsubishi:47:38
+Tv Input	P:Mitsubishi:47:3a
+Tv Audio Video	P:Mitsubishi:47:40
+Tv Jog/Adj+(In Srch)	P:Mitsubishi:47:41
+Tv Jog/Adj-(In Srch)	P:Mitsubishi:47:49
+Tv Menu	P:Mitsubishi:47:52
+@Mitsubishi	DVD Player 87,-1
+Vcr 1	P:Mitsubishi:57:0
+Vcr 9	P:Mitsubishi:57:1
+Vcr Power	P:Mitsubishi:57:2
+Vcr Play>	P:Mitsubishi:57:4
+Vcr/Tv	P:Mitsubishi:57:5
+Vcr 2	P:Mitsubishi:57:8
+Vcr 0	P:Mitsubishi:57:9
+Vcr Channel ^	P:Mitsubishi:57:a
+Vcr Cancel	P:Mitsubishi:57:b
+Vcr Record	P:Mitsubishi:57:c
+Vcr Jog/Adj+(Ind Src	P:Mitsubishi:57:e
+Vcr 3	P:Mitsubishi:57:10
+Vcr Channel V	P:Mitsubishi:57:12
+Vcr Stop[]	P:Mitsubishi:57:14
+Vcr Jog/Adj-(Ind Src	P:Mitsubishi:57:16
+Vcr 4	P:Mitsubishi:57:18
+Vcr Pause	P:Mitsubishi:57:1c
+Vcr 5	P:Mitsubishi:57:20
+Vcr Ffwd>>	P:Mitsubishi:57:24
+Vcr Display	P:Mitsubishi:57:27
+Vcr 6	P:Mitsubishi:57:28
+Vcr Rew<<	P:Mitsubishi:57:2c
+Vcr 7	P:Mitsubishi:57:30
+Quick Program	P:Mitsubishi:57:33
+Vcr Enter	P:Mitsubishi:57:35
+Vcr 8	P:Mitsubishi:57:38
+Vcr Input	P:Mitsubishi:57:3a
+Vcr Audio/Video	P:Mitsubishi:57:40
+Vcr Menu	P:Mitsubishi:57:52
+@Mitsubishi	Laser Disc 168,-1
+0	P:Pioneer40:57a8:0
+1	P:Pioneer40:57a8:1
+2	P:Pioneer40:57a8:2
+3	P:Pioneer40:57a8:3
+4	P:Pioneer40:57a8:4
+5	P:Pioneer40:57a8:5
+6	P:Pioneer40:57a8:6
+7	P:Pioneer40:57a8:7
+8	P:Pioneer40:57a8:8
+9	P:Pioneer40:57a8:9
+Digital/Analog	P:Pioneer40:57a8:c
+Digital/Analog/Cx	P:Pioneer40:57a8:c
+Digital	P:Pioneer40:57a8:c
+File	P:Pioneer40:57a8:d
+Cx	P:Pioneer40:57a8:e
+Fwd >>	P:Pioneer40:57a8:10
+Ffwd>>	P:Pioneer40:57a8:10
+Rev <<	P:Pioneer40:57a8:11
+Rew<<	P:Pioneer40:57a8:11
+Menu	P:Pioneer40:57a8:13
+Chapter	P:Pioneer40:57a8:13
+Stop/Open []	P:Pioneer40:57a8:16
+Stop []	P:Pioneer40:57a8:16
+Stop/Open	P:Pioneer40:57a8:16
+Play >	P:Pioneer40:57a8:17
+Play>	P:Pioneer40:57a8:17
+Pause	P:Pioneer40:57a8:18
+Open/Close	P:Pioneer40:57a8:19
+Last Memory	P:Pioneer40:57a8:19
+Power	P:Pioneer40:57a8:1c
+Auto Edit	P:Pioneer40:57a8:1d
+Audio Monitor	P:Pioneer40:57a8:1e
+Audio D/A	P:Pioneer40:57a8:1e
+Audio	P:Pioneer40:57a8:1e
++10	P:Pioneer40:57a8:1f
+Jog Fwd	P:Pioneer40:57a8:20
+Jog Fwd >>	P:Pioneer40:57a8:20
+Jog Rev	P:Pioneer40:57a8:24
+Jog Rev <<	P:Pioneer40:57a8:24
+Scan X2 Fwd	P:Pioneer40:57a8:28
+Scan Fwd	P:Pioneer40:57a8:28
+Scan Fwd(Clear Scan)	P:Pioneer40:57a8:28
+Scan Fwd(Slow Sp)	P:Pioneer40:57a8:28
+Scan Fwd(Low Scan)	P:Pioneer40:57a8:29
+Scan Fwd(Med-Slow)	P:Pioneer40:57a8:29
+Scan Fwd(Med-High)	P:Pioneer40:57a8:2a
+Scan Fwd(High Scan)	P:Pioneer40:57a8:2b
+Shuttle Fwd(F.S)	P:Pioneer40:57a8:2b
+Shuttle Fwd >>	P:Pioneer40:57a8:2b
+Scan Fwd(Full Sp)	P:Pioneer40:57a8:2b
+Scan X2 Rev	P:Pioneer40:57a8:2c
+Scan Rev(Clear Scan)	P:Pioneer40:57a8:2c
+Scan Rev(Slow Sp)	P:Pioneer40:57a8:2c
+Scan Rev(Low Scan)	P:Pioneer40:57a8:2d
+Scan Rev(Med-Slow)	P:Pioneer40:57a8:2d
+Scan Rev(Med-High)	P:Pioneer40:57a8:2e
+Scan Rev(High Scan)	P:Pioneer40:57a8:2f
+Shuttle Rev(F.S)	P:Pioneer40:57a8:2f
+Shuttle Rew <<	P:Pioneer40:57a8:2f
+Scan Rev(Full Sp)	P:Pioneer40:57a8:2f
+Digital Level	P:Pioneer40:57a8:37
+Audio Compress	P:Pioneer40:57a8:37
+Enter	P:Pioneer40:57a8:42
+Display	P:Pioneer40:57a8:43
+Repeat B	P:Pioneer40:57a8:44
+Repeat A	P:Pioneer40:57a8:44
+C (Cancel)	P:Pioneer40:57a8:45
+Cancel	P:Pioneer40:57a8:45
+Search -	P:Pioneer40:57a8:46
+Search +	P:Pioneer40:57a8:47
+Program	P:Pioneer40:57a8:4c
+Side A	P:Pioneer40:57a8:4d
+Disc Side A	P:Pioneer40:57a8:4d
+Side B	P:Pioneer40:57a8:4e
+Disc Side B	P:Pioneer40:57a8:4e
+Frame <	P:Pioneer40:57a8:50
+Step <	P:Pioneer40:57a8:50
+Fs (Fwd Srch) >>	P:Pioneer40:57a8:52
+Fs >>	P:Pioneer40:57a8:52
+Srch Fwd (Fs)>>	P:Pioneer40:57a8:52
+Rs (Rev Srch) <<	P:Pioneer40:57a8:53
+Rs <<	P:Pioneer40:57a8:53
+Srch Rev (Rs)<<	P:Pioneer40:57a8:53
+Frame >	P:Pioneer40:57a8:54
+Step >	P:Pioneer40:57a8:54
+Search <	P:Pioneer40:57a8:55
+Search >	P:Pioneer40:57a8:58
+Hilite/Intro Scan	P:Pioneer40:57a8:5a
+Strobe	P:Pioneer40:57a8:5b
+Still/W Sound	P:Pioneer40:57a8:5b
+One Shot Memory	P:Pioneer40:57a8:5d
+Random	P:Pioneer40:57a8:5e
+@Mitsubishi	VCR 119,-1
+Volume Up	P:Mitsubishi:77:22
+Volume Down	P:Mitsubishi:77:2a
+Mute	P:Mitsubishi:77:32
+Vcr A	P:Mitsubishi:77:44
+@Mitsubishi	VCR 3,-1
+3	P:Akai:3:1
+4	P:Akai:3:2
+5	P:Akai:3:3
+6	P:Akai:3:4
+7	P:Akai:3:5
+8	P:Akai:3:6
+9	P:Akai:3:7
+10	P:Akai:3:8
+11	P:Akai:3:9
+12	P:Akai:3:a
+13	P:Akai:3:b
+U1	P:Akai:3:c
+U2	P:Akai:3:d
+U3	P:Akai:3:e
+U4	P:Akai:3:f
+2	P:Akai:3:10
+Power	P:Akai:3:13
+Stop []	P:Akai:3:18
+Play >	P:Akai:3:19
+Rec	P:Akai:3:1a
+Pause	P:Akai:3:1b
+Ff/Search >>	P:Akai:3:1c
+Rew/Search <<	P:Akai:3:1d
+@Mitsubishi	VCR 7,-1
+2	P:Akai:7:a
+4	P:Akai:7:a
+7	P:Akai:7:a
+Counter Zero Stop	P:Akai:7:2a
+Video / Tv	P:Akai:7:2a
+-	P:Akai:7:4a
++	P:Akai:7:4a
+Cancel	P:Akai:7:6a
+Cursor Up	P:Akai:7:6a
+@Mitsubishi	VCR 71,-1
+Tv 1	P:Mitsubishi:47:0
+Tv 9	P:Mitsubishi:47:1
+Tv Power	P:Mitsubishi:47:2
+Power	P:Mitsubishi:47:2
+Tv Cancel	P:Mitsubishi:47:7
+Tv 2	P:Mitsubishi:47:8
+Tv 0	P:Mitsubishi:47:9
+Tv Channel ^	P:Mitsubishi:47:a
+Tv Scan ^ (Ch ^)	P:Mitsubishi:47:a
+Tv Scan ^(Ch ^)	P:Mitsubishi:47:a
+Q.V.	P:Mitsubishi:47:f
+Tv Q.V.	P:Mitsubishi:47:f
+Tv Qv	P:Mitsubishi:47:f
+Tv 3	P:Mitsubishi:47:10
+Tv Channel V	P:Mitsubishi:47:12
+Tv Scan V (Ch V)	P:Mitsubishi:47:12
+Tv Scan V(Ch V)	P:Mitsubishi:47:12
+Tv Off-T Otr	P:Mitsubishi:47:17
+Tv Off-T/Otr	P:Mitsubishi:47:17
+Tv Sleep	P:Mitsubishi:47:17
+Tv 4	P:Mitsubishi:47:18
+Tv Display	P:Mitsubishi:47:1b
+Tv Data On Screen	P:Mitsubishi:47:1b
+Tv Info	P:Mitsubishi:47:1b
+Tv 5	P:Mitsubishi:47:20
+Volume ^	P:Mitsubishi:47:22
+Volume +	P:Mitsubishi:47:22
+Volume Up	P:Mitsubishi:47:22
+Tv 6	P:Mitsubishi:47:28
+Volume V	P:Mitsubishi:47:2a
+Volume -	P:Mitsubishi:47:2a
+Volume Down	P:Mitsubishi:47:2a
+Tv 7	P:Mitsubishi:47:30
+Mute	P:Mitsubishi:47:32
+Tv Enter	P:Mitsubishi:47:35
+Tv Enter (Exch)	P:Mitsubishi:47:35
+Tv 8	P:Mitsubishi:47:38
+Tv Ant A/B	P:Mitsubishi:47:39
+Tv Input	P:Mitsubishi:47:3a
+Tv Vcr/Tv	P:Mitsubishi:47:3a
+Tv Video/Tv	P:Mitsubishi:47:3a
+Tv Audio Video	P:Mitsubishi:47:40
+Tv Func.Video	P:Mitsubishi:47:40
+Tv Video	P:Mitsubishi:47:40
+Tv Func Video	P:Mitsubishi:47:40
+Tv Video ^	P:Mitsubishi:47:40
+Tv Jog/Adj+(In Srch)	P:Mitsubishi:47:41
+Tv Adjust +	P:Mitsubishi:47:41
+Tv Adjust ^	P:Mitsubishi:47:41
+Tv Video V	P:Mitsubishi:47:48
+Tv Jog/Adj-(In Srch)	P:Mitsubishi:47:49
+Tv Adjust -	P:Mitsubishi:47:49
+Tv Adjust V	P:Mitsubishi:47:49
+Tv Sqv	P:Mitsubishi:47:4e
+Tv Func.Audio	P:Mitsubishi:47:50
+Tv Audio	P:Mitsubishi:47:50
+Tv Func Audio	P:Mitsubishi:47:50
+Tv Audio ^	P:Mitsubishi:47:50
+Tv Menu	P:Mitsubishi:47:52
+Tv Audio V	P:Mitsubishi:47:58
+Pip Source	P:Mitsubishi:47:5f
+Tv Source	P:Mitsubishi:47:5f
+Tv Adjust <	P:Mitsubishi:47:65
+Tv Adjust >	P:Mitsubishi:47:6d
+Tv Pip Ch ^	P:Mitsubishi:47:76
+Pip	P:Mitsubishi:47:77
+Tv Pip	P:Mitsubishi:47:77
+Tv Home	P:Mitsubishi:47:7d
+Tv Pip Ch V	P:Mitsubishi:47:7e
+@Mitsubishi	VCR 87,-1
+1 Sun	P:Mitsubishi:57:0
+1	P:Mitsubishi:57:0
+Vcr 1	P:Mitsubishi:57:0
+Vcra 1	P:Mitsubishi:57:0
+Vcr-A	P:Mitsubishi:57:0
+9	P:Mitsubishi:57:1
+Vcr 9	P:Mitsubishi:57:1
+Vcra 9	P:Mitsubishi:57:1
+Power	P:Mitsubishi:57:2
+Vcr Power	P:Mitsubishi:57:2
+Vcra Power	P:Mitsubishi:57:2
+Audio Monitor	P:Mitsubishi:57:3
+Play >	P:Mitsubishi:57:4
+Vcr Play>	P:Mitsubishi:57:4
+Play/Stop	P:Mitsubishi:57:4
+Play	P:Mitsubishi:57:4
+Enter	P:Mitsubishi:57:4
+Stop	P:Mitsubishi:57:4
+Vcr Play	P:Mitsubishi:57:4
+Vcr Play/Stop/Enter	P:Mitsubishi:57:4
+Vcr Play/Stop	P:Mitsubishi:57:4
+Vcr Play >	P:Mitsubishi:57:4
+Vcra Play >	P:Mitsubishi:57:4
+Video/Tv	P:Mitsubishi:57:5
+Vcr/Tv	P:Mitsubishi:57:5
+Tv/Vcr	P:Mitsubishi:57:5
+Vcr Vcr/Tv	P:Mitsubishi:57:5
+Vcra Vcr/Tv	P:Mitsubishi:57:5
+Vcra Video/Tv	P:Mitsubishi:57:5
+Input Select	P:Mitsubishi:57:7
+2 Mon	P:Mitsubishi:57:8
+2	P:Mitsubishi:57:8
+Vcr 2	P:Mitsubishi:57:8
+Vcra 2	P:Mitsubishi:57:8
+0	P:Mitsubishi:57:9
+Vcr 0	P:Mitsubishi:57:9
+Vcra 0	P:Mitsubishi:57:9
+Channel ^	P:Mitsubishi:57:a
+Channel Up	P:Mitsubishi:57:a
+Scan + (Ch ^)	P:Mitsubishi:57:a
+Adjust/Scan +	P:Mitsubishi:57:a
+Vcr Channel ^	P:Mitsubishi:57:a
+Channel +	P:Mitsubishi:57:a
+Scan Up (Ch ^)	P:Mitsubishi:57:a
+Ch ^ (Scan ^)	P:Mitsubishi:57:a
+Scan ^ (Ch ^)	P:Mitsubishi:57:a
+Vcr Scan ^ (Ch ^)	P:Mitsubishi:57:a
+Vcr Scan ^(Ch ^)	P:Mitsubishi:57:a
+Vcra Scan ^ (Ch ^)	P:Mitsubishi:57:a
+Vcra Channel ^	P:Mitsubishi:57:a
+Select < Digital Cle	P:Mitsubishi:57:b
+Clear	P:Mitsubishi:57:b
+Clear <	P:Mitsubishi:57:b
+Cancel	P:Mitsubishi:57:b
+Vcr Cancel	P:Mitsubishi:57:b
+Vcra Cancel	P:Mitsubishi:57:b
+Cancel <	P:Mitsubishi:57:b
+Rec	P:Mitsubishi:57:c
+Record	P:Mitsubishi:57:c
+Vcr Record	P:Mitsubishi:57:c
+Vcr Rec	P:Mitsubishi:57:c
+Vcra Rec	P:Mitsubishi:57:c
+Zero Stop	P:Mitsubishi:57:d
+Zero-Stop Time Cou.	P:Mitsubishi:57:d
+Slow +	P:Mitsubishi:57:e
+Index Search Slow +	P:Mitsubishi:57:e
+Fr Adv Slow +	P:Mitsubishi:57:e
+Index Search +	P:Mitsubishi:57:e
+Vcr Jog/Adj+(Ind Src	P:Mitsubishi:57:e
+Jog/Adjust +	P:Mitsubishi:57:e
+Fs/+	P:Mitsubishi:57:e
+Index Srch +	P:Mitsubishi:57:e
+Frame >>	P:Mitsubishi:57:e
+Index +	P:Mitsubishi:57:e
+Slow Motion +	P:Mitsubishi:57:e
+Vcr Index +	P:Mitsubishi:57:e
+Scan >>	P:Mitsubishi:57:e
+Vcr Jog/Index S.+	P:Mitsubishi:57:e
+Vcra Index +	P:Mitsubishi:57:e
+Vcra Index Search +	P:Mitsubishi:57:e
+Vcra Srch Index +	P:Mitsubishi:57:e
+Index >>>	P:Mitsubishi:57:e
+Vcra Adjust >	P:Mitsubishi:57:e
+Address Enter	P:Mitsubishi:57:f
+Index Enter	P:Mitsubishi:57:f
+3 Tue	P:Mitsubishi:57:10
+3	P:Mitsubishi:57:10
+Vcr 3	P:Mitsubishi:57:10
+Vcra 3	P:Mitsubishi:57:10
+Channel V	P:Mitsubishi:57:12
+Channel Down	P:Mitsubishi:57:12
+Scan - (Ch V)	P:Mitsubishi:57:12
+Adjust/Scan -	P:Mitsubishi:57:12
+Vcr Channel V	P:Mitsubishi:57:12
+Channel -	P:Mitsubishi:57:12
+Scan Down (Ch V)	P:Mitsubishi:57:12
+Ch V (Scan V)	P:Mitsubishi:57:12
+Scan V (Ch V)	P:Mitsubishi:57:12
+Vcr Scan V (Ch V)	P:Mitsubishi:57:12
+Vcr Scan V(Ch V)	P:Mitsubishi:57:12
+Vcra Scan V (Ch V)	P:Mitsubishi:57:12
+Vcra Channel V	P:Mitsubishi:57:12
+Set +	P:Mitsubishi:57:13
+Set	P:Mitsubishi:57:13
+Stop []	P:Mitsubishi:57:14
+Vcr Stop[]	P:Mitsubishi:57:14
+Vcr Stop	P:Mitsubishi:57:14
+Vcr Stop []	P:Mitsubishi:57:14
+Vcra Stop []	P:Mitsubishi:57:14
+Reset	P:Mitsubishi:57:15
+Reset Time Counter	P:Mitsubishi:57:15
+Counter Reset	P:Mitsubishi:57:15
+Vcr Counter Reset	P:Mitsubishi:57:15
+Slow -	P:Mitsubishi:57:16
+Index Search Slow -	P:Mitsubishi:57:16
+Fr Adv Slow -	P:Mitsubishi:57:16
+Index Search -	P:Mitsubishi:57:16
+Vcr Jog/Adj-(Ind Src	P:Mitsubishi:57:16
+Jog/Adjust -	P:Mitsubishi:57:16
+Rs/-	P:Mitsubishi:57:16
+Index Srch -	P:Mitsubishi:57:16
+Frame <<	P:Mitsubishi:57:16
+Index -	P:Mitsubishi:57:16
+Slow Motion -	P:Mitsubishi:57:16
+Vcr Index -	P:Mitsubishi:57:16
+Scan <<	P:Mitsubishi:57:16
+Vcr Jog/Index S.-	P:Mitsubishi:57:16
+Vcra Index -	P:Mitsubishi:57:16
+Vcra Index Search -	P:Mitsubishi:57:16
+Vcra Srch Index -	P:Mitsubishi:57:16
+Index <<<	P:Mitsubishi:57:16
+Vcra Adjust <	P:Mitsubishi:57:16
+Repeat	P:Mitsubishi:57:17
+Vcra Repeat	P:Mitsubishi:57:17
+4 Wed	P:Mitsubishi:57:18
+4	P:Mitsubishi:57:18
+Vcr 4	P:Mitsubishi:57:18
+Vcra 4	P:Mitsubishi:57:18
+Input Down	P:Mitsubishi:57:1a
+Prog List On/Off	P:Mitsubishi:57:1b
+Prog.List On/Off	P:Mitsubishi:57:1b
+Data On Screen	P:Mitsubishi:57:1b
+Pause/Still	P:Mitsubishi:57:1c
+Still/Pause	P:Mitsubishi:57:1c
+Pause	P:Mitsubishi:57:1c
+Vcr Pause	P:Mitsubishi:57:1c
+Pause / Still	P:Mitsubishi:57:1c
+Vcra Pause	P:Mitsubishi:57:1c
+Vcra Pause/Still	P:Mitsubishi:57:1c
+Set Time Counter	P:Mitsubishi:57:1d
+Prog Rec On/Off	P:Mitsubishi:57:1f
+Prog.Rec On/Off	P:Mitsubishi:57:1f
+5 Thu	P:Mitsubishi:57:20
+5	P:Mitsubishi:57:20
+Vcr 5	P:Mitsubishi:57:20
+Vcra 5	P:Mitsubishi:57:20
+Address Search	P:Mitsubishi:57:23
+Ff/Srch >>	P:Mitsubishi:57:24
+Ff >>	P:Mitsubishi:57:24
+Vcr Ffwd>>	P:Mitsubishi:57:24
+Ff>> (Adjust +)	P:Mitsubishi:57:24
+Fast Forward >>	P:Mitsubishi:57:24
+Vcr Ff >>	P:Mitsubishi:57:24
+Ffwd >>	P:Mitsubishi:57:24
+Vcra Ff >>	P:Mitsubishi:57:24
+Vcra Ff/Srch >>	P:Mitsubishi:57:24
+Vcra Ff/Fwd >>	P:Mitsubishi:57:24
+Fast Play	P:Mitsubishi:57:25
+Fast Play X2	P:Mitsubishi:57:25
+Vcr Qv	P:Mitsubishi:57:25
+Qv	P:Mitsubishi:57:25
+Q.V.	P:Mitsubishi:57:25
+Vcra Qv	P:Mitsubishi:57:25
+Vcra Q.V.	P:Mitsubishi:57:25
+X2	P:Mitsubishi:57:25
+Vcra Sqv/Qv	P:Mitsubishi:57:25
+Display	P:Mitsubishi:57:27
+Vcr Display	P:Mitsubishi:57:27
+Vcra Display	P:Mitsubishi:57:27
+Vcra Data On Screen	P:Mitsubishi:57:27
+Vcra Info	P:Mitsubishi:57:27
+6 Fri	P:Mitsubishi:57:28
+6	P:Mitsubishi:57:28
+Vcr 6	P:Mitsubishi:57:28
+Vcra 6	P:Mitsubishi:57:28
+Prog Nbr	P:Mitsubishi:57:2b
+V Prog.Nbr	P:Mitsubishi:57:2b
+Rew/Srch <<	P:Mitsubishi:57:2c
+Rew <<	P:Mitsubishi:57:2c
+Vcr Rew<<	P:Mitsubishi:57:2c
+Rew<< (Adjust -)	P:Mitsubishi:57:2c
+Rewind <<	P:Mitsubishi:57:2c
+Vcr Rew <<	P:Mitsubishi:57:2c
+Vcra Rew <<	P:Mitsubishi:57:2c
+Vcra Rew/Srch <<	P:Mitsubishi:57:2c
+Vcra Rew/Rev <<	P:Mitsubishi:57:2c
+R Play <	P:Mitsubishi:57:2d
+Play R. <	P:Mitsubishi:57:2d
+Reverse Play	P:Mitsubishi:57:2d
+Search	P:Mitsubishi:57:2e
+Search Time Counter	P:Mitsubishi:57:2e
+Off-T Otr	P:Mitsubishi:57:2f
+Off-T/Otr	P:Mitsubishi:57:2f
+Otr	P:Mitsubishi:57:2f
+Otr Record Time	P:Mitsubishi:57:2f
+Vcra Off-T Otr	P:Mitsubishi:57:2f
+Vcra Off-T/Otr	P:Mitsubishi:57:2f
+Vcra Sleep	P:Mitsubishi:57:2f
+7 Sat	P:Mitsubishi:57:30
+7	P:Mitsubishi:57:30
+Vcr 7	P:Mitsubishi:57:30
+Vcra 7	P:Mitsubishi:57:30
+Select > Quad	P:Mitsubishi:57:33
+Select >	P:Mitsubishi:57:33
+Quick Program	P:Mitsubishi:57:33
+Vcr Qui.Pgm/Plus+	P:Mitsubishi:57:33
+Vcr Plus+	P:Mitsubishi:57:33
+Vcr Q.Prog/Vcr Plus+	P:Mitsubishi:57:33
+Vcra Quick Program	P:Mitsubishi:57:33
+Quick Program/Vcr+	P:Mitsubishi:57:33
+Vcra Quickprm/Vcr+	P:Mitsubishi:57:33
+Slow >	P:Mitsubishi:57:34
+Index Search Slow >	P:Mitsubishi:57:34
+Fr Adv Slow >	P:Mitsubishi:57:34
+Slow/Fr Adv >	P:Mitsubishi:57:34
+Slow	P:Mitsubishi:57:34
+Slow/Frame Adv	P:Mitsubishi:57:34
+Slow / Frame Advance	P:Mitsubishi:57:34
+Channel Select	P:Mitsubishi:57:35
+Enter Slow/Fr Adv	P:Mitsubishi:57:35
+Vcr Enter	P:Mitsubishi:57:35
+Vcra Enter	P:Mitsubishi:57:35
+Enter >	P:Mitsubishi:57:35
+Vcra Enter (Exch)	P:Mitsubishi:57:35
+Vcr Eject	P:Mitsubishi:57:36
+Eject	P:Mitsubishi:57:36
+Vcra Eject	P:Mitsubishi:57:36
+8 M-F	P:Mitsubishi:57:38
+8	P:Mitsubishi:57:38
+Vcr 8	P:Mitsubishi:57:38
+Vcra 8	P:Mitsubishi:57:38
+A	P:Mitsubishi:57:39
+Vcra Ant A/B	P:Mitsubishi:57:39
+Vcr Input	P:Mitsubishi:57:3a
+Input X2	P:Mitsubishi:57:3a
+Input	P:Mitsubishi:57:3a
+Input Up	P:Mitsubishi:57:3a
+Vcr Input(X2)	P:Mitsubishi:57:3a
+Vcra Input	P:Mitsubishi:57:3a
+Input (X2)	P:Mitsubishi:57:3a
+Vcra Input Select	P:Mitsubishi:57:3a
+Set -	P:Mitsubishi:57:3b
+Slow <	P:Mitsubishi:57:3c
+Slow/Fr Adv <	P:Mitsubishi:57:3c
+Skip Search	P:Mitsubishi:57:3d
+Intro	P:Mitsubishi:57:3d
+Vcra Srch Skip	P:Mitsubishi:57:3d
+Sp/Ep	P:Mitsubishi:57:3e
+Power On	P:Mitsubishi:57:3f
+Function Video	P:Mitsubishi:57:40
+Vcr Audio/Video	P:Mitsubishi:57:40
+Audio/Video	P:Mitsubishi:57:40
+Video	P:Mitsubishi:57:40
+Video Up	P:Mitsubishi:57:40
+Vcr Func.Video	P:Mitsubishi:57:40
+Vcr Video	P:Mitsubishi:57:40
+Video ^	P:Mitsubishi:57:40
+Vcra Func Video	P:Mitsubishi:57:40
+Vcra Video	P:Mitsubishi:57:40
+Vcra Video ^	P:Mitsubishi:57:40
+Adjust ^	P:Mitsubishi:57:41
+Adjust Up	P:Mitsubishi:57:41
+Vcr Adjust ^	P:Mitsubishi:57:41
+Adjust +	P:Mitsubishi:57:41
+Vcra Adjust ^	P:Mitsubishi:57:41
+Power On (Alt.)	P:Mitsubishi:57:42
+Vcra S.(Quick View)	P:Mitsubishi:57:45
+Time Search	P:Mitsubishi:57:47
+Video Down	P:Mitsubishi:57:48
+Video V	P:Mitsubishi:57:48
+Vcra Video V	P:Mitsubishi:57:48
+Adjust V	P:Mitsubishi:57:49
+Adjust Down	P:Mitsubishi:57:49
+Vcr Adjust V	P:Mitsubishi:57:49
+Adjust -	P:Mitsubishi:57:49
+Vcra Adjust V	P:Mitsubishi:57:49
+Power Off	P:Mitsubishi:57:4a
+Scan Rev (New)	P:Mitsubishi:57:4b
+Vcra Shuttle Fwd	P:Mitsubishi:57:4c
+Vcra S.(Re.Sp.Srch)	P:Mitsubishi:57:4d
+Still/Strobe	P:Mitsubishi:57:4f
+Function Audio	P:Mitsubishi:57:50
+Audio	P:Mitsubishi:57:50
+Audio Up	P:Mitsubishi:57:50
+Vcr Func.Audio	P:Mitsubishi:57:50
+Vcr Audio	P:Mitsubishi:57:50
+Audio ^	P:Mitsubishi:57:50
+Vcra Func Audio	P:Mitsubishi:57:50
+Vcra Audio	P:Mitsubishi:57:50
+Vcra Audio ^	P:Mitsubishi:57:50
+Menu	P:Mitsubishi:57:52
+Vcr Menu	P:Mitsubishi:57:52
+Enter (Menu)	P:Mitsubishi:57:52
+Vcra Menu	P:Mitsubishi:57:52
+Vcra S.(F.Sp.Srch)	P:Mitsubishi:57:55
+Cursor Down	P:Mitsubishi:57:56
+Vcra Jog/Shuttle	P:Mitsubishi:57:56
+Channel	P:Mitsubishi:57:57
+Audio Down	P:Mitsubishi:57:58
+Audio V	P:Mitsubishi:57:58
+Vcra Audio V	P:Mitsubishi:57:58
+Input Tuner	P:Mitsubishi:57:5a
+Vcra S(Re.Play Back)	P:Mitsubishi:57:5b
+Vcra Shu.Fwd(Normal)	P:Mitsubishi:57:5c
+Address Search Divid	P:Mitsubishi:57:5f
+Input 1	P:Mitsubishi:57:62
+Freeze	P:Mitsubishi:57:67
+Input 2	P:Mitsubishi:57:6a
+Vcra S.(R.Fast P.B.)	P:Mitsubishi:57:6b
+Strobe	P:Mitsubishi:57:6f
+Vcr Adjust Rev	P:Mitsubishi:57:73
+Cursor Up	P:Mitsubishi:57:73
+Jog/Shuttle Rev	P:Mitsubishi:57:73
+Vcra Jog Rev	P:Mitsubishi:57:73
+Vcra Adjust-Jog	P:Mitsubishi:57:73
+Vcr Adjust Fwd	P:Mitsubishi:57:74
+Jog/Shuttle Ff	P:Mitsubishi:57:74
+Vcra Jog Fwd	P:Mitsubishi:57:74
+Vcra Adjust+Jog	P:Mitsubishi:57:74
+Vcr Enter Fwd(F.Sp)	P:Mitsubishi:57:75
+Vcra S.(F.H.Sp.Srch)	P:Mitsubishi:57:75
+Pip	P:Mitsubishi:57:77
+Vcr Enter Rev(F.Sp)	P:Mitsubishi:57:7d
+Vcra S.(R.H.Sp.Srch)	P:Mitsubishi:57:7d
+Vcra Shuttle Rew	P:Mitsubishi:57:7d
+Vcrb 1	P:Mitsubishi:57:80
+Vcr-B	P:Mitsubishi:57:80
+Vcrb 9	P:Mitsubishi:57:81
+Vcrb Power	P:Mitsubishi:57:82
+Vcrb Play	P:Mitsubishi:57:84
+Vcrb Play >	P:Mitsubishi:57:84
+Vcrb Vcr/Tv	P:Mitsubishi:57:85
+Vcrb Video/Tv	P:Mitsubishi:57:85
+Vcrb 2	P:Mitsubishi:57:88
+Vcrb 0	P:Mitsubishi:57:89
+Vcrb Channel ^	P:Mitsubishi:57:8a
+Vcrb Scan ^ (Ch ^)	P:Mitsubishi:57:8a
+Vcrb Cancel	P:Mitsubishi:57:8b
+Vcrb Record	P:Mitsubishi:57:8c
+Vcrb Rec	P:Mitsubishi:57:8c
+Vcrb Index +	P:Mitsubishi:57:8e
+Vcrb Index Search +	P:Mitsubishi:57:8e
+Vcrb Srch Index +	P:Mitsubishi:57:8e
+Vcrb Adjust >	P:Mitsubishi:57:8e
+Vcrb 3	P:Mitsubishi:57:90
+Vcrb Channel V	P:Mitsubishi:57:92
+Vcrb Scan V (Ch V)	P:Mitsubishi:57:92
+Vcrb Stop	P:Mitsubishi:57:94
+Vcrb Stop []	P:Mitsubishi:57:94
+Vcrb Index -	P:Mitsubishi:57:96
+Vcrb Index Search -	P:Mitsubishi:57:96
+Vcrb Srch Index -	P:Mitsubishi:57:96
+Vcrb Adjust <	P:Mitsubishi:57:96
+Vcrb Repeat	P:Mitsubishi:57:97
+Vcrb 4	P:Mitsubishi:57:98
+Vcrb Pause	P:Mitsubishi:57:9c
+Vcrb Pause/Still	P:Mitsubishi:57:9c
+Vcrb 5	P:Mitsubishi:57:a0
+Vcrb Ff >>	P:Mitsubishi:57:a4
+Vcrb Ff/Srch >>	P:Mitsubishi:57:a4
+Vcrb Ff/Fwd >>	P:Mitsubishi:57:a4
+Vcrb Q.V.	P:Mitsubishi:57:a5
+Vcrb Sqv/Qv	P:Mitsubishi:57:a5
+Vcrb Display	P:Mitsubishi:57:a7
+Vcrb Data On Screen	P:Mitsubishi:57:a7
+Vcrb Info	P:Mitsubishi:57:a7
+Vcrb 6	P:Mitsubishi:57:a8
+Vcrb Rew <<	P:Mitsubishi:57:ac
+Vcrb Rew/Srch <<	P:Mitsubishi:57:ac
+Vcrb Rew/Rev <<	P:Mitsubishi:57:ac
+Vcrb Off-T/Otr	P:Mitsubishi:57:af
+Vcrb Off-T Otr	P:Mitsubishi:57:af
+Vcrb Sleep	P:Mitsubishi:57:af
+Vcrb 7	P:Mitsubishi:57:b0
+Vcrb Quick Program	P:Mitsubishi:57:b3
+Vcrb Quickprg/Vcr+	P:Mitsubishi:57:b3
+Vcrb Enter	P:Mitsubishi:57:b5
+Vcrb Enter (Exch)	P:Mitsubishi:57:b5
+Vcrb Eject	P:Mitsubishi:57:b6
+Vcrb 8	P:Mitsubishi:57:b8
+Vcrb Ant A/B	P:Mitsubishi:57:b9
+Vcbr Input	P:Mitsubishi:57:ba
+Vcrb Input	P:Mitsubishi:57:ba
+Vcrb Input Select	P:Mitsubishi:57:ba
+Vcrb Srch Skip	P:Mitsubishi:57:bd
+Vcrb Video	P:Mitsubishi:57:c0
+Vcrb Func Video	P:Mitsubishi:57:c0
+Vcrb Video ^	P:Mitsubishi:57:c0
+Vcrb Adjust ^	P:Mitsubishi:57:c1
+Vcrb S.(Quich View)	P:Mitsubishi:57:c5
+Vcrb Video V	P:Mitsubishi:57:c8
+Vcrb Adjust V	P:Mitsubishi:57:c9
+Vcrb Shuttle Rev	P:Mitsubishi:57:cb
+Vcrb S.(Re.Sp.Srch)	P:Mitsubishi:57:cd
+Vcrb Audio	P:Mitsubishi:57:d0
+Vcrb Func Audio	P:Mitsubishi:57:d0
+Vcrb Audio ^	P:Mitsubishi:57:d0
+Vcrb Menu	P:Mitsubishi:57:d2
+Vcrb S.(F.Sp.Srch)	P:Mitsubishi:57:d5
+Vcrb Audio V	P:Mitsubishi:57:d8
+Vcrb S(Re.Play Back)	P:Mitsubishi:57:db
+Vcrb Shu.Fwd(Normal)	P:Mitsubishi:57:dc
+Vcrb Jog/Shuttle	P:Mitsubishi:57:de
+Vcrb S.(R.Fast P.B.)	P:Mitsubishi:57:eb
+Vcrb Jog Rev	P:Mitsubishi:57:f3
+Vcrb Adjust-Jog	P:Mitsubishi:57:f3
+Vcrb Jog Fwd	P:Mitsubishi:57:f4
+Vcrb Adjust+Jog	P:Mitsubishi:57:f4
+Vcrb S.(F.H.Sp.Srch)	P:Mitsubishi:57:f5
+Vcrb Shuttle Fwd	P:Mitsubishi:57:f5
+Vcrb S.(R.H.Sp.Srch)	P:Mitsubishi:57:fd
+Vcrb Shuttle Rew	P:Mitsubishi:57:fd
 @Mustek	Unknown_DVD 16,237
 Key_Mute	P:NECext:ed10:fe01
 Key_Again	P:NECext:ed10:fd02
@@ -7541,6 +9846,42 @@ Subtitle On/Off	P:NECext:2bd2:a956
 Slow	P:NECext:2bd2:708f
 @Onkyo	DVD Player 69,-1
 Last Play	P:NECext:ba45:d22d
+@Onkyo	Laser Disc 168,-1
+0	P:Pioneer40:57a8:0
+1	P:Pioneer40:57a8:1
+2	P:Pioneer40:57a8:2
+3	P:Pioneer40:57a8:3
+4	P:Pioneer40:57a8:4
+5	P:Pioneer40:57a8:5
+6	P:Pioneer40:57a8:6
+7	P:Pioneer40:57a8:7
+8	P:Pioneer40:57a8:8
+9	P:Pioneer40:57a8:9
+Audio Digital/Analog	P:Pioneer40:57a8:c
+Cx	P:Pioneer40:57a8:e
+Srch Fwd >> (Ff)	P:Pioneer40:57a8:10
+Srch Rev << (Fr)	P:Pioneer40:57a8:11
+Chpt/Ft Track/Time	P:Pioneer40:57a8:13
+Stop/Open	P:Pioneer40:57a8:16
+Play > (Pgm Correct)	P:Pioneer40:57a8:17
+Pause	P:Pioneer40:57a8:18
+Power	P:Pioneer40:57a8:1c
+Audio Monitor	P:Pioneer40:57a8:1e
+10+	P:Pioneer40:57a8:1f
+Search	P:Pioneer40:57a8:42
+Display	P:Pioneer40:57a8:43
+Clear	P:Pioneer40:57a8:45
+Multi Speed -	P:Pioneer40:57a8:46
+Multi Speed +	P:Pioneer40:57a8:47
+Program	P:Pioneer40:57a8:4c
+Disc A	P:Pioneer40:57a8:4d
+Disc B	P:Pioneer40:57a8:4e
+Still Step <	P:Pioneer40:57a8:50
+Skip Fwd>> (Up)	P:Pioneer40:57a8:52
+Skip Rev<< (Down)	P:Pioneer40:57a8:53
+Still Step >	P:Pioneer40:57a8:54
+Multi Speed <	P:Pioneer40:57a8:55
+Multi Speed >	P:Pioneer40:57a8:58
 @Onkyo Integra	DVD Changer 210,43
 Power	P:NECext:2bd2:fb04
 Open/Close	P:NECext:2bd2:fa05
@@ -8483,6 +10824,18 @@ Action	P:Panasonic:190:56
 Menu	P:Panasonic:190:56
 @Panasonic	VCR 144,5
 Tape Position	P:Panasonic:590:2b
+@Panasonic	VCR 2,-1
+Stop	P:PanasonicOld:2:0
+Rewind <<	P:PanasonicOld:2:2
+Fast Forward >>	P:PanasonicOld:2:3
+Pause	P:PanasonicOld:2:6
+Record	P:PanasonicOld:2:8
+Play	P:PanasonicOld:2:a
+Still Advance	P:PanasonicOld:2:c
+Slow	P:PanasonicOld:2:f
+Power	P:PanasonicOld:2:20
+Slow +	P:PanasonicOld:2:2e
+Slow -	P:PanasonicOld:2:2f
 @Panda	Unknown_DVD-6838 0,-1
 op/cl	P:NECext:ff00:ff00
 Key_3	P:NECext:ff00:fe01
@@ -8529,6 +10882,38 @@ Key_Stop	P:NECext:ff00:a45b
 rev	P:NECext:ff00:a35c
 Key_Again	P:NECext:ff00:a25d
 Key_Slow	P:NECext:ff00:a05f
+@Philips	DVD Player 4,-1
+0	P:RC6:4:0
+1	P:RC6:4:1
+2	P:RC6:4:2
+3	P:RC6:4:3
+4	P:RC6:4:4
+5	P:RC6:4:5
+6	P:RC6:4:6
+7	P:RC6:4:7
+8	P:RC6:4:8
+9	P:RC6:4:9
+Power	P:RC6:4:c
+Osd Menu	P:RC6:4:f
+Shuffle	P:RC6:4:1c
+Repeat	P:RC6:4:1d
+Skip >>	P:RC6:4:20
+Skip <<	P:RC6:4:21
+Play	P:RC6:4:2c
+Pause	P:RC6:4:30
+Stop	P:RC6:4:31
+Repeat A-B	P:RC6:4:3b
+Screen Mode	P:RC6:4:4b
+Audio Mode	P:RC6:4:4e
+Dvd Menu	P:RC6:4:54
+Curser Up	P:RC6:4:58
+Curser Down	P:RC6:4:59
+Curser Left	P:RC6:4:5a
+Curser Right	P:RC6:4:5b
+Ok	P:RC6:4:5c
+Return	P:RC6:4:83
+T-C	P:RC6:4:c8
+Zoom	P:RC6:4:f7
 @Philips	Philips BDP2501F7
 Power	P:RC6:46:c
 Eject	P:RC6:46:42
@@ -8648,6 +11033,73 @@ PLAY	P:RC6:4:2c
 STOP	P:RC6:4:31
 ZOOM	P:RC6:4:f7
 MUTE	P:RC6:4:d
+@Philips	Unknown_DVD-724 4,-1
+Key_0	P:RC6:4:0
+Key_1	P:RC6:4:1
+Key_2	P:RC6:4:2
+Key_3	P:RC6:4:3
+Key_4	P:RC6:4:4
+Key_5	P:RC6:4:5
+Key_6	P:RC6:4:6
+Key_7	P:RC6:4:7
+Key_8	P:RC6:4:8
+Key_9	P:RC6:4:9
+Key_Power	P:RC6:4:c
+Key_Mute	P:RC6:4:d
+Display	P:RC6:4:f
+Key_Again	P:RC6:4:1d
+Skip_Right	P:RC6:4:20
+Skip_Left	P:RC6:4:21
+Key_Play	P:RC6:4:2c
+Key_Pause	P:RC6:4:30
+Key_Stop	P:RC6:4:31
+Repeat_AB	P:RC6:4:3b
+Key_Subtitle	P:RC6:4:4b
+Key_Audio	P:RC6:4:4e
+Disc_Menu	P:RC6:4:54
+Key_Up	P:RC6:4:58
+Key_Down	P:RC6:4:59
+Key_Left	P:RC6:4:5a
+Key_Right	P:RC6:4:5b
+Key_Ok	P:RC6:4:5c
+System_Menu	P:RC6:4:82
+Key_Enter	P:RC6:4:83
+Key_Angle	P:RC6:4:85
+Key_Previous	P:RC6:4:d5
+Key_Zoom	P:RC6:4:f7
+@Philips	Unknown_DVD711 4,-1
+Key_0	P:RC6:4:0
+Key_1	P:RC6:4:1
+Key_2	P:RC6:4:2
+Key_3	P:RC6:4:3
+Key_4	P:RC6:4:4
+Key_5	P:RC6:4:5
+Key_6	P:RC6:4:6
+Key_7	P:RC6:4:7
+Key_8	P:RC6:4:8
+Key_9	P:RC6:4:9
+Off	P:RC6:4:c
+Key_Menu	P:RC6:4:f
+Shuffle	P:RC6:4:1c
+Key_Again	P:RC6:4:1d
+Key_Last	P:RC6:4:20
+First	P:RC6:4:21
+Key_Play	P:RC6:4:2c
+Key_Pause	P:RC6:4:30
+Key_Stop	P:RC6:4:31
+RepeatA-B	P:RC6:4:3b
+Key_Subtitle	P:RC6:4:4b
+Key_Language	P:RC6:4:4e
+Key_Dvd	P:RC6:4:54
+Key_Up	P:RC6:4:58
+Key_Down	P:RC6:4:59
+Key_Left	P:RC6:4:5a
+Key_Right	P:RC6:4:5b
+Key_Ok	P:RC6:4:5c
+Key_Enter	P:RC6:4:83
+Key_Angle	P:RC6:4:85
+T-C	P:RC6:4:c8
+Key_Zoom	P:RC6:4:f7
 @Philips	Unknown_PHDVD5 26,154
 Key_1	P:SIRC20:135a:0
 Key_2	P:SIRC20:135a:1
@@ -8753,6 +11205,41 @@ Key_Play	P:RC5X:5:35
 Key_Stop	P:RC5X:5:36
 Key_Record	P:RC5X:5:37
 Sp/Lp	P:RC5X:5:3a
+@Philips	Unknown_dvd712 4,-1
+Key_0	P:RC6:4:0
+Key_1	P:RC6:4:1
+Key_2	P:RC6:4:2
+Key_3	P:RC6:4:3
+Key_4	P:RC6:4:4
+Key_5	P:RC6:4:5
+Key_6	P:RC6:4:6
+Key_7	P:RC6:4:7
+Key_8	P:RC6:4:8
+Key_9	P:RC6:4:9
+Key_Power	P:RC6:4:c
+Shuffle	P:RC6:4:1c
+Key_Again	P:RC6:4:1d
+Skip_Right	P:RC6:4:20
+Skip_Left	P:RC6:4:21
+Scan	P:RC6:4:2a
+Key_Play	P:RC6:4:2c
+Key_Pause	P:RC6:4:30
+Key_Stop	P:RC6:4:31
+Repeat_AB	P:RC6:4:3b
+Key_Subtitle	P:RC6:4:4b
+Key_Audio	P:RC6:4:4e
+Disc_Menu	P:RC6:4:54
+Key_Up	P:RC6:4:58
+Key_Down	P:RC6:4:59
+Key_Left	P:RC6:4:5a
+Key_Right	P:RC6:4:5b
+Key_Ok	P:RC6:4:5c
+System_Menu	P:RC6:4:82
+Key_Enter	P:RC6:4:83
+Key_Angle	P:RC6:4:85
+Secret	P:RC6:4:eb
+Display	P:RC6:4:ef
+Key_Zoom	P:RC6:4:f7
 @Philips	VCR 5,-1
 0	P:RC5X:5:0
 1	P:RC5X:5:1
@@ -8783,8 +11270,59 @@ Stop	P:RC5X:5:36
 Record	P:RC5X:5:37
 Program	P:RC5X:5:45
 Ok	P:RC5X:5:57
+@Pioneer	DVD Changer 163,-1
+Stop	P:Pioneer40:5ca3:98
+0	P:Pioneer40:5ca3:99
+1	P:Pioneer40:5ca3:99
+2	P:Pioneer40:5ca3:99
+3	P:Pioneer40:5ca3:99
+4	P:Pioneer40:5ca3:99
+5	P:Pioneer40:5ca3:99
+6	P:Pioneer40:5ca3:99
+7	P:Pioneer40:5ca3:99
+8	P:Pioneer40:5ca3:99
+9	P:Pioneer40:5ca3:99
++10	P:Pioneer40:5ca3:99
+A-B	P:Pioneer40:5ca3:99
+Angle	P:Pioneer40:5ca3:99
+Audio	P:Pioneer40:5ca3:99
+C. Mem	P:Pioneer40:5ca3:99
+Clear	P:Pioneer40:5ca3:99
+Cursor Down	P:Pioneer40:5ca3:99
+Cursor Left	P:Pioneer40:5ca3:99
+Cursor Right	P:Pioneer40:5ca3:99
+Cursor Up	P:Pioneer40:5ca3:99
+Disc 1	P:Pioneer40:5ca3:99
+Disc 2	P:Pioneer40:5ca3:99
+Disc 3	P:Pioneer40:5ca3:99
+Disc 4	P:Pioneer40:5ca3:99
+Disc 5	P:Pioneer40:5ca3:99
+Display	P:Pioneer40:5ca3:99
+L. Mem	P:Pioneer40:5ca3:99
+Menu	P:Pioneer40:5ca3:99
+Mode	P:Pioneer40:5ca3:99
+Ok	P:Pioneer40:5ca3:99
+Open	P:Pioneer40:5ca3:99
+Power	P:Pioneer40:5ca3:99
+Program	P:Pioneer40:5ca3:99
+Random	P:Pioneer40:5ca3:99
+Repeat	P:Pioneer40:5ca3:99
+Return	P:Pioneer40:5ca3:99
+Search	P:Pioneer40:5ca3:99
+Set Up	P:Pioneer40:5ca3:99
+Step/Slow <<	P:Pioneer40:5ca3:99
+Step/Slow >>	P:Pioneer40:5ca3:99
+Subtitle	P:Pioneer40:5ca3:99
+Top M	P:Pioneer40:5ca3:99
+Scan >>	P:Pioneer40:5ca3:9a
+Scan <<	P:Pioneer40:5ca3:9b
+Next Track	P:Pioneer40:5ca3:9c
+Prev. Track	P:Pioneer40:5ca3:9d
+Play	P:Pioneer40:5ca3:9e
+Pause	P:Pioneer40:5ca3:9f
 @Pioneer	DVD Player 163,-1
 Stop	P:NECext:5ca3:6798
+Cursor Down	P:Pioneer40:5ca3:98
 1	P:NECext:5ca3:6699
 0	P:NECext:5ca3:6699
 2	P:NECext:5ca3:6699
@@ -8821,42 +11359,136 @@ Slow Motion +	P:NECext:5ca3:6699
 Sub Title	P:NECext:5ca3:6699
 Top Menu	P:NECext:5ca3:6699
 Up	P:NECext:5ca3:6699
+Aspect	P:Pioneer40:5ca3:99
+Audio Mode	P:Pioneer40:5ca3:99
+Chapter/Time	P:Pioneer40:5ca3:99
+Step<<	P:Pioneer40:5ca3:99
+Step>>	P:Pioneer40:5ca3:99
+Subtitle	P:Pioneer40:5ca3:99
+Title	P:Pioneer40:5ca3:99
+A-B	P:Pioneer40:5ca3:99
+Cursor Left	P:Pioneer40:5ca3:99
+Cursor Right	P:Pioneer40:5ca3:99
+Cursor Up	P:Pioneer40:5ca3:99
+Setup	P:Pioneer40:5ca3:99
+Slow -	P:Pioneer40:5ca3:99
+Slow +	P:Pioneer40:5ca3:99
+Chp/Time	P:Pioneer40:5ca3:99
+Condition	P:Pioneer40:5ca3:99
+Disc Side	P:Pioneer40:5ca3:99
+Last Memo	P:Pioneer40:5ca3:99
+Mode	P:Pioneer40:5ca3:99
+Side A/B	P:Pioneer40:5ca3:99
+Downv	P:Pioneer40:5ca3:99
+Left<	P:Pioneer40:5ca3:99
+Right>	P:Pioneer40:5ca3:99
+Step<	P:Pioneer40:5ca3:99
+Step>	P:Pioneer40:5ca3:99
+Up^	P:Pioneer40:5ca3:99
+Power Off	P:Pioneer40:5ca3:99
+Power On	P:Pioneer40:5ca3:99
 Forward	P:NECext:5ca3:659a
+Scan >>	P:Pioneer40:5ca3:9a
+Skip >>	P:Pioneer40:5ca3:9a
+Frame >>	P:Pioneer40:5ca3:9a
+Search >>	P:Pioneer40:5ca3:9a
 Reverse	P:NECext:5ca3:649b
+Scan <<	P:Pioneer40:5ca3:9b
+Skip <<	P:Pioneer40:5ca3:9b
+Frame <<	P:Pioneer40:5ca3:9b
+Search <<	P:Pioneer40:5ca3:9b
 Next	P:NECext:5ca3:639c
+Next >>	P:Pioneer40:5ca3:9c
+Track>	P:Pioneer40:5ca3:9c
 Previous	P:NECext:5ca3:629d
+Previous <<	P:Pioneer40:5ca3:9d
+Prev	P:Pioneer40:5ca3:9d
+Track<	P:Pioneer40:5ca3:9d
 Play	P:NECext:5ca3:619e
 Pause	P:NECext:5ca3:609f
 @Pioneer	Laser Disc 168,-1
-0	P:NECext:57a8:ff00
-1	P:NECext:57a8:fe01
-2	P:NECext:57a8:fd02
-3	P:NECext:57a8:fc03
-5	P:NECext:57a8:fa05
-6	P:NECext:57a8:f906
-7	P:NECext:57a8:f807
-8	P:NECext:57a8:f708
-9	P:NECext:57a8:f609
+0	P:Pioneer40:57a8:0
+1	P:Pioneer40:57a8:1
+2	P:Pioneer40:57a8:2
+3	P:Pioneer40:57a8:3
+4	P:Pioneer40:57a8:4
+5	P:Pioneer40:57a8:5
+6	P:Pioneer40:57a8:6
+7	P:Pioneer40:57a8:7
+8	P:Pioneer40:57a8:8
+9	P:Pioneer40:57a8:9
 Digital/Analog	P:NECext:57a8:f30c
-Scan >>	P:NECext:57a8:ef10
-Scan <<	P:NECext:57a8:ee11
+Auto Digital/Analogu	P:Pioneer40:57a8:c
+D/A/Cx	P:Pioneer40:57a8:c
+Cx	P:Pioneer40:57a8:e
+Scan >>	P:Pioneer40:57a8:10
+Frame >>	P:Pioneer40:57a8:10
+Scan <<	P:Pioneer40:57a8:11
+Frame <<	P:Pioneer40:57a8:11
+Chapter/Time	P:Pioneer40:57a8:13
+Chapter Frame/Time	P:Pioneer40:57a8:13
+Chp/Fr-Tm	P:Pioneer40:57a8:13
+Chp/Tm	P:Pioneer40:57a8:13
+Stop	P:Pioneer40:57a8:16
 Open/Close	P:NECext:57a8:e916
-Play	P:NECext:57a8:e817
-Pause	P:NECext:57a8:e718
+Eject	P:Pioneer40:57a8:16
+Play	P:Pioneer40:57a8:17
+Pause	P:Pioneer40:57a8:18
+Last Memory	P:Pioneer40:57a8:19
+Picture Control	P:Pioneer40:57a8:19
 V-Dnr	P:NECext:57a8:e619
-Power	P:NECext:57a8:e31c
-Audio Mode	P:NECext:57a8:e11e
+Power	P:Pioneer40:57a8:1c
+Edit	P:Pioneer40:57a8:1d
+Audio D/A	P:Pioneer40:57a8:1e
+Audio Mode	P:Pioneer40:57a8:1e
+Audio Monitor	P:Pioneer40:57a8:1e
++10	P:Pioneer40:57a8:1f
 10+	P:NECext:57a8:e01f
+Forward	P:Pioneer40:57a8:28
+Reverse	P:Pioneer40:57a8:2c
+Disc 1	P:Pioneer40:57a8:31
+Disc 2	P:Pioneer40:57a8:32
+Disc 3	P:Pioneer40:57a8:33
+Disc 4	P:Pioneer40:57a8:34
+Disc 5	P:Pioneer40:57a8:35
 Level Control	P:NECext:57a8:c837
-Display	P:NECext:57a8:bc43
-Clear	P:NECext:57a8:ba45
-Program	P:NECext:57a8:b34c
+Search	P:Pioneer40:57a8:42
+Display	P:Pioneer40:57a8:43
+Repeat	P:Pioneer40:57a8:44
+Repeat B	P:Pioneer40:57a8:44
+Clear	P:Pioneer40:57a8:45
+C	P:Pioneer40:57a8:45
+Strobe Motion <	P:Pioneer40:57a8:46
+Multi Speed -	P:Pioneer40:57a8:46
+Strobe Motion >	P:Pioneer40:57a8:47
+Multi Speed +	P:Pioneer40:57a8:47
+Repeat A-B	P:Pioneer40:57a8:48
+Repeat A	P:Pioneer40:57a8:48
+Program	P:Pioneer40:57a8:4c
+Pgm	P:Pioneer40:57a8:4c
 Side A	P:NECext:57a8:b24d
 Side B	P:NECext:57a8:b14e
-Frame <<	P:NECext:57a8:af50
-Skip >>	P:NECext:57a8:ad52
-Skip <<	P:NECext:57a8:ac53
-Frame >>	P:NECext:57a8:ab54
+Step <	P:Pioneer40:57a8:50
+Step <<	P:Pioneer40:57a8:50
+Index Skip >	P:Pioneer40:57a8:51
+Skip >>	P:Pioneer40:57a8:52
+Skip <<	P:Pioneer40:57a8:53
+Step >	P:Pioneer40:57a8:54
+Step >>	P:Pioneer40:57a8:54
+Multi-Speed <	P:Pioneer40:57a8:55
+Slow Motion -	P:Pioneer40:57a8:55
+Multi Speed <	P:Pioneer40:57a8:55
+Multispeed <	P:Pioneer40:57a8:55
+Multi-Speed >	P:Pioneer40:57a8:58
+Slow Motion +	P:Pioneer40:57a8:58
+Multi Speed >	P:Pioneer40:57a8:58
+Multispeed >	P:Pioneer40:57a8:58
+Index Skip <	P:Pioneer40:57a8:59
+Hilite/Intro	P:Pioneer40:57a8:5a
+Still Wtih Sound	P:Pioneer40:57a8:5b
+One-Shot Memory	P:Pioneer40:57a8:5d
+Random	P:Pioneer40:57a8:5e
+Pandom	P:Pioneer40:57a8:5e
 @Pioneer	LaserActive CU-CLD085
 Power	R:38000:33:8557,4220,566,507,512,557,544,506,566,1577,543,506,567,1577,543,504,569,1576,544,1577,515,1608,566,1577,544,506,566,1576,545,506,566,1578,543,505,567,503,516,556,545,1575,517,1609,565,1578,542,506,567,503,516,558,543,1576,516,1607,567,504,515,557,544,505,567,1577,544,1574,518,1608,566
 Chapter	R:38000:33:8537,4238,545,503,570,503,516,556,545,1576,516,556,545,1576,516,555,546,1576,516,1605,569,1575,545,1577,515,556,545,1576,516,556,545,1576,516,556,545,1576,516,1605,569,503,516,556,545,1576,516,555,546,504,568,503,516,556,545,505,567,1575,545,1576,516,556,545,1576,516,1605,569,1576,544
@@ -9248,6 +11880,33 @@ Display	P:NECext:df20:a758
 Skip_F	P:NECext:df20:a659
 Key_Play	P:NECext:df20:a35c
 Key_Pause	P:NECext:df20:a25d
+@RCA	DVD Player 5,-1
+Exit	P:RCA38:5:6
+Menu	P:RCA38:5:8
+Play	P:RCA38:5:15
+Pause	P:RCA38:5:19
+Scan >>	P:RCA38:5:1c
+Scan <<	P:RCA38:5:1d
+Stop	P:RCA38:5:1f
+Track +	P:RCA38:5:20
+Track -	P:RCA38:5:22
+0	P:RCA38:5:30
+1	P:RCA38:5:31
+2	P:RCA38:5:32
+3	P:RCA38:5:33
+4	P:RCA38:5:34
+5	P:RCA38:5:35
+6	P:RCA38:5:36
+7	P:RCA38:5:37
+8	P:RCA38:5:38
+9	P:RCA38:5:39
+Marker	P:RCA38:5:50
+Cursor Left	P:RCA38:5:56
+Left Arrow	P:RCA38:5:56
+Cursor Right	P:RCA38:5:57
+Cursor Down	P:RCA38:5:58
+Cursor Up	P:RCA38:5:59
+Select	P:RCA38:5:f4
 @Re.x	Unknown_SDVD 0,-1
 Key_Power	P:NECext:ff00:ff00
 Key_3	P:NECext:ff00:fe01
@@ -9952,6 +12611,44 @@ display	P:NECext:df20:a758
 f.f	P:NECext:df20:a659
 Key_Play	P:NECext:df20:a35c
 Key_Stop	P:NECext:df20:a25d
+@SEG	Unknown_SEG-VCR4300 21,-1
+0	P:Proton:15:0
+1	P:Proton:15:1
+2	P:Proton:15:2
+3	P:Proton:15:3
+4	P:Proton:15:4
+5	P:Proton:15:5
+6	P:Proton:15:6
+7	P:Proton:15:7
+8	P:Proton:15:8
+9	P:Proton:15:9
+Stop	P:Proton:15:d
+Play	P:Proton:15:e
+Ffwd	P:Proton:15:f
+Frwd	P:Proton:15:10
+Pause	P:Proton:15:11
+Record	P:Proton:15:12
+Slow_Motion	P:Proton:15:13
+Power	P:Proton:15:15
+Tv_Vcr	P:Proton:15:16
+Pr+	P:Proton:15:17
+Pr-	P:Proton:15:18
+Ad	P:Proton:15:19
+A_Sel	P:Proton:15:1a
+Sp_Lp	P:Proton:15:1b
+A	P:Proton:15:1d
+Ffwd_30	P:Proton:15:1e
+Pal_Sec	P:Proton:15:1f
+Eject	P:Proton:15:21
+Menu	P:Proton:15:22
+Qs	P:Proton:15:27
+Ok	P:Proton:15:29
+Left	P:Proton:15:31
+Index+	P:Proton:15:33
+Right	P:Proton:15:35
+Av	P:Proton:15:36
+Sv_V+	P:Proton:15:39
+Index-	P:Proton:15:3f
 @SEG	Unknown_VCR2000 134,124
 Key_Channeldown	P:NECext:7c86:fe01
 Key_Rewind	P:NECext:7c86:fd02
@@ -10010,6 +12707,39 @@ Fast_fo	R:38000:33:3342,1722,381,452,382,1298,381,453,382,1296,382,453,381,1298,
 Exit	R:38000:33:3368,1695,433,401,433,1247,432,401,433,1246,408,426,408,1271,433,402,432,1247,433,401,432,1247,433,401,433,1246,433,1246,433,402,408,1271,433,401,433,1246,433,1247,432,1246,433,1247,431,402,433,401,433,401,433,1227,428,426,433,401,433,400,410,426,408,1271,433,1248,431,401,433,403,406,1270,434,1247,408,1271,433,401,432,401,433,1158,521,401,433,1184,470,1271,433,400,433,401,433,402,432,1247,432,1245,433,1247,432,401,433,20482,3369,1696,432,402,433,1245,433,401,433,1247,432,401,433,1246,433,401,433,1247,432,401,461,1219,432,401,435,1244,433,1246,433,401,435,1244,408,426,433,1246,433,1247,432,1246,433,1246,433,401,433,401,433,430,404,1246,433,403,431,401,434,400,433,401,433,1246,433,1246,433,401,433,401,433,1246,433,1246,433,1246,433,401,433,393,441,1246,433,401,433,1246,433,1246,433,400,434,401,433,402,432,1246,433,1246,433,1246,433,401,433,20482,3368,1696,432,401,433,1246,433,401,433,1246,433,401,433,1246,433,375,458,1246,433,402,431,1247,433,401,433,1245,434,1247,432,401,433,1246,433,401,433,1246,433,1246,433,1217,462,1246,433,395,439,401,433,401,433,1247,432,401,432,401,433,401,433,400,434,1247,432,1246,433,401,433,401,433,1246,433,1246,433,1246,433,401,433,401,433,1246,433,401,433,1246,433,1246,433,401,433,401,433,401,433,1246,433,1246,433,1246,433,401,433
 Menu	R:38000:33:3342,1721,382,452,382,1297,382,452,382,1297,382,452,382,1297,382,453,381,1298,381,452,382,1297,382,452,382,1297,382,1297,382,481,353,1297,382,455,379,1297,382,1298,381,1297,382,1297,382,452,382,452,382,452,406,1274,405,428,382,453,406,428,406,415,419,1272,407,1272,407,427,407,427,407,1273,406,1272,407,427,407,1272,407,1272,407,427,407,427,407,427,407,1271,408,427,407,426,408,426,408,426,408,426,408,426,408,427,407,20507,3368,1696,408,426,435,1244,408,426,408,1271,408,426,408,1271,408,424,410,1271,408,426,408,1271,408,426,408,1271,408,1185,494,425,408,1220,459,426,408,1271,408,1270,409,1271,408,1270,409,426,408,426,408,426,408,1271,408,426,408,425,409,426,408,425,409,1270,409,1271,408,454,380,426,408,1271,408,1271,433,401,432,1246,408,1271,432,401,409,425,409,426,408,1270,433,402,408,426,408,425,409,426,408,426,408,426,433,401,433,20482,3369,1695,408,426,433,1246,408,426,433,1246,408,425,434,1246,433,401,433,1246,409,425,433,1246,433,401,433,1246,433,1246,433,401,433,1246,433,401,433,1246,408,1271,433,1246,433,1246,433,401,433,401,433,401,433,1246,433,401,433,401,433,400,434,401,433,1246,433,1246,433,401,433,401,433,1246,433,1246,433,402,432,1246,433,1246,433,401,433,401,433,401,433,1246,433,401,433,401,433,401,433,401,433,401,433,400,434,401,433
 Stop	R:38000:33:3342,1722,381,452,382,1298,381,452,382,1297,382,453,381,1297,382,453,381,1297,382,452,382,1298,381,452,382,1297,382,1299,380,452,382,1297,382,453,381,1298,381,1297,382,1297,382,1298,381,452,382,453,381,453,381,1241,438,452,382,452,382,452,382,453,381,1298,381,1298,381,452,382,452,382,1297,382,1298,381,1298,381,452,382,452,382,1297,382,453,381,452,382,1297,382,452,382,452,382,452,382,1297,382,1297,382,1297,382,1298,381,20533,3343,1722,381,452,382,1297,382,453,381,1298,381,453,381,1297,382,453,381,1226,453,452,382,1261,418,452,382,1298,381,1299,380,453,381,1297,382,451,383,1297,382,1297,382,1298,381,1297,382,452,382,452,382,452,382,1297,382,481,353,453,381,452,382,452,382,1297,382,1297,382,452,382,453,381,1297,382,1297,382,1298,381,452,382,452,382,1298,381,452,382,452,382,1297,382,453,381,453,381,452,382,1297,382,1298,381,1297,382,1297,382,20533,3343,1722,381,453,381,1298,381,452,382,1298,381,452,382,1297,382,391,443,1297,382,453,381,1297,382,452,382,1298,381,1298,381,453,381,1298,381,453,381,1298,381,1298,381,1298,381,1297,382,453,381,452,382,452,382,1298,381,452,382,453,381,452,382,452,382,1298,381,1298,381,452,382,452,382,1298,381,1298,381,1298,381,452,382,452,382,1298,381,452,382,453,381,1298,381,453,381,452,382,452,382,1298,381,1298,381,1297,382,1298,381
+@Sharp	VCR 3,-1
+1	P:Sharp:3:1
+2	P:Sharp:3:2
+3	P:Sharp:3:3
+4	P:Sharp:3:4
+5	P:Sharp:3:5
+6	P:Sharp:3:6
+7	P:Sharp:3:7
+8	P:Sharp:3:8
+9	P:Sharp:3:9
+0	P:Sharp:3:a
+Rec Standby	P:Sharp:3:e
+Tv/Vcr	P:Sharp:3:13
+Power	P:Sharp:3:16
+Call	P:Sharp:3:1c
+Program	P:Sharp:3:1d
+Sp/Lp/Ep	P:Sharp:3:1f
+Fast Forward >>	P:Sharp:3:21
+Scan >>	P:Sharp:3:21
+Play	P:Sharp:3:22
+Rewind <<	P:Sharp:3:23
+Scan <<	P:Sharp:3:23
+Frame Advance	P:Sharp:3:24
+Pause	P:Sharp:3:25
+Stop	P:Sharp:3:27
+Record	P:Sharp:3:28
+Slow Motion +	P:Sharp:3:2f
+Slow Motion -	P:Sharp:3:30
+X2	P:Sharp:3:31
+Zero Back	P:Sharp:3:83
+Cancel	P:Sharp:3:84
+Display	P:Sharp:3:8c
+On Screen	P:Sharp:3:8d
 @Sigma Designs	DVD Player 128,-1
 Power	P:NECext:7f80:ff00
 Program	P:NECext:7f80:fe01
@@ -11837,6 +14567,43 @@ Mute	P:NEC:0:4a
 Subtitle	P:NEC:0:2
 Audio	P:NEC:0:43
 Popup	P:NEC:0:10
+@TEAC	DVD Player 163,-1
+Stop	P:Pioneer40:5ca3:98
+0	P:Pioneer40:5ca3:99
+1	P:Pioneer40:5ca3:99
+2	P:Pioneer40:5ca3:99
+3	P:Pioneer40:5ca3:99
+4	P:Pioneer40:5ca3:99
+5	P:Pioneer40:5ca3:99
+6	P:Pioneer40:5ca3:99
+7	P:Pioneer40:5ca3:99
+8	P:Pioneer40:5ca3:99
+9	P:Pioneer40:5ca3:99
++10	P:Pioneer40:5ca3:99
+Angle	P:Pioneer40:5ca3:99
+Audio Mode	P:Pioneer40:5ca3:99
+Clear	P:Pioneer40:5ca3:99
+Display	P:Pioneer40:5ca3:99
+Enter	P:Pioneer40:5ca3:99
+Menu	P:Pioneer40:5ca3:99
+Menu Down	P:Pioneer40:5ca3:99
+Menu Left	P:Pioneer40:5ca3:99
+Menu Right	P:Pioneer40:5ca3:99
+Menu Up	P:Pioneer40:5ca3:99
+Mode	P:Pioneer40:5ca3:99
+Open/Close	P:Pioneer40:5ca3:99
+Power	P:Pioneer40:5ca3:99
+Return	P:Pioneer40:5ca3:99
+Step <	P:Pioneer40:5ca3:99
+Step >	P:Pioneer40:5ca3:99
+Subtitle	P:Pioneer40:5ca3:99
+Title	P:Pioneer40:5ca3:99
+Scan >>	P:Pioneer40:5ca3:9a
+Scan <<	P:Pioneer40:5ca3:9b
+Skip >>	P:Pioneer40:5ca3:9c
+Skip <<	P:Pioneer40:5ca3:9d
+Play	P:Pioneer40:5ca3:9e
+Pause	P:Pioneer40:5ca3:9f
 @Technosonic	Unknown_DVD-204 16,237
 Key_Volumeup	P:NECext:ed10:ff00
 Key_Mute	P:NECext:ed10:fe01
@@ -11915,6 +14682,38 @@ Key_Again	P:NECext:4743:e11e
 p_i	P:NECext:4743:e01f
 Key_Open	P:NECext:4743:d12e
 Key_Sleep	P:NECext:4743:d02f
+@Theta Digital	DVD Player 163,-1
+Stop	P:Pioneer40:5ca3:98
+0	P:Pioneer40:5ca3:99
+1	P:Pioneer40:5ca3:99
+2	P:Pioneer40:5ca3:99
+3	P:Pioneer40:5ca3:99
+4	P:Pioneer40:5ca3:99
+5	P:Pioneer40:5ca3:99
+6	P:Pioneer40:5ca3:99
+7	P:Pioneer40:5ca3:99
+8	P:Pioneer40:5ca3:99
+9	P:Pioneer40:5ca3:99
+Angle	P:Pioneer40:5ca3:99
+Audio Mode	P:Pioneer40:5ca3:99
+Condition	P:Pioneer40:5ca3:99
+Display	P:Pioneer40:5ca3:99
+Enter	P:Pioneer40:5ca3:99
+Menu	P:Pioneer40:5ca3:99
+Mode	P:Pioneer40:5ca3:99
+Open/Close	P:Pioneer40:5ca3:99
+Play <	P:Pioneer40:5ca3:99
+Play >	P:Pioneer40:5ca3:99
+Power On	P:Pioneer40:5ca3:99
+Slow Motion -	P:Pioneer40:5ca3:99
+Slow Motion +	P:Pioneer40:5ca3:99
+Subtitle	P:Pioneer40:5ca3:99
+Frame >>	P:Pioneer40:5ca3:9a
+Frame <<	P:Pioneer40:5ca3:9b
+Next	P:Pioneer40:5ca3:9c
+Prev.	P:Pioneer40:5ca3:9d
+Play	P:Pioneer40:5ca3:9e
+Pause	P:Pioneer40:5ca3:9f
 @Tokai	Unknown_DVD-715 32,-1
 vocal_assist	P:NECext:df20:fe01
 Key_Setup	P:NECext:df20:fd02
@@ -12808,6 +15607,208 @@ Subtitle	P:Panasonic:b0:91
 Display	P:Panasonic:b0:92
 Set Up	P:Panasonic:b0:94
 Title	P:Panasonic:b0:9b
+@Yamaha	DVD 4,-1
+0	P:RC6:4:0
+0B	P:RC6:4:0
+1	P:RC6:4:1
+1B	P:RC6:4:1
+2	P:RC6:4:2
+2B	P:RC6:4:2
+3	P:RC6:4:3
+3B	P:RC6:4:3
+4	P:RC6:4:4
+4B	P:RC6:4:4
+5	P:RC6:4:5
+5B	P:RC6:4:5
+6	P:RC6:4:6
+6B	P:RC6:4:6
+7	P:RC6:4:7
+7B	P:RC6:4:7
+8	P:RC6:4:8
+8B	P:RC6:4:8
+9	P:RC6:4:9
+9B	P:RC6:4:9
+Power	P:RC6:4:c
+Power B	P:RC6:4:c
+Mute	P:RC6:4:d
+On Screen	P:RC6:4:f
+On Screen B	P:RC6:4:f
+Osd	P:RC6:4:f
+Osd B	P:RC6:4:f
+Dimmer	P:RC6:4:13
+Dimmer B	P:RC6:4:13
+Shuffle	P:RC6:4:1c
+Shuffle B	P:RC6:4:1c
+Rpt	P:RC6:4:1d
+Rpt B	P:RC6:4:1d
+Repeat	P:RC6:4:1d
+Skip >>	P:RC6:4:20
+Skip >> B	P:RC6:4:20
+Chapter +	P:RC6:4:20
+Scan >>	P:RC6:4:20
+Skip <<	P:RC6:4:21
+Skip << B	P:RC6:4:21
+Chapter -	P:RC6:4:21
+Scan <<	P:RC6:4:21
+Scan	P:RC6:4:2a
+Play	P:RC6:4:2c
+Play B	P:RC6:4:2c
+Pause	P:RC6:4:30
+Pause B	P:RC6:4:30
+Stop	P:RC6:4:31
+Stop B	P:RC6:4:31
+Side A/B	P:RC6:4:3b
+Side A/B B	P:RC6:4:3b
+A-B	P:RC6:4:3b
+A/B	P:RC6:4:3b
+Power On	P:RC6:4:3f
+Bit 1	P:RC6:4:48
+Subtitle	P:RC6:4:4b
+Subtitle B	P:RC6:4:4b
+Sub-T	P:RC6:4:4b
+Sub-T B	P:RC6:4:4b
+Subtile	P:RC6:4:4b
+Audio Mode	P:RC6:4:4e
+Audio Mode B	P:RC6:4:4e
+Audio	P:RC6:4:4e
+Sound Mode	P:RC6:4:50
+Sound Mode B	P:RC6:4:50
+Mode	P:RC6:4:50
+Mode B	P:RC6:4:50
+Menu	P:RC6:4:54
+Menu B	P:RC6:4:54
+Cursor Up	P:RC6:4:58
+Cursor Up B	P:RC6:4:58
+Up	P:RC6:4:58
+Up B	P:RC6:4:58
+Cursor Down	P:RC6:4:59
+Cursor Down B	P:RC6:4:59
+Down	P:RC6:4:59
+Down B	P:RC6:4:59
+Cursor Left	P:RC6:4:5a
+Cursor Left B	P:RC6:4:5a
+Left	P:RC6:4:5a
+Left B	P:RC6:4:5a
+Rewind	P:RC6:4:5a
+Cursor Right	P:RC6:4:5b
+Cursor Right B	P:RC6:4:5b
+Right	P:RC6:4:5b
+Right B	P:RC6:4:5b
+Fast Foward	P:RC6:4:5b
+Enter	P:RC6:4:5c
+Enter B	P:RC6:4:5c
+Cursor Enter/	P:RC6:4:5c
+Cursor Enter/Ok	P:RC6:4:5c
+Ok	P:RC6:4:5c
+Disc Skip	P:RC6:4:7f
+Disk Skip B	P:RC6:4:7f
+Disc Skip B	P:RC6:4:7f
+Disk Skip	P:RC6:4:7f
+Setup	P:RC6:4:82
+Setup B	P:RC6:4:82
+Set Up	P:RC6:4:82
+Top Menu	P:RC6:4:83
+Top Menu B	P:RC6:4:83
+Rtrn	P:RC6:4:83
+Rtrn B	P:RC6:4:83
+Top Menu/Return	P:RC6:4:83
+Top Menu/Return B	P:RC6:4:83
+Return/Resume	P:RC6:4:83
+Return	P:RC6:4:83
+Angle	P:RC6:4:85
+Angle B	P:RC6:4:85
+A-Dir	P:RC6:4:8c
+Audio Direct	P:RC6:4:8c
+Power Off	P:RC6:4:8e
+T/C	P:RC6:4:c8
+Title/Chapter	P:RC6:4:c8
+Page	P:RC6:4:cf
+Page B	P:RC6:4:cf
+Scan B	P:RC6:4:d5
+Bit 2	P:RC6:4:ef
+Status	P:RC6:4:ef
+Zoom	P:RC6:4:f7
+Zoom B	P:RC6:4:f7
+Program	P:RC6:4:fb
+@Yamaha	DVD Changer 4,-1
+0	P:RC6:4:0
+0B	P:RC6:4:0
+1	P:RC6:4:1
+1B	P:RC6:4:1
+2	P:RC6:4:2
+2B	P:RC6:4:2
+3	P:RC6:4:3
+3B	P:RC6:4:3
+4	P:RC6:4:4
+4B	P:RC6:4:4
+5	P:RC6:4:5
+5B	P:RC6:4:5
+6	P:RC6:4:6
+6B	P:RC6:4:6
+7	P:RC6:4:7
+7B	P:RC6:4:7
+8	P:RC6:4:8
+8B	P:RC6:4:8
+9	P:RC6:4:9
+9B	P:RC6:4:9
+Power	P:RC6:4:c
+Power B	P:RC6:4:c
+Power Toggle	P:RC6:4:c
+On Screen	P:RC6:4:f
+On Screen B	P:RC6:4:f
+Dimmer	P:RC6:4:13
+Dimmer B	P:RC6:4:13
+Shuffle	P:RC6:4:1c
+Shuffle B	P:RC6:4:1c
+Repeat	P:RC6:4:1d
+Skip >>	P:RC6:4:20
+Skip >> B	P:RC6:4:20
+Chapter >	P:RC6:4:20
+Skip <<	P:RC6:4:21
+Skip << B	P:RC6:4:21
+Chapter <	P:RC6:4:21
+Play	P:RC6:4:2c
+Play B	P:RC6:4:2c
+Pause	P:RC6:4:30
+Pause B	P:RC6:4:30
+Stop	P:RC6:4:31
+Stop B	P:RC6:4:31
+Side A/B	P:RC6:4:3b
+Side A/B B	P:RC6:4:3b
+A-B	P:RC6:4:3b
+Subtitle	P:RC6:4:4b
+Subtitle B	P:RC6:4:4b
+Audio Mode	P:RC6:4:4e
+Audio Mode B	P:RC6:4:4e
+Audio	P:RC6:4:4e
+Sound Mode	P:RC6:4:50
+Sound Mode B	P:RC6:4:50
+Menu	P:RC6:4:54
+Cursor Up	P:RC6:4:58
+Cursor Up B	P:RC6:4:58
+Cursor Down	P:RC6:4:59
+Cursor Down B	P:RC6:4:59
+Cursor Left	P:RC6:4:5a
+Cursor Left B	P:RC6:4:5a
+Cursor Right	P:RC6:4:5b
+Cursor Right B	P:RC6:4:5b
+Enter	P:RC6:4:5c
+Enter B	P:RC6:4:5c
+Disc Skip	P:RC6:4:7f
+Disk Skip B	P:RC6:4:7f
+Disk Skip	P:RC6:4:7f
+Setup	P:RC6:4:82
+Setup B	P:RC6:4:82
+Top Menu	P:RC6:4:83
+Top Menu B	P:RC6:4:83
+Top Menu/Return	P:RC6:4:83
+Angle	P:RC6:4:85
+Angle B	P:RC6:4:85
+Page	P:RC6:4:cf
+Page B	P:RC6:4:cf
+Scan	P:RC6:4:d5
+Zoom	P:RC6:4:f7
+Zoom B	P:RC6:4:f7
 @Yamaha	DVD Player 124,-1
 1	P:NECext:837c:7f80
 Standby/On	P:NECext:837c:7f80
@@ -13142,6 +16143,183 @@ Group	P:Panasonic:b0:e0
 Video Off	P:Panasonic:b0:e1
 Page	P:Panasonic:b0:e5
 Cinema	P:Panasonic:b0:e5
+@Yamaha	DVD Player 4,-1
+0	P:RC6:4:0
+0B	P:RC6:4:0
+1	P:RC6:4:1
+1B	P:RC6:4:1
+2	P:RC6:4:2
+2B	P:RC6:4:2
+3	P:RC6:4:3
+3B	P:RC6:4:3
+4	P:RC6:4:4
+4B	P:RC6:4:4
+5	P:RC6:4:5
+5B	P:RC6:4:5
+6	P:RC6:4:6
+6B	P:RC6:4:6
+7	P:RC6:4:7
+7B	P:RC6:4:7
+8	P:RC6:4:8
+8B	P:RC6:4:8
+9	P:RC6:4:9
+9B	P:RC6:4:9
+Power	P:RC6:4:c
+Power B	P:RC6:4:c
+Power A	P:RC6:4:c
+Power Toggle	P:RC6:4:c
+Mute	P:RC6:4:d
+On Screen	P:RC6:4:f
+On Screen B	P:RC6:4:f
+Osd	P:RC6:4:f
+Osd B	P:RC6:4:f
+Dimmer	P:RC6:4:13
+Dimmer B	P:RC6:4:13
+Shuffle	P:RC6:4:1c
+Shuffle B	P:RC6:4:1c
+Repeat	P:RC6:4:1d
+Rpt	P:RC6:4:1d
+Rpt B	P:RC6:4:1d
+Repeat A	P:RC6:4:1d
+Repeat B	P:RC6:4:1d
+Frame >>	P:RC6:4:20
+Skip >>	P:RC6:4:20
+Skip >> B	P:RC6:4:20
+Scan >> A	P:RC6:4:20
+Scan >> B	P:RC6:4:20
+Chapter >	P:RC6:4:20
+Next	P:RC6:4:20
+Chapter +	P:RC6:4:20
+Scan >>	P:RC6:4:20
+Track +	P:RC6:4:20
+Skip>>	P:RC6:4:20
+Ff >>	P:RC6:4:20
+Skip <<	P:RC6:4:21
+Skip << B	P:RC6:4:21
+Scan << A	P:RC6:4:21
+Scan << B	P:RC6:4:21
+Chapter <	P:RC6:4:21
+Previous	P:RC6:4:21
+Chapter -	P:RC6:4:21
+Track -	P:RC6:4:21
+Prev	P:RC6:4:21
+Scan <<	P:RC6:4:21
+Frame <<	P:RC6:4:21
+Rew <<	P:RC6:4:21
+Scan	P:RC6:4:2a
+Play	P:RC6:4:2c
+Play B	P:RC6:4:2c
+Play A	P:RC6:4:2c
+Pause	P:RC6:4:30
+Pause B	P:RC6:4:30
+Stop	P:RC6:4:31
+Stop B	P:RC6:4:31
+Side A/B	P:RC6:4:3b
+Side A/B B	P:RC6:4:3b
+A-B	P:RC6:4:3b
+A/B	P:RC6:4:3b
+Power On	P:RC6:4:3f
+Bit 1	P:RC6:4:48
+Cd Text/Bit Rate	P:RC6:4:48
+Subtitle	P:RC6:4:4b
+Subtitle B	P:RC6:4:4b
+Sub-T	P:RC6:4:4b
+Sub-T B	P:RC6:4:4b
+Subtile	P:RC6:4:4b
+Sub-Title	P:RC6:4:4b
+Audio	P:RC6:4:4e
+Audio Mode	P:RC6:4:4e
+Audio Mode B	P:RC6:4:4e
+Sound Mode	P:RC6:4:50
+Sound Mode B	P:RC6:4:50
+Mode	P:RC6:4:50
+Mode B	P:RC6:4:50
+Menu	P:RC6:4:54
+Menu B	P:RC6:4:54
+Cursor Up	P:RC6:4:58
+Cursor Up B	P:RC6:4:58
+Up	P:RC6:4:58
+Up B	P:RC6:4:58
+Toggle Up	P:RC6:4:58
+Arrow Up	P:RC6:4:58
+C Up	P:RC6:4:58
+Curser Up	P:RC6:4:58
+Cursor Down	P:RC6:4:59
+Cursor Down B	P:RC6:4:59
+Down	P:RC6:4:59
+Down B	P:RC6:4:59
+Toggle Down	P:RC6:4:59
+Arrow Dn	P:RC6:4:59
+C Down	P:RC6:4:59
+Curser Down	P:RC6:4:59
+Cursor Left	P:RC6:4:5a
+Cursor Left B	P:RC6:4:5a
+Left	P:RC6:4:5a
+Left B	P:RC6:4:5a
+Toggle Left	P:RC6:4:5a
+Arrow Left	P:RC6:4:5a
+C Left	P:RC6:4:5a
+Rewind	P:RC6:4:5a
+Curser Left	P:RC6:4:5a
+Cursor Right	P:RC6:4:5b
+Cursor Right B	P:RC6:4:5b
+Right	P:RC6:4:5b
+Right B	P:RC6:4:5b
+Toggle Right	P:RC6:4:5b
+Arrow Right	P:RC6:4:5b
+C Right	P:RC6:4:5b
+Fast Foward	P:RC6:4:5b
+Curser Right	P:RC6:4:5b
+Enter	P:RC6:4:5c
+Enter B	P:RC6:4:5c
+Enter A	P:RC6:4:5c
+Cursor Enter/	P:RC6:4:5c
+Cursor Enter/Ok	P:RC6:4:5c
+Cursor Enter	P:RC6:4:5c
+Enter/ Ok	P:RC6:4:5c
+Select	P:RC6:4:5c
+Ok	P:RC6:4:5c
+Enter/Ok	P:RC6:4:5c
+Disc Skip	P:RC6:4:7f
+Disk Skip B	P:RC6:4:7f
+Disc Skip B	P:RC6:4:7f
+Disk Skip	P:RC6:4:7f
+Dsic Skip	P:RC6:4:7f
+Setup	P:RC6:4:82
+Setup B	P:RC6:4:82
+Set Up	P:RC6:4:82
+Resume	P:RC6:4:83
+Return	P:RC6:4:83
+Top Menu	P:RC6:4:83
+Top Menu B	P:RC6:4:83
+Rtrn	P:RC6:4:83
+Rtrn B	P:RC6:4:83
+Top Menu/Return	P:RC6:4:83
+Top Menu/Return B	P:RC6:4:83
+Return/Resume	P:RC6:4:83
+Retrun/Resume	P:RC6:4:83
+Angle	P:RC6:4:85
+Angle B	P:RC6:4:85
+Audio Direct	P:RC6:4:8c
+A-Dir	P:RC6:4:8c
+Power Off	P:RC6:4:8e
+Disc Random	P:RC6:4:a4
+Play Normal	P:RC6:4:a5
+Disc Repeat	P:RC6:4:a6
+Repeat Off	P:RC6:4:a7
+T/C	P:RC6:4:c8
+Title/ Chapter	P:RC6:4:c8
+Title/Chapter	P:RC6:4:c8
+Page	P:RC6:4:cf
+Page B	P:RC6:4:cf
+Scan B	P:RC6:4:d5
+Status	P:RC6:4:ef
+Bit 2	P:RC6:4:ef
+Display/ Bit Rate	P:RC6:4:ef
+Bit Rate	P:RC6:4:ef
+Zoom	P:RC6:4:f7
+Zoom B	P:RC6:4:f7
+Program	P:RC6:4:fb
 @Yamaha	DVD Pre-amp 120,-1
 Power	P:NECext:8778:f00f
 Preset +	P:NECext:8778:e41b
@@ -13501,6 +16679,32 @@ display	P:NECext:df20:a758
 f.f.	P:NECext:df20:a659
 Key_Play	P:NECext:df20:a35c
 Key_Stop	P:NECext:df20:a25d
+@Zehnder	Unknown_VCR 3,-1
+Index	P:Proton:3:1
+Key_Radio	P:Proton:3:2
+Key_Kpplus	P:Proton:3:3
+Key_Mute	P:Proton:3:4
+Key_2	P:Proton:3:5
+Key_Power	P:Proton:3:6
+Timer	P:Proton:3:7
+Key_Down	P:Proton:3:b
+Key_1	P:Proton:3:c
+Key_5	P:Proton:3:d
+Key_3	P:Proton:3:e
+Sys	P:Proton:3:f
+Key_Favorites	P:Proton:3:12
+Key_Up	P:Proton:3:13
+Key_4	P:Proton:3:14
+Key_8	P:Proton:3:15
+Key_6	P:Proton:3:16
+Aud	P:Proton:3:17
+Key_Kpminus	P:Proton:3:1b
+Key_7	P:Proton:3:1c
+Key_0	P:Proton:3:1d
+Key_9	P:Proton:3:1e
+Prog	P:Proton:3:1f
+Key_Next	P:Proton:3:20
+Store	P:Proton:3:21
 @Zenith	Unknown_VCR 2,-1
 Key_1	P:SIRC:2:0
 Key_2	P:SIRC:2:1

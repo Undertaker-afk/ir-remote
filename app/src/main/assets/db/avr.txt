@@ -471,6 +471,37 @@ Reset	P:NECext:e81a:38c7
 Preset Mode	P:NECext:e81a:37c8
 Am	P:NECext:e81a:36c9
 Fm	P:NECext:e81a:35ca
+@Adcom	Pre-Amplifier 81,0
+Power	P:Aiwa:51:0
+Tuning <	P:Aiwa:51:2
+Tuning -	P:Aiwa:51:2
+Tuning >	P:Aiwa:51:3
+Tuning +	P:Aiwa:51:3
+1	P:Aiwa:51:4
+2	P:Aiwa:51:5
+3	P:Aiwa:51:6
+4	P:Aiwa:51:7
+5	P:Aiwa:51:8
+6	P:Aiwa:51:9
+7	P:Aiwa:51:a
+8	P:Aiwa:51:b
+Phono	P:Aiwa:51:c
+Cd	P:Aiwa:51:d
+Video/Tape 2	P:Aiwa:51:e
+Tape 1	P:Aiwa:51:10
+Tuner	P:Aiwa:51:11
+Play >	P:Aiwa:51:12
+Pause	P:Aiwa:51:13
+Stop []	P:Aiwa:51:17
+Stop	P:Aiwa:51:17
+Fm/Am	P:Aiwa:51:19
+Track <<	P:Aiwa:51:1a
+Track -	P:Aiwa:51:1a
+Track >>	P:Aiwa:51:1b
+Volume <	P:Aiwa:51:1e
+Volume -	P:Aiwa:51:1e
+Volume >	P:Aiwa:51:1f
+Volume +	P:Aiwa:51:1f
 @Adcom	Pre-Amplifier 88,23
 Main Power On B	P:NECext:1758:d52a
 Main Power On A	P:NECext:1758:ab54
@@ -536,6 +567,33 @@ Dsp: Pl2 Movie	P:NECext:e81a:a35c
 Dsp: Pl2 Music	P:NECext:e81a:a25d
 Video 2 (2)	P:NECext:e81a:728d
 Video 3 (2)	P:NECext:e81a:718e
+@Adcom	Receiver 81,0
+Tuning <	P:Aiwa:51:2
+Tuning >	P:Aiwa:51:3
+1	P:Aiwa:51:4
+2	P:Aiwa:51:5
+3	P:Aiwa:51:6
+4	P:Aiwa:51:7
+5	P:Aiwa:51:8
+6	P:Aiwa:51:9
+7	P:Aiwa:51:a
+8	P:Aiwa:51:b
+Aux	P:Aiwa:51:c
+Cd	P:Aiwa:51:d
+Dat/Tape2	P:Aiwa:51:e
+Tape1	P:Aiwa:51:10
+Tuner	P:Aiwa:51:11
+Play >	P:Aiwa:51:12
+Pause	P:Aiwa:51:13
+All On	P:Aiwa:51:14
+All Off	P:Aiwa:51:15
+Stop []	P:Aiwa:51:17
+Room On/Off	P:Aiwa:51:18
+Fm/Am	P:Aiwa:51:19
+Track <<	P:Aiwa:51:1a
+Track >>	P:Aiwa:51:1b
+Volume <	P:Aiwa:51:1e
+Volume >	P:Aiwa:51:1f
 @Adcom	Surround Processor 26,-1
 Rear/Ctr Reset	P:NECext:e51a:b04f
 Bal Check(Level Adj)	P:NECext:e51a:af50
@@ -749,6 +807,81 @@ T Bass	P:NEC42:6e:47
 Geq	P:NEC42:6e:49
 Surround	P:NEC42:6e:4a
 Karaoke enter	P:NEC42:6e:14
+@Aiwa	CD Player 118,0
+1	P:Aiwa:76:1
+2	P:Aiwa:76:2
+3	P:Aiwa:76:3
+4	P:Aiwa:76:4
+5	P:Aiwa:76:5
+6	P:Aiwa:76:6
+7	P:Aiwa:76:7
+8	P:Aiwa:76:8
+9	P:Aiwa:76:9
+0	P:Aiwa:76:a
++10	P:Aiwa:76:b
+Remain/Enter	P:Aiwa:76:d
+Play/Pause >	P:Aiwa:76:15
+Mode	P:Aiwa:76:16
+Skip/Search >>	P:Aiwa:76:18
+Skip/Search <<	P:Aiwa:76:19
+Stop []	P:Aiwa:76:1a
+@Aiwa	Cassette Tape 115,0
+Deck1 Ms >>	P:Aiwa:73:1
+Deck1 Ms <<	P:Aiwa:73:2
+Deck1 Rec Mute	P:Aiwa:73:3
+Deck1 Rec	P:Aiwa:73:4
+Deck1 Play >	P:Aiwa:73:5
+Deck1 R.Play <	P:Aiwa:73:6
+Deck1 Pause	P:Aiwa:73:7
+Monitor Source/Tape	P:Aiwa:73:8
+Deck1 Stop []	P:Aiwa:73:a
+Deck1	P:Aiwa:73:e
+Counter Reset	P:Aiwa:73:f
+Deck2	P:Aiwa:73:f
+Display	P:Aiwa:73:10
+Ms/Cue >>	P:Aiwa:73:11
+Deck2 Ms >>	P:Aiwa:73:11
+Ms/Review <<	P:Aiwa:73:12
+Deck2 Ms <<	P:Aiwa:73:12
+Rec Mute	P:Aiwa:73:13
+Deck2 Rec Mute	P:Aiwa:73:13
+Rec	P:Aiwa:73:14
+Deck2 Rec	P:Aiwa:73:14
+Play >	P:Aiwa:73:15
+Deck2 Play >	P:Aiwa:73:15
+Deck2 R.Play <	P:Aiwa:73:16
+Pause	P:Aiwa:73:17
+Deck2 Pause	P:Aiwa:73:17
+Stop []	P:Aiwa:73:1a
+Deck2 Stop []	P:Aiwa:73:1a
+Counter Zero Return	P:Aiwa:73:1b
+Normal	P:Aiwa:73:1c
+High	P:Aiwa:73:1d
+Dual Rec	P:Aiwa:73:1f
+@Aiwa	Mini System 110,0
+Power	P:Aiwa:6e:0
+1	P:Aiwa:6e:1
+2	P:Aiwa:6e:2
+3	P:Aiwa:6e:3
+4	P:Aiwa:6e:4
+5	P:Aiwa:6e:5
+6	P:Aiwa:6e:6
+7	P:Aiwa:6e:7
+8	P:Aiwa:6e:8
+9	P:Aiwa:6e:9
+0	P:Aiwa:6e:b
+Function	P:Aiwa:6e:1e
+Channel +	P:Aiwa:6e:40
+Play	P:Aiwa:6e:40
+Channel -	P:Aiwa:6e:41
+Stop	P:Aiwa:6e:41
+Ff	P:Aiwa:6e:42
+Rew	P:Aiwa:6e:43
+Pause	P:Aiwa:6e:44
+Volume +	P:Aiwa:6e:4d
+Volume -	P:Aiwa:6e:4e
+Disc 2	P:Aiwa:6e:52
+Disc 3	P:Aiwa:6e:53
 @Aiwa	Receiver 12,-1
 Dsl	P:SIRC:c:31
 Surround On/Off	P:SIRC:c:3f
@@ -780,6 +913,55 @@ Dat	P:SIRC:10:46
 @Aiwa	Receiver 18,-1
 Geq On/Off	P:SIRC:12:2c
 Geq Mode	P:SIRC:12:36
+@Aiwa	Tapedeck 115,0
+Deck 1 Fast Forward	P:Aiwa:73:1
+Deck 1 Rewind	P:Aiwa:73:2
+Deck 1 Record Mute	P:Aiwa:73:3
+Deck 1 Record	P:Aiwa:73:4
+Deck 1 Play Forward	P:Aiwa:73:5
+Deck 1 Play Reverse	P:Aiwa:73:6
+Deck 1 Pause	P:Aiwa:73:7
+Deck 1 Stop	P:Aiwa:73:a
+Deck 1 Counter Reset	P:Aiwa:73:e
+Deck 2 Counter Reset	P:Aiwa:73:f
+Display	P:Aiwa:73:10
+Deck 2 Fast Forward	P:Aiwa:73:11
+Deck 2 Rewind	P:Aiwa:73:12
+Deck 2 Record Mute	P:Aiwa:73:13
+Deck 2 Record	P:Aiwa:73:14
+Deck 2 Play Forward	P:Aiwa:73:15
+Deck 2 Play Reverse	P:Aiwa:73:16
+Deck 2 Pause	P:Aiwa:73:17
+Deck 2 Stop	P:Aiwa:73:1a
+Syncro	P:Aiwa:73:1c
+Dubbing	P:Aiwa:73:1d
+Dual Record	P:Aiwa:73:1f
+@Aiwa	Unknown_HIFI 112,0
+Key_Power	P:Aiwa:70:0
+Key_1	P:Aiwa:70:1
+Key_2	P:Aiwa:70:2
+Key_3	P:Aiwa:70:3
+Key_4	P:Aiwa:70:4
+Key_5	P:Aiwa:70:5
+Key_6	P:Aiwa:70:6
+Key_7	P:Aiwa:70:7
+Key_8	P:Aiwa:70:8
+Key_9	P:Aiwa:70:9
+Key_0	P:Aiwa:70:a
+Key_10Channelsup	P:Aiwa:70:b
+Key_Volumeup	P:Aiwa:70:11
+Key_Volumedown	P:Aiwa:70:12
+Band	P:Aiwa:70:13
+Key_Again	P:Aiwa:70:51
+Display	P:Aiwa:70:80
+Key_Mode	P:Aiwa:70:8f
+Key_Up	P:Aiwa:70:c4
+Key_Down	P:Aiwa:70:c5
+Key_Right	P:Aiwa:70:c6
+Key_Left	P:Aiwa:70:c7
+Key_Pause	P:Aiwa:70:c9
+Eq	P:Aiwa:70:ca
+Function	P:Aiwa:70:dd
 @Akai	CD Player 141,-1
 0	P:NECext:728d:ff00
 1	P:NECext:728d:fe01
@@ -1811,6 +1993,8 @@ Menu	P:NECext:4040:47b8
 Tape	P:NECext:4040:35ca
 Sat	P:NECext:4040:2dd2
 Dvd	P:NECext:4040:df2
+@Atlantic Technology	Surround Processor 7,-1
+Select	P:RCA38:7:3c
 @Audac	Audac IMEO2
 Power	P:NECext:ff86:e31c
 Vol_up	P:NECext:ff86:de21
@@ -5494,6 +5678,67 @@ Treb>	P:NECext:4e1b:6f9
 Bk001 Treble+	P:NECext:4e1b:6f9
 Video_Source+	P:NECext:4e1b:5fa
 Bk001 Dimension-	P:NECext:4e1b:1fe
+@BnK Components	Pre-Amplifier 5,1
+Save	P:Aiwa:105:0
+Ctrl	P:Aiwa:105:1
+Z1	P:Aiwa:105:2
+Z2	P:Aiwa:105:3
+A/V Preset 1	P:Aiwa:105:4
+A/V Preset 2	P:Aiwa:105:5
+A/V Preset 3	P:Aiwa:105:6
+A/V Preset 4	P:Aiwa:105:7
+A/V Preset 6	P:Aiwa:105:9
+Balance >	P:Aiwa:105:a
+Balance <	P:Aiwa:105:b
+V (Menu)	P:Aiwa:105:c
+^ (Menu)	P:Aiwa:105:d
+Volume ^	P:Aiwa:105:e
+Volume V	P:Aiwa:105:f
+Menu	P:Aiwa:105:10
+Enter	P:Aiwa:105:11
+A/V Preset 7	P:Aiwa:105:12
+A/V Preset 8	P:Aiwa:105:13
+Band	P:Aiwa:105:14
+Review	P:Aiwa:105:15
+V2	P:Aiwa:105:16
+Fx	P:Aiwa:105:18
+Power	P:Aiwa:105:19
+Tuner	P:Aiwa:105:1a
+Cd	P:Aiwa:105:1b
+Vld	P:Aiwa:105:1c
+V1	P:Aiwa:105:1d
+Tv	P:Aiwa:105:1e
+Tape	P:Aiwa:105:1f
+@BnK Components	Pre-Amplifier 6,1
+Save	P:Aiwa:106:0
+Ctrl	P:Aiwa:106:1
+Z1	P:Aiwa:106:2
+Z2	P:Aiwa:106:3
+A/V Preset 1	P:Aiwa:106:4
+A/V Preset 2	P:Aiwa:106:5
+A/V Preset 3	P:Aiwa:106:6
+A/V Preset 4	P:Aiwa:106:7
+A/V Preset 5	P:Aiwa:106:8
+A/V Preset 6	P:Aiwa:106:9
+Balance >	P:Aiwa:106:a
+Balance <	P:Aiwa:106:b
+V (Menu)	P:Aiwa:106:c
+^ (Menu)	P:Aiwa:106:d
+Volume ^	P:Aiwa:106:e
+Volume V	P:Aiwa:106:f
+Menu	P:Aiwa:106:10
+Enter	P:Aiwa:106:11
+A/V Preset 8	P:Aiwa:106:13
+V2	P:Aiwa:106:16
+Mute	P:Aiwa:106:17
+Fx	P:Aiwa:106:18
+Power	P:Aiwa:106:19
+Tuner	P:Aiwa:106:1a
+Cd	P:Aiwa:106:1b
+Vld	P:Aiwa:106:1c
+V1	P:Aiwa:106:1d
+Tv	P:Aiwa:106:1e
+Tape	P:Aiwa:106:1f
 @BnK Components	Receiver 27,78
 Power Off	P:NECext:4e1b:fe01
 Bk001 Power Off	P:NECext:4e1b:fe01
@@ -5870,10 +6115,12 @@ Z2 Mute	P:NECext:4e1b:fc03
 V1	P:NECext:4e1b:fa05
 Z2 Vcr [V1]	P:NECext:4e1b:fa05
 Tv	P:NECext:4e1b:f906
+V3	P:Pioneer40:4e1b:6
 V2	P:NECext:4e1b:f609
 Z2 Tivo [V2]	P:NECext:4e1b:f609
 Tape	P:NECext:4e1b:f40b
 Dvd	P:NECext:4e1b:f20d
+Fm Input	P:Pioneer40:4e1b:e
 Cd	P:NECext:4e1b:f00f
 Z2 Cd	P:NECext:4e1b:f00f
 Center -	P:NECext:4e1b:ea15
@@ -6291,6 +6538,11 @@ Random	P:NECext:55ba:a35c
 Random All	P:NECext:55ba:a35c
 Next Disc	P:NECext:55ba:a25d
 Disc +	P:NECext:55ba:a25d
+@Bose	Receiver 186,160
+Mute	P:Pioneer40:a0ba:1
+Volume -	P:Pioneer40:a0ba:2
+Volume +	P:Pioneer40:a0ba:3
+Power	P:Pioneer40:a0ba:4c
 @Bose	Receiver 186,75
 Mute	P:NECext:4bba:fe01
 Volume -	P:NECext:4bba:fd02
@@ -6424,6 +6676,25 @@ Play >	P:NECext:55ba:aa55
 Pause	P:NECext:55ba:a956
 Random	P:NECext:55ba:a35c
 Next Disc	P:NECext:55ba:a25d
+@Bose	Unknown_WAVERADIO 186,-1
+Mute	P:Pioneer40:45ba:1
+Vol-	P:Pioneer40:45ba:2
+Vol+	P:Pioneer40:45ba:3
+Station	P:Pioneer40:45ba:4
+Am/Fm	P:Pioneer40:45ba:5
+1	P:Pioneer40:45ba:7
+2	P:Pioneer40:45ba:8
+3	P:Pioneer40:45ba:9
+4	P:Pioneer40:45ba:a
+5	P:Pioneer40:45ba:b
+6	P:Pioneer40:45ba:c
+Aux	P:Pioneer40:45ba:f
+Tune+	P:Pioneer40:45ba:10
+Tune-	P:Pioneer40:45ba:11
+Alarm/Time	P:Pioneer40:45ba:12
+Alarm/Wakeupto	P:Pioneer40:45ba:13
+Sleep	P:Pioneer40:45ba:1e
+Power	P:Pioneer40:45ba:4c
 @Bowers and Wilkins	Bowers and Wilkins Zeppelin Air (with 30-pin connector)
 Power	P:RC6:d2:c
 Prev	P:RC6:d2:21
@@ -6502,6 +6773,29 @@ Vol Dn (4Db)	P:SIRC:11:33
 Vol Up (4Db)	P:SIRC:11:34
 Mute On	P:SIRC:11:38
 Mute Off	P:SIRC:11:39
+@Cambridge Audio	Processor 4,-1
+6 channel	P:Denon:4:80
+up arrow	P:Denon:4:a3
+lleft arrow	P:Denon:4:a4
+right arrow	P:Denon:4:a5
+cinema EQ	P:Denon:4:a6
+enter	P:Denon:4:a7
+input setup	P:Denon:4:a8
+channel select	P:Denon:4:a9
+channel volume +	P:Denon:4:aa
+channel volume -	P:Denon:4:ab
+volume +	P:Denon:4:ac
+volume -	P:Denon:4:ad
+muting	P:Denon:4:ae
+down arrow	P:Denon:4:af
+panel	P:Denon:4:b0
+mode	P:Denon:4:b9
+stereo	P:Denon:4:ba
+ac3 rf	P:Denon:4:bb
+input coax 1	P:Denon:4:bc
+input coax 2	P:Denon:4:bd
+input optical 1	P:Denon:4:be
+input optical 2	P:Denon:4:bf
 @Cambridge Audio	Receiver 16,-1
 Dvd	P:RC5X:10:1
 Video 1	P:RC5X:10:2
@@ -6922,6 +7216,29 @@ Disc Selector 2	P:NECext:bb44:b847
 Disc Selector 3	P:NECext:bb44:b748
 Disc Selector 4	P:NECext:bb44:b649
 Disc Selector 5	P:NECext:bb44:b54a
+@Carver	CD Player 99,0
+Shuffle	P:Aiwa:63:5
+Open/Close	P:Aiwa:63:6
+Intro	P:Aiwa:63:7
+Search <<	P:Aiwa:63:8
+Search >>	P:Aiwa:63:9
+9	P:Aiwa:63:b
+Skip <<	P:Aiwa:63:c
+3	P:Aiwa:63:d
+0	P:Aiwa:63:e
+1	P:Aiwa:63:f
+7	P:Aiwa:63:10
+4	P:Aiwa:63:11
+8	P:Aiwa:63:13
+Skip >>	P:Aiwa:63:14
+2	P:Aiwa:63:16
+6	P:Aiwa:63:17
+5	P:Aiwa:63:18
+Prog	P:Aiwa:63:19
+Display	P:Aiwa:63:1a
+Repeat (1/All)	P:Aiwa:63:1b
+Stop/Clear []	P:Aiwa:63:1c
+Play/Pause >/	P:Aiwa:63:1d
 @Carver	Cassette Tape 130,111
 Counter Reset	P:NECext:6f82:ff00
 Review <<	P:NECext:6f82:fb04
@@ -7402,6 +7719,51 @@ D 1 In	P:NECext:4284:aa55
 D 2 In	P:NECext:4284:a857
 Volume +	P:NECext:4284:a758
 Menu	P:NECext:4284:a25d
+@Classe Audio	Amplifier 201,-1
+Power Toggle Amp1 T0	P:RC6:c9:1
+Power Toggle Amp1 T1	P:RC6:c9:1
+Power Toggle Amp2 T0	P:RC6:c9:2
+Power Toggle Amp2 T1	P:RC6:c9:2
+Power Toggle Amp3 T0	P:RC6:c9:3
+Power Toggle Amp3 T1	P:RC6:c9:3
+Power Toggle Amp4 T0	P:RC6:c9:4
+Power Toggle Amp4 T1	P:RC6:c9:4
+Power Toggle Amp5 T0	P:RC6:c9:5
+Power Toggle Amp5 T1	P:RC6:c9:5
+Power Toggle Amp6 T0	P:RC6:c9:6
+Power Toggle Amp6 T1	P:RC6:c9:6
+Power Toggle Amp7 T0	P:RC6:c9:7
+Power Toggle Amp7 T1	P:RC6:c9:7
+Power Toggle Amp8 T0	P:RC6:c9:8
+Power Toggle Amp8 T1	P:RC6:c9:8
+Power Toggle Amp9 T0	P:RC6:c9:9
+Power Toggle Amp9 T1	P:RC6:c9:9
+Standby Toggle T0	P:RC6:c9:c
+Standby Toggle T1	P:RC6:c9:c
+Mute Toggle T0	P:RC6:c9:d
+Mute Toggle T1	P:RC6:c9:d
+Display Step Tog T0	P:RC6:c9:f
+Display Step Tog T1	P:RC6:c9:f
+Power Tog Amp10 T0	P:RC6:c9:78
+Power Tog Amp10 T1	P:RC6:c9:78
+Power Tog Amp11 T0	P:RC6:c9:79
+Power Tog Amp11 T1	P:RC6:c9:79
+Power Tog Amp12 T0	P:RC6:c9:7a
+Power Tog Amp12 T1	P:RC6:c9:7a
+Power Tog Amp13 T0	P:RC6:c9:7b
+Power Tog Amp13 T1	P:RC6:c9:7b
+Power Tog Amp14 T0	P:RC6:c9:7c
+Power Tog Amp14 T1	P:RC6:c9:7c
+Power Tog Amp15 T0	P:RC6:c9:7d
+Power Tog Amp15 T1	P:RC6:c9:7d
+Operate T0	P:RC6:c9:96
+Operate T1	P:RC6:c9:96
+Standby T0	P:RC6:c9:97
+Standby T1	P:RC6:c9:97
+Mute T0	P:RC6:c9:98
+Mute T1	P:RC6:c9:98
+Unmute T0	P:RC6:c9:99
+Unmute T1	P:RC6:c9:99
 @Classe Audio	CD Player 134,97
 Skip >>	P:NECext:6186:ff00
 Skip <<	P:NECext:6186:fb04
@@ -7584,6 +7946,80 @@ Shuffle T0	P:RC5X:14:71
 Shuffle T1	P:RC5X:14:71
 Intro T0	P:RC5X:14:72
 Intro T1	P:RC5X:14:72
+@Classe Audio	Pre-Amplifier 16,-1
+Tape Mon Tg T0	P:RC6:10:1
+Tape Mon Tg T1	P:RC6:10:1
+Line1 T0	P:RC6:10:2
+Line1 T1	P:RC6:10:2
+Line2 T0	P:RC6:10:3
+Line2 T1	P:RC6:10:3
+Line3 T0	P:RC6:10:4
+Line3 T1	P:RC6:10:4
+Balanced 1 T0	P:RC6:10:5
+Balanced 1 T1	P:RC6:10:5
+Input Up T0	P:RC6:10:a
+Input Up T1	P:RC6:10:a
+Input Down T0	P:RC6:10:b
+Input Down T1	P:RC6:10:b
+Stdby Toggle T0	P:RC6:10:c
+Stdby Toggle T1	P:RC6:10:c
+Info T0	P:RC6:10:e
+Info T1	P:RC6:10:e
+Display T0	P:RC6:10:f
+Display T1	P:RC6:10:f
+Phono Gaine Tg T0	P:RC6:10:14
+Phono Gaine Tg T1	P:RC6:10:14
+Balance T0	P:RC6:10:15
+Balance T1	P:RC6:10:15
+Menu T0	P:RC6:10:54
+Menu T1	P:RC6:10:54
+Home T0	P:RC6:10:55
+Home T1	P:RC6:10:55
+Navigate Up T0	P:RC6:10:58
+Navigate Up T1	P:RC6:10:58
+Navigate Down T0	P:RC6:10:59
+Navigate Down T1	P:RC6:10:59
+Navigate Left T0	P:RC6:10:5a
+Navigate Left T1	P:RC6:10:5a
+Navigate Right T0	P:RC6:10:5b
+Navigate Right T1	P:RC6:10:5b
+Enter T0	P:RC6:10:5c
+Enter T1	P:RC6:10:5c
+Operate T0	P:RC6:10:96
+Operate T1	P:RC6:10:96
+Standby T0	P:RC6:10:97
+Standby T1	P:RC6:10:97
+Tape Mon On T0	P:RC6:10:9a
+Tape Mon On T1	P:RC6:10:9a
+Tape Mon Off T0	P:RC6:10:9b
+Tape Mon Off T1	P:RC6:10:9b
+Output1 Toggle	P:RC6:10:f0
+Output2 Toggle	P:RC6:10:f1
+Output3 Toggle	P:RC6:10:f2
+Output1 On	P:RC6:10:f4
+Output1 Off	P:RC6:10:f5
+Output2 Off	P:RC6:10:f8
+Output3 On	P:RC6:10:f9
+Output3 Off	P:RC6:10:fa
+@Classe Audio	Pre-Amplifier 200,-1
+Mute Toggle T0	P:RC6:c8:d
+Mute Toggle T1	P:RC6:c8:d
+Volume Up T0	P:RC6:c8:10
+Volume Up T1	P:RC6:c8:10
+Volume Down T0	P:RC6:c8:11
+Volume Down T1	P:RC6:c8:11
+F1 T0	P:RC6:c8:38
+F1 T1	P:RC6:c8:38
+F2 T0	P:RC6:c8:39
+F2 T1	P:RC6:c8:39
+F3 T0	P:RC6:c8:86
+F3 T1	P:RC6:c8:86
+F4 T0	P:RC6:c8:87
+F4 T1	P:RC6:c8:87
+Mute T0	P:RC6:c8:98
+Mute T1	P:RC6:c8:98
+Unmute T0	P:RC6:c8:99
+Unmute T1	P:RC6:c8:99
 @Classe Audio	Pre-Amplifier 25,-1
 Standby	P:RC5X:19:c
 Mute	P:RC5X:19:d
@@ -7681,6 +8117,181 @@ Clear T0	P:RC5X:14:3a
 Clear T1	P:RC5X:14:3a
 A-B T0	P:RC5X:14:3b
 A-B T1	P:RC5X:14:3b
+@Classe Audio	Surround Processor 116,-1
+Tape Mon Toggle T0	P:RC6:74:1
+Tape Mon Toggle T1	P:RC6:74:1
+Input1 T0	P:RC6:74:2
+Input1 T1	P:RC6:74:2
+Input2 T0	P:RC6:74:3
+Input2 T1	P:RC6:74:3
+Input3 T0	P:RC6:74:4
+Input3 T1	P:RC6:74:4
+Input4 T0	P:RC6:74:5
+Input4 T1	P:RC6:74:5
+Input5 T0	P:RC6:74:6
+Input5 T1	P:RC6:74:6
+Input6 T0	P:RC6:74:7
+Input6 T1	P:RC6:74:7
+Input7 T0	P:RC6:74:8
+Input7 T1	P:RC6:74:8
+Input8 T0	P:RC6:74:9
+Input8 T1	P:RC6:74:9
+Input Up T0	P:RC6:74:a
+Input Up T1	P:RC6:74:a
+Input Down T0	P:RC6:74:b
+Input Down T1	P:RC6:74:b
+Standby Toggle T0	P:RC6:74:c
+Standby Toggle T1	P:RC6:74:c
+Info T0	P:RC6:74:e
+Info T1	P:RC6:74:e
+Display T0	P:RC6:74:f
+Display T1	P:RC6:74:f
+Thx T0	P:RC6:74:12
+Thx T1	P:RC6:74:12
+Late Night Toggle T0	P:RC6:74:13
+Late Night Toggle T1	P:RC6:74:13
+Zone T0	P:RC6:74:14
+Zone T1	P:RC6:74:14
+Trim T0	P:RC6:74:15
+Trim T1	P:RC6:74:15
+Mode T0	P:RC6:74:44
+Mode T1	P:RC6:74:44
+Menu T0	P:RC6:74:54
+Menu T1	P:RC6:74:54
+Home T0	P:RC6:74:55
+Home T1	P:RC6:74:55
+Navigate Up T0	P:RC6:74:58
+Navigate Up T1	P:RC6:74:58
+Navigate Down T0	P:RC6:74:59
+Navigate Down T1	P:RC6:74:59
+Navigate Left T0	P:RC6:74:5a
+Navigate Left T1	P:RC6:74:5a
+Navigate Right T0	P:RC6:74:5b
+Navigate Right T1	P:RC6:74:5b
+Enter T0	P:RC6:74:5c
+Enter T1	P:RC6:74:5c
+Input9 T0	P:RC6:74:78
+Input9 T1	P:RC6:74:78
+Input10 T0	P:RC6:74:79
+Input10 T1	P:RC6:74:79
+Input11 (7.1) T0	P:RC6:74:7a
+Input11 (7.1) T1	P:RC6:74:7a
+Input12 (Tape) T0	P:RC6:74:7b
+Input12 (Tape) T1	P:RC6:74:7b
+Zone Mute T0	P:RC6:74:91
+Zone Mute T1	P:RC6:74:91
+Zone Unmute T0	P:RC6:74:92
+Zone Unmute T1	P:RC6:74:92
+Zone Mute Toggle T0	P:RC6:74:93
+Zone Mute Toggle T1	P:RC6:74:93
+Zone Vol Up T0	P:RC6:74:94
+Zone Vol Up T1	P:RC6:74:94
+Zone Vol Down T0	P:RC6:74:95
+Zone Vol Down T1	P:RC6:74:95
+Operate T0	P:RC6:74:96
+Operate T1	P:RC6:74:96
+Standby T0	P:RC6:74:97
+Standby T1	P:RC6:74:97
+Tape Mon On T0	P:RC6:74:9a
+Tape Mon On T1	P:RC6:74:9a
+Tape Mon Off T0	P:RC6:74:9b
+Tape Mon Off T1	P:RC6:74:9b
+Thx On T0	P:RC6:74:9c
+Thx On T1	P:RC6:74:9c
+Thx Off T0	P:RC6:74:9d
+Thx Off T1	P:RC6:74:9d
+Late Night On T0	P:RC6:74:a0
+Late Night On T1	P:RC6:74:a0
+Late Night Off T0	P:RC6:74:a1
+Late Night Off T1	P:RC6:74:a1
+Trim Front T0	P:RC6:74:a2
+Trim Front T1	P:RC6:74:a2
+Trim Center T0	P:RC6:74:a3
+Trim Center T1	P:RC6:74:a3
+Trim Surr T0	P:RC6:74:a4
+Trim Surr T1	P:RC6:74:a4
+Trim Sub T0	P:RC6:74:a5
+Trim Sub T1	P:RC6:74:a5
+Zone Input 1 T0	P:RC6:74:a9
+Zone Input 1 T1	P:RC6:74:a9
+Zone Input 2 T0	P:RC6:74:aa
+Zone Input 2 T1	P:RC6:74:aa
+Zone Input 3 T0	P:RC6:74:ab
+Zone Input 3 T1	P:RC6:74:ab
+Zone Input 4 T0	P:RC6:74:ac
+Zone Input 4 T1	P:RC6:74:ac
+Zone Input 5 T0	P:RC6:74:ad
+Zone Input 5 T1	P:RC6:74:ad
+Zone Input 6 T0	P:RC6:74:ae
+Zone Input 6 T1	P:RC6:74:ae
+Zone Input 7 T0	P:RC6:74:af
+Zone Input 7 T1	P:RC6:74:af
+Zone Input 8 T0	P:RC6:74:b0
+Zone Input 8 T1	P:RC6:74:b0
+Zone Input 9 T0	P:RC6:74:b1
+Zone Input 9 T1	P:RC6:74:b1
+Zone Input 10 T0	P:RC6:74:b2
+Zone Input 10 T1	P:RC6:74:b2
+Listen.Pos.1 T0	P:RC6:74:b9
+Listen.Pos.1 T1	P:RC6:74:b9
+Listen.Pos.2 T0	P:RC6:74:ba
+Listen.Pos.2 T1	P:RC6:74:ba
+Listen.Pos.3 T0	P:RC6:74:bb
+Listen.Pos.3 T1	P:RC6:74:bb
+Listen.Pos.4 T0	P:RC6:74:bc
+Listen.Pos.4 T1	P:RC6:74:bc
+Multi T0	P:RC6:74:c1
+Multi T1	P:RC6:74:c1
+Multi+Thx T0	P:RC6:74:c2
+Multi+Thx T1	P:RC6:74:c2
+Dolby Pro Logic T0	P:RC6:74:c3
+Dolby Pro Logie T1	P:RC6:74:c3
+Dolby Pl+Thx T0	P:RC6:74:c4
+Dolby Pl+Thx T1	P:RC6:74:c4
+Mm Nat T0	P:RC6:74:c6
+Mm Nat T1	P:RC6:74:c6
+Mm Party T0	P:RC6:74:c7
+Mm Party T1	P:RC6:74:c7
+Mono T0	P:RC6:74:cc
+Mono T1	P:RC6:74:cc
+Mono+Thx T0	P:RC6:74:cd
+Mono+Thx T1	P:RC6:74:cd
+Surr. 6.1 T0	P:RC6:74:cf
+Surr. 6.1 T1	P:RC6:74:cf
+Stereo T0	P:RC6:74:d0
+Stereo T1	P:RC6:74:d0
+Stereo+Thx T0	P:RC6:74:d1
+Stereo+Thx T1	P:RC6:74:d1
+Dolby Plii Movie T0	P:RC6:74:d2
+Dolby Plii Movie T1	P:RC6:74:d2
+Dplii M+Thx T0	P:RC6:74:d3
+Dplii M+Thx T1	P:RC6:74:d3
+Dplii Muz T0	P:RC6:74:d4
+Dplii Muz T1	P:RC6:74:d4
+Dolby Digital Ex T0	P:RC6:74:e4
+Dolby Digital Ex T1	P:RC6:74:e4
+Thx Ultra 2 Music T0	P:RC6:74:e5
+Thx Ultra 2 Music T1	P:RC6:74:e5
+Thx Ultra 2 Cin T0	P:RC6:74:e6
+Thx Ultra 2 Cin T1	P:RC6:74:e6
+Thx Surr Ex T0	P:RC6:74:e7
+Thx Surr Ex T1	P:RC6:74:e7
+Dts Neo6 T0	P:RC6:74:e8
+Dts Neo6 T1	P:RC6:74:e8
+Dts Neo6+T T0	P:RC6:74:e9
+Dts Neo6+T T1	P:RC6:74:e9
+Dts Neo6 Cin T0	P:RC6:74:ea
+Dts Neo6 Cin T1	P:RC6:74:ea
+D Neo6 Cin+T T0	P:RC6:74:eb
+D Neo6 Cin+T T1	P:RC6:74:eb
+Dts Neo6 Muz T0	P:RC6:74:ec
+Dts Neo6 Muz T1	P:RC6:74:ec
+Dts Mtx6 T0	P:RC6:74:ed
+Dts Mtx6 T1	P:RC6:74:ed
+Dts Mtx6+T T0	P:RC6:74:ee
+Dts Mtx6+T T1	P:RC6:74:ee
+Stereo 24/96 T0	P:RC6:74:ef
+Stereo 24/96 T1	P:RC6:74:ef
 @Classe Audio	Surround Processor 25,-1
 A.Cal T0	P:RC5X:19:8
 A.Cal T1	P:RC5X:19:8
@@ -8583,6 +9194,698 @@ Play/Pause	P:NECext:e608:a659
 Fwd	P:NECext:e608:a55a
 Stop	P:NECext:e608:a25d
 Rev	P:NECext:e608:a15e
+@Denon	AV Processor 12,-1
+Left Arrow	P:Denon:c:7f
+Zn2 Vol Up	P:Denon:c:8d
+Zone 2 Vol Down	P:Denon:c:8e
+Source Toggle	P:Denon:c:90
+Zone 2 Cd	P:Denon:c:90
+Zone 2 Ipod	P:Denon:c:90
+Zone2 Musicserver	P:Denon:c:93
+Surr Stereo	P:Denon:c:9d
+Surr Direct	P:Denon:c:9e
+System Setup	P:Denon:c:a0
+Surr Parameter	P:Denon:c:a1
+Up Arrow	P:Denon:c:a3
+Down Arrow	P:Denon:c:a4
+Surr 5Ch/7Ch Stereo	P:Denon:c:a8
+Video Off	P:Denon:c:b2
+Zone 2 Dvd	P:Denon:c:be
+Mode	P:Denon:c:d8
+@Denon	AV Processor 2,-1
+Surr Puredirect	P:Denon:2:6a
+Zone 2	P:Denon:2:79
+Power On Zn 2	P:Denon:2:7b
+Power Off Zn 2	P:Denon:2:7c
+Phono	P:Denon:2:c3
+Cd	P:Denon:2:c4
+Ipod	P:Denon:2:c4
+Tuner	P:Denon:2:c5
+Dbs	P:Denon:2:c8
+Cable Tv	P:Denon:2:c9
+Tv	P:Denon:2:c9
+Vdp	P:Denon:2:ca
+Music Server	P:Denon:2:cc
+Video Aux	P:Denon:2:cc
+Vcr 1	P:Denon:2:cd
+Vcr 2	P:Denon:2:ce
+Tape 1	P:Denon:2:d2
+Right Arrow	P:Denon:2:dd
+On Screen	P:Denon:2:df
+Select/Enter	P:Denon:2:e0
+Power On Main	P:Denon:2:e1
+Power Off Main	P:Denon:2:e2
+Dvd	P:Denon:2:e3
+Surr Standard	P:Denon:2:e4
+Mute	P:Denon:2:f0
+Volume + Main	P:Denon:2:f1
+Volume - Main	P:Denon:2:f2
+@Denon	AV Processor 4,-1
+Surround Cinema	P:Denon:4:95
+Room Eq	P:Denon:4:9d
+@Denon	Amplifier 12,-1
+Digital Dbs/Bs	P:Denon:c:83
+Digital Vdp	P:Denon:c:84
+Digital Cd	P:Denon:c:85
+Digital Dat	P:Denon:c:86
+Amp Cd Direct	P:Denon:c:8c
+Stereo T.M.	P:Denon:c:9d
+Direct T.S.	P:Denon:c:9e
+Param.Dsp.Rec	P:Denon:c:9f
+Amp Parameter	P:Denon:c:a0
+Param.Main	P:Denon:c:a0
+Param.Sub	P:Denon:c:a1
+Amp Clear	P:Denon:c:a2
+Param.Clear	P:Denon:c:a2
+Amp Set +	P:Denon:c:a3
+Param.Set +	P:Denon:c:a3
+Amp Set -	P:Denon:c:a4
+Param.Set -	P:Denon:c:a4
+Amp Effect	P:Denon:c:a6
+Amp Input Adj.	P:Denon:c:a7
+Amp Memory	P:Denon:c:a9
+Amp Personal Mem 1	P:Denon:c:aa
+Amp Personal Mem 2	P:Denon:c:ab
+Video Off	P:Denon:c:b2
+Amp Tuner Preset V	P:Denon:c:d5
+Tuner Ch V	P:Denon:c:d5
+Tuner Preset V	P:Denon:c:d5
+Tuner Preset Ch Dn	P:Denon:c:d5
+Amp Tuner Preset ^	P:Denon:c:d6
+Tuner Ch ^	P:Denon:c:d6
+Tuner Preset ^	P:Denon:c:d6
+Tuner Preset Ch Up	P:Denon:c:d6
+Tuner Band	P:Denon:c:d7
+Tuner At/Manu	P:Denon:c:d8
+Tuner Tune ^	P:Denon:c:d9
+Tuner Tune V	P:Denon:c:da
+Tuner Rf	P:Denon:c:db
+Tuner P.Scan	P:Denon:c:dc
+Tuner Power	P:Denon:c:dd
+@Denon	Amplifier 2,-1
+Phono	P:Denon:2:41
+Cd	P:Denon:2:42
+Tuner	P:Denon:2:43
+Aux/Video-1	P:Denon:2:44
+Aux/Video-2	P:Denon:2:45
+Muting	P:Denon:2:4b
+Volume -	P:Denon:2:4c
+Volume +	P:Denon:2:4d
+Power	P:Denon:2:50
+Tape Monitor	P:Denon:2:58
+Tape-1/1>2	P:Denon:2:59
+Tape-2/2>1	P:Denon:2:5a
+Aux	P:Denon:2:84
+Volume V	P:Denon:2:8c
+Volume ^	P:Denon:2:8d
+Amp Power	P:Denon:2:90
+Source Direct	P:Denon:2:91
+Tape-1	P:Denon:2:99
+Tape-2	P:Denon:2:9a
+Sp-A	P:Denon:2:ac
+Sp-B	P:Denon:2:ad
+Surr.Aut.Bal	P:Denon:2:c0
+Amp Phono	P:Denon:2:c3
+Amp Cd	P:Denon:2:c4
+Amp Tuner	P:Denon:2:c5
+Amp Dbs/Bs	P:Denon:2:c8
+Dbs/Bs	P:Denon:2:c8
+Tv	P:Denon:2:c9
+Amp Vdp	P:Denon:2:ca
+Vdp	P:Denon:2:ca
+Amp V.Aux	P:Denon:2:cc
+V.Aux	P:Denon:2:cc
+Amp Vcr-1	P:Denon:2:cd
+Vcr-1	P:Denon:2:cd
+Amp Vcr-2	P:Denon:2:ce
+Vcr-2	P:Denon:2:ce
+Amp Dat/Tape-1	P:Denon:2:d2
+Amp Dat/Tape-2	P:Denon:2:d3
+Dat/Tape-2	P:Denon:2:d3
+Amp Cinema	P:Denon:2:d5
+Cinema	P:Denon:2:d5
+Amp Video Select	P:Denon:2:d8
+Video Select	P:Denon:2:d8
+Amp A.V.S.E	P:Denon:2:d9
+A.V.S.E	P:Denon:2:d9
+Amp Rec Select	P:Denon:2:db
+Audio Rec Select	P:Denon:2:db
+Amp Panel	P:Denon:2:de
+Panel	P:Denon:2:de
+Amp Screen	P:Denon:2:df
+On Screen	P:Denon:2:df
+Amp Center Mode	P:Denon:2:e4
+Surround Center	P:Denon:2:e4
+Amp Surr.Mode	P:Denon:2:e6
+Surround Mode	P:Denon:2:e6
+Amp Bypass	P:Denon:2:e7
+Amp Delay V	P:Denon:2:e8
+Surr.Delay V	P:Denon:2:e8
+Amp Delay ^	P:Denon:2:e9
+Surr.Delay ^	P:Denon:2:e9
+Amp T.Tone	P:Denon:2:ea
+Surr./Param.T.Tone	P:Denon:2:ea
+3Ch Logic	P:Denon:2:eb
+Amp Center	P:Denon:2:ec
+Output Center	P:Denon:2:ec
+Amp Rear	P:Denon:2:ed
+Output Rear	P:Denon:2:ed
+Amp Sp-A	P:Denon:2:ee
+Output Front	P:Denon:2:ee
+Amp Sp-B	P:Denon:2:ef
+Amp Muting	P:Denon:2:f0
+Amp Master Vol ^	P:Denon:2:f1
+Master ^	P:Denon:2:f1
+Amp Master Vol V	P:Denon:2:f2
+Master V	P:Denon:2:f2
+Amp Rear ^	P:Denon:2:f3
+Surr.Rear ^	P:Denon:2:f3
+Amp Rear V	P:Denon:2:f4
+Surr.Rear V	P:Denon:2:f4
+Amp Center ^	P:Denon:2:f5
+Surr.Center ^	P:Denon:2:f5
+Amp Center V	P:Denon:2:f6
+Surr.Center V	P:Denon:2:f6
+Amp Balance <	P:Denon:2:f7
+Surr.Bal <	P:Denon:2:f7
+Amp Balance >	P:Denon:2:f8
+Surr.Bal >	P:Denon:2:f8
+Amp Vdp Direct	P:Denon:2:ff
+@Denon	Amplifier 4,-1
+Deck A/B	P:Denon:4:53
+Deck1 A/B	P:Denon:4:53
+Deck Select A/B	P:Denon:4:53
+Deck Rev Play <	P:Denon:4:57
+Deck1 Rev Play <	P:Denon:4:57
+Deck Play Rev <	P:Denon:4:57
+Deck Play(Rev) <	P:Denon:4:57
+Deck Play Rev. <	P:Denon:4:57
+Deck Ff >>	P:Denon:4:5a
+Deck1 Ff >>	P:Denon:4:5a
+Deck Rew <<	P:Denon:4:5b
+Deck1 Rew <<	P:Denon:4:5b
+Deck Play >	P:Denon:4:5c
+Deck1 Play >	P:Denon:4:5c
+Deck Pause	P:Denon:4:5d
+Deck1 Pause	P:Denon:4:5d
+Deck Stop []	P:Denon:4:5e
+Deck1 Stop []	P:Denon:4:5e
+Deck Rec	P:Denon:4:5f
+Deck1 Rec	P:Denon:4:5f
+Deck Power	P:Denon:4:75
+Dat Srch >>	P:Denon:4:d8
+Dat1 Srch >>	P:Denon:4:d8
+Dat Srch <<	P:Denon:4:d9
+Dat1 Srch <<	P:Denon:4:d9
+Dat Ff >>	P:Denon:4:da
+Dat1 Ff >>	P:Denon:4:da
+Dat Rew <<	P:Denon:4:db
+Dat1 Rew <<	P:Denon:4:db
+Dat Play >	P:Denon:4:dc
+Dat1 Play >	P:Denon:4:dc
+Dat Pause	P:Denon:4:dd
+Dat1 Pause	P:Denon:4:dd
+Dat Stop []	P:Denon:4:de
+Dat1 Stop []	P:Denon:4:de
+Dat Rec	P:Denon:4:df
+Dat1 Rec	P:Denon:4:df
+@Denon	Amplifier 6,-1
+Vdp Power	P:Denon:6:81
+Vdp1 Power	P:Denon:6:81
+Vdp Stop []	P:Denon:6:83
+Vdp1 Stop []	P:Denon:6:83
+Vdp Play >	P:Denon:6:84
+Vdp1 Play >	P:Denon:6:84
+Vdp Pause	P:Denon:6:85
+Vdp1 Pause	P:Denon:6:85
+Vdp Search >>	P:Denon:6:86
+Vdp1 Srch >>	P:Denon:6:86
+Vdp Search <<	P:Denon:6:87
+Vdp1 Srch <<	P:Denon:6:87
+Vdp Ff >>	P:Denon:6:88
+Vdp1 Ff >>	P:Denon:6:88
+Vdp Rew <<	P:Denon:6:89
+Vdp1 Rew <<	P:Denon:6:89
+Vdp1 Display	P:Denon:6:93
+@Denon	Amplifier 8,-1
+Repeat	P:Denon:8:54
+Cd Repeat	P:Denon:8:54
+Cd Skip >>	P:Denon:8:58
+Cd Skip Fwd >>	P:Denon:8:58
+Cd Skip <<	P:Denon:8:59
+Cd Skip Rev <<	P:Denon:8:59
+Cd Scan >>	P:Denon:8:5a
+Cd Scan Ffwd >>	P:Denon:8:5a
+Cd Scan <<	P:Denon:8:5b
+Cd Scan Rev <<	P:Denon:8:5b
+Cd Play >	P:Denon:8:5c
+Cd Pause	P:Denon:8:5d
+Cd Stop []	P:Denon:8:5e
+Disc 1	P:Denon:8:64
+Disc 2	P:Denon:8:65
+Disc 3	P:Denon:8:66
+Disc 4	P:Denon:8:67
+Disc 5	P:Denon:8:68
+Disc 6	P:Denon:8:69
+Cd Disc Skip +	P:Denon:8:6b
+Cd Skip	P:Denon:8:6b
+Cd Power	P:Denon:8:73
+@Denon	CD Jukebox 4,-1
+Repeat Off	P:Denon:4:c0
+Mode Off	P:Denon:4:fa
+Cross Fade	P:Denon:4:fb
+All Discs	P:Denon:4:fc
+1 Disc	P:Denon:4:fd
+Repeat 1	P:Denon:4:fe
+Best Hit	P:Denon:4:ff
+@Denon	CD Jukebox 8,-1
+Down	P:Denon:8:40
+0	P:Denon:8:41
+1	P:Denon:8:42
+2	P:Denon:8:43
+3	P:Denon:8:44
+4	P:Denon:8:45
+5	P:Denon:8:46
+6	P:Denon:8:47
+7	P:Denon:8:48
+8	P:Denon:8:49
+9	P:Denon:8:4a
+10	P:Denon:8:4b
++10	P:Denon:8:4c
+Prog/Direct	P:Denon:8:4d
+Program	P:Denon:8:4d
+Volume+	P:Denon:8:4e
+Volume-	P:Denon:8:4f
+Open/Close	P:Denon:8:50
+Clear	P:Denon:8:51
+Call	P:Denon:8:52
+Check	P:Denon:8:52
+Time	P:Denon:8:53
+Time/Text	P:Denon:8:53
+Repeat	P:Denon:8:54
+Repeat All	P:Denon:8:54
+Continue	P:Denon:8:57
+>>I	P:Denon:8:58
+Skip >>	P:Denon:8:58
+I<<	P:Denon:8:59
+Skip <<	P:Denon:8:59
+>>	P:Denon:8:5a
+Search >>	P:Denon:8:5a
+<<	P:Denon:8:5b
+Search <<	P:Denon:8:5b
+Play	P:Denon:8:5c
+Pause	P:Denon:8:5d
+Stop	P:Denon:8:5e
+Disc Select	P:Denon:8:62
+Random	P:Denon:8:6a
+Disc Skip+	P:Denon:8:6b
+Disc Skip Up	P:Denon:8:6b
+Disc +	P:Denon:8:6b
+Disc Skip-	P:Denon:8:6e
+Disc Skip Dn	P:Denon:8:6e
+Disc -	P:Denon:8:6e
+Power On	P:Denon:8:73
+Enter	P:Denon:8:7a
+Group	P:Denon:8:7e
+Up	P:Denon:8:7f
+Power Off	P:Denon:8:f8
+Single	P:Denon:8:f9
+Multi	P:Denon:8:fa
+Zone 1	P:Denon:8:fb
+Zone 2	P:Denon:8:fc
+Left	P:Denon:8:fd
+Right	P:Denon:8:fe
+Track/Caps	P:Denon:8:ff
+@Denon	CD Player 168,-1
+0	P:Pioneer40:57a8:0
+1	P:Pioneer40:57a8:1
+2	P:Pioneer40:57a8:2
+3	P:Pioneer40:57a8:3
+4	P:Pioneer40:57a8:4
+5	P:Pioneer40:57a8:5
+6	P:Pioneer40:57a8:6
+7	P:Pioneer40:57a8:7
+8	P:Pioneer40:57a8:8
+9	P:Pioneer40:57a8:9
+Scan >>	P:Pioneer40:57a8:10
+Scan <<	P:Pioneer40:57a8:11
+Chp/Tm	P:Pioneer40:57a8:13
+Stop []	P:Pioneer40:57a8:16
+Play >	P:Pioneer40:57a8:17
+Pause	P:Pioneer40:57a8:18
+Memory Review	P:Pioneer40:57a8:19
+Open/Close	P:Pioneer40:57a8:19
+Power	P:Pioneer40:57a8:1c
+Audio D/A	P:Pioneer40:57a8:1e
++10	P:Pioneer40:57a8:1f
+Scan Reverse (F.S.)	P:Pioneer40:57a8:2b
+Display	P:Pioneer40:57a8:43
+Blank Key	P:Pioneer40:57a8:44
+Clear (C)	P:Pioneer40:57a8:45
+Repeat A/B	P:Pioneer40:57a8:48
+Pgm	P:Pioneer40:57a8:4c
+Disc Side A	P:Pioneer40:57a8:4d
+Disc Side B	P:Pioneer40:57a8:4e
+Step <	P:Pioneer40:57a8:50
+Skip >>	P:Pioneer40:57a8:52
+Skip <<	P:Pioneer40:57a8:53
+Step >	P:Pioneer40:57a8:54
+Multi-Speed <	P:Pioneer40:57a8:55
+Multi-Speed >	P:Pioneer40:57a8:58
+Hilite/Intro	P:Pioneer40:57a8:5a
+Random	P:Pioneer40:57a8:5e
+@Denon	CD Player 6,-1
+Strobe	P:Denon:6:41
+Digital Fnr	P:Denon:6:42
+Still & Sound	P:Denon:6:43
+Art	P:Denon:6:57
+Side A	P:Denon:6:76
+Side B	P:Denon:6:77
+Jog Rev	P:Denon:6:79
+Power	P:Denon:6:81
+Open/Close	P:Denon:6:82
+Stop []	P:Denon:6:83
+Play>/Pause	P:Denon:6:84
+>>	P:Denon:6:86
+<<	P:Denon:6:87
+Program	P:Denon:6:8a
+Call	P:Denon:6:8b
+Repeat	P:Denon:6:8e
+A/B	P:Denon:6:8f
+Search Mode	P:Denon:6:90
+Digital/Analog/Cx	P:Denon:6:91
+Audio Monitor	P:Denon:6:92
+On Screen	P:Denon:6:93
+Intro Scan	P:Denon:6:94
+Multi Speed >	P:Denon:6:98
+Multi Speed <	P:Denon:6:99
+Strobe +	P:Denon:6:9a
+Strobe -	P:Denon:6:9b
+>	P:Denon:6:9c
+<	P:Denon:6:9d
+Random	P:Denon:6:9e
+Auto Space	P:Denon:6:9f
+0	P:Denon:6:a0
+1	P:Denon:6:a1
+2	P:Denon:6:a2
+3	P:Denon:6:a3
+4	P:Denon:6:a4
+5	P:Denon:6:a5
+6	P:Denon:6:a6
+8	P:Denon:6:a8
+9	P:Denon:6:a9
+Single	P:Denon:6:b1
+Jog Fwd	P:Denon:6:b9
+@Denon	CD Player 8,-1
+Down	P:Denon:8:40
+0	P:Denon:8:41
+1	P:Denon:8:42
+1 Track Number	P:Denon:8:42
+0/10	P:Denon:8:42
+2	P:Denon:8:43
+2 Track Number	P:Denon:8:43
+3	P:Denon:8:44
+3 Track Number	P:Denon:8:44
+4	P:Denon:8:45
+4 Track Number	P:Denon:8:45
+5	P:Denon:8:46
+5 Track Number	P:Denon:8:46
+6	P:Denon:8:47
+6 Track Number	P:Denon:8:47
+7	P:Denon:8:48
+7 Track Number	P:Denon:8:48
+8	P:Denon:8:49
+8 Track Number	P:Denon:8:49
+9	P:Denon:8:4a
+9 Track Number	P:Denon:8:4a
+10	P:Denon:8:4b
+10 Track Number	P:Denon:8:4b
++10	P:Denon:8:4c
+10+	P:Denon:8:4c
++10 Track Number	P:Denon:8:4c
+Prog/Direct	P:Denon:8:4d
+Program	P:Denon:8:4d
+Prog	P:Denon:8:4d
+Program/Direct	P:Denon:8:4d
+Volume +	P:Denon:8:4e
+Volume ^	P:Denon:8:4e
+Volume+	P:Denon:8:4e
+Volume -	P:Denon:8:4f
+Volume V	P:Denon:8:4f
+Volume-	P:Denon:8:4f
+Open/Close	P:Denon:8:50
+Eject	P:Denon:8:50
+Clear	P:Denon:8:51
+Ft File Clear	P:Denon:8:51
+Call	P:Denon:8:52
+Check	P:Denon:8:52
+Time	P:Denon:8:53
+Time Mode	P:Denon:8:53
+Time/Text	P:Denon:8:53
+Repeat	P:Denon:8:54
+Repeat All	P:Denon:8:54
+All	P:Denon:8:54
+A-B	P:Denon:8:55
+A-B Repeat	P:Denon:8:55
+Index	P:Denon:8:56
+Direct	P:Denon:8:57
+Continue	P:Denon:8:57
+Skip >>	P:Denon:8:58
+Track >>	P:Denon:8:58
+Next	P:Denon:8:58
+Skip Fwd >>	P:Denon:8:58
+>>I	P:Denon:8:58
+Auto Search >>	P:Denon:8:58
+Track +	P:Denon:8:58
+Skip <<	P:Denon:8:59
+Track <<	P:Denon:8:59
+Prev.	P:Denon:8:59
+Skip Rew <<	P:Denon:8:59
+I<<	P:Denon:8:59
+Auto Search <<	P:Denon:8:59
+Track -	P:Denon:8:59
+Search >>	P:Denon:8:5a
+Scan >>	P:Denon:8:5a
+>>	P:Denon:8:5a
+Scan +	P:Denon:8:5a
+Ffwd >>	P:Denon:8:5a
+Search <<	P:Denon:8:5b
+Scan <<	P:Denon:8:5b
+<<	P:Denon:8:5b
+Scan -	P:Denon:8:5b
+Rew <<	P:Denon:8:5b
+Play	P:Denon:8:5c
+Play >	P:Denon:8:5c
+Pause	P:Denon:8:5d
+Stop	P:Denon:8:5e
+Stop []	P:Denon:8:5e
+Time Search	P:Denon:8:60
+Auto Space	P:Denon:8:61
+A Space	P:Denon:8:61
+Repeat 1	P:Denon:8:62
+Disc Select	P:Denon:8:62
+Auto Edit	P:Denon:8:63
+Disc 1	P:Denon:8:64
+1 Disc Number	P:Denon:8:64
+1 Disc No/Store No	P:Denon:8:64
+Disc 2	P:Denon:8:65
+2 Disc Number	P:Denon:8:65
+2 Disc No/Store No	P:Denon:8:65
+Disc 3	P:Denon:8:66
+3 Disc Number	P:Denon:8:66
+3 Disc No/Store No	P:Denon:8:66
+Disc 4	P:Denon:8:67
+4 Disc Number	P:Denon:8:67
+4 Disc No/Store No	P:Denon:8:67
+Disc 5	P:Denon:8:68
+5 Disc Number	P:Denon:8:68
+5 Disc No/Store No	P:Denon:8:68
+Disc 6	P:Denon:8:69
+6 Disc Number	P:Denon:8:69
+6 Disc No/Store No	P:Denon:8:69
+Random	P:Denon:8:6a
+Shuffle	P:Denon:8:6a
+Ramdom	P:Denon:8:6a
+Disc Skip +	P:Denon:8:6b
+Disc +	P:Denon:8:6b
+Disc -	P:Denon:8:6b
+Disc Skip	P:Denon:8:6b
+Disc Skip+	P:Denon:8:6b
+Disc Skip Up	P:Denon:8:6b
+File	P:Denon:8:6c
+File-Ft File	P:Denon:8:6c
+Store	P:Denon:8:6c
+Recall	P:Denon:8:6d
+Disc Skip -	P:Denon:8:6e
+Disc Skip-	P:Denon:8:6e
+Disc Skip Dn	P:Denon:8:6e
+Power On	P:Denon:8:73
+Display	P:Denon:8:75
+Display Select	P:Denon:8:75
+Fader	P:Denon:8:76
+Pitch +	P:Denon:8:77
+Pitch -	P:Denon:8:78
+Enter	P:Denon:8:7a
+Power Off	P:Denon:8:7d
+Group	P:Denon:8:7e
+Up	P:Denon:8:7f
+Single	P:Denon:8:f9
+Multi	P:Denon:8:fa
+Zone 1	P:Denon:8:fb
+Zone 2	P:Denon:8:fc
+Left	P:Denon:8:fd
+Right	P:Denon:8:fe
+Track/Caps	P:Denon:8:ff
+@Denon	CD Receiver 12,-1
+Mute	P:Denon:c:4b
+Volume Down	P:Denon:c:4c
+Volume Up	P:Denon:c:4d
+Power Toggle	P:Denon:c:50
+Source Tuner	P:Denon:c:59
+Source Cd	P:Denon:c:5a
+Source Line	P:Denon:c:5f
+Power On	P:Denon:c:68
+Sleep	P:Denon:c:72
+Power Off	P:Denon:c:7a
+Time/Display	P:Denon:c:cf
+Enter/Memo	P:Denon:c:d1
+Dab/Rds	P:Denon:c:d2
+Clock	P:Denon:c:d3
+Pty	P:Denon:c:d4
+Dimmer	P:Denon:c:df
+@Denon	CD Receiver 4,-1
+Tape Reverse	P:Denon:4:57
+Tape Forward	P:Denon:4:5c
+@Denon	CD Receiver 6,-1
+Mini-Disc Stop	P:Denon:6:e1
+Mini-Disc Play/Pause	P:Denon:6:e2
+@Denon	CD Receiver 8,-1
+1	P:Denon:8:42
+2	P:Denon:8:43
+3	P:Denon:8:44
+4	P:Denon:8:45
+5	P:Denon:8:46
+6	P:Denon:8:47
+7	P:Denon:8:48
+8	P:Denon:8:49
+9	P:Denon:8:4a
+10	P:Denon:8:4b
++10	P:Denon:8:4c
+Program/Direct	P:Denon:8:4d
+Clear/Delete	P:Denon:8:51
+Call	P:Denon:8:52
+Repeat	P:Denon:8:54
+Channel +	P:Denon:8:58
+Skip Forward	P:Denon:8:58
+Channel -	P:Denon:8:59
+Skip Back	P:Denon:8:59
+Fast Forward	P:Denon:8:5a
+Tuner Down	P:Denon:8:5a
+Tuner Up	P:Denon:8:5a
+Fast Rewind	P:Denon:8:5b
+Cd Play/Pause	P:Denon:8:5c
+Band	P:Denon:8:5e
+Cd Stop	P:Denon:8:5e
+Random	P:Denon:8:6a
+Folder +	P:Denon:8:6b
+Folder -	P:Denon:8:6e
+Edit	P:Denon:8:70
+Folder Mode	P:Denon:8:7e
+Menu/Set	P:Denon:8:91
+Sdb/Tone	P:Denon:8:ea
+@Denon	Cassette Tape 12,-1
+Muting	P:Denon:c:4b
+Volume V	P:Denon:c:4c
+Volume ^	P:Denon:c:4d
+Power	P:Denon:c:50
+Vdp	P:Denon:c:54
+Phono	P:Denon:c:58
+Tuner	P:Denon:c:59
+Cd	P:Denon:c:5a
+Tape-1	P:Denon:c:5d
+Tape-2/Vcr	P:Denon:c:5e
+Video Select	P:Denon:c:62
+Rec Select	P:Denon:c:75
+Panel	P:Denon:c:7e
+Preset V	P:Denon:c:d5
+Preset ^	P:Denon:c:d6
+P.Scan	P:Denon:c:dc
+@Denon	Cassette Tape 2,-1
+Volume -	P:Denon:2:4c
+Volume +	P:Denon:2:4d
+Power	P:Denon:2:50
+Tape Monitor	P:Denon:2:58
+Tape-1/1>2	P:Denon:2:59
+Tape-2/2>1	P:Denon:2:5a
+@Denon	Cassette Tape 4,-1
+D1 Cass Pitch+/-	P:Denon:4:45
+D2 Cass Pitch+/-	P:Denon:4:4a
+Deck Select A/B	P:Denon:4:53
+A/B	P:Denon:4:53
+Deck Play Rev. <	P:Denon:4:57
+Play(Rev)	P:Denon:4:57
+D1 Cass Fwd >> (>>)	P:Denon:4:5a
+F.F >>	P:Denon:4:5a
+Deck Ff >>	P:Denon:4:5a
+Ff >>	P:Denon:4:5a
+D1 Cass Rew << (<<)	P:Denon:4:5b
+Rew <<	P:Denon:4:5b
+Deck Rew <<	P:Denon:4:5b
+D1 Cass Play >	P:Denon:4:5c
+Play >	P:Denon:4:5c
+Deck Play >	P:Denon:4:5c
+Rec Pause/Mute	P:Denon:4:5d
+Deck Pause	P:Denon:4:5d
+Pause	P:Denon:4:5d
+D1 Cass Stop[]	P:Denon:4:5e
+Stop []	P:Denon:4:5e
+Deck Stop []	P:Denon:4:5e
+Record	P:Denon:4:5f
+Deck Rec	P:Denon:4:5f
+D2 Cass Fwd >> (>>)	P:Denon:4:6a
+D2 Cass Rew << (<<)	P:Denon:4:6b
+D2 Cass Play >	P:Denon:4:6c
+D2 Cass Stop[]	P:Denon:4:6e
+@Denon	Cassette Tape 8,-1
+Cd Skip Fwd >>	P:Denon:8:58
+Cd Skip Rev <<	P:Denon:8:59
+Cd Play >	P:Denon:8:5c
+Cd Pause	P:Denon:8:5d
+Cd Pitch +	P:Denon:8:77
+Cd Pitch -	P:Denon:8:78
+@Denon	DAT 4,-1
+0	P:Denon:4:c1
+1	P:Denon:4:c2
+2	P:Denon:4:c3
+3	P:Denon:4:c4
+4	P:Denon:4:c5
+5	P:Denon:4:c6
+6	P:Denon:4:c7
+7	P:Denon:4:c8
+8	P:Denon:4:c9
+9	P:Denon:4:ca
+Open/Close	P:Denon:4:d0
+Repeat	P:Denon:4:d4
+Srch >>	P:Denon:4:d8
+Srch <<	P:Denon:4:d9
+Ff >>	P:Denon:4:da
+Rew <<	P:Denon:4:db
+Play >	P:Denon:4:dc
+Pause	P:Denon:4:dd
+Stop []	P:Denon:4:de
+Rec/Mute	P:Denon:4:df
+Mode Counter	P:Denon:4:e1
+Reset Counter	P:Denon:4:e2
+Renumber	P:Denon:4:e7
+End	P:Denon:4:ea
+Id Mode	P:Denon:4:eb
+Write	P:Denon:4:ec
+Erase	P:Denon:4:ed
+Digital Fade In	P:Denon:4:f1
+Digital Fade Out	P:Denon:4:f2
+Fine Cue <	P:Denon:4:f3
+Fine Cue >	P:Denon:4:f4
+Display	P:Denon:4:f5
 @Denon	Denon AVR Receiver
 Power	R:38000:33:274,789,254,1792,275,814,250,787,246,816,248,1798,279,784,249,813,251,785,248,788,245,1827,281,1791,275,1825,272,790,253,783,250,43886,277,786,278,1795,272,791,252,783,281,782,251,785,269,1804,273,1800,277,1822,275,1798,279,783,270,766,277,759,274,1825,272,1800,277,43886,277,759,274,1825,272,764,279,756,277,786,278,1795,282,781,272,763,280,755,278,785,279,1794,273,1827,270,1802,275,761,272,791,273,43888,276,761,272,1800,277,786,278,758,275,760,273,790,274,1799,278,1821,276,1796,281,1792,275,788,276,760,273,789,275,1798,279,1794,273,43889,278,785,248,1825,272,790,253,782,272,764,279,1793,274,790,274,761,282,781,273,763,280,1793,273,1825,272,1800,277,813,220,789,275
 Power_off	R:38000:33:270,793,250,1795,272,818,246,791,252,809,244,766,277,1795,282,781,272,790,253,809,224,1822,275,1797,280,1820,277,785,248,788,245,43889,273,790,274,1799,278,785,248,788,276,787,246,1826,271,792,251,1794,273,1827,270,1802,275,788,245,791,273,790,253,1819,278,1794,273,43889,274,789,254,1818,269,767,276,786,247,789,275,788,245,1827,270,792,251,785,248,814,250,1796,281,1819,248,1825,272,790,253,783,271,43889,245,791,273,1799,278,786,278,784,249,787,246,1827,281,781,252,1821,276,1796,281,1792,274,814,250,786,247,789,244,1829,279,1793,274,43888,275,815,218,1828,280,783,250,786,278,785,248,788,245,1827,280,782,251,785,268,794,249,1797,280,1819,278,1794,272,791,252,810,254
@@ -8836,6 +10139,1307 @@ MUSIC	P:Kaseikyo:325452:a5
 Dialog_low	P:Kaseikyo:325452:c3
 Dialog_med	P:Kaseikyo:325452:c4
 Dialog_high	P:Kaseikyo:325452:c5
+@Denon	Pre-Amplifier 12,-1
+Digital Dbs/Bs	P:Denon:c:83
+Digital Vdp	P:Denon:c:84
+Digital Cd	P:Denon:c:85
+Digital Dat	P:Denon:c:86
+Tuner Ch V	P:Denon:c:d5
+Tuner Ch ^	P:Denon:c:d6
+Tuner Band	P:Denon:c:d7
+Tuner At/Manu	P:Denon:c:d8
+Tuner Tune ^	P:Denon:c:d9
+Tuner Tune V	P:Denon:c:da
+Tuner Rf	P:Denon:c:db
+Tuner P.Scan	P:Denon:c:dc
+Tuner Power	P:Denon:c:dd
+@Denon	Pre-Amplifier 2,-1
+Cd	P:Denon:2:c4
+Tuner	P:Denon:2:c5
+Aux	P:Denon:2:c6
+Dbs/Bs	P:Denon:2:c8
+Tv	P:Denon:2:c9
+Vdp	P:Denon:2:ca
+V.Aux	P:Denon:2:cc
+Vcr-1	P:Denon:2:cd
+Vcr-2	P:Denon:2:ce
+Tape-1	P:Denon:2:d2
+Dat/Tape-2	P:Denon:2:d3
+Muting	P:Denon:2:f0
+Master ^	P:Denon:2:f1
+Master V	P:Denon:2:f2
+@Denon	Processor 12,-1
+Left Arrow	P:Denon:c:7f
+Dbs Zone 2	P:Denon:c:8a
+Zn2 Vol Up	P:Denon:c:8d
+Zone 2 Vol +	P:Denon:c:8d
+Zone 2 Vol Down	P:Denon:c:8e
+Zone 2 Vol -	P:Denon:c:8e
+Phono Zone 2	P:Denon:c:8f
+Source Toggle	P:Denon:c:90
+Zone 2 Cd	P:Denon:c:90
+Zone 2 Ipod	P:Denon:c:90
+Cd Zone 2	P:Denon:c:90
+Tuner Zone 2	P:Denon:c:91
+Vdp Zone 2	P:Denon:c:92
+Zone2 Musicserver	P:Denon:c:93
+V Aux Zone 2	P:Denon:c:93
+Vcr 1 Zone 2	P:Denon:c:94
+Vcr2 Zone 2	P:Denon:c:99
+Tv Zone 2	P:Denon:c:9b
+Tape Zone 2	P:Denon:c:9c
+Surr Stereo	P:Denon:c:9d
+Surr Direct	P:Denon:c:9e
+System Setup	P:Denon:c:a0
+Setup	P:Denon:c:a0
+Surr Parameter	P:Denon:c:a1
+Search Parameter	P:Denon:c:a1
+Up Arrow	P:Denon:c:a3
+Down Arrow	P:Denon:c:a4
+Surr 5Ch/7Ch Stereo	P:Denon:c:a8
+7 Channel	P:Denon:c:a8
+Video Off	P:Denon:c:b2
+Input	P:Denon:c:b6
+Zone 2 Dvd	P:Denon:c:be
+Dvd Zone 2	P:Denon:c:be
+Mode	P:Denon:c:d8
+@Denon	Processor 2,-1
+Tuner Zone 3	P:Denon:2:48
+Phono Zone 3	P:Denon:2:49
+Cd Zone 3	P:Denon:2:4a
+Dvd Zone 3	P:Denon:2:4e
+Vdp Zone 3	P:Denon:2:4f
+Tv Zone 3	P:Denon:2:52
+Dbs Zone 3	P:Denon:2:53
+Vcr 1 Zone 3	P:Denon:2:54
+Vcr2 Zone 3	P:Denon:2:55
+V Aux Zone 3	P:Denon:2:57
+Tape Zone 3	P:Denon:2:5b
+Zone 3 Vol -	P:Denon:2:65
+Zone 3 Vol +	P:Denon:2:66
+Surr Puredirect	P:Denon:2:6a
+Sur Puredirect Main	P:Denon:2:6a
+Zone 2	P:Denon:2:79
+Power On Zn 2	P:Denon:2:7b
+Power On Zone 2	P:Denon:2:7b
+Power Off Zn 2	P:Denon:2:7c
+Power Off Zone 2	P:Denon:2:7c
+Power On Zone 3	P:Denon:2:7d
+Power Off Zone 3	P:Denon:2:7e
+Phono	P:Denon:2:c3
+Phono Main	P:Denon:2:c3
+Cd	P:Denon:2:c4
+Ipod	P:Denon:2:c4
+Cd Main	P:Denon:2:c4
+Tuner	P:Denon:2:c5
+Tuner Main	P:Denon:2:c5
+Dbs	P:Denon:2:c8
+Dbs Main	P:Denon:2:c8
+Cable Tv	P:Denon:2:c9
+Tv	P:Denon:2:c9
+Tv Main	P:Denon:2:c9
+User 1	P:Denon:2:c9
+Vdp	P:Denon:2:ca
+Vdp Main	P:Denon:2:ca
+Music Server	P:Denon:2:cc
+Video Aux	P:Denon:2:cc
+V Aux Main	P:Denon:2:cc
+Vcr 1	P:Denon:2:cd
+Vcr 1 Main	P:Denon:2:cd
+Vcr 2	P:Denon:2:ce
+Vcr2 Main	P:Denon:2:ce
+Tape 1	P:Denon:2:d2
+Tape Main	P:Denon:2:d2
+Video Select	P:Denon:2:d8
+Right Arrow	P:Denon:2:dd
+On Screen	P:Denon:2:df
+Osd	P:Denon:2:df
+Select/Enter	P:Denon:2:e0
+Power On Main	P:Denon:2:e1
+Power Off Main	P:Denon:2:e2
+Dvd	P:Denon:2:e3
+Dvd Main	P:Denon:2:e3
+Surr Standard	P:Denon:2:e4
+Surr Std Main	P:Denon:2:e4
+Surr Sim Main	P:Denon:2:e6
+Test	P:Denon:2:ea
+Speaker	P:Denon:2:ed
+Mute	P:Denon:2:f0
+Volume + Main	P:Denon:2:f1
+Volume +	P:Denon:2:f1
+Volume - Main	P:Denon:2:f2
+Volume -	P:Denon:2:f2
+@Denon	Processor 4,-1
+Surround Cinema	P:Denon:4:95
+Surr Cinema Main	P:Denon:4:95
+Surr Music Main	P:Denon:4:96
+Surr Game Main	P:Denon:4:97
+Night	P:Denon:4:98
+Room Eq	P:Denon:4:9d
+Equalizer	P:Denon:4:9d
+@Denon	Processor 4,1
+User 2	P:DenonK:14:125
+User 3	P:DenonK:14:126
+Surr Direct Main	P:DenonK:14:131
+Aux Main	P:DenonK:14:2c7
+@Denon	Processor 4,3
+Aux Zone 2	P:DenonK:34:2c7
+@Denon	Processor 4,5
+Aux Zone 3	P:DenonK:54:2c7
+@Denon	Receiver 12,-1
+1 / 9	P:Denon:c:42
+2 / 10	P:Denon:c:43
+3 / 11	P:Denon:c:44
+4 / 12	P:Denon:c:45
+5 / 13	P:Denon:c:46
+6 / 14	P:Denon:c:47
+7 / 15	P:Denon:c:48
+8 / 16	P:Denon:c:49
+Shift	P:Denon:c:4a
+Muting / Mute Toggle	P:Denon:c:4b
+Volume Down	P:Denon:c:4c
+Volume Up	P:Denon:c:4d
+Preset Channel Up	P:Denon:c:4e
+Preset Channel Down	P:Denon:c:4f
+Power Toggle	P:Denon:c:50
+Input Vcr1	P:Denon:c:52
+Input Video1	P:Denon:c:53
+Input Dvd/Vdp	P:Denon:c:54
+Input Vcr2	P:Denon:c:57
+Input Phono	P:Denon:c:58
+Input Tuner	P:Denon:c:59
+Input Cd	P:Denon:c:5a
+Input V.Aux	P:Denon:c:5b
+Input Cdr/Tape	P:Denon:c:5c
+Input Dat/Tape1	P:Denon:c:5d
+Input Dat/Tape2	P:Denon:c:5e
+Video Select	P:Denon:c:62
+Power On	P:Denon:c:68
+Speaker B	P:Denon:c:69
+Speaker A	P:Denon:c:6a
+Center Up	P:Denon:c:6b
+Center Down	P:Denon:c:6c
+Rear Up	P:Denon:c:6d
+Rear Down	P:Denon:c:6e
+Center	P:Denon:c:70
+Rear	P:Denon:c:71
+Dbs/Bs	P:Denon:c:73
+Video	P:Denon:c:74
+Audio Multi	P:Denon:c:75
+Delay Up	P:Denon:c:77
+Delay Down	P:Denon:c:78
+Surround Mode	P:Denon:c:79
+Power Off	P:Denon:c:7a
+Test Tone	P:Denon:c:7b
+3Ch.Logic	P:Denon:c:7c
+Bypass	P:Denon:c:7d
+Status / Osd / Panel	P:Denon:c:7e
+Cursor/Arrow Left	P:Denon:c:7f
+Level All Bass Down	P:Denon:c:80
+Surround Mode Dts	P:Denon:c:81
+Sb Speaker Toggle On/Off	P:Denon:c:82
+Volume Preset 1 (0Db)	P:Denon:c:83
+Volume Preset 2 (-20Db)	P:Denon:c:85
+Volume Preset 3 (-40Db)	P:Denon:c:86
+Zone2 Volume Preset 1 (0Db)	P:Denon:c:87
+Zone2 Volume Preset 2 (-20Db)	P:Denon:c:88
+Zone2 Volume Preset 3 (-40Db)	P:Denon:c:89
+Zone2 Dbs/Sat/Cable	P:Denon:c:8a
+Surround Mode Home Thx Cinema	P:Denon:c:8b
+Zone3 Volume Preset 1 (0Db)	P:Denon:c:8c
+Zone2 Volume Up	P:Denon:c:8d
+Zone2 Volume Down	P:Denon:c:8e
+Zone2 Input Phono	P:Denon:c:8f
+Zone2 Input Cd/Ipod	P:Denon:c:90
+Zone2 Input Tuner/Hd Radio	P:Denon:c:91
+Zone2 Input Bd/Hdp/Dvd/Vdp	P:Denon:c:92
+Zone2 Input V.Aux	P:Denon:c:93
+Zone2 Input Game/Vcr1	P:Denon:c:94
+Zone2 Input Cdr/Tape2	P:Denon:c:95
+Zone2 Multi Preset Up	P:Denon:c:96
+Zone2 Multi Preset Down	P:Denon:c:97
+Zone2 Input Aux	P:Denon:c:98
+Zone2 Input Dvr/Vcr2/Aux	P:Denon:c:99
+Zone2 Input Vcr3	P:Denon:c:9a
+Zone2 Input Tv/Dbs/Cable	P:Denon:c:9b
+Zone2 Input Cdr/Tape	P:Denon:c:9c
+Surround Mode Stereo	P:Denon:c:9d
+Surround Mode Direct	P:Denon:c:9e
+Zone3 Volume Preset 2 (-20Db)	P:Denon:c:9f
+Menu / System Setup	P:Denon:c:a0
+Surround Parameter	P:Denon:c:a1
+Zone3 Volume Preset 3 (-40Db)	P:Denon:c:a2
+Cursor/Arrow Up	P:Denon:c:a3
+Cursor/Arrow Down	P:Denon:c:a4
+Output	P:Denon:c:a5
+Rcvr Effect	P:Denon:c:a6
+Input Adj (V)	P:Denon:c:a7
+Surround Mode 5/7/Multi Ch Stereo	P:Denon:c:a8
+Surround Mode 2Ch Stereo	P:Denon:c:a9
+Surround Mode Multi Ch Stereo	P:Denon:c:aa
+Tuner Shift F	P:Denon:c:ab
+Audio Function	P:Denon:c:ac
+Video Function	P:Denon:c:ad
+Tuner Shift G	P:Denon:c:ae
+Speaker Ch Level/Select	P:Denon:c:af
+Speaker Ch Volume Up	P:Denon:c:b0
+Speaker Ch Volume Down	P:Denon:c:b1
+Video Off	P:Denon:c:b2
+Input Mode Ext In	P:Denon:c:b5
+Input Mode Toggle Analog/Digital	P:Denon:c:b6
+Level All Treble Up	P:Denon:c:b7
+Level All Treble Down	P:Denon:c:b8
+Tuner Shift A	P:Denon:c:b9
+Tuner Shift B	P:Denon:c:ba
+Tuner Shift C	P:Denon:c:bb
+Tuner Shift D	P:Denon:c:bc
+Tuner Shift E	P:Denon:c:bd
+Zone2 Input Dvd/Vdp	P:Denon:c:be
+Level All Bass Up	P:Denon:c:bf
+Tuner Preset/Channel/Xm 1	P:Denon:c:c1
+Tuner Preset/Channel/Xm 2	P:Denon:c:c2
+Tuner Preset/Channel/Xm 3	P:Denon:c:c3
+Tuner Preset/Channel/Xm 4	P:Denon:c:c4
+Tuner Preset/Channel/Xm 5	P:Denon:c:c5
+Tuner Preset/Channel/Xm 6	P:Denon:c:c6
+Tuner Preset/Channel/Xm 7	P:Denon:c:c7
+Tuner Preset/Channel/Xm 8	P:Denon:c:c8
+Tuner Preset/Channel/Xm 9	P:Denon:c:c9
+Tuner Preset/Channel/Xm 0	P:Denon:c:ca
+Tuner Memory	P:Denon:c:cc
+Tuner Shift	P:Denon:c:cd
+Tuner Rt	P:Denon:c:ce
+Tuner Direct/Rds Search	P:Denon:c:d2
+Tuner Pty	P:Denon:c:d4
+Tuner Preset/Channel Down	P:Denon:c:d5
+Tuner Preset/Channel Up	P:Denon:c:d6
+Tuner Band Toggle	P:Denon:c:d7
+Tuner Tuning Mode Auto/Manual	P:Denon:c:d8
+Tuner Tuning/Scan Up	P:Denon:c:d9
+Tuner Tuning/Scan Down	P:Denon:c:da
+Dimmer	P:Denon:c:df
+@Denon	Receiver 2,-1
+Phono	P:Denon:2:41
+Cd	P:Denon:2:42
+Tuner	P:Denon:2:43
+Aux/Video 1	P:Denon:2:44
+Aux/Video 2	P:Denon:2:45
+Zone3 Input Tuner	P:Denon:2:48
+Zone3 Input Phono	P:Denon:2:49
+Zone3 Input Cd	P:Denon:2:4a
+Muting	P:Denon:2:4b
+Vol -	P:Denon:2:4c
+Vol +	P:Denon:2:4d
+Zone3 Input Dvd	P:Denon:2:4e
+Zone3 Input Vdp	P:Denon:2:4f
+Power	P:Denon:2:50
+Zone3 Input Tv	P:Denon:2:52
+Zone3 Input Dbs/Sat	P:Denon:2:53
+Zone3 Input Vcr1	P:Denon:2:54
+Zone3 Input Vcr2	P:Denon:2:55
+Zone 1 Vcr-3	P:Denon:2:56
+Mz-1 Vcr-3	P:Denon:2:56
+Zone3 Input V.Aux	P:Denon:2:57
+Zone3 Input Cdr/Tape	P:Denon:2:5b
+Zone 1 Tape-2	P:Denon:2:5c
+Zone2 Power Toggle	P:Denon:2:5d
+Direct Digital	P:Denon:2:60
+Optical Digital 1	P:Denon:2:61
+Digital 2	P:Denon:2:62
+Digital 3	P:Denon:2:63
+Zone3 Volume Down	P:Denon:2:65
+Zone3 Volume Up	P:Denon:2:66
+Dat Monitor	P:Denon:2:67
+Surround Mode Pure Direct	P:Denon:2:6a
+Input Mode Auto	P:Denon:2:73
+Input Mode Pcm	P:Denon:2:74
+Input Mode Dts	P:Denon:2:75
+Power On	P:Denon:2:79
+Power Off	P:Denon:2:7a
+Zone2 Power On	P:Denon:2:7b
+Zone2 Power Off	P:Denon:2:7c
+Zone3 Power On	P:Denon:2:7d
+Zone3 Power Off	P:Denon:2:7e
+All Power Toggle	P:Denon:2:c1
+Fl Speaker Level Up	P:Denon:2:c2
+Input Phono	P:Denon:2:c3
+Input Cd	P:Denon:2:c4
+Input Tuner / Hd Radio	P:Denon:2:c5
+Input Aux	P:Denon:2:c6
+Fl Speaker Level Down	P:Denon:2:c7
+Input Cable/Sat/Dbs	P:Denon:2:c8
+Input Tv/Dbs	P:Denon:2:c9
+Input Bdp/Hdp/Dvp	P:Denon:2:ca
+Fr Speaker Level Up	P:Denon:2:cb
+Input V.Aux	P:Denon:2:cc
+Input Game/Vcr1	P:Denon:2:cd
+Input Media Player/Dvr1/Vcr2	P:Denon:2:ce
+Input Dvr2/Vcr3	P:Denon:2:cf
+Fr Speaker Level Down	P:Denon:2:d0
+Amp Dat/Tape Monitor	P:Denon:2:d1
+Input Cdr/Dat/Tape	P:Denon:2:d2
+Input Tape2	P:Denon:2:d3
+Cinema Eq On	P:Denon:2:d5
+Sr Speaker Level Up	P:Denon:2:d6
+Sr Speaker Level Down	P:Denon:2:d7
+Video Select	P:Denon:2:d8
+Cinema Eq Off	P:Denon:2:d9
+Amp Video	P:Denon:2:da
+Mode Multi Channel	P:Denon:2:db
+Input Mode Analog	P:Denon:2:dc
+Cursor Right	P:Denon:2:dd
+Status	P:Denon:2:de
+Info / Osd	P:Denon:2:df
+Enter / Select	P:Denon:2:e0
+All Power On	P:Denon:2:e1
+All Power Off	P:Denon:2:e2
+Input Dvd	P:Denon:2:e3
+Surround Mode Standard (Dolby/Dts)	P:Denon:2:e4
+Sw Speaker Level Down	P:Denon:2:e5
+Surround Mode Dsp Simulation	P:Denon:2:e6
+Sb/Sbl Speaker Level Up	P:Denon:2:e7
+Amp Delay V	P:Denon:2:e8
+Amp Delay ^	P:Denon:2:e9
+Test Tone	P:Denon:2:ea
+Sb/Sbl Speaker Level Down	P:Denon:2:eb
+Subwoofer Level Up	P:Denon:2:ec
+Speaker	P:Denon:2:ed
+Sp-A, Front	P:Denon:2:ee
+Sp-B, Front	P:Denon:2:ef
+Muting / Mute Toggle	P:Denon:2:f0
+Volume Up	P:Denon:2:f1
+Volume Down	P:Denon:2:f2
+Sl Speaker Level Up	P:Denon:2:f3
+Sl Speaker Level Down	P:Denon:2:f4
+Center Speaker Level Up	P:Denon:2:f5
+Center Speaker Level Down	P:Denon:2:f6
+Sbr Speaker Level Up	P:Denon:2:f7
+Sbr Speaker Level Down	P:Denon:2:f8
+Tone Control Off / Defeat On	P:Denon:2:f9
+Tone Control On / Defeat Off	P:Denon:2:fa
+Sb Speaker Matrix On	P:Denon:2:fb
+Sb Speaker Matrix Off	P:Denon:2:fc
+Sb Speaker Off	P:Denon:2:fd
+Amp K-O	P:Denon:2:fe
+@Denon	Receiver 2,3
+Ipod Play/Pause	P:DenonK:32:1
+Ipod Volume Up	P:DenonK:32:2
+Ipod Volume Down	P:DenonK:32:3
+Ipod Skip Plus	P:DenonK:32:4
+Ipod Skip Minus	P:DenonK:32:5
+Ipod Stop	P:DenonK:32:8
+Ipod Pause	P:DenonK:32:a
+Ipod Repeat	P:DenonK:32:10
+Ipod Shuffle	P:DenonK:32:11
+Ipod Search Plus	P:DenonK:32:15
+Ipod Search Minus	P:DenonK:32:16
+Ipod Top Menu	P:DenonK:32:17
+Ipod Enter	P:DenonK:32:18
+Ipod Cursor/Arrow Up	P:DenonK:32:1b
+Ipod Cursor/Arrow Down	P:DenonK:32:1c
+Ipod Cursor/Arrow Left	P:DenonK:32:1d
+Ipod Cursor/Arrow Right	P:DenonK:32:1e
+Ipod Status Request	P:DenonK:32:1f
+Ipod Page Search	P:DenonK:32:22
+Ipod Return	P:DenonK:32:23
+Ipod Mode Toggle Browse/Remote	P:DenonK:32:2d
+Ipod Mode Browse	P:DenonK:32:2d
+Ipod Mode Remote	P:DenonK:32:2f
+Ipod Shuffle Songs	P:DenonK:32:40
+Ipod Shuffle Album	P:DenonK:32:41
+Ipod Shuffle Off	P:DenonK:32:42
+Ipod Repeat One	P:DenonK:32:43
+Ipod Repeat All	P:DenonK:32:44
+Ipod Repeat Off	P:DenonK:32:45
+Power Toggle On/Off	P:DenonK:32:47
+Toggle Favorites/All Music	P:DenonK:32:48
+Page Up	P:DenonK:32:49
+Page Down	P:DenonK:32:4a
+Internet Radio Direct	P:DenonK:32:4b
+Ipod Direct	P:DenonK:32:4c
+Mute Toggle	P:DenonK:32:4d
+Memory	P:DenonK:32:50
+Tv Signal Ntsc	P:DenonK:32:51
+Tv Signal Pal	P:DenonK:32:52
+@Denon	Receiver 4,-1
+Tape Deck Select A/B	P:Denon:4:53
+Tape Deck Play Reverse	P:Denon:4:57
+Tape Deck Fast Forward	P:Denon:4:5a
+Tape Deck Rewind	P:Denon:4:5b
+Tape Deck Play	P:Denon:4:5c
+Tape Deck Pause	P:Denon:4:5d
+Tape Deck Stop	P:Denon:4:5e
+Tape Deck Record	P:Denon:4:5f
+Surround Mode Dsp Wide Screen	P:Denon:4:81
+Surround Mode Dsp Super Stadium	P:Denon:4:82
+Surround Mode Dsp Rock Arena	P:Denon:4:83
+Surround Mode Dsp Jazz Club	P:Denon:4:84
+Surround Mode Dsp Classic Concert	P:Denon:4:85
+Surround Mode Dsp Mono Movie	P:Denon:4:86
+Surround Mode Dsp Matrix	P:Denon:4:87
+Surround Mode Dsp Video Game	P:Denon:4:88
+Surround Mode Dsp Virtual	P:Denon:4:89
+Surround Mode Thx Ultra2 Cinema	P:Denon:4:8a
+Surround Mode Thx Music	P:Denon:4:8b
+Surround Mode Thx Ex	P:Denon:4:8c
+Surround Mode Dts Neo:6 Cinema	P:Denon:4:8d
+Surround Mode Dts Neo:6 Music	P:Denon:4:8e
+Surround Mode Dolby Pl Ii Cinema	P:Denon:4:8f
+Surround Mode Dolby Pl Ii Music	P:Denon:4:90
+Surround Mode Dolby Pl	P:Denon:4:91
+Surround Mode Dts Es Matrix	P:Denon:4:93
+Surround Mode Dolby Digital Ex	P:Denon:4:94
+Surround Mode Cinema	P:Denon:4:95
+Surround Mode Music	P:Denon:4:96
+Surround Mode Game	P:Denon:4:97
+Mode Night	P:Denon:4:98
+Room Eq / Multeq Toggle Mode	P:Denon:4:9d
+Input Mode / Hdmi Monitor Auto	P:Denon:4:b3
+Input Mode Pcm	P:Denon:4:b4
+Input Mode Dts	P:Denon:4:b5
+Input Mode Rf	P:Denon:4:b6
+Input Mode Ext. In	P:Denon:4:b7
+Input Mode Ext. In 2	P:Denon:4:b8
+Main Zone On	P:Denon:4:b9
+Main Zone Off	P:Denon:4:ba
+Multi Zone 2 On	P:Denon:4:bb
+Multi Zone 2 Off	P:Denon:4:bc
+Dat Deck Search Forward	P:Denon:4:d8
+Dat Deck Search Backward	P:Denon:4:d9
+Dat Deck Fast Forward	P:Denon:4:da
+Dat Deck Rewind	P:Denon:4:db
+Dat Deck Play	P:Denon:4:dc
+Dat Deck Pause	P:Denon:4:dd
+Dat Deck Stop	P:Denon:4:de
+Dat Deck Record	P:Denon:4:df
+@Denon	Receiver 4,1
+Power On	P:DenonK:14:2
+Power Off	P:DenonK:14:3
+12V Trigger 1 On	P:DenonK:14:c
+12V Trigger 1 Off	P:DenonK:14:d
+12V Trigger 2 On	P:DenonK:14:e
+12V Trigger 2 Off	P:DenonK:14:f
+Return / Back	P:DenonK:14:22
+Gui Menu / Setup	P:DenonK:14:23
+Tuner Memory	P:DenonK:14:24
+Tuner Band Toggle Am/Fm	P:DenonK:14:98
+Tuner Band Fm	P:DenonK:14:99
+Tuner Band Am	P:DenonK:14:9a
+Tuner Band Xm	P:DenonK:14:9b
+Internet Radio Favorite 1	P:DenonK:14:f2
+Internet Radio Favorite 2	P:DenonK:14:f3
+Internet Radio Favorite 3	P:DenonK:14:f4
+Internet Radio Favorite 4	P:DenonK:14:f5
+Quick Select / User Preset 1	P:DenonK:14:124
+Quick Select / User Preset 2	P:DenonK:14:125
+Quick Select / User Preset 3	P:DenonK:14:126
+Quick Select / User Preset 4	P:DenonK:14:127
+Quick Select / User Preset 5	P:DenonK:14:128
+Surround Mode Direct / Stereo	P:DenonK:14:131
+Pure Direct	P:DenonK:14:133
+Surround Mode Standard	P:DenonK:14:134
+Surround Mode Auto	P:DenonK:14:144
+Surround Mode Auro 3D Previous	P:DenonK:14:14c
+Surround Mode Dsp Simulation	P:DenonK:14:150
+Surround Mode Multi Channel	P:DenonK:14:151
+Surround Mode Neural	P:DenonK:14:15b
+Surround Mode Dolby Atmos	P:DenonK:14:15c
+Surround Mode Auro 3D Next	P:DenonK:14:15d
+Input Mode Hdmi	P:DenonK:14:165
+Input Mode Digital	P:DenonK:14:167
+Input Mode Decode	P:DenonK:14:16c
+Volume Up	P:DenonK:14:170
+Volume Down	P:DenonK:14:171
+Volume Mute	P:DenonK:14:172
+Channel Level	P:DenonK:14:17a
+Subwoofer 2 Level Up	P:DenonK:14:19a
+Subwoofer 2 Level Down	P:DenonK:14:19b
+Dolby Tfl Speaker Level Up	P:DenonK:14:1a1
+Dolby Tfl Speaker Level Down	P:DenonK:14:1a2
+Dolby Tfr Speaker Level Up	P:DenonK:14:1a3
+Dolby Tfr Speaker Level Down	P:DenonK:14:1a4
+Dolby Tml Speaker Level Up	P:DenonK:14:1a5
+Dolby Tml Speaker Level Down	P:DenonK:14:1a6
+Dolby Tmr Speaker Level Up	P:DenonK:14:1a7
+Dolby Tmr Speaker Level Down	P:DenonK:14:1a8
+Dolby Trl Speaker Level Up	P:DenonK:14:1a9
+Dolby Trl Speaker Level Down	P:DenonK:14:1aa
+Dolby Trr Speaker Level Up	P:DenonK:14:1ab
+Dolby Trr Speaker Level Down	P:DenonK:14:1ac
+Dolby Rhl Speaker Level Up	P:DenonK:14:1ad
+Dolby Rhl Speaker Level Down	P:DenonK:14:1ae
+Dolby Rhr Speaker Level Up	P:DenonK:14:1af
+Dolby Rhr Speaker Level Down	P:DenonK:14:1b0
+Dolby Lf Speaker Level Up	P:DenonK:14:1b1
+Dolby Lf Speaker Level Down	P:DenonK:14:1b2
+Dolby Rf Speaker Level Up	P:DenonK:14:1b3
+Dolby Rf Speaker Level Down	P:DenonK:14:1b4
+Dolby Sl Speaker Level Up	P:DenonK:14:1b5
+Dolby Sl Speaker Level Down	P:DenonK:14:1b6
+Dolby Sr Speaker Level Up	P:DenonK:14:1b7
+Dolby Sr Speaker Level Down	P:DenonK:14:1b8
+Dolby Lb Speaker Level Up	P:DenonK:14:1b9
+Dolby Lb Speaker Level Down	P:DenonK:14:1ba
+Dolby Rb Speaker Level Up	P:DenonK:14:1bb
+Dolby Rb Speaker Level Down	P:DenonK:14:1bc
+Lfc On	P:DenonK:14:1bd
+Lfc Off	P:DenonK:14:1be
+Lfc Toggle On/Off	P:DenonK:14:1c8
+Dsx Select	P:DenonK:14:211
+Dynamic Volume Toggle Mode	P:DenonK:14:221
+Dynamic Eq Toggle On/Off	P:DenonK:14:223
+Restorer Mode	P:DenonK:14:224
+Dynamic Eq/Volume Toggle Mode	P:DenonK:14:225
+Front Speaker A	P:DenonK:14:226
+Front Speaker B	P:DenonK:14:228
+Front Speaker A+B	P:DenonK:14:22a
+Restorer Off	P:DenonK:14:22c
+Restorer Mode 1	P:DenonK:14:22d
+Restorer Mode 2	P:DenonK:14:22e
+Restorer Mode 3	P:DenonK:14:22f
+Ss Audio Delay	P:DenonK:14:26c
+Audio Delay Mode	P:DenonK:14:26c
+Audio Delay Up	P:DenonK:14:26d
+Audio Delay Down	P:DenonK:14:26e
+Info / Osd	P:DenonK:14:270
+Dsx On Height	P:DenonK:14:282
+Dsx On Wide	P:DenonK:14:283
+Dsx Off	P:DenonK:14:284
+Status Request	P:DenonK:14:285
+Dsx On Wide+Height	P:DenonK:14:287
+Input Ipod	P:DenonK:14:29b
+Hdmi Monitor Select 1	P:DenonK:14:29d
+Hdmi Monitor Select 2	P:DenonK:14:29e
+Input Aux/Net/Usb/Online Music	P:DenonK:14:2c7
+Input Tuner Xm	P:DenonK:14:2ca
+Input Dtu / Hd Radio	P:DenonK:14:2cb
+Input Aux/Net	P:DenonK:14:2cc
+Input Aux/Ipod/Dock	P:DenonK:14:2cd
+Input Aux/Usb	P:DenonK:14:2ce
+Input Hd Radio	P:DenonK:14:2cf
+Input Bd	P:DenonK:14:2d1
+Input Game	P:DenonK:14:2d5
+Input Game 2	P:DenonK:14:2d7
+Input Vcr4	P:DenonK:14:2d8
+Input Aux 2	P:DenonK:14:2da
+Input Bd/Dvd/Hdp	P:DenonK:14:2dc
+Input Vcr 1/2	P:DenonK:14:2dd
+Input Vcr 3/4	P:DenonK:14:2de
+Input Vcr/Dvr/Media Player	P:DenonK:14:2df
+Multeq Xt 32 Toggle Mode	P:DenonK:14:2e0
+Input Internet Radio	P:DenonK:14:2e5
+Dynamic Eq On + Dynamic Volume Off	P:DenonK:14:2ea
+Dynamic Eq Off + Dynamic Volume Off	P:DenonK:14:2eb
+Dynamic Volume Heavy/Midnight	P:DenonK:14:2ec
+Dynamic Volume Medium/Evening	P:DenonK:14:2ed
+Dynamic Volume Light/Day	P:DenonK:14:2ee
+Input Bluetooth	P:DenonK:14:2ef
+Hdmi Monitor Select	P:DenonK:14:2f1
+Hdmi Monitor Scale/Resolution	P:DenonK:14:2f2
+Hdmi Aspect Radio 16:9	P:DenonK:14:2f5
+Hdmi Aspect Radio 4:3	P:DenonK:14:2f6
+Dynamic Eq Ref Level 0Db	P:DenonK:14:2f8
+Dynamic Eq Ref Level 5Db	P:DenonK:14:2f9
+Dynamic Eq Ref Level 10Db	P:DenonK:14:2fa
+Dynamic Eq Ref Level 15Db	P:DenonK:14:2fb
+Input Spotify	P:DenonK:14:2fc
+Input Pandora	P:DenonK:14:2fd
+Net/Usb Cursor/Arrow Up	P:DenonK:14:300
+Net/Usb Cursor/Arrow Down	P:DenonK:14:301
+Net/Usb Cursor/Arrow Left	P:DenonK:14:302
+Net/Usb Cursor/Arrow Right	P:DenonK:14:303
+Net/Usb Enter/Play/Pause	P:DenonK:14:304
+Net/Usb Play	P:DenonK:14:305
+Net/Usb Pause	P:DenonK:14:306
+Net/Usb Stop	P:DenonK:14:307
+Net/Usb Skip Plus	P:DenonK:14:308
+Net/Usb Skip Minus	P:DenonK:14:309
+Net/Usb Repeat One	P:DenonK:14:30a
+Net/Usb Repeat Off	P:DenonK:14:30b
+Net/Usb Random On	P:DenonK:14:30c
+Net/Usb Random Off	P:DenonK:14:30d
+Net/Usb Repeat All	P:DenonK:14:311
+Graphic Eq Toggle On/Off	P:DenonK:14:315
+Graphic Eq On	P:DenonK:14:318
+Graphic Eq Off	P:DenonK:14:31f
+Ipod Cursor/Arrow Up	P:DenonK:14:320
+Ipod Cursor/Arrow Down	P:DenonK:14:321
+Ipod Cursor/Arrow Left	P:DenonK:14:322
+Ipod Cursor/Arrow Right	P:DenonK:14:323
+Ipod Enter	P:DenonK:14:324
+Ipod Play/Pause	P:DenonK:14:325
+Ipod Stop	P:DenonK:14:327
+Ipod Skip Plus/Forward	P:DenonK:14:328
+Ipod Skip Minus/Reverse	P:DenonK:14:329
+Ipod Search Forward	P:DenonK:14:32a
+Ipod Search Reverse	P:DenonK:14:32b
+Ipod Repeat One	P:DenonK:14:32c
+Ipod Repeat All	P:DenonK:14:32d
+Ipod Repeat Off	P:DenonK:14:32e
+Ipod Shuffle Songs	P:DenonK:14:32f
+Ipod Shuffle Albums	P:DenonK:14:330
+Ipod Shuffle Off	P:DenonK:14:331
+Ipod Menu	P:DenonK:14:332
+Ipod Mode Browse	P:DenonK:14:333
+Ipod Mode Remote	P:DenonK:14:334
+Hdmi Control/Cec On	P:DenonK:14:33a
+Hdmi Control/Cec Off	P:DenonK:14:33b
+Hdmi Audio Out Toggle Tv/Amp	P:DenonK:14:33d
+Hdmi Audio Out Tv	P:DenonK:14:33e
+Hdmi Audio Out Amp	P:DenonK:14:33f
+Party	P:DenonK:14:343
+Sleep	P:DenonK:14:344
+Insta Preview Toggle On/Off	P:DenonK:14:35b
+Insta Preview On	P:DenonK:14:366
+Insta Preview Off	P:DenonK:14:367
+Eco Mode Toggle	P:DenonK:14:368
+Eco Mode Off	P:DenonK:14:369
+Eco Mode On	P:DenonK:14:36a
+Eco Mode Auto	P:DenonK:14:36b
+Option	P:DenonK:14:3b5
+Repeat	P:DenonK:14:3bc
+Random/Shuffle	P:DenonK:14:3bd
+Usb Direct Play	P:DenonK:14:3be
+Favorite Direct Play	P:DenonK:14:3bf
+Tuner Preset Channel Up	P:DenonK:14:3cc
+Tuner Preset Channel Down	P:DenonK:14:3cd
+Tuner Preset Channel Shift	P:DenonK:14:3ce
+Tuner Preset Search/Rds	P:DenonK:14:3d7
+Play/Pause	P:DenonK:14:3e0
+Stop	P:DenonK:14:3e1
+Tuner Preset Skip/Tune Down	P:DenonK:14:3e3
+Tuner Preset Skip/Tune Up	P:DenonK:14:3e4
+@Denon	Receiver 4,2
+Tuner New Tune Up	P:DenonK:24:90
+Tuner New Tune Down	P:DenonK:24:91
+Tuner New Preset Up	P:DenonK:24:92
+Tuner New Preset Down	P:DenonK:24:93
+Tuner New Shift	P:DenonK:24:94
+Tuner New Band Toggle Am/Fm	P:DenonK:24:98
+Tuner New Band Fm	P:DenonK:24:99
+Tuner New Band Am	P:DenonK:24:9a
+Tuner New Mode Toggle Auto/Manual	P:DenonK:24:9c
+Tuner New Memory	P:DenonK:24:a0
+Tuner New Search/Rds	P:DenonK:24:a3
+Tuner New Rt	P:DenonK:24:a6
+Tuner New Pty	P:DenonK:24:a9
+Tuner New Preset 1	P:DenonK:24:b0
+Tuner New Preset 2	P:DenonK:24:b1
+Tuner New Preset 3	P:DenonK:24:b2
+Tuner New Preset 4	P:DenonK:24:b3
+Tuner New Preset 5	P:DenonK:24:b4
+Tuner New Preset 6	P:DenonK:24:b5
+Tuner New Preset 7	P:DenonK:24:b6
+Tuner New Preset 8	P:DenonK:24:b7
+Tuner New Shift A	P:DenonK:24:f8
+Tuner New Shift B	P:DenonK:24:f9
+Tuner New Shift C	P:DenonK:24:fa
+Tuner New Shift D	P:DenonK:24:fb
+Tuner New Shift E	P:DenonK:24:fc
+Tuner New Shift F	P:DenonK:24:fd
+Tuner New Shift G	P:DenonK:24:fe
+@Denon	Receiver 4,3
+Zone2 Digit 1	P:DenonK:34:10
+Zone2 Digit 2	P:DenonK:34:11
+Zone2 Digit 3	P:DenonK:34:12
+Zone2 Digit 4	P:DenonK:34:13
+Zone2 Digit 5	P:DenonK:34:14
+Zone2 Digit 6	P:DenonK:34:15
+Zone2 Digit 7	P:DenonK:34:16
+Zone2 Digit 8	P:DenonK:34:17
+Zone2 Digit 9	P:DenonK:34:18
+Zone2 Digit 0	P:DenonK:34:19
+Zone2 Cursor/Arrow Up	P:DenonK:34:1b
+Zone2 Cursor/Arrow Down	P:DenonK:34:1c
+Zone2 Cursor/Arrow Left	P:DenonK:34:1d
+Zone2 Cursor/Arrow Right	P:DenonK:34:1e
+Zone2 Enter/Select	P:DenonK:34:1f
+Zone2 Audio Function	P:DenonK:34:20
+Zone2 Video Function	P:DenonK:34:21
+Zone2 Return/Back	P:DenonK:34:22
+Zone2 Menu	P:DenonK:34:23
+Zone2 Video Select	P:DenonK:34:70
+Zone2 Favorite 1	P:DenonK:34:f2
+Zone2 Favorite 2	P:DenonK:34:f3
+Zone2 Favorite 3	P:DenonK:34:f4
+Zone2 Favorite 4	P:DenonK:34:f5
+Zone2 Quick Select / User Preset 1	P:DenonK:34:124
+Zone2 Quick Select / User Preset 2	P:DenonK:34:125
+Zone2 Quick Select / User Preset 3	P:DenonK:34:126
+Zone2 Surround Mode Stereo	P:DenonK:34:130
+Zone2 Surround Mode Direct	P:DenonK:34:131
+Zone2 Surround Mode Pure	P:DenonK:34:133
+Zone2 Surround Mode Standard (Dolby/Dts)	P:DenonK:34:134
+Zone2 Surround Mode Dolby Digital	P:DenonK:34:138
+Zone2 Surround Mode Dolby Digital Ex	P:DenonK:34:139
+Zone2 Surround Mode Dolby Pl2 Cinema	P:DenonK:34:13a
+Zone2 Surround Mode Dolby Pl2 Music	P:DenonK:34:13b
+Zone2 Surround Mode Dolby Pl	P:DenonK:34:13c
+Zone2 Surround Mode Dts Es	P:DenonK:34:141
+Zone2 Surround Mode Dts Neo6 Cinema	P:DenonK:34:142
+Zone2 Surround Mode Dts Neo6 Music	P:DenonK:34:143
+Zone2 Surround Mode Game	P:DenonK:34:14d
+Zone2 Surround Mode Cinema	P:DenonK:34:14e
+Zone2 Surround Mode Music	P:DenonK:34:14f
+Zone2 Surround Mode Dsp Simulation	P:DenonK:34:150
+Zone2 Surround Mode 5/7/Multi Ch Stereo	P:DenonK:34:151
+Zone2 Surround Mode Dsp Wide Screen	P:DenonK:34:152
+Zone2 Surround Mode Dsp Super Stadium	P:DenonK:34:153
+Zone2 Surround Mode Dsp Rock Arena	P:DenonK:34:154
+Zone2 Surround Mode Dsp Jazz Club	P:DenonK:34:155
+Zone2 Surround Mode Dsp Classic Concert	P:DenonK:34:156
+Zone2 Surround Mode Dsp Mono Movie	P:DenonK:34:157
+Zone2 Surround Mode Dsp Matrix	P:DenonK:34:158
+Zone2 Surround Mode Dsp Video Game	P:DenonK:34:159
+Zone2 Surround Mode Dsp Virtual	P:DenonK:34:15a
+Zone2 Input Mode Auto	P:DenonK:34:160
+Zone2 Input Mode Analog	P:DenonK:34:161
+Zone2 Volume Up	P:DenonK:34:170
+Zone2 Volume Down	P:DenonK:34:171
+Zone2 Volume Mute	P:DenonK:34:172
+Zone2 Volume Preset 1 (0Db)	P:DenonK:34:174
+Zone2 Volume Preset 2 (-20Db)	P:DenonK:34:175
+Zone2 Volume Preset 3 (-40Db)	P:DenonK:34:176
+Zone2 Channel Select	P:DenonK:34:176
+Zone2 Channel Level Up	P:DenonK:34:17b
+Zone2 Channel Level Down	P:DenonK:34:17c
+Zone2 Test Tone	P:DenonK:34:17f
+Zone2 All Treble Up	P:DenonK:34:190
+Zone2 All Treble Down	P:DenonK:34:191
+Zone2 All Bass Up	P:DenonK:34:193
+Zone2 All Bass Down	P:DenonK:34:194
+Zone2 Tone Control Off / Defeat On	P:DenonK:34:197
+Zone2 Tone Control On / Defeat Off	P:DenonK:34:198
+Zone2 Surround Parameter	P:DenonK:34:1c0
+Zone2 Cinema Eq On	P:DenonK:34:1c6
+Zone2 Cinema Eq Off	P:DenonK:34:1c7
+Zone2 Sb Speaker Matrix On	P:DenonK:34:1f1
+Zone2 Sb Speaker Matrix Off	P:DenonK:34:1f2
+Zone2 Sb Speaker Off	P:DenonK:34:1f3
+Zone2 Sb Speaker Toggle On/Off	P:DenonK:34:206
+Zone2 Front Speaker	P:DenonK:34:20a
+Zone2 Night Mode	P:DenonK:34:222
+Zone2 Restore	P:DenonK:34:224
+Zone2 Surround Speaker Select	P:DenonK:34:228
+Zone2 System Setup	P:DenonK:34:230
+Zone2 Audio Delay	P:DenonK:34:26c
+Zone2 Audio Delay Up	P:DenonK:34:26d
+Zone2 Audio Delay Down	P:DenonK:34:26e
+Zone2 Status Request	P:DenonK:34:285
+Zone2 Input Ipod	P:DenonK:34:29b
+Zone2 Input Internet Radio	P:DenonK:34:2b3
+Zone2 Input Source Select	P:DenonK:34:2b4
+Zone2 Input Phono	P:DenonK:34:2c0
+Zone2 Input Cd	P:DenonK:34:2c2
+Zone2 Input Aux/Net/Usb/Online Music	P:DenonK:34:2c7
+Zone2 Input Aux/Net	P:DenonK:34:2c8
+Zone2 Input Aux/Ipod	P:DenonK:34:2c9
+Zone2 Input Aux/Usb/Sirius Xm/Hd Radio	P:DenonK:34:2ca
+Zone2 Input Dtu/Hd Radio	P:DenonK:34:2cb
+Zone2 Input Net	P:DenonK:34:2cc
+Zone2 Input Ipod/Dock	P:DenonK:34:2cd
+Zone2 Input Usb	P:DenonK:34:2ce
+Zone2 Input Tuner/Hd Radio	P:DenonK:34:2cf
+Zone2 Input Dvd	P:DenonK:34:2d0
+Zone2 Input Hdp/Bd	P:DenonK:34:2d1
+Zone2 Input Tv/Cable/Hdmi Cec Audio	P:DenonK:34:2d2
+Zone2 Input Sat/Cable	P:DenonK:34:2d3
+Zone2 Input Game/Vcr	P:DenonK:34:2d5
+Zone2 Input Game2	P:DenonK:34:2d7
+Zone2 Input Vcr4	P:DenonK:34:2d8
+Zone2 Input V.Aux	P:DenonK:34:2d9
+Zone2 Input V.Aux 2	P:DenonK:34:2da
+Zone2 Input Dvd/Hdp/Bd	P:DenonK:34:2dc
+Zone2 Input Vcr1/2	P:DenonK:34:2dd
+Zone2 Input Vcr3/4	P:DenonK:34:2de
+Zone2 Input Vcr/Dvr/Media Player	P:DenonK:34:2df
+Zone2 Input Bluetooth	P:DenonK:34:2ef
+Zone2 Input Pandora	P:DenonK:34:2fd
+Zone2 Input Source Select Right	P:DenonK:34:313
+Zone2 Input Source Select Left	P:DenonK:34:314
+Zone2 Repeat	P:DenonK:34:3bc
+Zone2 Random/Shuffle	P:DenonK:34:3bd
+Zone2 Usb Direct Play	P:DenonK:34:3be
+Zone2 Favorite Direct Play	P:DenonK:34:3bf
+Zone2 Tuner Preset Ch Up	P:DenonK:34:3cc
+Zone2 Tuner Preset Ch Down	P:DenonK:34:3cd
+Zone2 Tuner Preset Shift	P:DenonK:34:3ce
+Zone2 Tuner Search/Rds	P:DenonK:34:3d7
+Zone2 Play/Pause	P:DenonK:34:3e0
+Zone2 Stop	P:DenonK:34:3e1
+Zone2 Tuner Skip/Tune Down	P:DenonK:34:3e3
+Zone2 Tuner Skip/Tune Up	P:DenonK:34:3e4
+@Denon	Receiver 4,5
+Cursor Up	P:DenonK:54:1b
+Cursor Down	P:DenonK:54:1c
+Cursor Left	P:DenonK:54:1d
+Cursor Right	P:DenonK:54:1e
+Enter	P:DenonK:54:1f
+Return	P:DenonK:54:22
+Menu	P:DenonK:54:23
+Tuner Xm 1	P:DenonK:54:60
+Tuner Xm 2	P:DenonK:54:61
+Tuner Xm 3	P:DenonK:54:62
+Tuner Xm 4	P:DenonK:54:63
+Tuner Xm 5	P:DenonK:54:64
+Tuner Xm 6	P:DenonK:54:65
+Tuner Xm 7	P:DenonK:54:66
+Tuner Xm 8	P:DenonK:54:67
+Tuner Xm 9	P:DenonK:54:68
+Tuner Xm 0	P:DenonK:54:69
+Z3 Mute	P:DenonK:54:172
+Mute	P:DenonK:54:172
+Status Request	P:DenonK:54:285
+Aux Zone 3	P:DenonK:54:2c7
+Z3 Inp Aux	P:DenonK:54:2c7
+Toggle Net/Usb	P:DenonK:54:2c7
+Input Xm	P:DenonK:54:2ca
+Input Hd Radio	P:DenonK:54:2cb
+Input Net	P:DenonK:54:2cc
+Input Ipod	P:DenonK:54:2cd
+Input Usb	P:DenonK:54:2ce
+Toggle Dvd/Hdp	P:DenonK:54:2dc
+Z3 Inp Vcr 1/2	P:DenonK:54:2dd
+Z3 Inp Vcr 3/4	P:DenonK:54:2de
+Toggle Vcr/Dvr	P:DenonK:54:2df
+Z3 Repeat	P:DenonK:54:3bc
+Z3 Random	P:DenonK:54:3bd
+Z3 Usb Dir. Play	P:DenonK:54:3be
+Z3 Favorite Dir.Play	P:DenonK:54:3bf
+Z3 Preset Ch+	P:DenonK:54:3cc
+Z3 Preset Ch-	P:DenonK:54:3cd
+Z3 Preset Shift	P:DenonK:54:3ce
+Z3 Search (Rds)	P:DenonK:54:3d7
+Z3 Play/Pause	P:DenonK:54:3e0
+Z3 Stop	P:DenonK:54:3e1
+Z3 Skip/Tune-	P:DenonK:54:3e3
+Z3 Skip/Tune+	P:DenonK:54:3e4
+@Denon	Receiver 4,7
+Power Z4 Toggle	P:DenonK:74:5
+Z4 On	P:DenonK:74:6
+Power Z4 On	P:DenonK:74:6
+Z4 Off	P:DenonK:74:7
+Power Z4 Off	P:DenonK:74:7
+Cursor Up	P:DenonK:74:1b
+Net Cursor Up	P:DenonK:74:1b
+Cursor Down	P:DenonK:74:1c
+Net Cursor Down	P:DenonK:74:1c
+Cursor Left	P:DenonK:74:1d
+Net Cursor Left	P:DenonK:74:1d
+Cursor Right	P:DenonK:74:1e
+Net Cursor Right	P:DenonK:74:1e
+Cursor Enter	P:DenonK:74:1f
+Net Enter	P:DenonK:74:1f
+Tuner Up	P:DenonK:74:90
+Tuner Down	P:DenonK:74:91
+Channel +	P:DenonK:74:92
+Net Preset+	P:DenonK:74:92
+Channel -	P:DenonK:74:93
+Net Preset-	P:DenonK:74:93
+Net Shift	P:DenonK:74:94
+Mode	P:DenonK:74:9c
+Memo	P:DenonK:74:a0
+Net Memory	P:DenonK:74:a0
+Search	P:DenonK:74:a3
+Net Pg./Char. Srch.	P:DenonK:74:a3
+1	P:DenonK:74:b0
+Net 1	P:DenonK:74:b0
+2	P:DenonK:74:b1
+Net 2	P:DenonK:74:b1
+3	P:DenonK:74:b2
+Net 3	P:DenonK:74:b2
+4	P:DenonK:74:b3
+Net 4	P:DenonK:74:b3
+5	P:DenonK:74:b4
+Net 5	P:DenonK:74:b4
+6	P:DenonK:74:b5
+Net 6	P:DenonK:74:b5
+7	P:DenonK:74:b6
+Net 7	P:DenonK:74:b6
+8	P:DenonK:74:b7
+Net 8	P:DenonK:74:b7
+9	P:DenonK:74:b8
+0	P:DenonK:74:b9
+Tuner A	P:DenonK:74:f8
+Net Shift A	P:DenonK:74:f8
+Tuner B	P:DenonK:74:f9
+Net Shift B	P:DenonK:74:f9
+Tuner C	P:DenonK:74:fa
+Net Shift C	P:DenonK:74:fa
+Tuner D	P:DenonK:74:fb
+Net Shift D	P:DenonK:74:fb
+Tuner E	P:DenonK:74:fc
+Net Shift E	P:DenonK:74:fc
+Tuner F	P:DenonK:74:fd
+Net Shift F	P:DenonK:74:fd
+Tuner G	P:DenonK:74:fe
+Net Shift G	P:DenonK:74:fe
+Status Request	P:DenonK:74:285
+Input Phono	P:DenonK:74:2c0
+Input Tuner	P:DenonK:74:2c1
+Input Cd	P:DenonK:74:2c2
+Toggle Net/Usb	P:DenonK:74:2c7
+Input Xm	P:DenonK:74:2ca
+Input Hd Radio	P:DenonK:74:2cb
+Input Net	P:DenonK:74:2cc
+Input Ipod	P:DenonK:74:2cd
+Input Usb	P:DenonK:74:2ce
+Input Dvd	P:DenonK:74:2d0
+Input Hdp	P:DenonK:74:2d1
+Input Tv/Cbl	P:DenonK:74:2d2
+Input Sat	P:DenonK:74:2d3
+Input Vcr	P:DenonK:74:2d5
+Input Dvr	P:DenonK:74:2d6
+Input V.Aux	P:DenonK:74:2d9
+Toggle Dvd/Hdp	P:DenonK:74:2dc
+Toggle Vcr/Dvr	P:DenonK:74:2df
+Net Play	P:DenonK:74:305
+Net Pause	P:DenonK:74:306
+Net Stop	P:DenonK:74:307
+Net Skip +	P:DenonK:74:308
+Net Skip -	P:DenonK:74:309
+Net Repeat One	P:DenonK:74:30a
+Net Repeat Off	P:DenonK:74:30b
+Net Randon On	P:DenonK:74:30c
+Net Random Off	P:DenonK:74:30d
+Net Repeat All	P:DenonK:74:311
+Net Status Request	P:DenonK:74:316
+Z4 Repeat	P:DenonK:74:3bc
+Z4 Random	P:DenonK:74:3bd
+Z4 Usb Dir. Play	P:DenonK:74:3be
+Z4 Favorite Dir.Play	P:DenonK:74:3bf
+Z4 Preset Ch+	P:DenonK:74:3cc
+Z4 Preset Ch-	P:DenonK:74:3cd
+Z4 Preset Shift	P:DenonK:74:3ce
+Z4 Search (Rds)	P:DenonK:74:3d7
+Z4 Play/Pause	P:DenonK:74:3e0
+Z4 Stop	P:DenonK:74:3e1
+Z4 Skip/Tune-	P:DenonK:74:3e3
+Z4 Skip/Tune+	P:DenonK:74:3e4
+@Denon	Receiver 6,-1
+Vdp Power	P:Denon:6:81
+Vdp Power (Disc Skip	P:Denon:6:81
+Vdp Stop []	P:Denon:6:83
+Vdp Play >	P:Denon:6:84
+Vdp Pause	P:Denon:6:85
+Vdp Skip >>	P:Denon:6:86
+Vdp >>	P:Denon:6:86
+Vdp Skip <<	P:Denon:6:87
+Vdp <<	P:Denon:6:87
+Vdp Scan >>	P:Denon:6:88
+Vdp Ffwd >>	P:Denon:6:88
+Vdp Scan <<	P:Denon:6:89
+Vdp Rew <<	P:Denon:6:89
+Power Off	P:Denon:6:c0
+Md-Stop	P:Denon:6:e1
+Md-Play	P:Denon:6:e2
+Md-Pause	P:Denon:6:e3
+Md-Ff	P:Denon:6:e9
+Md-Rw	P:Denon:6:ea
+Md-Search+	P:Denon:6:eb
+Md-Search-	P:Denon:6:ec
+@Denon	Receiver 7,4
+1	P:DenonK:47:1
+2	P:DenonK:47:2
+3	P:DenonK:47:3
+4	P:DenonK:47:4
+5	P:DenonK:47:5
+6	P:DenonK:47:6
+7	P:DenonK:47:7
+8	P:DenonK:47:8
+9	P:DenonK:47:9
+0	P:DenonK:47:a
+Memo	P:DenonK:47:c
+Search	P:DenonK:47:12
+Channel -	P:DenonK:47:15
+Channel +	P:DenonK:47:16
+Band	P:DenonK:47:17
+Mode	P:DenonK:47:18
+Tuner Up	P:DenonK:47:19
+Tuner Down	P:DenonK:47:1a
+Cursor Enter	P:DenonK:47:42
+Cursor Up	P:DenonK:47:45
+Cursor Down	P:DenonK:47:46
+Cursor Left	P:DenonK:47:47
+Cursor Right	P:DenonK:47:48
+Tuner A	P:DenonK:47:60
+Tuner B	P:DenonK:47:61
+Tuner C	P:DenonK:47:62
+Tuner D	P:DenonK:47:63
+Tuner E	P:DenonK:47:64
+Tuner F	P:DenonK:47:65
+Tuner G	P:DenonK:47:66
+@Denon	Receiver 7,5
+Xm Memory	P:DenonK:57:c
+Xm Shift	P:DenonK:57:d
+Xm Search	P:DenonK:57:12
+Xm Preset -	P:DenonK:57:15
+Xm Preset +	P:DenonK:57:16
+Xm Ch-	P:DenonK:57:31
+Xm Ch+	P:DenonK:57:32
+Xm Cursor Up	P:DenonK:57:43
+Xm Cursor Down	P:DenonK:57:44
+Xm Cursor Left	P:DenonK:57:45
+Xm Cursor Right	P:DenonK:57:46
+Xm Enter	P:DenonK:57:47
+Xm Shift A	P:DenonK:57:50
+Xm Shift B	P:DenonK:57:51
+Xm Shift C	P:DenonK:57:52
+Xm Shift D	P:DenonK:57:53
+Xm Shift E	P:DenonK:57:54
+Xm Shift F	P:DenonK:57:55
+Xm Shift G	P:DenonK:57:56
+Xm 1	P:DenonK:57:60
+Xm 2	P:DenonK:57:61
+Xm 3	P:DenonK:57:62
+Xm 4	P:DenonK:57:63
+Xm 5	P:DenonK:57:64
+Xm 6	P:DenonK:57:65
+Xm 7	P:DenonK:57:66
+Xm 8	P:DenonK:57:67
+Xm 9	P:DenonK:57:68
+Xm 0	P:DenonK:57:69
+@Denon	Receiver 7,6
+Power On	P:DenonK:67:2
+On	P:DenonK:67:2
+Power Off	P:DenonK:67:3
+Off	P:DenonK:67:3
+Main On	P:DenonK:67:6
+Main Off	P:DenonK:67:7
+1	P:DenonK:67:10
+2	P:DenonK:67:11
+3	P:DenonK:67:12
+4	P:DenonK:67:13
+5	P:DenonK:67:14
+6	P:DenonK:67:15
+7	P:DenonK:67:16
+8	P:DenonK:67:17
+9	P:DenonK:67:18
+0	P:DenonK:67:19
+Cursor Up	P:DenonK:67:1b
+Cursor Down	P:DenonK:67:1c
+Cursor Left	P:DenonK:67:1d
+Cursor Right	P:DenonK:67:1e
+Cursor Enter	P:DenonK:67:1f
+Input Phono	P:DenonK:67:30
+Phono	P:DenonK:67:30
+Input Tuner	P:DenonK:67:31
+Input Cd	P:DenonK:67:32
+Cd	P:DenonK:67:32
+Input Cd-R	P:DenonK:67:33
+Input Ipod	P:DenonK:67:3b
+Ipod	P:DenonK:67:3b
+Input Dvd/Vdp	P:DenonK:67:40
+Dvd/Vdp	P:DenonK:67:40
+Input Vcr	P:DenonK:67:45
+Input V.Aux	P:DenonK:67:49
+Tune +	P:DenonK:67:50
+Tuning +	P:DenonK:67:50
+Tune -	P:DenonK:67:51
+Tuning -	P:DenonK:67:51
+Chan +	P:DenonK:67:52
+Channel +	P:DenonK:67:52
+Chan -	P:DenonK:67:53
+Channel -	P:DenonK:67:53
+Tuner Shift	P:DenonK:67:54
+Shift	P:DenonK:67:54
+Tuner Fm/Am	P:DenonK:67:57
+Fm/Am	P:DenonK:67:57
+Band	P:DenonK:67:58
+Tuner Xm Radio	P:DenonK:67:5b
+Xm Radio	P:DenonK:67:5b
+Tuner Band	P:DenonK:67:5c
+Tuner Mode	P:DenonK:67:5c
+Tune Memory	P:DenonK:67:60
+Tuner Memory	P:DenonK:67:60
+Menu	P:DenonK:67:76
++10 Search	P:DenonK:67:78
++10	P:DenonK:67:78
+Pure Direct	P:DenonK:67:103
+Volume +	P:DenonK:67:110
+Volume -	P:DenonK:67:111
+Volume Mute	P:DenonK:67:112
+Mute	P:DenonK:67:112
+Video Select	P:DenonK:67:170
+Status	P:DenonK:67:190
+Dimmer	P:DenonK:67:1a0
+@Denon	Receiver 7,7
+Z2 On	P:DenonK:77:6
+Z2 Off	P:DenonK:77:7
+Zone 2 Off	P:DenonK:77:7
+Zone 2 On	P:DenonK:77:7
+Z2 1	P:DenonK:77:10
+Z2 2	P:DenonK:77:11
+Z2 3	P:DenonK:77:12
+Z2 4	P:DenonK:77:13
+Z2 5	P:DenonK:77:14
+Z2 6	P:DenonK:77:15
+Z2 7	P:DenonK:77:16
+Z2 8	P:DenonK:77:17
+Z2 9	P:DenonK:77:18
+Z2 0	P:DenonK:77:19
+Z2 Input Phono	P:DenonK:77:30
+Z2 Phono	P:DenonK:77:30
+Z2 Input Tuner	P:DenonK:77:31
+Z2 Tuner	P:DenonK:77:31
+Z2 Input Cd	P:DenonK:77:32
+Z2 Cd	P:DenonK:77:32
+Z2 Input Cd-R Tap	P:DenonK:77:33
+Z2 Cd-R/Tape	P:DenonK:77:33
+Z2 Input Ipod	P:DenonK:77:3b
+Z2 Input Dvd	P:DenonK:77:40
+Z2 Dvd/Vdp	P:DenonK:77:40
+Z2 Input Vcr	P:DenonK:77:45
+Z2 Vcr	P:DenonK:77:45
+Z2 Input V.Aux	P:DenonK:77:49
+Z2 V.Aux	P:DenonK:77:49
+Z2 Band	P:DenonK:77:58
+Z2 Search	P:DenonK:77:78
+Z2 A Mem Block	P:DenonK:77:80
+Z2 B Mem Block	P:DenonK:77:81
+Z2 C Mem Block	P:DenonK:77:82
+Z2 D Mem Block	P:DenonK:77:83
+Z2 E Mem Block	P:DenonK:77:84
+Z2 F Mem Block	P:DenonK:77:85
+Z2 G Mem Block	P:DenonK:77:86
+Z2 Volume +	P:DenonK:77:110
+Z2 Volume -	P:DenonK:77:111
+@Denon	Receiver 7,8
+Z3 On	P:DenonK:87:6
+Zone 3 On	P:DenonK:87:6
+Z3 Off	P:DenonK:87:7
+Zone 3 Off	P:DenonK:87:7
+Z3 1	P:DenonK:87:10
+Z3 2	P:DenonK:87:11
+Z3 3	P:DenonK:87:12
+Z3 4	P:DenonK:87:13
+Z3 5	P:DenonK:87:14
+Z3 6	P:DenonK:87:15
+Z3 7	P:DenonK:87:16
+Z3 8	P:DenonK:87:17
+Z3 9	P:DenonK:87:18
+Z3 0	P:DenonK:87:19
+Z3 Input Phono	P:DenonK:87:30
+Z3 Phono	P:DenonK:87:30
+Z3 Input Tuner	P:DenonK:87:31
+Z3 Tuner	P:DenonK:87:31
+Z3 Input Cd	P:DenonK:87:32
+Z3 Cd	P:DenonK:87:32
+Z3 Input Cd-R Tap	P:DenonK:87:33
+Z3 Cd-R/Tape	P:DenonK:87:33
+Z3 Input Ipod	P:DenonK:87:3b
+Z3 Input Dvd	P:DenonK:87:40
+Z3 Dvd/Vdp	P:DenonK:87:40
+Z3 Input Vcr	P:DenonK:87:45
+Z3 Vcr	P:DenonK:87:45
+Z3 Input V.Aux	P:DenonK:87:49
+Z3 V.Aux	P:DenonK:87:49
+Z3 Band	P:DenonK:87:58
+Z3 Search	P:DenonK:87:78
+Z3 A Mem Block	P:DenonK:87:80
+Z3 B Mem Block	P:DenonK:87:81
+Z3 C Mem Block	P:DenonK:87:82
+Z3 D Mem Block	P:DenonK:87:83
+Z3 E Mem Block	P:DenonK:87:84
+Z3 F Mem Block	P:DenonK:87:85
+Z3 G Mem Block	P:DenonK:87:86
+Z3 Volume +	P:DenonK:87:110
+Z3 Volume -	P:DenonK:87:111
+@Denon	Receiver 8,-1
+Cd Repeat	P:Denon:8:54
+Repeat	P:Denon:8:54
+Cd Skip >>	P:Denon:8:58
+Skip +	P:Denon:8:58
+Cd >>	P:Denon:8:58
+Cd-Ff	P:Denon:8:58
+Cd Search >> (>>)	P:Denon:8:58
+Cd Skip <<	P:Denon:8:59
+Skip -	P:Denon:8:59
+Cd <<	P:Denon:8:59
+Cd-Rw	P:Denon:8:59
+Cd Search << (<<)	P:Denon:8:59
+Cd Scan >>	P:Denon:8:5a
+>>	P:Denon:8:5a
+Forward	P:Denon:8:5a
+Cd-Search+	P:Denon:8:5a
+Cd Scan Fwd >>	P:Denon:8:5a
+Cd Scan <<	P:Denon:8:5b
+<<	P:Denon:8:5b
+Rev	P:Denon:8:5b
+Cd-Seach-	P:Denon:8:5b
+Cd Scan Rev <<	P:Denon:8:5b
+Cd Play >	P:Denon:8:5c
+Play	P:Denon:8:5c
+Cd-Play	P:Denon:8:5c
+Cd Pause	P:Denon:8:5d
+A/B	P:Denon:8:5d
+Pause	P:Denon:8:5d
+Pause A/B	P:Denon:8:5d
+Cd-Pause	P:Denon:8:5d
+Cd Pause (A/B)	P:Denon:8:5d
+Cd Stop []	P:Denon:8:5e
+Stop	P:Denon:8:5e
+Cd-Stop	P:Denon:8:5e
+Disc 1	P:Denon:8:64
+Disc 2	P:Denon:8:65
+Disc 3	P:Denon:8:66
+Disc 4	P:Denon:8:67
+Disc 5	P:Denon:8:68
+Disc 6	P:Denon:8:69
+Cd Random	P:Denon:8:6a
+Random	P:Denon:8:6a
+Cd Disc Skip	P:Denon:8:6b
+Skip + Rev	P:Denon:8:6b
+Cd Disc Skip +	P:Denon:8:6b
+Cd Disc Skip + (Pow)	P:Denon:8:6b
+Cd-Skip Disc+	P:Denon:8:6b
+Cd Disc Skip (<)	P:Denon:8:6b
+0	P:Denon:8:81
+1	P:Denon:8:82
+2	P:Denon:8:83
+3	P:Denon:8:84
+4	P:Denon:8:85
+5	P:Denon:8:86
+6	P:Denon:8:87
+7	P:Denon:8:88
+8	P:Denon:8:89
+9	P:Denon:8:8a
++10	P:Denon:8:8c
+Subtitle	P:Denon:8:8d
+Open/Close	P:Denon:8:90
+Menu	P:Denon:8:91
+Dvd-Menu	P:Denon:8:91
+Return	P:Denon:8:92
+Dvd-Return	P:Denon:8:92
+Skip >>	P:Denon:8:98
+Dvd-Ff	P:Denon:8:98
+Skip <<	P:Denon:8:99
+Dvd-Rw	P:Denon:8:99
+Search >>	P:Denon:8:9a
+Dvd-Search+	P:Denon:8:9a
+Search <<	P:Denon:8:9b
+Dvd-Search-	P:Denon:8:9b
+Dvd-Pause	P:Denon:8:9d
+Dvd-Play	P:Denon:8:a0
+Dvd-Stop	P:Denon:8:a1
+Display	P:Denon:8:a7
+Dvd-Display	P:Denon:8:a7
+Disc Skip	P:Denon:8:ab
+Dvd-Disc Skip+	P:Denon:8:ab
+Up	P:Denon:8:ac
+Dvd-Cursor Up	P:Denon:8:ac
+Down	P:Denon:8:ad
+Dvd-Cursor Down	P:Denon:8:ad
+Right	P:Denon:8:ae
+Dvd-Cursor Right	P:Denon:8:ae
+Left	P:Denon:8:af
+Dvd-Cursor Left	P:Denon:8:af
+Power On	P:Denon:8:b1
+Dvd-Power	P:Denon:8:b1
+Enter	P:Denon:8:bb
+Dvd-Select	P:Denon:8:bb
+Dvd-Dvd Setup	P:Denon:8:bc
+Dvd-Title	P:Denon:8:bd
 @Denon	Receiver 80,-1
 Tv Tv/Vcr (Cinema)	P:NECext:af50:f609
 Tv Volume ^ (Center)	P:NECext:af50:ed12
@@ -8855,6 +11459,62 @@ Vcr Chan ^ (T Tone)	P:NECext:9f60:e619
 Vcr Pause (Set +)	P:NECext:9f60:e51a
 @Denon	Receiver 97,-1
 Vcr Rec (Panel)	P:NECext:9e61:eb14
+@Denon	Tuner 12,-1
+Digital Dbs/Bs	P:Denon:c:83
+Digital Vdp	P:Denon:c:84
+Digital Cd	P:Denon:c:85
+Digital Dat	P:Denon:c:86
+A	P:Denon:c:b9
+B	P:Denon:c:ba
+C	P:Denon:c:bb
+D	P:Denon:c:bc
+E	P:Denon:c:bd
+1	P:Denon:c:c1
+2	P:Denon:c:c2
+3	P:Denon:c:c3
+4	P:Denon:c:c4
+5	P:Denon:c:c5
+6	P:Denon:c:c6
+7	P:Denon:c:c7
+8	P:Denon:c:c8
+Memory	P:Denon:c:cc
+Shift/Pty	P:Denon:c:cd
+Shift Preset Bank	P:Denon:c:cd
+Rds	P:Denon:c:d2
+Ct	P:Denon:c:d3
+Pty	P:Denon:c:d4
+Tuner Ch V	P:Denon:c:d5
+Ch Dn	P:Denon:c:d5
+Preset Ch Down	P:Denon:c:d5
+Preset Ch V	P:Denon:c:d5
+Tuner Ch ^	P:Denon:c:d6
+Ch Up	P:Denon:c:d6
+Preset Ch Up	P:Denon:c:d6
+Preset Ch ^	P:Denon:c:d6
+Tuner Band	P:Denon:c:d7
+Band	P:Denon:c:d7
+Tuner At/Manu	P:Denon:c:d8
+Mode	P:Denon:c:d8
+Auto/Manual	P:Denon:c:d8
+Auto Mute/Manu	P:Denon:c:d8
+Tuner Tune ^	P:Denon:c:d9
+Tune Up	P:Denon:c:d9
+Up	P:Denon:c:d9
+Tuning ^	P:Denon:c:d9
+Tuner Tune V	P:Denon:c:da
+Tune Dn	P:Denon:c:da
+Down	P:Denon:c:da
+Tuning V	P:Denon:c:da
+Tuner Rf	P:Denon:c:db
+Rf Att	P:Denon:c:db
+Tuner P.Scan	P:Denon:c:dc
+P.Scan	P:Denon:c:dc
+Tuner Power	P:Denon:c:dd
+Power	P:Denon:c:dd
+Display	P:Denon:c:de
+Panel	P:Denon:c:de
+Dimmer	P:Denon:c:df
+Search	P:Denon:c:f9
 @DirecTV	Receiver HD 12,251
 Power Off	P:NECext:fb0c:8c73
 Power On	P:NECext:fb0c:8b74
@@ -9262,6 +11922,52 @@ Input: Hdmi 2	P:NECext:2084:a857
 Input: Hdmi 3	P:NECext:2084:a758
 Input: Hdmi 4	P:NECext:2084:a659
 Input: Rgbhv	P:NECext:2084:a55a
+@Dwin	Video Processor 1,-1
+1	P:Sharp:1:1
+2	P:Sharp:1:2
+3	P:Sharp:1:3
+4	P:Sharp:1:4
+5	P:Sharp:1:5
+6	P:Sharp:1:6
+7	P:Sharp:1:7
+8	P:Sharp:1:8
+9	P:Sharp:1:9
+0	P:Sharp:1:a
+Enter	P:Sharp:1:b
++10	P:Sharp:1:c
+Fav	P:Sharp:1:d
+Info	P:Sharp:1:e
+Alt	P:Sharp:1:f
+Ch ^	P:Sharp:1:11
+Ch +	P:Sharp:1:11
+Ch V	P:Sharp:1:12
+Ch -	P:Sharp:1:12
+T/V	P:Sharp:1:13
+Vol ^	P:Sharp:1:14
+Vol +	P:Sharp:1:14
+Vol V	P:Sharp:1:15
+Vol -	P:Sharp:1:15
+Off/On	P:Sharp:1:16
+Power	P:Sharp:1:16
+Mute	P:Sharp:1:17
+Source	P:Sharp:1:18
+Cd	P:Sharp:1:18
+Guide	P:Sharp:1:18
+Next	P:Sharp:1:1a
+Tuner	P:Sharp:1:1a
+Menu	P:Sharp:1:1b
+Prev Ch	P:Sharp:1:1c
+Select	P:Sharp:1:1f
+Select V	P:Sharp:1:20
+Cursor Down	P:Sharp:1:20
+Flashbk	P:Sharp:1:2f
+Exit	P:Sharp:1:2f
+Select ^	P:Sharp:1:49
+Cursor Up	P:Sharp:1:49
+Adj >	P:Sharp:1:4f
+Cursor Right	P:Sharp:1:4f
+Adj <	P:Sharp:1:50
+Cursor Left	P:Sharp:1:50
 @Eastern	EASTERN DA 9000
 Power	P:NEC:a0:1d
 MASTER_UP	P:NEC:a0:12
@@ -9555,6 +12261,115 @@ Right	P:NECext:7900:25da
 Mute	P:NECext:7900:6699
 Menu	P:NECext:7900:21de
 StereoMono	P:NECext:7900:718e
+@Escient	Digital Media Receiver 1,22
+1 ./ ?'	P:MCE:1601:1
+.? ?' 1	P:MCE:1601:1
+2 Abc	P:MCE:1601:2
+3 Def	P:MCE:1601:3
+4 Ghi	P:MCE:1601:4
+5 Jkl	P:MCE:1601:5
+6 Mno	P:MCE:1601:6
+7 Pqrs	P:MCE:1601:7
+8 Tuv	P:MCE:1601:8
+9 Wxyz	P:MCE:1601:9
+Ch Page Up	P:MCE:1601:d
+Ch-/Pg-	P:MCE:1601:e
+Enter	P:MCE:1601:10
+Last / Mode	P:MCE:1601:11
+Guide	P:MCE:1601:14
+Globe	P:MCE:1601:15
+Exit	P:MCE:1601:15
+Cursor Up	P:MCE:1601:16
+Cursor Down	P:MCE:1601:17
+Cursor Left	P:MCE:1601:18
+Cursor Right	P:MCE:1601:19
+Cursor Ok	P:MCE:1601:1a
+Info / All	P:MCE:1601:1b
+Menu / View	P:MCE:1601:1c
+Rew /Backspace	P:MCE:1601:20
+Play	P:MCE:1601:21
+>> Space	P:MCE:1601:22
+Record	P:MCE:1601:23
+Stop	P:MCE:1601:24
+Pause	P:MCE:1601:25
+Movies	P:MCE:1601:26
+I Radio	P:MCE:1601:2a
+Iradio	P:MCE:1601:2a
+Jukebox Next	P:MCE:1601:2b
+Music	P:MCE:1601:2c
+Play Favor	P:MCE:1601:2e
+Ramdom	P:MCE:1601:2f
+Audio	P:MCE:1601:30
+Jukebox Macro	P:MCE:1601:31
+Jukebox Previous	P:MCE:1601:32
+Jukebox Repeat	P:MCE:1601:33
+@Escient	MP3 Player 1,22
+0	P:MCE:1601:0
+2	P:MCE:1601:2
+3	P:MCE:1601:3
+4	P:MCE:1601:4
+5	P:MCE:1601:5
+6	P:MCE:1601:6
+7	P:MCE:1601:7
+8	P:MCE:1601:8
+9	P:MCE:1601:9
+Page Down	P:MCE:1601:e
+Power	P:MCE:1601:f
+Jukebox Mode	P:MCE:1601:11
+Mode	P:MCE:1601:11
+Setup	P:MCE:1601:12
+Last	P:MCE:1601:13
+Opts	P:MCE:1601:13
+Options/Last	P:MCE:1601:13
+Guide	P:MCE:1601:14
+Exit	P:MCE:1601:15
+Cursor Up	P:MCE:1601:16
+Cursor Down	P:MCE:1601:17
+Cursor Ok	P:MCE:1601:1a
+Info	P:MCE:1601:1b
+View	P:MCE:1601:1c
+View/Menu	P:MCE:1601:1c
+Backspace	P:MCE:1601:20
+Play	P:MCE:1601:21
+>> Scan	P:MCE:1601:22
+Space	P:MCE:1601:22
+Record	P:MCE:1601:23
+Movies	P:MCE:1601:26
+Skip >>	P:MCE:1601:28
+Music	P:MCE:1601:2c
+Jukebox Add	P:MCE:1601:2d
+Add	P:MCE:1601:2d
+Jukebox Play	P:MCE:1601:2e
+Favorites Play	P:MCE:1601:2e
+Jukebox Rand	P:MCE:1601:2f
+Random	P:MCE:1601:2f
+Prev	P:MCE:1601:32
+Repeat	P:MCE:1601:33
+Photos	P:MCE:1601:34
+@Escient	MP3 Player 14,-1
+Exit	P:RCA38:e:6
+Enter	P:RCA38:e:53
+@Escient	MP3 Player 15,-1
+Volume -	P:RCA38:f:2e
+Volume +	P:RCA38:f:2f
+Mute	P:RCA38:f:3f
+@Escient	MP3 Player 4,22
+Channel +	P:MCE:1604:d
+Enter	P:MCE:1604:10
+Input/Setup	P:MCE:1604:12
+Left	P:MCE:1604:18
+Right	P:MCE:1604:19
+Ok/Select	P:MCE:1604:1a
+Select	P:MCE:1604:1a
+Menu/View	P:MCE:1604:1c
+Menu	P:MCE:1604:1c
+Play	P:MCE:1604:21
+Space/Foreward	P:MCE:1604:22
+Movies	P:MCE:1604:26
+Seek Back	P:MCE:1604:29
+Rand	P:MCE:1604:2f
+Prev	P:MCE:1604:32
+Home	P:MCE:1604:34
 @Faroudja	Processor 1,-1
 Input Mode	P:RC5X:1:0
 Power	P:RC5X:1:1
@@ -10210,6 +13025,26 @@ Disc 5	P:NECext:7080:aa55
 On	P:NECext:7080:a956
 Off	P:NECext:7080:a857
 Skip Dn	P:NECext:7080:a45b
+@Harman Kardon	CD Player 0,-1
+Play/Pause >	P:Akai:0:1
+Skip <<	P:Akai:0:2
+Skip >>	P:Akai:0:3
+Stop/Clear []	P:Akai:0:5
+Search >>	P:Akai:0:6
+Search <<	P:Akai:0:7
+Repeat	P:Akai:0:a
+Program	P:Akai:0:e
+Time	P:Akai:0:f
+0	P:Akai:0:10
+1	P:Akai:0:11
+2	P:Akai:0:12
+3	P:Akai:0:13
+4	P:Akai:0:14
+5	P:Akai:0:15
+6	P:Akai:0:16
+7	P:Akai:0:17
+8	P:Akai:0:18
+9	P:Akai:0:19
 @Harman Kardon	CD Player 128,112
 Open/Close	P:NECext:7080:ff00
 Power	P:NECext:7080:ff00
@@ -10836,25 +13671,25 @@ Guide / Ch / Red	P:NECext:7282:a25d
 Guide/Ch	P:NECext:7282:a25d
 Ch Select	P:NECext:7282:a25d
 Ch. Select	P:NECext:7282:a25d
-On Screen ^	P:NECext:7282:7f80
+On Screen ^	P:Pioneer40:7282:80
 Up Arrow	P:NECext:7282:7f80
 Select ^	P:NECext:7282:7f80
 Cursor Up	P:NECext:7282:7f80
-On Screen V	P:NECext:7282:7e81
+On Screen V	P:Pioneer40:7282:81
 Down Arrow	P:NECext:7282:7e81
 Select V	P:NECext:7282:7e81
 Cursor Down	P:NECext:7282:7e81
-On Screen >	P:NECext:7282:7d82
+On Screen >	P:Pioneer40:7282:82
 Right Arrow	P:NECext:7282:7d82
 Select >	P:NECext:7282:7d82
 Cursor Right	P:NECext:7282:7d82
-On Screen <	P:NECext:7282:7c83
+On Screen <	P:Pioneer40:7282:83
 Left Arrow	P:NECext:7282:7c83
 Select <	P:NECext:7282:7c83
 Cursor Left	P:NECext:7282:7c83
+On Screen Enter	P:Pioneer40:7282:84
 Enter	P:NECext:7282:7b84
 Cursor Ok	P:NECext:7282:7b84
-On Screen Enter	P:NECext:7282:7b84
 Cursor Set	P:NECext:7282:7b84
 Select	P:NECext:7282:7b84
 Surround Up	P:NECext:7282:7a85
@@ -11056,6 +13891,13 @@ Tr Stop	P:NECext:7686:cc33
 Tr Rec	P:NECext:7686:cb34
 Info	P:NECext:7686:c936
 Sleep	P:NECext:7686:c738
+@Harman Kardon	Receiver 161,-1
+Cassette Ff >>	P:Pioneer40:5ea1:10
+Cassette Rew <<	P:Pioneer40:5ea1:11
+Cassette Power	P:Pioneer40:5ea1:12
+Cassette Stop []	P:Pioneer40:5ea1:16
+Cassette Play >	P:Pioneer40:5ea1:17
+Cassette Pause	P:Pioneer40:5ea1:18
 @Harman Kardon	Receiver 164,-1
 0	P:NECext:5ba4:ff00
 2	P:NECext:5ba4:fe01
@@ -11066,6 +13908,8 @@ Cursor Right	P:NECext:fb04:f906
 Cursor Up	P:NECext:fb04:f30c
 Cursor Down	P:NECext:fb04:f20d
 Cursor Left	P:NECext:fb04:f10e
+@Harman Kardon	Receiver 7,-1
+Sat	P:RCA38:7:3a
 @Harman Kardon	Surround Processor 0,-1
 Tv	P:RC5X:0:3f
 @Harman Kardon	Surround Processor 12,-1
@@ -11266,6 +14110,25 @@ Pro-Logic	P:NECext:7282:609f
 Tuner Preset +	P:NECext:7282:2fd0
 Tuner Preset -	P:NECext:7282:2ed1
 Multi	P:NECext:7282:20df
+@Harman Kardon	Tuner 0,-1
+Fm	P:Akai:0:41
+Am	P:Akai:0:42
+Tuning Up	P:Akai:0:44
+Tuning Down	P:Akai:0:45
+Memo	P:Akai:0:46
+1/9	P:Akai:0:47
+2/10	P:Akai:0:48
+3/11	P:Akai:0:49
+4/12	P:Akai:0:4a
+5/13	P:Akai:0:4b
+6/14	P:Akai:0:4c
+7/15	P:Akai:0:4d
+8/16	P:Akai:0:4e
+Power	P:Akai:0:51
+Seek	P:Akai:0:52
+Shift	P:Akai:0:53
+Mute	P:Akai:0:54
+Mono	P:Akai:0:55
 @Harman Kardon	Tuner 128,112
 Am/Fm	P:NECext:7080:7e81
 Fm	P:NECext:7080:7e81
@@ -11429,6 +14292,42 @@ Stop	P:NEC:4:34
 Mute	P:NEC:4:21
 Vol_up	P:NEC:4:22
 Vol_dn	P:NEC:4:23
+@Hitachi	CD Player 168,-1
+0	P:Pioneer40:57a8:0
+1	P:Pioneer40:57a8:1
+2	P:Pioneer40:57a8:2
+3	P:Pioneer40:57a8:3
+4	P:Pioneer40:57a8:4
+5	P:Pioneer40:57a8:5
+6	P:Pioneer40:57a8:6
+7	P:Pioneer40:57a8:7
+8	P:Pioneer40:57a8:8
+9	P:Pioneer40:57a8:9
+Auto Dig/Analog	P:Pioneer40:57a8:c
+Cx	P:Pioneer40:57a8:e
+Search >>	P:Pioneer40:57a8:10
+Search <<	P:Pioneer40:57a8:11
+Chap/Frame-Time	P:Pioneer40:57a8:13
+Stop/Open []	P:Pioneer40:57a8:16
+Play >	P:Pioneer40:57a8:17
+Pause	P:Pioneer40:57a8:18
+Power	P:Pioneer40:57a8:1c
+Audio Monitor	P:Pioneer40:57a8:1e
++10	P:Pioneer40:57a8:1f
+Search/Memory	P:Pioneer40:57a8:42
+Display	P:Pioneer40:57a8:43
+Repeat B	P:Pioneer40:57a8:44
+Clear	P:Pioneer40:57a8:45
+Multi Speed -	P:Pioneer40:57a8:46
+Multi Speed +	P:Pioneer40:57a8:47
+Repeat A	P:Pioneer40:57a8:48
+Program	P:Pioneer40:57a8:4c
+Still/Step <	P:Pioneer40:57a8:50
+Chapter/Track >>	P:Pioneer40:57a8:52
+Chapter/Track <<	P:Pioneer40:57a8:53
+Still/Step >	P:Pioneer40:57a8:54
+Multi Speed <	P:Pioneer40:57a8:55
+Multi Speed >	P:Pioneer40:57a8:58
 @Hitachi	Hitachi HSB40B16
 Power	P:NEC:5b:80
 Input	P:NEC:5b:81
@@ -11689,6 +14588,20 @@ Preset 2	P:NECext:6dd2:2ed1
 Preset 3	P:NECext:6dd2:2dd2
 Preset 4	P:NECext:6dd2:2cd3
 Preset 5	P:NECext:6dd2:2bd4
+@Integra	Amplifier 71,-1
+1	P:Mitsubishi:47:0
+9	P:Mitsubishi:47:1
+2	P:Mitsubishi:47:8
+10	P:Mitsubishi:47:9
+12	P:Mitsubishi:47:f
+3	P:Mitsubishi:47:10
+4	P:Mitsubishi:47:18
+5	P:Mitsubishi:47:20
+6	P:Mitsubishi:47:28
+7	P:Mitsubishi:47:30
+10+	P:Mitsubishi:47:32
+11	P:Mitsubishi:47:35
+8	P:Mitsubishi:47:38
 @Integra	CD Player 210,44
 Search >>	P:NECext:2cd2:ff00
 Folder Down	P:NECext:2cd2:ff00
@@ -11967,6 +14880,72 @@ Mode Thx Ultra2	P:NECext:19d2:23dc
 Mode Thx Music Mode2	P:NECext:19d2:22dd
 Mode Thx Games Mode2	P:NECext:19d2:21de
 Mode Neural Thx Surr	P:NECext:19d2:20df
+@Integra	Pre-Amplifier 210,30
+Audio Arc	P:NECext:1ed2:af50
+Audyssey Off	P:NECext:1ed2:af50
+Audyssey On	P:NECext:1ed2:af50
+Dolby Vol High	P:NECext:1ed2:af50
+Dolby Vol Low	P:NECext:1ed2:af50
+Dolby Vol Mid	P:NECext:1ed2:af50
+Dolby Vol Off	P:NECext:1ed2:af50
+Dolby Vol Wrap	P:NECext:1ed2:af50
+Dymanic Eq On	P:NECext:1ed2:af50
+Dynamic Eq Off	P:NECext:1ed2:af50
+Dynamic Eq Wrap	P:NECext:1ed2:af50
+Dynamic Volume Heavy	P:NECext:1ed2:af50
+Dynamic Volume Light	P:NECext:1ed2:af50
+Dynamic Volume Mediu	P:NECext:1ed2:af50
+Dynamic Volume Off	P:NECext:1ed2:af50
+Dynamic Volume Wrap	P:NECext:1ed2:af50
+Hdmi Audio Out Off	P:NECext:1ed2:af50
+Hdmi Audio Out On	P:NECext:1ed2:af50
+Hdmi Audio Out Wrap	P:NECext:1ed2:af50
+Hdmi Out Both	P:NECext:1ed2:af50
+Hdmi Out Both Main	P:NECext:1ed2:af50
+Hdmi Out Both Sub	P:NECext:1ed2:af50
+Isf Cinema	P:NECext:1ed2:af50
+Isf Custom	P:NECext:1ed2:af50
+Isf Day	P:NECext:1ed2:af50
+Isf Game	P:NECext:1ed2:af50
+Isf Mode Wrap	P:NECext:1ed2:af50
+Isf Night	P:NECext:1ed2:af50
+Isf Through	P:NECext:1ed2:af50
+Mode Audyssey Dsx	P:NECext:1ed2:af50
+Mode Dolbyex Audy	P:NECext:1ed2:af50
+Mode Full Mono	P:NECext:1ed2:af50
+Mode Game Action	P:NECext:1ed2:af50
+Mode Game Rock	P:NECext:1ed2:af50
+Mode Game Rpg	P:NECext:1ed2:af50
+Mode Game Sports	P:NECext:1ed2:af50
+Mode Neo6 Music Audy	P:NECext:1ed2:af50
+Mode Neo6 Thx Cinema	P:NECext:1ed2:af50
+Mode Neo6 Thx Music	P:NECext:1ed2:af50
+Mode Neo6Cinema Audy	P:NECext:1ed2:af50
+Mode Neural Digital	P:NECext:1ed2:af50
+Mode Orchestra	P:NECext:1ed2:af50
+Mode Pllx Game Audy	P:NECext:1ed2:af50
+Mode Pllx Movie Audy	P:NECext:1ed2:af50
+Mode Pllx Music Audy	P:NECext:1ed2:af50
+Mode Pllz H+Games	P:NECext:1ed2:af50
+Mode Pllz H+Thxcinem	P:NECext:1ed2:af50
+Mode Pllz H+Thxmusic	P:NECext:1ed2:af50
+Mode Pllz Height	P:NECext:1ed2:af50
+Mode Studio Mix	P:NECext:1ed2:af50
+Mode Tv Logic	P:NECext:1ed2:af50
+Modepllzh+Thxu2Cinem	P:NECext:1ed2:af50
+Modepllzh+Thxu2Games	P:NECext:1ed2:af50
+Modepllzh+Thxu2Music	P:NECext:1ed2:af50
+Music Optimizer Off	P:NECext:1ed2:af50
+Music Optimizer On	P:NECext:1ed2:af50
+Music Optimizer Wrap	P:NECext:1ed2:af50
+Wide Mode 4:3	P:NECext:1ed2:af50
+Wide Mode Full	P:NECext:1ed2:af50
+Wide Mode Smart Zoom	P:NECext:1ed2:af50
+Wide Mode Wide Zoom	P:NECext:1ed2:af50
+Wide Mode Wrap	P:NECext:1ed2:af50
+Wide Mode Zoom	P:NECext:1ed2:af50
+Volume Down 1Db	P:NECext:1ed2:af50
+Volume Up 1Db	P:NECext:1ed2:af50
 @Integra	Receiver 210,1
 Dock Stop	P:NECext:1d2:38c7
 @Integra	Receiver 210,108
@@ -12989,6 +15968,123 @@ Mode: Thx Games	P:NECext:19d2:21de
 Mode: Plii Thx Games	P:NECext:19d2:21de
 Neural Thx	P:NECext:19d2:20df
 Mode Neural Thx Surr	P:NECext:19d2:20df
+@Integra	Receiver 210,30
++10	P:NECext:1ed2:b748
+0	P:NECext:1ed2:b748
+1	P:NECext:1ed2:b748
+2	P:NECext:1ed2:b748
+3	P:NECext:1ed2:b748
+4	P:NECext:1ed2:b748
+5	P:NECext:1ed2:b748
+6	P:NECext:1ed2:b748
+7	P:NECext:1ed2:b748
+8	P:NECext:1ed2:b748
+9	P:NECext:1ed2:b748
+Band	P:NECext:1ed2:b748
+Clear	P:NECext:1ed2:b748
+Cursor Down	P:NECext:1ed2:b748
+Cursor Left	P:NECext:1ed2:b748
+Cursor Right	P:NECext:1ed2:b748
+Cursor Up	P:NECext:1ed2:b748
+Display	P:NECext:1ed2:b748
+Enter	P:NECext:1ed2:b748
+Mode	P:NECext:1ed2:b748
+Pause/Step	P:NECext:1ed2:b748
+Play	P:NECext:1ed2:b748
+Repeat	P:NECext:1ed2:b748
+Return	P:NECext:1ed2:b748
+Setup	P:NECext:1ed2:b748
+Stop	P:NECext:1ed2:b748
+Track Down	P:NECext:1ed2:b748
+Track Up	P:NECext:1ed2:b748
+Ff	P:NECext:1ed2:b748
+Fr	P:NECext:1ed2:b748
+Preset Down	P:NECext:1ed2:b748
+Preset Up	P:NECext:1ed2:b748
+Audyssey Off	P:NECext:1ed2:af50
+Audyssey On	P:NECext:1ed2:af50
+Dolby Vol Off	P:NECext:1ed2:af50
+Dolby Vol On	P:NECext:1ed2:af50
+Dolby Vol Toggle	P:NECext:1ed2:af50
+Dynamic Eq Off	P:NECext:1ed2:af50
+Dynamic Eq On	P:NECext:1ed2:af50
+Dynamic Eq Toggle	P:NECext:1ed2:af50
+Dynamic Vol Heavy	P:NECext:1ed2:af50
+Dynamic Vol Light	P:NECext:1ed2:af50
+Dynamic Vol Medium	P:NECext:1ed2:af50
+Dynamic Vol Off	P:NECext:1ed2:af50
+Dynamic Vol Toggle	P:NECext:1ed2:af50
+Mode: Full Mono	P:NECext:1ed2:af50
+Mode: Game Action	P:NECext:1ed2:af50
+Mode: Game Rock	P:NECext:1ed2:af50
+Mode: Game Rpg	P:NECext:1ed2:af50
+Mode: Game Sports	P:NECext:1ed2:af50
+Mode: Orchestra	P:NECext:1ed2:af50
+Mode: Studio Mix	P:NECext:1ed2:af50
+Mode: Unplugged	P:NECext:1ed2:af50
+Music Optimizer Off	P:NECext:1ed2:af50
+Music Optimizer On	P:NECext:1ed2:af50
+Audio Arc	P:NECext:1ed2:af50
+Dymanic Eq On	P:NECext:1ed2:af50
+Dynamic Eq Wrap	P:NECext:1ed2:af50
+Dynamic Volume Heavy	P:NECext:1ed2:af50
+Dynamic Volume Light	P:NECext:1ed2:af50
+Dynamic Volume Mediu	P:NECext:1ed2:af50
+Dynamic Volume Off	P:NECext:1ed2:af50
+Dynamic Volume Wrap	P:NECext:1ed2:af50
+Isf Cinema	P:NECext:1ed2:af50
+Isf Custom	P:NECext:1ed2:af50
+Isf Game	P:NECext:1ed2:af50
+Isf Mode Wrap	P:NECext:1ed2:af50
+Isf Through	P:NECext:1ed2:af50
+Mode Dolbyex Audy	P:NECext:1ed2:af50
+Mode Full Mono	P:NECext:1ed2:af50
+Mode Game Action	P:NECext:1ed2:af50
+Mode Game Rock	P:NECext:1ed2:af50
+Mode Game Rpg	P:NECext:1ed2:af50
+Mode Game Sports	P:NECext:1ed2:af50
+Mode Neo6 Thx Cinema	P:NECext:1ed2:af50
+Mode Neo6 Thx Music	P:NECext:1ed2:af50
+Mode Orchestra	P:NECext:1ed2:af50
+Mode Studio Mix	P:NECext:1ed2:af50
+Mode Tv Logic	P:NECext:1ed2:af50
+Music Optimizer Wrap	P:NECext:1ed2:af50
+Wide Mode 4:3	P:NECext:1ed2:af50
+Wide Mode Full	P:NECext:1ed2:af50
+Wide Mode Wide Zoom	P:NECext:1ed2:af50
+Wide Mode Wrap	P:NECext:1ed2:af50
+Wide Mode Zoom	P:NECext:1ed2:af50
+Mode: Plxll Height	P:NECext:1ed2:af50
+Hdmi Audio Out Off	P:NECext:1ed2:af50
+Hdmi Audio Out On	P:NECext:1ed2:af50
+Mode Audyssey Dsx	P:NECext:1ed2:af50
+Mode Neo6 Music Audy	P:NECext:1ed2:af50
+Mode Neo6Cinema Audy	P:NECext:1ed2:af50
+Mode Pllx Game Audy	P:NECext:1ed2:af50
+Mode Pllx Movie Audy	P:NECext:1ed2:af50
+Mode Pllx Music Audy	P:NECext:1ed2:af50
+Modepllzh+Thxu2Cinem	P:NECext:1ed2:af50
+Modepllzh+Thxu2Games	P:NECext:1ed2:af50
+Modepllzh+Thxu2Music	P:NECext:1ed2:af50
+Hdmi Audio Out Wrap	P:NECext:1ed2:af50
+Hdmi Out Both	P:NECext:1ed2:af50
+Hdmi Out Both Main	P:NECext:1ed2:af50
+Hdmi Out Both Sub	P:NECext:1ed2:af50
+Mode Pllz H+Games	P:NECext:1ed2:af50
+Mode Pllz H+Thxcinem	P:NECext:1ed2:af50
+Mode Pllz H+Thxmusic	P:NECext:1ed2:af50
+Mode Pllz Height	P:NECext:1ed2:af50
+Volume Down 1Db	P:NECext:1ed2:af50
+Volume Up 1Db	P:NECext:1ed2:af50
+Isf Day	P:NECext:1ed2:af50
+Isf Night	P:NECext:1ed2:af50
+Wide Mode Auto	P:NECext:1ed2:af50
+Dolby Vol High	P:NECext:1ed2:af50
+Dolby Vol Low	P:NECext:1ed2:af50
+Dolby Vol Mid	P:NECext:1ed2:af50
+Dolby Vol Wrap	P:NECext:1ed2:af50
+Mode Neural Digital	P:NECext:1ed2:af50
+Wide Mode Smart Zoom	P:NECext:1ed2:af50
 @Integra	Receiver 210,43
 Menu	P:NECext:2bd2:b04f
 @Integra	Tuner 210,109
@@ -13375,6 +16471,70 @@ Ref.	P:NECext:4284:a956
 Volume ^	P:NECext:4284:a758
 Ambience -	P:NECext:4284:a55a
 Sound Stage	P:NECext:4284:a05f
+@JBL	Surround Processor 28,-1
+Set Up	P:Denon:1c:83
+On/Off	P:Denon:1c:84
+Store	P:Denon:1c:87
+Panorama Normal(1)	P:Denon:1c:89
+Panorama Wide(2)	P:Denon:1c:8a
+Panorama Binaural(3)	P:Denon:1c:8b
+Bank	P:Denon:1c:8c
+Ambience Small(4)	P:Denon:1c:8d
+Ambience Medium(5)	P:Denon:1c:8e
+Ambience Large(6)	P:Denon:1c:8f
+Param	P:Denon:1c:90
+Reverb Small(7)	P:Denon:1c:91
+Reverb Medium(8)	P:Denon:1c:92
+Reverb Large(9)	P:Denon:1c:93
+^	P:Denon:1c:94
+Srnd Tv(10)	P:Denon:1c:95
+Srnd Music(11)	P:Denon:1c:96
+Srnd Full(12)	P:Denon:1c:97
+V	P:Denon:1c:98
+Srnd Mono(13)	P:Denon:1c:99
+Srnd Pro-Logic(14)	P:Denon:1c:9a
+Srnd Thx Cinema(15)	P:Denon:1c:9b
+Balance ^	P:Denon:1c:9e
+Volume ^	P:Denon:1c:a0
+Balance <	P:Denon:1c:a1
+Balance >	P:Denon:1c:a3
+Volume V	P:Denon:1c:a4
+Balance V	P:Denon:1c:a6
+Effects V	P:Denon:1c:a9
+Effects ^	P:Denon:1c:aa
+Efx Mute	P:Denon:1c:ab
+Main Mute	P:Denon:1c:ac
+Input 1	P:Denon:1c:ad
+Input 2	P:Denon:1c:ae
+Input 3	P:Denon:1c:af
+Input 4	P:Denon:1c:b0
+@JVC	CD Jukebox 179,0
+- - -	P:NECext:b3:ff00
++++	P:NECext:b3:ff00
+0	P:NECext:b3:ff00
+1	P:NECext:b3:ff00
+2	P:NECext:b3:ff00
+3	P:NECext:b3:ff00
+4	P:NECext:b3:ff00
+5	P:NECext:b3:ff00
+6	P:NECext:b3:ff00
+7	P:NECext:b3:ff00
+8	P:NECext:b3:ff00
+9	P:NECext:b3:ff00
+Continue	P:NECext:b3:ff00
+Disc	P:NECext:b3:ff00
+Intro Scan	P:NECext:b3:ff00
+Pause	P:NECext:b3:ff00
+Play	P:NECext:b3:ff00
+Power	P:NECext:b3:ff00
+Repeat	P:NECext:b3:ff00
+Search <<	P:NECext:b3:ff00
+Search >>	P:NECext:b3:ff00
+Shuffle	P:NECext:b3:ff00
+Skip <<	P:NECext:b3:ff00
+Skip >>	P:NECext:b3:ff00
+Stop	P:NECext:b3:ff00
+Track	P:NECext:b3:ff00
 @JVC	CD Player 179,-1
 Power	P:JVC:b3:40
 Power (Enter)	P:JVC:b3:40
@@ -13518,6 +16678,153 @@ Del. Prgm	P:JVC:b3:8a
 Del.Prgm	P:JVC:b3:8a
 Exchange	P:JVC:b3:93
 Disc Before	P:JVC:b3:94
+@JVC	CD Player 179,0
+Play >	P:NECext:b3:ff00
+Stop []	P:NECext:b3:ff00
+Pause	P:NECext:b3:ff00
+Auto Search/Ck >>	P:NECext:b3:ff00
+Auto Search/Ck <<	P:NECext:b3:ff00
+Search >>	P:NECext:b3:ff00
+Search <<	P:NECext:b3:ff00
+Power (On)	P:NECext:b3:ff00
+Standby (Off)	P:NECext:b3:ff00
+Cancel	P:NECext:b3:ff00
+Random	P:NECext:b3:ff00
+Repeat	P:NECext:b3:ff00
+Intro	P:NECext:b3:ff00
+Disc Skip >>	P:NECext:b3:ff00
+Disc Skip <<	P:NECext:b3:ff00
+Memory	P:NECext:b3:ff00
+Delete File	P:NECext:b3:ff00
+Program	P:NECext:b3:ff00
+Cursor/User File ->	P:NECext:b3:ff00
+Cursor/User File <-	P:NECext:b3:ff00
+User File	P:NECext:b3:ff00
+Track 1	P:NECext:b3:fe01
+Track 2	P:NECext:b3:fe01
+Track 3	P:NECext:b3:fe01
+Track 4	P:NECext:b3:fe01
+Track 5	P:NECext:b3:fe01
+Track 6	P:NECext:b3:fe01
+Track 7	P:NECext:b3:fe01
+Track 8	P:NECext:b3:fe01
+Track 9	P:NECext:b3:fe01
+Track 10	P:NECext:b3:fe01
+Track 11	P:NECext:b3:fe01
+Track 12	P:NECext:b3:fe01
+Track 13	P:NECext:b3:fe01
+Track 14	P:NECext:b3:fe01
+Track 15	P:NECext:b3:fe01
+Track 16	P:NECext:b3:fe01
+Track 17	P:NECext:b3:fe01
+Track 18	P:NECext:b3:fe01
+Track 19	P:NECext:b3:fe01
+Track 20	P:NECext:b3:fe01
+Track 21	P:NECext:b3:fe01
+Track 22	P:NECext:b3:fe01
+Track 23	P:NECext:b3:fe01
+Track 24	P:NECext:b3:fe01
+Track 25	P:NECext:b3:fe01
+Disc 1	P:NECext:b3:ef10
+Disc 2	P:NECext:b3:ef10
+Disc 3	P:NECext:b3:ef10
+Disc 4	P:NECext:b3:ef10
+Disc 5	P:NECext:b3:ef10
+Disc 6	P:NECext:b3:ef10
+Disc 7	P:NECext:b3:ef10
+Disc 8	P:NECext:b3:ef10
+Disc 9	P:NECext:b3:ef10
+Disc 10	P:NECext:b3:ef10
+Disc 11	P:NECext:b3:ef10
+Disc 12	P:NECext:b3:ef10
+Disc 13	P:NECext:b3:ef10
+Disc 14	P:NECext:b3:ef10
+Disc 15	P:NECext:b3:ef10
+Disc 16	P:NECext:b3:ef10
+Disc 17	P:NECext:b3:ef10
+Disc 18	P:NECext:b3:ef10
+Disc 19	P:NECext:b3:ef10
+Disc 20	P:NECext:b3:ef10
+Disc 21	P:NECext:b3:ef10
+Disc 22	P:NECext:b3:ef10
+Disc 23	P:NECext:b3:ef10
+Disc 24	P:NECext:b3:ef10
+Disc 25	P:NECext:b3:ef10
+Disc 26	P:NECext:b3:ef10
+Disc 27	P:NECext:b3:ef10
+Disc 28	P:NECext:b3:ef10
+Disc 29	P:NECext:b3:ef10
+Disc 30	P:NECext:b3:ef10
+Disc 31	P:NECext:b3:ef10
+Disc 32	P:NECext:b3:ef10
+Disc 33	P:NECext:b3:ef10
+Disc 34	P:NECext:b3:ef10
+Disc 35	P:NECext:b3:ef10
+Disc 36	P:NECext:b3:ef10
+Disc 37	P:NECext:b3:ef10
+Disc 38	P:NECext:b3:ef10
+Disc 39	P:NECext:b3:ef10
+Disc 40	P:NECext:b3:ef10
+Disc 41	P:NECext:b3:ef10
+Disc 42	P:NECext:b3:ef10
+Disc 43	P:NECext:b3:ef10
+Disc 44	P:NECext:b3:ef10
+Disc 45	P:NECext:b3:ef10
+Disc 46	P:NECext:b3:ef10
+Disc 47	P:NECext:b3:ef10
+Disc 48	P:NECext:b3:ef10
+Disc 49	P:NECext:b3:ef10
+Disc 50	P:NECext:b3:ef10
+Disc 51	P:NECext:b3:ef10
+Disc 52	P:NECext:b3:ef10
+Disc 53	P:NECext:b3:ef10
+Disc 54	P:NECext:b3:ef10
+Disc 55	P:NECext:b3:ef10
+Disc 56	P:NECext:b3:ef10
+Disc 57	P:NECext:b3:ef10
+Disc 58	P:NECext:b3:ef10
+Disc 59	P:NECext:b3:ef10
+Disc 60	P:NECext:b3:ef10
+Disc 61	P:NECext:b3:ef10
+Disc 62	P:NECext:b3:ef10
+Disc 63	P:NECext:b3:ef10
+Disc 64	P:NECext:b3:ef10
+Disc 65	P:NECext:b3:ef10
+Disc 66	P:NECext:b3:ef10
+Disc 67	P:NECext:b3:ef10
+Disc 68	P:NECext:b3:ef10
+Disc 69	P:NECext:b3:ef10
+Disc 70	P:NECext:b3:ef10
+Disc 71	P:NECext:b3:ef10
+Disc 72	P:NECext:b3:ef10
+Disc 73	P:NECext:b3:ef10
+Disc 74	P:NECext:b3:ef10
+Disc 75	P:NECext:b3:ef10
+Disc 76	P:NECext:b3:ef10
+Disc 77	P:NECext:b3:ef10
+Disc 78	P:NECext:b3:ef10
+Disc 79	P:NECext:b3:ef10
+Disc 80	P:NECext:b3:ef10
+Disc 81	P:NECext:b3:ef10
+Disc 82	P:NECext:b3:ef10
+Disc 83	P:NECext:b3:ef10
+Disc 84	P:NECext:b3:ef10
+Disc 85	P:NECext:b3:ef10
+Disc 86	P:NECext:b3:ef10
+Disc 87	P:NECext:b3:ef10
+Disc 88	P:NECext:b3:ef10
+Disc 89	P:NECext:b3:ef10
+Disc 90	P:NECext:b3:ef10
+Disc 91	P:NECext:b3:ef10
+Disc 92	P:NECext:b3:ef10
+Disc 93	P:NECext:b3:ef10
+Disc 94	P:NECext:b3:ef10
+Disc 95	P:NECext:b3:ef10
+Disc 96	P:NECext:b3:ef10
+Disc 97	P:NECext:b3:ef10
+Disc 98	P:NECext:b3:ef10
+Disc 99	P:NECext:b3:ef10
+Disc 100	P:NECext:b3:ee11
 @JVC	Cassette Tape 131,-1
 Deck2 Rec	P:JVC:83:2
 Deck2 Stop []	P:JVC:83:3
@@ -13794,6 +17101,14 @@ Play_ok	P:NECext:43b9:f10e
 8	P:NECext:43b9:f708
 9	P:NECext:43b9:f609
 0	P:NECext:43b9:ff00
+@JVC	Receiver 1,-1
+Vtr Stop []	P:Akai:1:3
+Vtr Ff >>	P:Akai:1:6
+Vtr Rew <<	P:Akai:1:7
+Vtr Play >	P:Akai:1:c
+Vtr Pause/Still	P:Akai:1:d
+Vtr Channel -	P:Akai:1:18
+Vtr Channel +	P:Akai:1:19
 @JVC	Receiver 121,-1
 Cd Play >	P:NECext:8679:fd02
 Cd Chapter <<	P:NECext:8679:fb04
@@ -15276,21 +18591,62 @@ Tv 1	P:SIRC:1:0
 Tv 2	P:SIRC:1:1
 Tv 3	P:SIRC:1:2
 Tv 4	P:SIRC:1:3
+Vcr1 Stop []	P:Akai:1:3
 Tv 5	P:SIRC:1:4
 Tv 6	P:SIRC:1:5
+Vcr1 Power	P:Akai:1:5
 Tv 7	P:SIRC:1:6
+Vcr1 Ffwd >>	P:Akai:1:6
 Tv 8	P:SIRC:1:7
+Vcr1 Rew <<	P:Akai:1:7
 Tv 9	P:SIRC:1:8
 Tv 0	P:SIRC:1:9
 Tv +10	P:SIRC:1:a
 Tv Enter	P:SIRC:1:b
+Vcr1 Play >	P:Akai:1:c
+Vcr1 Pause	P:Akai:1:d
 Tv Ch ^ (Any ^)	P:SIRC:1:10
 Tv Ch V (Any V)	P:SIRC:1:11
 Tv Vol ^ (P.Call >)	P:SIRC:1:12
 Tv Vol V (P.Call <)	P:SIRC:1:13
+Vcr1 Function	P:Akai:1:13
 Tv Mute (Band)	P:SIRC:1:14
 Tv Power	P:SIRC:1:15
+Vcr1 Any V	P:Akai:1:18
+Vcr1 Any ^	P:Akai:1:19
 Tv Vcr/Tv (Lvl Aud)	P:SIRC:1:25
+Vcr1 0	P:Akai:1:4f
+Vcr1 1	P:Akai:1:50
+Vcr1 2	P:Akai:1:51
+Vcr1 3	P:Akai:1:52
+Vcr1 4	P:Akai:1:53
+Vcr1 5	P:Akai:1:54
+Vcr1 6	P:Akai:1:55
+Vcr1 7	P:Akai:1:56
+Vcr1 8	P:Akai:1:57
+Vcr1 9	P:Akai:1:58
+Vcr1 Rec	P:Akai:1:6c
+@Kenwood	Receiver 12,-1
+Ld 1	P:Sharp:c:1
+Ld 2	P:Sharp:c:2
+Ld 3	P:Sharp:c:3
+Ld 4	P:Sharp:c:4
+Ld 5	P:Sharp:c:5
+Ld 6	P:Sharp:c:6
+Ld 7	P:Sharp:c:7
+Ld 8	P:Sharp:c:8
+Ld 9	P:Sharp:c:9
+Ld 0	P:Sharp:c:a
+Ld Power	P:Sharp:c:16
+Ld >> (Tuning >>)	P:Sharp:c:21
+Ld Play > (P.Call)	P:Sharp:c:22
+Ld << (Tuning <<)	P:Sharp:c:23
+Ld Pause (Auto)	P:Sharp:c:25
+Ld Stop (Band)	P:Sharp:c:27
+Ld Search >> (Any ^)	P:Sharp:c:2a
+Ld Search << (Any V)	P:Sharp:c:2b
+Ld Open/Close (Rec)	P:Sharp:c:33
+Ld +10	P:Sharp:c:38
 @Kenwood	Receiver 182,75
 Ld 0	P:NECext:4bb6:ff00
 Ld 1	P:NECext:4bb6:fe01
@@ -16669,6 +20025,54 @@ Fx Mono Logic	P:NECext:285:59a6
 Mono Logic	P:NECext:285:59a6
 Fx Music Surround	P:NECext:285:58a7
 Music Logic	P:NECext:285:58a7
+@Lexicon	Surround Processor 28,-1
+Balance Front	P:Denon:1c:41
+Balance Right	P:Denon:1c:42
+Rear Delay +	P:Denon:1c:43
+Param +	P:Denon:1c:44
+Balance Rear	P:Denon:1c:45
+Balance Left	P:Denon:1c:46
+Rear Delay -	P:Denon:1c:47
+Param -	P:Denon:1c:48
+Mono Logic	P:Denon:1c:4c
+Music Logic	P:Denon:1c:50
+Dolby Pro-Logic	P:Denon:1c:54
+Mute Main	P:Denon:1c:55
+Mute Surround	P:Denon:1c:56
+Volume -	P:Denon:1c:57
+Volume +	P:Denon:1c:58
+Setup	P:Denon:1c:83
+On/Off	P:Denon:1c:84
+Store	P:Denon:1c:87
+On/Off-Simple Remote	P:Denon:1c:88
+Panorama Normal 1	P:Denon:1c:89
+Panorama Wide 2	P:Denon:1c:8a
+Panorama Binaural 3	P:Denon:1c:8b
+Bank	P:Denon:1c:8c
+Ambience Small 4	P:Denon:1c:8d
+Ambience Medium 5	P:Denon:1c:8e
+Ambience Large 6	P:Denon:1c:8f
+Param	P:Denon:1c:90
+Reverb Small 7	P:Denon:1c:91
+Reverb Medium 8	P:Denon:1c:92
+Reverb Large 9	P:Denon:1c:93
+Surround Tv 10	P:Denon:1c:95
+Surround Music 11	P:Denon:1c:96
+Surround Full 12	P:Denon:1c:97
+Surround Mono 13	P:Denon:1c:99
+Surround Dolby 14	P:Denon:1c:9a
+Surround Thx 15	P:Denon:1c:9b
+Effect -	P:Denon:1c:a9
+Effect +	P:Denon:1c:aa
+Mute Effect	P:Denon:1c:ab
+Input 1	P:Denon:1c:ad
+Input 2	P:Denon:1c:ae
+Input 3	P:Denon:1c:af
+Input 4	P:Denon:1c:b0
+Surround Mono 10	P:Denon:1c:dc
+Surround Stereo 11	P:Denon:1c:dd
+Surround Dolby 12	P:Denon:1c:de
+Mute Sytem	P:Denon:1c:e1
 @LG	LG
 Power	P:Samsung32:10:1e
 Eject	P:Samsung32:10:9a
@@ -17930,6 +21334,18 @@ Cd	P:RC5X:14:3f
 Cd Input	P:RC5X:14:3f
 Input - Cd	P:RC5X:14:3f
 Input: Cd	P:RC5X:14:3f
+@Marantz	Receiver 39,-1
+Sat	P:RC6:27:3f
+@Marantz	Receiver 4,-1
+Power	P:RC6:4:c
+Play	P:RC6:4:2c
+Pty / Play	P:RC6:4:2c
+Pause	P:RC6:4:30
+Stop	P:RC6:4:31
+Dvd	P:RC6:4:3f
+Sub-T/Att	P:RC6:4:4b
+Subtitle	P:RC6:4:4b
+Set Up/T. Tone	P:RC6:4:82
 @Marantz	Receiver 5,-1
 Record	P:RC5X:5:37
 Vcr1/Tv (Vcr1/Tape)	P:RC5X:5:3e
@@ -18157,6 +21573,10 @@ Fade	P:RC5X:14:78
 @Marantz	iPod Dock 14,-1
 Power	P:RC5X:e:c
 Mute	P:RC5X:e:d
+@Mark Levinson	CD Player 16,-1
+Pause	P:Mitsubishi:10:0
+@Mark Levinson	Pre-Amplifier 4,-1
+Enter	P:Mitsubishi:4:7f
 @McIntosh	CD Player 202,149
 1 Disc	P:NECext:95ca:ff00
 2 Disc	P:NECext:95ca:fe01
@@ -18638,6 +22058,100 @@ Search <<	P:RC5X:14:32
 Search >>	P:RC5X:14:34
 Play	P:RC5X:14:35
 Stop	P:RC5X:14:36
+@Mitsubishi	CD Player 119,-1
+1	P:Mitsubishi:77:c0
+9	P:Mitsubishi:77:c1
+Disc ^	P:Mitsubishi:77:c3
+Disc	P:Mitsubishi:77:c3
+Play	P:Mitsubishi:77:c4
+Play >	P:Mitsubishi:77:c4
+2	P:Mitsubishi:77:c8
+0	P:Mitsubishi:77:c9
+Fast Forward	P:Mitsubishi:77:ca
+Search >>	P:Mitsubishi:77:ca
+Ff >>	P:Mitsubishi:77:ca
+Clear	P:Mitsubishi:77:cb
+Cancel	P:Mitsubishi:77:cb
++10	P:Mitsubishi:77:ce
+Index	P:Mitsubishi:77:cf
+3	P:Mitsubishi:77:d0
+Reverse	P:Mitsubishi:77:d2
+Search <<	P:Mitsubishi:77:d2
+Rew <<	P:Mitsubishi:77:d2
+Disc 1	P:Mitsubishi:77:d3
+Stop	P:Mitsubishi:77:d4
+Stop []	P:Mitsubishi:77:d4
+Disc V	P:Mitsubishi:77:d6
+Repeat	P:Mitsubishi:77:d7
+4	P:Mitsubishi:77:d8
+Display	P:Mitsubishi:77:db
+Pause	P:Mitsubishi:77:dc
+Random	P:Mitsubishi:77:df
+5	P:Mitsubishi:77:e0
+Disc 2	P:Mitsubishi:77:e3
+Skip >>	P:Mitsubishi:77:e4
+Fs (Fwd Srch) >>	P:Mitsubishi:77:e4
+6	P:Mitsubishi:77:e8
+Disc 3	P:Mitsubishi:77:eb
+Skip <<	P:Mitsubishi:77:ec
+Rs (Rev Srch) <<	P:Mitsubishi:77:ec
+Intro Scan	P:Mitsubishi:77:ee
+Intro	P:Mitsubishi:77:ee
+7	P:Mitsubishi:77:f0
+Disc 4	P:Mitsubishi:77:f3
+Adjust ^	P:Mitsubishi:77:f4
+Enter	P:Mitsubishi:77:f5
+Open/Close	P:Mitsubishi:77:f6
+8	P:Mitsubishi:77:f8
+Disc 5	P:Mitsubishi:77:fb
+Adjust V	P:Mitsubishi:77:fc
+Memory	P:Mitsubishi:77:fe
+Menu	P:Mitsubishi:77:fe
+@Mitsubishi	Cassette Tape 119,-1
+Audio Power	P:Mitsubishi:77:2
+Volume ^	P:Mitsubishi:77:22
+Volume V	P:Mitsubishi:77:2a
+Fm/Am	P:Mitsubishi:77:4c
+Tape 1/2 Input	P:Mitsubishi:77:4d
+Tape1 1	P:Mitsubishi:77:80
+Tape1 9	P:Mitsubishi:77:81
+Tape1 Menu	P:Mitsubishi:77:82
+Tape1 Play >	P:Mitsubishi:77:84
+Tape2 Play >	P:Mitsubishi:77:85
+Tape1 Fs/+	P:Mitsubishi:77:86
+Tape2 Fs/+	P:Mitsubishi:77:87
+Tape1 2	P:Mitsubishi:77:88
+Tape1 0	P:Mitsubishi:77:89
+Tape1 Enter	P:Mitsubishi:77:8a
+Tape1 Rec	P:Mitsubishi:77:8c
+Tape1 Rs/-	P:Mitsubishi:77:8e
+Tape2 Rs/-	P:Mitsubishi:77:8f
+Tape1 3	P:Mitsubishi:77:90
+Tape1 Cancel	P:Mitsubishi:77:92
+Tape1 Stop []	P:Mitsubishi:77:94
+Tape2 Stop []	P:Mitsubishi:77:95
+Tape1 Repeat	P:Mitsubishi:77:97
+Tape1 4	P:Mitsubishi:77:98
+Tape1 Pause	P:Mitsubishi:77:9c
+Tape2 Pause	P:Mitsubishi:77:9d
+Tape1 5	P:Mitsubishi:77:a0
+Tape1 Audio ^	P:Mitsubishi:77:a2
+Tape1 Ff >>	P:Mitsubishi:77:a4
+Tape2 Ff >>	P:Mitsubishi:77:a5
+Tape1 Display	P:Mitsubishi:77:a7
+Tape1 6	P:Mitsubishi:77:a8
+Tape1 Audio V	P:Mitsubishi:77:aa
+Tape1 Rew <<	P:Mitsubishi:77:ac
+Tape2 Rew <<	P:Mitsubishi:77:ad
+Tape1 Intro	P:Mitsubishi:77:ae
+Tape2 Intro	P:Mitsubishi:77:af
+Tape1 7	P:Mitsubishi:77:b0
+Tape1 Adjust ^	P:Mitsubishi:77:b2
+Tape1 Play R. <	P:Mitsubishi:77:b4
+Tape2 Play R. <	P:Mitsubishi:77:b5
+Tape1 8	P:Mitsubishi:77:b8
+Tape1 Adjust V	P:Mitsubishi:77:ba
+Tape1 B	P:Mitsubishi:77:bf
 @Mitsubishi	Cassette Tape 138,-1
 Tape 1 Play >	P:NECext:758a:ff00
 Tape 1 Play Rev <	P:NECext:758a:fe01
@@ -18709,6 +22223,154 @@ Cursor Up	P:NECext:fb0c:e619
 - / Alpha	P:NECext:fb0c:c936
 Hd Mode	P:NECext:fb0c:c837
 Sd Mode	P:NECext:fb0c:c738
+@Mitsubishi	Receiver 119,-1
+Audio 1	P:Mitsubishi:77:0
+1 (Cam)	P:Mitsubishi:77:0
+Audio 9	P:Mitsubishi:77:1
+9 (Cd)	P:Mitsubishi:77:1
+Audio Power	P:Mitsubishi:77:2
+Power	P:Mitsubishi:77:2
+Audio 2	P:Mitsubishi:77:8
+2 (Dvd)	P:Mitsubishi:77:8
+Audio 0	P:Mitsubishi:77:9
+0	P:Mitsubishi:77:9
+Audio Scan ^	P:Mitsubishi:77:a
+Vcra Ch ^ (Scan ^)	P:Mitsubishi:77:a
+Preset Scan (Intro)	P:Mitsubishi:77:a
+Audio Cancel	P:Mitsubishi:77:b
+Audio 3	P:Mitsubishi:77:10
+3 (Tv)	P:Mitsubishi:77:10
+Audio Scan V	P:Mitsubishi:77:12
+Vcra Ch V (Scan V)	P:Mitsubishi:77:12
+Audio 4	P:Mitsubishi:77:18
+4 (Vcr)	P:Mitsubishi:77:18
+Audio Input V	P:Mitsubishi:77:1a
+Vcra Input V	P:Mitsubishi:77:1a
+Audio 5	P:Mitsubishi:77:20
+5 (Tape1)	P:Mitsubishi:77:20
+Volume ^	P:Mitsubishi:77:22
+Vol ^	P:Mitsubishi:77:22
+Audio Display	P:Mitsubishi:77:27
+Audio 6	P:Mitsubishi:77:28
+6 (Tape2)	P:Mitsubishi:77:28
+Volume V	P:Mitsubishi:77:2a
+Vol V	P:Mitsubishi:77:2a
+Audio Slow	P:Mitsubishi:77:2b
+Sur (Pause)	P:Mitsubishi:77:2b
+Audio 7	P:Mitsubishi:77:30
+7 (Tuner)	P:Mitsubishi:77:30
+Mute	P:Mitsubishi:77:32
+Audio Vol ^	P:Mitsubishi:77:33
+Audio Fs/+	P:Mitsubishi:77:33
+Rear + (Play)	P:Mitsubishi:77:33
+Audio Enter	P:Mitsubishi:77:35
+Audio 8	P:Mitsubishi:77:38
+8 (Aux)	P:Mitsubishi:77:38
+Audio Input ^	P:Mitsubishi:77:3a
+Vcra Input ^	P:Mitsubishi:77:3a
+Audio Vol V	P:Mitsubishi:77:3b
+Audio Rs/-	P:Mitsubishi:77:3b
+Rear - (Stop)	P:Mitsubishi:77:3b
+Audio B	P:Mitsubishi:77:3f
+Audio Adjust ^	P:Mitsubishi:77:41
+Ch ^	P:Mitsubishi:77:41
+Vcr B	P:Mitsubishi:77:43
+Vcr B Input	P:Mitsubishi:77:43
+Vcr A	P:Mitsubishi:77:44
+Vcr A Input	P:Mitsubishi:77:44
+Tv	P:Mitsubishi:77:45
+Tv Input	P:Mitsubishi:77:45
+Cd	P:Mitsubishi:77:46
+Cd Input	P:Mitsubishi:77:46
+Audio Adjust V	P:Mitsubishi:77:49
+Ch V	P:Mitsubishi:77:49
+Phono	P:Mitsubishi:77:4b
+Phono Input	P:Mitsubishi:77:4b
+Fm/Am	P:Mitsubishi:77:4c
+Tape1/2	P:Mitsubishi:77:4d
+Tape 1/2 Input	P:Mitsubishi:77:4d
+Aux	P:Mitsubishi:77:4e
+Aux Input	P:Mitsubishi:77:4e
+Audio Audio ^	P:Mitsubishi:77:50
+Audio Menu	P:Mitsubishi:77:52
+Test	P:Mitsubishi:77:56
+Audio Audio V	P:Mitsubishi:77:58
+Center	P:Mitsubishi:77:5c
+Center + (Ff)	P:Mitsubishi:77:75
+Delay (Rec)	P:Mitsubishi:77:7b
+Center - (Rew)	P:Mitsubishi:77:7d
+Tape1 1	P:Mitsubishi:77:80
+Tape1 9	P:Mitsubishi:77:81
+Tape1 Menu	P:Mitsubishi:77:82
+Tape1 Play >	P:Mitsubishi:77:84
+Tape2 Play >	P:Mitsubishi:77:85
+Tape1 Vol ^	P:Mitsubishi:77:86
+Tape1 Fs/+	P:Mitsubishi:77:86
+Tape2 Vol ^	P:Mitsubishi:77:87
+Tape2 Fs/+	P:Mitsubishi:77:87
+Tape1 2	P:Mitsubishi:77:88
+Tape1 0	P:Mitsubishi:77:89
+Tape1 Enter	P:Mitsubishi:77:8a
+Tape1 Rec	P:Mitsubishi:77:8c
+Tape1 Vol V	P:Mitsubishi:77:8e
+Tape1 Rs/-	P:Mitsubishi:77:8e
+Tape2 Vol V	P:Mitsubishi:77:8f
+Tape2 Rs/-	P:Mitsubishi:77:8f
+Tape1 3	P:Mitsubishi:77:90
+Tape1 Cancel	P:Mitsubishi:77:92
+Tape1 Stop []	P:Mitsubishi:77:94
+Tape2 Stop []	P:Mitsubishi:77:95
+Tape1 Repeat	P:Mitsubishi:77:97
+Tape1 4	P:Mitsubishi:77:98
+Tape1 Pause	P:Mitsubishi:77:9c
+Tape2 Pause	P:Mitsubishi:77:9d
+Tape1 5	P:Mitsubishi:77:a0
+Tape1 Audio ^	P:Mitsubishi:77:a2
+Tape1 Ff >>	P:Mitsubishi:77:a4
+Tape2 Ff >>	P:Mitsubishi:77:a5
+Tape1 Display	P:Mitsubishi:77:a7
+Tape1 6	P:Mitsubishi:77:a8
+Tape1 Audio V	P:Mitsubishi:77:aa
+Tape1 Rew <<	P:Mitsubishi:77:ac
+Tape2 Rew <<	P:Mitsubishi:77:ad
+Tape1 Intro	P:Mitsubishi:77:ae
+Tape2 Intro	P:Mitsubishi:77:af
+Tape1 7	P:Mitsubishi:77:b0
+Tape1 Adjust ^	P:Mitsubishi:77:b2
+Tape1 R.Play <	P:Mitsubishi:77:b4
+Tape1 Play R. <	P:Mitsubishi:77:b4
+Tape2 R.Play <	P:Mitsubishi:77:b5
+Tape2 Play R. <	P:Mitsubishi:77:b5
+Tape1 8	P:Mitsubishi:77:b8
+Tape1 Adjust V	P:Mitsubishi:77:ba
+Tape1 B	P:Mitsubishi:77:bf
+Cd 1	P:Mitsubishi:77:c0
+Cd 9	P:Mitsubishi:77:c1
+Cd Play >	P:Mitsubishi:77:c4
+Cd A	P:Mitsubishi:77:c7
+Cd 2	P:Mitsubishi:77:c8
+Cd 0	P:Mitsubishi:77:c9
+Cd Ff >>	P:Mitsubishi:77:ca
+Cd Cancel	P:Mitsubishi:77:cb
+Cd 3	P:Mitsubishi:77:d0
+Cd Rew <<	P:Mitsubishi:77:d2
+Cd Stop []	P:Mitsubishi:77:d4
+Cd Repeat	P:Mitsubishi:77:d7
+Cd 4	P:Mitsubishi:77:d8
+Cd Display	P:Mitsubishi:77:db
+Cd Pause	P:Mitsubishi:77:dc
+Cd 5	P:Mitsubishi:77:e0
+Cd Fs/+	P:Mitsubishi:77:e4
+Cd B	P:Mitsubishi:77:e6
+Cd 6	P:Mitsubishi:77:e8
+Cd Rs/-	P:Mitsubishi:77:ec
+Cd Intro	P:Mitsubishi:77:ee
+Cd 7	P:Mitsubishi:77:f0
+Cd Adjust ^	P:Mitsubishi:77:f4
+Cd Enter	P:Mitsubishi:77:f5
+Cd 8	P:Mitsubishi:77:f8
+Cd Adjust V	P:Mitsubishi:77:fc
+Cd Menu	P:Mitsubishi:77:fe
 @Mitsubishi	Receiver 168,-1
 Aux 0	P:NECext:57a8:ff00
 Aux 1	P:NECext:57a8:fe01
@@ -18738,6 +22400,119 @@ Aux Vol ^	P:NECext:57a8:ad52
 Aux Fs/+	P:NECext:57a8:ad52
 Aux Vol V	P:NECext:57a8:ac53
 Aux Rs/-	P:NECext:57a8:ac53
+@Mitsubishi	Receiver 71,-1
+Tv 1	P:Mitsubishi:47:0
+Tv 9	P:Mitsubishi:47:1
+Tv Power	P:Mitsubishi:47:2
+Tv Cancel	P:Mitsubishi:47:7
+Tv 2	P:Mitsubishi:47:8
+Tv 0	P:Mitsubishi:47:9
+Tv Ch ^ (Scan ^)	P:Mitsubishi:47:a
+Tv Scan ^	P:Mitsubishi:47:a
+Tv Qv	P:Mitsubishi:47:f
+Tv 3	P:Mitsubishi:47:10
+Tv Ch V (Scan V)	P:Mitsubishi:47:12
+Tv Scan V	P:Mitsubishi:47:12
+Tv Otr	P:Mitsubishi:47:17
+Tv 4	P:Mitsubishi:47:18
+Tv Input V	P:Mitsubishi:47:1a
+Tv Display	P:Mitsubishi:47:1b
+Tv 5	P:Mitsubishi:47:20
+Tv 6	P:Mitsubishi:47:28
+Tv 7	P:Mitsubishi:47:30
+Tv Enter	P:Mitsubishi:47:35
+Tv 8	P:Mitsubishi:47:38
+Tv A	P:Mitsubishi:47:39
+Tv Input ^	P:Mitsubishi:47:3a
+Tv Video ^	P:Mitsubishi:47:40
+Tv Adjust ^	P:Mitsubishi:47:41
+Tv Video V	P:Mitsubishi:47:48
+Tv Adjust V	P:Mitsubishi:47:49
+Tv Audio ^	P:Mitsubishi:47:50
+Tv Menu	P:Mitsubishi:47:52
+Tv Audio V	P:Mitsubishi:47:58
+@Mitsubishi	Receiver 87,-1
+Vcra 1	P:Mitsubishi:57:0
+Vcra 9	P:Mitsubishi:57:1
+Vcra Power	P:Mitsubishi:57:2
+Vcra Play >	P:Mitsubishi:57:4
+Vcra 2	P:Mitsubishi:57:8
+Vcra 0	P:Mitsubishi:57:9
+Vcra Ch ^ (Scan ^)	P:Mitsubishi:57:a
+Vcra Cancel	P:Mitsubishi:57:b
+Vcra Rec	P:Mitsubishi:57:c
+Vcra Fs/+	P:Mitsubishi:57:e
+Vcra 3	P:Mitsubishi:57:10
+Vcra Ch V (Scan V)	P:Mitsubishi:57:12
+Vcra Stop []	P:Mitsubishi:57:14
+Vcra Rs/-	P:Mitsubishi:57:16
+Vcra Repeat	P:Mitsubishi:57:17
+Vcra 4	P:Mitsubishi:57:18
+Vcra Input V	P:Mitsubishi:57:1a
+Vcra Pause	P:Mitsubishi:57:1c
+Vcra 5	P:Mitsubishi:57:20
+Vcra Ff >>	P:Mitsubishi:57:24
+Vcra Qv	P:Mitsubishi:57:25
+Vcra Display	P:Mitsubishi:57:27
+Vcra 6	P:Mitsubishi:57:28
+Vcra Rew <<	P:Mitsubishi:57:2c
+Vcra R.Play <	P:Mitsubishi:57:2d
+Vcra Otr	P:Mitsubishi:57:2f
+Vcra 7	P:Mitsubishi:57:30
+Vcra Slow	P:Mitsubishi:57:34
+Vcra Enter	P:Mitsubishi:57:35
+Vcra 8	P:Mitsubishi:57:38
+Vcra A	P:Mitsubishi:57:39
+Vcra Input ^	P:Mitsubishi:57:3a
+Vcra Intro	P:Mitsubishi:57:3d
+Vcra Video ^	P:Mitsubishi:57:40
+Vcra Adjust ^	P:Mitsubishi:57:41
+Vcra Video V	P:Mitsubishi:57:48
+Vcra Adjust V	P:Mitsubishi:57:49
+Vcra Audio ^	P:Mitsubishi:57:50
+Vcra Menu	P:Mitsubishi:57:52
+Vcra Audio V	P:Mitsubishi:57:58
+Vcrb 1	P:Mitsubishi:57:80
+Vcrb 9	P:Mitsubishi:57:81
+Vcrb Power	P:Mitsubishi:57:82
+Vcrb Play >	P:Mitsubishi:57:84
+Vcrb 2	P:Mitsubishi:57:88
+Vcrb 0	P:Mitsubishi:57:89
+Vcrb Ch ^ (Scan ^)	P:Mitsubishi:57:8a
+Vcrb Cancel	P:Mitsubishi:57:8b
+Vcrb Rec	P:Mitsubishi:57:8c
+Vcrb Fs/+	P:Mitsubishi:57:8e
+Vcrb 3	P:Mitsubishi:57:90
+Vcrb Ch V (Scan V)	P:Mitsubishi:57:92
+Vcrb Stop []	P:Mitsubishi:57:94
+Vcrb Rs/-	P:Mitsubishi:57:96
+Vcrb Repeat	P:Mitsubishi:57:97
+Vcrb 4	P:Mitsubishi:57:98
+Vcrb Input V	P:Mitsubishi:57:9a
+Vcrb Pause	P:Mitsubishi:57:9c
+Vcrb 5	P:Mitsubishi:57:a0
+Vcrb Ff >>	P:Mitsubishi:57:a4
+Vcrb Qv	P:Mitsubishi:57:a5
+Vcrb Display	P:Mitsubishi:57:a7
+Vcrb 6	P:Mitsubishi:57:a8
+Vcrb Rew <<	P:Mitsubishi:57:ac
+Vcrb R.Play <	P:Mitsubishi:57:ad
+Vcrb Play R. <	P:Mitsubishi:57:ad
+Vcrb Otr	P:Mitsubishi:57:af
+Vcrb 7	P:Mitsubishi:57:b0
+Vcrb Slow	P:Mitsubishi:57:b4
+Vcrb Enter	P:Mitsubishi:57:b5
+Vcrb 8	P:Mitsubishi:57:b8
+Vcrb A	P:Mitsubishi:57:b9
+Vcrb Input ^	P:Mitsubishi:57:ba
+Vcrb Intro	P:Mitsubishi:57:bd
+Vcrb Video ^	P:Mitsubishi:57:c0
+Vcrb Adjust ^	P:Mitsubishi:57:c1
+Vcrb Video V	P:Mitsubishi:57:c8
+Vcrb Adjust V	P:Mitsubishi:57:c9
+Vcrb Audio ^	P:Mitsubishi:57:d0
+Vcrb Menu	P:Mitsubishi:57:d2
+Vcrb Audio V	P:Mitsubishi:57:d8
 @MSI	Unknown_lircd.conf 134,107
 Key_0	P:NECext:6b86:ff00
 Key_1	P:NECext:6b86:fe01
@@ -22010,6 +25785,162 @@ wind	P:RC5X:14:34
 Key_Play	P:RC5X:14:35
 Key_Stop	P:RC5X:14:36
 fade	P:RC5X:14:78
+@Pioneer	Amplifier 162,-1
+Down Cursor	P:Pioneer40:5da2:16
+@Pioneer	Amplifier 164,-1
+Up Cursor	P:Pioneer40:5ba4:56
+@Pioneer	Amplifier 165,-1
+Volume +	P:Pioneer40:5aa5:a
+Volume -	P:Pioneer40:5aa5:b
+Sat	P:Pioneer40:5aa5:d
+Vcr2	P:Pioneer40:5aa5:e
+Vcr1	P:Pioneer40:5aa5:f
+Power	P:Pioneer40:5aa5:1c
+Dsp	P:Pioneer40:5aa5:40
+Ch. Level -	P:Pioneer40:5aa5:41
+Ch. Level +	P:Pioneer40:5aa5:42
+Tuner	P:Pioneer40:5aa5:47
+Cd	P:Pioneer40:5aa5:4c
+Tape 1	P:Pioneer40:5aa5:4e
+Ch Select	P:Pioneer40:5aa5:56
+Att	P:Pioneer40:5aa5:5e
+Dolby	P:Pioneer40:5aa5:5e
+Mute	P:Pioneer40:5aa5:5e
+Right Cursor	P:Pioneer40:5aa5:82
+Left Cursor	P:Pioneer40:5aa5:83
+Enter	P:Pioneer40:5aa5:84
+Dvd	P:Pioneer40:5aa5:85
+Setup	P:Pioneer40:5aa5:9b
+Stereo	P:Pioneer40:5aa5:9f
+Thx	P:Pioneer40:5aa5:9f
+@Pioneer	CD Jukebox 162,-1
+10	P:Pioneer40:5da2:0
+0	P:Pioneer40:5da2:0
+1	P:Pioneer40:5da2:1
+2	P:Pioneer40:5da2:2
+3	P:Pioneer40:5da2:3
+4	P:Pioneer40:5da2:4
+5	P:Pioneer40:5da2:5
+6	P:Pioneer40:5da2:6
+7	P:Pioneer40:5da2:7
+8	P:Pioneer40:5da2:8
+9	P:Pioneer40:5da2:9
+Output +	P:Pioneer40:5da2:a
+Output	P:Pioneer40:5da2:b
+Repeat	P:Pioneer40:5da2:c
+Program	P:Pioneer40:5da2:d
+Program Play	P:Pioneer40:5da2:d
+Pgm	P:Pioneer40:5da2:d
+Search >>	P:Pioneer40:5da2:e
+Ff	P:Pioneer40:5da2:e
+Search <<	P:Pioneer40:5da2:f
+Rew	P:Pioneer40:5da2:f
+Skip >>	P:Pioneer40:5da2:10
+Song Up	P:Pioneer40:5da2:10
+Track >>	P:Pioneer40:5da2:10
+Track Up	P:Pioneer40:5da2:10
+Skip <<	P:Pioneer40:5da2:11
+Song Down	P:Pioneer40:5da2:11
+Track <<	P:Pioneer40:5da2:11
+Track Down	P:Pioneer40:5da2:11
+Stop	P:Pioneer40:5da2:16
+Play	P:Pioneer40:5da2:17
+Pause	P:Pioneer40:5da2:18
+Power	P:Pioneer40:5da2:1c
+Stby	P:Pioneer40:5da2:1c
+Disc +	P:Pioneer40:5da2:1d
+Disc Up	P:Pioneer40:5da2:1d
+Disc 1	P:Pioneer40:5da2:1e
+D1	P:Pioneer40:5da2:1e
+Disc 2	P:Pioneer40:5da2:1f
+D2	P:Pioneer40:5da2:1f
+Track Set	P:Pioneer40:5da2:40
+Disc Set	P:Pioneer40:5da2:41
+Time	P:Pioneer40:5da2:43
+Time/Char	P:Pioneer40:5da2:43
+Clear	P:Pioneer40:5da2:45
+Check	P:Pioneer40:5da2:49
+Random Play	P:Pioneer40:5da2:4a
+Random	P:Pioneer40:5da2:4a
+Disc 3	P:Pioneer40:5da2:50
+D3	P:Pioneer40:5da2:50
+Disc 4	P:Pioneer40:5da2:53
+D4	P:Pioneer40:5da2:53
+Disc 5	P:Pioneer40:5da2:57
+D5	P:Pioneer40:5da2:57
+Disc 6	P:Pioneer40:5da2:5b
+D6	P:Pioneer40:5da2:5b
+Delay	P:Pioneer40:5da2:5d
+Hi Lite Scan	P:Pioneer40:5da2:5e
+Hi-Litle	P:Pioneer40:5da2:5e
+Hi-Lite	P:Pioneer40:5da2:5e
+Adlc	P:Pioneer40:5da2:c0
+Fader	P:Pioneer40:5da2:c0
+M1	P:Pioneer40:5da2:c1
+M2	P:Pioneer40:5da2:c1
+M3	P:Pioneer40:5da2:c1
+Disc -	P:Pioneer40:5da2:c1
+Mode	P:Pioneer40:5da2:c1
+Disc Down	P:Pioneer40:5da2:c1
+Title Input	P:Pioneer40:5da2:c1
+Best	P:Pioneer40:5da2:c2
+Title Display	P:Pioneer40:5da2:c2
+Tittle Search	P:Pioneer40:5da2:c2
+Previous	P:Pioneer40:5da2:c6
+<Cursor	P:Pioneer40:5da2:c6
+Cursor>	P:Pioneer40:5da2:c6
+@Pioneer	CD Player 162,-1
+Program	P:Pioneer40:5da2:d
+Pgm	P:Pioneer40:5da2:d
+Scan >>	P:Pioneer40:5da2:e
+Ff	P:Pioneer40:5da2:e
+Scan <<	P:Pioneer40:5da2:f
+Rew	P:Pioneer40:5da2:f
+Skip I<<	P:Pioneer40:5da2:10
+Next	P:Pioneer40:5da2:10
+Skip >>I	P:Pioneer40:5da2:11
+Prev	P:Pioneer40:5da2:11
+Stop	P:Pioneer40:5da2:16
+Play	P:Pioneer40:5da2:17
+Pause	P:Pioneer40:5da2:18
+Power	P:Pioneer40:5da2:1c
+Disc 1	P:Pioneer40:5da2:1e
+Disc 2	P:Pioneer40:5da2:1f
+Clear	P:Pioneer40:5da2:45
+Check	P:Pioneer40:5da2:49
+Random	P:Pioneer40:5da2:4a
+Disc 3	P:Pioneer40:5da2:50
+Disc 4	P:Pioneer40:5da2:50
+Disc 5	P:Pioneer40:5da2:57
+Disc 6	P:Pioneer40:5da2:5b
+Delete	P:Pioneer40:5da2:5d
+Hi-Lite Scan	P:Pioneer40:5da2:5e
+@Pioneer	Cassette Tape 161,-1
+1	P:Pioneer40:5ea1:1
+D. Skip	P:Pioneer40:5ea1:1
+2	P:Pioneer40:5ea1:2
+3	P:Pioneer40:5ea1:3
+4	P:Pioneer40:5ea1:4
+5	P:Pioneer40:5ea1:5
+6	P:Pioneer40:5ea1:6
+Ff >>>	P:Pioneer40:5ea1:10
+Scan >>	P:Pioneer40:5ea1:10
+Rew <<<	P:Pioneer40:5ea1:11
+Scan <<	P:Pioneer40:5ea1:11
+Rec. Mute	P:Pioneer40:5ea1:12
+Record	P:Pioneer40:5ea1:14
+Play <	P:Pioneer40:5ea1:15
+Stop	P:Pioneer40:5ea1:16
+Play	P:Pioneer40:5ea1:17
+Play >	P:Pioneer40:5ea1:17
+Pause	P:Pioneer40:5ea1:18
+Return	P:Pioneer40:5ea1:1e
+All Rewind	P:Pioneer40:5ea1:1f
+Random	P:Pioneer40:5ea1:42
+Scan	P:Pioneer40:5ea1:44
+Counter Mode	P:Pioneer40:5ea1:47
+Counter Reset	P:Pioneer40:5ea1:48
+Open/Close	P:Pioneer40:5ea1:52
 @Pioneer	Pioneer AXD7741
 Power	P:Pioneer:a5:1c
 Up	P:Pioneer:a1:84
@@ -22292,19 +26223,78 @@ Signal SEL	R:38000:33:8507,4191,583,1510,635,432,583,1513,525,538,639,414,577,15
 Effect_CH SEL	P:Pioneer:a5:4
 Minus	P:Pioneer:a5:41
 Plus	P:Pioneer:a5:42
+@Pioneer	Receiver 164,-1
+10	P:Pioneer40:5ba4:0
+1	P:Pioneer40:5ba4:1
+2	P:Pioneer40:5ba4:2
+3	P:Pioneer40:5ba4:3
+4	P:Pioneer40:5ba4:4
+5	P:Pioneer40:5ba4:5
+6	P:Pioneer40:5ba4:6
+7	P:Pioneer40:5ba4:7
+8	P:Pioneer40:5ba4:8
+9	P:Pioneer40:5ba4:9
+Band	P:Pioneer40:5ba4:13
+11/Pgm	P:Pioneer40:5ba4:46
+12/Clear	P:Pioneer40:5ba4:47
+-	P:Pioneer40:5ba4:4d
+Freq/Ch Up	P:Pioneer40:5ba4:56
+Freq/Ch Down	P:Pioneer40:5ba4:57
++	P:Pioneer40:5ba4:5c
 @Pioneer	Receiver 165,-1
+Volume +	P:Pioneer40:5aa5:a
+Volume -	P:Pioneer40:5aa5:b
 Input: Tv/Sat	P:NECext:5aa5:f30c
+Tv	P:Pioneer40:5aa5:c
+Laser Disc	P:Pioneer40:5aa5:d
 Input: Vcr2	P:NECext:5aa5:f10e
+Vcr 2	P:Pioneer40:5aa5:e
 Input: Vcr1	P:NECext:5aa5:f00f
+Vcr 1	P:Pioneer40:5aa5:f
 Input: Tape1/Md	P:NECext:5aa5:ee11
+Mute	P:Pioneer40:5aa5:12
+Audio Source 1	P:Pioneer40:5aa5:13
+Audio Source 2	P:Pioneer40:5aa5:13
 Input: Video	P:NECext:5aa5:e916
+Video 1	P:Pioneer40:5aa5:16
 Power On	P:NECext:5aa5:e51a
 Power Off	P:NECext:5aa5:e41b
+Power	P:Pioneer40:5aa5:1c
 Tape 2 Monitor	P:NECext:5aa5:e21d
+Tape 2/Monitor	P:Pioneer40:5aa5:1d
+Surround Mode	P:Pioneer40:5aa5:40
+Level Center -	P:Pioneer40:5aa5:41
+Level Rear +	P:Pioneer40:5aa5:41
+Level Center +	P:Pioneer40:5aa5:42
+Level Rear -	P:Pioneer40:5aa5:42
+Vcr 3	P:Pioneer40:5aa5:46
 Input: Tuner	P:NECext:5aa5:b847
+Tuner	P:Pioneer40:5aa5:47
+Sleep	P:Pioneer40:5aa5:48
+Ballance R	P:Pioneer40:5aa5:49
+Ballance L	P:Pioneer40:5aa5:4b
 Input: Cd	P:NECext:5aa5:b34c
+Cd	P:Pioneer40:5aa5:4c
+Phono	P:Pioneer40:5aa5:4d
+Tape 1/Dat	P:Pioneer40:5aa5:4e
+Line	P:Pioneer40:5aa5:4f
 Mute On	P:NECext:5aa5:ae51
 Mute Off	P:NECext:5aa5:ad52
+Video Select	P:Pioneer40:5aa5:54
+Acoustic	P:Pioneer40:5aa5:56
+Enhancer	P:Pioneer40:5aa5:56
+Jog Mode	P:Pioneer40:5aa5:56
+Test Tone	P:Pioneer40:5aa5:56
+Jog -	P:Pioneer40:5aa5:57
+Jog +	P:Pioneer40:5aa5:57
+Confirm	P:Pioneer40:5aa5:59
+Speaker A	P:Pioneer40:5aa5:59
+Speaker B	P:Pioneer40:5aa5:59
+Center Mode	P:Pioneer40:5aa5:5a
+Rear Bal L	P:Pioneer40:5aa5:5a
+Rear Bal R	P:Pioneer40:5aa5:5a
+Direct	P:Pioneer40:5aa5:5d
+Return	P:Pioneer40:5aa5:5d
 Input: Dvd/Ld	P:NECext:5aa5:7a85
 @Pioneer	Unknown_CD 162,-1
 Key_0	P:NECext:5da2:ff00
@@ -22811,6 +26801,25 @@ Rew	P:RC5X:14:21
 Pause	P:RC5X:14:30
 Play	P:RC5X:14:35
 Stop	P:RC5X:14:36
+@Rotel	Tuner 82,0
+Standby	P:Aiwa:52:0
+Auto Tuning	P:Aiwa:52:2
+Band	P:Aiwa:52:3
+1	P:Aiwa:52:f
+2	P:Aiwa:52:10
+3	P:Aiwa:52:11
+4	P:Aiwa:52:12
+5	P:Aiwa:52:13
+6	P:Aiwa:52:14
+7	P:Aiwa:52:15
++10	P:Aiwa:52:16
+8	P:Aiwa:52:17
+9	P:Aiwa:52:18
+10	P:Aiwa:52:19
+Tuning -	P:Aiwa:52:1a
+Tune-	P:Aiwa:52:1a
+Tuning +	P:Aiwa:52:1b
+Tune+	P:Aiwa:52:1b
 @RSQ	Karaoke 179,-1
 Replay	P:JVC:b3:b3
 On Screen	P:JVC:b3:b5
@@ -23056,6 +27065,39 @@ silence	R:38000:33:4550,4464,585,420,584,420,584,420,612,392,529,1478,531,1479,5
 woof_up	R:38000:33:4551,4464,556,449,555,450,553,450,530,474,530,1478,531,1478,531,475,554,452,552,1455,554,1478,530,1479,529,1480,528,477,527,478,526,478,526,478,526,4497,526,478,526,478,526,478,526,478,526,478,526,1483,526,478,526,478,526,478,526,478,526,478,526,1483,526,1483,526,478,526,1483,526,1483,526,1483,525,1483,526,1483,526,478,526
 woof_down	R:38000:33:4553,4465,584,420,584,420,584,420,584,421,529,1478,531,1478,531,475,555,451,553,1455,554,1479,529,1480,528,1481,527,477,527,478,526,478,526,478,526,4497,526,478,526,478,526,478,526,478,527,1483,526,1483,526,479,526,478,526,479,526,478,526,478,526,1484,525,479,525,478,526,1484,525,1483,526,1483,526,1484,525,1484,525,478,526,55493,4546,4493,526,478,526,478,526,478,526,478,526,1483,526,1483,526,478,526,478,526,1483,526,1483,526,1483,526,1483,526,478,526,478,526,478,526,478,526,4497,526,478,526,478,526,478,526,478,526,1483,526,1483,526,478,526,479,526,478,526,478,526,478,526,1484,525,478,526,479,526,1483,526,1483,526,1483,526,1483,526,1483,526,478,526
 pause_play	R:38000:33:4552,4464,586,420,584,420,584,420,612,392,529,1478,531,1478,531,476,553,451,553,1455,554,1479,528,1480,528,1481,527,478,526,478,526,478,526,478,526,4497,526,478,526,478,526,478,526,478,526,478,526,1483,526,478,526,1483,526,478,526,478,526,478,526,1483,526,1483,526,478,526,1483,526,479,525,1483,526,1483,526,1483,526,478,526
+@Samsung	Unknown_hifi 0,1
+A-RPlay	P:Aiwa:100:0
+A-Play	P:Aiwa:100:1
+A-FFwd	P:Aiwa:100:2
+A-Rew	P:Aiwa:100:3
+A-Stop	P:Aiwa:100:4
+B-RPlay	P:Aiwa:100:5
+B-Play	P:Aiwa:100:6
+B-FFwd	P:Aiwa:100:7
+TuneUp	P:Aiwa:100:8
+TuneDown	P:Aiwa:100:9
+CD-Stop	P:Aiwa:100:a
+B-Rew	P:Aiwa:100:b
+CD-FFwd	P:Aiwa:100:c
+CD-Rew	P:Aiwa:100:d
+Key_Volumeup	P:Aiwa:100:e
+Key_Volumedown	P:Aiwa:100:f
+CD-Play	P:Aiwa:100:10
+B-Stop	P:Aiwa:100:11
+B-RRec	P:Aiwa:100:12
+B-FRec	P:Aiwa:100:13
+B-RecMute	P:Aiwa:100:14
+Key_Sleep	P:Aiwa:100:15
+PresetUp	P:Aiwa:100:16
+Key_Mute	P:Aiwa:100:17
+Band	P:Aiwa:100:18
+Key_Power	P:Aiwa:100:19
+PresetDown	P:Aiwa:100:1a
+Key_Tuner	P:Aiwa:100:1b
+Key_Cd	P:Aiwa:100:1c
+Phono	P:Aiwa:100:1d
+Key_Tape	P:Aiwa:100:1e
+Key_Aux	P:Aiwa:100:1f
 @Sangean	Sangean RC30
 Power	R:38000:33:9150,4435,643,1608,643,468,644,469,642,364,749,468,643,447,665,449,663,469,643,452,660,470,642,450,662,442,670,449,662,469,643,1579,672,1608,642,1580,671,1609,641,1607,643,1578,672,1607,643,1608,642,1606,644,1606,644,1606,644,1607,643,1576,675,1579,671,1605,674,438,645,466,673,438,646,466,674,437,673,439,672,439,673,438,646,1604,673,1577,673,1578,673,1577,674,1577,673,23799,9095,4485,616
 Source	R:38000:33:9128,4458,617,1634,673,439,672,440,617,520,592,520,591,520,591,520,619,492,592,519,592,519,592,519,592,519,618,494,617,494,617,1633,617,1634,617,1634,616,1636,615,1635,615,1636,614,1636,614,1637,614,1636,614,1636,614,1636,614,1636,615,497,615,1637,613,497,615,498,614,497,614,498,614,498,614,497,615,1637,614,498,614,1637,614,1637,614,1637,614,1637,614,1637,614,1637,614,23857,9120,4460,614
@@ -25692,6 +29734,39 @@ Peak_Search	P:Panasonic:aa0:8f
 Time_Fade	P:Panasonic:aa0:94
 Tape_Length	P:Panasonic:aa0:ab
 Side_A/B	P:Panasonic:aa0:ac
+@TELEFUNKEN	AUDIO_IR3000 0,1
+Tape1_Play_Bkwd	P:Aiwa:100:0
+Tape1_Play_Fwd	P:Aiwa:100:1
+Tape1_Fwd	P:Aiwa:100:2
+Tape1_Rew	P:Aiwa:100:3
+Tape1_Stop	P:Aiwa:100:4
+Tape2_Bkwd_Play	P:Aiwa:100:5
+Tape2_Fwd_Play	P:Aiwa:100:6
+Tape2_Fwd	P:Aiwa:100:7
+Tuner_Up	P:Aiwa:100:8
+Tuner_Down	P:Aiwa:100:9
+Cd_Stop	P:Aiwa:100:a
+Tape2_Rew	P:Aiwa:100:b
+Cd_Fwd_Skip	P:Aiwa:100:c
+Cd_Bkwd_Skip	P:Aiwa:100:d
+Key_Volumeup	P:Aiwa:100:e
+Key_Volumedown	P:Aiwa:100:f
+Cd_Play	P:Aiwa:100:10
+Tape2_Stop	P:Aiwa:100:11
+Tape2_Bkwd_Rec	P:Aiwa:100:12
+Tape2_Fwd_Rec	P:Aiwa:100:13
+Tape2_Rec_Mute	P:Aiwa:100:14
+Tuner_Sleep	P:Aiwa:100:15
+Tuner_Preset_Up	P:Aiwa:100:16
+Key_Mute	P:Aiwa:100:17
+Tuner_Band	P:Aiwa:100:18
+Key_Power	P:Aiwa:100:19
+Tuner_Preset_Down	P:Aiwa:100:1a
+Key_Tuner	P:Aiwa:100:1b
+Key_Cd	P:Aiwa:100:1c
+Aux2	P:Aiwa:100:1d
+Key_Tape	P:Aiwa:100:1e
+Aux1	P:Aiwa:100:1f
 @Terratec	Internet Radio 4,243
 Power	P:NECext:f304:fe01
 1	P:NECext:f304:fd02
@@ -26358,6 +30433,15 @@ TVOL	P:NEC:0:4c
 TSHD	P:NEC:0:50
 Trebel	P:NEC:0:3
 Bass	P:NEC:0:2
+@VocoPro	Karaoke 32,1
+Skip <<	P:Aiwa:120:2
+Skip >>	P:Aiwa:120:3
+Display	P:Aiwa:120:4
+Stop	P:Aiwa:120:5
+Play/Pause	P:Aiwa:120:6
+Repeat	P:Aiwa:120:7
+Memory	P:Aiwa:120:8
+Open/Close	P:Aiwa:120:c
 @Winnes	Winnes KC809
 Power	P:NECext:ef00:e31c
 Bluetooth	P:NECext:ef00:e01f
@@ -27001,6 +31085,8 @@ vol up	P:NECext:827d:a15e
 vol down	P:NECext:827d:a05f
 @Yamaha	Receiver 0,-1
 Zone 2 On	P:RC5X:0:0
+@Yamaha	Receiver 0,0
+Sirius: A	P:NECext:0:fe01
 @Yamaha	Receiver 120,-1
 Stop	P:NECext:8778:fe01
 Play/Pause	P:NECext:8778:fd02
@@ -27127,7 +31213,7 @@ Preset -	P:NECext:857a:ee11
 Preset --	P:NECext:857a:ee11
 Preset <	P:NECext:857a:ee11
 Preset/ Ch. Dn	P:NECext:857a:ee11
-Preset Down	P:NECext:857a:ee11
+Preset Down	P:Pioneer40:857a:11
 Tuner Preset -	P:NECext:857a:ee11
 Tuner Preset Ch Down	P:NECext:857a:ee11
 Tuner Down	P:NECext:857a:ee11
@@ -27384,6 +31470,7 @@ Mz: Hdmi Out Tog	P:NECext:857a:ca35
 Disp Display Tog	P:NECext:857a:c936
 Z2: Display Toggle	P:NECext:857a:c936
 Display Toggle	P:NECext:857a:c936
+Setup: Enter	P:NECext:857a:c936
 Z3: Display Toggle	P:NECext:857a:c837
 Display	P:NECext:857a:c837
 Z4: Display Toggle	P:NECext:857a:c738
@@ -29155,6 +33242,7 @@ Dc1 Trg Ctrl All	P:NECext:817e:cb34
 Dc1 Trg Ctrl All Or	P:NECext:817e:cb34
 12V: Dc1 Ctl All	P:NECext:817e:cb34
 Dc1 Trig Ctrl All	P:NECext:817e:cb34
+Dsp 3D Dsp On	P:NECext:817e:cb34
 Dc1 Trg Ctl: All Or	P:NECext:817e:cb34
 Dc1 Trg Ctrl All Zon	P:NECext:817e:cb34
 A-B	P:NECext:817e:cb34
@@ -29171,6 +33259,7 @@ Sys Mem: Load 1	P:NECext:817e:ca35
 Sys Mem 1 Recall	P:NECext:817e:ca35
 Mz: Sysm Rec 1	P:NECext:817e:ca35
 Home Bank Recall A	P:NECext:817e:ca35
+Dual Mono All	P:NECext:817e:ca35
 Home Recall B	P:NECext:817e:c936
 Hm Bk Preset Rcl B	P:NECext:817e:c936
 Mz: Hm P Recl B	P:NECext:817e:c936
@@ -29761,7 +33850,6 @@ Z2 Vol Bank Recall F	P:NECext:817e:6d92
 Z2: Vol Recall 6	P:NECext:817e:6d92
 Dual Mono Main	P:NECext:817e:6c93
 Dual Mono Sub	P:NECext:817e:6b94
-Dual Mono All	P:NECext:817e:6a95
 12V: Dc2 Ctl Z1	P:NECext:817e:6996
 Dc2 Trig Ctrl Z1	P:NECext:817e:6996
 Dc2 Trg Ctl: Zone 1	P:NECext:817e:6996
@@ -30437,6 +34525,7 @@ Pro Logic Normal	P:NECext:817e:7f8
 Dsp Ent Sports	P:NECext:817e:7f8
 Dsp Tv Sports	P:NECext:817e:7f8
 Pgm Variety Sports	P:NECext:817e:7f8
+Dsp: Standard	P:NECext:817e:7f8
 Prgrm Spectacle	P:NECext:817e:6f9
 Movie Spectacle	P:NECext:817e:6f9
 Movie Enhanced	P:NECext:817e:6f9
@@ -30470,7 +34559,6 @@ Prgrm Standard Alt.	P:NECext:817e:2fd
 Dolby/Dts Normal	P:NECext:817e:2fd
 Dsp Normal	P:NECext:817e:2fd
 Dsp: Normal	P:NECext:817e:2fd
-Dsp: Standard	P:NECext:817e:2fd
 Dsp: Sur. Decode	P:NECext:817e:2fd
 Dsp Standard Tog	P:NECext:817e:2fd
 Dsp Sur. Decode	P:NECext:817e:2fd
@@ -30505,6 +34593,8 @@ Pgm 8Ch Stereo	P:NECext:817e:ff
 Dsp: 9Ch Stereo	P:NECext:817e:ff
 Dsp: Xch Stereo	P:NECext:817e:ff
 @Yamaha	Receiver 127,1
+Srce: Z3 Preset -	P:NECext:17f:fb04
+Z4 Source: Op 12	P:NECext:17f:f609
 Dock Bluetooth Pair	P:NECext:17f:f20d
 Ipod Up	P:NECext:17f:f10e
 Ipod Cursor Up	P:NECext:17f:f10e
@@ -31140,6 +35230,33 @@ Tuner Srch Mode Auto	P:NECext:17f:ff
 6	P:NECext:2ed1:ec13
 7	P:NECext:2ed1:eb14
 8	P:NECext:2ed1:ea15
+@Yamaha	Receiver 4,-1
+0	P:RC6:4:0
+1	P:RC6:4:1
+2	P:RC6:4:2
+3	P:RC6:4:3
+4	P:RC6:4:4
+5	P:RC6:4:5
+6	P:RC6:4:6
+7	P:RC6:4:7
+8	P:RC6:4:8
+9	P:RC6:4:9
+Display	P:RC6:4:f
+Skip Up	P:RC6:4:20
+Skip Down	P:RC6:4:21
+Fast Forward	P:RC6:4:28
+Rewind	P:RC6:4:29
+Play	P:RC6:4:2c
+Pause	P:RC6:4:30
+Stop	P:RC6:4:31
+Menu	P:RC6:4:54
+Enter	P:RC6:4:5c
+Title	P:RC6:4:71
++10	P:RC6:4:78
+Return	P:RC6:4:83
+@Yamaha	Receiver 6,-1
+Channel +	P:Akai:6:6c
+Channel -	P:Akai:6:6d
 @Yamaha	Stereo Receiver 125,-1
 Tuner Fm	P:NECext:827d:d827
 Tuner Am	P:NECext:827d:d728

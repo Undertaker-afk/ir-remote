@@ -147,6 +147,42 @@ def irdb_signal(proto, d, sd, f):
         return "P:Panasonic:%x:%x" % (d | sd << 8, f)
     if pl == "jvc" and 0 <= d < 256 and 0 <= f < 256:
         return "P:JVC:%x:%x" % (d, f)
+    if pl in ("nec1-f16", "nec2-f16"):
+        s = sd if sd >= 0 else inv8(d)
+        if 0 <= d < 256 and 0 <= s < 256 and 0 <= f < 256:
+            return "P:NECext:%x:%x" % (d | s << 8, f | inv8(f) << 8)
+    if pl == "mitsubishi" and 0 <= d < 128 and 0 <= f < 256:
+        return "P:Mitsubishi:%x:%x" % (d, f)
+    if pl == "aiwa" and 0 <= d < 256 and 0 <= f < 256:
+        s = sd if sd >= 0 else 0
+        if s < 32:
+            return "P:Aiwa:%x:%x" % (d | s << 8, f)
+    if pl == "rc6" and 0 <= d < 256 and 0 <= f < 256:
+        return "P:RC6:%x:%x" % (d, f)
+    if pl == "denon" and 0 <= d < 32 and 0 <= f < 256:
+        return "P:Denon:%x:%x" % (d, f)
+    if pl == "sharp" and 0 <= d < 32 and 0 <= f < 256:
+        return "P:Sharp:%x:%x" % (d, f)
+    if pl == "denon-k" and 0 <= d < 16 and 0 <= sd < 16 and 0 <= f < 4096:
+        return "P:DenonK:%x:%x" % (d | sd << 4, f)
+    if pl == "pioneer" and 0 <= d < 256 and 0 <= f < 256:
+        s = sd if sd >= 0 else 255 - d
+        if 0 <= s < 256:
+            return "P:Pioneer40:%x:%x" % (d | s << 8, f)
+    if pl == "proton" and 0 <= d < 256 and 0 <= f < 256:
+        return "P:Proton:%x:%x" % (d, f)
+    if pl == "akai" and 0 <= d < 8 and 0 <= f < 128:
+        return "P:Akai:%x:%x" % (d, f)
+    if pl == "fujitsu" and 0 <= d < 256 and 0 <= f < 256:
+        s = sd if sd >= 0 else d
+        if 0 <= s < 256:
+            return "P:Fujitsu:%x:%x" % (d | s << 8, f)
+    if pl == "rca-38" and 0 <= d < 16 and 0 <= f < 256:
+        return "P:RCA38:%x:%x" % (d, f)
+    if pl == "panasonic_old" and 0 <= d < 32 and 0 <= f < 64:
+        return "P:PanasonicOld:%x:%x" % (d, f)
+    if pl == "mce" and 0 <= d < 128 and 0 <= sd < 256 and 0 <= f < 256:
+        return "P:MCE:%x:%x" % (d | sd << 8, f)
     return None
 
 
