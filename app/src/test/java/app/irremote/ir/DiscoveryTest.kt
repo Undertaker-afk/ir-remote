@@ -51,7 +51,7 @@ class CuratedMatchTest {
         // The user's TV reports "Samsung" / "UCU7000" over AirPlay; the curated remote lists the series code CU7000.
         val d = DiscoveryParsers.airPlay("43\" Crystal UHD", mapOf("manufacturer" to "Samsung", "model" to "UCU7000"))
         val tokens = ModelMatcher.tokens(d.text)
-        val curated = "Crystal UHD smart remote (BN59-01315, 01358, 01385) CU7000 AU7000 BU8000 TU7000 DU7000 RU7100 NU7100 UU7000"
+        val curated = "BN59-01388 TM2240A Crystal UHD 2023-2024 (CU7000 CU7000D DU7200 DU6900 CU7172)"
         assertTrue(ModelMatcher.score("Samsung", curated, tokens) >= 10)
         assertTrue(ModelMatcher.score("Samsung", "AA59-00443A", tokens) < 10) // brand-only match stays below the exact threshold
     }

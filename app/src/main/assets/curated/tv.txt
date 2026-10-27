@@ -1,4 +1,4 @@
-@Samsung	Crystal UHD smart remote (BN59-01315, 01358, 01385) CU7000 AU7000 BU8000 TU7000 DU7000 RU7100 NU7100 UU7000
+@Samsung	Crystal UHD smart remote 2019-2022 (BN59-01315, BN59-01358, BN59-01385)
 Power	P:Samsung32:7:e6
 Power alt	P:Samsung32:7:2
 Source	P:Samsung32:7:1
@@ -47,3 +47,23 @@ Samsung TV Plus	P:Samsung32:7:b4
 Ambient	P:Samsung32:7:f6
 Web	P:Samsung32:7:37
 Subtitles	P:Samsung32:7:25
+@Samsung	BN59-01388 TM2240A Crystal UHD 2023-2024 (CU7000 CU7000D DU7200 DU6900 CU7172)
+Power	P:Samsung32:7:e6
+123	P:Samsung32:7:d2
+Red/Green/Yellow/Blue	P:Samsung32:7:ce
+Up	P:Samsung32:7:60
+Down	P:Samsung32:7:61
+Left	P:Samsung32:7:65
+Right	P:Samsung32:7:62
+Enter	P:Samsung32:7:68
+Back	P:Samsung32:7:58
+Home	P:Samsung32:7:79
+Play/Pause	P:Samsung32:7:b9
+Vol up	P:Samsung32:7:7
+Vol dn	P:Samsung32:7:b
+Ch next	P:Samsung32:7:12
+Ch prev	P:Samsung32:7:10
+Netflix	P:Samsung32:7:f3
+Prime Video	P:Samsung32:7:f4
+Samsung TV Plus	P:Samsung32:7:b4
+Disney Plus	P:Samsung32:7:df

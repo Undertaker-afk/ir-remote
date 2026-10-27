@@ -32,7 +32,7 @@ An open-source Android universal IR remote in the style of Mi Remote, driven by 
     code*, *Find nearby device* and the wizard (candidates ordered by model fit) all use it. Accuracy on the bundled data
     (`MatchEngineTest`, leave-one-out: same model typed with another size/region): series 78/78, part-number revisions
     28/28. It can only point to remotes that exist in the database, and TV *serial* numbers carry no remote information.
-    A few hand-curated remotes live in `assets/curated/` (e.g. Samsung Crystal UHD) and are added to either data source.
+    A few hand-curated remotes live in `assets/curated/` (e.g. Samsung Crystal UHD 2019-2022 and BN59-01388 for the 2023-24 CU7000/DU7200 series) and are added to either data source.
 8. **Find my code**: photograph a model sticker (or pick a photo); text is read on-device with ML Kit and matched against
    the database, model codes outranking brand names. The recognised text is editable.
 9. **Custom layout**: per remote, choose any buttons, rename and order them ("Edit my layout" in the remote menu).

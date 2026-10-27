@@ -133,15 +133,17 @@ class MatchEngineTest {
     }
 
     /** The real case: a Samsung 43" Crystal UHD announces model "UCU7000" over AirPlay. */
-    @Test fun crystalUhdOverAirPlayFindsTheCuratedRemoteFirst() {
+    @Test fun crystalUhdOverAirPlayFindsTheBn5901388RemoteFirst() {
         val f = File("src/main/assets/curated/tv.txt")
         org.junit.Assume.assumeTrue(f.exists())
         val e = MatchEngine(loadRemotes("src/main/assets/db/tv.txt", "src/main/assets/curated/tv.txt").map { Category.TV to it })
         val top = e.match("Samsung UCU7000 43\" Crystal UHD AirPlay", limit = 5)
         println("TOP: " + top.map { "${it.remote.model.take(40)} [${it.tier}]" })
-        assertTrue(top.first().remote.model.contains("Crystal UHD"))
+        assertTrue(top.first().remote.model.contains("BN59-01388"))
         assertEquals(Tier.SAME_SERIES, top.first().tier)
+        // the 2019-2022 Crystal UHD remote must not be offered as a CU7000 series match
+        assertTrue(top.none { it.remote.model.contains("2019-2022") && it.tier <= Tier.SAME_SERIES })
         // the same TV typed with its full model number and region suffix
-        assertTrue(e.match("UE43CU7000UXZG", limit = 3).first().remote.model.contains("Crystal UHD"))
+        assertTrue(e.match("UE43CU7000UXZG", limit = 3).first().remote.model.contains("BN59-01388"))
     }
 }
