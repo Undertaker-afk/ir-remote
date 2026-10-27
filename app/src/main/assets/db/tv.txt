@@ -1,3 +1,52 @@
+@ADLER	TV 2,-1
+Up	P:NECext:fd02:ff00
+Down	P:NECext:fd02:fe01
+Right	P:NECext:fd02:fd02
+Left	P:NECext:fd02:fc03
+Menu	P:NECext:fd02:fb04
+Repeat?	P:NECext:fd02:fa05
+8	P:NECext:fd02:f906
+Mute	P:NECext:fd02:f807
+Audio	P:NECext:fd02:f708
+Prog-	P:NECext:fd02:f609
+Power	P:NECext:fd02:f50a
+Source	P:NECext:fd02:f30c
+1	P:NECext:fd02:ee11
+2	P:NECext:fd02:ed12
+3	P:NECext:fd02:ec13
+5	P:NECext:fd02:eb14
+6	P:NECext:fd02:ea15
+7	P:NECext:fd02:e916
+9	P:NECext:fd02:e817
+0	P:NECext:fd02:e718
+Vol-	P:NECext:fd02:e51a
+Exit	P:NECext:fd02:e41b
+Fav	P:NECext:fd02:e21d
+Sub.T	P:NECext:fd02:e11e
+Ok	P:NECext:fd02:e01f
+Epg	P:NECext:fd02:cf30
+Sat.List	P:NECext:fd02:ce31
+Picture	P:NECext:fd02:cd32
+Rewind.Back	P:NECext:fd02:cc33
+Play	P:NECext:fd02:cb34
+Pause	P:NECext:fd02:ca35
+Rewind.Forward	P:NECext:fd02:c936
+Skip.Prev	P:NECext:fd02:c837
+Stop	P:NECext:fd02:c738
+Record	P:NECext:fd02:c639
+Info	P:NECext:fd02:bf40
+Setup	P:NECext:fd02:b946
+Text	P:NECext:fd02:b748
+4	P:NECext:fd02:b44b
+Prog+	P:NECext:fd02:af50
+Vol+	P:NECext:fd02:ae51
+Backlight	P:NECext:fd02:a758
+3D	P:NECext:fd02:a55a
+Skip.Next	P:NECext:fd02:9f60
+Radio	P:NECext:fd02:9e61
+Sleep	P:NECext:fd02:9d62
+S/M/D	P:NECext:fd02:9c63
+Res.	P:NECext:fd02:9b64
 @Akai	AKAI ATE 22Y604W
 Power	P:NECext:7201:e11e
 Mute	P:NECext:7201:a35c
@@ -23,6 +72,40 @@ Left	P:NECext:7201:fd02
 Right	P:NECext:7201:bf40
 Menu	P:NECext:7201:e31c
 Exit	P:NECext:7201:e718
+@Akai	Unknown_TV 0,-1
+Mix	P:RC5X:0:4
+Double	P:RC5X:0:7
+Key_Subtitle	P:RC5X:0:a
+Key_Stop	P:RC5X:0:c
+Reveal	P:RC5X:0:e
+Update	P:RC5X:0:f
+Key_0	P:RC5X:0:10
+Key_1	P:RC5X:0:11
+Key_2	P:RC5X:0:12
+Key_3	P:RC5X:0:13
+Key_4	P:RC5X:0:14
+Key_5	P:RC5X:0:15
+Key_6	P:RC5X:0:16
+Key_7	P:RC5X:0:17
+Key_8	P:RC5X:0:18
+Key_9	P:RC5X:0:19
+Key_102Nd	P:RC5X:0:1a
+Key_Down	P:RC5X:0:1b
+Key_Up	P:RC5X:0:1c
+Key_Power	P:RC5X:0:20
+Key_Right	P:RC5X:0:24
+Key_Left	P:RC5X:0:25
+Key_Red	P:RC5X:0:26
+Swap	P:RC5X:0:27
+Key_Ok	P:RC5X:0:28
+Key_Menu	P:RC5X:0:29
+av/tv	P:RC5X:0:2a
+Key_Mute	P:RC5X:0:2b
+Key_Green	P:RC5X:0:2c
+Key_Yellow	P:RC5X:0:2e
+White	P:RC5X:0:2f
+Key_Text	P:RC5X:0:31
+Key_Blue	P:RC5X:0:33
 @Amazon	FireTV Omni Series 4K
 Power	P:NECext:7d02:b946
 Home	P:NECext:7d02:609f
@@ -88,6 +171,41 @@ Stop	P:NEC:1:52
 Run	P:NEC:1:54
 Mute	P:NEC:1:41
 Mouse	P:NEC:1:0
+@ANITECH	TV 0,-1
+Key_Power	P:RC5X:0:c
+Key_Mute	P:RC5X:0:d
+Display	P:RC5X:0:f
+Key_Volumeup	P:RC5X:0:10
+Key_Volumedown	P:RC5X:0:11
+Key_Channelup	P:RC5X:0:20
+Key_Channeldown	P:RC5X:0:21
+Key_Sleep	P:RC5X:0:26
+@AOC	TV 0,189
+Key_Power	P:NECext:bd00:fe01
+Key_Mute	P:NECext:bd00:fb04
+Tvvideo	P:NECext:bd00:fa05
+Key_Menu	P:NECext:bd00:f50a
+Key_Right	P:NECext:bd00:f30c
+Key_Left	P:NECext:bd00:ef10
+Pip	P:NECext:bd00:ed12
+Key_Sleep	P:NECext:bd00:ec13
+Wide	P:NECext:bd00:eb14
+Key_1	P:NECext:bd00:ea15
+Key_2	P:NECext:bd00:e916
+Key_3	P:NECext:bd00:e817
+Key_Up	P:NECext:bd00:e718
+Key_4	P:NECext:bd00:e619
+Key_5	P:NECext:bd00:e51a
+Key_6	P:NECext:bd00:e41b
+Key_Down	P:NECext:bd00:e31c
+Key_7	P:NECext:bd00:e21d
+Key_8	P:NECext:bd00:e11e
+Key_9	P:NECext:bd00:e01f
+Key_Info	P:NECext:bd00:bf40
+Key_0	P:NECext:bd00:be41
+Prech	P:NECext:bd00:bb44
+Key_Pc	P:NECext:bd00:ba45
+Plusminus	P:NECext:bd00:b44b
 @Aorus	Aorus FV43U
 Power	P:NEC:0:1a
 Source	P:NEC:0:1b
@@ -114,6 +232,14 @@ Center	P:NECext:7f00:af50
 0	P:NECext:7f00:e51a
 Power	P:NECext:7f00:f50a
 Menu	P:NECext:7f00:a55a
+@Audiovox	Monitor 128,126
+Menu	P:NECext:7e80:fe01
+Mode	P:NECext:7e80:fd02
+Memory	P:NECext:7e80:f906
+Up	P:NECext:7e80:f50a
+Dn	P:NECext:7e80:f30c
+Save	P:NECext:7e80:f20d
+Pwr	P:NECext:7e80:e817
 @AWA	AWA MSDV3268O5D0
 Power	P:NECext:df00:e31c
 Input	P:NECext:df00:e817
@@ -281,6 +407,40 @@ Right	P:NECext:df00:f807
 Left	P:NECext:df00:b847
 Down	P:NECext:df00:b748
 Source	P:NECext:df00:e817
+@Beko	Unknown_TV 0,-1
+Mix	P:RC5X:0:4
+Double	P:RC5X:0:7
+Key_Subtitle	P:RC5X:0:a
+Key_Stop	P:RC5X:0:c
+Reveal	P:RC5X:0:e
+Update	P:RC5X:0:f
+Key_0	P:RC5X:0:10
+Key_1	P:RC5X:0:11
+Key_2	P:RC5X:0:12
+Key_3	P:RC5X:0:13
+Key_4	P:RC5X:0:14
+Key_5	P:RC5X:0:15
+Key_6	P:RC5X:0:16
+Key_7	P:RC5X:0:17
+Key_8	P:RC5X:0:18
+Key_9	P:RC5X:0:19
+X_Key_1_X_Channels	P:RC5X:0:1a
+Pr_Down	P:RC5X:0:1b
+Pr_Up	P:RC5X:0:1c
+Key_Power	P:RC5X:0:20
+Key_Volumeup	P:RC5X:0:24
+Vol_Low	P:RC5X:0:25
+Key_Red	P:RC5X:0:26
+Swap	P:RC5X:0:27
+Key_Ok	P:RC5X:0:28
+Key_Menu	P:RC5X:0:29
+Av/Tv	P:RC5X:0:2a
+Key_Mute	P:RC5X:0:2b
+Key_Green	P:RC5X:0:2c
+Key_Yellow	P:RC5X:0:2e
+Key_I	P:RC5X:0:2f
+Key_Text	P:RC5X:0:31
+Key_Blue	P:RC5X:0:33
 @BenQ	BenQ EX2780Q
 Power	P:NECext:3060:fd02
 Input	P:NECext:3060:fc03
@@ -623,6 +783,80 @@ Red	R:38000:33:9210,4445,657,510,629,510,628,1616,627,515,623,542,597,542,597,54
 Green	R:38000:33:9210,4444,631,535,627,512,627,1617,626,515,623,543,597,519,621,542,597,542,597,1647,597,1648,596,542,597,1648,596,1648,595,1649,596,1648,572,1672,572,567,573,567,572,1672,572,567,573,567,573,544,596,1648,596,542,598,1648,597,1648,597,542,622,1623,622,1622,623,1622,622,517,622,1622,623,39846,9182,2242,596,95961,9233,2218,596
 Yellow	R:38000:33:9209,4444,632,536,627,512,625,1618,624,517,598,567,572,567,572,567,572,543,596,1673,571,1672,572,567,572,1673,571,1648,596,1672,572,1672,572,1672,572,1672,572,567,572,1672,572,567,572,568,571,567,572,1673,572,567,572,568,571,1673,571,567,572,1673,571,1673,571,1673,572,568,571,1673,572,39874,9205,2218,596,95966,9231,2219,595
 Blue	R:38000:33:9213,4446,632,536,628,511,627,1616,627,539,598,542,597,542,597,542,598,542,598,1647,597,1648,597,542,598,1648,596,1648,597,1648,597,1648,597,1648,596,543,597,1648,596,1648,597,543,596,543,597,543,597,1648,597,542,597,1648,597,543,596,543,597,1648,597,1648,597,1648,597,543,596,1649,596,39850,9204,2220,596,95993,9207,2218,597
+@CIS BOX	Plasma 1,-1
+1	P:SIRC:1:0
+2	P:SIRC:1:1
+3	P:SIRC:1:2
+4	P:SIRC:1:3
+5	P:SIRC:1:4
+6	P:SIRC:1:5
+7	P:SIRC:1:6
+8	P:SIRC:1:7
+9	P:SIRC:1:8
+0	P:SIRC:1:f
+Ch+	P:SIRC:1:10
+Ch-	P:SIRC:1:11
+Mute	P:SIRC:1:14
+Mts	P:SIRC:1:17
+Pwr On	P:SIRC:1:2e
+Pwr Off	P:SIRC:1:2f
+Display	P:SIRC:1:3a
+Line	P:SIRC:1:40
+Rgb1	P:SIRC:1:43
+Rgb2	P:SIRC:1:44
+Y/C	P:SIRC:1:4d
+Menu	P:SIRC:1:60
+Enter	P:SIRC:1:65
+Select+	P:SIRC:1:74
+Select-	P:SIRC:1:75
+@CIS BOX	Plasma 119,-1
+H Shift	P:SIRC15:77:10
+V Shift	P:SIRC15:77:11
+H Size	P:SIRC15:77:12
+V Size	P:SIRC15:77:13
+Set	P:SIRC15:77:7e
+@CIS BOX	Plasma 164,-1
+Aspect	P:SIRC15:a4:3d
+Zoom	P:SIRC15:a4:7d
+Degauss	P:SIRC15:a4:7e
+@CIS BOX	TV 1,-1
+Guide	P:SIRC:1:e
+Vol Up	P:SIRC:1:12
+Vol Dn	P:SIRC:1:13
+Ant	P:SIRC:1:2a
+Pwr On	P:SIRC:1:2e
+Pwr Off	P:SIRC:1:2f
+Display	P:SIRC:1:3a
+In1	P:SIRC:1:40
+In2	P:SIRC:1:41
+In3	P:SIRC:1:42
+In4	P:SIRC:1:47
+In5	P:SIRC:1:48
+Pip On Off	P:SIRC:1:5b
+Pic Mode	P:SIRC:1:5e
+Exit	P:SIRC:1:63
+@CIS BOX	TV 164,-1
+Jump	P:SIRC15:a4:3b
+Wide Mode	P:SIRC15:a4:3d
+Wide Zoom	P:SIRC15:a4:42
+@CIS BOX	TV 26,26
+1	P:SIRC20:35a:0
+2	P:SIRC20:35a:1
+3	P:SIRC20:35a:2
+4	P:SIRC20:35a:3
+5	P:SIRC20:35a:4
+6	P:SIRC20:35a:5
+7	P:SIRC20:35a:6
+8	P:SIRC20:35a:7
+9	P:SIRC20:35a:8
+0	P:SIRC20:35a:f
+Channel +	P:SIRC20:35a:10
+Channel -	P:SIRC20:35a:11
+@CIS BOX	TV 84,-1
+Cursor Right	P:SIRC15:54:33
+Cursor Left	P:SIRC15:54:34
+Cursor Up	P:SIRC15:54:35
+Cursor Down	P:SIRC15:54:36
 @Cleartouch	Cleartouch
 Power	P:NEC:20:52
 Vol_up	P:NEC:20:3
@@ -721,6 +955,43 @@ Pip	P:NECext:bf42:f906
 Auto	P:NECext:bf42:e11e
 Vol_Up	P:NECext:bf42:e41b
 Vol_Dwn	P:NECext:bf42:e01f
+@Coby	TV 0,127
+8	P:NECext:7f00:fd02
+-/--	P:NECext:7f00:fc03
+2	P:NECext:7f00:f906
+5	P:NECext:7f00:f807
+Power	P:NECext:7f00:f50a
+Mode	P:NECext:7f00:f40b
+1	P:NECext:7f00:f10e
+3	P:NECext:7f00:f00f
+4	P:NECext:7f00:ed12
+6	P:NECext:7f00:ec13
+7	P:NECext:7f00:e916
+9	P:NECext:7f00:e817
+0	P:NECext:7f00:e51a
+Return	P:NECext:7f00:e41b
+Volume +	P:NECext:7f00:e11e
+Channel +	P:NECext:7f00:e01f
+Mute	P:NECext:7f00:b34c
+Sound	P:NECext:7f00:b24d
+Format	P:NECext:7f00:b14e
+Epg	P:NECext:7f00:b04f
+Info	P:NECext:7f00:af50
+Ch List	P:NECext:7f00:ae51
+Fav	P:NECext:7f00:ad52
+P-Mode	P:NECext:7f00:ac53
+Exit	P:NECext:7f00:ab54
+C.C.	P:NECext:7f00:aa55
+Cursor Down	P:NECext:7f00:a956
+Sleep	P:NECext:7f00:a857
+Cursor Right	P:NECext:7f00:a758
+Menu	P:NECext:7f00:a659
+Ok	P:NECext:7f00:a55a
+Cursor Left	P:NECext:7f00:a45b
+Channel -	P:NECext:7f00:a35c
+Mts	P:NECext:7f00:a25d
+Cursor Up	P:NECext:7f00:a15e
+Volume -	P:NECext:7f00:a05f
 @ContinentalEdison	ContinentalEdison
 Power	P:NECext:7f00:e11e
 Mute	P:NECext:7f00:a35c
@@ -920,6 +1191,45 @@ plusv	R:38000:33:346,2048,375,2074,347,2045,376,871,346,872,346,844,321,2129,292
 downv	R:38000:33:374,2077,346,2076,345,2075,346,873,345,846,372,845,373,2049,372,845,373,875,342,2050,320,927,291,2102,320,901,317,2102,320,927,291,927,291,25912,290,2132,291,2131,290,2131,290,928,290,927,291,927,291,2130,291,927,291,926,292,2130,291,926,292,2130,291,927,291,2130,291,927,291,927,291,25911,290,2132,291,2131,290,2132,289,929,313,905,314,904,314,2108,314,905,313,905,313,2109,313,905,313,2108,314,905,313,2108,314,905,313,905,313
 foto	R:38000:33:376,2077,346,2045,376,2047,374,843,375,843,375,846,371,2049,319,898,320,900,318,927,291,2130,291,2130,291,926,292,2130,291,927,290,927,291,25905,290,2132,291,2130,291,2130,291,927,291,926,292,926,292,2129,292,926,292,927,291,927,291,2131,290,2131,290,929,314,2107,314,905,313,906,312,25880,289,2134,314,2108,313,2108,313,906,312,906,312,906,312,2109,312,906,312,906,312,906,312,2109,312,2109,312,906,312,2109,312,906,312,907,311,25880,289,2134,314,2108,313,2108,313,906,312,906,312,906,312,2109,312,906,312,906,312,906,312,2109,312,2109,312,906,312,2109,312,906,312,906,312
 silence	R:38000:33:289,2102,320,2130,290,2102,319,927,291,927,291,928,290,2130,291,927,291,927,347,872,346,2075,345,2075,345,2076,343,874,291,927,291,927,291,25903,291,2131,291,2130,290,2130,291,927,291,927,291,927,291,2129,292,926,292,926,292,925,293,2128,293,2128,293,2128,293,925,293,926,292,926,292,25905,291,2131,291,2130,291,2130,291,927,291,927,291,927,291,2130,291,928,290,928,290,928,290,2131,290,2131,290,2132,289,928,290,928,290,928,290
+@Curtis Electronics	Unknown_TV 0,-1
+Key_0	P:RC5X:0:0
+Key_1	P:RC5X:0:1
+Key_2	P:RC5X:0:2
+Key_3	P:RC5X:0:3
+Key_4	P:RC5X:0:4
+Key_5	P:RC5X:0:5
+Key_6	P:RC5X:0:6
+Key_7	P:RC5X:0:7
+Key_8	P:RC5X:0:8
+Key_9	P:RC5X:0:9
+Key_102Nd	P:RC5X:0:a
+Key_Power	P:RC5X:0:c
+Key_Mute	P:RC5X:0:d
+Key_P	P:RC5X:0:e
+Key_C	P:RC5X:0:f
+Key_Right	P:RC5X:0:10
+Key_Left	P:RC5X:0:11
+Key_Up	P:RC5X:0:14
+Key_Down	P:RC5X:0:15
+Pip	P:RC5X:0:1b
+Key_N	P:RC5X:0:1c
+Key_Ok	P:RC5X:0:20
+Txt_Lang	P:RC5X:0:21
+Key_S	P:RC5X:0:26
+Txt_Stop	P:RC5X:0:29
+Txt_Time	P:RC5X:0:2a
+Txt_Magn	P:RC5X:0:2b
+Txt_Rev	P:RC5X:0:2c
+Txt_X	P:RC5X:0:2d
+Txt_Mix	P:RC5X:0:2e
+Key_Yellow	P:RC5X:0:32
+Key_Blue	P:RC5X:0:34
+Txt_Info	P:RC5X:0:35
+Key_Green	P:RC5X:0:36
+Key_Red	P:RC5X:0:37
+Av	P:RC5X:0:38
+Key_Text	P:RC5X:0:3c
+Key_A	P:RC5X:0:3f
 @Daewoo	Daewood Parsed
 Power	P:NEC:80:82
 Vol_up	P:NEC:80:9f
@@ -927,6 +1237,12 @@ Vol_dn	P:NEC:80:8b
 Ch_next	P:NEC:80:9b
 Ch_prev	P:NEC:80:8f
 Mute	P:NEC:80:d0
+@Daewoo	TV 4,-1
+Code2 Power On	P:NECext:fb04:f708
+Code2 Power Off	P:NECext:fb04:f708
+@Daewoo	TV 6,6
+Code3 Power Off	P:NECx:606:f
+Code3 Power On	P:NECx:606:f
 @Denver	Denver LED-3271
 Power	P:NECext:7f00:f50a
 Mute	P:NECext:7f00:af50
@@ -1543,6 +1859,81 @@ Left	P:NECext:e084:8976
 Right	P:NECext:e084:8a75
 Down	P:NECext:e084:8b74
 Ok	P:NECext:e084:8877
+@Emerson	TV 0,-1
+Fc Scan	P:NECext:ff00:ff00
+Fc Memo	P:NECext:ff00:fe01
+Tv / Catv	P:NECext:ff00:fd02
+Channel - Previous	P:NECext:ff00:fb04
+1--	P:NECext:ff00:fa05
+0	P:NECext:ff00:f906
+Channel - Down	P:NECext:ff00:f807
+7	P:NECext:ff00:f708
+8	P:NECext:ff00:f609
+9	P:NECext:ff00:f50a
+Channel - Up	P:NECext:ff00:f40b
+4	P:NECext:ff00:f30c
+5	P:NECext:ff00:f20d
+6	P:NECext:ff00:f10e
+Volume - Down	P:NECext:ff00:f00f
+1	P:NECext:ff00:ef10
+2	P:NECext:ff00:ee11
+3	P:NECext:ff00:ed12
+Volume - Up	P:NECext:ff00:ec13
+Pc	P:NECext:ff00:eb14
+Pc Memo	P:NECext:ff00:ea15
+Pc Scan	P:NECext:ff00:e916
+Volume - Mute	P:NECext:ff00:e817
+Sleep	P:NECext:ff00:e718
+Mts	P:NECext:ff00:e619
+Power	P:NECext:ff00:e01f
+@Emerson	TV 135,34
+A-B	P:NECext:2287:bc43
+Repeat	P:NECext:2287:af50
+Rewind	P:NECext:2287:ad52
+Forward	P:NECext:2287:ac53
+Search Mode	P:NECext:2287:a857
+Clear	P:NECext:2287:a758
+Pause	P:NECext:2287:a45b
+Mode	P:NECext:2287:a35c
+Play	P:NECext:2287:a15e
+Stop	P:NECext:2287:9f60
+Title	P:NECext:2287:8f70
+Disc Menu	P:NECext:2287:8e71
+Enter	P:NECext:2287:8d72
+Return	P:NECext:2287:8c73
+Angle	P:NECext:2287:8679
+Subtitle	P:NECext:2287:857a
+Audio	P:NECext:2287:847b
+V.Surr	P:NECext:2287:7e81
+Right	P:NECext:2287:39c6
+Left	P:NECext:2287:38c7
+Channel Down	P:NECext:2287:37c8
+Picture	P:NECext:2287:36c9
+Sleep	P:NECext:2287:34cb
+Select	P:NECext:2287:32cd
+Display	P:NECext:2287:30cf
+Channel Up	P:NECext:2287:2fd0
+1	P:NECext:2287:20df
+Power	P:NECext:2287:1fe0
+2	P:NECext:2287:1ee1
+3	P:NECext:2287:1de2
+4	P:NECext:2287:1ce3
+5	P:NECext:2287:1be4
+6	P:NECext:2287:1ae5
+7	P:NECext:2287:19e6
+8	P:NECext:2287:18e7
+9	P:NECext:2287:17e8
+0	P:NECext:2287:16e9
+100+	P:NECext:2287:13ec
+Setup	P:NECext:2287:10ef
+Volume Up	P:NECext:2287:ff0
+Volume Down	P:NECext:2287:ef1
+Mute	P:NECext:2287:cf3
+Up	P:NECext:2287:9f6
+Down	P:NECext:2287:8f7
+Record	P:NECext:2287:5fa
+Speed	P:NECext:2287:4fb
+C.Reset	P:NECext:2287:3fc
 @Enseo	Enseo
 Power	P:NEC:6e:2
 Vol_up	P:NEC:6e:6
@@ -1634,6 +2025,83 @@ Right	P:RCA:f:ea
 Up	P:RCA:f:9a
 Down	P:RCA:f:1a
 Ok	P:RCA:f:2f
+@Fast	TV 28,-1
+0-A	P:RC5X:1c:0
+0-B	P:RC5X:1c:0
+1-A	P:RC5X:1c:1
+1-B	P:RC5X:1c:1
+2-A	P:RC5X:1c:2
+2-B	P:RC5X:1c:2
+3-A	P:RC5X:1c:3
+3-B	P:RC5X:1c:3
+4-A	P:RC5X:1c:4
+4-B	P:RC5X:1c:4
+5-A	P:RC5X:1c:5
+5-B	P:RC5X:1c:5
+6-A	P:RC5X:1c:6
+6-B	P:RC5X:1c:6
+7-A	P:RC5X:1c:7
+7-B	P:RC5X:1c:7
+8-A	P:RC5X:1c:8
+8-B	P:RC5X:1c:8
+9-A	P:RC5X:1c:9
+9-B	P:RC5X:1c:9
+Power-A	P:RC5X:1c:c
+Power-B	P:RC5X:1c:c
+Mute-A	P:RC5X:1c:d
+Mute-B	P:RC5X:1c:d
+Gruen-A	P:RC5X:1c:f
+Gruen-B	P:RC5X:1c:f
+Cursor Right-A	P:RC5X:1c:10
+Cursor Right-B	P:RC5X:1c:10
+Cursor Left-A	P:RC5X:1c:11
+Cursor Left-B	P:RC5X:1c:11
+Progr+_A	P:RC5X:1c:20
+Progr+_B	P:RC5X:1c:20
+Progr-_A	P:RC5X:1c:21
+Progr-_B	P:RC5X:1c:21
+Vor-A	P:RC5X:1c:22
+Vor-B	P:RC5X:1c:22
+Ok-A	P:RC5X:1c:29
+Ok-B	P:RC5X:1c:29
+Ipg-A	P:RC5X:1c:2d
+Ipg-B	P:RC5X:1c:2d
+Play-A	P:RC5X:1c:32
+Play-B	P:RC5X:1c:32
+Ffw-A	P:RC5X:1c:34
+Ffw-B	P:RC5X:1c:34
+Stop-A	P:RC5X:1c:36
+Stop-B	P:RC5X:1c:36
+Rew-A	P:RC5X:1c:37
+Rew-B	P:RC5X:1c:37
+Exit-A	P:RC5X:1c:3c
+Exit-B	P:RC5X:1c:3c
+Vol-_A	P:RC5X:1c:41
+Vol-_B	P:RC5X:1c:41
+Vol+_A	P:RC5X:1c:42
+Vol+_B	P:RC5X:1c:42
+I/Ii-A	P:RC5X:1c:48
+I/Ii-B	P:RC5X:1c:48
+Zurueck-A	P:RC5X:1c:5c
+Zurueck-B	P:RC5X:1c:5c
+Step-A	P:RC5X:1c:5d
+Step-B	P:RC5X:1c:5d
+Jobs-A	P:RC5X:1c:5e
+Jobs-B	P:RC5X:1c:5e
+Arch-A	P:RC5X:1c:5f
+Arch-B	P:RC5X:1c:5f
+Blau-A	P:RC5X:1c:71
+Blau-B	P:RC5X:1c:71
+Gelb-A	P:RC5X:1c:72
+Gelb-B	P:RC5X:1c:72
+?-A	P:RC5X:1c:73
+?-B	P:RC5X:1c:73
+Tvtv-A	P:RC5X:1c:74
+Tvtv-B	P:RC5X:1c:74
+Rot-A	P:RC5X:1c:75
+Rot-B	P:RC5X:1c:75
+Live-A	P:RC5X:1c:7d
+Live-B	P:RC5X:1c:7d
 @Fetch	Fetch TV Box AUS
 Power	P:NECext:4664:a25d
 TV Power	P:NECext:4664:fe01
@@ -1763,6 +2231,24 @@ Red	P:RC5:1:37
 Green	P:RC5:1:36
 Yelow	P:RC5:1:32
 Blue	P:RC5:1:34
+@Fisher	TV 56,-1
+2	P:NECext:c738:fd02
+3	P:NECext:c738:fc03
+4	P:NECext:c738:fb04
+5	P:NECext:c738:fa05
+6	P:NECext:c738:f906
+7	P:NECext:c738:f807
+8	P:NECext:c738:f708
+9	P:NECext:c738:f609
+Channel +	P:NECext:c738:f50a
+Channel -	P:NECext:c738:f40b
+Sleep	P:NECext:c738:f20d
+Volume +	P:NECext:c738:f10e
+Volume -	P:NECext:c738:f00f
+Power	P:NECext:c738:ed12
+Tv/Vcr	P:NECext:c738:ec13
+100	P:NECext:c738:ea15
+Mute	P:NECext:c738:e718
 @Funai	Funai
 Power	P:NECext:e084:df20
 Source	R:38000:33:9103,4350,689,440,635,466,634,1592,636,467,632,468,631,469,630,471,628,1601,627,500,601,500,601,500,601,500,601,500,601,1628,601,1628,601,1628,601,500,601,500,601,500,601,500,601,500,601,500,601,1628,601,500,601,1628,601,1628,601,1628,601,1628,601,1628,601,1628,601,500,601,1628,601,43367,9046,2158,626,95445,9046,2156,628,95420,9071,2155,628,95417,9073,2155,628,95443,9046,2183,601
@@ -1852,10 +2338,99 @@ Info	P:NEC:20:f
 Fav	P:NEC:20:45
 F_list	P:NEC:20:12
 C_list	P:NEC:20:51
+@Gericom	Plasma 3,-1
+7	P:NECext:fc03:ff00
+Mute	P:NECext:fc03:fc03
+Enter	P:NECext:fc03:fb04
+Info.	P:NECext:fc03:f906
+Psm	P:NECext:fc03:f807
+Pip	P:NECext:fc03:f708
+Pg Down	P:NECext:fc03:f609
+Still	P:NECext:fc03:f50a
+Sleep	P:NECext:fc03:f40b
+Fav	P:NECext:fc03:f30c
+Tv/Radio	P:NECext:fc03:f20d
+Yellow	P:NECext:fc03:f10e
+Green	P:NECext:fc03:f00f
+Pg Up	P:NECext:fc03:ef10
+Power	P:NECext:fc03:ee11
+Reveal	P:NECext:fc03:ed12
+Source	P:NECext:fc03:ec13
+5	P:NECext:fc03:eb14
+4	P:NECext:fc03:ea15
+Cancel	P:NECext:fc03:e916
+Index	P:NECext:fc03:e817
+Guide	P:NECext:fc03:e718
+Dtv Setup	P:NECext:fc03:e619
+Pre-Ch	P:NECext:fc03:e51a
+9	P:NECext:fc03:e41b
+2	P:NECext:fc03:e31c
+1	P:NECext:fc03:e21d
+0	P:NECext:fc03:e11e
+8	P:NECext:fc03:e01f
+Pip Pr-	P:NECext:fc03:bf40
+Pip Pr+	P:NECext:fc03:be41
+Menu	P:NECext:fc03:bc43
+Time	P:NECext:fc03:bb44
+6	P:NECext:fc03:ba45
+3	P:NECext:fc03:b946
+Pr +	P:NECext:fc03:b847
+P.Position	P:NECext:fc03:b748
+Size	P:NECext:fc03:b649
+Ssm	P:NECext:fc03:b54a
+Pr -	P:NECext:fc03:b44b
+-/--	P:NECext:fc03:b34c
+P.Size	P:NECext:fc03:b24d
+Tv	P:NECext:fc03:b04f
+Exit	P:NECext:fc03:af50
+Blue	P:NECext:fc03:ae51
+Ttx On	P:NECext:fc03:ad52
+Volume +	P:NECext:fc03:ac53
+Swap	P:NECext:fc03:ab54
+Red	P:NECext:fc03:aa55
+Dual I-Ii	P:NECext:fc03:a956
+Volume -	P:NECext:fc03:a857
+Pc	P:NECext:fc03:a758
+Mix	P:NECext:fc03:a659
+Arc	P:NECext:fc03:a55a
+Hold	P:NECext:fc03:a45b
+S.Select	P:NECext:fc03:a35c
+Store	P:NECext:fc03:a25d
+P.Input	P:NECext:fc03:a15e
+Flop/List	P:NECext:fc03:a05f
 @Gigabyte	AORUS Monitor
 Power	P:NEC:0:1a
 Vol_up	P:NEC:0:11
 Vol_dn	P:NEC:0:33
+@Gigabyte	Unknown_TV 134,107
+Key_Channelup	P:NECext:6b86:fe01
+Key_Power	P:NECext:6b86:fd02
+Key_Volumedown	P:NECext:6b86:fb04
+Key_Mute	P:NECext:6b86:fa05
+Key_Channeldown	P:NECext:6b86:f906
+Key_Volumeup	P:NECext:6b86:f807
+Key_2	P:NECext:6b86:f50a
+Key_3	P:NECext:6b86:f30c
+Key_Down	P:NECext:6b86:f20d
+Key_Back	P:NECext:6b86:f10e
+Key_Epg	P:NECext:6b86:ed12
+Key_1	P:NECext:6b86:e817
+Key_0	P:NECext:6b86:e718
+lastCH	P:NECext:6b86:e619
+Key_Right	P:NECext:6b86:e51a
+Key_Left	P:NECext:6b86:e41b
+Key_Video	P:NECext:6b86:e31c
+Key_Radio	P:NECext:6b86:e21d
+snapshot	P:NECext:6b86:e11e
+Key_Tv	P:NECext:6b86:e01f
+Key_4	P:NECext:6b86:ab54
+Key_5	P:NECext:6b86:aa55
+Key_6	P:NECext:6b86:a956
+Key_7	P:NECext:6b86:a857
+Key_8	P:NECext:6b86:a758
+Key_9	P:NECext:6b86:a659
+Key_Ok	P:NECext:6b86:a55a
+Key_Up	P:NECext:6b86:a45b
 @Gogen	Gogen TVH24P266T
 Power	P:RC5:1:c
 Source	P:RC5:1:38
@@ -2888,6 +3463,412 @@ Left	P:RC5:3:15
 Right	P:RC5:3:16
 Back	P:RC5:3:a
 Exit	P:RC5:3:25
+@Hitachi	Monitor 144,0
+Vcr Stop []	P:Panasonic:90:0
+Vcr <<	P:Panasonic:90:2
+Vcr >>	P:Panasonic:90:3
+Vcr Pause	P:Panasonic:90:6
+Vcr Rec	P:Panasonic:90:8
+Vcr Play >	P:Panasonic:90:a
+Vcr 1	P:Panasonic:90:10
+Vcr 2	P:Panasonic:90:11
+Vcr 3	P:Panasonic:90:12
+Vcr 4	P:Panasonic:90:13
+Vcr 5	P:Panasonic:90:14
+Vcr 6	P:Panasonic:90:15
+Vcr 7	P:Panasonic:90:16
+Vcr 8	P:Panasonic:90:17
+Vcr 9	P:Panasonic:90:18
+Vcr 0	P:Panasonic:90:19
+Vcr Ch ^	P:Panasonic:90:34
+Vcr Ch V	P:Panasonic:90:35
+Tv/Vcr	P:Panasonic:90:36
+Vcr Power	P:Panasonic:90:3d
+@Hitachi	Monitor 80,-1
+8	P:NECext:af50:fb04
+Tv 8	P:NECext:af50:fb04
+9	P:NECext:af50:fa05
+Tv 9	P:NECext:af50:fa05
+100 Enter	P:NECext:af50:f906
+100	P:NECext:af50:f906
+Vtr/Tv 100	P:NECext:af50:f906
+Vtr/Tv Sa	P:NECext:af50:f708
+Avx	P:NECext:af50:f609
+Vcr Avx	P:NECext:af50:f609
+Input	P:NECext:af50:f609
+Vtr/Tv Avx	P:NECext:af50:f609
+Last Ch	P:NECext:af50:f50a
+Vcr Lst-Ch	P:NECext:af50:f50a
+Last Channel	P:NECext:af50:f50a
+Lst-Ch	P:NECext:af50:f50a
+Vtr/Tv Lst-Ch	P:NECext:af50:f50a
+Tv Prev Ch	P:NECext:af50:f50a
+Mute	P:NECext:af50:f40b
+0	P:NECext:af50:f30c
+Tv 0	P:NECext:af50:f30c
+1	P:NECext:af50:f20d
+Tv 1	P:NECext:af50:f20d
+2	P:NECext:af50:f10e
+Tv 2	P:NECext:af50:f10e
+3	P:NECext:af50:f00f
+Tv 3	P:NECext:af50:f00f
+Recall	P:NECext:af50:ef10
+Vcr Recall	P:NECext:af50:ef10
+Vtr/Tv Recall	P:NECext:af50:ef10
+Sleep	P:NECext:af50:ee11
+Vtr/Tv Off-Timer	P:NECext:af50:ee11
+Volume ^	P:NECext:af50:ed12
+Vol ^	P:NECext:af50:ed12
+Volume +	P:NECext:af50:ed12
+Volume Up	P:NECext:af50:ed12
+Help	P:NECext:af50:eb14
+Volume V	P:NECext:af50:ea15
+Vol V	P:NECext:af50:ea15
+Volume -	P:NECext:af50:ea15
+Volume Down	P:NECext:af50:ea15
+Power	P:NECext:af50:e817
+Tv Power	P:NECext:af50:e817
+Channel V	P:NECext:af50:e718
+Tv Ch V	P:NECext:af50:e718
+Channel -	P:NECext:af50:e718
+Tv Channel V	P:NECext:af50:e718
+Channel Down	P:NECext:af50:e718
+Channel ^	P:NECext:af50:e619
+Tv Ch ^	P:NECext:af50:e619
+Channel +	P:NECext:af50:e619
+Tv Channel ^	P:NECext:af50:e619
+Channel Up	P:NECext:af50:e619
+Vtr/Tv Surround	P:NECext:af50:e41b
+4	P:NECext:af50:e31c
+Tv 4	P:NECext:af50:e31c
+5	P:NECext:af50:e21d
+Tv 5	P:NECext:af50:e21d
+6	P:NECext:af50:e11e
+Tv 6	P:NECext:af50:e11e
+7	P:NECext:af50:e01f
+Tv 7	P:NECext:af50:e01f
+Vcr Enter	P:NECext:af50:cc33
+C.S. (Mouse)	P:NECext:af50:c33c
+Pipc	P:NECext:af50:b34c
+Menu	P:NECext:af50:ac53
+Vcr Menu	P:NECext:af50:ac53
+Cursor Enter	P:NECext:af50:ac53
+Position (H)	P:NECext:af50:a758
+Position (V)	P:NECext:af50:a659
+Size (H)	P:NECext:af50:a55a
+Reset	P:NECext:af50:a45b
+Vtr/Tv Reset	P:NECext:af50:a45b
++	P:NECext:af50:a35c
+Vtr/Tv +	P:NECext:af50:a35c
+-	P:NECext:af50:a25d
+Vtr/Tv -	P:NECext:af50:a25d
+Picture	P:NECext:af50:a15e
+Vtr/Tv P/S Mode	P:NECext:af50:a15e
+Sound	P:NECext:af50:a05f
+Size (V)	P:NECext:af50:9e61
+Exit	P:NECext:af50:9b64
+Vcr ^	P:NECext:af50:8f70
+Cursor Up	P:NECext:af50:8f70
+Vcr V	P:NECext:af50:8e71
+Cursor Down	P:NECext:af50:8e71
+Vcr >	P:NECext:af50:8d72
+Cursor Right	P:NECext:af50:8d72
+Vcr <	P:NECext:af50:8c73
+Cursor Left	P:NECext:af50:8c73
+@Hitachi	Monitor 96,-1
+Vtr 8	P:NECext:9f60:fb04
+Vtr 9	P:NECext:9f60:fa05
+Ff >>	P:NECext:9f60:f609
+Vtr F.Fwd/V.Srch >>	P:NECext:9f60:f609
+Rew <<	P:NECext:9f60:f50a
+Vtr Rew/V.Srch <<	P:NECext:9f60:f50a
+Stop []	P:NECext:9f60:f40b
+Vtr Stop []	P:NECext:9f60:f40b
+Vtr 0	P:NECext:9f60:f30c
+Vtr 1	P:NECext:9f60:f20d
+Vtr 2	P:NECext:9f60:f10e
+Vtr 3	P:NECext:9f60:f00f
+Vtr/Tv F.Adv >	P:NECext:9f60:ef10
+Play >	P:NECext:9f60:eb14
+Vtr Play >	P:NECext:9f60:eb14
+Vtr/Tv	P:NECext:9f60:e916
+Vcr/Tv	P:NECext:9f60:e916
+Vtr Power	P:NECext:9f60:e817
+Vtr Channel V	P:NECext:9f60:e718
+Vtr Channel ^	P:NECext:9f60:e619
+Pause	P:NECext:9f60:e51a
+Vtr Pause/Still	P:NECext:9f60:e51a
+Edit	P:NECext:9f60:e51a
+Vtr 4	P:NECext:9f60:e31c
+Vtr 5	P:NECext:9f60:e21d
+Vtr 6	P:NECext:9f60:e11e
+Vtr 7	P:NECext:9f60:e01f
+Guide	P:NECext:9f60:bf40
+Clear	P:NECext:9f60:be41
+Display	P:NECext:9f60:bd42
+Memory	P:NECext:9f60:bb44
+Index	P:NECext:9f60:ba45
+Counter Remain	P:NECext:9f60:b946
+@Hitachi	Monitor 97,-1
+Rec	P:NECext:9e61:eb14
+Vtr Record	P:NECext:9e61:eb14
+Pl	P:NECext:9e61:bf40
+@Hitachi	Plasma 80,-1
+Power On	P:NECext:af50:c13e
+Power Off	P:NECext:af50:c03f
+@Hitachi	Plasma 80,173
+Power	P:NECext:ad50:ff00
+Power On	P:NECext:ad50:fe01
+Power Off	P:NECext:ad50:fd02
+Volym +	P:NECext:ad50:fc03
+Volym -	P:NECext:ad50:fb04
+Mute	P:NECext:ad50:fa05
+Pinp	P:NECext:ad50:f906
+Recall	P:NECext:ad50:f807
+Rgb1	P:NECext:ad50:f609
+Rgb 1	P:NECext:ad50:f609
+Rgb2	P:NECext:ad50:f50a
+Rgb 2	P:NECext:ad50:f50a
+Av1	P:NECext:ad50:f40b
+Av2	P:NECext:ad50:f30c
+Av3	P:NECext:ad50:f20d
+Av4	P:NECext:ad50:f10e
+Auto	P:NECext:ad50:ed12
+Menu	P:NECext:ad50:ec13
+Up	P:NECext:ad50:eb14
+Cursor Upp	P:NECext:ad50:eb14
+Dn	P:NECext:ad50:ea15
+Cursor Ner	P:NECext:ad50:ea15
+Right	P:NECext:ad50:e916
+Ger	P:NECext:ad50:e916
+Left	P:NECext:ad50:e817
+Nster	P:NECext:ad50:e817
+Ok	P:NECext:ad50:e718
+Cursor Ok	P:NECext:ad50:e718
+Size	P:NECext:ad50:e619
+Return	P:NECext:ad50:e51a
+@Hitachi	TV 12,251
+Input	P:NECext:fb0c:7e81
+0	P:NECext:fb0c:7b84
+1	P:NECext:fb0c:7a85
+2	P:NECext:fb0c:7986
+3	P:NECext:fb0c:7887
+4	P:NECext:fb0c:7788
+5	P:NECext:fb0c:7689
+6	P:NECext:fb0c:758a
+7	P:NECext:fb0c:748b
+8	P:NECext:fb0c:738c
+9	P:NECext:fb0c:728d
+Exit	P:NECext:fb0c:708f
+Cursor Down	P:NECext:fb0c:6f90
+Guide	P:NECext:fb0c:6d92
+Info	P:NECext:fb0c:6c93
+Cursor Left	P:NECext:fb0c:6b94
+Power	P:NECext:fb0c:6a95
+Cursor Right	P:NECext:fb0c:6897
+Cursor Up	P:NECext:fb0c:6699
+Svcs	P:NECext:fb0c:16e9
+Menu	P:NECext:fb0c:ff0
+Sched	P:NECext:fb0c:9f6
+@Hitachi	TV 80,-1
+8	P:NECext:af50:fb04
+Tv 8 (Vwx)	P:NECext:af50:fb04
+9	P:NECext:af50:fa05
+Tv 9 (Yz)	P:NECext:af50:fa05
+Enter	P:NECext:af50:f906
+100/Ent	P:NECext:af50:f906
+E	P:NECext:af50:f906
+100	P:NECext:af50:f906
+Enter/100	P:NECext:af50:f906
+Pip Surf	P:NECext:af50:f807
+Pip Channel	P:NECext:af50:f807
+Surf	P:NECext:af50:f807
+Pip Ch	P:NECext:af50:f807
+Ant.	P:NECext:af50:f807
+Avx	P:NECext:af50:f609
+Ant	P:NECext:af50:f609
+Input Next	P:NECext:af50:f609
+Input	P:NECext:af50:f609
+Inputs	P:NECext:af50:f609
+Aspect	P:NECext:af50:f609
+Input Source	P:NECext:af50:f609
+Tuner	P:NECext:af50:f609
+Tv Input	P:NECext:af50:f609
+Input Select	P:NECext:af50:f609
+Last Chan	P:NECext:af50:f50a
+Last Channel	P:NECext:af50:f50a
+Last Ch	P:NECext:af50:f50a
+Last	P:NECext:af50:f50a
+Lst-Ch	P:NECext:af50:f50a
+Prev. Channel	P:NECext:af50:f50a
+Tv Last Ch	P:NECext:af50:f50a
+Jump	P:NECext:af50:f50a
+Mute	P:NECext:af50:f40b
+Tv Mute	P:NECext:af50:f40b
+0	P:NECext:af50:f30c
+Tv 0 (&!/)	P:NECext:af50:f30c
+1	P:NECext:af50:f20d
+Tv 1 (Abc)	P:NECext:af50:f20d
+2	P:NECext:af50:f10e
+Tv 2 (Def)	P:NECext:af50:f10e
+3	P:NECext:af50:f00f
+Tv 3 (Ghi)	P:NECext:af50:f00f
+Recall	P:NECext:af50:ef10
+Display	P:NECext:af50:ef10
+Info	P:NECext:af50:ef10
+Status	P:NECext:af50:ef10
+User	P:NECext:af50:ef10
+Sleep	P:NECext:af50:ee11
+Sleep (-)	P:NECext:af50:ee11
+--	P:NECext:af50:ee11
+Dash	P:NECext:af50:ee11
+C.S.	P:NECext:af50:ee11
+Off-Timer	P:NECext:af50:ee11
+Volume Up	P:NECext:af50:ed12
+Volume +	P:NECext:af50:ed12
+Vol Up	P:NECext:af50:ed12
+Volume ^	P:NECext:af50:ed12
+Tv Vol ^	P:NECext:af50:ed12
+Input Rgb2	P:NECext:af50:ec13
+A/V Net	P:NECext:af50:eb14
+Input A/V Net	P:NECext:af50:eb14
+Volume Down	P:NECext:af50:ea15
+Volume -	P:NECext:af50:ea15
+Vol Down	P:NECext:af50:ea15
+Volume V	P:NECext:af50:ea15
+Tv Vol V	P:NECext:af50:ea15
+Input Av 2	P:NECext:af50:e916
+Power	P:NECext:af50:e817
+Tv Power	P:NECext:af50:e817
+Power Toggle	P:NECext:af50:e817
+Off	P:NECext:af50:e817
+Channel -	P:NECext:af50:e718
+Channel Down	P:NECext:af50:e718
+Channel-	P:NECext:af50:e718
+Chan Down	P:NECext:af50:e718
+Ch V	P:NECext:af50:e718
+Arrow Down	P:NECext:af50:e718
+Tv Ch V	P:NECext:af50:e718
+Channel +	P:NECext:af50:e619
+Channel Up	P:NECext:af50:e619
+Channel+	P:NECext:af50:e619
+Chan Up	P:NECext:af50:e619
+Ch ^	P:NECext:af50:e619
+Arrow Up	P:NECext:af50:e619
+Tv Ch ^	P:NECext:af50:e619
+4	P:NECext:af50:e31c
+Tv 4 (Jkl)	P:NECext:af50:e31c
+5	P:NECext:af50:e21d
+Tv 5 (Mno)	P:NECext:af50:e21d
+6	P:NECext:af50:e11e
+Tv 6 (Pqr)	P:NECext:af50:e11e
+7	P:NECext:af50:e01f
+Tv 7 (Stu)	P:NECext:af50:e01f
+Input Video 6	P:NECext:af50:df20
+Video 1	P:NECext:af50:de21
+Input 1	P:NECext:af50:de21
+Vid 1  Sat	P:NECext:af50:de21
+Video 2	P:NECext:af50:dd22
+Input 2	P:NECext:af50:dd22
+Vid 2  Dvd	P:NECext:af50:dd22
+Video 3	P:NECext:af50:dc23
+Input 3	P:NECext:af50:dc23
+Vid 3  Rec.	P:NECext:af50:dc23
+Video 4	P:NECext:af50:db24
+Input 4	P:NECext:af50:db24
+Vid 4	P:NECext:af50:db24
+Input Video 5	P:NECext:af50:d32c
+Input Video 1	P:NECext:af50:d22d
+Cursor Select	P:NECext:af50:d12e
+Select	P:NECext:af50:d12e
+Input Video 3	P:NECext:af50:d02f
+Menu Enter	P:NECext:af50:cc33
+Tv Select	P:NECext:af50:cc33
+Tv/Rgb	P:NECext:af50:ca35
+Guide	P:NECext:af50:ca35
+Fav Ch	P:NECext:af50:c738
+Video	P:NECext:af50:c33c
+Mode	P:NECext:af50:c33c
+Help	P:NECext:af50:c33c
+Video 5	P:NECext:af50:c23d
+Vid 5	P:NECext:af50:c23d
+Power On	P:NECext:af50:c13e
+Power Off	P:NECext:af50:c03f
+Input Video 4	P:NECext:af50:bb44
+Rewind	P:NECext:af50:ba45
+Play	P:NECext:af50:b946
+Ff	P:NECext:af50:b847
+Input Av 3	P:NECext:af50:b04f
+Input Video 2	P:NECext:af50:ae51
+Record	P:NECext:af50:ae51
+Menu	P:NECext:af50:ac53
+Tv Menu	P:NECext:af50:ac53
+Pip	P:NECext:af50:a758
+Dtv/Sat	P:NECext:af50:a758
+Pip Swap	P:NECext:af50:a659
+Swap	P:NECext:af50:a659
+Pip Mode	P:NECext:af50:a55a
+Move	P:NECext:af50:a55a
+Picture Reset	P:NECext:af50:a45b
+Picture +	P:NECext:af50:a35c
++ (Plus)	P:NECext:af50:a35c
+Picture -	P:NECext:af50:a25d
+- (Minus)	P:NECext:af50:a25d
+Pip Input	P:NECext:af50:a15e
+Day/Night	P:NECext:af50:a15e
+P.Mode	P:NECext:af50:a15e
+Picture Mode	P:NECext:af50:a15e
+Sound Mode	P:NECext:af50:a05f
+Pip Freeze	P:NECext:af50:9e61
+Freeze	P:NECext:af50:9e61
+Pause	P:NECext:af50:9e61
+Exit	P:NECext:af50:9b64
+Aspect 16:9 Standard	P:NECext:af50:9a65
+Aspect 16:9 Zoom	P:NECext:af50:9966
+Aspect 4:3 Standard	P:NECext:af50:9867
+Aspect 4:3 Expand	P:NECext:af50:9768
+Aspect 4:3 Zoom1	P:NECext:af50:9669
+Aspect 4:3 Zoom2	P:NECext:af50:956a
+Tv Aspect	P:NECext:af50:906f
+Cursor Up	P:NECext:af50:8f70
+Tv ^	P:NECext:af50:8f70
+Cursor Down	P:NECext:af50:8e71
+Tv V	P:NECext:af50:8e71
+Cursor Right	P:NECext:af50:8d72
+Tv >	P:NECext:af50:8d72
+Cursor Left	P:NECext:af50:8c73
+Arrow Left	P:NECext:af50:8c73
+Tv <	P:NECext:af50:8c73
+Day	P:NECext:af50:8b74
+Night	P:NECext:af50:8a75
+Channel / Page +	P:NECext:af50:5fa0
+Input Rgb1	P:NECext:af50:5ea1
+Swivel	P:NECext:af50:53ac
+Channel / Page -	P:NECext:af50:4fb0
+@Hitachi	TV 80,143
+Screen 16:9	P:NECext:8f50:906f
+@Hitachi	TV 80,173
+Power On	P:NECext:ad50:fe01
+Power Off	P:NECext:ad50:fd02
+Pinp	P:NECext:ad50:f906
+Recall	P:NECext:ad50:f807
+Rgb1	P:NECext:ad50:f609
+Rgb2	P:NECext:ad50:f50a
+Av1	P:NECext:ad50:f40b
+Av2	P:NECext:ad50:f30c
+Av3	P:NECext:ad50:f20d
+Av4	P:NECext:ad50:f10e
+Menu	P:NECext:ad50:ec13
+Up	P:NECext:ad50:eb14
+Dn	P:NECext:ad50:ea15
+Right	P:NECext:ad50:e916
+Left	P:NECext:ad50:e817
+Ok	P:NECext:ad50:e718
+Size	P:NECext:ad50:e619
+Return	P:NECext:ad50:e51a
+@Hitachi	TV 96,-1
+Stop	P:NECext:9f60:f40b
+Guide	P:NECext:9f60:bf40
 @Hotels	Hilton Connected Room Remote
 Power	P:NECext:6969:fe01
 Vol_up	P:NECext:6969:f50a
@@ -3013,6 +3994,41 @@ Blue	P:RC6:0:70
 7	P:RC6:0:7
 8	P:RC6:0:8
 9	P:RC6:0:9
+@InFocus	Plasma 7,-1
+Reset	P:NECext:f807:7d82
+Mts	P:NECext:f807:7c83
+Swap	P:NECext:f807:7b84
+Source	P:NECext:f807:7a85
+1	P:NECext:f807:7986
+Power	P:NECext:f807:7887
+Fav+-	P:NECext:f807:7788
+Cursor Left	P:NECext:f807:7689
+3	P:NECext:f807:758a
+4	P:NECext:f807:738c
+Cursor Down	P:NECext:f807:728d
+2	P:NECext:f807:718e
+5	P:NECext:f807:708f
+Menu	P:NECext:f807:6f90
+Mute	P:NECext:f807:6e91
+Volume +	P:NECext:f807:6d92
+Channel +	P:NECext:f807:6c93
+Audio Source	P:NECext:f807:6b94
+Volume -	P:NECext:f807:6996
+Channel -	P:NECext:f807:6897
+100	P:NECext:f807:6798
+Fav	P:NECext:f807:6699
+7	P:NECext:f807:639c
+0	P:NECext:f807:629d
+8	P:NECext:f807:609f
+Sleep	P:NECext:f807:3fc0
+9	P:NECext:f807:3bc4
+Ch+-	P:NECext:f807:37c8
+6	P:NECext:f807:33cc
+Pip	P:NECext:f807:2fd0
+Info	P:NECext:f807:2bd4
+Cursor Up	P:NECext:f807:26d9
+Aspect	P:NECext:f807:23dc
+Cursor Right	P:NECext:f807:22dd
 @Insignia	Insignia
 Power	P:NECext:586:f00f
 Input	P:NECext:586:e21d
@@ -3077,6 +4093,48 @@ Exit	P:NECext:586:e41b
 Menu	P:NECext:586:eb14
 @Insignia	Insignia NS RCFNA 21
 Power	P:NECext:7d02:b946
+@Insignia	TV 134,5
+1	P:NECext:586:ff00
+2	P:NECext:586:fe01
+3	P:NECext:586:fd02
+4	P:NECext:586:fc03
+5	P:NECext:586:fb04
+6	P:NECext:586:fa05
+7	P:NECext:586:f906
+8	P:NECext:586:f807
+9	P:NECext:586:f708
+0	P:NECext:586:f609
+Channel+	P:NECext:586:f50a
+Channel -	P:NECext:586:f40b
+Volume+	P:NECext:586:f30c
+Volume -	P:NECext:586:f20d
+Mute	P:NECext:586:f10e
+Power	P:NECext:586:f00f
+Mts/Sap	P:NECext:586:ee11
+Sleep	P:NECext:586:ec13
+Menu	P:NECext:586:eb14
+Cursor Right	P:NECext:586:ea15
+Cursor Left	P:NECext:586:e916
+Display	P:NECext:586:e817
+Enter	P:NECext:586:e718
+Cursor Enter	P:NECext:586:e718
+Exit	P:NECext:586:e41b
+Ccd	P:NECext:586:e31c
+Input	P:NECext:586:e21d
+Cursor Up	P:NECext:586:bd42
+Cursor Down	P:NECext:586:bc43
+Zoom	P:NECext:586:bb44
+Guide	P:NECext:586:ba45
+Audio	P:NECext:586:b748
+Picture	P:NECext:586:b649
+Favorite	P:NECext:586:b44b
+Video	P:NECext:586:b34c
+Dvd/Video	P:NECext:586:b34c
+Comp	P:NECext:586:b24d
+Vga	P:NECext:586:b14e
+Tv	P:NECext:586:b04f
+Hdmi	P:NECext:586:af50
+Ch-List	P:NECext:586:7986
 @JVC	JVC 4KTV
 Power	P:RC5:1:c
 Mute	P:RC5:1:d
@@ -3163,6 +4221,268 @@ TV	R:38000:33:8479,4259,501,1617,502,1618,501,554,501,553,502,553,501,552,503,55
 Video	R:38000:33:8479,4259,501,1619,500,1619,500,553,501,554,501,554,501,554,500,554,501,553,501,1617,502,554,500,553,501,554,501,1619,500,554,501,553,501,552,501,24684,501,1618,501,1616,503,553,502,553,501,553,501,554,500,553,502,553,501,1619,500,553,501,552,503,554,500,1617,502,552,502,552,502,552,501
 Computer	R:38000:33:8505,4233,527,1595,524,1592,527,1590,528,1592,527,528,526,527,527,528,526,527,528,527,527,1592,527,1592,527,1596,523,526,528,527,528,527,527,526,527,21462,527,1593,526,1591,528,1591,528,1592,527,527,527,526,528,526,554,502,527,527,527,1592,527,1591,528,1591,528,528,526,526,528,526,528,527,526
 Music	R:38000:33:8476,4257,528,1590,528,1590,528,1591,527,1591,528,525,529,526,529,526,528,527,527,525,529,526,528,1591,528,1592,527,1591,528,527,527,526,528,1589,528,20398,527,1592,527,1590,529,1590,529,1590,529,526,528,526,528,526,528,526,528,526,528,526,528,1592,527,1591,528,1591,528,526,528,527,527,1592,525
+@JVC	Monitor 3,-1
+Main/Sap	P:JVC:3:0
+Sleep/Timer	P:JVC:3:3
+Display	P:JVC:3:4
+Return	P:JVC:3:5
+Return+	P:JVC:3:5
+Ant/Cable	P:JVC:3:b
+Av Status/Reset	P:JVC:3:d
+Video Status	P:JVC:3:d
+Theater/Av Status	P:JVC:3:d
+Closed Caption	P:JVC:3:e
+Tv/Video	P:JVC:3:13
+Tv Tv/Video	P:JVC:3:13
+Power	P:JVC:3:17
+Tv Power	P:JVC:3:17
+Channel -	P:JVC:3:18
+Tv Ch/Hyper Scan-	P:JVC:3:18
+Tv Channel -	P:JVC:3:18
+Channel +	P:JVC:3:19
+Tv Ch/Hyper Scan+	P:JVC:3:19
+Tv Channel +	P:JVC:3:19
+Mute	P:JVC:3:1c
+Volume +	P:JVC:3:1e
+Volume+	P:JVC:3:1e
+Volume -	P:JVC:3:1f
+Volume-	P:JVC:3:1f
+0	P:JVC:3:20
+Tv 0/Aux	P:JVC:3:20
+1	P:JVC:3:21
+Tv 1	P:JVC:3:21
+2	P:JVC:3:22
+Tv 2	P:JVC:3:22
+3	P:JVC:3:23
+Tv 3	P:JVC:3:23
+4	P:JVC:3:24
+Tv 4	P:JVC:3:24
+5	P:JVC:3:25
+Tv 5	P:JVC:3:25
+6	P:JVC:3:26
+Tv 6	P:JVC:3:26
+7	P:JVC:3:27
+Tv 7	P:JVC:3:27
+8	P:JVC:3:28
+Tv 8/Daily (M-F)	P:JVC:3:28
+9	P:JVC:3:29
+Tv 9/Weekly	P:JVC:3:29
+Recall Choice	P:JVC:3:3c
+Hyper Surround	P:JVC:3:42
+Function +	P:JVC:3:5a
+Menu >	P:JVC:3:5a
+Function -	P:JVC:3:5b
+Menu <	P:JVC:3:5b
+100+	P:JVC:3:77
+Menu	P:JVC:3:7a
+Function Forward V	P:JVC:3:7b
+Menu V	P:JVC:3:7b
+Function V	P:JVC:3:7b
+Function Back ^	P:JVC:3:7c
+Menu ^	P:JVC:3:7c
+Function ^	P:JVC:3:7c
+Pip Freeze	P:JVC:3:80
+Pip On/Off	P:JVC:3:85
+Pip Move	P:JVC:3:86
+Pip Position	P:JVC:3:86
+Pip Swap	P:JVC:3:89
+Pip Source	P:JVC:3:b2
+Pip Channel +	P:JVC:3:be
+Pip Channel -	P:JVC:3:bf
+Pip Size	P:JVC:3:d6
+C1/C2	P:JVC:3:da
+Help	P:JVC:3:e3
+Exit	P:JVC:3:e6
+@JVC	Monitor 67,-1
+Vcr Record	P:JVC:43:2
+Vcr Stop[]	P:JVC:43:3
+Vcr Ffwd>>	P:JVC:43:6
+Vcr Rew<<	P:JVC:43:7
+Vcr Power	P:JVC:43:b
+Vcr Play>	P:JVC:43:c
+Vcr Pause	P:JVC:43:d
+Vcr Ch-	P:JVC:43:18
+Vcr Ch+	P:JVC:43:19
+Sp/Ep	P:JVC:43:31
+Timer	P:JVC:43:35
+Cancel/C.Reset/Skip	P:JVC:43:36
+Menu	P:JVC:43:37
+Display	P:JVC:43:38
+Select	P:JVC:43:3c
+Enter/Osd	P:JVC:43:3e
+C Memory/Add	P:JVC:43:90
+Skip Search	P:JVC:43:96
+Re-View	P:JVC:43:c3
+Vcr Record(Rec&Play)	P:JVC:43:cc
+@JVC	Plasma 31,-1
+Power Off	P:JVC:1f:da
+Power On	P:JVC:1f:dd
+Component	P:JVC:1f:e1
+@JVC	TV 15,-1
+Select	P:JVC:f:11
+Multiscreen Select	P:JVC:f:11
+Digital 2	P:JVC:f:17
+Video 5	P:JVC:f:1b
+Guide	P:JVC:f:7d
+@JVC	TV 3,-1
+Main/Sap	P:JVC:3:0
+Sleep Timer	P:JVC:3:3
+Display	P:JVC:3:4
+Return	P:JVC:3:5
+Return+	P:JVC:3:5
+Ok	P:JVC:3:a
+Enter/Ok	P:JVC:3:a
+Ok/Select	P:JVC:3:a
+Ant/Cable	P:JVC:3:b
+A/V Reset	P:JVC:3:d
+Av Status/Reset	P:JVC:3:d
+Video Status	P:JVC:3:d
+Closed Caption	P:JVC:3:e
+Close Caption	P:JVC:3:e
+Tuner	P:JVC:3:10
+Ant	P:JVC:3:10
+Input 1	P:JVC:3:11
+Video 1	P:JVC:3:11
+Video1	P:JVC:3:11
+Input 2	P:JVC:3:12
+Video 2	P:JVC:3:12
+Video2	P:JVC:3:12
+Tv/Video	P:JVC:3:13
+Input Source	P:JVC:3:13
+Tv Tv/Video	P:JVC:3:13
+Input 3	P:JVC:3:14
+Input3	P:JVC:3:14
+Video 3	P:JVC:3:14
+Video3	P:JVC:3:14
+Digital In	P:JVC:3:15
+Digital 1	P:JVC:3:15
+Power	P:JVC:3:17
+Power (Toggle)	P:JVC:3:17
+Tv Power	P:JVC:3:17
+Down	P:JVC:3:18
+Channel -	P:JVC:3:18
+Chan Down	P:JVC:3:18
+Arrow Down	P:JVC:3:18
+Tv Ch V	P:JVC:3:18
+Up	P:JVC:3:19
+Channel +	P:JVC:3:19
+Chan Up	P:JVC:3:19
+Arrow Up	P:JVC:3:19
+Tv Ch ^	P:JVC:3:19
+Power Off	P:JVC:3:1a
+Power Off (Alt.)	P:JVC:3:1a
+Power Off (2)	P:JVC:3:1a
+Input 4	P:JVC:3:1b
+Input4	P:JVC:3:1b
+Video4	P:JVC:3:1b
+Mute	P:JVC:3:1c
+Power On	P:JVC:3:1d
+Right	P:JVC:3:1e
+Vol Up	P:JVC:3:1e
+Volume +	P:JVC:3:1e
+Arrow Right	P:JVC:3:1e
+Tv Vol +	P:JVC:3:1e
+Left	P:JVC:3:1f
+Vol Dn	P:JVC:3:1f
+Volume -	P:JVC:3:1f
+Vol Down	P:JVC:3:1f
+Arrow Left	P:JVC:3:1f
+Tv Vol -	P:JVC:3:1f
+0	P:JVC:3:20
+Tv 0 (Aux)	P:JVC:3:20
+1	P:JVC:3:21
+Tv 1	P:JVC:3:21
+2	P:JVC:3:22
+Tv 2	P:JVC:3:22
+3	P:JVC:3:23
+Tv 3	P:JVC:3:23
+4	P:JVC:3:24
+Tv 4	P:JVC:3:24
+5	P:JVC:3:25
+Tv 5	P:JVC:3:25
+6	P:JVC:3:26
+Tv 6	P:JVC:3:26
+7	P:JVC:3:27
+Tv 7	P:JVC:3:27
+8	P:JVC:3:28
+Tv 8 (Daily M-F)	P:JVC:3:28
+9	P:JVC:3:29
+Tv 9 (Weekly)	P:JVC:3:29
+Recall Choice	P:JVC:3:3c
+Biphonic	P:JVC:3:41
+Hyper Surround	P:JVC:3:42
+Sound	P:JVC:3:42
+Vnr	P:JVC:3:45
+Curser Right	P:JVC:3:5a
++	P:JVC:3:5a
+Menu Right	P:JVC:3:5a
+Forward	P:JVC:3:5a
+Curser Left	P:JVC:3:5b
+-	P:JVC:3:5b
+Menu Left	P:JVC:3:5b
+Back	P:JVC:3:5b
+Notch	P:JVC:3:74
+100+	P:JVC:3:77
+Menu	P:JVC:3:7a
+Curser Down	P:JVC:3:7b
+Forward/Down	P:JVC:3:7b
+Menu Down	P:JVC:3:7b
+Curser Up	P:JVC:3:7c
+Back/Up	P:JVC:3:7c
+Menu Up	P:JVC:3:7c
+Multiscreen Freeze	P:JVC:3:80
+Freeze	P:JVC:3:80
+Multiscreen Index	P:JVC:3:82
+Multiscreen Swap	P:JVC:3:89
+Multilscreen Twin	P:JVC:3:8b
+Aspect	P:JVC:3:93
+Aspect Ratio	P:JVC:3:93
+Theatre Pro	P:JVC:3:d5
+Exit	P:JVC:3:e6
+@JVC	TV 31,-1
+Video A	P:JVC:1f:d1
+Video B	P:JVC:1f:d2
+Power Off	P:JVC:1f:da
+Power On	P:JVC:1f:dd
+Aux B	P:JVC:1f:e0
+Component	P:JVC:1f:e1
+Aux A	P:JVC:1f:e2
+@JVC	TV 67,-1
+Tv/Vcr	P:JVC:43:13
+@KAWA	Unknown_TV 11,11
+Key_0	P:NECx:b0b:0
+Key_1	P:NECx:b0b:1
+Key_2	P:NECx:b0b:2
+Key_3	P:NECx:b0b:3
+Key_4	P:NECx:b0b:4
+Key_5	P:NECx:b0b:5
+Key_6	P:NECx:b0b:6
+Key_7	P:NECx:b0b:7
+Key_8	P:NECx:b0b:8
+Key_9	P:NECx:b0b:9
+Key_Power	P:NECx:b0b:a
+Tv/Txt	P:NECx:b0b:b
+Tv/Av	P:NECx:b0b:c
+Key_102Nd	P:NECx:b0b:d
+Key_Volumeup	P:NECx:b0b:e
+Key_Volumedown	P:NECx:b0b:f
+Picture	P:NECx:b0b:10
+info+	P:NECx:b0b:11
+Index	P:NECx:b0b:11
+Exp.	P:NECx:b0b:13
+Key_Mute	P:NECx:b0b:14
+Key_Time	P:NECx:b0b:15
+Key_Channelup	P:NECx:b0b:16
+Key_Channeldown	P:NECx:b0b:17
+Norm	P:NECx:b0b:18
+Hold	P:NECx:b0b:18
+Key_Subtitle	P:NECx:b0b:19
+Mix	P:NECx:b0b:1a
+Rev	P:NECx:b0b:1b
+Key_R	P:NECx:b0b:1c
+Key_G	P:NECx:b0b:1d
+Key_Y	P:NECx:b0b:1e
+Key_C	P:NECx:b0b:1f
 @Kendo	Kendo CP20M36VT
 Power	P:RC5:0:c
 Mute	P:RC5:0:d
@@ -4481,6 +5801,368 @@ Sound Out	P:NECext:f404:9e61
 OLED Care	P:NECext:f404:af50
 User Specified 1	P:NECext:f404:b14e
 User Specified 2	P:NECext:f404:b04f
+@LG	Plasma 1,1
+Mute	P:NECext:101:f50a
+Power	P:NECext:101:e31c
+@LG	Plasma 4,-1
+Channel +	P:NECext:fb04:ff00
+Channel -	P:NECext:fb04:fe01
+Volume +	P:NECext:fb04:fd02
+Volume -	P:NECext:fb04:fc03
+Cursor Right	P:NECext:fb04:f906
+Right	P:NECext:fb04:f906
+Cursor Left	P:NECext:fb04:f807
+Left	P:NECext:fb04:f807
+Power	P:NECext:fb04:f708
+Mute	P:NECext:fb04:f609
+I/Ii	P:NECext:fb04:f50a
+Mts	P:NECext:fb04:f50a
+Tv/Video	P:NECext:fb04:f40b
+Input	P:NECext:fb04:f40b
+Tv / Video	P:NECext:fb04:f40b
+Sleep	P:NECext:fb04:f10e
+Tv Input	P:NECext:fb04:f00f
+0	P:NECext:fb04:ef10
+1	P:NECext:fb04:ee11
+2	P:NECext:fb04:ed12
+3	P:NECext:fb04:ec13
+4	P:NECext:fb04:eb14
+5	P:NECext:fb04:ea15
+6	P:NECext:fb04:e916
+7	P:NECext:fb04:e817
+8	P:NECext:fb04:e718
+9	P:NECext:fb04:e619
+Back	P:NECext:fb04:e51a
+Flashback	P:NECext:fb04:e51a
+Q.View	P:NECext:fb04:e51a
+Review	P:NECext:fb04:e51a
+Fav	P:NECext:fb04:e11e
+Frc	P:NECext:fb04:e11e
+Text	P:NECext:fb04:df20
+Text Time	P:NECext:fb04:d926
+Text Reveal	P:NECext:fb04:d52a
+Subtitle	P:NECext:fb04:c639
+Caption	P:NECext:fb04:c639
+Cursor Up	P:NECext:fb04:bf40
+Up	P:NECext:fb04:bf40
+Cursor Down	P:NECext:fb04:be41
+Down	P:NECext:fb04:be41
+Menu	P:NECext:fb04:bc43
+Cursor Enter	P:NECext:fb04:bb44
+Cursor Ok	P:NECext:fb04:bb44
+Enter	P:NECext:fb04:bb44
+Dash-	P:NECext:fb04:b34c
+--	P:NECext:fb04:b34c
+Apc	P:NECext:fb04:b24d
+Input D/A	P:NECext:fb04:af50
+Dasp	P:NECext:fb04:ad52
+List	P:NECext:fb04:ac53
+A. Program	P:NECext:fb04:ab54
+Memory/Erase	P:NECext:fb04:aa55
+Video 1	P:NECext:fb04:a55a
+Exit	P:NECext:fb04:a45b
+Pip/ Dw	P:NECext:fb04:9f60
+Color 4 Blue	P:NECext:fb04:9e61
+Pip Input	P:NECext:fb04:9e61
+Text Update	P:NECext:fb04:9d62
+Window Position	P:NECext:fb04:9d62
+Color 3 Yellow	P:NECext:fb04:9c63
+Swap	P:NECext:fb04:9c63
+Window Size	P:NECext:fb04:9b64
+Text Hold	P:NECext:fb04:9a65
+Text Index	P:NECext:fb04:8f70
+Color 2 Green	P:NECext:fb04:8e71
+Color 1 Red	P:NECext:fb04:8d72
+Pip Ch -	P:NECext:fb04:8d72
+Pip Ch+	P:NECext:fb04:8d72
+4:3	P:NECext:fb04:8976
+16:9	P:NECext:fb04:8877
+Ratio	P:NECext:fb04:8679
+Arc	P:NECext:fb04:8679
+Split Zoom	P:NECext:fb04:847b
+Simplink	P:NECext:fb04:817e
+Multimedia	P:NECext:fb04:6798
+Tv Guide	P:NECext:fb04:56a9
+Info	P:NECext:fb04:55aa
+Guide	P:NECext:fb04:54ab
+Component 1	P:NECext:fb04:40bf
+Power On	P:NECext:fb04:3bc4
+Power Off	P:NECext:fb04:3ac5
+Dvi	P:NECext:fb04:39c6
+Video 2	P:NECext:fb04:2fd0
+Rgb	P:NECext:fb04:2ad5
+Tv	P:NECext:fb04:29d6
+Brightness +	P:NECext:fb04:1fe0
+Brightness -	P:NECext:fb04:1ee1
+Tv/Radio	P:NECext:fb04:ff0
+@LG	TV 4,-1
+Channel +	P:NECext:fb04:ff00
+Cursor Up / Pr Up	P:NECext:fb04:ff00
+Cursor Up	P:NECext:fb04:ff00
+Page Up	P:NECext:fb04:ff00
+Up	P:NECext:fb04:ff00
+Ch+ / Up	P:NECext:fb04:ff00
+Channel -	P:NECext:fb04:fe01
+Cursor Down / Pr Dn	P:NECext:fb04:fe01
+Arrow Left	P:NECext:fb04:fe01
+Cursor Down	P:NECext:fb04:fe01
+Page Down	P:NECext:fb04:fe01
+Down	P:NECext:fb04:fe01
+Ch- / Down	P:NECext:fb04:fe01
+Volume +	P:NECext:fb04:fd02
+Cursor Right / Vol+	P:NECext:fb04:fd02
+Arrow Right	P:NECext:fb04:fd02
+Right	P:NECext:fb04:fd02
+Vol+ / Right	P:NECext:fb04:fd02
+Volume -	P:NECext:fb04:fc03
+Cursor Left / Vol-	P:NECext:fb04:fc03
+Left	P:NECext:fb04:fc03
+Vol- / Left	P:NECext:fb04:fc03
+C-Rt	P:NECext:fb04:f906
+Cursor Right	P:NECext:fb04:f906
+Arrow Rt	P:NECext:fb04:f906
+C-Lf	P:NECext:fb04:f807
+Cursor Left	P:NECext:fb04:f807
+Arrow Lt	P:NECext:fb04:f807
+Power Toggle	P:NECext:fb04:f708
+Power	P:NECext:fb04:f708
+Mute	P:NECext:fb04:f609
+Volume Mute	P:NECext:fb04:f609
+I/Ii	P:NECext:fb04:f50a
+Sap	P:NECext:fb04:f50a
+Mts	P:NECext:fb04:f50a
+Tv/Av	P:NECext:fb04:f40b
+Tv/Av Input	P:NECext:fb04:f40b
+Tv/Video	P:NECext:fb04:f40b
+Input Source	P:NECext:fb04:f40b
+Tv/ Video	P:NECext:fb04:f40b
+Tv / Video	P:NECext:fb04:f40b
+Sleep	P:NECext:fb04:f10e
+Timer	P:NECext:fb04:f10e
+Tv Input	P:NECext:fb04:f00f
+Input Tv	P:NECext:fb04:f00f
+0	P:NECext:fb04:ef10
+1	P:NECext:fb04:ee11
+2	P:NECext:fb04:ed12
+3	P:NECext:fb04:ec13
+4	P:NECext:fb04:eb14
+5	P:NECext:fb04:ea15
+6	P:NECext:fb04:e916
+7	P:NECext:fb04:e817
+8	P:NECext:fb04:e718
+9	P:NECext:fb04:e619
+Flash Back	P:NECext:fb04:e51a
+Q.View	P:NECext:fb04:e51a
+Flashback	P:NECext:fb04:e51a
+Review	P:NECext:fb04:e51a
+Yellow / Q.Wiev	P:NECext:fb04:e51a
+Fav	P:NECext:fb04:e11e
+Favorite	P:NECext:fb04:e11e
+Surf	P:NECext:fb04:e11e
+Fcr	P:NECext:fb04:e11e
+Frc	P:NECext:fb04:e11e
+Text	P:NECext:fb04:df20
+Text Mode	P:NECext:fb04:dd22
+Text Mix	P:NECext:fb04:db24
+Mix	P:NECext:fb04:db24
+Text Time	P:NECext:fb04:d926
+Time	P:NECext:fb04:d926
+Index	P:NECext:fb04:d827
+Return	P:NECext:fb04:d728
+Text Reveal	P:NECext:fb04:d52a
+Reveal	P:NECext:fb04:d52a
+Av Mode	P:NECext:fb04:cf30
+Update	P:NECext:fb04:cf30
+Mode	P:NECext:fb04:cc33
+Closed Captions	P:NECext:fb04:c639
+Cc	P:NECext:fb04:c639
+Caption	P:NECext:fb04:c639
+Arrow Up	P:NECext:fb04:bf40
+Zoom +	P:NECext:fb04:bf40
+C-Up	P:NECext:fb04:bf40
+Arrow Down	P:NECext:fb04:be41
+Zoom -	P:NECext:fb04:be41
+C-Dn	P:NECext:fb04:be41
+Arrow Dn	P:NECext:fb04:be41
+Menu	P:NECext:fb04:bc43
+Enter	P:NECext:fb04:bb44
+Cursor Ok	P:NECext:fb04:bb44
+Cursor Enter	P:NECext:fb04:bb44
+Ok	P:NECext:fb04:bb44
+Q.Menu	P:NECext:fb04:ba45
+Dasp (L30W36)	P:NECext:fb04:b847
+Dash	P:NECext:fb04:b34c
+Dash (-) List	P:NECext:fb04:b34c
+-	P:NECext:fb04:b34c
+--	P:NECext:fb04:b34c
+Ez Picture	P:NECext:fb04:b24d
+Video	P:NECext:fb04:b24d
+Ez Pic	P:NECext:fb04:b24d
+Apc	P:NECext:fb04:b24d
+Green / Acp/Pcm	P:NECext:fb04:b24d
+S-Video 1	P:NECext:fb04:ae51
+S-Video	P:NECext:fb04:ae51
+Dasp	P:NECext:fb04:ad52
+Sound	P:NECext:fb04:ad52
+Ez Sound	P:NECext:fb04:ad52
+Audio	P:NECext:fb04:ad52
+List	P:NECext:fb04:ac53
+Blue / List	P:NECext:fb04:ac53
+A. Program	P:NECext:fb04:ab54
+Auto	P:NECext:fb04:ab54
+Memory/Erase	P:NECext:fb04:aa55
+Widgets	P:NECext:fb04:a758
+Netcast	P:NECext:fb04:a659
+Video 1	P:NECext:fb04:a55a
+Input - Video 1	P:NECext:fb04:a55a
+Input: Video 1	P:NECext:fb04:a55a
+Exit	P:NECext:fb04:a45b
+Exit/Return	P:NECext:fb04:a45b
+Pip	P:NECext:fb04:9f60
+Pip/ Dw	P:NECext:fb04:9f60
+Red / Pip	P:NECext:fb04:9f60
+Color 1 Blue	P:NECext:fb04:9e61
+Pip/Sub Input	P:NECext:fb04:9e61
+Pip Input	P:NECext:fb04:9e61
+Pop	P:NECext:fb04:9e61
+Text Update	P:NECext:fb04:9d62
+Position	P:NECext:fb04:9d62
+Window Position	P:NECext:fb04:9d62
+Color 2 Yellow	P:NECext:fb04:9c63
+Swap	P:NECext:fb04:9c63
+Pip Swap	P:NECext:fb04:9c63
+Text Size	P:NECext:fb04:9b64
+Pip Arc	P:NECext:fb04:9b64
+Size	P:NECext:fb04:9b64
+Window Size	P:NECext:fb04:9b64
+Freeze	P:NECext:fb04:9a65
+Still	P:NECext:fb04:9a65
+Hold	P:NECext:fb04:9a65
+*/Ssm	P:NECext:fb04:916e
+Text Index	P:NECext:fb04:8f70
+Aspect - Pop	P:NECext:fb04:8f70
+Scan	P:NECext:fb04:8f70
+Color 3 Green	P:NECext:fb04:8e71
+Pip Channel Up	P:NECext:fb04:8e71
+Pip Ch+	P:NECext:fb04:8e71
+Pip Channel +	P:NECext:fb04:8e71
+Pip Ch +	P:NECext:fb04:8e71
+Color 4 Red	P:NECext:fb04:8d72
+Pip Channel Down	P:NECext:fb04:8d72
+Pip Ch-	P:NECext:fb04:8d72
+Pip Channel -	P:NECext:fb04:8d72
+Pip Ch -	P:NECext:fb04:8d72
+Pip Ch --	P:NECext:fb04:8d72
+4:3	P:NECext:fb04:8976
+Aspect 4:3	P:NECext:fb04:8976
+Aspect - 4:3	P:NECext:fb04:8976
+Ratio: 4:3	P:NECext:fb04:8976
+16:9	P:NECext:fb04:8877
+Aspect 16:9	P:NECext:fb04:8877
+Aspect - 16:9	P:NECext:fb04:8877
+Ratio: 16:9	P:NECext:fb04:8877
+Aspect Ratio	P:NECext:fb04:8679
+Ratio	P:NECext:fb04:8679
+Arc	P:NECext:fb04:8679
+Zoom Split	P:NECext:fb04:847b
+Zoom	P:NECext:fb04:847b
+Split Zoom	P:NECext:fb04:847b
+X Studio Pro	P:NECext:fb04:837c
+Mark	P:NECext:fb04:827d
+Simplink	P:NECext:fb04:817e
+Auto Demo	P:NECext:fb04:7f80
+Audio Demo	P:NECext:fb04:7f80
+1394	P:NECext:fb04:7887
+Next	P:NECext:fb04:718e
+Scan >>	P:NECext:fb04:718e
+Ff	P:NECext:fb04:718e
+Previous	P:NECext:fb04:708f
+Scan <<	P:NECext:fb04:708f
+Rewind	P:NECext:fb04:708f
+Record List	P:NECext:fb04:6f90
+Rec List	P:NECext:fb04:6f90
+Apm Xd	P:NECext:fb04:6d92
+Apm	P:NECext:fb04:6d92
+Signal	P:NECext:fb04:6996
+*	P:NECext:fb04:6798
+Rgb - 1	P:NECext:fb04:6798
+Comp/Rgb/Dvi	P:NECext:fb04:6798
+Rgb1	P:NECext:fb04:6798
+Multimedia	P:NECext:fb04:6798
+Source	P:NECext:fb04:6798
+Auto Configure	P:NECext:fb04:6699
+Live	P:NECext:fb04:619e
+Tv Guide	P:NECext:fb04:56a9
+Guide	P:NECext:fb04:56a9
+Info	P:NECext:fb04:55aa
+Information	P:NECext:fb04:55aa
+Aspect - Zoom	P:NECext:fb04:50af
+Ratio: Zoom	P:NECext:fb04:50af
+Play	P:NECext:fb04:4fb0
+Stop	P:NECext:fb04:4eb1
+Skip/Day -	P:NECext:fb04:4db2
+Skip << / Day -	P:NECext:fb04:4db2
+Skip <<	P:NECext:fb04:4db2
+Day -	P:NECext:fb04:4db2
+Go To Prev	P:NECext:fb04:4db2
+Skip/Day +	P:NECext:fb04:4cb3
+Fast Forward	P:NECext:fb04:4cb3
+Skip >> / Day +	P:NECext:fb04:4cb3
+Skip >>	P:NECext:fb04:4cb3
+Day +	P:NECext:fb04:4cb3
+Go To Next	P:NECext:fb04:4cb3
+Pause	P:NECext:fb04:45ba
+Record	P:NECext:fb04:42bd
+Component 1	P:NECext:fb04:40bf
+Input - Component 1	P:NECext:fb04:40bf
+Input: Component 1	P:NECext:fb04:40bf
+Power On	P:NECext:fb04:3bc4
+Power Off	P:NECext:fb04:3ac5
+Rgb - Dvi	P:NECext:fb04:39c6
+Input - Hdmi 1	P:NECext:fb04:39c6
+Rgb2	P:NECext:fb04:39c6
+Dvi	P:NECext:fb04:39c6
+Input: Hdmi/Dvi	P:NECext:fb04:39c6
+Dvi-Pc	P:NECx:404:c7
+X Studio	P:NECext:fb04:37c8
+Mc Eject	P:NECext:fb04:35ca
+M/C Eject	P:NECext:fb04:35ca
+Adjust	P:NECext:fb04:34cb
+Hdmi 2	P:NECext:fb04:33cc
+Input - Hdmi 2	P:NECext:fb04:33cc
+Hdmi 1	P:NECext:fb04:31ce
+Video 5	P:NECx:404:cf
+Video 2	P:NECext:fb04:2fd0
+Input - Video 2	P:NECext:fb04:2fd0
+Input: Video 2	P:NECext:fb04:2fd0
+Video 3	P:NECext:fb04:2ed1
+Video 4	P:NECext:fb04:2dd2
+S-Video 2	P:NECext:fb04:2cd3
+Component 2	P:NECext:fb04:2bd4
+Input - Component 2	P:NECext:fb04:2bd4
+Input: Component 2	P:NECext:fb04:2bd4
+Rgb - Pc	P:NECext:fb04:2ad5
+Input - Pc	P:NECext:fb04:2ad5
+Rgbpc	P:NECext:fb04:2ad5
+Rgb	P:NECext:fb04:2ad5
+Input: Rgb-Pc	P:NECext:fb04:2ad5
+Ant/Cable/Analog	P:NECext:fb04:29d6
+Ant/Cable Analog	P:NECext:fb04:29d6
+Input - Tv	P:NECext:fb04:29d6
+Antenna	P:NECext:fb04:29d6
+Tv	P:NECext:fb04:29d6
+Input: Tv	P:NECext:fb04:29d6
+Rgb - Dtv	P:NECext:fb04:28d7
+Input - Dtv	P:NECext:fb04:28d7
+Dtv	P:NECext:fb04:28d7
+Input: Rgb-Dtv	P:NECext:fb04:28d7
+Component 3	P:NECx:404:d9
+Hdmi 4	P:NECext:fb04:25da
+Brightness +	P:NECext:fb04:1fe0
+Brightness -	P:NECext:fb04:1ee1
+Hdmi 3	P:NECext:fb04:16e9
+In-Start	P:NECext:fb04:4fb
+Adj	P:NECext:fb04:ff
 @LodgeNet	lodgenet lrc3220
 Power	P:NECext:7c85:7f80
 Guide	P:NECext:7c85:5da2
@@ -4520,6 +6202,182 @@ Ok	P:RC5:0:26
 8	P:RC5:0:8
 9	P:RC5:0:9
 0	P:RC5:0:0
+@Loewe	TV 0,-1
+Key 0	P:RC5X:0:0
+0	P:RC5X:0:0
+Key 1	P:RC5X:0:1
+1	P:RC5X:0:1
+Key 2	P:RC5X:0:2
+2	P:RC5X:0:2
+Key 3	P:RC5X:0:3
+3	P:RC5X:0:3
+Key 4	P:RC5X:0:4
+4	P:RC5X:0:4
+Key 5	P:RC5X:0:5
+5	P:RC5X:0:5
+Key 6	P:RC5X:0:6
+6	P:RC5X:0:6
+Key 7	P:RC5X:0:7
+7	P:RC5X:0:7
+Key 8	P:RC5X:0:8
+8	P:RC5X:0:8
+Key 9	P:RC5X:0:9
+9	P:RC5X:0:9
+Pip On/Off	P:RC5X:0:a
+Input Toggle	P:RC5X:0:a
+Pip	P:RC5X:0:a
+Inout	P:RC5X:0:a
+Pip Audio Monitor	P:RC5X:0:a
+Menu	P:RC5X:0:b
+Menu Key	P:RC5X:0:b
+M (Meny)	P:RC5X:0:b
+Tv On/Off	P:RC5X:0:c
+Power Toggle	P:RC5X:0:c
+Power	P:RC5X:0:c
+Mute	P:RC5X:0:d
+Normal	P:RC5X:0:e
+Power On	P:RC5X:0:e
+Power: On	P:RC5X:0:e
+Epg	P:RC5X:0:f
+Favorite	P:RC5X:0:f
+Cursor Right	P:RC5X:0:10
+Ger	P:RC5X:0:10
+Volume +	P:RC5X:0:10
+Cursor Left	P:RC5X:0:11
+Cursor	P:RC5X:0:11
+Nster	P:RC5X:0:11
+Power Off	P:RC5X:0:12
+Input: Component 1	P:RC5X:0:13
+Vid 1C / Ant A	P:RC5X:0:13
+Volume Up	P:RC5X:0:14
+Volume -	P:RC5X:0:14
+Vga	P:RC5X:0:14
+Volume Down	P:RC5X:0:15
+Tv On	P:RC5X:0:16
+Program -	P:RC5X:0:17
+Channel -	P:RC5X:0:17
+Program +	P:RC5X:0:18
+Channel +	P:RC5X:0:18
+Tv Off	P:RC5X:0:19
+Green	P:RC5X:0:1a
+Window	P:RC5X:0:1a
+N Knapp	P:RC5X:0:1a
+Red	P:RC5X:0:1b
+Format	P:RC5X:0:1b
+D Knapp	P:RC5X:0:1b
+Vcr 1	P:RC5X:0:1c
+Input Vcr	P:RC5X:0:1c
+Dvd	P:RC5X:0:1e
+Input Dvd	P:RC5X:0:1e
+Input: Front	P:RC5X:0:1f
+Front / Vid 1C	P:RC5X:0:1f
+Cursor Up	P:RC5X:0:20
+Cursor Upp	P:RC5X:0:20
+Cursor Down	P:RC5X:0:21
+Cursor Ner	P:RC5X:0:21
+Input: Video 2	P:RC5X:0:22
+Power: Off	P:RC5X:0:22
+Picture	P:RC5X:0:23
+Video	P:RC5X:0:23
+Bildmeny	P:RC5X:0:23
+Sat	P:RC5X:0:24
+Input: Ant B	P:RC5X:0:24
+Input Sat	P:RC5X:0:24
+Stb	P:RC5X:0:25
+Input: Antenna A	P:RC5X:0:25
+Ant A	P:RC5X:0:25
+Input Stb	P:RC5X:0:25
+Ok	P:RC5X:0:26
+Cursor Ok	P:RC5X:0:26
+Info	P:RC5X:0:27
+I (Info)	P:RC5X:0:27
+Blue	P:RC5X:0:28
+Swap	P:RC5X:0:28
+Knapp	P:RC5X:0:28
+Yellow	P:RC5X:0:2b
+Gul Knapp	P:RC5X:0:2b
+Info 2	P:RC5X:0:2e
+Assist+Menu	P:RC5X:0:31
+Edit Favorites	P:RC5X:0:31
+V =	P:RC5X:0:31
+Assist	P:RC5X:0:31
+Input: 2 (2)	P:RC5X:0:33
+Input: Video 2 2Nd	P:RC5X:0:33
+Input: S-Video 1	P:RC5X:0:34
+Vid 1S	P:RC5X:0:34
+Radio Mode	P:RC5X:0:35
+Audio	P:RC5X:0:35
+Ljudmeny	P:RC5X:0:35
+Sat Radio	P:RC5X:0:35
+Input: Rgb 1080I	P:RC5X:0:36
+Input: Rgb 480P	P:RC5X:0:37
+Input: Dvd 480P	P:RC5X:0:38
+Teletext	P:RC5X:0:3c
+Freeze	P:RC5X:0:3c
+T (Text)	P:RC5X:0:3c
+Text	P:RC5X:0:3c
+End Key	P:RC5X:0:3f
+Exit	P:RC5X:0:3f
+E (Exit)	P:RC5X:0:3f
+End	P:RC5X:0:3f
+Sound Menu	P:RC5X:0:40
+Sound	P:RC5X:0:40
+Tv Mode On	P:RC5X:0:48
+Radio Mode On	P:RC5X:0:49
+Av Input Menu	P:RC5X:0:4a
+Input Av	P:RC5X:0:4a
+Epg2	P:RC5X:0:4e
+* Epg	P:RC5X:0:4e
+Info Key	P:RC5X:0:4f
+Pip #	P:RC5X:0:58
+# Pip	P:RC5X:0:58
+Aspect Ratio	P:RC5X:0:5a
+Title	P:RC5X:0:5a
+Timer Dialog	P:RC5X:0:5b
+Rec Menu	P:RC5X:0:5b
+Timer	P:RC5X:0:5b
+Dr+ Archive	P:RC5X:0:5c
+Input: Vga	P:RC5X:0:6e
+Input: Video 3	P:RC5X:0:6f
+Input: Dvi	P:RC5X:0:70
+Input: Component 2	P:RC5X:0:71
+Av1	P:RC5X:0:72
+Av2	P:RC5X:0:73
+Av3	P:RC5X:0:74
+Avs	P:RC5X:0:75
+Hdmi 1	P:RC5X:0:77
+Component	P:RC5X:0:78
+Hdmi 2	P:RC5X:0:79
+Hdmi 3	P:RC5X:0:7a
+@Loewe	TV 27,-1
+Local Keys +	P:RC5X:1b:f
+Local Keys Radio	P:RC5X:1b:13
+Local Keys -	P:RC5X:1b:2d
+@Loewe	TV 5,-1
+Av1	P:RC5X:5:72
+Av2	P:RC5X:5:73
+Av3	P:RC5X:5:74
+Avs	P:RC5X:5:75
+Vga	P:RC5X:5:76
+Hdmi	P:RC5X:5:77
+Comp	P:RC5X:5:78
+@Loewe	TV 6,-1
+Hdr: Pause	P:RC5X:6:29
+Pause	P:RC5X:6:29
+Pause Rec	P:RC5X:6:29
+Hdr: Rewind	P:RC5X:6:32
+Rew	P:RC5X:6:32
+T	P:RC5X:6:32
+Hdr: Fast Forw	P:RC5X:6:34
+Ff	P:RC5X:6:34
+Hdr: Play	P:RC5X:6:35
+Green	P:RC5X:6:35
+Play	P:RC5X:6:35
+Hdr Stop	P:RC5X:6:36
+Stop	P:RC5X:6:36
+Stopp	P:RC5X:6:36
+Hdr Record	P:RC5X:6:37
+Record	P:RC5X:6:37
 @Loncevon	LONCEVON-12 inch Small Monitor
 On/Off	P:NEC:0:0
 Source	P:NEC:0:1
@@ -4538,6 +6396,66 @@ Rewind	P:NEC:0:4
 Fastforward	P:NEC:0:6
 Skip_forward	P:NEC:0:e
 Skip_backwards	P:NEC:0:c
+@LXI	TV 4,-1
+Channel Up	P:NECext:fb04:ff00
+Channel Down	P:NECext:fb04:fe01
+Volume Up	P:NECext:fb04:fd02
+Volume Down	P:NECext:fb04:fc03
+Fine Tuning +	P:NECext:fb04:fb04
+Fine Tuning -	P:NECext:fb04:fa05
+Power	P:NECext:fb04:f708
+Mute	P:NECext:fb04:f609
+Tv/Video	P:NECext:fb04:f40b
+Picture Mode	P:NECext:fb04:f30c
+Sleep	P:NECext:fb04:f10e
+Tv/Catv	P:NECext:fb04:f00f
+0	P:NECext:fb04:ef10
+1	P:NECext:fb04:ee11
+2	P:NECext:fb04:ed12
+3	P:NECext:fb04:ec13
+4	P:NECext:fb04:eb14
+5	P:NECext:fb04:ea15
+6	P:NECext:fb04:e916
+7	P:NECext:fb04:e817
+8	P:NECext:fb04:e718
+9	P:NECext:fb04:e619
+Last Channel	P:NECext:fb04:e51a
+Recall	P:NECext:fb04:e41b
+Display	P:NECext:fb04:e11e
+Clock/Timer	P:NECext:fb04:b748
+Enter	P:NECext:fb04:b34c
+Picture Reset	P:NECext:fb04:b24d
+Auto Program	P:NECext:fb04:ab54
+Add/Del	P:NECext:fb04:aa55
+@MAGNASONIC	Unknown_TV 131,122
+Key_Channelup	P:NECext:7a83:ff00
+Key_Channeldown	P:NECext:7a83:fe01
+Key_Volumeup	P:NECext:7a83:fd02
+Key_Volumedown	P:NECext:7a83:fc03
+Prog	P:NECext:7a83:fb04
+Key_0	P:NECext:7a83:fa05
+Add/Del	P:NECext:7a83:f906
+Auto	P:NECext:7a83:f807
+Key_Power	P:NECext:7a83:f708
+Mute/Reset	P:NECext:7a83:f609
+Picture	P:NECext:7a83:f40b
+Key_Video	P:NECext:7a83:f30c
+Sap	P:NECext:7a83:f20d
+Key_Sleep	P:NECext:7a83:f10e
+X_Key_0/Am/Pm	P:NECext:7a83:ef10
+Key_1	P:NECext:7a83:ee11
+Key_2	P:NECext:7a83:ed12
+Key_3	P:NECext:7a83:ec13
+Key_4	P:NECext:7a83:eb14
+Key_5	P:NECext:7a83:ea15
+Key_6	P:NECext:7a83:e916
+Key_7	P:NECext:7a83:e817
+Key_8	P:NECext:7a83:e718
+Key_9	P:NECext:7a83:e619
+Q.Rev	P:NECext:7a83:e51a
+Key_Again	P:NECext:7a83:e41b
+Clk/Tim	P:NECext:7a83:e31c
+Set	P:NECext:7a83:e01f
 @Magnavox	MAGNAVOX 20MT1331 17
 Power	P:RC5:0:c
 Ch_next	P:RC5:0:20
@@ -4634,6 +6552,33 @@ Num7	P:NECext:7a83:17
 Num8	P:NECext:7a83:18
 Num9	P:NECext:7a83:19
 Something AFx	P:NECext:7a83:f
+@Magnavox	TV 0,-1
+0	P:RC5X:0:0
+1	P:RC5X:0:1
+2	P:RC5X:0:2
+3	P:RC5X:0:3
+4	P:RC5X:0:4
+5	P:RC5X:0:5
+6	P:RC5X:0:6
+7	P:RC5X:0:7
+8	P:RC5X:0:8
+9	P:RC5X:0:9
+Power	P:RC5X:0:c
+Mute	P:RC5X:0:d
+Status	P:RC5X:0:f
+Vol+	P:RC5X:0:10
+Volume +	P:RC5X:0:10
+Volume -	P:RC5X:0:11
+Enter	P:RC5X:0:1a
+Smart	P:RC5X:0:1b
+Ch+	P:RC5X:0:20
+Channel +	P:RC5X:0:20
+Channel -	P:RC5X:0:21
+Surf	P:RC5X:0:22
+Prev Ch	P:RC5X:0:22
+Tv/Vcr	P:RC5X:0:38
+Menu	P:RC5X:0:3b
++10	P:RC5X:0:3e
 @Manta	Manta
 On	P:NECext:bf00:ff00
 Vol_up	P:NECext:bf00:b748
@@ -4681,6 +6626,142 @@ Left	P:NEC:a0:56
 Right	P:NEC:a0:14
 Menu	P:NEC:a0:13
 Exit	P:NEC:a0:10
+@Marantz	Plasma 0,-1
+Enter/Ok	P:RC5X:0:2e
+@Marantz	Plasma 24,-1
+Volume +	P:NECext:e718:fd02
+Volume -	P:NECext:e718:fc03
+Power On	P:NECext:e718:f708
+On	P:NECext:e718:f708
+Mute	P:NECext:e718:f609
+S Video Input	P:NECext:e718:f50a
+Video	P:NECext:e718:f50a
+Input: Video	P:NECext:e718:f50a
+Display	P:NECext:e718:f00f
+Mono	P:NECext:e718:e21d
+Off Timer	P:NECext:e718:e11e
+Of-T	P:NECext:e718:e11e
+Off Time	P:NECext:e718:e11e
+Auto Adjust	P:NECext:e718:e01f
+Contrast +	P:NECext:e718:b946
+Contrast -	P:NECext:e718:b847
+Color +	P:NECext:e718:b748
+Color -	P:NECext:e718:b649
+Brightness+	P:NECext:e718:b54a
+Brightness +	P:NECext:e718:b54a
+Tint +	P:NECext:e718:b34c
+Tint -	P:NECext:e718:b24d
+Sharpness +	P:NECext:e718:b14e
+Sharpness -	P:NECext:e718:b04f
+Video 1	P:NECext:e718:aa55
+Video 2	P:NECext:e718:a956
+Video 3	P:NECext:e718:a857
+Rgb	P:NECext:e718:a758
+Rgb/Pc	P:NECext:e718:a758
+Input: Pc	P:NECext:e718:a758
+@Marantz	Plasma 24,24
+Dvd Input	P:NECext:1818:e31c
+Dvd/Hd	P:NECext:1818:e31c
+Input: Dvd	P:NECext:1818:e31c
+Hd 3	P:NECext:1818:bf40
+Pic Memory	P:NECext:1818:be41
+Contrast	P:NECext:1818:bd42
+Bright	P:NECext:1818:bc43
+Pic Mode	P:NECext:1818:bb44
+Color Temp	P:NECext:1818:ba45
+Wide	P:NECext:1818:52ad
+Change Scrn Size	P:NECext:1818:52ad
+Chng Scrn Size	P:NECext:1818:52ad
+Mode: Wide	P:NECext:1818:52ad
+Cursor Up	P:NECext:1818:4fb0
+Cursor Down	P:NECext:1818:4eb1
+Cursor Left	P:NECext:1818:4db2
+Cursor Right	P:NECext:1818:4cb3
+Curson Right	P:NECext:1818:4cb3
+Menu	P:NECext:1818:4bb4
+Ok	P:NECext:1818:4ab5
+Power Off	P:NECext:1818:3fc0
+Off	P:NECext:1818:3fc0
+Rgb/Pc1	P:NECext:1818:3ec1
+Rgb/Pc2	P:NECext:1818:3dc2
+Rgb/Pc3	P:NECext:1818:3cc3
+Cursor Enter	P:NECext:1818:3bc4
+Enter	P:NECext:1818:3bc4
+Pointer	P:NECext:1818:36c9
+Zoom +	P:NECext:1818:35ca
+Zoom -	P:NECext:1818:34cb
+Multiscreen	P:NECext:1818:33cc
+Multi Screen	P:NECext:1818:33cc
+Multi Scrn Sel.	P:NECext:1818:32cd
+Dvd/Hd2	P:NECext:1818:23dc
+Hd 2	P:NECext:1818:23dc
+Dvd/Hd1	P:NECext:1818:14eb
+Hd 1	P:NECext:1818:14eb
+@Marantz	Plasma 24,247
+Power On	P:NECext:f718:f708
+Power Off	P:NECext:f718:eb14
+@Marantz	Plasma 80,-1
+Input	P:NECext:af50:f609
+Mute	P:NECext:af50:f40b
+Recal	P:NECext:af50:ef10
+Volume +	P:NECext:af50:ed12
+Input: Rgb 2	P:NECext:af50:ec13
+Volume -	P:NECext:af50:ea15
+Power	P:NECext:af50:e817
+Input: Video 1	P:NECext:af50:de21
+Input: Video 2	P:NECext:af50:dd22
+Power On	P:NECext:af50:c13e
+Power Off	P:NECext:af50:c03f
+Menu	P:NECext:af50:ac53
+Cursor Up	P:NECext:af50:8f70
+Cursor Down	P:NECext:af50:8e71
+Cursor Right	P:NECext:af50:8d72
+Cursor Left	P:NECext:af50:8c73
+Input: Rgb 1	P:NECext:af50:5ea1
+@Marantz	TV 0,-1
+Power Off	P:RC5X:0:c
+Volume +	P:RC5X:0:10
+Volume -	P:RC5X:0:11
+Enter/Ok	P:RC5X:0:2e
+Power On	P:RC5X:0:3f
+Swap	P:RC5X:0:4b
+@Marantz	TV 24,-1
+Volume +	P:NECext:e718:fd02
+Volume -	P:NECext:e718:fc03
+Power On	P:NECext:e718:f708
+Mute	P:NECext:e718:f609
+Input: Video	P:NECext:e718:f50a
+Display	P:NECext:e718:f00f
+Mono	P:NECext:e718:e21d
+Of-T	P:NECext:e718:e11e
+Off Time	P:NECext:e718:e11e
+Video 1	P:NECext:e718:aa55
+Video 2	P:NECext:e718:a956
+Video 3	P:NECext:e718:a857
+Input: Pc	P:NECext:e718:a758
+@Marantz	TV 24,24
+Input: Dvd	P:NECext:1818:e31c
+Hd 3	P:NECext:1818:bf40
+Pic Memory	P:NECext:1818:be41
+Contrast	P:NECext:1818:bd42
+Bright	P:NECext:1818:bc43
+Pic Mode	P:NECext:1818:bb44
+Color Temp	P:NECext:1818:ba45
+Mode: Wide	P:NECext:1818:52ad
+Wide	P:NECext:1818:52ad
+Cursor Up	P:NECext:1818:4fb0
+Cursor Down	P:NECext:1818:4eb1
+Cursor Left	P:NECext:1818:4db2
+Cursor Right	P:NECext:1818:4cb3
+Curson Right	P:NECext:1818:4cb3
+Menu	P:NECext:1818:4bb4
+Ok	P:NECext:1818:4ab5
+Power Off	P:NECext:1818:3fc0
+Enter	P:NECext:1818:3bc4
+Zoom +	P:NECext:1818:35ca
+Zoom -	P:NECext:1818:34cb
+Hd 2	P:NECext:1818:23dc
+Hd 1	P:NECext:1818:14eb
 @Matsui	Matsui 1435b
 Standby	P:Samsung32:17:14
 Sams_0a	P:Samsung32:17:a
@@ -4705,6 +6786,52 @@ Vol_up	P:Samsung32:17:12
 Bar_select	P:Samsung32:17:1e
 Normal	P:Samsung32:17:e
 Mute	P:Samsung32:17:15
+@Maxx	Plasma 32,64
+Power	P:NECext:4020:ff00
+@Maxx	Plasma 96,-1
+Power	P:NECext:9f60:ff00
+0	P:NECext:9f60:fc03
+1	P:NECext:9f60:fb04
+2	P:NECext:9f60:fa05
+4	P:NECext:9f60:f807
+5	P:NECext:9f60:f708
+6	P:NECext:9f60:f609
+7	P:NECext:9f60:f50a
+8	P:NECext:9f60:f40b
+9	P:NECext:9f60:f30c
+100	P:NECext:9f60:f20d
+Return	P:NECext:9f60:f00f
+Exit	P:NECext:9f60:ef10
+Info	P:NECext:9f60:ee11
+Mts	P:NECext:9f60:ed12
+Menu	P:NECext:9f60:ec13
+Comp	P:NECext:9f60:eb14
+Photo	P:NECext:9f60:ea15
+Pc	P:NECext:9f60:e619
+Cursor Left	P:NECext:9f60:e31c
+Volume -	P:NECext:9f60:e31c
+Channel -	P:NECext:9f60:e21d
+Cursor Down	P:NECext:9f60:e21d
+Wow	P:NECext:9f60:bf40
+Add/Erase	P:NECext:9f60:be41
+Ch Edit	P:NECext:9f60:bd42
+Favorite	P:NECext:9f60:bc43
+Channel +	P:NECext:9f60:bb44
+Cursor Up	P:NECext:9f60:bb44
+Mute	P:NECext:9f60:ba45
+Cursor Right	P:NECext:9f60:b748
+Volume +	P:NECext:9f60:b748
+Enter	P:NECext:9f60:ae51
+Tv/Catv	P:NECext:9f60:ad52
+Scan	P:NECext:9f60:ac53
+Sleep	P:NECext:9f60:ab54
+Txt	P:NECext:9f60:aa55
+V-Chip	P:NECext:9f60:a758
+Green	P:NECext:9f60:a659
+Yellow	P:NECext:9f60:a55a
+Ccd	P:NECext:9f60:a45b
+Tv/Av	P:NECext:9f60:a35c
+3	P:NECext:9f60:a05f
 @Medion	Medion
 Power	P:RC5:1:c
 Home	P:RC5:1:2e
@@ -4789,6 +6916,91 @@ Up	P:RC5:1:14
 Down	P:RC5:1:13
 Right	P:RC5:1:16
 Left	P:RC5:1:15
+@Memorex	TV 4,-1
+Channel +	P:NECext:fb04:ff00
+Channel -	P:NECext:fb04:fe01
+Volume +	P:NECext:fb04:fd02
+Volume -	P:NECext:fb04:fc03
+Power	P:NECext:fb04:f708
+Mute	P:NECext:fb04:f609
+Tv/Video	P:NECext:fb04:f40b
+Picture	P:NECext:fb04:f30c
+Audio	P:NECext:fb04:f20d
+0	P:NECext:fb04:ef10
+1	P:NECext:fb04:ee11
+2	P:NECext:fb04:ed12
+3	P:NECext:fb04:ec13
+4	P:NECext:fb04:eb14
+5	P:NECext:fb04:ea15
+6	P:NECext:fb04:e916
+7	P:NECext:fb04:e817
+8	P:NECext:fb04:e718
+9	P:NECext:fb04:e619
+Recall	P:NECext:fb04:e51a
+Display	P:NECext:fb04:e41b
+@Mitsubishi	Monitor 130,100
+Set/Stellen	P:NECext:6482:ff00
+Set	P:NECext:6482:ff00
+Brt.	P:NECext:6482:fe01
+Cont.	P:NECext:6482:fd02
+Vol.	P:NECext:6482:fb04
+Bal.	P:NECext:6482:fa05
+Degau./Entmagn	P:NECext:6482:f807
+Degau.	P:NECext:6482:f807
+Disp.Off(Aus)	P:NECext:6482:f708
+Mute	P:NECext:6482:f708
+Ttl	P:NECext:6482:f30c
+Analog 2	P:NECext:6482:f10e
+Rgb 2	P:NECext:6482:f10e
+0	P:NECext:6482:ef10
+9	P:NECext:6482:ee11
+Up (+)	P:NECext:6482:ec13
+Up	P:NECext:6482:ec13
+Video 1	P:NECext:6482:e916
+Enter	P:NECext:6482:e817
+Video 2	P:NECext:6482:e718
+Analog 1	P:NECext:6482:e11e
+Rgb 1	P:NECext:6482:e11e
+Power	P:NECext:6482:bb44
+Cal/Clr	P:NECext:6482:ba45
+1	P:NECext:6482:b946
+2	P:NECext:6482:b847
+Down (-)	P:NECext:6482:b34c
+Down	P:NECext:6482:b34c
+3	P:NECext:6482:af50
+8	P:NECext:6482:ad52
+7	P:NECext:6482:ac53
+4	P:NECext:6482:ab54
+5	P:NECext:6482:aa55
+6	P:NECext:6482:a956
+@Mitsubishi	Monitor 4,-1
+^	P:NECext:fb04:ff00
+^ (Channel)	P:NECext:fb04:ff00
+Channel ^	P:NECext:fb04:ff00
+Ch^	P:NECext:fb04:ff00
+V	P:NECext:fb04:fe01
+V (Channel)	P:NECext:fb04:fe01
+Channel V	P:NECext:fb04:fe01
+Chv	P:NECext:fb04:fe01
+Vol ^	P:NECext:fb04:fd02
+Vol^	P:NECext:fb04:fd02
+Vol V	P:NECext:fb04:fc03
+Volv	P:NECext:fb04:fc03
+Power	P:NECext:fb04:f708
+Mute	P:NECext:fb04:f609
+Ant A/B	P:NECext:fb04:f50a
+Off Timer	P:NECext:fb04:f10e
+0	P:NECext:fb04:ef10
+1	P:NECext:fb04:ee11
+2	P:NECext:fb04:ed12
+3	P:NECext:fb04:ec13
+4	P:NECext:fb04:eb14
+5	P:NECext:fb04:ea15
+6	P:NECext:fb04:e916
+7	P:NECext:fb04:e817
+8	P:NECext:fb04:e718
+9	P:NECext:fb04:e619
+Quick View	P:NECext:fb04:e51a
 @Mivar	Mivar LCD TV
 Power	P:NECext:fb00:f50a
 Vol_up	P:NECext:fb00:a758
@@ -4821,6 +7033,83 @@ Bright_up	P:NEC:20:80
 Bright_dn	P:NEC:20:8e
 HDR	P:NEC:20:14
 Multi_Window	P:NEC:20:f
+@NAD	Monitor 64,-1
+0	P:NECext:bf40:ff00
+1	P:NECext:bf40:fe01
+2	P:NECext:bf40:fd02
+3	P:NECext:bf40:fc03
+4	P:NECext:bf40:fb04
+5	P:NECext:bf40:fa05
+6	P:NECext:bf40:f906
+7	P:NECext:bf40:f807
+8	P:NECext:bf40:f708
+9	P:NECext:bf40:f609
+Reset	P:NECext:bf40:f30c
+Audio-Reset	P:NECext:bf40:f30c
+Audio	P:NECext:bf40:f20d
+Pict	P:NECext:bf40:f10e
+Tv/Vid	P:NECext:bf40:f00f
+Mute	P:NECext:bf40:ef10
+Power	P:NECext:bf40:ed12
+Mts	P:NECext:bf40:ec13
+Timer/Clock	P:NECext:bf40:ea15
+Review	P:NECext:bf40:e817
+Tv/Catv	P:NECext:bf40:e718
+^	P:NECext:bf40:e619
+Vol ^	P:NECext:bf40:e51a
+Channel ^	P:NECext:bf40:e41b
+Recall	P:NECext:bf40:e31c
+V	P:NECext:bf40:e21d
+Vol V	P:NECext:bf40:e11e
+Channel V	P:NECext:bf40:e01f
+@NEC	Monitor 25,-1
+Vcr Channel +	P:NECext:e619:ff00
+Vcr Channel -	P:NECext:e619:fe01
+Vcr Volume +	P:NECext:e619:fd02
+Vcr Volume -	P:NECext:e619:fc03
+Stop []	P:NECext:e619:fb04
+Play >	P:NECext:e619:fa05
+Record	P:NECext:e619:f906
+Vcr Power	P:NECext:e619:f708
+Mute	P:NECext:e619:f609
+Vcr Tv/Vcr	P:NECext:e619:f50a
+Ff/Srch >>	P:NECext:e619:f30c
+Rew/Srch <<	P:NECext:e619:f20d
+Pause/Still	P:NECext:e619:f10e
+Vcr 1	P:NECext:e619:ef10
+Vcr 2	P:NECext:e619:ee11
+Vcr 3	P:NECext:e619:ed12
+Vcr 4	P:NECext:e619:ec13
+Vcr 5	P:NECext:e619:eb14
+Vcr 6	P:NECext:e619:ea15
+Vcr 7	P:NECext:e619:e916
+Vcr 8	P:NECext:e619:e817
+Vcr 9	P:NECext:e619:e718
+Vcr Ant/Aux	P:NECext:e619:e619
+Vcr 0	P:NECext:e619:e51a
+Vcr Recall	P:NECext:e619:e41b
+Vcr Timer	P:NECext:e619:e31c
+@NEC	Monitor 4,-1
+Tv Channel ^	P:NECext:fb04:ff00
+Tv Channel V	P:NECext:fb04:fe01
+Tv Volume ^	P:NECext:fb04:fd02
+Tv Volume V	P:NECext:fb04:fc03
+Tv Power	P:NECext:fb04:f708
+Tv/Video	P:NECext:fb04:f609
+Tv Mute	P:NECext:fb04:f50a
+Tv Ant/Aux	P:NECext:fb04:f40b
+Tv 0	P:NECext:fb04:ef10
+Tv 1	P:NECext:fb04:ee11
+Tv 2	P:NECext:fb04:ed12
+Tv 3	P:NECext:fb04:ec13
+Tv 4	P:NECext:fb04:eb14
+Tv 5	P:NECext:fb04:ea15
+Tv 6	P:NECext:fb04:e916
+Tv 7	P:NECext:fb04:e817
+Tv 8	P:NECext:fb04:e718
+Tv 9	P:NECext:fb04:e619
+Tv Timer	P:NECext:fb04:e51a
+Tv Recall	P:NECext:fb04:e41b
 @NEC	NEC
 Power	R:38000:33:8073,3997,524,502,495,505,492,1508,498,503,494,1505,501,1500,495,1504,491,1510,496,3988,522,502,495,1505,501,501,496,504,493,1507,499,502,495,1505,501,501,496,18806,8072,3997,524,502,495,505,492,1507,499,502,495,1505,490,1509,497,1504,491,1510,496,3988,522,502,495,1505,501,500,497,503,494,1506,500,501,496,1504,491,510,498,18806,8072,3998,523,503,494,506,491,1509,497,504,493,1506,499,1501,494,1506,500,1502,493,3989,522,504,493,1507,499,502,495,505,492,1508,498,503,494,1506,499,502,495,18807,8072,3998,523,503,494,506,491,1509,497,504,493,1506,500,1501,494,1506,500,1502,493,3989,521,503,494,1506,500,502,495,505,492,1508,498,503,494,1506,500,502,495,18807,8072,3998,523,502,495,505,492,1508,498,503,494,1505,501,1500,495,1504,491,1510,496,3988,523,502,495,1505,501,501,496,503,494,1506,500,501,496,1504,491,510,498
 Standby	R:38000:33:8065,4004,517,509,499,502,495,1505,501,500,497,1502,493,1507,498,1476,519,1482,523,3984,526,499,498,1502,493,1507,498,1477,518,507,501,500,497,1503,492,509,499,17804,8064,4004,516,510,498,503,494,1505,500,501,496,1503,492,1508,497,1503,492,1484,521,3986,524,501,496,1503,492,1508,497,1503,492,509,499,502,495,1505,500,502,495,17808,8071,3999,522,504,493,507,501,1500,495,506,491,1508,497,1502,493,1507,498,1503,492,3991,519,506,491,1508,497,1503,492,1508,497,504,493,507,501,1499,496,506,491,17814,8065,4006,525,500,497,504,493,1507,498,502,495,1504,491,1509,496,1504,491,1510,496,3987,523,502,495,1504,502,1499,496,1504,501,500,497,503,494,1506,499,502,495,17807,8072,3997,524,502,495,505,492,1508,497,503,494,1505,501,1499,496,1479,516,1485,520,3987,523,501,496,1504,491,1509,496,1479,516,510,498,503,494,1505,500,502,495,17806,8073,3996,525,501,496,505,492,1507,498,503,494,1505,500,1499,496,1479,516,1485,520,3987,523,502,495,1504,501,1499,496,1479,516,510,498,503,494,1506,499,502,495
@@ -4891,6 +7180,28 @@ Picture	P:NEC:38:51
 Audio	P:NEC:38:52
 Ch_list	P:NEC:38:5a
 Cc	P:NEC:38:53
+@NEC	TV 24,-1
+Channel +	P:NECext:e718:fd02
+Volume +	P:NECext:e718:fd02
+Channel -	P:NECext:e718:fc03
+Volume -	P:NECext:e718:fc03
+Power On	P:NECext:e718:f708
+Mute	P:NECext:e718:f609
+Video	P:NECext:e718:f50a
+Display	P:NECext:e718:f00f
+Rgb/Pc	P:NECext:e718:a758
+@NEC	TV 24,24
+Dvd/Hd	P:NECext:1818:e31c
+Wide	P:NECext:1818:52ad
+Cur Up	P:NECext:1818:4fb0
+Cur Dn	P:NECext:1818:4eb1
+Cur Lf	P:NECext:1818:4db2
+Cur Rt	P:NECext:1818:4cb3
+Power Off	P:NECext:1818:3fc0
+Proceed	P:NECext:1818:3bc4
+Pointer	P:NECext:1818:36c9
+Zoom +	P:NECext:1818:35ca
+Zoom -	P:NECext:1818:34cb
 @Neo	Neo TV
 On_off	P:NECext:7f00:ea15
 Mute	P:NECext:7f00:e916
@@ -5899,6 +8210,151 @@ Mute	P:Kaseikyo:200280:320
 0	P:Kaseikyo:200280:190
 Last	P:Kaseikyo:200280:370
 Dash	P:Kaseikyo:3200289:100
+@Panasonic	TV 128,0
+Input Tuner	P:Panasonic:80:0
+Input Video 1	P:Panasonic:80:1
+Input Video 2	P:Panasonic:80:2
+Input Video 3	P:Panasonic:80:3
+Input Video 4	P:Panasonic:80:4
+Input Select/Scroll	P:Panasonic:80:5
+Picture Menu	P:Panasonic:80:6
+Sound Select	P:Panasonic:80:7
+P-Nr	P:Panasonic:80:a
+Normalize	P:Panasonic:80:c
+Sleep	P:Panasonic:80:f
+Digit 1	P:Panasonic:80:10
+Digit 2	P:Panasonic:80:11
+Digit 3	P:Panasonic:80:12
+Digit 4	P:Panasonic:80:13
+Digit 5	P:Panasonic:80:14
+Digit 6	P:Panasonic:80:15
+Digit 7	P:Panasonic:80:16
+Digit 8	P:Panasonic:80:17
+Digit 9	P:Panasonic:80:18
+Digit 0/10	P:Panasonic:80:19
+Digit 11	P:Panasonic:80:1a
+Digit 12	P:Panasonic:80:1b
+Digit 13	P:Panasonic:80:1c
+Digit 14	P:Panasonic:80:1d
+Digit 15	P:Panasonic:80:1e
+Digit 16	P:Panasonic:80:1f
+Volume Up	P:Panasonic:80:20
+Volume Down	P:Panasonic:80:21
+Volume Mute Toggle	P:Panasonic:80:32
+Sap	P:Panasonic:80:33
+Channel Up	P:Panasonic:80:34
+Channel Down	P:Panasonic:80:35
+Channel Previous	P:Panasonic:80:37
+Search	P:Panasonic:80:38
+Info / Recall	P:Panasonic:80:39
+Power Toggle	P:Panasonic:80:3d
+Power On	P:Panasonic:80:3e
+Power Off	P:Panasonic:80:3f
+Contrast Up	P:Panasonic:80:42
+Contrast Down	P:Panasonic:80:43
+Brightness Up	P:Panasonic:80:44
+Brightness Down	P:Panasonic:80:45
+Cursor Enter/Select	P:Panasonic:80:49
+Cursor Up	P:Panasonic:80:4a
+Cursor Down	P:Panasonic:80:4b
+Cursor Left	P:Panasonic:80:4e
+Cursor Right	P:Panasonic:80:4f
+Picture Select	P:Panasonic:80:50
+Sound Menu	P:Panasonic:80:51
+Menu	P:Panasonic:80:52
+Pip Volume Up	P:Panasonic:80:53
+Pip Volume Down	P:Panasonic:80:54
+Pip Input Scroll	P:Panasonic:80:56
+Pip Position Up	P:Panasonic:80:57
+Pip Position Down	P:Panasonic:80:58
+Pip Position Left	P:Panasonic:80:59
+Pip Position Right	P:Panasonic:80:5a
+Pip Size	P:Panasonic:80:5b
+Pip Freeze	P:Panasonic:80:5c
+Pip Toggle	P:Panasonic:80:5d
+Pip Swap	P:Panasonic:80:5e
+Pip Frame Advance	P:Panasonic:80:5f
+Freeze	P:Panasonic:80:63
+Pip Channel Up	P:Panasonic:80:64
+Pip Channel Down	P:Panasonic:80:65
+Pip Mode	P:Panasonic:80:66
+Pip Position Switch	P:Panasonic:80:67
+Pip Audio Switch	P:Panasonic:80:68
+Pip Replay	P:Panasonic:80:69
+Tuning	P:Panasonic:80:6c
+Color Button Red	P:Panasonic:80:70
+Color Button Green	P:Panasonic:80:71
+Color Button Yellow	P:Panasonic:80:72
+Color Button Blue	P:Panasonic:80:73
+Input Pc/Vga	P:Panasonic:80:7a
+Bbe	P:Panasonic:80:7e
+Closed Caption	P:Panasonic:80:9d
+Channel Skip	P:Panasonic:80:9e
+Language	P:Panasonic:80:a0
+Auto Search	P:Panasonic:80:a6
+Help	P:Panasonic:80:ac
+Game / Zoom	P:Panasonic:80:bb
+Prog / Dash	P:Panasonic:80:d0
+Exit	P:Panasonic:80:d3
+Return	P:Panasonic:80:d4
+Store	P:Panasonic:80:d5
+Pip Record	P:Panasonic:80:e0
+Pip	P:Panasonic:80:e2
+Pip Multi Window	P:Panasonic:80:e6
+Pip Move/Zoom	P:Panasonic:80:e7
+Viera Tools	P:Panasonic:80:ef
+@Panasonic	TV 128,1
+Teletext Select	P:Panasonic:180:0
+Teletext Mix	P:Panasonic:180:1
+Teletext Time Text	P:Panasonic:180:3
+Teletext Cancel	P:Panasonic:180:4
+Subtitle	P:Panasonic:180:5
+Teletext Index / Timer	P:Panasonic:180:8
+Teletext Hold	P:Panasonic:180:9
+Teletext Store List	P:Panasonic:180:a
+Teletext Size	P:Panasonic:180:c
+Teletext Reveal	P:Panasonic:180:1c
+Teletext List	P:Panasonic:180:1d
+Teletext Reset	P:Panasonic:180:1e
+@Panasonic	TV 128,4
+Input Component 1	P:Panasonic:480:7c
+Input Component 2	P:Panasonic:480:7d
+Input Hdmi 1	P:Panasonic:480:b0
+Input Hdmi 2	P:Panasonic:480:b1
+Input Hdmi 3	P:Panasonic:480:b2
+Input Hdmi 4	P:Panasonic:480:b3
+Aspect Normal	P:Panasonic:480:c7
+Aspect Zoom	P:Panasonic:480:c9
+Aspect Just	P:Panasonic:480:cb
+Aspect Auto	P:Panasonic:480:cc
+Aspect Full	P:Panasonic:480:d1
+Aspect Select/Scroll	P:Panasonic:480:de
+Pip Position	P:Panasonic:480:e5
+@Panasonic	TV 128,9
+Guide	P:Panasonic:980:87
+List	P:Panasonic:980:88
+Apps	P:Panasonic:980:8f
+Viera Cast / Internet	P:Panasonic:980:93
+Menu Home	P:Panasonic:980:95
+Menu Sub / Option	P:Panasonic:980:a7
+Sd Card / Usb / Media Player	P:Panasonic:980:ab
+Favorite Channel	P:Panasonic:980:ae
+Viera Link	P:Panasonic:980:b1
+Ipod	P:Panasonic:980:b4
+3D	P:Panasonic:980:b7
+Usb	P:Panasonic:980:b8
+Pause	P:Panasonic:980:c1
+Play	P:Panasonic:980:c0
+Stop	P:Panasonic:980:c2
+Fast Forward	P:Panasonic:980:c3
+Rewind	P:Panasonic:980:c4
+Record	P:Panasonic:980:c5
+Input Antenna A	P:Panasonic:980:cd
+Input Antenna B	P:Panasonic:980:ce
+Sd Record	P:Panasonic:980:d5
+Previous	P:Panasonic:980:dc
+Next	P:Panasonic:980:dd
+Netflix	P:Panasonic:980:f2
 @PDi	PD108-420
 Power	P:RC5:0:c
 Mute	P:RC5:0:d
@@ -6560,6 +9016,77 @@ Vol_up	P:RC6:0:10
 Vol_dn	P:RC6:0:11
 Mute	P:RC6:0:d
 Home	P:RC6:0:54
+@Philips	TV 0,-1
+0	P:RC5X:0:0
+1	P:RC5X:0:1
+2	P:RC5X:0:2
+3	P:RC5X:0:3
+4	P:RC5X:0:4
+5	P:RC5X:0:5
+6	P:RC5X:0:6
+7	P:RC5X:0:7
+8	P:RC5X:0:8
+9	P:RC5X:0:9
+Power	P:RC5X:0:c
+Mute	P:RC5X:0:d
+Exit	P:RC5X:0:f
+Status	P:RC5X:0:f
+Volume +	P:RC5X:0:10
+Volume -	P:RC5X:0:11
+Tv Guide + Up	P:RC5X:0:1c
+Up	P:RC5X:0:1c
+Down	P:RC5X:0:1d
+Tv Guide + Down	P:RC5X:0:1d
+Channel +	P:RC5X:0:20
+Channel -	P:RC5X:0:21
+A/Ch	P:RC5X:0:22
+Alt. Audio	P:RC5X:0:23
+Sleep	P:RC5X:0:26
+Right	P:RC5X:0:2b
+Left	P:RC5X:0:2c
+M	P:RC5X:0:2e
+Menu	P:RC5X:0:2e
+Tv Guide + Setup	P:RC5X:0:2e
+Green	P:RC5X:0:2f
+Red	P:RC5X:0:36
+Yellow	P:RC5X:0:37
+Ext. Input	P:RC5X:0:38
+Blue	P:RC5X:0:3a
+Dtv Freeze	P:RC5X:0:5d
+@Philips	TV 3,-1
+Tv Guide + On/Off	P:RC5X:3:2c
+Tv Guide + Info	P:RC5X:3:2d
+Tv Guide + Record	P:RC5X:3:3c
+Analog Tv	P:RC5X:3:76
+Dtv	P:RC5X:3:77
+@Philips	Unknown_TV 0,-1
+Key_0	P:RC5X:0:0
+Key_1	P:RC5X:0:1
+Key_2	P:RC5X:0:2
+Key_3	P:RC5X:0:3
+Key_4	P:RC5X:0:4
+Key_5	P:RC5X:0:5
+Key_6	P:RC5X:0:6
+Key_7	P:RC5X:0:7
+Key_8	P:RC5X:0:8
+Key_9	P:RC5X:0:9
+Key_102Nd	P:RC5X:0:a
+Key_Power	P:RC5X:0:c
+Key_Mute	P:RC5X:0:d
+Reset	P:RC5X:0:e
+Cont_-	P:RC5X:0:e
+Key_Volumeup	P:RC5X:0:10
+Key_Volumedown	P:RC5X:0:11
+Brt_+	P:RC5X:0:12
+Brt_-	P:RC5X:0:13
+Cont_+	P:RC5X:0:14
+unknown1	P:RC5X:0:32
+unknown2	P:RC5X:0:34
+unknown4	P:RC5X:0:35
+unknown3	P:RC5X:0:36
+Timer	P:RC5X:0:37
+A/V	P:RC5X:0:38
+Text_Tv	P:RC5X:0:3c
 @Pioneer	Pioneer Kuro PDP LX508A
 Power	P:Pioneer:aa:1c
 Vol_up	P:Pioneer:aa:a
@@ -6669,6 +9196,25 @@ Ok	P:Samsung32:e:46
 Vol+	P:Samsung32:e:14
 Vol-	P:Samsung32:e:15
 Google	P:Samsung32:e:82
+@Proton	TV 4,-1
+Channel +	P:NECext:fb04:ff00
+Channel -	P:NECext:fb04:fe01
+Volume +	P:NECext:fb04:fd02
+Volume -	P:NECext:fb04:fc03
+Power	P:NECext:fb04:f708
+Mute	P:NECext:fb04:f609
+Input Source	P:NECext:fb04:f40b
+0	P:NECext:fb04:ef10
+1	P:NECext:fb04:ee11
+2	P:NECext:fb04:ed12
+3	P:NECext:fb04:ec13
+4	P:NECext:fb04:eb14
+5	P:NECext:fb04:ea15
+6	P:NECext:fb04:e916
+7	P:NECext:fb04:e817
+8	P:NECext:fb04:e718
+9	P:NECext:fb04:e619
+Last	P:NECext:fb04:e51a
 @Prowise	Proline
 Power	P:NEC:20:52
 Prowise	P:NEC:20:d
@@ -6693,6 +9239,27 @@ Source	P:NECext:ff03:8976
 Power_extern	P:NECext:ff03:df2
 Vol_extern_up	P:NECext:ff03:cf3
 Vol_up	P:NECext:ff03:ec13
+@Quasar	TV 128,0
+Sleep	P:Panasonic:80:f
+1	P:Panasonic:80:10
+2	P:Panasonic:80:11
+3	P:Panasonic:80:12
+4	P:Panasonic:80:13
+5	P:Panasonic:80:14
+6	P:Panasonic:80:15
+7	P:Panasonic:80:16
+8	P:Panasonic:80:17
+9	P:Panasonic:80:18
+0	P:Panasonic:80:19
+Volume +	P:Panasonic:80:20
+Volume -	P:Panasonic:80:21
+Mute	P:Panasonic:80:32
+Channel +	P:Panasonic:80:34
+Channel -	P:Panasonic:80:35
+Rtune	P:Panasonic:80:37
+Recall	P:Panasonic:80:39
+Power	P:Panasonic:80:3d
+Action	P:Panasonic:80:52
 @RCA	RCA 24 Roku
 Power	P:NECext:c7ea:e817
 Home	P:NECext:c7ea:fc03
@@ -6860,6 +9427,32 @@ Input	P:NEC:a0:1a
 Exit	P:NEC:a0:10
 Ch_next	P:NEC:a0:3
 Ch_prev	P:NEC:a0:1f
+@remotec	Unknown_TV 0,-1
+tv-0	P:RC5X:0:0
+tv-1	P:RC5X:0:1
+tv-2	P:RC5X:0:2
+tv-3	P:RC5X:0:3
+tv-4	P:RC5X:0:4
+tv-5	P:RC5X:0:5
+tv-6	P:RC5X:0:6
+tv-7	P:RC5X:0:7
+tv-8	P:RC5X:0:8
+tv-9	P:RC5X:0:9
+tv-double	P:RC5X:0:a
+tv-p2p	P:RC5X:0:b
+tv-off	P:RC5X:0:c
+tv-mute	P:RC5X:0:d
+tv-vol-up	P:RC5X:0:10
+tv-vol-down	P:RC5X:0:11
+tv-p-up	P:RC5X:0:20
+tv-p-down	P:RC5X:0:21
+tv-1-2	P:RC5X:0:23
+tv-pause	P:RC5X:0:29
+tv-prev	P:RC5X:0:2e
+tv-next	P:RC5X:0:35
+tv-switch	P:RC5X:0:38
+tv-stop	P:RC5X:0:3c
+tv-play	P:RC5X:0:3f
 @RemotesReplaced	RemotesReplaced RRS41
 Power	P:NEC:40:12
 Mute	P:NEC:40:10
@@ -6911,6 +9504,21 @@ Replay	P:NECext:c2ea:8778
 Rewind	P:NECext:c2ea:cb34
 Play/pause	P:NECext:c2ea:b34c
 Fast_forward	P:NECext:c2ea:aa55
+@Samsung	Rear Projection DLP TV 7,7
+Antenna Input	P:NECx:707:1b
+Component Video 1	P:NECx:707:43
+Pc Input	P:NECx:707:69
+S Video 1	P:NECx:707:85
+Power Off	P:NECx:707:98
+Power On	P:NECx:707:99
+Video 1	P:NECx:707:c1
+S Video 3	P:NECx:707:c2
+Component Video 3	P:NECx:707:c3
+Video 2	P:NECx:707:f8
+Video 3	P:NECx:707:f9
+S Video 2	P:NECx:707:fb
+Component Video 2	P:NECx:707:fd
+Dvi Input	P:NECx:707:ff
 @Samsung	Samsung
 Power	P:Samsung32:7:2
 Up	P:Samsung32:7:60
@@ -8681,6 +11289,70 @@ Left	P:Samsung32:7:65
 Right	P:Samsung32:7:62
 123	P:Samsung32:7:d2
 Extra	P:Samsung32:7:f6
+@Samsung	TV 7,7
+Input Source	P:NECx:707:1
+Power	P:NECx:707:2
+1	P:NECx:707:4
+2	P:NECx:707:5
+3	P:NECx:707:6
+Volume +	P:NECx:707:7
+4	P:NECx:707:8
+5	P:NECx:707:9
+6	P:NECx:707:a
+Volume -	P:NECx:707:b
+7	P:NECx:707:c
+8	P:NECx:707:d
+9	P:NECx:707:e
+Mute	P:NECx:707:f
+Channel -	P:NECx:707:10
+0	P:NECx:707:11
+Channel +	P:NECx:707:12
+Last	P:NECx:707:13
+Menu	P:NECx:707:1a
+Info	P:NECx:707:1f
+Ad/Subt	P:NECx:707:25
+Exit	P:NECx:707:2d
+E-Manual	P:NECx:707:3f
+Tools	P:NECx:707:4b
+Guide	P:NECx:707:4f
+Return	P:NECx:707:58
+Cursor Up	P:NECx:707:60
+Cursor Down	P:NECx:707:61
+Cursor Right	P:NECx:707:62
+Cursor Left	P:NECx:707:65
+Enter	P:NECx:707:68
+Ch List	P:NECx:707:6b
+Smart Hub	P:NECx:707:79
+3D	P:NECx:707:9f
+Hdmi2	P:NECx:707:be
+Hdmi3	P:NECx:707:c2
+Hdmi4	P:NECx:707:c5
+Hdmi1	P:NECx:707:e9
+@Samsung	Unknown_TV 7,7
+Mts	P:NECx:707:0
+Tv/Video	P:NECx:707:1
+Key_Power	P:NECx:707:2
+Key_Sleep	P:NECx:707:3
+Key_1	P:NECx:707:4
+Key_2	P:NECx:707:5
+Key_3	P:NECx:707:6
+Key_Volumeup	P:NECx:707:7
+Key_4	P:NECx:707:8
+Key_5	P:NECx:707:9
+Key_6	P:NECx:707:a
+Key_Volumedown	P:NECx:707:b
+Key_7	P:NECx:707:c
+Key_8	P:NECx:707:d
+Key_9	P:NECx:707:e
+Key_Mute	P:NECx:707:f
+Key_Channeldown	P:NECx:707:10
+Key_0	P:NECx:707:11
+Key_Channelup	P:NECx:707:12
+PrevChannel	P:NECx:707:13
+Key_Menu	P:NECx:707:1a
+Display	P:NECx:707:1f
++100	P:NECx:707:23
+Surf	P:NECx:707:3d
 @Sankey	Sankey TV
 Power	P:NEC:20:52
 Mute	P:NEC:20:53
@@ -8864,6 +11536,51 @@ Left	P:NEC:38:1f
 Up	P:NEC:38:4e
 Down	P:NEC:38:4f
 Menu	P:NEC:38:17
+@Sanyo	TV 56,-1
+0	P:NECext:c738:ff00
+1	P:NECext:c738:fe01
+2	P:NECext:c738:fd02
+3	P:NECext:c738:fc03
+4	P:NECext:c738:fb04
+5	P:NECext:c738:fa05
+6	P:NECext:c738:f906
+7	P:NECext:c738:f807
+8	P:NECext:c738:f708
+9	P:NECext:c738:f609
+Channel +	P:NECext:c738:f50a
+Channel -	P:NECext:c738:f40b
+Display	P:NECext:c738:f30c
+Sleep	P:NECext:c738:f20d
+Volume +	P:NECext:c738:f10e
+Volume -	P:NECext:c738:f00f
+Caption	P:NECext:c738:ee11
+Power	P:NECext:c738:ed12
+Input Source	P:NECext:c738:ec13
+Menu	P:NECext:c738:e817
+Mute	P:NECext:c738:e718
+Recall	P:NECext:c738:e619
+Reset	P:NECext:c738:e31c
+@Sanyo	Unknown_TV 56,-1
+Key_0	P:NECext:c738:ff00
+Key_1	P:NECext:c738:fe01
+Key_2	P:NECext:c738:fd02
+Key_3	P:NECext:c738:fc03
+Key_4	P:NECext:c738:fb04
+Key_5	P:NECext:c738:fa05
+Key_6	P:NECext:c738:f906
+Key_7	P:NECext:c738:f807
+Key_8	P:NECext:c738:f708
+Key_9	P:NECext:c738:f609
+display	P:NECext:c738:f30c
+Key_Sleep	P:NECext:c738:f20d
+Key_Volumeup	P:NECext:c738:f10e
+Key_Volumedown	P:NECext:c738:f00f
+Key_Power	P:NECext:c738:ed12
+tv/vid	P:NECext:c738:ec13
+Key_Menu	P:NECext:c738:e817
+Key_Channeldown	P:NECext:c738:e619
+pip	P:NECext:c738:a45b
+swap	P:NECext:c738:a25d
 @Sceptre	Sceptre 8142026670003C
 Power	P:SIRC:1:15
 Info	P:SIRC:1:3c
@@ -10280,6 +12997,391 @@ Vol_dn	P:SIRC:1:13
 Mute	P:SIRC:1:14
 Home	P:SIRC:1:60
 Hdmi	P:SIRC:1:25
+@Sony	TV 1,-1
+Key 1	P:SIRC:1:0
+Key 2	P:SIRC:1:1
+Key 3	P:SIRC:1:2
+Key 4	P:SIRC:1:3
+Key 5	P:SIRC:1:4
+Key 6	P:SIRC:1:5
+Key 7	P:SIRC:1:6
+Key 8	P:SIRC:1:7
+Key 9	P:SIRC:1:8
+Key 0	P:SIRC:1:9
+Enter	P:SIRC:1:b
+1-	P:SIRC:1:c
+2-	P:SIRC:1:d
+Guide	P:SIRC:1:e
+Clear	P:SIRC:1:f
+Channel Up	P:SIRC:1:10
+Channel Down	P:SIRC:1:11
+Volume Up	P:SIRC:1:12
+Volume Down	P:SIRC:1:13
+Mute	P:SIRC:1:14
+Power On/Off	P:SIRC:1:15
+Reset	P:SIRC:1:16
+Normalize Pict	P:SIRC:1:16
+Record	P:SIRC:1:16
+Mts/Sap	P:SIRC:1:17
+Contrast +	P:SIRC:1:18
+Contrast -	P:SIRC:1:19
+Color +	P:SIRC:1:1a
+Color -	P:SIRC:1:1b
+-/--	P:SIRC:1:1d
+Brightness +	P:SIRC:1:1e
+Brightness -	P:SIRC:1:1f
+Hue -	P:SIRC:1:20
+Hue +	P:SIRC:1:21
+Sharpness +	P:SIRC:1:22
+Sharpness -	P:SIRC:1:23
+Input Tv Tuner	P:SIRC:1:24
+Input Scroll	P:SIRC:1:25
+Balance -	P:SIRC:1:26
+Balance +	P:SIRC:1:27
+Loudness	P:SIRC:1:28
+Surround	P:SIRC:1:29
+Ant/Aux	P:SIRC:1:2a
+Power On	P:SIRC:1:2e
+Power Off	P:SIRC:1:2f
+Timer Up	P:SIRC:1:31
+Timer Down	P:SIRC:1:32
+Cursor Right	P:SIRC:1:33
+Cursor Left	P:SIRC:1:34
+Clock Set	P:SIRC:1:35
+Sleep	P:SIRC:1:36
+Teletext Off	P:SIRC:1:38
+Info	P:SIRC:1:3a
+Previous Channel	P:SIRC:1:3b
+Timer	P:SIRC:1:3c
+Picture Off	P:SIRC:1:3e
+Teletext	P:SIRC:1:3f
+Input Video 1	P:SIRC:1:40
+Input Video 2	P:SIRC:1:41
+Input Video 3	P:SIRC:1:42
+Input Rgb 1	P:SIRC:1:43
+Input Rgb 2	P:SIRC:1:44
+Input Video 4	P:SIRC:1:47
+Input Video 5	P:SIRC:1:48
+Input Video 6	P:SIRC:1:49
+Input Video 7	P:SIRC:1:4a
+Input Video 8	P:SIRC:1:4b
+Input Video 9	P:SIRC:1:4c
+Input Video 10	P:SIRC:1:4d
+Input Video 11	P:SIRC:1:4e
+Input Video 12	P:SIRC:1:4f
+Internal Spks On/Off	P:SIRC:1:50
+Alarm	P:SIRC:1:53
+Tablet Change	P:SIRC:1:54
+Pip Channel Up	P:SIRC:1:58
+Pip Channel Down	P:SIRC:1:59
+Pip Tv/Video	P:SIRC:1:5a
+Pip On/Off	P:SIRC:1:5b
+Freeze	P:SIRC:1:5c
+Pip Position	P:SIRC:1:5e
+Pip Swap	P:SIRC:1:5f
+Menu	P:SIRC:1:60
+Exit	P:SIRC:1:63
+Picture Mode	P:SIRC:1:64
+Cursor Enter	P:SIRC:1:65
+Up (Select)	P:SIRC:1:67
+Pip - Select Right	P:SIRC:1:67
+Tv Sys	P:SIRC:1:68
+Stereo / Mono	P:SIRC:1:69
+Colour Sys	P:SIRC:1:6a
+Auto Program Scan	P:SIRC:1:6b
+Preset	P:SIRC:1:6c
+Search +	P:SIRC:1:6e
+Search -	P:SIRC:1:6f
+Treble +	P:SIRC:1:70
+Treble -	P:SIRC:1:71
+Bass +	P:SIRC:1:72
+Bass -	P:SIRC:1:73
+Cursor Up	P:SIRC:1:74
+Cursor Down	P:SIRC:1:75
+Channel Add	P:SIRC:1:78
+Channel Skip	P:SIRC:1:79
+Parameter Select	P:SIRC:1:7c
+Trinitron	P:SIRC:1:7d
+@Sony	TV 119,-1
+Power Saving	P:SIRC15:77:36
+Drc Mode	P:SIRC15:77:39
+Favorites	P:SIRC15:77:76
+Favs	P:SIRC15:77:76
+On (Id Mode)	P:SIRC15:77:7c
+Off (Id Mode)	P:SIRC15:77:7d
+Set (Id Mode)	P:SIRC15:77:7e
+@Sony	TV 151,-1
+Stop	P:SIRC15:97:18
+Pause	P:SIRC15:97:19
+Play	P:SIRC15:97:1a
+Reverse	P:SIRC15:97:1b
+Forward	P:SIRC15:97:1c
+Digit Separator	P:SIRC15:97:1d
+Record	P:SIRC15:97:20
+I-Link	P:SIRC15:97:21
+Subtitle	P:SIRC15:97:28
+Memory Stick	P:SIRC15:97:31
+Menu Options	P:SIRC15:97:36
+Media	P:SIRC15:97:38
+Previous	P:SIRC15:97:3c
+Next	P:SIRC15:97:3d
+Pip Zoom Left	P:SIRC15:97:4d
+Pip Zoom Right	P:SIRC15:97:4e
+Store Mode	P:SIRC15:97:6a
+Pip Zoom In Left	P:SIRC15:97:78
+Pip Zoom In Right	P:SIRC15:97:79
+@Sony	TV 164,-1
+Cc	P:SIRC15:a4:10
+Closed Caption	P:SIRC15:a4:10
+Display Mode	P:SIRC15:a4:10
+Headphones	P:SIRC15:a4:11
+Dvd Component Input	P:SIRC15:a4:12
+Comp	P:SIRC15:a4:17
+Steady Sound On/Off	P:SIRC15:a4:1f
+Effect2	P:SIRC15:a4:1f
+Screen: Normal	P:SIRC15:a4:31
+Normal	P:SIRC15:a4:31
+Screen: Zoom/Subttl	P:SIRC15:a4:32
+Zoom	P:SIRC15:a4:32
+Hd Component Input	P:SIRC15:a4:36
+Screen: Normal/Full	P:SIRC15:a4:3b
+Full - Normal	P:SIRC15:a4:3b
+Wide Mode	P:SIRC15:a4:3d
+Aspect	P:SIRC15:a4:3d
+Wide	P:SIRC15:a4:3d
+Screen: Wide Zoom	P:SIRC15:a4:42
+Wide Zoom	P:SIRC15:a4:42
+Vertical Centering	P:SIRC15:a4:44
+Screen: Subtitle16X9	P:SIRC15:a4:45
+Rgb/Yuv	P:SIRC15:a4:48
+Yuv	P:SIRC15:a4:48
+Comp 2	P:SIRC15:a4:48
+Input-Yuv	P:SIRC15:a4:48
+Vm	P:SIRC15:a4:4d
+Trinitron	P:SIRC15:a4:4f
+Nextview	P:SIRC15:a4:5b
+Program Guide	P:SIRC15:a4:5b
+Freeze	P:SIRC15:a4:60
+Active < >	P:SIRC15:a4:63
+Active	P:SIRC15:a4:63
+Active Ch	P:SIRC15:a4:63
+Active </>	P:SIRC15:a4:63
+Display Show	P:SIRC15:a4:66
+Full Reset	P:SIRC15:a4:6c
+Pip Off	P:SIRC15:a4:6e
+Demo	P:SIRC15:a4:71
+Multi-Picture	P:SIRC15:a4:74
+Multi-Pic	P:SIRC15:a4:74
+Index	P:SIRC15:a4:74
+Pip Chn Index	P:SIRC15:a4:74
+Pip Multi	P:SIRC15:a4:74
+Split Picture	P:SIRC15:a4:77
+Pip Split	P:SIRC15:a4:77
+Pic Split	P:SIRC15:a4:77
+Twin View	P:SIRC15:a4:77
+Split Screen	P:SIRC15:a4:77
+Pip Split Screen	P:SIRC15:a4:77
+Pip On/Off	P:SIRC15:a4:77
+Mode	P:SIRC15:a4:77
+Audio	P:SIRC15:a4:7c
+Pip Audio	P:SIRC15:a4:7c
+Audio Swap	P:SIRC15:a4:7c
+Pip Audio Monitor	P:SIRC15:a4:7c
+Pip Sound	P:SIRC15:a4:7c
+Degauss	P:SIRC15:a4:7e
+@Sony	TV 183,-1
+Guide	P:SIRC15:b7:6e
+@Sony	TV 26,-1
+Sync Menu	P:SIRC15:1a:58
+Hdmi Scroll	P:SIRC:1a:59
+Input Hdmi 1	P:SIRC15:1a:5a
+Input Hdmi 1 (2011)	P:SIRC:1a:5a
+Input Hdmi 2	P:SIRC15:1a:5b
+Input Hdmi 2 (2011)	P:SIRC:1a:5b
+Input Hdmi 3	P:SIRC15:1a:5c
+Input Hdmi 3 (2011)	P:SIRC:1a:5c
+Input Hdmi 4	P:SIRC15:1a:5d
+Input Hdmi 4 (2011)	P:SIRC:1a:5d
+Input Hdmi 5	P:SIRC15:1a:5e
+Input Hdmi 5 (2011)	P:SIRC:1a:5e
+Menu Pop Up	P:SIRC:1a:61
+Dme X Bravia Module	P:SIRC15:1a:6b
+Internet Tv	P:SIRC15:1a:79
+Internet Apps	P:SIRC15:1a:7a
+Netflix	P:SIRC:1a:7c
+Internet Qriocity	P:SIRC15:1a:7d
+@Sony	TV 26,42
+Video Off	P:SIRC20:55a:50
+Video Memory 1	P:SIRC20:55a:51
+Video Memory 2	P:SIRC20:55a:52
+Video Memory 3	P:SIRC20:55a:53
+Video Memory 4	P:SIRC20:55a:54
+Video Memory 5	P:SIRC20:55a:55
+Video Memory 6	P:SIRC20:55a:56
+@Sony	TV 3,-1
+Clock	P:SIRC:3:2b
+Audio/Red	P:SIRC:3:4c
+Audio Menu	P:SIRC:3:4c
+Red	P:SIRC:3:4c
+Picture/Green	P:SIRC:3:4d
+Green	P:SIRC:3:4d
+Video Menu	P:SIRC:3:4d
+Multiselect/Yellow	P:SIRC:3:4e
+Multi-Pip	P:SIRC:3:4e
+Yellow	P:SIRC:3:4e
+16/9/Blue	P:SIRC:3:4f
+Blue	P:SIRC:3:4f
+Zoom	P:SIRC:3:4f
+@Sony	TV 84,-1
+Menu	P:SIRC15:54:29
+Video Input	P:SIRC15:54:2a
+Input A	P:SIRC15:54:2b
+Input B	P:SIRC15:54:2c
+Power On	P:SIRC15:54:2e
+Power Off	P:SIRC15:54:2f
+Cursor Right	P:SIRC15:54:33
+Cursor Left	P:SIRC15:54:34
+Cursor Up	P:SIRC15:54:35
+Cursor Down	P:SIRC15:54:36
+Cursor Enter	P:SIRC15:54:5a
+S Video Input	P:SIRC15:54:5f
+Reset	P:SIRC15:54:7b
+@Sony	Unknown_tv 1,-1
+Key_1	P:SIRC:1:0
+Key_2	P:SIRC:1:1
+Key_3	P:SIRC:1:2
+Key_4	P:SIRC:1:3
+Key_5	P:SIRC:1:4
+Key_6	P:SIRC:1:5
+Key_7	P:SIRC:1:6
+Key_8	P:SIRC:1:7
+Key_9	P:SIRC:1:8
+Key_0	P:SIRC:1:9
+Key_Enter	P:SIRC:1:b
+Key_Channelup	P:SIRC:1:10
+Key_Channeldown	P:SIRC:1:11
+Key_Volumeup	P:SIRC:1:12
+Key_Volumedown	P:SIRC:1:13
+Key_Mute	P:SIRC:1:14
+Key_Power	P:SIRC:1:15
+Reset	P:SIRC:1:16
+Mts	P:SIRC:1:17
+Picture+	P:SIRC:1:18
+Picture-	P:SIRC:1:19
+Color+	P:SIRC:1:1a
+Color-	P:SIRC:1:1b
+Bright+	P:SIRC:1:1e
+Bright-	P:SIRC:1:1f
+Hue+	P:SIRC:1:20
+Hue-	P:SIRC:1:21
+Sharp+	P:SIRC:1:22
+Sharp-	P:SIRC:1:23
+Key_Tuner	P:SIRC:1:24
+Tv/Video	P:SIRC:1:25
+Bal_Left	P:SIRC:1:26
+Bal_Right	P:SIRC:1:27
+Key_Subtitle	P:SIRC:1:28
+Srs	P:SIRC:1:29
+Ant/Aux	P:SIRC:1:2a
+Key_Time	P:SIRC:1:30
+Key_Sleep	P:SIRC:1:36
+Jump	P:SIRC:1:3b
+Input1	P:SIRC:1:40
+Input2	P:SIRC:1:41
+Input3	P:SIRC:1:42
+Input4	P:SIRC:1:43
+Input5	P:SIRC:1:44
+Input6	P:SIRC:1:45
+Input7	P:SIRC:1:46
+Input8	P:SIRC:1:47
+Cable	P:SIRC:1:4e
+Key_Info	P:SIRC:1:60
+Key_Video	P:SIRC:1:61
+Key_Audio	P:SIRC:1:62
+Key_Exit	P:SIRC:1:63
+Asc	P:SIRC:1:64
+Autoprog	P:SIRC:1:68
+Ch_Auto_Pgm	P:SIRC:1:6b
+Av+	P:SIRC:1:74
+Av-	P:SIRC:1:75
+Ch_Add	P:SIRC:1:78
+Ch_Del	P:SIRC:1:79
+@Sony	Unknown_tv 2,-1
+Key_1	P:SIRC:2:0
+Key_2	P:SIRC:2:1
+Key_3	P:SIRC:2:2
+Key_4	P:SIRC:2:3
+Key_5	P:SIRC:2:4
+Key_6	P:SIRC:2:5
+Key_7	P:SIRC:2:6
+Key_8	P:SIRC:2:7
+Key_9	P:SIRC:2:8
+Key_0	P:SIRC:2:9
+Key_Enter	P:SIRC:2:b
+Key_Channelup	P:SIRC:2:10
+Key_Channeldown	P:SIRC:2:11
+Key_Volumeup	P:SIRC:2:12
+Key_Volumedown	P:SIRC:2:13
+Jog_2_Speed	P:SIRC:2:14
+Key_Power	P:SIRC:2:15
+Reset	P:SIRC:2:16
+Audio_Monitor	P:SIRC:2:17
+Key_Stop	P:SIRC:2:18
+Key_Pause	P:SIRC:2:19
+Key_Play	P:SIRC:2:1a
+Color-	P:SIRC:2:1b
+Key_Record	P:SIRC:2:1d
+Bright+	P:SIRC:2:1e
+Bright-	P:SIRC:2:1f
+Hue+	P:SIRC:2:20
+Hue-	P:SIRC:2:21
+Sharp+	P:SIRC:2:22
+Jog_1/5_Speed	P:SIRC:2:23
+Key_Tuner	P:SIRC:2:24
+Tv/Video	P:SIRC:2:25
+Bal_Left	P:SIRC:2:26
+Bal_Right	P:SIRC:2:27
+Search-	P:SIRC:2:28
+Search+	P:SIRC:2:29
+Ant/Vcr	P:SIRC:2:2a
+Jog-	P:SIRC:2:30
+Jog+	P:SIRC:2:31
+Jog_1_Speed	P:SIRC:2:33
+Key_Sleep	P:SIRC:2:36
+Jump	P:SIRC:2:3b
+Slow+	P:SIRC:2:3d
+Slow-	P:SIRC:2:3e
+Input1	P:SIRC:2:40
+Input2	P:SIRC:2:41
+Cursor_Up	P:SIRC:2:42
+Cursor_Down	P:SIRC:2:43
+Input5	P:SIRC:2:44
+Input6	P:SIRC:2:45
+Counter_Reset	P:SIRC:2:46
+Input8	P:SIRC:2:47
+Index_Mark	P:SIRC:2:48
+Index_Erase	P:SIRC:2:49
+Key_Menu	P:SIRC:2:4d
+Cable	P:SIRC:2:4e
+Input_Select	P:SIRC:2:4f
+Execute	P:SIRC:2:51
+Index	P:SIRC:2:53
+Data_Screen	P:SIRC:2:5a
+Key_Next	P:SIRC:2:5d
+Key_Info	P:SIRC:2:60
+Cursor_Right	P:SIRC:2:61
+Cursor_Left	P:SIRC:2:62
+Timer_Clear	P:SIRC:2:63
+Asc	P:SIRC:2:64
+Timer_On/Off	P:SIRC:2:65
+Autoprog	P:SIRC:2:68
+Ch_Auto_Pgm	P:SIRC:2:6b
+Av+	P:SIRC:2:74
+Av-	P:SIRC:2:75
+Ch_Add	P:SIRC:2:78
+Ch_Del	P:SIRC:2:79
+High_Speed_Rewind	P:SIRC:2:7d
+Jog_End	P:SIRC:2:7e
 @Strong	Strong 32HX4003
 Power	P:Samsung32:e:c
 Mute	P:Samsung32:e:d
@@ -11117,6 +14219,54 @@ Vol_up	P:RCA:f:f4
 Vol_dn	P:RCA:f:74
 Ch_next	P:RCA:f:b4
 Ch_prev	P:RCA:f:34
+@Toshiba	TV 64,-1
+0	P:NECext:bf40:ff00
+1	P:NECext:bf40:fe01
+2	P:NECext:bf40:fd02
+3	P:NECext:bf40:fc03
+4	P:NECext:bf40:fb04
+5	P:NECext:bf40:fa05
+6	P:NECext:bf40:f906
+7	P:NECext:bf40:f807
+8	P:NECext:bf40:f708
+9	P:NECext:bf40:f609
+100	P:NECext:bf40:f50a
+Reset	P:NECext:bf40:f30c
+Tv/Video	P:NECext:bf40:f00f
+Input Source	P:NECext:bf40:f00f
+Mute	P:NECext:bf40:ef10
+Power	P:NECext:bf40:ed12
+Mts	P:NECext:bf40:ec13
+Enter	P:NECext:bf40:e817
+Enter / Ch Return	P:NECext:bf40:e817
+Ch Enter	P:NECext:bf40:e817
+Surround	P:NECext:bf40:e718
+Suround	P:NECext:bf40:e718
+Fav Chan +	P:NECext:bf40:e619
+Fav Ch +	P:NECext:bf40:e619
+Fav+	P:NECext:bf40:e619
+Volume +	P:NECext:bf40:e51a
+Volume +/Cursor Rt	P:NECext:bf40:e51a
+Channel +	P:NECext:bf40:e41b
+Channel +/Cursor Up	P:NECext:bf40:e41b
+Recall	P:NECext:bf40:e31c
+Fav Chan -	P:NECext:bf40:e21d
+Fav Ch -	P:NECext:bf40:e21d
+Fav-	P:NECext:bf40:e21d
+Volume -	P:NECext:bf40:e11e
+Volume -/Cursor Lt	P:NECext:bf40:e11e
+Channel -	P:NECext:bf40:e01f
+Channel -/Cursor Dn	P:NECext:bf40:e01f
+C.Caption	P:NECext:bf40:a857
+Exit	P:NECext:bf40:a758
+Power On	P:NECext:bf40:817e
+Power Off	P:NECext:bf40:807f
+Menu/Enter	P:NECext:bf40:7f80
+Menu / Enter	P:NECext:bf40:7f80
+Menu Enter	P:NECext:bf40:7f80
+Xds	P:NECext:bf40:7e81
+Adv Up	P:NECext:bf40:7d82
+Adv Dn	P:NECext:bf40:7c83
 @Toshiba	Toshiba 32AV502U
 Power	P:NEC:40:12
 Vol_up	P:NEC:40:1a
@@ -11405,6 +14555,10 @@ XBOX	P:NECext:d880:d02f
 PLATINUM	P:NECext:7f00:ea15
 HISENSE	P:NECext:bf00:f20d
 ELITELUX	P:NECext:7f00:ea15
+@UNIVERSAL	Unknown_tv 1,-1
+Key_Volumeup	P:SIRC:1:12
+Key_Volumedown	P:SIRC:1:13
+Key_Mute	P:SIRC:1:14
 @User Created	UniversalSamsungFF
 Power	P:Samsung32:7:2
 Hub/Source	P:Samsung32:7:1
@@ -11445,6 +14599,46 @@ SoundSettings	P:Samsung32:7:2b
 Source(AV)	P:Samsung32:7:84
 PowerOff	P:Samsung32:7:98
 PowerOn	P:Samsung32:7:99
+@Vestel	Unknown_TV 0,-1
+Key_0	P:RC5X:0:0
+Key_1	P:RC5X:0:1
+Key_2	P:RC5X:0:2
+Key_3	P:RC5X:0:3
+Key_4	P:RC5X:0:4
+Key_5	P:RC5X:0:5
+Key_6	P:RC5X:0:6
+Key_7	P:RC5X:0:7
+Key_8	P:RC5X:0:8
+Key_9	P:RC5X:0:9
+Key_102Nd	P:RC5X:0:a
+Off	P:RC5X:0:c
+Key_Mute	P:RC5X:0:d
+Pp	P:RC5X:0:e
+VOL_p	P:RC5X:0:10
+VOL+m	P:RC5X:0:11
+Key_Info	P:RC5X:0:12
+Key_Left	P:RC5X:0:15
+Key_Right	P:RC5X:0:16
+Key_Up	P:RC5X:0:20
+Key_Down	P:RC5X:0:21
+PlP	P:RC5X:0:22
+i-ii	P:RC5X:0:23
+Key_C	P:RC5X:0:29
+Key_B	P:RC5X:0:2a
+Key_F	P:RC5X:0:2b
+Key_G	P:RC5X:0:2c
+Key_D	P:RC5X:0:2d
+Key_E	P:RC5X:0:2e
+Key_H	P:RC5X:0:2f
+Key_Menu	P:RC5X:0:30
+feature	P:RC5X:0:32
+install	P:RC5X:0:34
+Key_Ok	P:RC5X:0:35
+picture	P:RC5X:0:36
+sound	P:RC5X:0:37
+Key_Y	P:RC5X:0:38
+Key_A	P:RC5X:0:3c
+Key_X	P:RC5X:0:3f
 @Viano	Viano STV65UHD4K
 Power	P:NECext:7f00:e11e
 Menu	P:NECext:7f00:e31c
@@ -11649,6 +14843,55 @@ Down	P:NECext:edad:4bb4
 Left	P:NECext:edad:56a9
 Right	P:NECext:edad:42bd
 Ok	P:NECext:edad:4cb3
+@Vivax	TV 2,-1
+Up	P:NECext:fd02:ff00
+Down	P:NECext:fd02:fe01
+Right	P:NECext:fd02:fd02
+Left	P:NECext:fd02:fc03
+Menu	P:NECext:fd02:fb04
+Repeat?	P:NECext:fd02:fa05
+8	P:NECext:fd02:f906
+Mute	P:NECext:fd02:f807
+Audio	P:NECext:fd02:f708
+Prog-	P:NECext:fd02:f609
+Power	P:NECext:fd02:f50a
+Source	P:NECext:fd02:f30c
+1	P:NECext:fd02:ee11
+2	P:NECext:fd02:ed12
+3	P:NECext:fd02:ec13
+5	P:NECext:fd02:eb14
+6	P:NECext:fd02:ea15
+7	P:NECext:fd02:e916
+9	P:NECext:fd02:e817
+0	P:NECext:fd02:e718
+Vol-	P:NECext:fd02:e51a
+Exit	P:NECext:fd02:e41b
+Fav	P:NECext:fd02:e21d
+Sub.T	P:NECext:fd02:e11e
+Ok	P:NECext:fd02:e01f
+Epg	P:NECext:fd02:cf30
+Sat.List	P:NECext:fd02:ce31
+Picture	P:NECext:fd02:cd32
+Rewind.Back	P:NECext:fd02:cc33
+Play	P:NECext:fd02:cb34
+Pause	P:NECext:fd02:ca35
+Rewind.Forward	P:NECext:fd02:c936
+Skip.Prev	P:NECext:fd02:c837
+Stop	P:NECext:fd02:c738
+Record	P:NECext:fd02:c639
+Info	P:NECext:fd02:bf40
+Setup	P:NECext:fd02:b946
+Text	P:NECext:fd02:b748
+4	P:NECext:fd02:b44b
+Prog+	P:NECext:fd02:af50
+Vol+	P:NECext:fd02:ae51
+Backlight	P:NECext:fd02:a758
+3D	P:NECext:fd02:a55a
+Skip.Next	P:NECext:fd02:9f60
+Radio	P:NECext:fd02:9e61
+Sleep	P:NECext:fd02:9d62
+S/M/D	P:NECext:fd02:9c63
+Res.	P:NECext:fd02:9b64
 @Vizio	Vizio
 Power	P:NEC:4:8
 Input	P:NEC:4:2f
@@ -12125,6 +15368,24 @@ Chn_up	P:NECext:4040:e01f
 Chn_dwn	P:NECext:4040:e11e
 Source	P:NECext:4040:f30c
 Mute	P:NECext:4040:f00f
+@WD	Unknown_TV 132,121
+Key_Down	P:NECext:7984:ff00
+Key_Next	P:NECext:7984:fe01
+Key_Previous	P:NECext:7984:fd02
+Key_Stop	P:NECext:7984:fb04
+Key_Up	P:NECext:7984:fa05
+Key_Home	P:NECext:7984:f906
+Key_Left	P:NECext:7984:f807
+Key_Ok	P:NECext:7984:f708
+Key_Right	P:NECext:7984:f609
+Key_Playpause	P:NECext:7984:f50a
+Key_Search	P:NECext:7984:f00f
+Key_Ejectclosecd	P:NECext:7984:ef10
+Key_Power	P:NECext:7984:ed12
+Key_Option	P:NECext:7984:e51a
+Key_Back	P:NECext:7984:e41b
+Key_Forward	P:NECext:7984:e11e
+Key_Rewind	P:NECext:7984:e01f
 @Westinghouse	Westinghouse
 Power	P:NECext:7d02:b946
 Vol_up	P:NECext:7d02:f30c
@@ -12191,6 +15452,49 @@ Right	R:38000:33:989,605,587,1176,587,588,588,883,586,1176,588,589,587,589,587,1
 back	R:38000:33:987,606,586,1177,587,589,586,882,587,1176,587,588,588,589,587,882,587,1471,587,1177,586,882,587,12528,988,609,586,1176,588,588,587,883,586,1176,588,588,588,589,586,883,586,1472,586,1178,585,882,587,12527,989,609,587,1178,586,589,587,881,588,1175,589,589,586,589,586,883,586,1471,587,1176,588,882,587,12529,987,608,587,1177,587,588,587,882,587,1176,587,589,587,589,586,882,587,1471,587,1177,587,882,587,12529,987,608,587,1177,587,589,587,881,588,1177,587,589,586,588,587,883,586,1471,587,1176,587,883,586,12527,989,609,586,1176,588,588,588,882,587,1176,588,588,588,589,587,882,587,1471,587,1177,587,883,586,12528,988,609,587,1178,586,589,587,882,587,1176,588,588,588,590,585,883,586,1471,587,1176,588,882,587
 Vol_up	R:38000:33:988,605,587,1176,588,589,586,882,587,1178,585,588,588,589,587,1470,587,1175,589,588,587,590,586,13118,986,608,587,1177,587,588,587,882,587,1178,586,588,587,589,587,1470,587,1177,587,590,585,588,588,13117,987,609,586,1177,587,590,585,882,587,1177,587,589,586,588,588,1472,585,1176,588,588,587,588,587,13118,986,608,587,1177,586,589,587,881,588,1177,587,588,587,589,587,1470,587,1177,587,589,586,588,588,13116,988,609,586,1178,586,589,586,883,586,1177,587,589,586,590,586,1471,586,1178,585,588,587,588,588,13117,987,609,586,1177,587,589,587,883,586,1177,586,589,587,589,586,1472,585,1176,588,589,587,589,587,13116,988,610,585,1178,586,588,588,882,587,1176,588,590,586,588,587,1471,586,1177,586,589,587,589,586
 Vol_dn	R:38000:33:990,603,589,1175,589,587,588,882,587,1175,588,588,588,589,586,1470,587,1471,587,588,588,881,588,12528,988,609,586,1177,587,589,586,882,587,1177,586,588,587,589,587,1470,587,1471,587,588,588,881,588,12527,989,607,588,1175,589,588,588,881,588,1175,588,588,588,587,589,1470,587,1470,588,589,587,881,588,12528,988,607,588,1175,589,588,587,882,587,1178,586,587,588,588,588,1472,586,1470,588,588,587,881,588,12529,987,608,587,1175,589,587,589,882,587,1175,589,589,587,587,589,1469,588,1470,588,587,589,881,588,12528,988,607,588,1175,589,590,585,883,586,1176,587,587,589,588,588,1471,586,1470,588,587,589,883,586,12527,989,607,588,1176,588,588,588,880,589,1176,588,588,588,589,586,1469,588,1469,589,588,587,881,588
+@Yamaha	Plasma 80,-1
+Power Toggle	P:NECext:af50:ff00
+Power On	P:NECext:af50:fe01
+Power Off	P:NECext:af50:fd02
+Volume Up	P:NECext:af50:fc03
+Volume Down	P:NECext:af50:fb04
+Mute	P:NECext:af50:fa05
+Pinp	P:NECext:af50:f906
+Recall	P:NECext:af50:f807
+Input Rgb1	P:NECext:af50:f609
+Input Rgb2	P:NECext:af50:f50a
+Input Av1	P:NECext:af50:f40b
+Input Av2	P:NECext:af50:f30c
+Input Av3	P:NECext:af50:f20d
+Input Av4	P:NECext:af50:f10e
+Auto	P:NECext:af50:ed12
+Menu	P:NECext:af50:ec13
+Cursor Up	P:NECext:af50:eb14
+Cursor Down	P:NECext:af50:ea15
+Cursor Right	P:NECext:af50:e916
+Cursor Left	P:NECext:af50:e817
+Enter	P:NECext:af50:e718
+Display Size Change	P:NECext:af50:e619
+Return	P:NECext:af50:e51a
+@Zenith	Unknown_TV 4,-1
+Key_Channelup	P:NECext:fb04:ff00
+Key_Channeldown	P:NECext:fb04:fe01
+Key_Volumeup	P:NECext:fb04:fd02
+Key_Volumedown	P:NECext:fb04:fc03
+Key_Power	P:NECext:fb04:f708
+Key_Mute	P:NECext:fb04:f609
+Key_Sleep	P:NECext:fb04:f10e
+Key_0	P:NECext:fb04:ef10
+Key_1	P:NECext:fb04:ee11
+Key_2	P:NECext:fb04:ed12
+Key_3	P:NECext:fb04:ec13
+Key_4	P:NECext:fb04:eb14
+Key_5	P:NECext:fb04:ea15
+Key_6	P:NECext:fb04:e916
+Key_7	P:NECext:fb04:e817
+Key_8	P:NECext:fb04:e718
+Key_9	P:NECext:fb04:e619
+Key_Enter	P:NECext:fb04:b24d
 @Zenith	Zenith SC3492Z
 Power	R:38000:33:611,386,612,3984,612,4984,612,387,611,3985,612,387,611,3986,611,4985,611,387,611,3986,611,4985,611,387,611,3986,610,4987,609,4985,611,389,609
 Timer	R:38000:33:485,514,485,4112,484,5112,484,514,485,4112,484,5109,487,513,486,4113,483,5112,484,514,485,4112,484,513,486,4112,484,5112,484,514,485,4112,484

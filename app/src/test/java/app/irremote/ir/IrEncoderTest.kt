@@ -75,4 +75,21 @@ class IrEncoderTest {
         val r = IrSignal.decode("R:38000:33:100,200,300,400")!!
         assertEquals("R:38000:33:100,200,300,400", IrSignal.encode(r))
     }
+
+    @Test fun necxUsesFourAndHalfMsLeaderAndSeparateSubdevice() {
+        val p = enc("NECx", 0x0507, 0x02).pattern // D=7, S=5
+        assertEquals(4512, p[0]); assertEquals(4512, p[1])
+        fun byteAt(n: Int) = (0 until 8).sumOf { i -> (if (p[3 + (n * 8 + i) * 2] == 1692) 1 else 0) shl i }
+        assertEquals(listOf(0x07, 0x05, 0x02, 0xFD), (0..3).map { byteAt(it) })
+    }
+
+    @Test fun panasonicStartsWithVendorBytesAndChecksum() {
+        val p = enc("Panasonic", 0x0080, 0x01).pattern // D=0x80, S=0, F=1
+        fun byteAt(n: Int) = (0 until 8).sumOf { i -> (if (p[3 + (n * 8 + i) * 2] == 1296) 1 else 0) shl i }
+        assertEquals(listOf(0x02, 0x20, 0x80, 0x00, 0x01, 0x81), (0..5).map { byteAt(it) })
+    }
+
+    @Test fun jvcIsSixteenBits() {
+        assertEquals(2 + 32 + 1 + 1, enc("JVC", 3, 5).pattern.size)
+    }
 }

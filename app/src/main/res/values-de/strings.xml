@@ -31,7 +31,7 @@
     <string name="more_keys">Weitere Tasten</string>
     <string name="keypad">Zahlenblock</string>
     <string name="not_sent">Senden nicht möglich</string>
-    <string name="credits">Codes: Flipper-IRDB (CC0)</string>
+    <string name="credits">Codes: Flipper-IRDB (CC0)\n\nContains/accesses irdb by Simon Peter and contributors, used under permission. For licensing details and for information on how to contribute to the database, see https://github.com/probonopd/irdb</string>
     <string name="cat_tv">TV</string>
     <string name="cat_settop">Settop-Box</string>
     <string name="cat_ac">Klimaanlage</string>

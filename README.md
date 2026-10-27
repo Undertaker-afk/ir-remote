@@ -19,12 +19,24 @@ Saved remotes live in the app's private storage and are self-contained.
 
 ## Code database
 
-The bundled data is **[Flipper-IRDB](https://github.com/Lucaslhm/Flipper-IRDB)** (CC0): ~1,900 remotes for ~700 brand
-entries across the categories above, about 25,000 buttons. `tools/build_db.py` converts a checkout into the compact
-`app/src/main/assets/db/*.txt` files; re-run it to refresh the data:
+Two databases are merged into compact `app/src/main/assets/db/*.txt` files by `tools/build_db.py`:
+
+- **[Flipper-IRDB](https://github.com/Lucaslhm/Flipper-IRDB)** (CC0).
+- **[probonopd/irdb](https://github.com/probonopd/irdb)** (own licence, see below). Rows using NEC/NEC1/NEC2, NECx, Sony 12/15/20,
+  RC5, Panasonic and JVC are converted; other irdb protocols (Denon, Mitsubishi, Aiwa, RC6, ...) are skipped for now.
+  Remotes whose buttons duplicate a Flipper remote are dropped, brands are merged case-insensitively.
+
+Together that is ~2,900 remotes. To refresh the data:
 
     git clone --depth 1 https://github.com/Lucaslhm/Flipper-IRDB
-    python3 tools/build_db.py Flipper-IRDB app/src/main/assets/db
+    git clone --depth 1 https://github.com/probonopd/irdb
+    python3 tools/build_db.py Flipper-IRDB app/src/main/assets/db irdb
+
+### irdb licence obligations
+
+`app/src/main/assets/IRDB_LICENSE.md` is the upstream licence. Before distributing the app you must (1) open an issue at
+https://github.com/probonopd/irdb/issues about your product, (2) keep the notice shown in the app's home screen footer, and
+(3) provide up to three copies/units to the irdb team on request. Non-compliance revokes the permission.
 
 Protocols are encoded from "parsed" entries (NEC, NECext, NEC42, Samsung32, RC5/RC5X, RC6, SIRC 12/15/20, Kaseikyo,
 RCA, Pioneer) following the Flipper Zero firmware encoders; "raw" entries (mostly air conditioners) are replayed as-is.
@@ -33,7 +45,7 @@ RCA, Pioneer) following the Flipper Zero firmware encoders; "raw" entries (mostl
 
 | Source | Notes |
 | --- | --- |
-| [probonopd/irdb](https://github.com/probonopd/irdb) | Largest (~3,200 CSV files, 640+ manufacturers, protocol/device/subdevice/function). **Not bundled**: its licence requires notifying the project, a visible notice and supplying units on request. Easy to add as a second source if you comply. |
+| [probonopd/irdb](https://github.com/probonopd/irdb) | Largest (~3,200 CSV files, 640+ manufacturers). Bundled, see above. |
 | [Flipper-IRDB `_Converted_`](https://github.com/Lucaslhm/Flipper-IRDB) | Pronto/CSV/IRPlus conversions of other databases; not used (duplicates). |
 | LIRC remotes DB | Many older devices; not yet imported (conf format needs a parser). |
 | [iodn/android-ir-blaster](https://github.com/iodn/android-ir-blaster) | Related open-source app: also imports LIRC/IRPLUS and supports USB/audio IR dongles. |

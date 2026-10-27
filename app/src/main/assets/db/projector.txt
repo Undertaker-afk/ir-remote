@@ -54,6 +54,32 @@ Up	P:NECext:1308:7d82
 Down	P:NECext:1308:7a85
 Right	P:NECext:1308:7e81
 Left	P:NECext:1308:7c83
+@Acer	Projector 8,19
+Power	P:NECext:1308:7887
+@AmPro	Video Projector 11,-1
+1	P:SIRC:b:0
+2	P:SIRC:b:1
+3	P:SIRC:b:2
+4	P:SIRC:b:3
+5	P:SIRC:b:4
+6	P:SIRC:b:5
+7	P:SIRC:b:6
+8	P:SIRC:b:7
+Power	P:SIRC:b:15
+Standby	P:SIRC:b:3b
+@AmPro	Video Projector 85,-1
+Source	P:NECext:aa55:fe01
+Mute	P:NECext:aa55:fc03
+Menu	P:NECext:aa55:fa05
+View	P:NECext:aa55:f906
+Blank	P:NECext:aa55:f807
+<	P:NECext:aa55:f10e
+^	P:NECext:aa55:f00f
+Enter	P:NECext:aa55:ef10
+Power	P:NECext:aa55:ee11
+V	P:NECext:aa55:ec13
+Adjust	P:NECext:aa55:e619
+>	P:NECext:aa55:e01f
 @Anker	Nebula Capsule Mini Projector
 POWER	P:NEC:80:51
 Mouse	P:NEC:80:52
@@ -111,6 +137,65 @@ Sources	P:NEC:2:1f
 Mute	P:NEC:2:2
 Vol+	R:38000:33:9032,4462,598,501,627,1604,627,530,598,531,677,423,706,422,706,421,707,451,677,1554,677,451,598,1633,598,1634,597,1634,598,1634,598,1634,625,1606,681,1550,626,502,598,530,599,529,600,1632,600,528,600,528,601,528,601,528,601,1631,600,1631,625,1607,625,504,625,1607,624,1608,624,1608,623
 Vol-	P:NEC:2:15
+@Artlii	Projector 3,-1
+down	P:NECext:fc03:fe01
+mute	P:NECext:fc03:fd02
+ffwd	P:NECext:fc03:fa05
+rwnd	P:NECext:fc03:f807
+right	P:NECext:fc03:f708
+up	P:NECext:fc03:f609
+left	P:NECext:fc03:f50a
+Ok	P:NECext:fc03:f40b
+back	P:NECext:fc03:f20d
+vol down	P:NECext:fc03:ea15
+play/pause	P:NECext:fc03:e619
+power	P:NECext:fc03:e21d
+menu	P:NECext:fc03:e11e
+square	P:NECext:fc03:e01f
+@Barco	Video Projector 0,-1
+0	P:RC5X:0:0
+1	P:RC5X:0:1
+2	P:RC5X:0:2
+3	P:RC5X:0:3
+4	P:RC5X:0:4
+5	P:RC5X:0:5
+6	P:RC5X:0:6
+7	P:RC5X:0:7
+8	P:RC5X:0:8
+9	P:RC5X:0:9
+Power	P:RC5X:0:c
+Mute	P:RC5X:0:d
+Text	P:RC5X:0:f
+Volume +	P:RC5X:0:10
+Volume -	P:RC5X:0:11
+Brightness +	P:RC5X:0:12
+Brightness -	P:RC5X:0:13
+Color +	P:RC5X:0:14
+Color -	P:RC5X:0:15
+Bass +	P:RC5X:0:16
+Bass -	P:RC5X:0:17
+Treble +	P:RC5X:0:18
+Treble -	P:RC5X:0:19
+Balance +	P:RC5X:0:1a
+Balance -	P:RC5X:0:1b
+Contrast +	P:RC5X:0:1c
+Contrast -	P:RC5X:0:1d
+Tint -	P:RC5X:0:1f
+Tint +	P:RC5X:0:27
+?	P:RC5X:0:2f
+Pause	P:RC5X:0:30
+Phase +	P:RC5X:0:48
+Phase -	P:RC5X:0:49
+Sharpness +	P:RC5X:0:4d
+Sharpness -	P:RC5X:0:4e
+^	P:RC5X:0:50
+V	P:RC5X:0:51
+Adjust	P:RC5X:0:52
+Exit	P:RC5X:0:53
+<	P:RC5X:0:55
+>	P:RC5X:0:56
+Enter	P:RC5X:0:57
+*	P:RC5X:0:77
 @BenQ	BenQ
 POWER	P:NECext:4040:f50a
 Input	P:NECext:4040:f30c
@@ -364,6 +449,69 @@ Invert	P:NECext:3000:629d
 MUTE	P:NECext:3000:eb14
 Freeze	P:NECext:3000:fc03
 Test	P:NECext:3000:6b94
+@BenQ	DLP Projector 48,-1
+<	P:NECext:cf30:ff00
+>	P:NECext:cf30:fd02
+Pip Source	P:NECext:cf30:f906
+Pip Size	P:NECext:cf30:f807
+Source	P:NECext:cf30:f708
+Pip Position	P:NECext:cf30:f609
+Exit	P:NECext:cf30:f50a
+Freeze	P:NECext:cf30:f10e
+Ratio	P:NECext:cf30:f00f
+Power	P:NECext:cf30:e718
+Menu	P:NECext:cf30:df20
+Auto Tracking	P:NECext:cf30:d728
+Blank	P:NECext:cf30:d52a
+Zoom +	P:NECext:cf30:d32c
+Zoom-	P:NECext:cf30:d22d
+@BenQ	Projector 48,-1
+Left	P:NECext:cf30:ff00
+Right	P:NECext:cf30:fd02
+Pip Source	P:NECext:cf30:f906
+Pip Size	P:NECext:cf30:f807
+Source	P:NECext:cf30:f708
+Pip Pos.	P:NECext:cf30:f609
+Up	P:NECext:cf30:f50a
+Menu	P:NECext:cf30:f30c
+Aspect	P:NECext:cf30:f20d
+Freeze	P:NECext:cf30:f10e
+Return	P:NECext:cf30:ef10
+Mute	P:NECext:cf30:ed12
+Power	P:NECext:cf30:e718
+Volume +	P:NECext:cf30:e51a
+Down	P:NECext:cf30:df20
+Volume-	P:NECext:cf30:dd22
+Auto	P:NECext:cf30:d728
+Blank	P:NECext:cf30:d52a
+D.Zoom+	P:NECext:cf30:d32c
+D.Zoom-	P:NECext:cf30:d22d
+Mode	P:NECext:cf30:bd42
+@BenQ	Projector 72,80
+Page-	P:NECext:5048:fa05
+Page+	P:NECext:5048:f906
+@Boxlight	Projector 135,78
+Menu	P:NECext:4e87:fd02
+Power	P:NECext:4e87:f20d
+Computer	P:NECext:4e87:e619
+Video	P:NECext:4e87:e51a
+@Boxlight	Projector 48,-1
+Power	P:NECext:cf30:ff00
+D Zoom+	P:NECext:cf30:fe01
+D Zoom-	P:NECext:cf30:fd02
+Video 1	P:NECext:cf30:fa05
+Computer	P:NECext:cf30:f807
+Menu	P:NECext:cf30:e31c
+Normal	P:NECext:cf30:e01f
+Freeze	P:NECext:cf30:bc43
+Zoom-	P:NECext:cf30:b946
+Zoom+	P:NECext:cf30:b847
+Focus+	P:NECext:cf30:b54a
+Focus-	P:NECext:cf30:b44b
+Autp Image	P:NECext:cf30:7689
+No Show	P:NECext:cf30:748b
+Keystone+	P:NECext:cf30:718e
+Keystone-	P:NECext:cf30:708f
 @BrandUnknown	Generic Projector
 Power	P:NEC:0:a8
 Projection	P:NEC:0:d6
@@ -461,6 +609,32 @@ Vol_down	P:NECext:681:ac53
 Mute	P:NECext:681:ab54
 Zoom_down	P:NECext:681:a857
 Zoom_up	P:NECext:681:a956
+@Canon	Video Projector 129,6
+Power	P:NECext:681:bf40
+Menu	P:NECext:681:be41
+Computer 1	P:NECext:681:bd42
+Computer 2	P:NECext:681:bc43
+Video/S	P:NECext:681:bb44
+Auto Pc	P:NECext:681:ba45
+Keystone	P:NECext:681:b946
+Cursor Up/1	P:NECext:681:b847
+Cursor Down/3	P:NECext:681:b748
+Cursor Left/4	P:NECext:681:b649
+Cursor Right/2	P:NECext:681:b54a
+Spot	P:NECext:681:b44b
+Image	P:NECext:681:af50
+Freeze	P:NECext:681:ae51
+Volume Up	P:NECext:681:ad52
+Volume Down	P:NECext:681:ac53
+Mute	P:NECext:681:ab54
+P-Timer	P:NECext:681:aa55
+D.Zoom Up	P:NECext:681:a956
+D.Zoom Down	P:NECext:681:a857
+No Show	P:NECext:681:a758
+R-Click	P:NECext:681:a659
+Ok	P:NECext:681:a55a
+Page Up	P:NECext:681:a45b
+Page Down	P:NECext:681:a35c
 @Casio	Casio YT-130
 POWER	P:NECext:f484:f40b
 Input	P:NECext:f484:f50a
@@ -503,6 +677,22 @@ Zoom_up	P:NECext:f484:d42b
 Zoom_down	P:NECext:f484:d12e
 Volume_up	P:NECext:f484:d32c
 Volume_down	P:NECext:f484:d02f
+@CIS BOX	LCD Projector 84,-1
+Input Video 1	P:SIRC15:54:2a
+Input Video 2	P:SIRC15:54:2b
+Input Rgb	P:SIRC15:54:2c
+Pwr On	P:SIRC15:54:2e
+Pwr Off	P:SIRC15:54:2f
+Select+	P:SIRC15:54:31
+Select -	P:SIRC15:54:32
+Focus In	P:SIRC15:54:41
+Focus Out	P:SIRC15:54:42
+Zoom In	P:SIRC15:54:54
+Zoom Out	P:SIRC15:54:55
+Auto	P:SIRC15:54:56
+Select	P:SIRC15:54:59
+Input S Video	P:SIRC15:54:5f
+Reset	P:SIRC15:54:7b
 @Coolux	Coolux X3S
 POWER	P:NEC:1:0
 Up	P:NEC:1:d
@@ -521,6 +711,19 @@ Home	P:NEC:1:41
 Up	R:38000:33:226,7356,231,7350,227,4756,222,4761,227,4756,222,4761,227,4756,232,4750,228,4756,222,4761,227,7353,224
 Stop	R:38000:33:231,7350,226,4757,231,4752,226,4757,231,4752,226,4758,230,4753,225,4758,230,4753,225,7356,231,7350,226,59177,227,7354,222,4761,227,4756,222,4761,227,4756,222,4761,227,4756,222,4762,226,4757,221,7360,227,7354,222,59180,224,7357,230,4753,225,4759,229,4754,224,4759,229,4754,224,4759,229,4754,224,4760,228,7352,225,7357,230
 Down	R:38000:33:222,7359,227,7353,223,4760,228,4756,222,4761,227,4756,222,4762,226,4757,231,4752,225,7355,231,4752,226,59177,224,7357,230,7351,225,4758,230,4753,225,4758,230,4753,225,4759,229,4753,225,4759,229,7352,224,4759,229,59173,228,7353,223,7358,229,4754,223,4760,228,4755,222,4761,227,4756,222,4761,227,4756,222,7360,226,4756,222
+@DBPower	Projector_T20 2,-1
+down	P:NECext:fd02:fe01
+mute	P:NECext:fd02:fd02
+right	P:NECext:fd02:f708
+up	P:NECext:fd02:f609
+left	P:NECext:fd02:f50a
+Ok	P:NECext:fd02:f40b
+back	P:NECext:fd02:f20d
+vol up	P:NECext:fd02:ee11
+vol down	P:NECext:fd02:ea15
+power on off toggle	P:NECext:fd02:e21d
+Menu	P:NECext:fd02:e11e
+source	P:NECext:fd02:e01f
 @Dell	Dell projector
 POWER	P:NECext:504f:fd02
 MENU	P:NECext:504f:ee11
@@ -545,16 +748,132 @@ Auto Adjust	P:NECext:504f:e718
 Blank Screen	P:NECext:504f:f30c
 Keystone+	P:NECext:504f:f609
 Keystone-	P:NECext:504f:f20d
+@Dell	Video Projector 79,80
+Aspect	P:NECext:504f:fe01
+Power	P:NECext:504f:fd02
+Pwrtoggle	P:NECext:504f:fd02
+Video Mode	P:NECext:504f:fc03
+Input Dvi	P:NECext:504f:fb04
+Input Next	P:NECext:504f:fb04
+Pgup	P:NECext:504f:fa05
+Pgdown	P:NECext:504f:f906
+Vol +	P:NECext:504f:f708
+Keystone Up	P:NECext:504f:f609
+Picture	P:NECext:504f:f50a
+Vol -	P:NECext:504f:f40b
+Hide	P:NECext:504f:f30c
+Keystone Down	P:NECext:504f:f20d
+Gamma	P:NECext:504f:ef10
+Menu	P:NECext:504f:ee11
+R-Sync	P:NECext:504f:e718
+Input S-Video 2	P:NECext:504f:e619
+Input Composite	P:NECext:504f:e41b
+Inputbnc	P:NECext:504f:e31c
+Input Dvi/Sat	P:NECext:504f:e21d
+Input Rca	P:NECext:504f:e11e
+Input Vga	P:NECext:504f:df20
+Input S-Video	P:NECext:504f:dc23
+Input Video	P:NECext:504f:db24
+Format	P:NECext:504f:da25
+Brightness	P:NECext:504f:d926
+Contrast	P:NECext:504f:d827
+Color	P:NECext:504f:d728
 @Denon	Denon Projector
 Power	P:Kaseikyo:325441:5
 Volume_p	P:Kaseikyo:325441:170
 Volume_m	P:Kaseikyo:325441:171
+@Digital Projection	Projector 32,-1
+Power Toggle	P:NECext:df20:ff00
+Auto	P:NECext:df20:fe01
+Info	P:NECext:df20:fd02
+Brightness +	P:NECext:df20:fc03
+Contrast +	P:NECext:df20:fb04
+Color +	P:NECext:df20:fa05
+Volume +	P:NECext:df20:f906
+Brightness -	P:NECext:df20:f807
+Contrast -	P:NECext:df20:f708
+Color -	P:NECext:df20:f609
+Volume -	P:NECext:df20:f50a
+Vga	P:NECext:df20:f40b
+Dvi	P:NECext:df20:f30c
+Composite	P:NECext:df20:f20d
+Av-Mute	P:NECext:df20:f10e
+Component	P:NECext:df20:f00f
+S-Video	P:NECext:df20:ef10
+Still	P:NECext:df20:ee11
+Time	P:NECext:df20:ed12
+Aspect	P:NECext:df20:ec13
+Menu	P:NECext:df20:eb14
+Left Key	P:NECext:df20:ea15
+Right Key	P:NECext:df20:e916
+Gamma -	P:NECext:df20:e817
+Gamma +	P:NECext:df20:e718
+* (Star)	P:NECext:df20:e619
+1	P:NECext:df20:e51a
+2	P:NECext:df20:e41b
+3	P:NECext:df20:e31c
+4	P:NECext:df20:e21d
+5	P:NECext:df20:e11e
+6	P:NECext:df20:e01f
+7	P:NECext:df20:df20
+8	P:NECext:df20:de21
+9	P:NECext:df20:dd22
+Store	P:NECext:df20:dc23
+0	P:NECext:df20:db24
+Recall	P:NECext:df20:da25
+Arrow Up	P:NECext:df20:d926
+Arrow Left	P:NECext:df20:d827
+Ok	P:NECext:df20:d728
+Arrow Right	P:NECext:df20:d629
+Arrow Down	P:NECext:df20:d52a
+Power On	P:NECext:df20:7f80
+Power Off	P:NECext:df20:7e81
 @Dragonfly	Dragonfly Screen
 Up	R:38000:33:1277,429,1251,430,1250,430,1250,430,415,1239,441,1239,441,1265,415,1265,415,1239,441,1266,414,1240,1274,432,413,1268,412,1242,438,1242,1272,434,1246,435,1245,435,410,1270,1244,435,1255,425,1255,425,409,1271,1254,426,1254,427,1253,427,407,1272,1253,427,1253,428,1252,428,1252,429,405
 Lil_up	R:38000:33:1271,435,1255,425,1255,426,1254,426,408,1272,407,1272,407,1272,407,1273,1252,428,406,1274,405,1274,405,1274,405,1249,441,1239,440,1239,1275,432,1248,433,1247,433,412,1268,1246,434,411,1268,412,1269,411,1269,1245,435,410,1270,1255,426,408,1271,409,1271,409,1271,408,1272,1253,428,406,22225,1273,434,1246,435,1245,435,1255,425,409,1271,409,1270,410,1271,409,1271,1254,427,407,1272,407,1273,406,1273,406,1247,433,1248,431,1248,1277,430,1250,431,1249,431,414,1266,1248,432,413,1267,412,1267,413,1267,1247,434,411,1268,1246,435,410,1269,411,1270,410,1270,410,1244,1281,426,408,22224,1274,433,1247,433,1247,433,1247,434,411,1269,411,1269,411,1269,411,1270,1255,426,408,1271,409,1271,408,1271,409,1246,433,1246,433,1247,1278,429,1251,429,1250,430,404,1275,1250,431,414,1266,413,1266,413,1266,1248,433,412,1267,1247,434,411,1268,412,1268,412,1269,410,1243,1282,426,408
 Stop	R:38000:33:1280,427,1252,427,1252,428,1251,429,405,1274,405,1274,405,1275,415,1238,441,1265,414,1266,1248,432,413,1267,412,1267,412,1268,411,1268,1246,434,1245,435,1255,425,409,1271,409,1271,1254,426,1253,427,407,1272,408,1272,1253,428,1251,429,405,1274,1251,430,1249,430,1249,431,414,1266,1248,21384,1278,428,1252,428,1251,429,1251,430,404,1275,404,1275,415,1265,414,1239,440,1240,439,1240,1274,433,412,1268,411,1268,411,1269,410,1243,1282,425,1255,426,1254,426,408,1272,407,1272,1253,428,1251,428,406,1274,405,1274,1251,430,1250,430,415,1265,1249,431,1249,432,1247,432,413,1267,1247,21385,1277,429,1250,429,1251,430,1250,430,415,1265,414,1265,414,1266,413,1266,414,1240,439,1241,1273,434,411,1269,410,1269,410,1269,410,1270,1255,426,1254,426,1254,427,407,1272,407,1272,1253,428,1252,429,405,1274,405,1274,1251,430,1250,431,414,1266,1248,431,1249,432,1248,432,413,1267,1247
 Lil_down	R:38000:33:1275,432,1248,433,1247,433,1246,434,411,1269,410,1269,410,1243,1282,425,409,1270,409,1270,409,1271,409,1271,408,1246,433,1246,433,1247,1278,429,1250,430,1249,430,1249,431,414,1266,414,1265,414,1266,413,1266,1248,433,1247,433,1247,434,411,1268,1246,434,411,1269,411,1243,1282,425,1254,21377,1274,433,1246,433,1246,434,1245,435,410,1269,411,1269,410,1270,1255,426,408,1271,408,1245,434,1272,407,1246,433,1247,432,1247,433,1248,1277,430,1249,430,1249,431,1248,432,413,1266,414,1266,413,1267,412,1267,1247,434,1246,434,1246,435,410,1270,1255,425,409,1270,410,1271,1254,427,1252,21378,1273,434,1246,434,1246,435,1244,435,410,1270,410,1270,410,1244,1281,426,408,1271,408,1272,407,1272,408,1273,406,1247,432,1247,433,1248,1277,430,1249,431,1249,431,1249,432,413,1267,413,1266,414,1267,413,1267,1247,434,1246,434,1246,435,410,1270,1255,425,409,1270,409,1244,1281,427,1252
 Down	R:38000:33:1278,402,1277,402,1277,403,1276,404,441,1239,440,1240,439,1241,438,1241,438,1242,1272,408,437,1243,436,1244,435,1245,434,1246,433,1246,1278,402,1277,402,1277,403,1276,403,442,1239,1275,404,1275,405,1274,405,440,1241,438,1242,437,1242,437,1243,1281,398,1281,399,1280,400,1279,400,1279
+@Dream Vision	DLP Projector 135,78
+Menu	P:NECext:4e87:fd02
+Brite Up	P:NECext:4e87:fc03
+Brite +	P:NECext:4e87:fc03
+Brite Down	P:NECext:4e87:f807
+Brite -	P:NECext:4e87:f807
+Freeze	P:NECext:4e87:f10e
+Source Select	P:NECext:4e87:ef10
+Enter	P:NECext:4e87:ef10
+Up	P:NECext:4e87:ec13
+Down	P:NECext:4e87:eb14
+Dn	P:NECext:4e87:eb14
+Auto Tracking	P:NECext:4e87:e817
+Power Off	P:NECext:4e87:e817
+Power On	P:NECext:4e87:e817
+Right	P:NECext:4e87:df20
+Left	P:NECext:4e87:de21
+Presets	P:NECext:4e87:d32c
+Reset	P:NECext:4e87:d32c
+Source1	P:NECext:4e87:d22d
+Dvi 1	P:NECext:4e87:d22d
+Source2	P:NECext:4e87:d12e
+Rgb 2	P:NECext:4e87:d12e
+Source3	P:NECext:4e87:d02f
+Component 3	P:NECext:4e87:d02f
+Source4	P:NECext:4e87:cf30
+Svhs 4	P:NECext:4e87:cf30
+Blank	P:NECext:4e87:ce31
+Select	P:NECext:4e87:cd32
+Auto Image	P:NECext:4e87:cc33
+Resize	P:NECext:4e87:cb34
+Overscan	P:NECext:4e87:ca35
+Contrast Up	P:NECext:4e87:c936
+Contrast +	P:NECext:4e87:c936
+Contrast Down	P:NECext:4e87:c837
+Contrast -	P:NECext:4e87:c837
+Native	P:NECext:4e87:c43b
+16:9	P:NECext:4e87:c33c
+4:3	P:NECext:4e87:c23d
+Letter Box	P:NECext:4e87:c13e
 @Eiki	EIKI CMXA Remote
 Power	P:NECext:33:ff00
 Auto_PC	P:NECext:33:7689
@@ -615,6 +934,32 @@ Stop	R:38000:33:1308,453,1253,452,1254,452,1254,452,476,1189,535,1161,534,1161,5
 Up	R:38000:33:1274,461,1243,465,1239,468,1246,461,462,1231,473,1222,471,1224,469,1229,464,1232,472,1223,1240,468,466,1229,465,1230,1244,464,470,1225,1239,472,1242,466,1238,468,466,1228,1246,461,1243,465,1239,468,466,1227,1247,464,1240,468,466,1228,1246,461,462,1232,1242,466,468,1227,467,1228,1246,29716,1245,464,1240,467,1237,471,1243,463,471,1224,469,1224,469,1226,467,1232,472,1223,470,1225,1238,470,464,1231,473,1222,1241,467,467,1228,1246,465,1239,468,1246,461,462,1232,1242,465,1239,468,1246,461,462,1232,1242,468,1246,461,462,1232,1242,466,468,1226,1238,470,464,1231,473,1221,1242,29721,1240,469,1245,462,1242,465,1239,468,466,1228,465,1229,465,1230,474,1225,468,1227,467,1229,1245,465,469,1224,469,1225,1249,461,462,1231,1243,469,1245,462,1242,465,469,1224,1239,469,1245,462,1242,465,469,1224,1239,472,1242,465,469,1225,1238,470,464,1229,1245,464,470,1224,469,1225,1249
 Stop	R:38000:33:1269,467,1247,461,1243,464,1240,467,467,1227,466,1228,465,1229,464,1235,469,1227,466,1229,464,1230,1244,466,468,1226,1248,460,463,1231,1243,468,1246,461,1243,464,470,1224,469,1225,1249,460,1244,463,471,1223,470,1228,466,1229,1245,464,1240,468,1236,470,1244,463,471,1223,470,1224,469,30482,1248,461,1243,464,1240,467,1237,470,464,1231,462,1231,473,1223,470,1228,465,1231,473,1222,471,1224,1239,470,464,1230,1244,465,469,1224,1239,473,1241,466,1238,469,465,1228,465,1229,1245,465,1239,468,466,1227,466,1232,472,1250,1213,470,1244,462,1242,465,1239,468,466,1227,467,1228,465,30486,1245,466,1238,469,1245,461,1243,465,469,1223,470,1252,441,1227,466,1232,472,1225,468,1227,467,1228,1246,464,470,1223,1240,469,465,1228,1246,466,1238,469,1245,462,472,1221,472,1222,1241,468,1246,461,462,1230,474,1225,468,1226,1248,462,1242,465,1239,468,1246,460,463,1230,474,1221,472
 Down	R:38000:33:1266,468,1267,469,1214,464,1240,468,466,1228,465,1229,464,1231,524,1175,518,1176,1246,462,472,1224,469,1225,468,1226,1248,461,462,1232,1242,469,1245,463,1241,466,1238,469,465,1227,1247,461,1243,466,1238,469,465,1231,1243,465,1239,469,465,1229,464,1230,1244,464,470,1225,468,1226,1248,29715,1245,465,1239,467,1247,461,1243,464,470,1224,469,1225,468,1227,466,1232,472,1224,1239,469,465,1230,463,1231,473,1223,1240,468,466,1228,1246,466,1238,469,1265,441,1273,434,469,1225,1238,469,1245,462,1272,434,469,1229,1245,462,1242,466,468,1226,467,1227,1247,462,472,1223,470,1223,1240,29723,1247,462,1242,465,1239,468,1246,461,462,1232,472,1222,471,1224,469,1230,473,1222,1241,468,466,1228,465,1229,464,1231,1243,466,468,1226,1248,464,1270,437,1267,439,1275,432,471,1222,1241,467,1267,439,1275,432,471,1226,1248,460,1274,433,470,1224,469,1225,1238,470,464,1230,474,1221,1242
+@Elmo	Video Projector 132,132
+B Rev	P:NECx:8484:9
+B Zoom Wide	P:NECx:8484:a
+B Zoom Tele	P:NECx:8484:b
+B Fwd	P:NECx:8484:c
+B Iris Close	P:NECx:8484:d
+B Zero Reset Fwd	P:NECx:8484:e
+B Zero Reset Rev	P:NECx:8484:f
+B Focus F	P:NECx:8484:11
+B Focus N	P:NECx:8484:12
+B Lamp On	P:NECx:8484:13
+B Lamp Off	P:NECx:8484:14
+B Iris Open	P:NECx:8484:e0
+@Elmo	Video Projector 134,134
+A Rev	P:NECx:8686:9
+A Zoom Wide	P:NECx:8686:a
+A Zoom Tele	P:NECx:8686:b
+A Fwd	P:NECx:8686:c
+A Iris Close	P:NECx:8686:d
+A Zero Reset Fwd	P:NECx:8686:e
+A Zero Reset Rev	P:NECx:8686:f
+A Focus F	P:NECx:8686:11
+A Focus N	P:NECx:8686:12
+A Lamp On	P:NECx:8686:13
+A Lamp Off	P:NECx:8686:14
+A Iris Open	P:NECx:8686:e0
 @Epson	Epson
 POWER	P:NECext:5583:6f90
 Hdmi_1	P:NECext:5583:8c73
@@ -1030,6 +1375,155 @@ Down	P:NECext:5583:4db2
 Right	P:NECext:5583:4eb1
 Ok	P:NECext:5583:7a85
 Menu	P:NECext:5583:659a
+@Epson	Projector 131,85
+S. Tone	P:NECext:5583:d52a
+Contrast	P:NECext:5583:d32c
+Contrast -	P:NECext:5583:d32c
+Color Temp.	P:NECext:5583:d22d
+Color Temp	P:NECext:5583:d22d
+Video	P:NECext:5583:8f70
+Source Video	P:NECext:5583:8f70
+Input Video	P:NECext:5583:8f70
+Source Input A	P:NECext:5583:8e71
+Input A	P:NECext:5583:8e71
+Component	P:NECext:5583:8e71
+Source D4	P:NECext:5583:8d72
+Input D4/Scart	P:NECext:5583:8d72
+Input Hdmi	P:NECext:5583:8c73
+Hdmi 1	P:NECext:5583:8c73
+Usb	P:NECext:5583:8976
+Hdmi 2	P:NECext:5583:8877
+Gamma	P:NECext:5583:817e
+Esc	P:NECext:5583:7b84
+Escape	P:NECext:5583:7b84
+Cursor Enter	P:NECext:5583:7a85
+Select	P:NECext:5583:7a85
+Enter	P:NECext:5583:7a85
+Aspect	P:NECext:5583:758a
+Memory	P:NECext:5583:748b
+Source Search	P:NECext:5583:738c
+Focus	P:NECext:5583:738c
+Zoom	P:NECext:5583:718e
+Color Mode	P:NECext:5583:708f
+Power	P:NECext:5583:6f90
+On	P:NECext:5583:6f90
+Off	P:NECext:5583:6e91
+Freeze	P:NECext:5583:6d92
+A/V Mute	P:NECext:5583:6c93
+Blank	P:NECext:5583:6c93
+Computer	P:NECext:5583:6b94
+Help	P:NECext:5583:6a95
+Pattern	P:NECext:5583:6996
+Volume +	P:NECext:5583:6798
+Volume -	P:NECext:5583:6699
+Menu	P:NECext:5583:659a
+Source S-Video	P:NECext:5583:639c
+Input S-Video	P:NECext:5583:639c
+S-Video	P:NECext:5583:639c
+Source Input B	P:NECext:5583:629d
+Input B	P:NECext:5583:629d
+Pc	P:NECext:5583:629d
+Auto	P:NECext:5583:619e
+User	P:NECext:5583:609f
+Cursor Up	P:NECext:5583:4fb0
+Up	P:NECext:5583:4fb0
+Cursor Right	P:NECext:5583:4eb1
+Right	P:NECext:5583:4eb1
+Cursor Down	P:NECext:5583:4db2
+Down	P:NECext:5583:4db2
+Cursor Left	P:NECext:5583:4cb3
+Left	P:NECext:5583:4cb3
+@Epson	Video Projector 131,85
+Default	P:NECext:5583:c639
+Sharpness	P:NECext:5583:c43b
+Rgbcmy	P:NECext:5583:c23d
+Input Video	P:NECext:5583:8f70
+Input Component	P:NECext:5583:8e71
+Input Hdmi 1	P:NECext:5583:8c73
+Input Hdmi 2	P:NECext:5583:8877
+Gamma	P:NECext:5583:817e
+Exit	P:NECext:5583:7b84
+Curser Enter	P:NECext:5583:7a85
+Aspect	P:NECext:5583:758a
+Memory	P:NECext:5583:748b
+Color Mode	P:NECext:5583:708f
+Power	P:NECext:5583:6f90
+Power Off	P:NECext:5583:6e91
+Blank	P:NECext:5583:6c93
+Pattern	P:NECext:5583:6996
+Menu	P:NECext:5583:659a
+Input S-Video	P:NECext:5583:639c
+Input Pc	P:NECext:5583:629d
+Curser Up	P:NECext:5583:4fb0
+Curser Down	P:NECext:5583:4db2
+Curser Left	P:NECext:5583:4cb3
+@Faroudja	Video Projector 1,-1
+Cursor Enter	P:RC5X:1:2
+Menu	P:RC5X:1:3
+Cursor Up	P:RC5X:1:4
+Cursor Right	P:RC5X:1:5
+Cursor Left	P:RC5X:1:7
+Value -	P:RC5X:1:7
+0	P:RC5X:1:8
+2	P:RC5X:1:a
+3	P:RC5X:1:b
+4	P:RC5X:1:c
+5	P:RC5X:1:d
+6	P:RC5X:1:e
+7	P:RC5X:1:f
+9	P:RC5X:1:11
+Tint	P:RC5X:1:15
+Noise Reduction	P:RC5X:1:17
+Aspect	P:RC5X:1:18
+S-Video	P:RC5X:1:1c
+Rgb	P:RC5X:1:1d
+Ycrcb	P:RC5X:1:1e
+4:3	P:RC5X:1:20
+Anamorphic	P:RC5X:1:22
+Power On	P:RC5X:1:23
+Pst1	P:RC5X:1:25
+Pst2	P:RC5X:1:26
+Pst3	P:RC5X:1:27
+Pst4	P:RC5X:1:28
+Factory	P:RC5X:1:29
+@Faroudja	Video Projector 135,78
+Composite 1	P:NECext:4e87:fe01
+Menu	P:NECext:4e87:fd02
+Video 1	P:NECext:4e87:fa05
+Composite 3	P:NECext:4e87:f609
+Help	P:NECext:4e87:f50a
+Standby	P:NECext:4e87:f20d
+Freeze	P:NECext:4e87:f10e
+Composite 2	P:NECext:4e87:ea15
+Video 2	P:NECext:4e87:e916
+Power	P:NECext:4e87:e817
+@Faroudja	Video Projector 24,-1
+Volume +	P:NECext:e718:fd02
+Volume -	P:NECext:e718:fc03
+Power On	P:NECext:e718:f708
+Mute	P:NECext:e718:f609
+Video	P:NECext:e718:f50a
+Display	P:NECext:e718:f00f
+Clear	P:NECext:e718:e619
+Off Timer	P:NECext:e718:e11e
+Auto Adjust	P:NECext:e718:e01f
+Rgb/Pc	P:NECext:e718:a758
+@Faroudja	Video Projector 24,24
+Dvd/Hd	P:NECext:1818:e31c
+Wide	P:NECext:1818:52ad
+Cursor Up	P:NECext:1818:4fb0
+Cursor Down	P:NECext:1818:4eb1
+Cursor Left	P:NECext:1818:4db2
+Cursor Right	P:NECext:1818:4cb3
+Standby	P:NECext:1818:3fc0
+Menu/Enter	P:NECext:1818:3bc4
+Exit	P:NECext:1818:3ac5
+Id Select	P:NECext:1818:37c8
+Pointer	P:NECext:1818:36c9
+Zoom +	P:NECext:1818:35ca
+Zoom -	P:NECext:1818:34cb
+Multi	P:NECext:1818:33cc
+Select	P:NECext:1818:32cd
 @Gateway	Gateway 210 projextor
 Power	P:NEC:30:b
 Freeze_esc	P:NEC:30:0
@@ -1070,6 +1564,121 @@ FREEZE	P:NECext:4587:4bb4
 V+	R:38000:33:9064,4354,666,1559,666,1562,662,1586,638,475,636,477,635,477,635,478,635,1590,635,1591,634,478,635,1591,634,478,634,478,635,478,634,1591,635,478,634,1591,634,478,635,478,634,478,635,1591,634,478,634,1591,635,478,634,478,634,1591,634,1591,635,1591,634,478,635,1591,634,478,634,1591,635,40957,9035,2144,634,95483,9047,2155,632,95484,9048,2153,633
 V-	P:NECext:4587:af50
 MUTE	R:38000:33:9034,4385,638,1587,664,1562,663,1587,637,476,635,478,634,478,635,478,635,1591,634,1591,634,478,635,1591,635,478,634,478,635,478,635,1591,635,478,634,478,634,1591,634,478,635,479,634,1591,635,478,634,1591,635,478,634,1592,634,478,634,1591,635,1591,635,478,634,1592,634,478,634,1591,634,40958,9033,2144,635
+@Hitachi	Video Projector 135,69
+Rgb1	P:NECext:4587:ef10
+Pc	P:NECext:4587:ef10
+Rgb2	P:NECext:4587:ee11
+Dvi	P:NECext:4587:ed12
+Hdmi	P:NECext:4587:ed12
+Composite Video	P:NECext:4587:ec13
+Video	P:NECext:4587:ec13
+S Video	P:NECext:4587:eb14
+S-Video	P:NECext:4587:eb14
+Component Video 1	P:NECext:4587:ea15
+Component	P:NECext:4587:ea15
+Wireless	P:NECext:4587:e916
+Standby/On	P:NECext:4587:e817
+Standby / On	P:NECext:4587:e817
+Power On/Off	P:NECext:4587:e817
+Power	P:NECext:4587:e817
+Rgb	P:NECext:4587:e718
+Search	P:NECext:4587:e51a
+One Touch	P:NECext:4587:e51a
+Component Video2	P:NECext:4587:e41b
+Power On	P:NECext:4587:e21d
+Power Off	P:NECext:4587:e11e
+Menu	P:NECext:4587:df20
+Enter	P:NECext:4587:de21
+Menu Select	P:NECext:4587:de21
+Reset	P:NECext:4587:dd22
+Auto	P:NECext:4587:db24
+Cursor Up	P:NECext:4587:d728
+Arrow Up	P:NECext:4587:d728
+Cursor Right	P:NECext:4587:d52a
+Arrow Right	P:NECext:4587:d52a
+Cursor Down	P:NECext:4587:d32c
+Arrow Down	P:NECext:4587:d32c
+Cursor Left	P:NECext:4587:d12e
+Arrow Left	P:NECext:4587:d12e
+Position	P:NECext:4587:cf30
+Timer	P:NECext:4587:bf40
+Blank	P:NECext:4587:be41
+Volume -	P:NECext:4587:af50
+Volume Down	P:NECext:4587:af50
+Volume +	P:NECext:4587:ae51
+Volume Up	P:NECext:4587:ae51
+Mute	P:NECext:4587:ad52
+Mute On/Off	P:NECext:4587:ad52
+Volume On	P:NECext:4587:ac53
+Volume	P:NECext:4587:ac53
+Zoom +	P:NECext:4587:9f60
+Zoom -	P:NECext:4587:9e61
+Focus +	P:NECext:4587:9d62
+Focus -	P:NECext:4587:9c63
+Lens Shift +	P:NECext:4587:956a
+Lens Shift -	P:NECext:4587:946b
+Iris	P:NECext:4587:926d
+Bright +	P:NECext:4587:8d72
+Brightness +	P:NECext:4587:8d72
+Bright -	P:NECext:4587:8c73
+Brightness -	P:NECext:4587:8c73
+Contrast +	P:NECext:4587:8b74
+Contrast -	P:NECext:4587:8a75
+Color +	P:NECext:4587:8976
+Color -	P:NECext:4587:8877
+C. Temp.	P:NECext:4587:8679
+Aspect	P:NECext:4587:857a
+Gamma	P:NECext:4587:847b
+Gamma -1	P:NECext:4587:837c
+Gamma -2	P:NECext:4587:827d
+Gamma -3	P:NECext:4587:817e
+Gamma -4	P:NECext:4587:807f
+Magnify On	P:NECext:4587:4fb0
+Magnify Off	P:NECext:4587:4eb1
+Magnify +	P:NECext:4587:4eb1
+Magnify -	P:NECext:4587:4db2
+Freeze	P:NECext:4587:4bb4
+Pinp	P:NECext:4587:4ab5
+Keystone	P:NECext:4587:49b6
+Light	P:NECext:4587:44bb
+Video Memory 1	P:NECext:4587:3fc0
+Video Memory 2	P:NECext:4587:3ec1
+Video Memory 3	P:NECext:4587:3dc2
+Video Memory 4	P:NECext:4587:3cc3
+Opt Black	P:NECext:4587:33cc
+Black	P:NECext:4587:33cc
+Picture Mode	P:NECext:4587:32cd
+Mode	P:NECext:4587:32cd
+Memory	P:NECext:4587:31ce
+Pc - P_Up	P:NECext:4587:2fd0
+Page Up	P:NECext:4587:2fd0
+Pc - P_Down	P:NECext:4587:2ed1
+Page Down	P:NECext:4587:2ed1
+Pc - F5 (Slide Show)	P:NECext:4587:2dd2
+Pc - Escape	P:NECext:4587:2bd4
+Esc	P:NECext:4587:2bd4
+Pc - Home	P:NECext:4587:2ad5
+Pc - End	P:NECext:4587:29d6
+@Hitachi	Video Projector 80,-1
+Mute	P:NECext:af50:f40b
+Call	P:NECext:af50:ef10
+Vol ^	P:NECext:af50:ed12
+Rgb 1/2	P:NECext:af50:ec13
+Vol V	P:NECext:af50:ea15
+Standby/On	P:NECext:af50:e817
+Video 1/2	P:NECext:af50:df20
+Change V	P:NECext:af50:cd32
+Change H	P:NECext:af50:c639
+Reset	P:NECext:af50:bf40
+Menu ^	P:NECext:af50:b14e
+Menu V	P:NECext:af50:ac53
+Menu >	P:NECext:af50:a35c
+Menu <	P:NECext:af50:a25d
+Blue Back	P:NECext:af50:946b
+Zoom Tele	P:NECext:af50:8f70
+Zoom Wide	P:NECext:af50:8e71
+Focus Far	P:NECext:af50:8d72
+Focus Near	P:NECext:af50:8c73
 @InFocus	INFOCUS Many
 P0wer	R:38000:33:9055,4338,672,1551,669,1553,618,1603,619,481,617,482,616,481,617,507,591,1605,645,479,619,1577,645,1578,644,1578,644,479,619,480,618,1581,641,480,617,1605,617,1606,616,1606,615,483,615,1608,614,484,614,484,614,484,614,484,614,484,614,484,614,1609,614,484,614,1609,614,1609,613,1609,613,40058,9000,2068,614,95467,9022,2068,614
 Menu	P:NECext:4e87:fd02
@@ -1114,6 +1723,222 @@ Presets	P:NECext:4e87:d32c
 Mute	P:NECext:4e87:d629
 Auto_image	P:NECext:4e87:cc33
 Resize	P:NECext:4e87:cb34
+@InFocus	Projector 135,78
+Menu	P:NECext:4e87:fd02
+Brightness +	P:NECext:4e87:fc03
+Brightness -	P:NECext:4e87:f807
+Freeze	P:NECext:4e87:f10e
+Sourse Select	P:NECext:4e87:ef10
+Cursor Up	P:NECext:4e87:ec13
+Cursor Down	P:NECext:4e87:eb14
+Power	P:NECext:4e87:e817
+Keystone +	P:NECext:4e87:df20
+Keystone -	P:NECext:4e87:de21
+Presets	P:NECext:4e87:d32c
+Source 1	P:NECext:4e87:d22d
+Source 2	P:NECext:4e87:d12e
+Source 3	P:NECext:4e87:d02f
+Source 4	P:NECext:4e87:cf30
+Blank	P:NECext:4e87:ce31
+Select	P:NECext:4e87:cd32
+Auto Image	P:NECext:4e87:cc33
+Resize	P:NECext:4e87:cb34
+Overscan	P:NECext:4e87:ca35
+Contrast +	P:NECext:4e87:c936
+Contrast -	P:NECext:4e87:c837
+Power Off	P:NECext:4e87:c639
+Power On	P:NECext:4e87:c53a
+Native Resize	P:NECext:4e87:c43b
+16:9	P:NECext:4e87:c33c
+4:3	P:NECext:4e87:c23d
+Letterbox	P:NECext:4e87:c13e
+Natural Wide	P:NECext:4e87:c03f
+User Preset 1	P:NECext:4e87:bf40
+User Preset 2	P:NECext:4e87:be41
+User Preset 3	P:NECext:4e87:bd42
+@InFocus	Video Projector 123,2
+Native	P:NECext:27b:ff00
+Standard	P:NECext:27b:fe01
+Widescreen	P:NECext:27b:fd02
+Wide Enhanced	P:NECext:27b:fc03
+Exit	P:NECext:27b:ee11
+Menu	P:NECext:27b:ed12
+Cursor Up	P:NECext:27b:ec13
+Cursor Down	P:NECext:27b:eb14
+Cursor Left	P:NECext:27b:ea15
+Cursor Right	P:NECext:27b:e916
+Ok	P:NECext:27b:e817
+Power Off	P:NECext:27b:e718
+Power On	P:NECext:27b:e619
+Pc1 Analog	P:NECext:27b:e51a
+Pc1 Digital	P:NECext:27b:e41b
+Comp Hdtv	P:NECext:27b:e31c
+Comp Int.	P:NECext:27b:e21d
+S-Video	P:NECext:27b:e11e
+Video	P:NECext:27b:e01f
+Pc Hdtv	P:NECext:27b:bf40
+Pc Vga	P:NECext:27b:be41
+@InFocus	Video Projector 131,85
+Power	P:NECext:5583:7b84
+Picture Mode	P:NECext:5583:7a85
+Picture +	P:NECext:5583:7986
+Picture -	P:NECext:5583:7887
+Volume +	P:NECext:5583:7788
+Volume -	P:NECext:5583:7689
+Mute	P:NECext:5583:758a
+Input Select	P:NECext:5583:748b
+Picture Reset	P:NECext:5583:738c
+Focus Pattern	P:NECext:5583:728d
+Focus V	P:NECext:5583:718e
+Focus ^	P:NECext:5583:708f
+Auto Focus	P:NECext:5583:6f90
+Zoom Wide	P:NECext:5583:6e91
+Zoom Narrow	P:NECext:5583:6d92
+@InFocus	Video Projector 135,78
+Mute	P:NECext:4e87:ff00
+Computer	P:NECext:4e87:fe01
+Menu	P:NECext:4e87:fd02
+Brightness +	P:NECext:4e87:fc03
+Brightness >	P:NECext:4e87:fc03
+Brite+	P:NECext:4e87:fc03
+Volume <	P:NECext:4e87:fb04
+Video	P:NECext:4e87:fa05
+Scribble	P:NECext:4e87:f906
+Brightness -	P:NECext:4e87:f807
+Brightness <	P:NECext:4e87:f807
+Brite-	P:NECext:4e87:f807
+Focus Near	P:NECext:4e87:f708
+Volume >	P:NECext:4e87:f708
+Focus Far	P:NECext:4e87:f609
+Liteshow	P:NECext:4e87:f609
+Zoom In	P:NECext:4e87:f50a
+Help	P:NECext:4e87:f50a
+Zoom Out	P:NECext:4e87:f40b
+Standby	P:NECext:4e87:f20d
+Freeze	P:NECext:4e87:f10e
+Source Select	P:NECext:4e87:ef10
+Source	P:NECext:4e87:ef10
+Cursor +	P:NECext:4e87:ec13
+Up	P:NECext:4e87:ec13
+Cursor Up	P:NECext:4e87:ec13
+Cursor -	P:NECext:4e87:eb14
+Down	P:NECext:4e87:eb14
+Cursor Down	P:NECext:4e87:eb14
+Dn	P:NECext:4e87:eb14
+Power	P:NECext:4e87:e817
+Power Toggle	P:NECext:4e87:e817
+Horiz Offset Left	P:NECext:4e87:e41b
+Horiz Offset Right	P:NECext:4e87:e31c
+Vert Offset Up	P:NECext:4e87:e21d
+Vert Offset Down	P:NECext:4e87:e11e
+Keystone +	P:NECext:4e87:df20
+Keystone -	P:NECext:4e87:de21
+Custom	P:NECext:4e87:d42b
+Preset	P:NECext:4e87:d32c
+Presets	P:NECext:4e87:d32c
+Source 1	P:NECext:4e87:d22d
+Source 2	P:NECext:4e87:d12e
+Source2	P:NECext:4e87:d12e
+Source 3	P:NECext:4e87:d02f
+Source3	P:NECext:4e87:d02f
+Source 4	P:NECext:4e87:cf30
+Source4	P:NECext:4e87:cf30
+Blank	P:NECext:4e87:ce31
+Select	P:NECext:4e87:cd32
+Auto Image	P:NECext:4e87:cc33
+Resize	P:NECext:4e87:cb34
+Overscan	P:NECext:4e87:ca35
+Contrast +	P:NECext:4e87:c936
+Contrast+	P:NECext:4e87:c936
+Contrast -	P:NECext:4e87:c837
+Power Off	P:NECext:4e87:c639
+Power On	P:NECext:4e87:c53a
+Native Resize	P:NECext:4e87:c43b
+16:9	P:NECext:4e87:c33c
+16:9 Resize	P:NECext:4e87:c33c
+4:3	P:NECext:4e87:c23d
+4:3 Resize	P:NECext:4e87:c23d
+Letterbox	P:NECext:4e87:c13e
+Letterbox Resize	P:NECext:4e87:c13e
+Natural Wide Resize	P:NECext:4e87:c03f
+User Preset 1	P:NECext:4e87:bf40
+User Preset 2	P:NECext:4e87:be41
+User Preset 3	P:NECext:4e87:bd42
+Level ^	P:NECext:4e87:7f80
+Cont ^	P:NECext:4e87:7e81
+Window ^	P:NECext:4e87:7d82
+Next	P:NECext:4e87:7c83
+Level V	P:NECext:4e87:7b84
+Cont V	P:NECext:4e87:7a85
+Window V	P:NECext:4e87:7986
+Previous	P:NECext:4e87:7887
+Reverse	P:NECext:4e87:7788
+Pause	P:NECext:4e87:748b
+Grab	P:NECext:4e87:708f
+Present	P:NECext:4e87:6f90
+Edit	P:NECext:4e87:6e91
+Tools	P:NECext:4e87:6d92
+Live	P:NECext:4e87:6c93
+Up Left Corner	P:NECext:4e87:6b94
+Up (^)	P:NECext:4e87:6a95
+Up Right Corner	P:NECext:4e87:6996
+Esc	P:NECext:4e87:6897
+Left (<)	P:NECext:4e87:6798
+Right (>)	P:NECext:4e87:659a
+Group	P:NECext:4e87:649b
+Rear Left Corner	P:NECext:4e87:639c
+Down (V)	P:NECext:4e87:629d
+Rear Right Corner	P:NECext:4e87:619e
+Enter	P:NECext:4e87:609f
+@InFocus	Video Projector 78,135
+Brightness +	P:NECext:874e:fc03
+Brightness -	P:NECext:874e:f807
+Freeze	P:NECext:874e:f10e
+Source Select	P:NECext:874e:ef10
+Cursor +	P:NECext:874e:ec13
+Cursor -	P:NECext:874e:eb14
+Power	P:NECext:874e:e817
+Keystone +	P:NECext:874e:df20
+Keystone -	P:NECext:874e:de21
+Preset	P:NECext:874e:d32c
+Source 1	P:NECext:874e:d22d
+Source 2	P:NECext:874e:d12e
+Source 3	P:NECext:874e:d02f
+Source 4	P:NECext:874e:cf30
+Blank	P:NECext:874e:ce31
+Select	P:NECext:874e:cd32
+Auto Image	P:NECext:874e:cc33
+Resize	P:NECext:874e:cb34
+Overscan	P:NECext:874e:ca35
+Contrast +	P:NECext:874e:c936
+Contrast -	P:NECext:874e:c837
+Power Off	P:NECext:874e:c639
+Power On	P:NECext:874e:c53a
+Native Resize	P:NECext:874e:c43b
+16:9	P:NECext:874e:c33c
+4:3	P:NECext:874e:c23d
+Letterbox	P:NECext:874e:c13e
+Natural Wide Resize	P:NECext:874e:c03f
+User Preset 1	P:NECext:874e:bf40
+User Preset 2	P:NECext:874e:be41
+User Preset 3	P:NECext:874e:bd42
+@InFocus	Video Projector 80,79
+Power	P:NECext:4f50:fd02
+Disp Mode	P:NECext:4f50:f906
+Volume +	P:NECext:4f50:f807
+Volume -	P:NECext:4f50:f50a
+Freeze	P:NECext:4f50:f30c
+Menu	P:NECext:4f50:ee11
+Keystone +	P:NECext:4f50:ec13
+Keystone -	P:NECext:4f50:eb14
+Resync	P:NECext:4f50:ea15
+Source	P:NECext:4f50:e916
+Enter	P:NECext:4f50:e817
+Source-Lock	P:NECext:4f50:e41b
+Video 1	P:NECext:4f50:e31c
+Video 2	P:NECext:4f50:e21d
+Computer	P:NECext:4f50:e11e
+Av Mute	P:NECext:4f50:cf30
 @Jinhoo	Jinhoo M10
 Power	P:NEC:1:0
 Menu_exit	P:NEC:1:1
@@ -1148,6 +1973,218 @@ Left	P:NECext:6a00:b649
 Ok	P:NECext:6a00:a55a
 Brightness	P:NECext:6a00:6b94
 Contrast	P:NECext:6a00:659a
+@JVC	Projector 115,-1
+Cursor Up	P:JVC:73:1
+Menu Up	P:JVC:73:1
+Cursor Down	P:JVC:73:2
+Menu Down	P:JVC:73:2
+Exit	P:JVC:73:3
+Power On	P:JVC:73:5
+Power Off	P:JVC:73:6
+Hide	P:JVC:73:1d
+Menu	P:JVC:73:2e
+Enter	P:JVC:73:2f
+Cursor Right	P:JVC:73:34
+Menu Right	P:JVC:73:34
+Cursor Left	P:JVC:73:36
+Menu Left	P:JVC:73:36
+Input: Video	P:JVC:73:4b
+Video	P:JVC:73:4b
+Input: S-Video	P:JVC:73:4c
+S-Video	P:JVC:73:4c
+Input: Component	P:JVC:73:4d
+Component	P:JVC:73:4d
+Test	P:JVC:73:59
+Image: Cinema	P:JVC:73:69
+Cinema	P:JVC:73:69
+Image: Natural	P:JVC:73:6a
+Natural	P:JVC:73:6a
+Image: Dynamic	P:JVC:73:6b
+Dynamic	P:JVC:73:6b
+Image: User 1	P:JVC:73:6c
+User 1	P:JVC:73:6c
+Image: User 2	P:JVC:73:6d
+User 2	P:JVC:73:6d
+Image: User 3	P:JVC:73:6e
+User 3	P:JVC:73:6e
+Input: Hdmi 1	P:JVC:73:70
+Hdmi 1	P:JVC:73:70
+Input: Hdmi 2	P:JVC:73:71
+Hdmi 2	P:JVC:73:71
+Info	P:JVC:73:74
+Gamma	P:JVC:73:75
+Color Temp	P:JVC:73:76
+Aspect	P:JVC:73:77
+Contrast +	P:JVC:73:78
+Contrast -	P:JVC:73:79
+Brightness +	P:JVC:73:7a
+Bright +	P:JVC:73:7a
+Brightness -	P:JVC:73:7b
+Bright -	P:JVC:73:7b
+Color +	P:JVC:73:7c
+Color -	P:JVC:73:7d
+Sharpness +	P:JVC:73:7e
+Sharp +	P:JVC:73:7e
+Sharpness -	P:JVC:73:7f
+Sharp -	P:JVC:73:7f
+@JVC	Video Projector 115,-1
+Cursor Up	P:JVC:73:1
+Arrow Up	P:JVC:73:1
+Menu Up	P:JVC:73:1
+Cursor Down	P:JVC:73:2
+Arrow Down	P:JVC:73:2
+Menu Down	P:JVC:73:2
+Page Back	P:JVC:73:3
+Exit	P:JVC:73:3
+Page/ Back	P:JVC:73:3
+Back	P:JVC:73:3
+Preset	P:JVC:73:4
+Power On	P:JVC:73:5
+On	P:JVC:73:5
+Power Off	P:JVC:73:6
+Power Off - Send 2X	P:JVC:73:6
+Standby	P:JVC:73:6
+Light	P:JVC:73:7
+Input	P:JVC:73:8
+Bright	P:JVC:73:9
+Cont	P:JVC:73:a
+Freeze	P:JVC:73:f
+Computer	P:JVC:73:10
+Pc	P:JVC:73:10
+Video	P:JVC:73:11
+Quick Align.	P:JVC:73:13
+Quick Align	P:JVC:73:13
+Quickalign	P:JVC:73:13
+Sharp	P:JVC:73:14
+Color	P:JVC:73:15
+Tint	P:JVC:73:16
+Operate	P:JVC:73:17
+Power	P:JVC:73:17
+N.R.	P:JVC:73:18
+V-Keystone Up	P:JVC:73:1b
+V-Keystone Down	P:JVC:73:1c
+Av Muting	P:JVC:73:1d
+Hide	P:JVC:73:1d
+Info	P:JVC:73:1d
+Vol +	P:JVC:73:1e
+Vol -	P:JVC:73:1f
+Lens.Ap	P:JVC:73:20
+Zoom T	P:JVC:73:23
+V Stretch On	P:JVC:73:23
+Zoom Up	P:JVC:73:23
+Zooom T	P:JVC:73:23
+Zoom W	P:JVC:73:24
+V Stretch Off	P:JVC:73:24
+Zoom Down	P:JVC:73:24
+Digital Zoom +	P:JVC:73:2a
+Menu	P:JVC:73:2e
+Enter	P:JVC:73:2f
+Cursor Enter	P:JVC:73:2f
+Ok	P:JVC:73:2f
+Menu/Enter	P:JVC:73:30
+Menu/ Enter	P:JVC:73:30
+Select =	P:JVC:73:30
+Lens	P:JVC:73:30
+Cursor Right	P:JVC:73:34
+Arrow Right	P:JVC:73:34
+Cursor >	P:JVC:73:34
+Menu Right	P:JVC:73:34
+Cursor Left	P:JVC:73:36
+Arrow Left	P:JVC:73:36
+Cursor <	P:JVC:73:36
+Menu Left	P:JVC:73:36
+Focus +	P:JVC:73:3c
+Focus Up	P:JVC:73:3c
+Focus -	P:JVC:73:3d
+Focus Down	P:JVC:73:3d
+H-Keystone Up	P:JVC:73:40
+H-Keystone Down	P:JVC:73:41
+Input Video	P:JVC:73:4b
+S-Video	P:JVC:73:4c
+Input S-Video	P:JVC:73:4c
+Component	P:JVC:73:4d
+Comp.	P:JVC:73:4d
+Input Component	P:JVC:73:4d
+Screen W	P:JVC:73:56
+Screen S	P:JVC:73:57
+Chp	P:JVC:73:58
+Test	P:JVC:73:59
+Stage	P:JVC:73:67
+Cinema 2	P:JVC:73:68
+Cinema	P:JVC:73:69
+Cinema Mode	P:JVC:73:69
+Cinema 1	P:JVC:73:69
+Natural	P:JVC:73:6a
+Natural Mode	P:JVC:73:6a
+Dynamic	P:JVC:73:6b
+User 1	P:JVC:73:6c
+User 2	P:JVC:73:6d
+User 3	P:JVC:73:6e
+Hdmi1	P:JVC:73:70
+Hdmi 1	P:JVC:73:70
+Input Hdmi 1	P:JVC:73:70
+Hdmi2	P:JVC:73:71
+Hdmi 2	P:JVC:73:71
+Input Hdmi 2	P:JVC:73:71
+Gamma	P:JVC:73:75
+Colour Temp	P:JVC:73:76
+Color Temp	P:JVC:73:76
+C.Temp	P:JVC:73:76
+Aspect	P:JVC:73:77
+Aspect Ratio	P:JVC:73:77
+Dynamic Mode	P:JVC:73:77
+Contrast +	P:JVC:73:78
+Contrast Up	P:JVC:73:78
+Contrast -	P:JVC:73:79
+Contrast Down	P:JVC:73:79
+Brightness +	P:JVC:73:7a
+Brightness Up	P:JVC:73:7a
+Bright +	P:JVC:73:7a
+Brightness -	P:JVC:73:7b
+Brightness Down	P:JVC:73:7b
+Bright -	P:JVC:73:7b
+Colour +	P:JVC:73:7c
+Color +	P:JVC:73:7c
+Colour -	P:JVC:73:7d
+Color -	P:JVC:73:7d
+Sharpness +	P:JVC:73:7e
+Sharp +	P:JVC:73:7e
+Sharpness -	P:JVC:73:7f
+Sharp -	P:JVC:73:7f
+@JVC	Video Projector 131,85
+Hide	P:NECext:5583:708f
+Operate	P:NECext:5583:6f90
+Freeze	P:NECext:5583:6d92
+Mute	P:NECext:5583:6c93
+Vol +	P:NECext:5583:6798
+Vol -	P:NECext:5583:6699
+Menu	P:NECext:5583:659a
+Special	P:NECext:5583:649b
+Video	P:NECext:5583:639c
+Computer	P:NECext:5583:629d
+Auto	P:NECext:5583:619e
+Resize	P:NECext:5583:609f
+@Knoll	Video Projector 24,233
+Video	P:NECext:e918:fc03
+Rgb	P:NECext:e918:fb04
+Power On	P:NECext:e918:f708
+Power Off	P:NECext:e918:eb14
+Select	P:NECext:e918:e817
+R-Click	P:NECext:e918:da25
+Menu	P:NECext:e918:b946
+Mute	P:NECext:e918:b847
+Volume +	P:NECext:e918:b748
+Volume -	P:NECext:e918:b649
+Freeze	P:NECext:e918:b34c
+Cursor Right	P:NECext:e918:a35c
+Cursor Left	P:NECext:e918:a25d
+Cursor Up	P:NECext:e918:a15e
+Cursor Down	P:NECext:e918:a05f
+Magnify +	P:NECext:e918:7689
+Magnify -	P:NECext:e918:758a
+Keystone +	P:NECext:e918:748b
+Keystone -	P:NECext:e918:738c
+S Video	P:NECext:e918:39c6
 @LG	LG PH300-NA
 Power	P:NECext:f04:52ad
 Input	P:NECext:f04:10ef
@@ -1182,6 +2219,44 @@ Green	P:NECext:f04:8e71
 Yellow	P:NECext:f04:9c63
 Blue	P:NECext:f04:9e61
 Mute	P:NECext:f04:f609
+@Marantz	Projector 0,-1
+Power Off/Standby2	P:RC5X:0:c
+V-Mute	P:RC5X:0:d
+Video Mute	P:RC5X:0:d
+Information	P:RC5X:0:f
+Info	P:RC5X:0:f
+Cursor Up	P:RC5X:0:1c
+Up	P:RC5X:0:1c
+Cursor Down	P:RC5X:0:1d
+Down	P:RC5X:0:1d
+Tint -	P:RC5X:0:1f
+Tint +	P:RC5X:0:27
+Cursor Right	P:RC5X:0:2b
+Right	P:RC5X:0:2b
+Cursor Left	P:RC5X:0:2c
+Left	P:RC5X:0:2c
+Exit	P:RC5X:0:2d
+Menu	P:RC5X:0:2e
+Input	P:RC5X:0:38
+Power On 2	P:RC5X:0:3f
+Menu On	P:RC5X:0:52
+Menu Off	P:RC5X:0:53
+Enter	P:RC5X:0:57
+Pip On/Off	P:RC5X:0:58
+Pic Mode -Freeze	P:RC5X:0:5d
+Smooth	P:RC5X:0:61
+Picture Shift	P:RC5X:0:69
+Aspect -Zoom	P:RC5X:0:74
+Zoom	P:RC5X:0:74
+Zoom (Aspect)	P:RC5X:0:74
+Cinema	P:RC5X:0:76
+Cenema	P:RC5X:0:76
+Back Light	P:RC5X:0:77
+Aspect	P:RC5X:0:7d
+Aspect -Full	P:RC5X:0:7e
+Aspect -Squeeze	P:RC5X:0:7e
+Full	P:RC5X:0:7e
+Full (Aspect)	P:RC5X:0:7e
 @Maxell	Maxell MC-EU5001
 Power	P:NECext:4587:e817
 Input	P:NECext:4587:f708
@@ -1384,6 +2459,166 @@ MULTI PICTURE ON/OFF	R:38000:33:8139,4021,515,509,519,506,518,1506,517,507,492,1
 CHANGE	R:38000:33:8080,4076,468,531,492,533,493,1532,493,507,518,1507,491,1534,467,1558,467,1559,491,4083,492,508,488,1537,465,1560,465,560,491,509,488,1537,465,560,491,509,489,18532,8106,4054,491,534,491,509,465,1561,490,535,490,1534,491,1511,514,1511,514,1510,515,4060,490,511,514,1511,514,1511,515,509,491,511,514,1511,514,510,490,535,490,18507,8106,4055,488,537,490,510,515,1510,515,510,490,1535,490,1535,490,1535,490,1535,490,4060,487,538,490,1535,490,1535,490,510,487,538,490,1535,490,510,489,536,490,18509,8079,4106,490,509,465,561,490,1535,490,510,464,1561,464,1561,490,1535,490,1535,490,4061,514,510,464,1561,490,1535,490,511,514,510,464,1561,490,535,490,510,464,18559,8106,4055,490,510,515,509,491,1535,490,511,514,1511,514,1510,515,1510,488,1537,464,4111,490,510,515,1510,489,1536,488,537,491,511,514,1510,489,536,491,511,514,18508,8106,4055,464,560,491,510,464,1561,464,561,490,1535,490,1535,490,1535,490,1511,514,4060,464,560,491,1535,490,1511,514,510,464,561,490,1535,490,510,464,561,490
 MTS	R:38000:33:8121,4029,517,486,538,509,490,1534,490,511,513,1512,512,1512,512,1512,511,1514,461,4113,487,513,512,1513,511,513,487,1537,487,1537,487,513,511,513,488,513,512,18504,8097,4060,486,538,487,512,485,1540,461,564,487,1537,487,1538,487,1512,512,1513,511,4062,486,538,487,1538,487,513,460,1564,487,1538,487,538,487,513,460,564,487,18505,8098,4061,511,512,488,513,512,1513,512,513,487,1538,487,1538,487,1538,487,1538,486,4062,511,513,486,1538,487,513,512,1513,511,1513,511,513,487,514,511,513,487,18505,8095,4088,487,513,484,540,488,1538,487,513,511,1514,484,1541,460,1564,487,1538,487,4088,486,513,461,1565,460,564,487,1538,487,1538,487,513,461,564,487,513,485,18537,8098,4061,487,513,512,513,487,1538,487,539,486,1514,511,1514,511,1514,511,1513,511,4063,487,514,511,1514,511,513,487,1539,486,1538,487,514,511,513,487,513,512
 TXT	R:38000:33:8139,4021,517,508,518,483,513,1514,510,535,493,1532,493,1533,491,1533,492,1512,513,4058,490,534,491,509,489,1536,488,1537,490,534,491,1534,491,509,488,537,491,18505,8110,4051,514,508,492,534,491,1511,514,509,491,1534,491,1534,491,1534,491,1534,491,4060,514,509,491,535,490,1511,514,1510,515,509,491,1534,491,511,514,509,491
+@NEC	Video Projector 24,233
+Video	P:NECext:e918:fc03
+Rgb	P:NECext:e918:fb04
+Rgb1	P:NECext:e918:fb04
+S-Video	P:NECext:e918:fa05
+Rgb2	P:NECext:e918:fa05
+Set Up	P:NECext:e918:f906
+Set Up (On Scrn Mgr)	P:NECext:e918:f906
+Select	P:NECext:e918:f807
+Power	P:NECext:e918:f708
+On	P:NECext:e918:f708
+Power On	P:NECext:e918:f708
+Zoom W	P:NECext:e918:f609
+Zoom ^	P:NECext:e918:f609
+Zoom +	P:NECext:e918:f609
+Zoom T	P:NECext:e918:f50a
+Zoom V	P:NECext:e918:f50a
+Zoom -	P:NECext:e918:f50a
+Focus +	P:NECext:e918:f40b
+Focus ^	P:NECext:e918:f40b
+Focus -	P:NECext:e918:f30c
+Focus V	P:NECext:e918:f30c
+Contrast ^	P:NECext:e918:f20d
+Contrast V	P:NECext:e918:f10e
+Bright ^	P:NECext:e918:f00f
+Bright V	P:NECext:e918:ef10
+Display Mute	P:NECext:e918:ee11
+Off	P:NECext:e918:eb14
+Power Off	P:NECext:e918:eb14
+Clear	P:NECext:e918:ea15
+Display	P:NECext:e918:e916
+Enter	P:NECext:e918:e817
+Menu L-Click (Under)	P:NECext:e918:e817
+1 (Abc)	P:NECext:e918:e718
+2 (Def)	P:NECext:e918:e619
+3 (Ghi)	P:NECext:e918:e51a
+4 (Jkl)	P:NECext:e918:e41b
+5 (Mno)	P:NECext:e918:e31c
+6 (Pqr)	P:NECext:e918:e21d
+7 (Stu)	P:NECext:e918:e11e
+8 (Vwx)	P:NECext:e918:e01f
+Position Mouse Ne	P:NECext:e918:de21
+Position Mouse Nw	P:NECext:e918:dd22
+Position Mouse Se	P:NECext:e918:dc23
+Position Mouse West	P:NECext:e918:db24
+Position (Off)	P:NECext:e918:da25
+9 (Yz-)	P:NECext:e918:bf40
+0	P:NECext:e918:be41
+Focus Pat.	P:NECext:e918:bd42
+Normal	P:NECext:e918:bc43
+Reset	P:NECext:e918:bc43
+Key Lock	P:NECext:e918:bb44
+Mute Audio	P:NECext:e918:ba45
+Menu	P:NECext:e918:b946
+Menu (On Screen Mgr)	P:NECext:e918:b946
+Mute Picture	P:NECext:e918:b847
+Picture Mute	P:NECext:e918:b847
+Pic-Mute	P:NECext:e918:b847
+Volume ^	P:NECext:e918:b748
+Volume +	P:NECext:e918:b748
+Volume V	P:NECext:e918:b649
+Volume -	P:NECext:e918:b649
+Freeze	P:NECext:e918:b34c
+Expand	P:NECext:e918:b24d
+Rgb Mode	P:NECext:e918:b24d
+>+	P:NECext:e918:a35c
++ (On Screen Mgr)	P:NECext:e918:a35c
++	P:NECext:e918:a35c
+Menu Mouse East (+)	P:NECext:e918:a35c
+<-	P:NECext:e918:a25d
+- (On Screen Mgr)	P:NECext:e918:a25d
+-	P:NECext:e918:a25d
+Menu Mouse West (-)	P:NECext:e918:a25d
+^	P:NECext:e918:a15e
+Position ^	P:NECext:e918:a15e
+Menu Mouse North	P:NECext:e918:a15e
+V	P:NECext:e918:a05f
+Position V	P:NECext:e918:a05f
+Menu Mouse South	P:NECext:e918:a05f
+Ctl Video	P:NECext:e918:7c83
+Ctl Rgb	P:NECext:e918:7b84
+Position >	P:NECext:e918:7b84
+Ctl S-Video	P:NECext:e918:7a85
+Position <	P:NECext:e918:7a85
+Ctl Set Up	P:NECext:e918:7986
+2X/4X	P:NECext:e918:7887
+Ctl Power	P:NECext:e918:7788
+Ctl Zoom W	P:NECext:e918:7689
+Magnify Reduce +	P:NECext:e918:7689
+Ctl Zoom T	P:NECext:e918:758a
+Magnify Reduce -	P:NECext:e918:758a
+Ctl Focus +	P:NECext:e918:748b
+Ctl Focus -	P:NECext:e918:738c
+Ctl Contrast ^	P:NECext:e918:728d
+Ctl Contrast V	P:NECext:e918:718e
+Ctl Bright ^	P:NECext:e918:708f
+Ctl Bright V	P:NECext:e918:6f90
+Ctl Clear	P:NECext:e918:6a95
+Ctl Display	P:NECext:e918:6996
+Ctl Enter	P:NECext:e918:6897
+Ctl 1 (Abc)	P:NECext:e918:6798
+Ctl 2 (Def)	P:NECext:e918:6699
+Ctl 3 (Ghi)	P:NECext:e918:659a
+Ctl 4 (Jkl)	P:NECext:e918:649b
+Ctl 5 (Mno)	P:NECext:e918:639c
+Ctl 6 (Pqr)	P:NECext:e918:629d
+Ctl 7 (Stu)	P:NECext:e918:619e
+Ctl 8 (Vwx)	P:NECext:e918:609f
+Ctl 9 (Yz-)	P:NECext:e918:3fc0
+Ctl 0	P:NECext:e918:3ec1
+Ctl Focus Pat.	P:NECext:e918:3dc2
+Ctl Normal	P:NECext:e918:3cc3
+Ctl Key Lock	P:NECext:e918:3bc4
+Ctl Mute Audio	P:NECext:e918:3ac5
+Ctl Menu	P:NECext:e918:39c6
+Ctl Mute Picture	P:NECext:e918:38c7
+Ctl Volume ^	P:NECext:e918:37c8
+Ctl Volume V	P:NECext:e918:36c9
+Ctl Expand	P:NECext:e918:32cd
+Ctl >+	P:NECext:e918:23dc
+Position Mouse East	P:NECext:e918:23dc
+Ctl <-	P:NECext:e918:22dd
+Position Mouse Sw	P:NECext:e918:22dd
+Ctl ^	P:NECext:e918:21de
+Position Mouse North	P:NECext:e918:21de
+Ctl V	P:NECext:e918:20df
+Position Mouse South	P:NECext:e918:20df
+@NEC	Video Projector 24,247
+R	P:NECext:f718:ff00
+B	P:NECext:f718:fd02
+Power	P:NECext:f718:f708
+End	P:NECext:f718:f609
+Test	P:NECext:f718:f40b
+Coarse	P:NECext:f718:f10e
+Fine	P:NECext:f718:f00f
+Store	P:NECext:f718:ed12
+Static	P:NECext:f718:ea15
+Video1	P:NECext:f718:e718
+Video2	P:NECext:f718:e619
+Rgb1	P:NECext:f718:e31c
+Rgb2	P:NECext:f718:e21d
+Rgb3	P:NECext:f718:e11e
+Sel	P:NECext:f718:bf40
+Beam	P:NECext:f718:be41
+Preset	P:NECext:f718:bd42
+Call	P:NECext:f718:bc43
+Picture ^	P:NECext:f718:b946
+Picture V	P:NECext:f718:b847
+Color ^	P:NECext:f718:b748
+Color V	P:NECext:f718:b649
+Bright ^	P:NECext:f718:b54a
+Bright V	P:NECext:f718:b44b
+Tint ^	P:NECext:f718:b34c
+Tint V	P:NECext:f718:b24d
+Sharpness ^	P:NECext:f718:b14e
+Sharpness V	P:NECext:f718:b04f
+^ (Up)	P:NECext:f718:a35c
+V (Down)	P:NECext:f718:a25d
+> (Right)	P:NECext:f718:a15e
+< (Left)	P:NECext:f718:a05f
 @NexiGo	NexiGo-PJ20
 Power	P:NEC:3:1d
 Mute	P:NEC:3:2
@@ -1578,6 +2813,30 @@ Unknown_4	P:NECext:504f:f10e
 Unknown_5	P:NECext:504f:e718
 Unknown_6	P:NECext:504f:e619
 Unknown_7	P:NECext:504f:e51a
+@Optoma	Projector 50,-1
+Power On	P:NECext:cd32:fd02
+Mode	P:NECext:cd32:fa05
+Menu	P:NECext:cd32:f10e
+Enter	P:NECext:cd32:f00f
+Left	P:NECext:cd32:ef10
+Volume Up	P:NECext:cd32:ee11
+Right	P:NECext:cd32:ed12
+Volume Down	P:NECext:cd32:eb14
+Hdmi 1	P:NECext:cd32:e916
+Vga 1	P:NECext:cd32:e41b
+Vga 2	P:NECext:cd32:e11e
+Video RCA	P:NECext:cd32:e11e
+Power Off	P:NECext:cd32:d12e
+Hdmi 2	P:NECext:cd32:cf30
+Brightness	P:NECext:cd32:be41
+Contrast	P:NECext:cd32:bd42
+Gamma	P:NECext:cd32:bc43
+Lamp Mode	P:NECext:cd32:ba45
+Ratio 16:9	P:NECext:cd32:b946
+Ratio 4:3	P:NECext:cd32:b847
+Lbx	P:NECext:cd32:b748
+Native	P:NECext:cd32:b649
+3D Format	P:NECext:cd32:ab54
 @Panasonic	Panasonic PT-AR100U
 Power	R:38000:33:3455,1751,420,446,420,1313,420,446,420,446,420,447,419,446,420,446,420,446,420,447,419,447,419,447,419,447,419,446,420,1312,421,447,419,446,420,447,419,448,418,447,419,447,419,446,420,447,419,446,420,1314,418,447,419,447,419,448,418,1313,419,447,419,446,420,1313,420,446,420,446,420,446,420,447,419,446,420,447,419,447,419,446,420,446,420,1313,420,446,420,1312,420,1313,420,1314,418,1313,420,446,420,447,419,1313,420,446,420,1313,420,446,420,1314,419,1314,419,1313,420,1313,420
 Pic_mode	R:38000:33:3455,1753,443,422,444,1289,443,421,445,421,445,422,444,421,445,422,444,421,445,422,444,422,444,422,444,421,445,422,444,1288,445,422,444,422,444,423,443,421,445,421,445,422,444,421,445,422,444,422,444,1288,445,421,445,422,444,421,445,1288,445,422,444,421,445,1289,443,423,443,421,445,422,444,423,443,422,444,421,445,422,444,422,444,423,443,423,443,1290,443,422,444,423,443,421,445,422,444,421,445,1288,444,422,444,1288,444,423,443,1289,444,422,444,422,444,1289,444,422,444
@@ -1731,6 +2990,45 @@ Right arrow	R:36045:33:9044,4476,578,574,548,576,548,576,546,578,546,576,548,550
 Down arrow	R:36045:33:9042,4486,558,580,532,580,534,580,536,582,536,580,532,580,530,582,540,584,546,1672,572,1674,574,1672,574,1672,572,1672,572,1672,574,1670,574,1676,574,578,546,1672,572,578,546,580,546,578,546,580,546,1670,576,582,546,1672,572,580,544,1672,572,1674,572,1674,572,1672,572,580,546,1670,572
 Settings	R:36045:33:9054,4484,572,580,544,580,546,580,546,580,544,582,544,580,546,580,544,584,546,1674,572,1672,572,1674,572,1674,572,1674,572,1674,572,1674,572,1678,570,1674,572,580,544,1674,570,558,570,1672,572,580,544,580,546,584,546,580,546,1672,574,580,546,1672,572,580,546,1674,574,1672,572,1674,574
 Back	R:36045:33:9050,4484,574,578,544,580,546,580,542,582,546,580,546,554,572,578,546,584,546,1674,572,1674,574,1674,572,1674,572,1674,572,1674,572,1674,572,1676,572,1674,572,1672,574,1672,572,580,546,554,570,554,572,1672,572,584,544,580,544,580,544,580,546,1674,574,1672,572,1672,574,580,546,1672,574
+@Runco	Video Projector 24,247
+R	P:NECext:f718:ff00
+B	P:NECext:f718:fd02
+Operate	P:NECext:f718:f906
+Operate Menu	P:NECext:f718:f906
+Display	P:NECext:f718:f807
+Power On	P:NECext:f718:f708
+End	P:NECext:f718:f609
+Power Off	P:NECext:f718:eb14
+Static	P:NECext:f718:ea15
+Enter	P:NECext:f718:e817
+Idtv 1	P:NECext:f718:e718
+1	P:NECext:f718:e718
+Idtv 2	P:NECext:f718:e619
+2	P:NECext:f718:e619
+Idtv 3	P:NECext:f718:e51a
+3	P:NECext:f718:e51a
+Idtv 4	P:NECext:f718:e41b
+4	P:NECext:f718:e41b
+Idtv 5	P:NECext:f718:e31c
+5	P:NECext:f718:e31c
+Rgb 6	P:NECext:f718:e21d
+6	P:NECext:f718:e21d
+Rgb 7	P:NECext:f718:e11e
+Rgb 8	P:NECext:f718:e01f
+Rgb 9	P:NECext:f718:bf40
+Hdtv	P:NECext:f718:be41
+Normal	P:NECext:f718:bc43
+Sound Mute	P:NECext:f718:ba45
+Picture Mute	P:NECext:f718:b847
+Input List	P:NECext:f718:b24d
+Cur Up	P:NECext:f718:a35c
+Cursor Up	P:NECext:f718:a35c
+Cur Down	P:NECext:f718:a25d
+Cursor Down	P:NECext:f718:a25d
+Cur Right	P:NECext:f718:a15e
+Cursor Right	P:NECext:f718:a15e
+Cur Left	P:NECext:f718:a05f
+Cursor Left	P:NECext:f718:a05f
 @SAKAWA	SAKAWA Projector
 Power	P:NECext:ffff:17e8
 Vol_up	P:NECext:ffff:42bd
@@ -1793,6 +3091,31 @@ Netflix	R:38000:33:1171,1221,430,570,430,883,408,2407,431,1488,431,568,431,1489,
 Samsung_tv_plus	R:38000:33:1170,1221,407,592,407,907,407,2406,408,1514,405,592,407,1197,407,2407,407,1803,406,1197,407,1198,406,2408,405,86908,299,964,298,384,299,676,297
 Disney_plus	R:38000:33:1196,1197,431,568,431,885,429,2380,433,1488,432,567,432,1488,431,1488,431,2672,431,883,431,568,431,567,432,89307,297,963,299,383,325,647,325
 Prime_video	R:38000:33:1195,1195,433,567,432,883,431,2382,432,1487,432,569,431,1490,429,2382,432,1777,432,569,430,1172,432,2382,431,86362,297,961,325,358,301,672,325
+@Sanyo	Video Projector 48,-1
+Power	P:NECext:cf30:ff00
+V.Mode	P:NECext:cf30:fa05
+Volume ^	P:NECext:cf30:f609
+Volume +	P:NECext:cf30:f609
+Volume V	P:NECext:cf30:f50a
+Volume -	P:NECext:cf30:f50a
+Mute	P:NECext:cf30:f40b
+Function	P:NECext:cf30:e31c
+Menu	P:NECext:cf30:e31c
+Level >	P:NECext:cf30:e21d
+Level +	P:NECext:cf30:e21d
+Level <	P:NECext:cf30:e11e
+Level -	P:NECext:cf30:e11e
+Auto	P:NECext:cf30:e01f
+Zoom -	P:NECext:cf30:b946
+Zoom V	P:NECext:cf30:b946
+Zoom +	P:NECext:cf30:b847
+Zoom ^	P:NECext:cf30:b847
+Focus +	P:NECext:cf30:b54a
+Focus ^	P:NECext:cf30:b54a
+Focus -	P:NECext:cf30:b44b
+Focus V	P:NECext:cf30:b44b
+Expand	P:NECext:cf30:a758
+Keystone	P:NECext:cf30:a45b
 @Sharp	Sharp RRMCGA664WJSA Notevision XR-32S-L
 Power	R:38000:33:293,1801,296,753,295,1801,296,1801,296,752,296,754,294,1801,296,1800,297,752,296,1802,295,752,296,1801,296,753,295,1800,297,752,296,42709,296,1800,297,753,295,1800,297,1800,297,753,295,1802,295,753,295,753,295,1801,296,753,295,1801,296,754,294,1802,295,753,295,1801,296,42694,295,1800,297,752,296,1803,294,1803,294,753,295,753,295,1801,296,1802,295,752,296,1802,295,752,296,1801,296,753,295,1802,295,753,295,42709,295,1802,295,753,295,1803,294,1801,296,753,295,1802,295,752,296,752,296,1801,296,752,296,1803,294,754,294,1803,294,754,294,1804,293,42694,294,1802,294,755,293,1803,294,1804,268,779,269,779,269,1828,269,1828,269,780,268,1829,268,778,270,1829,323,725,268,1829,268,781,324
 Standby	R:38000:33:295,1800,297,753,295,1800,297,1801,296,751,297,752,296,1799,298,1800,297,749,299,1799,298,750,298,752,346,1749,349,1747,350,698,351,42656,351,1747,350,697,351,1746,351,1748,349,697,351,1746,351,698,350,699,349,1748,348,699,349,1748,348,1747,349,699,350,699,348,1748,299,42691,295,1802,295,754,294,1802,295,1802,295,755,293,754,294,1803,269,1828,269,779,269,1827,270,779,269,779,269,1827,270,1827,270,781,267,42736,269,1828,269,780,268,1827,270,1828,269,780,268,1830,267,780,268,778,270,1827,270,780,268,1828,269,1827,270,780,268,778,270,1828,269,42721,295,1801,296,752,296,1802,295,1804,293,752,297,752,296,1800,297,1800,297,752,296,1801,296,752,296,751,297,1830,267,1800,297,754,294
@@ -2142,6 +3465,176 @@ D	P:SIRC15:19fa:70
 E	P:SIRC15:19fa:71
 F	P:SIRC15:19fa:6
 G	P:SIRC20:1bfa:60
+@Sony	Video Projector 26,42
+Keystone	P:SIRC20:55a:3a
+Ms Slide	P:SIRC20:55a:3c
+Standard	P:SIRC20:55a:3e
+Side Shot -	P:SIRC20:55a:3f
+Side Shot +	P:SIRC20:55a:3f
+Off	P:SIRC20:55a:50
+Vid Mem Off	P:SIRC20:55a:50
+Video Memory - Off	P:SIRC20:55a:50
+Mem 1	P:SIRC20:55a:51
+Video Memory 1	P:SIRC20:55a:51
+Dynamic	P:SIRC20:55a:51
+Video Mem 1	P:SIRC20:55a:51
+1	P:SIRC20:55a:51
+Video Memory - 1	P:SIRC20:55a:51
+Mem 2	P:SIRC20:55a:52
+Video Memory 2	P:SIRC20:55a:52
+Video Mem 2	P:SIRC20:55a:52
+2	P:SIRC20:55a:52
+Video Memory - 2	P:SIRC20:55a:52
+Mem 3	P:SIRC20:55a:53
+Video Memory 3	P:SIRC20:55a:53
+Cinema	P:SIRC20:55a:53
+Video Mem 3	P:SIRC20:55a:53
+3	P:SIRC20:55a:53
+Video Memory - 3	P:SIRC20:55a:53
+Mem 4	P:SIRC20:55a:54
+Video Memory 4	P:SIRC20:55a:54
+User 1	P:SIRC20:55a:54
+Pic Mode 1	P:SIRC20:55a:54
+Video Mem 4	P:SIRC20:55a:54
+4	P:SIRC20:55a:54
+Video Memory - 4	P:SIRC20:55a:54
+Mem 5	P:SIRC20:55a:55
+Video Memory 5	P:SIRC20:55a:55
+User2	P:SIRC20:55a:55
+Pic Mode 2	P:SIRC20:55a:55
+Video Mem 5	P:SIRC20:55a:55
+5	P:SIRC20:55a:55
+Video Memory - 5	P:SIRC20:55a:55
+Mem 6	P:SIRC20:55a:56
+Video Memory 6	P:SIRC20:55a:56
+User3	P:SIRC20:55a:56
+Pic Mode 3	P:SIRC20:55a:56
+Video Mem 6	P:SIRC20:55a:56
+6	P:SIRC20:55a:56
+Video Memory - 6	P:SIRC20:55a:56
+Video Memory 7	P:SIRC20:55a:57
+Video Memory 8	P:SIRC20:55a:58
+Video Memory 9	P:SIRC20:55a:59
+Video Memory 10	P:SIRC20:55a:5a
+Apa	P:SIRC20:55a:60
+Help	P:SIRC20:55a:66
+Freeze	P:SIRC20:55a:67
+Funtion 1	P:SIRC20:55a:68
+Funtion 2	P:SIRC20:55a:69
+Plus	P:SIRC20:55a:6a
+Zoom +	P:SIRC20:55a:6a
+Minus	P:SIRC20:55a:6b
+Zoom -	P:SIRC20:55a:6b
+Wide Mode	P:SIRC20:55a:6e
+Lens	P:SIRC20:55a:78
+@Sony	Video Projector 84,-1
+Switcher 1	P:SIRC15:54:a
+Sw 1	P:SIRC15:54:a
+1	P:SIRC15:54:a
+Switcher 2	P:SIRC15:54:b
+Sw 2	P:SIRC15:54:b
+2	P:SIRC15:54:b
+Switcher 3	P:SIRC15:54:c
+Sw 3	P:SIRC15:54:c
+3	P:SIRC15:54:c
+Switcher 4	P:SIRC15:54:d
+Sw 4	P:SIRC15:54:d
+4	P:SIRC15:54:d
+Switcher 5	P:SIRC15:54:e
+Sw 5	P:SIRC15:54:e
+5	P:SIRC15:54:e
+Switcher 6	P:SIRC15:54:f
+Sw 6	P:SIRC15:54:f
+6	P:SIRC15:54:f
+Switcher 7	P:SIRC15:54:10
+Sw 7	P:SIRC15:54:10
+7	P:SIRC15:54:10
+Switcher 8	P:SIRC15:54:11
+Sw 8	P:SIRC15:54:11
+8	P:SIRC15:54:11
+Volume +	P:SIRC15:54:12
+Volume+	P:SIRC15:54:12
+Volume -	P:SIRC15:54:13
+Volume-	P:SIRC15:54:13
+Audio Mute	P:SIRC15:54:14
+Audio Muting	P:SIRC15:54:14
+Power	P:SIRC15:54:15
+Contrast +	P:SIRC15:54:18
+Contrast -	P:SIRC15:54:19
+Color +	P:SIRC15:54:1a
+Color -	P:SIRC15:54:1b
+Picture -	P:SIRC15:54:1d
+Brightness +	P:SIRC15:54:1e
+Brightness -	P:SIRC15:54:1f
+Tint +	P:SIRC15:54:20
+Hue +	P:SIRC15:54:20
+Tint -	P:SIRC15:54:21
+Hue -	P:SIRC15:54:21
+Sharpness +	P:SIRC15:54:22
+Sharpness -	P:SIRC15:54:23
+Picture Mute	P:SIRC15:54:24
+Pic	P:SIRC15:54:24
+Pic-Muting	P:SIRC15:54:24
+Video Muting	P:SIRC15:54:24
+Picture Muting	P:SIRC15:54:24
+Status On	P:SIRC15:54:25
+Status Off	P:SIRC15:54:26
+Menu	P:SIRC15:54:29
+Page	P:SIRC15:54:29
+Video	P:SIRC15:54:2a
+Video Input	P:SIRC15:54:2a
+Input:Video	P:SIRC15:54:2a
+Input - Video	P:SIRC15:54:2a
+Input A	P:SIRC15:54:2b
+A	P:SIRC15:54:2b
+Input:A	P:SIRC15:54:2b
+Input - A	P:SIRC15:54:2b
+Input B	P:SIRC15:54:2c
+B	P:SIRC15:54:2c
+Input:B	P:SIRC15:54:2c
+Input - B	P:SIRC15:54:2c
+Power On	P:SIRC15:54:2e
+Power Off	P:SIRC15:54:2e
+On	P:SIRC15:54:2e
+Standby Power Off	P:SIRC15:54:2f
+Off	P:SIRC15:54:2f
+Position +	P:SIRC15:54:31
+Position -	P:SIRC15:54:32
+Cursor Right	P:SIRC15:54:33
+Rt	P:SIRC15:54:33
+Right	P:SIRC15:54:33
+Arrow Right	P:SIRC15:54:33
+Cursor Left	P:SIRC15:54:34
+Left	P:SIRC15:54:34
+Arrow Left	P:SIRC15:54:34
+Cursor Up	P:SIRC15:54:35
+Up	P:SIRC15:54:35
+Arrow Up	P:SIRC15:54:35
+Cursor Down	P:SIRC15:54:36
+Dn	P:SIRC15:54:36
+Down	P:SIRC15:54:36
+Arrow Down	P:SIRC15:54:36
+Rgb Size	P:SIRC15:54:47
+Rgb Shift	P:SIRC15:54:48
+Center Red	P:SIRC15:54:49
+Center Blue	P:SIRC15:54:4b
+Input	P:SIRC15:54:57
+Input Select	P:SIRC15:54:57
+Blanking	P:SIRC15:54:58
+Enter	P:SIRC15:54:5a
+Lt	P:SIRC15:54:5a
+Memory	P:SIRC15:54:5e
+S-Video	P:SIRC15:54:5f
+Svideo	P:SIRC15:54:5f
+Video Select (Vid/S)	P:SIRC15:54:5f
+Input:S Video	P:SIRC15:54:5f
+S Video	P:SIRC15:54:5f
+Input - Svideo	P:SIRC15:54:5f
+0	P:SIRC15:54:60
+9	P:SIRC15:54:69
+C	P:SIRC15:54:6f
+D	P:SIRC15:54:70
+Reset	P:SIRC15:54:7b
 @StereoBoomm	Stereoboomm MMP-250
 Power	P:NECext:57b8:f30c
 Mute	P:NECext:57b8:f20d
@@ -2233,6 +3726,34 @@ SOURCE	P:NEC:0:97
 VOL-	P:NEC:0:9c
 VOL+	P:NEC:0:8c
 KEYSTONE	P:NEC:0:d6
+@Vidikron	Video Projector 0,-1
+On	P:RC5X:0:1
+Off	P:RC5X:0:c
+Mute	P:RC5X:0:d
+Pp	P:RC5X:0:e
+Volume -	P:RC5X:0:11
+Brightness +	P:RC5X:0:12
+Brightness -	P:RC5X:0:13
+Colour +	P:RC5X:0:14
+Colour -	P:RC5X:0:15
+Bass +	P:RC5X:0:16
+Bass -	P:RC5X:0:17
+Treble +	P:RC5X:0:18
+Treble -	P:RC5X:0:19
+Balance +	P:RC5X:0:1a
+Balance -	P:RC5X:0:1b
+Contrast+	P:RC5X:0:1c
+Contrast -	P:RC5X:0:1d
+Tint -	P:RC5X:0:1f
+Test On	P:RC5X:0:25
+Sl/Tim	P:RC5X:0:26
+Tint +	P:RC5X:0:27
+Enhance +	P:RC5X:0:30
+Enhance -	P:RC5X:0:31
+Input Select	P:RC5X:0:38
+Status	P:RC5X:0:39
+Store Memory	P:RC5X:0:39
+Test Off	P:RC5X:0:3f
 @ViewSonic	ViewSonic M1 Mini Plus
 Power	P:NECext:f483:e817
 Home	P:NECext:f483:e916
@@ -2388,6 +3909,443 @@ VOL-	P:NEC:8:49
 MUTE	P:NEC:8:14
 rewind	P:NEC:8:4a
 fastforward	P:NEC:8:54
+@Yamaha	Projector 209,-1
+V.Pos	P:NECext:2ed1:df20
+V.Pos Up	P:NECext:2ed1:de21
+V.Pos Down	P:NECext:2ed1:dd22
+Zoom	P:NECext:2ed1:dc23
+Zoom Up	P:NECext:2ed1:db24
+Zoom Down	P:NECext:2ed1:da25
+Focus	P:NECext:2ed1:d926
+Focus Up	P:NECext:2ed1:d827
+Focus Down	P:NECext:2ed1:d728
+Iris	P:NECext:2ed1:d629
+Iris Up	P:NECext:2ed1:d52a
+Iris Down	P:NECext:2ed1:d42b
+Aspect Cinema Zoom	P:NECext:2ed1:cf30
+Aspect Cin Squeeze	P:NECext:2ed1:ce31
+Aspect Cin 16:9 Zoom	P:NECext:2ed1:cd32
+Power Off	P:NECext:2ed1:9f60
+Power On	P:NECext:2ed1:9e61
+Power Toggle	P:NECext:2ed1:9d62
+Auto	P:NECext:2ed1:9c63
+Hide Off	P:NECext:2ed1:9b64
+Hide On	P:NECext:2ed1:9a65
+Hide Tog	P:NECext:2ed1:9966
+Pattern Off	P:NECext:2ed1:9867
+Pattern On	P:NECext:2ed1:9768
+Pattern Tog	P:NECext:2ed1:9669
+Reset	P:NECext:2ed1:956a
+Cursor Up	P:NECext:2ed1:936c
+Cursor Down	P:NECext:2ed1:926d
+Cursor Left	P:NECext:2ed1:916e
+Cursor Right	P:NECext:2ed1:906f
+Select	P:NECext:2ed1:8f70
+Menu Off	P:NECext:2ed1:8e71
+Menu On	P:NECext:2ed1:8d72
+Menu Tog	P:NECext:2ed1:8c73
+Escape	P:NECext:2ed1:8a75
+Input Tog	P:NECext:2ed1:8976
+S Video	P:NECext:2ed1:8778
+Video	P:NECext:2ed1:8679
+Input A	P:NECext:2ed1:857a
+Input B	P:NECext:2ed1:847b
+Hdmi	P:NECext:2ed1:837c
+D4	P:NECext:2ed1:827d
+Still Off	P:NECext:2ed1:817e
+Still On	P:NECext:2ed1:807f
+Still Tog	P:NECext:2ed1:7f80
+Memory 1	P:NECext:2ed1:7e81
+Memory 2	P:NECext:2ed1:7d82
+Memory 3	P:NECext:2ed1:7c83
+Memory 4	P:NECext:2ed1:7b84
+Memory 5	P:NECext:2ed1:7a85
+Memory 6	P:NECext:2ed1:7986
+Aspect	P:NECext:2ed1:758a
+Aspect Normal	P:NECext:2ed1:748b
+Aspect Zoom	P:NECext:2ed1:738c
+Aspect Zoom Title	P:NECext:2ed1:728d
+Aspect Squeeze	P:NECext:2ed1:718e
+Aspect Through	P:NECext:2ed1:708f
+Aspect Auto	P:NECext:2ed1:6f90
+Aspect Thru Squeeze	P:NECext:2ed1:6e91
+Aspect Smart Zoom	P:NECext:2ed1:6d92
+Input A Component	P:NECext:2ed1:6c93
+Input A Rgb Pc	P:NECext:2ed1:6b94
+Input A Rgb Tv	P:NECext:2ed1:6a95
+Input B Component	P:NECext:2ed1:6996
+Input B Rgb Pc	P:NECext:2ed1:6897
+Input B Rgb Tv	P:NECext:2ed1:6798
+Hdmi Component	P:NECext:2ed1:6699
+Hdmi Rgb Tv	P:NECext:2ed1:649b
+Hdmi Auto	P:NECext:2ed1:639c
+Dvi Rgb-Pc	P:NECext:2ed1:46b9
+Dvi Rgb-Tv	P:NECext:2ed1:45ba
+Power	P:NECext:2ed1:3dc2
+Hide	P:NECext:2ed1:39c6
+Patt	P:NECext:2ed1:36c9
+Pattern	P:NECext:2ed1:36c9
+Arrow Up	P:NECext:2ed1:33cc
+Arrow Down	P:NECext:2ed1:32cd
+-	P:NECext:2ed1:31ce
++	P:NECext:2ed1:30cf
+Cursor Select	P:NECext:2ed1:2fd0
+Return <--	P:NECext:2ed1:2fd0
+Menu	P:NECext:2ed1:2cd3
+Dvi	P:NECext:2ed1:2bd4
+Input	P:NECext:2ed1:29d6
+Picture	P:NECext:2ed1:28d7
+S-Vid	P:NECext:2ed1:27d8
+Input: S-Video	P:NECext:2ed1:27d8
+Input: Video	P:NECext:2ed1:26d9
+Input: A (Compnent)	P:NECext:2ed1:25da
+Input: B (Db-15)	P:NECext:2ed1:24db
+Input: Dvi	P:NECext:2ed1:23dc
+Input: D4	P:NECext:2ed1:22dd
+Still	P:NECext:2ed1:20df
+Aspect Toggle	P:NECext:2ed1:15ea
+Input 1A	P:NECext:2ed1:cf3
+@Yamaha	Sound Projector 120,-1
+Power Tog	P:NECext:8778:f00f
+0	P:NECext:8778:ef10
+Fm/Xm: 0	P:NECext:8778:ef10
+1	P:NECext:8778:ee11
+Fm/Xm: 1	P:NECext:8778:ee11
+2	P:NECext:8778:ed12
+Fm/Xm: 2	P:NECext:8778:ed12
+3	P:NECext:8778:ec13
+Fm/Xm: 3	P:NECext:8778:ec13
+4	P:NECext:8778:eb14
+Fm/Xm: 4	P:NECext:8778:eb14
+5	P:NECext:8778:ea15
+Fm/Xm: 5	P:NECext:8778:ea15
+6	P:NECext:8778:e916
+Fm/Xm: 6	P:NECext:8778:e916
+7	P:NECext:8778:e817
+Fm/Xm: 7	P:NECext:8778:e817
+8	P:NECext:8778:e718
+Fm/Xm: 8	P:NECext:8778:e718
+9	P:NECext:8778:e619
+Fm/Xm: 9	P:NECext:8778:e619
+Fm Up	P:NECext:8778:e41b
+Sur Upp	P:NECext:8778:e41b
+Preset +	P:NECext:8778:e41b
+Fm/Xm: Preset +	P:NECext:8778:e41b
+Fm Down	P:NECext:8778:e31c
+Sur Ner	P:NECext:8778:e31c
+Preset -	P:NECext:8778:e31c
+Fm/Xm: Preset -	P:NECext:8778:e31c
+Fm A-E	P:NECext:8778:e21d
+Xm Category +	P:NECext:8778:e21d
+Fm/Xm: Pg/Cat+	P:NECext:8778:e21d
+Volume +	P:NECext:8778:e11e
+Volume Up	P:NECext:8778:e11e
+Volume -	P:NECext:8778:e01f
+Volume Down	P:NECext:8778:e01f
+Ch Level	P:NECext:8778:b748
+Level	P:NECext:8778:b748
+Level Tog	P:NECext:8778:b748
+Dsp: Level Toggle	P:NECext:8778:b748
+Input Aux1	P:NECext:8778:b649
+Input Vcr	P:NECext:8778:b649
+Input Aux 1	P:NECext:8778:b649
+Input: Aux 1	P:NECext:8778:b649
+Input Dvd	P:NECext:8778:b54a
+Input: Dvd	P:NECext:8778:b54a
+Input Fm	P:NECext:8778:b44b
+Input: Xm/Fm	P:NECext:8778:b44b
+Display	P:NECext:8778:b14e
+Sleep	P:NECext:8778:b04f
+Sleep Tog	P:NECext:8778:b04f
+Sleep: Toggle	P:NECext:8778:b04f
+Sur Stereo	P:NECext:8778:af50
+Beam-Stereo	P:NECext:8778:af50
+Stereo/5 Ch Stereo	P:NECext:8778:af50
+Dsp: Bmstereotog	P:NECext:8778:af50
+Test	P:NECext:8778:a05f
+Test Mode	P:NECext:8778:a05f
+Test Mode Tog	P:NECext:8778:a05f
+Test (Dolby)	P:NECext:8778:a05f
+Test Toggle	P:NECext:8778:a05f
+Search Mode All Ch	P:NECext:8778:9867
+Fm/Xm: Srchmd All	P:NECext:8778:9867
+Search Mode Prest	P:NECext:8778:9768
+Fm/Xm: Srchmpres	P:NECext:8778:9768
+Demo 1 On	P:NECext:8778:946b
+Demo 1 Off	P:NECext:8778:936c
+Trubass Mid	P:NECext:8778:926d
+Demo 2 On	P:NECext:8778:926d
+Trubass: Mid	P:NECext:8778:926d
+Dsp: Tbass On Mid	P:NECext:8778:926d
+Trubass Deep	P:NECext:8778:916e
+Demo 2 Off	P:NECext:8778:916e
+Trubass: Deep	P:NECext:8778:916e
+Dsp: Tbass On Deep	P:NECext:8778:916e
+Trubass Off	P:NECext:8778:906f
+Trubass: Off	P:NECext:8778:906f
+Dsp: Tbass Off	P:NECext:8778:906f
+Preset Memory A	P:NECext:8778:8f70
+Volume Memory A	P:NECext:8778:8f70
+Preset Recall A	P:NECext:8778:8e71
+Volume Recall A	P:NECext:8778:8e71
+Preset Memory B	P:NECext:8778:8d72
+Volume Memory B	P:NECext:8778:8d72
+Preset Recall B	P:NECext:8778:8c73
+Volume Recall B	P:NECext:8778:8c73
+Preset Memory C	P:NECext:8778:8b74
+Volume Memory C	P:NECext:8778:8b74
+Preset Recall C	P:NECext:8778:8a75
+Volume Recall C	P:NECext:8778:8a75
+Memory Save User1	P:NECext:8778:8976
+Memory Load User1	P:NECext:8778:8877
+Memory Save User2	P:NECext:8778:8778
+Memory Load User2	P:NECext:8778:8679
+Memory Save User3	P:NECext:8778:857a
+Memory Load User3	P:NECext:8778:847b
+Tv Equal Vol On	P:NECext:8778:837c
+Tv Mode: On	P:NECext:8778:837c
+Dsp: Tv Mode On	P:NECext:8778:837c
+Input Xm	P:NECext:8778:827d
+Input: Xm	P:NECext:8778:827d
+Power On	P:NECext:8778:817e
+Power Off	P:NECext:8778:807f
+Vol Mode	P:NECext:8778:758a
+Night Tog	P:NECext:8778:758a
+Volume Mode	P:NECext:8778:758a
+Dsp: Vol Mode Tog	P:NECext:8778:758a
+Trubass Tog	P:NECext:8778:748b
+Srs Trubass	P:NECext:8778:748b
+Dsp: Tbass Togg	P:NECext:8778:748b
+Inputmode	P:NECext:8778:728d
+Input Mode: Toggle	P:NECext:8778:728d
+Cursor Up	P:NECext:8778:718e
+Set Menu Up	P:NECext:8778:718e
+Up	P:NECext:8778:718e
+Set: Cursor Up	P:NECext:8778:718e
+Cursor Down	P:NECext:8778:708f
+Set Menu Down	P:NECext:8778:708f
+Down	P:NECext:8778:708f
+Set: Cursor Down	P:NECext:8778:708f
+Sur Decode	P:NECext:8778:6699
+Surround Tog	P:NECext:8778:6699
+Dsp: T Surround	P:NECext:8778:6699
+Sur Off	P:NECext:8778:649b
+Dsp Off	P:NECext:8778:649b
+Cinema Dsp: Off	P:NECext:8778:649b
+Dsp: Cdsp Off	P:NECext:8778:649b
+Volume Mute	P:NECext:8778:639c
+Mute Tog	P:NECext:8778:639c
+Night Mode Off	P:NECext:8778:639c
+Mute Toggle	P:NECext:8778:639c
+Menu	P:NECext:8778:629d
+Set Menu	P:NECext:8778:629d
+Set Menu Tog	P:NECext:8778:629d
+Set: Set Menu	P:NECext:8778:629d
+Cursor Right	P:NECext:8778:619e
+Set Menu +	P:NECext:8778:619e
+Set Menu Right	P:NECext:8778:619e
+Right	P:NECext:8778:619e
+Set: Cursor Right	P:NECext:8778:619e
+Cursor Left	P:NECext:8778:609f
+Sur A-E	P:NECext:8778:609f
+Set Menu -	P:NECext:8778:609f
+Set Menu Left	P:NECext:8778:609f
+Left	P:NECext:8778:609f
+Set: Cursor Left	P:NECext:8778:609f
+Mute On	P:NECext:8778:5da2
+Auto Setup	P:NECext:8778:5ca3
+Auto Intellibeam	P:NECext:8778:5ca3
+Intellibeam Start	P:NECext:8778:5ca3
+Mute Off	P:NECext:8778:5ca3
+Set: Ibm Start Trigg	P:NECext:8778:5ca3
++10	P:NECext:8778:5aa5
+Fm Preset/Tune	P:NECext:8778:57a8
+Preset/Tune Mode	P:NECext:8778:57a8
+Fm/Xm: Pres/Tune	P:NECext:8778:57a8
+Tuning-/Preset-	P:NECext:8778:56a9
+Fm/Xm: Tun/Pre-	P:NECext:8778:56a9
+Tuning+/Preset+	P:NECext:8778:55aa
+Fm/Xm: Tun/Pre+	P:NECext:8778:55aa
+Preset E Category	P:NECext:8778:54ab
+Fm/Xm: Page E	P:NECext:8778:54ab
+Preset D Category	P:NECext:8778:53ac
+Fm/Xm: Page D	P:NECext:8778:53ac
+Preset C Category	P:NECext:8778:52ad
+Fm/Xm: Page C	P:NECext:8778:52ad
+Preset B Category	P:NECext:8778:51ae
+Fm/Xm: Page B	P:NECext:8778:51ae
+Preset A Category	P:NECext:8778:50af
+Fm/Xm: Page A	P:NECext:8778:50af
+Auto Search -	P:NECext:8778:4fb0
+Fm/Xm: Auto Srch-	P:NECext:8778:4fb0
+Auto Search +	P:NECext:8778:4eb1
+Fm/Xm: Auto Srch+	P:NECext:8778:4eb1
+Fm Memory	P:NECext:8778:4db2
+Memory	P:NECext:8778:4db2
+Fm/Xm: Memory	P:NECext:8778:4db2
+Input: Fm	P:NECext:8778:49b6
+Fm Search	P:NECext:8778:48b7
+Fm/Xm: Srch Mode	P:NECext:8778:48b7
+Xm Display	P:NECext:8778:47b8
+Fm/Xm: Xm Display	P:NECext:8778:47b8
+Xm Category -	P:NECext:8778:44bb
+Fm/Xm: Pg/Cat-	P:NECext:8778:44bb
+Input Aux3	P:NECext:8778:43bc
+Input Aux 3	P:NECext:8778:43bc
+Input: Aux 3	P:NECext:8778:43bc
+Xm Enter	P:NECext:8778:42bd
+Fm/Xm: Xm Enter	P:NECext:8778:42bd
+Return	P:NECext:8778:3fc0
+Set Menu Return	P:NECext:8778:3fc0
+Set: Return	P:NECext:8778:3fc0
+Cursor Enter	P:NECext:8778:3ec1
+Set Menu Select	P:NECext:8778:3ec1
+Set Menu Enter	P:NECext:8778:3ec1
+Set: Enter	P:NECext:8778:3ec1
+Sur 5Beam	P:NECext:8778:3dc2
+Beam-5Beam	P:NECext:8778:3dc2
+5 Beam Mode	P:NECext:8778:3dc2
+Dsp: Bm 5 Beam	P:NECext:8778:3dc2
+Sur St+3Beam	P:NECext:8778:3cc3
+Beam-St+3Beam	P:NECext:8778:3cc3
+St+3 Beam Mode	P:NECext:8778:3cc3
+Dsp: Bm St+3 Bea	P:NECext:8778:3cc3
+Sur 3Beam	P:NECext:8778:3bc4
+Beam-3Beam	P:NECext:8778:3bc4
+3 Beam Mode	P:NECext:8778:3bc4
+Dsp: Bm 3 Beam	P:NECext:8778:3bc4
+Sur My Beam	P:NECext:8778:3ac5
+Beam-Target	P:NECext:8778:3ac5
+Beam-My Beam Auto	P:NECext:8778:3ac5
+Dsp: Bm My Beam	P:NECext:8778:3ac5
+Sur My Sur	P:NECext:8778:39c6
+Dsp: Bm My Surr.	P:NECext:8778:39c6
+Enhancer	P:NECext:8778:34cb
+Music Enhancer Toggl	P:NECext:8778:34cb
+Dsp: M Enhan Tog	P:NECext:8778:34cb
+Dsp: T Music Enha	P:NECext:8778:34cb
+Power	P:NECext:8778:33cc
+Sur Movie	P:NECext:8778:26d9
+Dsp Movie Tog	P:NECext:8778:26d9
+Cinema Dsp (Movie) T	P:NECext:8778:26d9
+Dsp: T Cdsp Movie	P:NECext:8778:26d9
+Sur Music	P:NECext:8778:25da
+Dsp Music Tog	P:NECext:8778:25da
+Cinema Dsp (Music) T	P:NECext:8778:25da
+Dsp: T Cdsp Music	P:NECext:8778:25da
+Sur Sports	P:NECext:8778:24db
+Cinema Dsp (Sports)	P:NECext:8778:24db
+Dsp: Cdsp Sports	P:NECext:8778:24db
+Input Aux2	P:NECext:8778:21de
+Input Aux	P:NECext:8778:21de
+Input Aux 2	P:NECext:8778:21de
+Input: Aux 2	P:NECext:8778:21de
+Input Stb	P:NECext:8778:20df
+Input Tv	P:NECext:8778:20df
+Input Tv/Stb	P:NECext:8778:20df
+Mute 20%	P:NECext:8778:20df
+Input: Tv/Stb	P:NECext:8778:20df
+@Yamaha	Sound Projector 126,-1
+Dsp Plii Movie	P:NECext:817e:9867
+Pl Ii Movie	P:NECext:817e:9867
+Dsp: Plii Movie	P:NECext:817e:9867
+Dsp Plii Music	P:NECext:817e:9768
+Pl Ii Music	P:NECext:817e:9768
+Dsp: Plii Music	P:NECext:817e:9768
+Dsp Neo:6 Cin	P:NECext:817e:9669
+Neo:6 Movie	P:NECext:817e:9669
+Dsp: Neo6 Movie	P:NECext:817e:9669
+Dsp Neo:6 Mus	P:NECext:817e:956a
+Neo:6 Music	P:NECext:817e:956a
+Dsp: Neo6 Music	P:NECext:817e:956a
+Input Mode Tog	P:NECext:817e:728d
+Night Mode On	P:NECext:817e:649b
+Night Mode Cinema	P:NECext:817e:649b
+Night Mode: Cinema	P:NECext:817e:649b
+Dsp: Night Cinema	P:NECext:817e:649b
+Night/Tv Mode: Off	P:NECext:817e:639c
+Dsp: Night/Tv M Off	P:NECext:817e:639c
+Mute On	P:NECext:817e:5da2
+Mute Off	P:NECext:817e:5ca3
+Input Mode Auto	P:NECext:817e:59a6
+Input Mode: Auto	P:NECext:817e:59a6
+Input Mode Dts	P:NECext:817e:57a8
+Input Mode: Dts	P:NECext:817e:57a8
+Input Mode Analog	P:NECext:817e:55aa
+Input Mode: Analog	P:NECext:817e:55aa
+Sleep Off	P:NECext:817e:4cb3
+Sleep: Off	P:NECext:817e:4cb3
+Sleep 120	P:NECext:817e:4bb4
+Sleep Timer: 120 Min	P:NECext:817e:4bb4
+Sleep: 120Min	P:NECext:817e:4bb4
+Sleep 90	P:NECext:817e:4ab5
+Sleep Timer: 90 Min	P:NECext:817e:4ab5
+Sleep: 90Min	P:NECext:817e:4ab5
+Sleep 60	P:NECext:817e:49b6
+Sleep Timer: 60 Min	P:NECext:817e:49b6
+Sleep: 60Min	P:NECext:817e:49b6
+Sleep 30	P:NECext:817e:48b7
+Sleep Timer: 30 Min	P:NECext:817e:48b7
+Sleep: 30Min	P:NECext:817e:48b7
+Dsp Plii Game	P:NECext:817e:38c7
+Pl Ii Game	P:NECext:817e:38c7
+Dsp: Plii Game	P:NECext:817e:38c7
+Neural Surround	P:NECext:817e:33cc
+Dsp: Neural	P:NECext:817e:33cc
+Night Mode Mus	P:NECext:817e:30cf
+Night Mode: Music	P:NECext:817e:30cf
+Dsp: Night Music	P:NECext:817e:30cf
+Music Enhancer: On	P:NECext:817e:27d8
+Dsp: M Enhan On	P:NECext:817e:27d8
+Music Enhancer: Off	P:NECext:817e:26d9
+Dsp: M Enhan Off	P:NECext:817e:26d9
+Mute -20Db	P:NECext:817e:20df
+Dsp Conc. Hall	P:NECext:817e:1ee1
+Dsp: Concert Hall	P:NECext:817e:1ee1
+Dsp Jazz Club	P:NECext:817e:13ec
+Dsp: Jazz Club	P:NECext:817e:13ec
+Dsp Music Video	P:NECext:817e:cf3
+Dsp: Music Video	P:NECext:817e:cf3
+Dsp Sports	P:NECext:817e:7f8
+Dsp: Sports	P:NECext:817e:7f8
+Dsp Spectacle	P:NECext:817e:6f9
+Dsp: Spectacle	P:NECext:817e:6f9
+Dsp Sci-Fi	P:NECext:817e:5fa
+Dsp: Sci-Fi	P:NECext:817e:5fa
+Dsp Adventure	P:NECext:817e:4fb
+Dsp: Adventure	P:NECext:817e:4fb
+Dsp Prologic	P:NECext:817e:2fd
+Prologic	P:NECext:817e:2fd
+Dsp: Pro-Logic	P:NECext:817e:2fd
+5 Ch Stereo	P:NECext:817e:ff
+Dsp: Bm 5Chstereo	P:NECext:817e:ff
+@Yamaha	Video Projector 209,-1
+Power	P:NECext:2ed1:3dc2
+Auto	P:NECext:2ed1:3cc3
+Hide	P:NECext:2ed1:39c6
+Pattern	P:NECext:2ed1:36c9
+Arrow Up	P:NECext:2ed1:33cc
+Arrow Down	P:NECext:2ed1:32cd
+-	P:NECext:2ed1:31ce
++	P:NECext:2ed1:30cf
+Return <--	P:NECext:2ed1:2fd0
+Menu	P:NECext:2ed1:2cd3
+Escape	P:NECext:2ed1:2ad5
+Picture	P:NECext:2ed1:28d7
+Input: S-Video	P:NECext:2ed1:27d8
+Input: Video	P:NECext:2ed1:26d9
+Input: A (Compnent)	P:NECext:2ed1:25da
+Input: B (Db-15)	P:NECext:2ed1:24db
+Input: Dvi	P:NECext:2ed1:23dc
+Input: D4	P:NECext:2ed1:22dd
+Still	P:NECext:2ed1:20df
+Memory 1	P:NECext:2ed1:1ee1
+Memory 2	P:NECext:2ed1:1de2
+Memory 3	P:NECext:2ed1:1ce3
+Memory 4	P:NECext:2ed1:1be4
+Memory 5	P:NECext:2ed1:1ae5
+Memory 6	P:NECext:2ed1:19e6
+Aspect	P:NECext:2ed1:15ea
 @Yoton	Yoton Y3
 Power	P:NEC:0:a8
 Mute	P:NEC:0:88

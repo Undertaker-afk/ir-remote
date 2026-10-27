@@ -31,7 +31,7 @@
     <string name="more_keys">More keys</string>
     <string name="keypad">Number pad</string>
     <string name="not_sent">Could not send</string>
-    <string name="credits">Remote codes: Flipper-IRDB (CC0)</string>
+    <string name="credits">Remote codes: Flipper-IRDB (CC0)\n\nContains/accesses irdb by Simon Peter and contributors, used under permission. For licensing details and for information on how to contribute to the database, see https://github.com/probonopd/irdb</string>
     <string name="cat_tv">TV</string>
     <string name="cat_settop">Set-top box</string>
     <string name="cat_ac">Air conditioner</string>

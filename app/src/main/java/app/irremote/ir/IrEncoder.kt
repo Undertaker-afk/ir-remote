@@ -10,6 +10,8 @@ object IrEncoder {
     val PROTOCOLS = setOf(
         "NEC", "NECext", "NEC42", "NEC42ext", "Samsung32", "RC5", "RC5X", "RC6",
         "SIRC", "SIRC15", "SIRC20", "Kaseikyo", "RCA", "Pioneer",
+        // irdb-only framings
+        "NECx", "Panasonic", "JVC",
     )
 
     fun encode(signal: IrSignal): Transmission? = when (signal) {
@@ -51,6 +53,20 @@ object IrEncoder {
                 bits = (a and 0xFF) or ((a and 0xFF) shl 8) or ((c and 0xFF) shl 16) or ((c.inv() and 0xFF) shl 24),
                 count = 32,
             )
+            // NEC with the 4.5 ms leader used by Samsung and friends: D, S, F, ~F (address = D | S << 8)
+            "NECx" -> pulseDistance(
+                38000, 4512, 4512, 564, 1692, 564, 564, 564, 108000,
+                bits = (a and 0xFFFF) or ((c and 0xFF) shl 16) or ((c.inv() and 0xFF) shl 24), count = 32,
+            )
+            "JVC" -> pulseDistance(
+                38000, 8416, 4208, 526, 1578, 526, 526, 526, 60000,
+                bits = (a and 0xFF) or ((c and 0xFF) shl 8), count = 16,
+            )
+            // Panasonic: vendor bytes 02 20, then D, S, F and their XOR (address = D | S << 8)
+            "Panasonic" -> {
+                val d = (a and 0xFF).toInt(); val sd = ((a shr 8) and 0xFF).toInt(); val f = (c and 0xFF).toInt()
+                kaseikyoFrame(intArrayOf(0x02, 0x20, d, sd, f, d xor sd xor f))
+            }
             "SIRC" -> sirc((c and 0x7F) or ((a and 0x1F) shl 7), 12)
             "SIRC15" -> sirc((c and 0x7F) or ((a and 0xFF) shl 7), 15)
             "SIRC20" -> sirc((c and 0x7F) or ((a and 0x1FFF) shl 7), 20)
@@ -118,6 +134,10 @@ object IrEncoder {
         d[3] = (genre2 and 0xF) or ((command.toInt() and 0xF) shl 4)
         d[4] = (id shl 6) or ((command.toInt() ushr 4) and 0x3F)
         d[5] = (d[2] xor d[3] xor d[4]) and 0xFF
+        return kaseikyoFrame(d)
+    }
+
+    private fun kaseikyoFrame(d: IntArray): Transmission {
         var bits = 0L
         for (i in 0 until 6) bits = bits or ((d[i].toLong() and 0xFF) shl (8 * i))
         val u = 432
