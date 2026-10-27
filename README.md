@@ -46,6 +46,10 @@ An open-source Android universal IR remote in the style of Mi Remote, driven by 
     Exa's hosted MCP server (default, **no key**, free plan), Tavily (key), Brave Search (key), your own SearXNG (URL).
     Tested against a real Exa response (fixture in `src/test/resources`); `LIVE_EXA=1 gradle :app:testDebugUnitTest
     --tests '*LiveExaTest*'` runs the real endpoint.
+7d. **Key doesn't work…** (remote menu): tap the broken key and the app proposes replacement codes that other remotes of the
+    same device family (same protocol + address) agree on, including swapped pairs such as volume/channel. Each suggestion can
+    be tested on the device and applied to your saved remote; *Share report* sends a plain-text report. On the real broken
+    `BN59-01388` entry it proposes OK = `0x68` (35 remotes agree) and volume up = `0x07` swapped with channel (46 agree).
 8. **Find my code**: photograph a model sticker (or pick a photo); text is read on-device with ML Kit and matched against
    the database, model codes outranking brand names. The recognised text is editable.
 9. **Custom layout**: per remote, choose any buttons, rename and order them ("Edit my layout" in the remote menu).

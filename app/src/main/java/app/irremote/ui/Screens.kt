@@ -432,6 +432,8 @@ fun RemoteScreen(vm: AppViewModel, id: String) {
         )
     }
     var editing by remember { mutableStateOf(false) }
+    var repairMode by remember { mutableStateOf(false) }
+    var repairing by remember { mutableStateOf<IrButton?>(null) }
     var roomDialog by remember { mutableStateOf(false) }
     if (roomDialog) RoomDialog(saved.room, vm.saved.map { it.room }.filter { it.isNotEmpty() }.distinct().sorted(), { roomDialog = false }) { vm.setRoom(id, it); roomDialog = false }
     if (editing) {
@@ -444,7 +446,8 @@ fun RemoteScreen(vm: AppViewModel, id: String) {
     val notSent = stringResource(R.string.not_sent)
 
     fun fire(b: IrButton?) {
-        if (b == null) return
+        if (b == null || repairing != null) return
+        if (repairMode) { repairMode = false; repairing = b; return }   // "key doesn't work": the next tap picks the key to fix
         haptic.performHapticFeedback(HapticFeedbackType.TextHandleMove)
         if (!vm.press(b) && vm.transmitter.available) Toast.makeText(context, notSent, Toast.LENGTH_SHORT).show()
     }
@@ -452,10 +455,11 @@ fun RemoteScreen(vm: AppViewModel, id: String) {
     Scaffold(
         containerColor = MaterialTheme.colorScheme.background,
         topBar = {
-            TopBar(saved.name, onBack = { vm.pop() }) {
+            TopBar(if (repairMode) stringResource(R.string.repair_tap) else saved.name, onBack = { if (repairMode) repairMode = false else vm.pop() }) {
                 Box {
                     IconButton(onClick = { menu = true }) { Icon(Icons.Filled.MoreVert, null) }
                     DropdownMenu(menu, { menu = false }) {
+                        DropdownMenuItem(text = { Text(stringResource(R.string.repair_menu)) }, onClick = { repairMode = true; menu = false })
                         DropdownMenuItem(text = { Text(stringResource(R.string.standard_layout)) }, onClick = { view = RemoteView.STANDARD; menu = false })
                         DropdownMenuItem(text = { Text(stringResource(R.string.all_keys)) }, onClick = { view = RemoteView.ALL; menu = false })
                         if (saved.custom.isNotEmpty()) {
@@ -523,6 +527,7 @@ fun RemoteScreen(vm: AppViewModel, id: String) {
         }
     }
 
+    repairing?.let { b -> RepairDialog(vm, saved, b) { repairing = null } }
     if (sheet != null) ModalBottomSheet(onDismissRequest = { sheet = null }) {
         if (sheet == "keys") {
             Column(Modifier.fillMaxWidth().padding(bottom = 32.dp), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(12.dp)) {

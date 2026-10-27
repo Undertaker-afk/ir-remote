@@ -164,6 +164,23 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         return true
     }
 
+    /** Replaces one key's code in a saved remote (a fix the user verified), optionally giving [swapWith] the old code. */
+    fun replaceButton(id: String, buttonName: String, encoded: String, swapWith: String? = null) {
+        val i = saved.indexOfFirst { it.id == id }
+        if (i < 0) return
+        val o = saved[i]
+        val old = o.remote.buttons.firstOrNull { it.name == buttonName }?.encoded
+        val buttons = o.remote.buttons.map { b ->
+            when {
+                b.name == buttonName -> IrButton(b.name, encoded)
+                swapWith != null && b.name == swapWith && old != null -> IrButton(b.name, old)
+                else -> b
+            }
+        }
+        saved[i] = o.copy(remote = IrRemote(o.remote.brand, o.remote.model, buttons))
+        persist()
+    }
+
     fun setCustom(id: String, custom: List<CustomKey>) {
         val i = saved.indexOfFirst { it.id == id }
         if (i >= 0) { saved[i] = saved[i].copy(custom = custom); persist() }

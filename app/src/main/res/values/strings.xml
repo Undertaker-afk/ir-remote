@@ -149,4 +149,16 @@
     <string name="online_key_optional">API key (optional, lifts limits)</string>
     <string name="online_url">Instance URL (JSON enabled)</string>
     <string name="online_privacy">Keys stay on this phone. Only the brand and model text is sent.</string>
+    <string name="repair_menu">Key doesn\'t work…</string>
+    <string name="repair_tap">Tap the key that doesn\'t work</string>
+    <string name="repair_title">Fix “%1$s”</string>
+    <string name="repair_current">Current code: %1$s</string>
+    <string name="repair_hint">Other remotes of this device family use these codes. Test each one on the device, then use the one that works.</string>
+    <string name="repair_none">No better code found: too few similar remotes in the database.</string>
+    <string name="repair_votes">%1$d remotes agree</string>
+    <string name="repair_swap">swaps with “%1$s”</string>
+    <string name="repair_test">Test</string>
+    <string name="repair_use">Use this</string>
+    <string name="repair_applied">Saved in this remote.</string>
+    <string name="repair_report">Share report</string>
 </resources>

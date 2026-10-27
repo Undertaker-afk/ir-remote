@@ -149,4 +149,16 @@
     <string name="online_key_optional">API-Schlüssel (optional, hebt Limits auf)</string>
     <string name="online_url">Instanz-URL (JSON aktiviert)</string>
     <string name="online_privacy">Schlüssel bleiben auf diesem Telefon. Gesendet wird nur Marke und Modell als Text.</string>
+    <string name="repair_menu">Taste funktioniert nicht…</string>
+    <string name="repair_tap">Die defekte Taste antippen</string>
+    <string name="repair_title">„%1$s“ reparieren</string>
+    <string name="repair_current">Aktueller Code: %1$s</string>
+    <string name="repair_hint">Andere Fernbedienungen dieser Gerätefamilie nutzen diese Codes. Jeden am Gerät testen und den funktionierenden übernehmen.</string>
+    <string name="repair_none">Kein besserer Code gefunden: zu wenige ähnliche Fernbedienungen in der Datenbank.</string>
+    <string name="repair_votes">%1$d Fernbedienungen stimmen überein</string>
+    <string name="repair_swap">tauscht mit „%1$s“</string>
+    <string name="repair_test">Testen</string>
+    <string name="repair_use">Übernehmen</string>
+    <string name="repair_applied">In dieser Fernbedienung gespeichert.</string>
+    <string name="repair_report">Bericht teilen</string>
 </resources>
