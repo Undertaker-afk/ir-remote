@@ -82,4 +82,26 @@
     <string name="device_no_match">Keine Fernbedienung in der Datenbank passt zu diesem Gerät. „Code finden“ oder Marke manuell wählen.</string>
     <string name="device_try_wizard">Erkannte Marke: mit dem Assistenten testen</string>
     <string name="device_best_matches">Beste Treffer</string>
+    <string name="import_file">Datei importieren…</string>
+    <string name="paste_code">Code einfügen…</string>
+    <string name="paste_hint">Flipper .ir, LIRC, irdb-CSV, Pronto-Hex (ein Code pro Zeile, optional „Name: Code“) oder Rohzeiten.</string>
+    <string name="remote_name">Name</string>
+    <string name="import_action">Importieren</string>
+    <string name="auto_find">Code automatisch finden</string>
+    <string name="auto_find_hint">Das Telefon auf das Gerät richten. Es sendet nacheinander Ein/Aus-Codes. Den großen Knopf drücken, sobald das Gerät reagiert.</string>
+    <string name="auto_find_progress">Code %1$d von %2$d</string>
+    <string name="auto_find_speed">Pause zwischen den Codes: %1$.1f s</string>
+    <string name="auto_find_start">Start</string>
+    <string name="auto_find_reacted">Es hat reagiert!</string>
+    <string name="auto_find_stop">Stopp</string>
+    <string name="auto_find_confirm">Das Gerät reagiert kurz nach dem Code, daher ist es der Code davor. Mit „Nochmal senden“ prüfen oder die Nachbarn durchgehen.</string>
+    <string name="auto_find_continue">Nicht der richtige, weiter suchen</string>
+    <string name="send_again">Nochmal senden</string>
+    <string name="room_menu">Raum…</string>
+    <string name="room_name">Raumname</string>
+    <string name="no_room">Kein Raum</string>
+    <string name="other_devices">Weitere Geräte</string>
+    <string name="all_off">Alles aus</string>
+    <string name="all_off_title">Alles in %1$s ausschalten?</string>
+    <string name="all_off_note">Geräte mit nur einer Ein/Aus-Taste werden umgeschaltet, bereits ausgeschaltete Geräte würden also angehen.</string>
 </resources>

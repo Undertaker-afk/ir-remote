@@ -62,7 +62,7 @@ class SavedStore(context: Context) {
         var buttons = ArrayList<IrButton>()
         fun flush() {
             val h = head ?: return
-            out.add(SavedRemote(h[0], Category.fromDir(h[1]), h[2], IrRemote(brand, h.getOrElse(3) { "" }, buttons), h.getOrNull(5)?.ifEmpty { null }, AcState.parse(h.getOrNull(6)), decodeCustom(h.getOrNull(7))))
+            out.add(SavedRemote(h[0], Category.fromDir(h[1]), h[2], IrRemote(brand, h.getOrElse(3) { "" }, buttons), h.getOrNull(5)?.ifEmpty { null }, AcState.parse(h.getOrNull(6)), decodeCustom(h.getOrNull(7)), h.getOrElse(8) { "" }))
             buttons = ArrayList()
         }
         file.forEachLine { line ->
@@ -83,7 +83,7 @@ class SavedStore(context: Context) {
         val tmp = File(file.parentFile, "remotes.txt.tmp")
         tmp.bufferedWriter().use { w ->
             for (s in list) {
-                w.write("@@${s.id}\t${s.category.dir}\t${s.name.clean()}\t${s.remote.model.clean()}\t${s.remote.brand.clean()}\t${s.acProtocol ?: ""}\t${s.acState?.serialize() ?: ""}\t${encodeCustom(s.custom)}\n")
+                w.write("@@${s.id}\t${s.category.dir}\t${s.name.clean()}\t${s.remote.model.clean()}\t${s.remote.brand.clean()}\t${s.acProtocol ?: ""}\t${s.acState?.serialize() ?: ""}\t${encodeCustom(s.custom)}\t${s.room.clean()}\n")
                 for (b in s.remote.buttons) w.write("${b.name.clean()}\t${b.encoded}\n")
             }
         }

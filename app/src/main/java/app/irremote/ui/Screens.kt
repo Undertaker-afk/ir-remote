@@ -43,6 +43,7 @@ import androidx.compose.ui.unit.sp
 import app.irremote.AppViewModel
 import app.irremote.R
 import app.irremote.Candidate
+import app.irremote.Choice
 import app.irremote.Screen
 import app.irremote.ir.ac.*
 import app.irremote.data.*
@@ -53,12 +54,15 @@ import kotlinx.coroutines.launch
 @Composable
 fun HomeScreen(vm: AppViewModel) {
     val context = LocalContext.current
+    var menu by remember { mutableStateOf(false) }
+    var pasting by remember { mutableStateOf(false) }
+    var offRoom by remember { mutableStateOf<String?>(null) }
     val picker = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri: Uri? ->
         if (uri != null) {
             val name = context.contentResolver.query(uri, null, null, null, null)?.use { c ->
                 val i = c.getColumnIndex(OpenableColumns.DISPLAY_NAME)
                 if (c.moveToFirst() && i >= 0) c.getString(i) else null
-            }?.removeSuffix(".ir")?.replace('_', ' ') ?: "Remote"
+            }?.substringBeforeLast('.')?.replace('_', ' ') ?: "Remote"
             vm.importFile(uri, name) { id ->
                 if (id == null) Toast.makeText(context, R.string.import_failed, Toast.LENGTH_LONG).show()
                 else vm.push(Screen.Remote(id))
@@ -69,8 +73,13 @@ fun HomeScreen(vm: AppViewModel) {
         containerColor = MaterialTheme.colorScheme.background,
         topBar = {
             TopBar(stringResource(R.string.my_remotes), null) {
-                IconButton(onClick = { picker.launch(arrayOf("*/*")) }) {
-                    Icon(Icons.Filled.FileOpen, contentDescription = stringResource(R.string.import_ir))
+                Box {
+                    IconButton(onClick = { menu = true }) { Icon(Icons.Filled.MoreVert, null) }
+                    DropdownMenu(menu, { menu = false }) {
+                        DropdownMenuItem(text = { Text(stringResource(R.string.import_file)) }, onClick = { menu = false; picker.launch(arrayOf("*/*")) })
+                        DropdownMenuItem(text = { Text(stringResource(R.string.paste_code)) }, onClick = { menu = false; pasting = true })
+                        DropdownMenuItem(text = { Text(stringResource(R.string.auto_find)) }, onClick = { menu = false; vm.push(Screen.AutoScan) })
+                    }
                 }
             }
         },
@@ -91,21 +100,26 @@ fun HomeScreen(vm: AppViewModel) {
                 Box(Modifier.weight(1f).fillMaxWidth(), contentAlignment = Alignment.Center) {
                     Text(stringResource(R.string.no_remotes), textAlign = TextAlign.Center, color = MaterialTheme.colorScheme.onSurfaceVariant)
                 }
-            } else LazyColumn(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                items(vm.saved, key = { it.id }) { s ->
-                    Surface(
-                        shape = RoundedCornerShape(24.dp),
-                        color = MaterialTheme.colorScheme.surfaceContainerHigh,
-                        modifier = Modifier.fillMaxWidth().clickable { vm.push(Screen.Remote(s.id)) },
-                    ) {
-                        Row(Modifier.padding(20.dp), verticalAlignment = Alignment.CenterVertically) {
-                            Icon(s.category.icon, null, Modifier.size(32.dp))
-                            Spacer(Modifier.width(16.dp))
-                            Column {
-                                Text(s.name, fontSize = 18.sp, fontWeight = FontWeight.Medium)
-                                Text(s.category.label(), color = MaterialTheme.colorScheme.onSurfaceVariant, fontSize = 13.sp)
+            } else {
+                val rooms = vm.saved.map { it.room }.filter { it.isNotEmpty() }.distinct().sorted()
+                LazyColumn(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                    if (rooms.isEmpty()) {
+                        items(vm.saved, key = { it.id }) { s -> RemoteCard(vm, s) }
+                    } else for (room in rooms + listOf("")) {
+                        val list = vm.saved.filter { it.room == room }
+                        if (list.isEmpty()) continue
+                        item(key = "room_$room") {
+                            Row(Modifier.fillMaxWidth().padding(top = 8.dp), verticalAlignment = Alignment.CenterVertically) {
+                                Text(
+                                    room.ifEmpty { stringResource(R.string.other_devices) }, Modifier.weight(1f),
+                                    color = MaterialTheme.colorScheme.primary, fontSize = 14.sp, fontWeight = FontWeight.Medium,
+                                )
+                                if (room.isNotEmpty()) TextButton(onClick = { offRoom = room }) {
+                                    Icon(Icons.Filled.PowerSettingsNew, null, Modifier.size(18.dp)); Spacer(Modifier.width(6.dp)); Text(stringResource(R.string.all_off))
+                                }
                             }
                         }
+                        items(list, key = { it.id }) { s -> RemoteCard(vm, s) }
                     }
                 }
             }
@@ -115,6 +129,58 @@ fun HomeScreen(vm: AppViewModel) {
             )
         }
     }
+    if (pasting) PasteDialog(onDismiss = { pasting = false }) { text, name ->
+        pasting = false
+        vm.importText(text, name) { id ->
+            if (id == null) Toast.makeText(context, R.string.import_failed, Toast.LENGTH_LONG).show() else vm.push(Screen.Remote(id))
+        }
+    }
+    offRoom?.let { room ->
+        AlertDialog(
+            onDismissRequest = { offRoom = null },
+            title = { Text(stringResource(R.string.all_off_title, room)) },
+            text = { Text(stringResource(R.string.all_off_note)) },
+            confirmButton = { TextButton(onClick = { vm.powerOffRoom(room); offRoom = null }) { Text(stringResource(R.string.all_off)) } },
+            dismissButton = { TextButton(onClick = { offRoom = null }) { Text(stringResource(R.string.cancel)) } },
+        )
+    }
+}
+
+@Composable
+private fun RemoteCard(vm: AppViewModel, s: SavedRemote) {
+    Surface(
+        shape = RoundedCornerShape(24.dp),
+        color = MaterialTheme.colorScheme.surfaceContainerHigh,
+        modifier = Modifier.fillMaxWidth().clickable { vm.push(Screen.Remote(s.id)) },
+    ) {
+        Row(Modifier.padding(20.dp), verticalAlignment = Alignment.CenterVertically) {
+            Icon(s.category.icon, null, Modifier.size(32.dp))
+            Spacer(Modifier.width(16.dp))
+            Column {
+                Text(s.name, fontSize = 18.sp, fontWeight = FontWeight.Medium)
+                Text(s.category.label(), color = MaterialTheme.colorScheme.onSurfaceVariant, fontSize = 13.sp)
+            }
+        }
+    }
+}
+
+@Composable
+private fun PasteDialog(onDismiss: () -> Unit, onImport: (String, String) -> Unit) {
+    var text by remember { mutableStateOf("") }
+    var name by remember { mutableStateOf("") }
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text(stringResource(R.string.paste_code)) },
+        text = {
+            Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                Text(stringResource(R.string.paste_hint), fontSize = 13.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                OutlinedTextField(name, { name = it }, singleLine = true, label = { Text(stringResource(R.string.remote_name)) })
+                OutlinedTextField(text, { text = it }, minLines = 5, maxLines = 8, modifier = Modifier.fillMaxWidth())
+            }
+        },
+        confirmButton = { TextButton(onClick = { onImport(text, name.ifBlank { "Imported" }) }, enabled = text.isNotBlank()) { Text(stringResource(R.string.import_action)) } },
+        dismissButton = { TextButton(onClick = onDismiss) { Text(stringResource(R.string.cancel)) } },
+    )
 }
 
 // ---------------------------------------------------------------- Category grid
@@ -313,13 +379,7 @@ fun WizardScreen(vm: AppViewModel, category: Category, brandName: String) {
     }
 }
 
-/** One entry the wizard can offer: recorded keys from the database, or a generated A/C protocol. */
-sealed interface Choice {
-    class Keys(val c: Candidate) : Choice
-    class Smart(val p: AcProtocol) : Choice
-}
-
-private fun testChoice(vm: AppViewModel, choice: Choice) {
+internal fun testChoice(vm: AppViewModel, choice: Choice) {
     when (choice) {
         is Choice.Keys -> vm.press(choice.c.testButton)
         is Choice.Smart -> vm.transmitter.send(choice.p.encode(AcState(power = true, mode = AcMode.COOL, temp = 24, fan = AcFan.AUTO)))
@@ -360,6 +420,8 @@ fun RemoteScreen(vm: AppViewModel, id: String) {
         )
     }
     var editing by remember { mutableStateOf(false) }
+    var roomDialog by remember { mutableStateOf(false) }
+    if (roomDialog) RoomDialog(saved.room, vm.saved.map { it.room }.filter { it.isNotEmpty() }.distinct().sorted(), { roomDialog = false }) { vm.setRoom(id, it); roomDialog = false }
     if (editing) {
         LayoutEditor(saved, onCancel = { editing = false }, onSave = { vm.setCustom(id, it); view = if (it.isEmpty()) RemoteView.STANDARD else RemoteView.CUSTOM; editing = false })
         return
@@ -393,6 +455,7 @@ fun RemoteScreen(vm: AppViewModel, id: String) {
                             trailingIcon = { Checkbox(vm.volumeKeys, null) },
                             onClick = { vm.toggleVolumeKeys(!vm.volumeKeys) },
                         )
+                        DropdownMenuItem(text = { Text(stringResource(R.string.room_menu)) }, onClick = { roomDialog = true; menu = false })
                         DropdownMenuItem(text = { Text(stringResource(R.string.rename)) }, onClick = { renaming = true; menu = false })
                         DropdownMenuItem(text = { Text(stringResource(R.string.delete)) }, onClick = { menu = false; vm.delete(id) })
                     }

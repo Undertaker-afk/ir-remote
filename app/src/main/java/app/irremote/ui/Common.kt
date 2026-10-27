@@ -1,6 +1,7 @@
 package app.irremote.ui
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.background
@@ -104,4 +105,25 @@ fun RoundKey(
             .irPress(enabled, repeat, onPress),
         contentAlignment = Alignment.Center,
     ) { content() }
+}
+
+@OptIn(ExperimentalLayoutApi::class)
+/** Pick an existing room, type a new one, or clear it. */
+@Composable
+fun RoomDialog(current: String, rooms: List<String>, onDismiss: () -> Unit, onPick: (String) -> Unit) {
+    var text by remember { mutableStateOf(current) }
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text(stringResource(R.string.room_menu)) },
+        text = {
+            Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                OutlinedTextField(text, { text = it }, singleLine = true, label = { Text(stringResource(R.string.room_name)) })
+                if (rooms.isNotEmpty()) androidx.compose.foundation.layout.FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    rooms.forEach { r -> AssistChip(onClick = { text = r }, label = { Text(r) }) }
+                }
+            }
+        },
+        confirmButton = { TextButton(onClick = { onPick(text.trim()) }) { Text(stringResource(R.string.ok)) } },
+        dismissButton = { TextButton(onClick = { onPick("") }) { Text(stringResource(R.string.no_room)) } },
+    )
 }

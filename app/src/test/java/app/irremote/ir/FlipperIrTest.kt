@@ -67,3 +67,76 @@ class ModelMatcherTest {
         assertTrue(score("Samsung", "Samsung UE40D5000", "UE40D5000AWXXC") > 0)
     }
 }
+
+class ImportFormatsTest {
+    private fun parse(text: String) = app.irremote.data.ImportFormats.parse(text, "Test")
+
+    @Test fun prontoConvertsToRawTimings() {
+        // classic NEC-ish Pronto: 0000 006D = 38.0 kHz, 22 once-pairs
+        val code = "0000 006D 001F 0000 0157 00AC 0015 0015 0015 0040 0015 0015 0015 0015 0015 0015 0015 0015 0015 0015 0015 0015 0015 0040 0015 0040 0015 0015 0015 0015 0015 0040 0015 0040 0015 0040 0015 0015 0015 0015 0015 0015 0015 0040 0015 0015 0015 0015 0015 0015 0015 0040 0015 0040 0015 0015 0015 0040 0015 0040 0015 0040 0015 0040 0015 0689"
+        val r = parse("Power: $code\nVolume Up: $code")
+        assertEquals(listOf("Power", "Volume Up"), r.single().buttons.map { it.name })
+        val raw = r.single().buttons[0].signal as IrSignal.Raw
+        assertEquals(38000.0, raw.frequency.toDouble(), 200.0)
+        assertEquals(62, raw.timings.size)
+        assertEquals(9000.0, raw.timings[0].toDouble(), 150.0)   // 0x157 cycles of 26.2 us
+        assertEquals(4500.0, raw.timings[1].toDouble(), 100.0)
+    }
+
+    @Test fun bareProntoCodeBecomesOneButton() {
+        val r = parse("0000 006D 0002 0000 0157 00AC 0015 0015")
+        assertEquals("Button", r.single().buttons.single().name)
+    }
+
+    @Test fun rawDumpFromArduino() {
+        val r = parse("uint16_t rawData[7] = {9000, 4500, 560, 560, 560, 1690, 560};  // NEC")
+        assertEquals(7, (r.single().buttons.single().signal as IrSignal.Raw).timings.size)
+    }
+
+    @Test fun irdbCsvUsesTheSharedMapping() {
+        val csv = "functionname,protocol,device,subdevice,function\nPOWER,NEC1,7,-1,2\nVOL+,Sony12,1,-1,18\nBAD,Foo,1,1,1"
+        val r = parse(csv).single()
+        assertEquals(listOf("Power", "Vol+"), r.buttons.map { it.name })
+        assertEquals(IrSignal.Parsed("NECext", 0xF807, 0xFD02), r.buttons[0].signal)
+        assertEquals(IrSignal.Parsed("SIRC", 1, 18), r.buttons[1].signal)
+    }
+
+    @Test fun lircSpaceEncodedBecomesRawFrame() {
+        val conf = """
+            begin remote
+              name  samsung_tv
+              bits 16
+              flags SPACE_ENC|CONST_LENGTH
+              header 4500 4500
+              one 550 1650
+              zero 550 550
+              ptrail 550
+              pre_data_bits 16
+              pre_data 0xE0E0
+              gap 108000
+              begin codes
+                KEY_POWER 0x40BF
+              end codes
+            end remote
+        """.trimIndent()
+        val r = parse(conf).single()
+        assertEquals("samsung_tv", r.model)
+        val raw = r.buttons.single().signal as IrSignal.Raw
+        assertEquals(4500, raw.timings[0]); assertEquals(4500, raw.timings[1])
+        assertEquals(108000, raw.timings.sum())          // CONST_LENGTH pads the frame
+        assertEquals(2 + 64 + 1 + 1, raw.timings.size)   // header + 32 bits + trail + gap
+        // 0xE0 = 11100000 MSB first -> 1,1,1,0,0,0,0,0
+        val firstBits = (0 until 8).map { raw.timings[3 + it * 2] == 1650 }
+        assertEquals(listOf(true, true, true, false, false, false, false, false), firstBits)
+    }
+
+    @Test fun lircRawCodes() {
+        val conf = "begin remote\n name x\n begin raw_codes\n name POWER\n 9000 4500 560 560 560 1690 560\n end raw_codes\nend remote"
+        val r = parse(conf).single()
+        assertEquals("POWER", r.buttons.single().name)
+    }
+
+    @Test fun unknownTextIsRejected() {
+        assertTrue(parse("hello world, nothing to see").isEmpty())
+    }
+}

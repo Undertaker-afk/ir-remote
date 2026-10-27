@@ -10,6 +10,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import app.irremote.data.*
 import app.irremote.ir.Transmitter
+import app.irremote.ir.ac.AcProtocol
 import app.irremote.ir.ac.AcProtocols
 import app.irremote.ir.ac.AcState
 import kotlinx.coroutines.Dispatchers
@@ -22,11 +23,18 @@ sealed interface Screen {
     data object Categories : Screen
     data object Search : Screen
     data object Scan : Screen
+    data object AutoScan : Screen
     data object Discover : Screen
     data class DeviceMatch(val device: FoundDevice) : Screen
     data class Brands(val category: Category) : Screen
     data class Wizard(val category: Category, val brand: String) : Screen
     data class Remote(val id: String) : Screen
+}
+
+/** One entry the wizard / code scan can offer: recorded keys from the database, or a generated A/C protocol. */
+sealed interface Choice {
+    class Keys(val c: Candidate) : Choice
+    class Smart(val p: AcProtocol) : Choice
 }
 
 /** One distinct configuration offered by the auto-match wizard: remotes sharing the same test code collapse into one. */
@@ -131,6 +139,22 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         return emptyList()
     }
 
+    /** Every distinct power code in a category, most common first (A/C: generated protocols first); used by the automatic scan. */
+    suspend fun scanChoices(category: Category, limit: Int = 800): List<Choice> = withContext(Dispatchers.Default) {
+        val groups = LinkedHashMap<String, MutableList<Pair<IrRemote, IrButton>>>()
+        for (b in db.brands(category)) for (r in b.remotes) {
+            val btn = r.find(Slot.POWER) ?: continue
+            val sig = btn.signal?.signature() ?: continue
+            groups.getOrPut(sig) { ArrayList() }.add(r to btn)
+        }
+        val keys = groups.values.sortedByDescending { it.size }.map { g ->
+            val best = g.maxBy { it.first.buttons.size }
+            Choice.Keys(Candidate(best.first, best.second, g.size))
+        }
+        val smart = if (category == Category.AC) AcProtocols.all.map { Choice.Smart(it) } else emptyList()
+        (smart + keys).take(limit)
+    }
+
     fun addRemote(category: Category, name: String, remote: IrRemote): SavedRemote {
         val s = SavedRemote(UUID.randomUUID().toString(), category, name, remote)
         saved.add(s)
@@ -178,16 +202,47 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         publishShortcuts()
     }
 
-    /** Imports a Flipper .ir file picked by the user. Returns the new remote's id or null if nothing could be read. */
+    /** Imports a file the user picked (Flipper .ir, LIRC, irdb CSV, Pronto, raw). Returns the first new remote's id or null. */
     fun importFile(uri: Uri, displayName: String, onDone: (String?) -> Unit) {
         viewModelScope.launch {
-            val remote = withContext(Dispatchers.IO) {
+            val text = withContext(Dispatchers.IO) {
                 runCatching {
-                    getApplication<Application>().contentResolver.openInputStream(uri)!!.bufferedReader().use { it.readText() }
-                }.getOrNull()?.let { FlipperIr.parse(it, "", displayName) }
+                    getApplication<Application>().contentResolver.openInputStream(uri)!!.use { it.readBytes().take(8_000_000).toByteArray().toString(Charsets.UTF_8) }
+                }.getOrNull()
             }
-            if (remote == null || remote.buttons.isEmpty()) onDone(null)
-            else onDone(addRemote(Category.CUSTOM, displayName, remote).id)
+            importText(text.orEmpty(), displayName, onDone)
+        }
+    }
+
+    /** Imports pasted or loaded text in any supported format; each remote found becomes a saved remote. */
+    fun importText(text: String, name: String, onDone: (String?) -> Unit) {
+        viewModelScope.launch {
+            val remotes = withContext(Dispatchers.Default) { ImportFormats.parse(text, name) }
+            if (remotes.isEmpty()) { onDone(null); return@launch }
+            val added = remotes.mapIndexed { i, r ->
+                val n = if (remotes.size == 1) name else r.model.ifBlank { "$name ${i + 1}" }
+                addRemote(Category.CUSTOM, n, r)
+            }
+            onDone(added.first().id)
+        }
+    }
+
+    // ---- rooms
+    fun setRoom(id: String, room: String) {
+        val i = saved.indexOfFirst { it.id == id }
+        if (i >= 0) { saved[i] = saved[i].copy(room = room.trim()); persist() }
+    }
+
+    /** Sends "off" to every device in a room, one after the other. Single-button power remotes are toggled. */
+    fun powerOffRoom(room: String) {
+        val list = saved.filter { it.room == room }
+        viewModelScope.launch {
+            for (r in list) {
+                val proto = AcProtocols.byId(r.acProtocol)
+                if (proto != null) setAcState(r.id, (r.acState ?: AcState()).copy(power = false))
+                else withContext(Dispatchers.Default) { r.remote.powerOffButton()?.let { transmitter.send(it.signal) } }
+                kotlinx.coroutines.delay(450)
+            }
         }
     }
 }

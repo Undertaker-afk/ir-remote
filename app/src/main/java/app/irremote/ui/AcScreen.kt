@@ -28,6 +28,8 @@ fun AcScreen(vm: AppViewModel, saved: SavedRemote) {
     val state = saved.acState ?: AcState()
     var menu by remember { mutableStateOf(false) }
     var renaming by remember { mutableStateOf(false) }
+    var roomDialog by remember { mutableStateOf(false) }
+    if (roomDialog) RoomDialog(saved.room, vm.saved.map { it.room }.filter { it.isNotEmpty() }.distinct().sorted(), { roomDialog = false }) { vm.setRoom(saved.id, it); roomDialog = false }
 
     Scaffold(
         containerColor = MaterialTheme.colorScheme.background,
@@ -36,6 +38,7 @@ fun AcScreen(vm: AppViewModel, saved: SavedRemote) {
                 Box {
                     IconButton(onClick = { menu = true }) { Icon(Icons.Filled.MoreVert, null) }
                     DropdownMenu(menu, { menu = false }) {
+                        DropdownMenuItem(text = { Text(stringResource(R.string.room_menu)) }, onClick = { roomDialog = true; menu = false })
                         DropdownMenuItem(text = { Text(stringResource(R.string.rename)) }, onClick = { renaming = true; menu = false })
                         DropdownMenuItem(text = { Text(stringResource(R.string.delete)) }, onClick = { menu = false; vm.delete(saved.id) })
                     }

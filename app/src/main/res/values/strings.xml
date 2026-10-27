@@ -82,4 +82,26 @@
     <string name="device_no_match">No remote in the database matches this device. Try Find my code or pick the brand manually.</string>
     <string name="device_try_wizard">Detected brand: test with the wizard</string>
     <string name="device_best_matches">Best matches</string>
+    <string name="import_file">Import file…</string>
+    <string name="paste_code">Paste code…</string>
+    <string name="paste_hint">Flipper .ir, LIRC, irdb CSV, Pronto hex (one code per line, optional "Name: code") or raw timings.</string>
+    <string name="remote_name">Name</string>
+    <string name="import_action">Import</string>
+    <string name="auto_find">Find code automatically</string>
+    <string name="auto_find_hint">Point the phone at the device. It sends one power code after another. Tap the big button as soon as the device reacts.</string>
+    <string name="auto_find_progress">Code %1$d of %2$d</string>
+    <string name="auto_find_speed">Pause between codes: %1$.1f s</string>
+    <string name="auto_find_start">Start</string>
+    <string name="auto_find_reacted">It reacted!</string>
+    <string name="auto_find_stop">Stop</string>
+    <string name="auto_find_confirm">The device reacts a moment after the code, so this is the code just before. Check it with Send again, or step through the neighbours.</string>
+    <string name="auto_find_continue">Not it, keep scanning</string>
+    <string name="send_again">Send again</string>
+    <string name="room_menu">Room…</string>
+    <string name="room_name">Room name</string>
+    <string name="no_room">No room</string>
+    <string name="other_devices">Other devices</string>
+    <string name="all_off">All off</string>
+    <string name="all_off_title">Switch off everything in %1$s?</string>
+    <string name="all_off_note">Devices with a single power button are toggled, so devices that are already off would switch on.</string>
 </resources>

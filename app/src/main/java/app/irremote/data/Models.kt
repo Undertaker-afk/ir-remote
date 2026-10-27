@@ -13,6 +13,12 @@ class IrRemote(val brand: String, val model: String, val buttons: List<IrButton>
         return null
     }
 
+    /** A dedicated "off" key if the remote has one, otherwise the (toggle) power key. */
+    fun powerOffButton(): IrButton? {
+        for (alias in listOf("poweroff", "off", "turnoff", "poweroffonly", "standby")) buttons.firstOrNull { norm(it.name) == alias }?.let { return it }
+        return find(Slot.POWER)
+    }
+
     /** Buttons that don't belong to a fixed slot on the main remote layout (shown in the "more keys" sheet). */
     fun extraButtons(): List<IrButton> {
         val used = Slot.entries.flatMap { s -> find(s)?.let { listOf(it) } ?: emptyList() }.toSet()
@@ -74,6 +80,8 @@ data class SavedRemote(
     val acState: AcState? = null,
     /** User-built layout: chosen buttons in order, with optional renamed labels. Empty = none. */
     val custom: List<CustomKey> = emptyList(),
+    /** Room this device belongs to ("" = none); rooms group devices on the home screen. */
+    val room: String = "",
 )
 
 /** One key on a user's custom layout; [button] is the original button name, [label] what the user sees. */
