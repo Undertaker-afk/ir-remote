@@ -18,6 +18,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import app.irremote.R
 import app.irremote.data.Category
 import kotlinx.coroutines.delay
@@ -125,5 +126,34 @@ fun RoomDialog(current: String, rooms: List<String>, onDismiss: () -> Unit, onPi
         },
         confirmButton = { TextButton(onClick = { onPick(text.trim()) }) { Text(stringResource(R.string.ok)) } },
         dismissButton = { TextButton(onClick = { onPick("") }) { Text(stringResource(R.string.no_room)) } },
+    )
+}
+
+/** Shows which database is in use and lets the user download fresh snapshots of Flipper-IRDB and irdb. */
+@Composable
+fun DbUpdateDialog(vm: app.irremote.AppViewModel, onDismiss: () -> Unit) {
+    val info = vm.dbInfo
+    AlertDialog(
+        onDismissRequest = { if (!vm.dbBusy) onDismiss() },
+        title = { Text(stringResource(R.string.db_title)) },
+        text = {
+            Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                val parts = info?.split('|')
+                Text(if (parts == null) stringResource(R.string.db_bundled) else stringResource(R.string.db_updated, parts[0], parts.getOrElse(1) { "?" }))
+                Text(stringResource(R.string.db_note), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                if (vm.dbBusy) { LinearProgressIndicator(Modifier.fillMaxWidth()); Text(vm.dbStatus.orEmpty(), fontSize = 13.sp) }
+                else vm.dbStatus?.let { s ->
+                    if (s.startsWith("OK")) Text(stringResource(R.string.db_done, s.removePrefix("OK: ")), color = MaterialTheme.colorScheme.primary)
+                    else Text(stringResource(R.string.db_failed, s.removePrefix("ERROR: ")), color = MaterialTheme.colorScheme.error)
+                }
+            }
+        },
+        confirmButton = { TextButton(onClick = { vm.updateDatabase() }, enabled = !vm.dbBusy) { Text(stringResource(R.string.db_update)) } },
+        dismissButton = {
+            Row {
+                if (info != null) TextButton(onClick = { vm.resetDatabase() }, enabled = !vm.dbBusy) { Text(stringResource(R.string.db_reset)) }
+                TextButton(onClick = onDismiss, enabled = !vm.dbBusy) { Text(stringResource(R.string.close)) }
+            }
+        },
     )
 }

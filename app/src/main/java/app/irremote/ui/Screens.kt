@@ -56,6 +56,7 @@ fun HomeScreen(vm: AppViewModel) {
     val context = LocalContext.current
     var menu by remember { mutableStateOf(false) }
     var pasting by remember { mutableStateOf(false) }
+    var dbDialog by remember { mutableStateOf(false) }
     var offRoom by remember { mutableStateOf<String?>(null) }
     val picker = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri: Uri? ->
         if (uri != null) {
@@ -79,6 +80,7 @@ fun HomeScreen(vm: AppViewModel) {
                         DropdownMenuItem(text = { Text(stringResource(R.string.import_file)) }, onClick = { menu = false; picker.launch(arrayOf("*/*")) })
                         DropdownMenuItem(text = { Text(stringResource(R.string.paste_code)) }, onClick = { menu = false; pasting = true })
                         DropdownMenuItem(text = { Text(stringResource(R.string.auto_find)) }, onClick = { menu = false; vm.push(Screen.AutoScan) })
+                        DropdownMenuItem(text = { Text(stringResource(R.string.db_title)) }, onClick = { menu = false; dbDialog = true })
                     }
                 }
             }
@@ -129,6 +131,7 @@ fun HomeScreen(vm: AppViewModel) {
             )
         }
     }
+    if (dbDialog) DbUpdateDialog(vm) { dbDialog = false }
     if (pasting) PasteDialog(onDismiss = { pasting = false }) { text, name ->
         pasting = false
         vm.importText(text, name) { id ->

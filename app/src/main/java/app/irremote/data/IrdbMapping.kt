@@ -40,10 +40,10 @@ object IrdbMapping {
         }
     }
 
-    /** irdb function names are shouty ("VOL+", "INPUT SOURCE"); Title Case them when they're all caps. */
+    /** irdb function names are shouty ("VOL+", "INPUT SOURCE"); Title Case them (like Python's str.title) when all caps. */
     fun prettyName(name: String): String {
         val n = name.replace(Regex("[\\t\\r\\n]+"), " ").trim()
-        return if (n.any { it.isLetter() } && n == n.uppercase()) n.split(' ').joinToString(" ") { w -> w.lowercase().replaceFirstChar { it.uppercase() } } else n
+        return if (isUpperCased(n)) pyTitle(n) else n
     }
 
     /** Maps an irdb device-type folder name to one of our categories, or null if we don't cover it. */
@@ -62,4 +62,47 @@ object IrdbMapping {
         if (t in setOf("tv", "plasma", "lcd", "monitor", "hdtv", "led", "crt") || t.endsWith(" tv") || "television" in t) return Category.TV
         return null
     }
+}
+
+/** Python's str.isupper(): has a cased letter and no lower-case letters. */
+internal fun isUpperCased(s: String) = s.any { it.isLetter() } && s.none { it.isLowerCase() }
+
+/** Python's str.islower(). */
+internal fun isLowerCased(s: String) = s.any { it.isLetter() } && s.none { it.isUpperCase() }
+
+/** Python's str.title(): first letter of every run of letters upper-case, the rest lower-case. */
+internal fun pyTitle(s: String): String {
+    val sb = StringBuilder(s.length)
+    var prevLetter = false
+    for (ch in s) {
+        sb.append(if (ch.isLetter()) (if (prevLetter) ch.lowercaseChar() else ch.uppercaseChar()) else ch)
+        prevLetter = ch.isLetter()
+    }
+    return sb.toString()
+}
+
+/** One CSV line, following Python's csv module defaults: quotes only open a field when they start it, "" is a literal quote. */
+internal fun splitCsvLine(line: String): List<String> {
+    val out = ArrayList<String>()
+    val sb = StringBuilder()
+    var i = 0
+    var atStart = true
+    var quoted = false
+    while (i < line.length) {
+        val ch = line[i]
+        when {
+            quoted -> when {
+                ch == '"' && i + 1 < line.length && line[i + 1] == '"' -> { sb.append('"'); i++ }
+                ch == '"' -> quoted = false
+                else -> sb.append(ch)
+            }
+            ch == '"' && atStart -> quoted = true
+            ch == ',' -> { out.add(sb.toString()); sb.clear(); atStart = true; i++; continue }
+            else -> sb.append(ch)
+        }
+        atStart = false
+        i++
+    }
+    out.add(sb.toString())
+    return out
 }

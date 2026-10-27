@@ -41,16 +41,7 @@ object ImportFormats {
         return remote(name, out).takeIf { it.buttons.isNotEmpty() }
     }
 
-    private fun splitCsv(line: String): List<String> {
-        val out = ArrayList<String>(); val sb = StringBuilder(); var q = false
-        for (ch in line) when {
-            ch == '"' -> q = !q
-            ch == ',' && !q -> { out.add(sb.toString()); sb.clear() }
-            else -> sb.append(ch)
-        }
-        out.add(sb.toString())
-        return out
-    }
+    private fun splitCsv(line: String) = splitCsvLine(line)
 
     // ------------------------------------------------------------ Pronto
 

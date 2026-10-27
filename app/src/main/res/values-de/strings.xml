@@ -104,4 +104,13 @@
     <string name="all_off">Alles aus</string>
     <string name="all_off_title">Alles in %1$s ausschalten?</string>
     <string name="all_off_note">Geräte mit nur einer Ein/Aus-Taste werden umgeschaltet, bereits ausgeschaltete Geräte würden also angehen.</string>
+    <string name="db_title">Code-Datenbank</string>
+    <string name="db_bundled">Es wird die in der App enthaltene Datenbank verwendet.</string>
+    <string name="db_updated">Aktualisiert %1$s · %2$s Fernbedienungen</string>
+    <string name="db_note">Lädt die neuesten Flipper-IRDB und irdb von GitHub (ca. 20 MB) und baut die Liste neu auf. Deine gespeicherten Fernbedienungen bleiben unverändert.</string>
+    <string name="db_update">Jetzt aktualisieren</string>
+    <string name="db_reset">Mitgelieferte nutzen</string>
+    <string name="db_done">Fertig: %1$s Fernbedienungen</string>
+    <string name="db_failed">Aktualisierung fehlgeschlagen: %1$s</string>
+    <string name="close">Schließen</string>
 </resources>

@@ -29,7 +29,20 @@ An open-source Android universal IR remote in the style of Mi Remote, driven by 
 9. **Custom layout**: per remote, choose any buttons, rename and order them ("Edit my layout" in the remote menu).
 10. **Volume keys**: optionally let the phone's volume buttons send the remote's volume up/down (or temperature up/down on
     smart A/C remotes) while that remote is open.
-11. **Shortcuts and automation**
+11. **Import anything**: *Import file…* / *Paste code…* on the home screen read Flipper `.ir`, LIRC `.conf` (raw codes and
+    space-encoded NEC/Samsung-style codes), irdb CSV, Pronto hex (one code per line, optional `Name: code`) and raw timing
+    dumps such as Arduino `rawData[] = {...}`. Biphase LIRC remotes (RC5/RC6 flags) are skipped.
+12. **Find code automatically**: sends the power code of every known remote in a category, most common first, with a
+    adjustable pause. Tap the big button when the device reacts, then confirm with *Send again* / previous / next (the device
+    reacts a moment after the code). For A/C the smart protocols are tried first.
+13. **Rooms**: give a remote a room (⋮ menu → *Room…*); the home screen groups devices by room and each room has
+    *All off* (devices with a single power toggle are toggled, so the dialog warns about it).
+14. **Database update**: ⋮ menu on the home screen → *Code database* downloads fresh Flipper-IRDB and irdb snapshots from
+    GitHub (~20 MB), rebuilds the lists on the phone and swaps them in atomically; *Use bundled* goes back. The in-app builder
+    (`DbBuilder.kt`) is a port of `tools/build_db.py`; `DbBuilderParityTest` checks that both give identical output
+    (`IR_PARITY_DIR=<dir with flipper.zip, irdb.zip, expected/> gradle :app:testDebugUnitTest`). Saved remotes are
+    self-contained and never touched by an update.
+15. **Shortcuts and automation**
    - Long-press the app icon for "open" and "power" shortcuts of your most recent remotes (Google Assistant can launch
      shortcuts by name).
    - Headless intent, usable from Tasker, MacroDroid, routines or `adb`:

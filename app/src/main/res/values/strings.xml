@@ -104,4 +104,13 @@
     <string name="all_off">All off</string>
     <string name="all_off_title">Switch off everything in %1$s?</string>
     <string name="all_off_note">Devices with a single power button are toggled, so devices that are already off would switch on.</string>
+    <string name="db_title">Code database</string>
+    <string name="db_bundled">Using the database bundled with the app.</string>
+    <string name="db_updated">Updated %1$s · %2$s remotes</string>
+    <string name="db_note">Downloads the latest Flipper-IRDB and irdb from GitHub (about 20 MB) and rebuilds the list. Your saved remotes are not changed.</string>
+    <string name="db_update">Update now</string>
+    <string name="db_reset">Use bundled</string>
+    <string name="db_done">Done: %1$s remotes</string>
+    <string name="db_failed">Update failed: %1$s</string>
+    <string name="close">Close</string>
 </resources>

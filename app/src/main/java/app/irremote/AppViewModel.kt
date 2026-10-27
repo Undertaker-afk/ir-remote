@@ -71,6 +71,35 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     private fun publishShortcuts() = Shortcuts.publish(getApplication(), saved.toList())
 
+    // ---- in-app database update
+    private val updater = DbUpdater(app)
+    var dbInfo by mutableStateOf(updater.info())
+        private set
+    var dbBusy by mutableStateOf(false)
+        private set
+    var dbStatus by mutableStateOf<String?>(null)
+        private set
+
+    fun updateDatabase() {
+        if (dbBusy) return
+        dbBusy = true; dbStatus = null
+        viewModelScope.launch {
+            val result = withContext(Dispatchers.IO) {
+                runCatching { updater.update { s -> dbStatus = s } }
+            }
+            dbBusy = false
+            result.onSuccess { n ->
+                db.clearCache(); everythingCache = null
+                dbInfo = updater.info()
+                dbStatus = "OK: $n"
+            }.onFailure { dbStatus = "ERROR: ${it.message ?: it.javaClass.simpleName}" }
+        }
+    }
+
+    fun resetDatabase() {
+        updater.reset(); db.clearCache(); everythingCache = null; dbInfo = null; dbStatus = null
+    }
+
     private var everythingCache: List<Pair<Category, IrRemote>>? = null
 
     /** Every bundled remote, for model search and the sticker scanner. */

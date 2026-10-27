@@ -14,6 +14,8 @@ class Brand(val name: String, val remotes: List<IrRemote>)
 class Database(private val context: Context) {
     private val cache = HashMap<Category, List<Brand>>()
 
+    fun clearCache() { synchronized(cache) { cache.clear() } }
+
     suspend fun brands(category: Category): List<Brand> = withContext(Dispatchers.IO) {
         synchronized(cache) { cache[category] }?.let { return@withContext it }
         val loaded = load(category)
@@ -30,7 +32,10 @@ class Database(private val context: Context) {
             if (brand.isNotEmpty() && buttons.isNotEmpty()) remotes.add(IrRemote(brand, model, buttons))
             buttons = ArrayList()
         }
-        context.assets.open("db/${category.dir}.txt").bufferedReader().useLines { lines ->
+        // an in-app update (see DbUpdater) takes precedence over the data bundled in the APK
+        val updated = File(context.filesDir, "db/${category.dir}.txt")
+        val input = if (updated.exists()) updated.inputStream() else context.assets.open("db/${category.dir}.txt")
+        input.bufferedReader().useLines { lines ->
             for (line in lines) {
                 if (line.startsWith("@")) {
                     flush()
