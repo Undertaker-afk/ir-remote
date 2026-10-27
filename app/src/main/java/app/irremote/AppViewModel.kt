@@ -27,7 +27,7 @@ sealed interface Screen {
     data object Discover : Screen
     data class DeviceMatch(val device: FoundDevice) : Screen
     data class Brands(val category: Category) : Screen
-    data class Wizard(val category: Category, val brand: String) : Screen
+    data class Wizard(val category: Category, val brand: String, val hint: String = "") : Screen
     data class Remote(val id: String) : Screen
 }
 
@@ -38,7 +38,7 @@ sealed interface Choice {
 }
 
 /** One distinct configuration offered by the auto-match wizard: remotes sharing the same test code collapse into one. */
-class Candidate(val remote: IrRemote, val testButton: IrButton, val sharedBy: Int)
+class Candidate(val remote: IrRemote, val testButton: IrButton, val sharedBy: Int, val match: Match? = null)
 
 class AppViewModel(app: Application) : AndroidViewModel(app) {
     private val db = Database(app)
@@ -89,7 +89,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
             }
             dbBusy = false
             result.onSuccess { n ->
-                db.clearCache(); everythingCache = null
+                db.clearCache(); everythingCache = null; engineCache = null
                 dbInfo = updater.info()
                 dbStatus = "OK: $n"
             }.onFailure { dbStatus = "ERROR: ${it.message ?: it.javaClass.simpleName}" }
@@ -97,10 +97,14 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     }
 
     fun resetDatabase() {
-        updater.reset(); db.clearCache(); everythingCache = null; dbInfo = null; dbStatus = null
+        updater.reset(); db.clearCache(); everythingCache = null; engineCache = null; engineCache = null; dbInfo = null; dbStatus = null
     }
 
     private var everythingCache: List<Pair<Category, IrRemote>>? = null
+    private var engineCache: MatchEngine? = null
+
+    /** Model-number matching engine over every bundled remote (built once, rebuilt after a database update). */
+    suspend fun engine(): MatchEngine = engineCache ?: withContext(Dispatchers.Default) { MatchEngine(everything()) }.also { engineCache = it }
 
     /** Every bundled remote, for model search and the sticker scanner. */
     suspend fun everything(): List<Pair<Category, IrRemote>> = everythingCache ?: Category.entries.filter { it != Category.CUSTOM }
@@ -151,7 +155,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     }
 
     /** Candidates for a brand, most common first. [testSlots] lists which key to test with, in preference order. */
-    fun candidates(brand: Brand, testSlots: List<Slot>, limit: Int = 15): List<Candidate> {
+    fun candidates(brand: Brand, testSlots: List<Slot>, limit: Int = 15, scores: Map<IrRemote, Match>? = null): List<Candidate> {
         for (slot in testSlots) {
             val groups = LinkedHashMap<String, MutableList<Pair<IrRemote, IrButton>>>()
             for (r in brand.remotes) {
@@ -160,9 +164,11 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
                 groups.getOrPut(sig) { ArrayList() }.add(r to b)
             }
             if (groups.isEmpty()) continue
-            return groups.values.sortedByDescending { it.size }.take(limit).map { g ->
-                val best = g.maxBy { it.first.buttons.size }
-                Candidate(best.first, best.second, g.size)
+            // with a model hint, groups containing remotes that match the model come first; otherwise the most common code does
+            fun score(r: IrRemote) = scores?.get(r)?.score ?: 0
+            return groups.values.sortedWith(compareByDescending<List<Pair<IrRemote, IrButton>>> { g -> g.maxOf { score(it.first) } }.thenByDescending { it.size }).take(limit).map { g ->
+                val best = g.maxWith(compareBy<Pair<IrRemote, IrButton>> { score(it.first) }.thenBy { it.first.buttons.size })
+                Candidate(best.first, best.second, g.size, scores?.get(best.first))
             }
         }
         return emptyList()

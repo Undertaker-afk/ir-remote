@@ -22,17 +22,30 @@ import app.irremote.R
 import app.irremote.Screen
 import app.irremote.data.Category
 import app.irremote.data.IrRemote
+import app.irremote.data.Match
+import app.irremote.data.MatchEngine
+import app.irremote.data.Tier
 
-/** Search every bundled remote by brand or model number and add the exact one without the wizard. */
+/** Search by brand, model number or remote part number; the matching engine ranks series/revision matches first. */
 @Composable
 fun SearchScreen(vm: AppViewModel) {
+    var engine by remember { mutableStateOf<MatchEngine?>(null) }
     var index by remember { mutableStateOf<List<Triple<Category, IrRemote, String>>?>(null) }
-    LaunchedEffect(Unit) { index = vm.everything().map { (c, r) -> Triple(c, r, "${r.brand} ${r.model}".lowercase()) } }
+    LaunchedEffect(Unit) {
+        engine = vm.engine()
+        index = vm.everything().map { (c, r) -> Triple(c, r, "${r.brand} ${r.model}".lowercase()) }
+    }
     var query by remember { mutableStateOf("") }
     val terms = query.lowercase().split(' ').filter { it.isNotBlank() }
-    val results = remember(index, query) {
-        if (terms.isEmpty()) emptyList()
-        else index.orEmpty().filter { (_, _, text) -> terms.all { it in text } }.take(100)
+    val results = remember(engine, index, query) {
+        if (terms.isEmpty() || engine == null) emptyList()
+        else {
+            val ranked = engine!!.match(query, preferred = setOf(Category.TV, Category.STREAM, Category.PROJECTOR), limit = 100)
+            // partial words ("sams", "crystal") are not model numbers; fall back to plain substring search
+            ranked.ifEmpty {
+                index.orEmpty().filter { (_, _, text) -> terms.all { it in text } }.take(100).map { (c, r, _) -> Match(c, r, Tier.BRAND, 0, "") }
+            }
+        }
     }
 
     Scaffold(
@@ -51,25 +64,16 @@ fun SearchScreen(vm: AppViewModel) {
                 modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp),
             )
             when {
-                index == null -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { CircularProgressIndicator() }
+                engine == null -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { CircularProgressIndicator() }
                 terms.isNotEmpty() && results.isEmpty() -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                     Text(stringResource(R.string.no_results), color = MaterialTheme.colorScheme.onSurfaceVariant, textAlign = TextAlign.Center)
                 }
                 else -> LazyColumn(Modifier.weight(1f), contentPadding = PaddingValues(16.dp)) {
-                    items(results) { (cat, remote, _) ->
-                        val title = "${remote.brand} ${remote.model.removePrefix(remote.brand).trim()}".trim()
-                        val catLabel = cat.label()
-                        Column(
-                            Modifier.fillMaxWidth().clickable {
-                                val s = vm.addRemote(cat, "${remote.brand} $catLabel", remote)
-                                vm.popToHome(); vm.push(Screen.Remote(s.id))
-                            }.padding(vertical = 12.dp)
-                        ) {
-                            Text(title, fontSize = 17.sp, fontWeight = FontWeight.Medium)
-                            Text(
-                                "$catLabel · ${stringResource(R.string.keys_count, remote.buttons.size)}",
-                                fontSize = 13.sp, color = MaterialTheme.colorScheme.onSurfaceVariant,
-                            )
+                    items(results) { m ->
+                        val catLabel = m.category.label()
+                        MatchRow(m) {
+                            val s = vm.addRemote(m.category, "${m.remote.brand} $catLabel", m.remote)
+                            vm.popToHome(); vm.push(Screen.Remote(s.id))
                         }
                     }
                 }

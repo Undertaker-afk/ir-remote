@@ -83,17 +83,26 @@ fun DiscoverScreen(vm: AppViewModel) {
 /** What we learned about the chosen device and the remotes that fit it best. */
 @Composable
 fun DeviceMatchScreen(vm: AppViewModel, device: FoundDevice) {
-    var index by remember { mutableStateOf<List<Triple<Category, IrRemote, String>>?>(null) }
-    LaunchedEffect(Unit) { index = vm.everything().map { (c, r) -> Triple(c, r, "${r.brand} ${r.model}") } }
-    val tokens = remember(device) { ModelMatcher.tokens(device.text) }
-    val ranked = remember(index, tokens) {
-        index.orEmpty().map { it to ModelMatcher.score(it.second.brand, it.second.model, tokens) }
-            .filter { it.second > 0 }
-            // devices that show up in screen-mirroring lists are overwhelmingly TVs, projectors and streamers
-            .sortedByDescending { it.second + if (it.first.first in listOf(Category.TV, Category.STREAM, Category.PROJECTOR)) 1 else 0 }
-            .take(40).map { it.first }
+    var engine by remember { mutableStateOf<MatchEngine?>(null) }
+    LaunchedEffect(Unit) { engine = vm.engine() }
+    val all = remember(engine) {
+        engine?.match(device.text, preferred = setOf(Category.TV, Category.STREAM, Category.PROJECTOR), limit = Int.MAX_VALUE).orEmpty()
+            // devices that show up in screen-mirroring lists are TVs, projectors and streamers
+            .filter { it.category in listOf(Category.TV, Category.STREAM, Category.PROJECTOR) }
     }
-    val brands = remember(ranked) { ranked.map { it.first to it.second.brand }.distinctBy { it.second }.take(3) }
+    val exact = all.firstOrNull()?.let { it.tier <= Tier.SAME_SERIES } == true
+    val ranked = remember(all) {
+        if (exact) all.filter { it.tier <= Tier.SAME_FAMILY }.take(40)
+        else {
+            // no model hit: skip near-duplicates; generation matches first, then modern smart-remote layouts, then full key sets
+            val modern = setOf("home", "netflix", "primevideo", "prime", "source", "smarthub", "settings", "guide", "youtube", "disney")
+            fun modernity(r: IrRemote) = r.buttons.count { norm(it.name) in modern }
+            all.distinctBy { (it.remote.find(Slot.POWER)?.encoded ?: "") + it.remote.buttons.size }
+                .sortedWith(compareBy<Match> { it.tier }.thenByDescending { modernity(it.remote) }.thenByDescending { it.remote.buttons.size })
+                .take(25)
+        }
+    }
+    val brands = remember(ranked) { ranked.map { it.category to it.remote.brand }.distinctBy { it.second }.take(3) }
 
     Scaffold(
         containerColor = MaterialTheme.colorScheme.background,
@@ -103,31 +112,30 @@ fun DeviceMatchScreen(vm: AppViewModel, device: FoundDevice) {
             Text(listOfNotNull(device.manufacturer, device.model, device.source).joinToString(" · "), color = MaterialTheme.colorScheme.onSurfaceVariant)
             Spacer(Modifier.height(12.dp))
             when {
-                index == null -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { CircularProgressIndicator() }
+                engine == null -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { CircularProgressIndicator() }
                 ranked.isEmpty() -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                     Text(stringResource(R.string.device_no_match), textAlign = TextAlign.Center, color = MaterialTheme.colorScheme.onSurfaceVariant)
                 }
                 else -> {
-                    if (brands.isNotEmpty()) {
-                        Text(stringResource(R.string.device_try_wizard), color = MaterialTheme.colorScheme.primary, fontSize = 13.sp)
-                        Row(Modifier.padding(vertical = 8.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                            brands.forEach { (cat, brand) ->
-                                AssistChip(onClick = { vm.push(Screen.Wizard(cat, brand)) }, label = { Text(brand) })
-                            }
-                        }
+                    if (!exact) {
+                        Text(stringResource(R.string.device_no_exact, device.model ?: device.name), fontSize = 15.sp)
+                        Spacer(Modifier.height(8.dp))
                     }
-                    Text(stringResource(R.string.device_best_matches), color = MaterialTheme.colorScheme.primary, fontSize = 13.sp)
+                    brands.firstOrNull()?.let { (cat, brand) ->
+                        Button(onClick = { vm.push(Screen.Wizard(cat, brand, device.text)) }, Modifier.fillMaxWidth().height(52.dp)) {
+                            Text(stringResource(R.string.device_wizard_button, brand))
+                        }
+                        Spacer(Modifier.height(12.dp))
+                    }
+                    Text(
+                        stringResource(if (exact) R.string.device_best_matches else R.string.device_other_remotes),
+                        color = MaterialTheme.colorScheme.primary, fontSize = 13.sp,
+                    )
                     LazyColumn(contentPadding = PaddingValues(vertical = 8.dp)) {
-                        items(ranked) { (cat, remote, _) ->
-                            val catLabel = cat.label()
-                            Column(
-                                Modifier.fillMaxWidth().clickable {
-                                    val s = vm.addRemote(cat, device.name.ifBlank { "${remote.brand} $catLabel" }, remote)
-                                    vm.popToHome(); vm.push(Screen.Remote(s.id))
-                                }.padding(vertical = 12.dp)
-                            ) {
-                                Text("${remote.brand} ${remote.model.removePrefix(remote.brand).trim()}".trim(), fontSize = 17.sp, fontWeight = FontWeight.Medium)
-                                Text("$catLabel · ${stringResource(R.string.keys_count, remote.buttons.size)}", fontSize = 13.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        items(ranked) { m ->
+                            MatchRow(m) {
+                                val s = vm.addRemote(m.category, device.name.ifBlank { "${m.remote.brand} ${m.category.name}" }, m.remote)
+                                vm.popToHome(); vm.push(Screen.Remote(s.id))
                             }
                         }
                     }

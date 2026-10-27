@@ -27,7 +27,8 @@ import app.irremote.AppViewModel
 import app.irremote.R
 import app.irremote.Screen
 import app.irremote.data.Category
-import app.irremote.data.IrRemote
+import app.irremote.data.MatchEngine
+import app.irremote.data.Tier
 import app.irremote.data.ModelMatcher
 import com.google.mlkit.vision.common.InputImage
 import com.google.mlkit.vision.text.TextRecognition
@@ -38,8 +39,8 @@ import java.io.File
 @Composable
 fun ScanScreen(vm: AppViewModel) {
     val context = LocalContext.current
-    var index by remember { mutableStateOf<List<Triple<Category, IrRemote, String>>?>(null) }
-    LaunchedEffect(Unit) { index = vm.everything().map { (c, r) -> Triple(c, r, "${r.brand} ${r.model}") } }
+    var engine by remember { mutableStateOf<MatchEngine?>(null) }
+    LaunchedEffect(Unit) { engine = vm.engine() }
 
     var text by remember { mutableStateOf("") }
     var busy by remember { mutableStateOf(false) }
@@ -60,10 +61,9 @@ fun ScanScreen(vm: AppViewModel) {
     val gallery = rememberLauncherForActivityResult(ActivityResultContracts.GetContent()) { uri -> if (uri != null) recognize(uri) }
 
     val tokens = remember(text) { ModelMatcher.tokens(text) }
-    val results = remember(index, tokens) {
-        if (tokens.isEmpty()) emptyList()
-        else index.orEmpty().map { it to ModelMatcher.score(it.second.brand, it.second.model, tokens) }
-            .filter { it.second > 0 }.sortedByDescending { it.second }.take(60).map { it.first }
+    val results = remember(engine, text) {
+        if (tokens.isEmpty() || engine == null) emptyList()
+        else engine!!.match(text, preferred = setOf(Category.TV, Category.STREAM, Category.PROJECTOR), limit = 60).filter { it.tier != Tier.BRAND || tokens.size <= 3 }
     }
 
     Scaffold(
@@ -94,25 +94,17 @@ fun ScanScreen(vm: AppViewModel) {
             )
             if (busy) LinearProgressIndicator(Modifier.fillMaxWidth().padding(top = 8.dp))
             if (failed) Text(stringResource(R.string.scan_failed), color = MaterialTheme.colorScheme.error, modifier = Modifier.padding(top = 8.dp))
-            if (tokens.isNotEmpty() && results.isEmpty() && index != null && !busy) {
+            if (tokens.isNotEmpty() && results.isEmpty() && engine != null && !busy) {
                 Box(Modifier.fillMaxWidth().padding(top = 32.dp), contentAlignment = Alignment.Center) {
                     Text(stringResource(R.string.no_results), textAlign = TextAlign.Center, color = MaterialTheme.colorScheme.onSurfaceVariant)
                 }
             }
             LazyColumn(Modifier.weight(1f), contentPadding = PaddingValues(vertical = 8.dp)) {
-                items(results) { (cat, remote, _) ->
-                    val catLabel = cat.label()
-                    Column(
-                        Modifier.fillMaxWidth().clickable {
-                            val s = vm.addRemote(cat, "${remote.brand} $catLabel", remote)
-                            vm.popToHome(); vm.push(Screen.Remote(s.id))
-                        }.padding(vertical = 12.dp)
-                    ) {
-                        Text("${remote.brand} ${remote.model.removePrefix(remote.brand).trim()}".trim(), fontSize = 17.sp, fontWeight = FontWeight.Medium)
-                        Text(
-                            "$catLabel · ${stringResource(R.string.keys_count, remote.buttons.size)}",
-                            fontSize = 13.sp, color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        )
+                items(results) { m ->
+                    val catLabel = m.category.label()
+                    MatchRow(m) {
+                        val s = vm.addRemote(m.category, "${m.remote.brand} $catLabel", m.remote)
+                        vm.popToHome(); vm.push(Screen.Remote(s.id))
                     }
                 }
             }

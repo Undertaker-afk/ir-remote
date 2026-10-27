@@ -113,4 +113,14 @@
     <string name="db_done">Done: %1$s remotes</string>
     <string name="db_failed">Update failed: %1$s</string>
     <string name="close">Close</string>
+    <string name="device_no_exact">No remote for “%1$s” in the database yet. The wizard finds the right code for your device by testing; the list below shows other remotes of the brand.</string>
+    <string name="device_wizard_button">Find the %1$s code with the wizard</string>
+    <string name="device_other_remotes">Other remotes of this brand (newest style first)</string>
+    <string name="tier_exact">Exact match</string>
+    <string name="tier_same_remote">Same remote, other revision</string>
+    <string name="tier_same_series">Same series</string>
+    <string name="tier_family">Neighbouring series</string>
+    <string name="tier_era">Same generation (power code)</string>
+    <string name="tier_brand">Same brand</string>
+    <string name="wizard_ranked">Ranked for your model</string>
 </resources>

@@ -35,7 +35,10 @@ class Database(private val context: Context) {
         // an in-app update (see DbUpdater) takes precedence over the data bundled in the APK
         val updated = File(context.filesDir, "db/${category.dir}.txt")
         val input = if (updated.exists()) updated.inputStream() else context.assets.open("db/${category.dir}.txt")
-        input.bufferedReader().useLines { lines ->
+        // hand-curated remotes (assets/curated/<category>.txt, same format) are added on top of either source
+        val curated = runCatching { context.assets.open("curated/${category.dir}.txt") }.getOrNull()
+        val all = if (curated != null) java.io.SequenceInputStream(input, java.io.SequenceInputStream(java.io.ByteArrayInputStream("\n".toByteArray()), curated)) else input
+        all.bufferedReader().useLines { lines ->
             for (line in lines) {
                 if (line.startsWith("@")) {
                     flush()

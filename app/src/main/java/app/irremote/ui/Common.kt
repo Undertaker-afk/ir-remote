@@ -1,5 +1,6 @@
 package app.irremote.ui
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.gestures.detectTapGestures
@@ -17,10 +18,13 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import app.irremote.R
 import app.irremote.data.Category
+import app.irremote.data.Match
+import app.irremote.data.Tier
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -156,4 +160,32 @@ fun DbUpdateDialog(vm: app.irremote.AppViewModel, onDismiss: () -> Unit) {
             }
         },
     )
+}
+
+@Composable
+fun Tier.label(): String = stringResource(
+    when (this) {
+        Tier.EXACT -> R.string.tier_exact
+        Tier.SAME_REMOTE -> R.string.tier_same_remote
+        Tier.SAME_SERIES -> R.string.tier_same_series
+        Tier.SAME_FAMILY -> R.string.tier_family
+        Tier.SAME_ERA -> R.string.tier_era
+        Tier.BRAND -> R.string.tier_brand
+    }
+)
+
+/** One ranked remote with the reason it matched ("Same series · CU7000"). */
+@Composable
+fun MatchRow(m: Match, onClick: () -> Unit) {
+    val r = m.remote
+    val catLabel = m.category.label()
+    val good = m.tier <= Tier.SAME_SERIES
+    Column(Modifier.fillMaxWidth().clickable(onClick = onClick).padding(vertical = 12.dp)) {
+        Text("${r.brand} ${r.model.removePrefix(r.brand).trim()}".trim(), fontSize = 17.sp, fontWeight = FontWeight.Medium)
+        Text("$catLabel · ${stringResource(R.string.keys_count, r.buttons.size)}", fontSize = 13.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+        Text(
+            listOf(m.tier.label(), m.reason).filter { it.isNotEmpty() }.joinToString(" · "),
+            fontSize = 12.sp, color = if (good) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant,
+        )
+    }
 }

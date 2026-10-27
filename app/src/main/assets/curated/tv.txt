@@ -1,0 +1,49 @@
+@Samsung	Crystal UHD smart remote (BN59-01315, 01358, 01385) CU7000 AU7000 BU8000 TU7000 DU7000 RU7100 NU7100 UU7000
+Power	P:Samsung32:7:e6
+Power alt	P:Samsung32:7:2
+Source	P:Samsung32:7:1
+Home	P:Samsung32:7:79
+Settings	P:Samsung32:7:1a
+Guide	P:Samsung32:7:4f
+Info	P:Samsung32:7:1f
+Up	P:Samsung32:7:60
+Down	P:Samsung32:7:61
+Left	P:Samsung32:7:65
+Right	P:Samsung32:7:62
+Ok	P:Samsung32:7:68
+Back	P:Samsung32:7:58
+Exit	P:Samsung32:7:2d
+Vol up	P:Samsung32:7:7
+Vol dn	P:Samsung32:7:b
+Mute	P:Samsung32:7:f
+Ch next	P:Samsung32:7:12
+Ch prev	P:Samsung32:7:10
+Ch list	P:Samsung32:7:6b
+Pre ch	P:Samsung32:7:13
+1	P:Samsung32:7:4
+2	P:Samsung32:7:5
+3	P:Samsung32:7:6
+4	P:Samsung32:7:8
+5	P:Samsung32:7:9
+6	P:Samsung32:7:a
+7	P:Samsung32:7:c
+8	P:Samsung32:7:d
+9	P:Samsung32:7:e
+0	P:Samsung32:7:11
+Dash	P:Samsung32:7:23
+Red	P:Samsung32:7:6c
+Green	P:Samsung32:7:14
+Yellow	P:Samsung32:7:15
+Blue	P:Samsung32:7:16
+Play	P:Samsung32:7:47
+Pause	P:Samsung32:7:4a
+Stop	P:Samsung32:7:46
+Rewind	P:Samsung32:7:45
+Fast fw	P:Samsung32:7:48
+Play pause	P:Samsung32:7:b9
+Netflix	P:Samsung32:7:f3
+Prime Video	P:Samsung32:7:f4
+Samsung TV Plus	P:Samsung32:7:b4
+Ambient	P:Samsung32:7:f6
+Web	P:Samsung32:7:37
+Subtitles	P:Samsung32:7:25

@@ -291,9 +291,12 @@ fun BrandsScreen(vm: AppViewModel, category: Category) {
 // ---------------------------------------------------------------- Auto-match wizard
 
 @Composable
-fun WizardScreen(vm: AppViewModel, category: Category, brandName: String) {
+fun WizardScreen(vm: AppViewModel, category: Category, brandName: String, hint: String = "") {
     var brand by remember { mutableStateOf<Brand?>(null) }
     LaunchedEffect(brandName) { brand = vm.brands(category).firstOrNull { it.name == brandName } }
+    var scores by remember { mutableStateOf<Map<IrRemote, Match>?>(null) }
+    // with a model hint (from device discovery or a typed model) the candidates are ordered by how well they fit it
+    LaunchedEffect(hint) { if (hint.isNotBlank()) scores = vm.engine().scoreMap(hint) }
     var isOn by remember { mutableStateOf<Boolean?>(null) }
     var index by remember { mutableIntStateOf(0) }
     val haptic = LocalHapticFeedback.current
@@ -301,8 +304,8 @@ fun WizardScreen(vm: AppViewModel, category: Category, brandName: String) {
 
     val slots = if (isOn == true) listOf(Slot.MUTE, Slot.VOL_UP, Slot.POWER) else listOf(Slot.POWER, Slot.MUTE)
     if (category == Category.AC) LaunchedEffect(Unit) { isOn = false } // A/C wizard always tests "power on"
-    val candidates = remember(brand, isOn) {
-        val keys = brand?.let { b -> if (isOn == null) emptyList() else vm.candidates(b, slots) }.orEmpty().map { Choice.Keys(it) }
+    val candidates = remember(brand, isOn, scores) {
+        val keys = brand?.let { b -> if (isOn == null) emptyList() else vm.candidates(b, slots, scores = scores) }.orEmpty().map { Choice.Keys(it) }
         val smart = if (category == Category.AC && isOn != null) AcProtocols.orderedFor(brandName).map { Choice.Smart(it) } else emptyList()
         smart + keys
     }
@@ -346,6 +349,9 @@ fun WizardScreen(vm: AppViewModel, category: Category, brandName: String) {
                         stringResource(R.string.wizard_progress, index + 1, candidates.size),
                         color = MaterialTheme.colorScheme.primary, textAlign = TextAlign.Center,
                     )
+                    (choice as? Choice.Keys)?.c?.match?.takeIf { it.tier <= Tier.SAME_FAMILY }?.let { m ->
+                        Text("${stringResource(R.string.wizard_ranked)}: ${m.tier.label()} ${m.reason}".trim(), fontSize = 12.sp, color = MaterialTheme.colorScheme.primary, modifier = Modifier.padding(top = 4.dp))
+                    }
                     Spacer(Modifier.height(56.dp))
                     Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceBetween) {
                         RoundKey(enabled = index > 0, size = 48, onPress = { index-- }) {

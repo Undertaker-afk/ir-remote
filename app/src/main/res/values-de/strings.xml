@@ -113,4 +113,14 @@
     <string name="db_done">Fertig: %1$s Fernbedienungen</string>
     <string name="db_failed">Aktualisierung fehlgeschlagen: %1$s</string>
     <string name="close">Schließen</string>
+    <string name="device_no_exact">Für „%1$s“ gibt es noch keine Fernbedienung in der Datenbank. Der Assistent findet den passenden Code durch Testen; unten stehen weitere Fernbedienungen der Marke.</string>
+    <string name="device_wizard_button">%1$s-Code mit dem Assistenten finden</string>
+    <string name="device_other_remotes">Weitere Fernbedienungen dieser Marke (neueste Bauart zuerst)</string>
+    <string name="tier_exact">Exakter Treffer</string>
+    <string name="tier_same_remote">Gleiche Fernbedienung, andere Revision</string>
+    <string name="tier_same_series">Gleiche Serie</string>
+    <string name="tier_family">Benachbarte Serie</string>
+    <string name="tier_era">Gleiche Generation (Ein/Aus-Code)</string>
+    <string name="tier_brand">Gleiche Marke</string>
+    <string name="wizard_ranked">Nach deinem Modell sortiert</string>
 </resources>

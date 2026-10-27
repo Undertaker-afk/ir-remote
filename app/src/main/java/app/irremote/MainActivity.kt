@@ -47,7 +47,7 @@ class MainActivity : ComponentActivity() {
                     Screen.Discover -> DiscoverScreen(vm)
                     is Screen.DeviceMatch -> DeviceMatchScreen(vm, s.device)
                     is Screen.Brands -> BrandsScreen(vm, s.category)
-                    is Screen.Wizard -> WizardScreen(vm, s.category, s.brand)
+                    is Screen.Wizard -> WizardScreen(vm, s.category, s.brand, s.hint)
                     is Screen.Remote -> RemoteScreen(vm, s.id)
                 }
             }
