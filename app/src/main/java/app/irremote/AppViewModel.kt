@@ -10,6 +10,8 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import app.irremote.data.*
 import app.irremote.ir.Transmitter
+import app.irremote.ir.ac.AcProtocols
+import app.irremote.ir.ac.AcState
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -80,6 +82,26 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         return s
     }
 
+    fun addAcRemote(name: String, protocol: String): SavedRemote {
+        val s = SavedRemote(UUID.randomUUID().toString(), Category.AC, name, IrRemote(name, "", emptyList()), protocol, AcState(power = true))
+        saved.add(s)
+        persist()
+        return s
+    }
+
+    /** Stores the new A/C state and sends the full frame (only when switched on, or when switching off). */
+    fun setAcState(id: String, state: AcState) {
+        val i = saved.indexOfFirst { it.id == id }
+        if (i < 0) return
+        val o = saved[i]
+        saved[i] = o.copy(acState = state)
+        persist()
+        val proto = AcProtocols.byId(o.acProtocol) ?: return
+        if (state.power || o.acState?.power == true) {
+            if (!transmitter.send(proto.encode(state))) message = "send"
+        }
+    }
+
     fun delete(id: String) {
         saved.removeAll { it.id == id }
         persist()
@@ -89,7 +111,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         val i = saved.indexOfFirst { it.id == id }
         if (i >= 0 && name.isNotBlank()) {
             val o = saved[i]
-            saved[i] = SavedRemote(o.id, o.category, name.trim(), o.remote)
+            saved[i] = o.copy(name = name.trim())
             persist()
         }
     }

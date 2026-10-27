@@ -45,4 +45,15 @@
     <string name="cat_cleaner">Cleaning robot</string>
     <string name="cat_computer">Console &amp; computer</string>
     <string name="cat_custom">Imported</string>
+    <string name="ac_mode">Mode</string>
+    <string name="ac_fan">Fan speed</string>
+    <string name="ac_swing">Swing</string>
+    <string name="mode_auto">Auto</string>
+    <string name="mode_cool">Cool</string>
+    <string name="mode_dry">Dry</string>
+    <string name="mode_fan">Fan</string>
+    <string name="mode_heat">Heat</string>
+    <string name="fan_low">Low</string>
+    <string name="fan_medium">Medium</string>
+    <string name="fan_high">High</string>
 </resources>

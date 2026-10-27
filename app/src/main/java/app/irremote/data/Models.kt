@@ -1,6 +1,7 @@
 package app.irremote.data
 
 import app.irremote.ir.IrSignal
+import app.irremote.ir.ac.AcState
 
 class IrButton(val name: String, val encoded: String) {
     val signal: IrSignal? by lazy { IrSignal.decode(encoded) }
@@ -63,4 +64,12 @@ enum class Slot(vararg names: String) {
 }
 
 /** A remote the user has added; self-contained so it keeps working if the bundled database changes. */
-class SavedRemote(val id: String, val category: Category, val name: String, val remote: IrRemote)
+data class SavedRemote(
+    val id: String,
+    val category: Category,
+    val name: String,
+    val remote: IrRemote,
+    /** Set for "smart" A/C remotes that generate whole-state frames instead of replaying recorded keys. */
+    val acProtocol: String? = null,
+    val acState: AcState? = null,
+)

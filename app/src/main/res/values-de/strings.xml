@@ -45,4 +45,15 @@
     <string name="cat_cleaner">Reinigungsroboter</string>
     <string name="cat_computer">Konsole &amp; Computer</string>
     <string name="cat_custom">Importiert</string>
+    <string name="ac_mode">Modus</string>
+    <string name="ac_fan">Lüfterstufe</string>
+    <string name="ac_swing">Schwenken</string>
+    <string name="mode_auto">Auto</string>
+    <string name="mode_cool">Kühlen</string>
+    <string name="mode_dry">Entfeuchten</string>
+    <string name="mode_fan">Lüfter</string>
+    <string name="mode_heat">Heizen</string>
+    <string name="fan_low">Niedrig</string>
+    <string name="fan_medium">Mittel</string>
+    <string name="fan_high">Hoch</string>
 </resources>

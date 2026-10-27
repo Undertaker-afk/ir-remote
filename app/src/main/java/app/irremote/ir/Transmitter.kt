@@ -9,6 +9,12 @@ class Transmitter(context: Context) {
 
     val available: Boolean get() = manager?.hasIrEmitter() == true
 
+    fun send(t: Transmission): Boolean {
+        val m = manager ?: return false
+        if (!m.hasIrEmitter()) return false
+        return try { m.transmit(t.frequency, t.pattern); true } catch (e: Exception) { false }
+    }
+
     /** @return false if the signal can't be encoded or the phone has no IR emitter. */
     fun send(signal: IrSignal?): Boolean {
         val m = manager ?: return false

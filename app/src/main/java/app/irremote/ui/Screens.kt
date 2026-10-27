@@ -40,7 +40,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import app.irremote.AppViewModel
 import app.irremote.R
+import app.irremote.Candidate
 import app.irremote.Screen
+import app.irremote.ir.ac.*
 import app.irremote.data.*
 import kotlinx.coroutines.launch
 
@@ -222,7 +224,12 @@ fun WizardScreen(vm: AppViewModel, category: Category, brandName: String) {
     val remoteName = "$brandName ${category.label()}"
 
     val slots = if (isOn == true) listOf(Slot.MUTE, Slot.VOL_UP, Slot.POWER) else listOf(Slot.POWER, Slot.MUTE)
-    val candidates = remember(brand, isOn) { brand?.let { b -> if (isOn == null) emptyList() else vm.candidates(b, slots) }.orEmpty() }
+    if (category == Category.AC) LaunchedEffect(Unit) { isOn = false } // A/C wizard always tests "power on"
+    val candidates = remember(brand, isOn) {
+        val keys = brand?.let { b -> if (isOn == null) emptyList() else vm.candidates(b, slots) }.orEmpty().map { Choice.Keys(it) }
+        val smart = if (category == Category.AC && isOn != null) AcProtocols.orderedFor(brandName).map { Choice.Smart(it) } else emptyList()
+        smart + keys
+    }
 
     Scaffold(
         containerColor = MaterialTheme.colorScheme.background,
@@ -252,8 +259,9 @@ fun WizardScreen(vm: AppViewModel, category: Category, brandName: String) {
                     OutlinedButton(onClick = { index = 0 }) { Text(stringResource(R.string.start_over)) }
                 }
             } else {
-                val cand = candidates[index]
-                val testSlot = slots.first { cand.remote.find(it) != null }
+                val choice = candidates[index]
+                val testSlot = if (choice is Choice.Keys) slots.first { choice.c.remote.find(it) != null } else Slot.POWER
+                val testLabel = if (choice is Choice.Keys) choice.c.testButton.name else choice.let { (it as Choice.Smart).p.name }
                 Column(Modifier.fillMaxSize().padding(horizontal = 24.dp), horizontalAlignment = Alignment.CenterHorizontally) {
                     Spacer(Modifier.height(48.dp))
                     Text(stringResource(R.string.wizard_hint), fontSize = 20.sp, textAlign = TextAlign.Center)
@@ -270,11 +278,11 @@ fun WizardScreen(vm: AppViewModel, category: Category, brandName: String) {
                         Column(horizontalAlignment = Alignment.CenterHorizontally) {
                             Box(
                                 Modifier.size(120.dp).clip(CircleShape).background(MaterialTheme.colorScheme.primary)
-                                    .irPress { haptic.performHapticFeedback(HapticFeedbackType.LongPress); vm.press(cand.testButton) },
+                                    .irPress { haptic.performHapticFeedback(HapticFeedbackType.LongPress); testChoice(vm, choice) },
                                 contentAlignment = Alignment.Center,
                             ) { Icon(slotIcon(testSlot), null, Modifier.size(48.dp), tint = Color.White) }
                             Spacer(Modifier.height(12.dp))
-                            Text(cand.testButton.name)
+                            Text(testLabel)
                         }
                         RoundKey(size = 48, onPress = { index++ }) {
                             Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, stringResource(R.string.next))
@@ -283,7 +291,10 @@ fun WizardScreen(vm: AppViewModel, category: Category, brandName: String) {
                     Spacer(Modifier.weight(1f))
                     Button(
                         onClick = {
-                            val s = vm.addRemote(category, remoteName, cand.remote)
+                            val s = when (choice) {
+                                is Choice.Keys -> vm.addRemote(category, remoteName, choice.c.remote)
+                                is Choice.Smart -> vm.addAcRemote(remoteName, choice.p.id)
+                            }
                             vm.popToHome(); vm.push(Screen.Remote(s.id))
                         },
                         Modifier.fillMaxWidth().height(52.dp).padding(bottom = 0.dp),
@@ -292,6 +303,19 @@ fun WizardScreen(vm: AppViewModel, category: Category, brandName: String) {
                 }
             }
         }
+    }
+}
+
+/** One entry the wizard can offer: recorded keys from the database, or a generated A/C protocol. */
+sealed interface Choice {
+    class Keys(val c: Candidate) : Choice
+    class Smart(val p: AcProtocol) : Choice
+}
+
+private fun testChoice(vm: AppViewModel, choice: Choice) {
+    when (choice) {
+        is Choice.Keys -> vm.press(choice.c.testButton)
+        is Choice.Smart -> vm.transmitter.send(choice.p.encode(AcState(power = true, mode = AcMode.COOL, temp = 24, fan = AcFan.AUTO)))
     }
 }
 
@@ -311,6 +335,7 @@ private val AllKeysCategories = setOf(Category.AC, Category.FAN, Category.LIGHT,
 fun RemoteScreen(vm: AppViewModel, id: String) {
     val saved = vm.saved.firstOrNull { it.id == id }
     if (saved == null) { LaunchedEffect(Unit) { vm.pop() }; return }
+    if (saved.acProtocol != null) { AcScreen(vm, saved); return }
     val remote = saved.remote
     val context = LocalContext.current
     val haptic = LocalHapticFeedback.current
