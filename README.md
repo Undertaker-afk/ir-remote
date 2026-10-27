@@ -75,7 +75,6 @@ RCA, Pioneer) following the Flipper Zero firmware encoders; "raw" entries (mostl
 
 - Needs a phone with an IR emitter; without one the UI shows a warning and sends nothing.
 - Not yet tested on real hardware; encoders are unit-tested for framing only.
-- Flipper-IRDB has far fewer TV brands than Mi Remote's cloud database, and AC remotes are replayed raw (no temperature
-  control logic).
+- Flipper-IRDB has far fewer TV brands than Mi Remote's cloud database, and only four A/C families have temperature/mode control (others replay recorded keys).
 - Next ideas: more A/C protocols (Daikin, Mitsubishi, Samsung), USB/audio/Wi-Fi IR bridges for phones without an
   emitter, IR learning, macros and scenes, widgets.
