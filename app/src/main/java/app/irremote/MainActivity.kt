@@ -14,14 +14,21 @@ import app.irremote.ui.*
 class MainActivity : ComponentActivity() {
     private val vm: AppViewModel by viewModels()
 
+    override fun onNewIntent(intent: android.content.Intent) {
+        super.onNewIntent(intent)
+        intent.getStringExtra("remote_id")?.let { vm.openRemote(it) }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        intent?.getStringExtra("remote_id")?.let { vm.openRemote(it) }
         setContent {
             IrTheme {
                 BackHandler(enabled = vm.stack.size > 1) { vm.pop() }
                 when (val s = vm.current) {
                     Screen.Home -> HomeScreen(vm)
                     Screen.Categories -> CategoriesScreen(vm)
+                    Screen.Search -> SearchScreen(vm)
                     is Screen.Brands -> BrandsScreen(vm, s.category)
                     is Screen.Wizard -> WizardScreen(vm, s.category, s.brand)
                     is Screen.Remote -> RemoteScreen(vm, s.id)

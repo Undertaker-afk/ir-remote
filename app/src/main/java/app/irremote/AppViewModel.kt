@@ -20,6 +20,7 @@ import java.util.UUID
 sealed interface Screen {
     data object Home : Screen
     data object Categories : Screen
+    data object Search : Screen
     data class Brands(val category: Category) : Screen
     data class Wizard(val category: Category, val brand: String) : Screen
     data class Remote(val id: String) : Screen
@@ -37,12 +38,31 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     val saved = mutableStateListOf<SavedRemote>()
     var message by mutableStateOf<String?>(null)
 
+    private var loaded = false
+    private var pendingOpen: String? = null
+
     init {
         viewModelScope.launch {
             val list = withContext(Dispatchers.IO) { store.load() }
             saved.addAll(list)
+            loaded = true
+            publishShortcuts()
+            pendingOpen?.let { openRemote(it) }
         }
     }
+
+    /** Opens a saved remote (from a launcher shortcut); waits for the list to load if needed. */
+    fun openRemote(id: String) {
+        if (!loaded) { pendingOpen = id; return }
+        pendingOpen = null
+        if (saved.any { it.id == id } && (current as? Screen.Remote)?.id != id) { popToHome(); push(Screen.Remote(id)) }
+    }
+
+    private fun publishShortcuts() = Shortcuts.publish(getApplication(), saved.toList())
+
+    /** Every bundled remote, for model search. */
+    suspend fun everything(): List<Pair<Category, IrRemote>> =
+        Category.entries.filter { it != Category.CUSTOM }.flatMap { c -> db.brands(c).flatMap { b -> b.remotes.map { c to it } } }
 
     val current: Screen get() = stack.last()
     fun push(s: Screen) { stack.add(s) }
@@ -119,6 +139,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     private fun persist() {
         val snapshot = saved.toList()
         viewModelScope.launch(Dispatchers.IO) { store.save(snapshot) }
+        publishShortcuts()
     }
 
     /** Imports a Flipper .ir file picked by the user. Returns the new remote's id or null if nothing could be read. */

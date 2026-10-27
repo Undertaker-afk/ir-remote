@@ -121,7 +121,11 @@ fun HomeScreen(vm: AppViewModel) {
 fun CategoriesScreen(vm: AppViewModel) {
     Scaffold(
         containerColor = MaterialTheme.colorScheme.background,
-        topBar = { TopBar(stringResource(R.string.add_device), onBack = { vm.pop() }) },
+        topBar = {
+            TopBar(stringResource(R.string.add_device), onBack = { vm.pop() }) {
+                IconButton(onClick = { vm.push(Screen.Search) }) { Icon(Icons.Filled.Search, stringResource(R.string.search_models)) }
+            }
+        },
     ) { pad ->
         LazyVerticalGrid(
             GridCells.Fixed(2), Modifier.padding(pad).padding(horizontal = 16.dp),

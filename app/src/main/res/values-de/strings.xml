@@ -56,4 +56,10 @@
     <string name="fan_low">Niedrig</string>
     <string name="fan_medium">Mittel</string>
     <string name="fan_high">Hoch</string>
+    <string name="search_models">Marke oder Modell suchen</string>
+    <string name="search_hint">Marke oder Modellnummer eingeben, z. B. UE40D5000</string>
+    <string name="no_results">Keine passenden Fernbedienungen</string>
+    <string name="keys_count">%1$d Tasten</string>
+    <string name="shortcut_power">%1$s Ein/Aus</string>
+    <string name="quick_failed">Schnellaktion fehlgeschlagen: %1$s</string>
 </resources>

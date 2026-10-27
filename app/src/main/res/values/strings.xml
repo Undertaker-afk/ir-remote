@@ -56,4 +56,10 @@
     <string name="fan_low">Low</string>
     <string name="fan_medium">Medium</string>
     <string name="fan_high">High</string>
+    <string name="search_models">Search brand or model</string>
+    <string name="search_hint">Type a brand or model number, e.g. UE40D5000</string>
+    <string name="no_results">No matching remotes</string>
+    <string name="keys_count">%1$d keys</string>
+    <string name="shortcut_power">%1$s power</string>
+    <string name="quick_failed">Quick action failed: %1$s</string>
 </resources>
