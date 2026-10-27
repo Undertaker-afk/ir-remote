@@ -32,6 +32,10 @@ An open-source Android universal IR remote in the style of Mi Remote, driven by 
     code*, *Find nearby device* and the wizard (candidates ordered by model fit) all use it. Accuracy on the bundled data
     (`MatchEngineTest`, leave-one-out: same model typed with another size/region): series 78/78, part-number revisions
     28/28. It can only point to remotes that exist in the database, and TV *serial* numbers carry no remote information.
+    Verified on hardware: a Samsung Crystal UHD TV accepted the hand-built `.ir` remote, while the community database's own
+    `BN59-01388` entry did not (OK was a copy of Right, volume and channel swapped). Curated remotes therefore replace any
+    database entry with the same part number, and `RemoteLint` drops entries that are certainly corrupt (direction keys all
+    identical, or channel/volume up == down; currently 2 of 587 TV remotes), while keeping legitimate dual-function keys.
     A few hand-curated remotes live in `assets/curated/` (e.g. Samsung Crystal UHD 2019-2022 and BN59-01388 for the 2023-24 CU7000/DU7200 series) and are added to either data source.
 7c. **Online lookup** (`web/`): when no series-level match exists, *Look up online* searches the web for the model's
     remote part number and feeds the result back into the matching engine (so `UCU7000` -> `BN59-01388A` -> the

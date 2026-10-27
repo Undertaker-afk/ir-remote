@@ -10,6 +10,31 @@ import java.net.URLEncoder
 
 class Brand(val name: String, val remotes: List<IrRemote>)
 
+/** Parses the compact text format ("@brand\tmodel" followed by "button\tsignal" lines) into remotes. */
+fun parseRemotes(lines: List<String>): List<IrRemote> {
+    val remotes = ArrayList<IrRemote>()
+    var brand = ""
+    var model = ""
+    var buttons = ArrayList<IrButton>()
+    fun flush() {
+        if (brand.isNotEmpty() && buttons.isNotEmpty()) remotes.add(IrRemote(brand, model, buttons))
+        buttons = ArrayList()
+    }
+    for (line in lines) {
+        if (line.startsWith("@")) {
+            flush()
+            val t = line.substring(1).split('\t', limit = 2)
+            brand = t[0]
+            model = t.getOrElse(1) { "" }
+        } else {
+            val t = line.split('\t', limit = 2)
+            if (t.size == 2) buttons.add(IrButton(t[0], t[1]))
+        }
+    }
+    flush()
+    return remotes
+}
+
 /** Bundled Flipper-IRDB data (see tools/build_db.py), loaded one category at a time. */
 class Database(private val context: Context) {
     private val cache = HashMap<Category, List<Brand>>()
@@ -24,34 +49,11 @@ class Database(private val context: Context) {
     }
 
     private fun load(category: Category): List<Brand> {
-        val remotes = ArrayList<IrRemote>()
-        var brand = ""
-        var model = ""
-        var buttons = ArrayList<IrButton>()
-        fun flush() {
-            if (brand.isNotEmpty() && buttons.isNotEmpty()) remotes.add(IrRemote(brand, model, buttons))
-            buttons = ArrayList()
-        }
         // an in-app update (see DbUpdater) takes precedence over the data bundled in the APK
         val updated = File(context.filesDir, "db/${category.dir}.txt")
         val input = if (updated.exists()) updated.inputStream() else context.assets.open("db/${category.dir}.txt")
-        // hand-curated remotes (assets/curated/<category>.txt, same format) are added on top of either source
         val curated = runCatching { context.assets.open("curated/${category.dir}.txt") }.getOrNull()
-        val all = if (curated != null) java.io.SequenceInputStream(input, java.io.SequenceInputStream(java.io.ByteArrayInputStream("\n".toByteArray()), curated)) else input
-        all.bufferedReader().useLines { lines ->
-            for (line in lines) {
-                if (line.startsWith("@")) {
-                    flush()
-                    val t = line.substring(1).split('\t', limit = 2)
-                    brand = t[0]
-                    model = t.getOrElse(1) { "" }
-                } else {
-                    val t = line.split('\t', limit = 2)
-                    if (t.size == 2) buttons.add(IrButton(t[0], t[1]))
-                }
-            }
-        }
-        flush()
+        val remotes = DbMerge.merge(input.use { parseRemotes(it.bufferedReader().readLines()) }, curated?.use { parseRemotes(it.bufferedReader().readLines()) }.orEmpty())
         return remotes.groupBy { it.brand }
             .map { Brand(it.key, it.value) }
             .sortedBy { it.name.lowercase() }
