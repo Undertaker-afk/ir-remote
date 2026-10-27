@@ -1,0 +1,78 @@
+package app.irremote.ir
+
+import org.junit.Assert.*
+import org.junit.Test
+
+class IrEncoderTest {
+    private fun enc(proto: String, a: Long, c: Long) = IrEncoder.encode(IrSignal.Parsed(proto, a, c))!!
+
+    @Test fun necFrameLayout() {
+        val t = enc("NEC", 0x04, 0x08)
+        val p = t.pattern
+        assertEquals(38000, t.frequency)
+        assertEquals(9000, p[0]); assertEquals(4500, p[1])
+        // address 0x04 sent LSB first: 0,0,1,0,0,0,0,0
+        val bitSpaces = (0 until 8).map { p[3 + it * 2] }
+        assertEquals(listOf(560, 560, 1690, 560, 560, 560, 560, 560), bitSpaces)
+        assertEquals(2 + 64 + 1 + 1, p.size)
+        assertEquals(110000, p.sum())
+    }
+
+    @Test fun necextSendsAllSixteenBitsWithoutInversion() {
+        val p = enc("NECext", 0x87EE, 0x0000).pattern
+        // 0xEE = 11101110 LSB first -> 0,1,1,1,0,1,1,1
+        val first8 = (0 until 8).map { p[3 + it * 2] == 1690 }
+        assertEquals(listOf(false, true, true, true, false, true, true, true), first8)
+    }
+
+    @Test fun samsungDuplicatesAddressAndInvertsCommand() {
+        val p = enc("Samsung32", 0x07, 0x02).pattern
+        assertEquals(4500, p[0]); assertEquals(4500, p[1])
+        fun byteAt(n: Int) = (0 until 8).sumOf { i -> (if (p[3 + (n * 8 + i) * 2] == 1650) 1 else 0) shl i }
+        assertEquals(listOf(0x07, 0x07, 0x02, 0xFD), (0..3).map { byteAt(it) })
+    }
+
+    @Test fun sircRepeatsThreeTimesAt45ms() {
+        val p = enc("SIRC", 1, 21).pattern
+        assertEquals(40000, enc("SIRC", 1, 21).frequency)
+        assertEquals(3 * 45000, p.sum())
+        assertEquals(3 * (2 + 24), p.size)
+    }
+
+    @Test fun rc5IsManchesterAndAlternates() {
+        val t = enc("RC5", 0, 12)
+        assertEquals(36000, t.frequency)
+        assertEquals(0, t.pattern.size % 2)
+        assertTrue(t.pattern.all { it > 0 })
+        // 14 bits * 2 half-bits * 889 is the maximum frame; merging only shortens the count
+        assertTrue(t.pattern.sum() in 14 * 1778 - 1778..14 * 1778 + 6000)
+    }
+
+    @Test fun rc6HasLeaderAndDoubleLengthTrailer() {
+        val p = enc("RC6", 0x00, 0x0C).pattern
+        assertEquals(2666, p[0]); assertEquals(889, p[1])
+        assertEquals(0, p.size % 2)
+    }
+
+    @Test fun kaseikyoIs48BitsPlusPreambleAndStop() {
+        val p = enc("Kaseikyo", 0x00200220, 0x3D).pattern // arbitrary Panasonic-style value
+        assertEquals(2 + 96 + 1 + 1, p.size)
+        assertEquals(130000, p.sum())
+    }
+
+    @Test fun everyDatabaseProtocolIsSupported() {
+        for (proto in IrEncoder.PROTOCOLS) assertNotNull(proto, IrEncoder.encode(IrSignal.Parsed(proto, 1, 1)))
+    }
+
+    @Test fun rawTimingsPassThroughWithEvenLength() {
+        val t = IrEncoder.encode(IrSignal.Raw(38000, 33, intArrayOf(9000, 4500, 560)))!!
+        assertEquals(4, t.pattern.size)
+    }
+
+    @Test fun roundTripsCompactForm() {
+        val s = IrSignal.decode("P:NECext:87ee:0")!!
+        assertEquals("P:NECext:87ee:0", IrSignal.encode(s))
+        val r = IrSignal.decode("R:38000:33:100,200,300,400")!!
+        assertEquals("R:38000:33:100,200,300,400", IrSignal.encode(r))
+    }
+}

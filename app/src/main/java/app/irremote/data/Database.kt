@@ -1,0 +1,91 @@
+package app.irremote.data
+
+import android.content.Context
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+import java.io.File
+
+class Brand(val name: String, val remotes: List<IrRemote>)
+
+/** Bundled Flipper-IRDB data (see tools/build_db.py), loaded one category at a time. */
+class Database(private val context: Context) {
+    private val cache = HashMap<Category, List<Brand>>()
+
+    suspend fun brands(category: Category): List<Brand> = withContext(Dispatchers.IO) {
+        synchronized(cache) { cache[category] }?.let { return@withContext it }
+        val loaded = load(category)
+        synchronized(cache) { cache[category] = loaded }
+        loaded
+    }
+
+    private fun load(category: Category): List<Brand> {
+        val remotes = ArrayList<IrRemote>()
+        var brand = ""
+        var model = ""
+        var buttons = ArrayList<IrButton>()
+        fun flush() {
+            if (brand.isNotEmpty() && buttons.isNotEmpty()) remotes.add(IrRemote(brand, model, buttons))
+            buttons = ArrayList()
+        }
+        context.assets.open("db/${category.dir}.txt").bufferedReader().useLines { lines ->
+            for (line in lines) {
+                if (line.startsWith("@")) {
+                    flush()
+                    val t = line.substring(1).split('\t', limit = 2)
+                    brand = t[0]
+                    model = t.getOrElse(1) { "" }
+                } else {
+                    val t = line.split('\t', limit = 2)
+                    if (t.size == 2) buttons.add(IrButton(t[0], t[1]))
+                }
+            }
+        }
+        flush()
+        return remotes.groupBy { it.brand }
+            .map { Brand(it.key, it.value) }
+            .sortedBy { it.name.lowercase() }
+    }
+}
+
+/** User's saved remotes, stored as text in the app's private files dir (same line format as the bundled data). */
+class SavedStore(context: Context) {
+    private val file = File(context.filesDir, "remotes.txt")
+
+    fun load(): List<SavedRemote> {
+        if (!file.exists()) return emptyList()
+        val out = ArrayList<SavedRemote>()
+        var head: List<String>? = null
+        var brand = ""
+        var buttons = ArrayList<IrButton>()
+        fun flush() {
+            val h = head ?: return
+            out.add(SavedRemote(h[0], Category.fromDir(h[1]), h[2], IrRemote(brand, h.getOrElse(3) { "" }, buttons)))
+            buttons = ArrayList()
+        }
+        file.forEachLine { line ->
+            if (line.startsWith("@@")) {
+                flush()
+                head = line.substring(2).split('\t')
+                brand = head!!.getOrElse(4) { "" }
+            } else {
+                val t = line.split('\t', limit = 2)
+                if (t.size == 2) buttons.add(IrButton(t[0], t[1]))
+            }
+        }
+        flush()
+        return out
+    }
+
+    fun save(list: List<SavedRemote>) {
+        val tmp = File(file.parentFile, "remotes.txt.tmp")
+        tmp.bufferedWriter().use { w ->
+            for (s in list) {
+                w.write("@@${s.id}\t${s.category.dir}\t${s.name.clean()}\t${s.remote.model.clean()}\t${s.remote.brand.clean()}\n")
+                for (b in s.remote.buttons) w.write("${b.name.clean()}\t${b.encoded}\n")
+            }
+        }
+        tmp.renameTo(file)
+    }
+
+    private fun String.clean() = replace('\t', ' ').replace('\n', ' ')
+}
