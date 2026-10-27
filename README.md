@@ -33,6 +33,15 @@ An open-source Android universal IR remote in the style of Mi Remote, driven by 
     (`MatchEngineTest`, leave-one-out: same model typed with another size/region): series 78/78, part-number revisions
     28/28. It can only point to remotes that exist in the database, and TV *serial* numbers carry no remote information.
     A few hand-curated remotes live in `assets/curated/` (e.g. Samsung Crystal UHD 2019-2022 and BN59-01388 for the 2023-24 CU7000/DU7200 series) and are added to either data source.
+7c. **Online lookup** (`web/`): when no series-level match exists, *Look up online* searches the web for the model's
+    remote part number and feeds the result back into the matching engine (so `UCU7000` -> `BN59-01388A` -> the
+    `Samsung BN59-01388` remote). It asks for consent first and sends only the brand and model text; answers are cached for
+    30 days. Results are ranked by a vote: a part number counts only if the page ties it to the model (title, or the model within
+    a few hundred characters), and pages listing dozens of parts are down-weighted. Several valid variants are reported with
+    listing counts and a confidence level instead of a single guess. Providers (Home menu -> *Online lookup*):
+    Exa's hosted MCP server (default, **no key**, free plan), Tavily (key), Brave Search (key), your own SearXNG (URL).
+    Tested against a real Exa response (fixture in `src/test/resources`); `LIVE_EXA=1 gradle :app:testDebugUnitTest
+    --tests '*LiveExaTest*'` runs the real endpoint.
 8. **Find my code**: photograph a model sticker (or pick a photo); text is read on-device with ML Kit and matched against
    the database, model codes outranking brand names. The recognised text is editable.
 9. **Custom layout**: per remote, choose any buttons, rename and order them ("Edit my layout" in the remote menu).

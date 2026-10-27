@@ -10,6 +10,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import app.irremote.data.*
 import app.irremote.ir.Transmitter
+import app.irremote.web.*
 import app.irremote.ir.ac.AcProtocol
 import app.irremote.ir.ac.AcProtocols
 import app.irremote.ir.ac.AcState
@@ -43,6 +44,7 @@ class Candidate(val remote: IrRemote, val testButton: IrButton, val sharedBy: In
 class AppViewModel(app: Application) : AndroidViewModel(app) {
     private val db = Database(app)
     private val store = SavedStore(app)
+    private val prefs = app.getSharedPreferences("settings", android.content.Context.MODE_PRIVATE)
     val transmitter = Transmitter(app)
 
     val stack = mutableStateListOf<Screen>(Screen.Home)
@@ -70,6 +72,33 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     }
 
     private fun publishShortcuts() = Shortcuts.publish(getApplication(), saved.toList())
+
+    // ---- online lookup (web search for remote part numbers); off until the user consents
+    private val webLookup = WebLookup(java.io.File(app.filesDir, "weblookup.txt"))
+    var webConsent by mutableStateOf(prefs.getBoolean("web_consent", false))
+        private set
+    var webProvider by mutableStateOf(prefs.getString("web_provider", "exa") ?: "exa")
+        private set
+    var webKey by mutableStateOf(prefs.getString("web_key", "") ?: "")
+        private set
+    var webUrl by mutableStateOf(prefs.getString("web_url", "") ?: "")
+        private set
+
+    fun saveWebSettings(consent: Boolean, provider: String, key: String, url: String) {
+        webConsent = consent; webProvider = provider; webKey = key.trim(); webUrl = url.trim()
+        prefs.edit().putBoolean("web_consent", consent).putString("web_provider", provider).putString("web_key", webKey).putString("web_url", webUrl).apply()
+    }
+
+    private fun searchProvider(): SearchProvider = when (webProvider) {
+        "tavily" -> TavilyProvider(webKey.ifEmpty { throw java.io.IOException("Tavily needs an API key") })
+        "brave" -> BraveProvider(webKey.ifEmpty { throw java.io.IOException("Brave needs an API key") })
+        "searx" -> SearxProvider(webUrl.ifEmpty { throw java.io.IOException("SearXNG needs an instance URL") })
+        else -> ExaMcpProvider(webKey.ifEmpty { null })
+    }
+
+    /** Looks up remote part numbers for a model online. Only the brand and model text leave the phone. */
+    suspend fun lookupOnline(brand: String, model: String): Result<LookupResult> =
+        withContext(Dispatchers.IO) { runCatching { webLookup.lookup(searchProvider(), brand, model) } }
 
     // ---- in-app database update
     private val updater = DbUpdater(app)
@@ -111,7 +140,6 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         .flatMap { c -> db.brands(c).flatMap { b -> b.remotes.map { c to it } } }.also { everythingCache = it }
 
     // ---- phone volume keys drive the open remote
-    private val prefs = app.getSharedPreferences("settings", android.content.Context.MODE_PRIVATE)
     var volumeKeys by mutableStateOf(prefs.getBoolean("volume_keys", false))
         private set
 

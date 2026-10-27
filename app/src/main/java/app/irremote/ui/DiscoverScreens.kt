@@ -85,8 +85,11 @@ fun DiscoverScreen(vm: AppViewModel) {
 fun DeviceMatchScreen(vm: AppViewModel, device: FoundDevice) {
     var engine by remember { mutableStateOf<MatchEngine?>(null) }
     LaunchedEffect(Unit) { engine = vm.engine() }
-    val all = remember(engine) {
-        engine?.match(device.text, preferred = setOf(Category.TV, Category.STREAM, Category.PROJECTOR), limit = Int.MAX_VALUE).orEmpty()
+    // part numbers found by the online lookup join the query, so the engine can match the remote by part number
+    var webParts by remember { mutableStateOf<List<app.irremote.web.PartVote>>(emptyList()) }
+    val query = device.text + " " + webParts.take(3).joinToString(" ") { it.part }
+    val all = remember(engine, query) {
+        engine?.match(query, preferred = setOf(Category.TV, Category.STREAM, Category.PROJECTOR), limit = Int.MAX_VALUE).orEmpty()
             // devices that show up in screen-mirroring lists are TVs, projectors and streamers
             .filter { it.category in listOf(Category.TV, Category.STREAM, Category.PROJECTOR) }
     }
@@ -113,14 +116,17 @@ fun DeviceMatchScreen(vm: AppViewModel, device: FoundDevice) {
             Spacer(Modifier.height(12.dp))
             when {
                 engine == null -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { CircularProgressIndicator() }
-                ranked.isEmpty() -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                    Text(stringResource(R.string.device_no_match), textAlign = TextAlign.Center, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                ranked.isEmpty() -> Column {
+                    Text(stringResource(R.string.device_no_match), color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Spacer(Modifier.height(12.dp))
+                    OnlineLookupCard(vm, device.text) { webParts = it }
                 }
                 else -> {
                     if (!exact) {
                         Text(stringResource(R.string.device_no_exact, device.model ?: device.name), fontSize = 15.sp)
                         Spacer(Modifier.height(8.dp))
                     }
+                    if (!exact || webParts.isNotEmpty()) { OnlineLookupCard(vm, device.text) { webParts = it }; Spacer(Modifier.height(12.dp)) }
                     brands.firstOrNull()?.let { (cat, brand) ->
                         Button(onClick = { vm.push(Screen.Wizard(cat, brand, device.text)) }, Modifier.fillMaxWidth().height(52.dp)) {
                             Text(stringResource(R.string.device_wizard_button, brand))

@@ -61,9 +61,11 @@ fun ScanScreen(vm: AppViewModel) {
     val gallery = rememberLauncherForActivityResult(ActivityResultContracts.GetContent()) { uri -> if (uri != null) recognize(uri) }
 
     val tokens = remember(text) { ModelMatcher.tokens(text) }
-    val results = remember(engine, text) {
+    var webParts by remember(text) { mutableStateOf<List<app.irremote.web.PartVote>>(emptyList()) }
+    val full = text + " " + webParts.take(3).joinToString(" ") { it.part }
+    val results = remember(engine, full) {
         if (tokens.isEmpty() || engine == null) emptyList()
-        else engine!!.match(text, preferred = setOf(Category.TV, Category.STREAM, Category.PROJECTOR), limit = 60).filter { it.tier != Tier.BRAND || tokens.size <= 3 }
+        else engine!!.match(full, preferred = setOf(Category.TV, Category.STREAM, Category.PROJECTOR), limit = 60).filter { it.tier != Tier.BRAND || tokens.size <= 3 }
     }
 
     Scaffold(
@@ -100,6 +102,9 @@ fun ScanScreen(vm: AppViewModel) {
                 }
             }
             LazyColumn(Modifier.weight(1f), contentPadding = PaddingValues(vertical = 8.dp)) {
+                if (tokens.isNotEmpty() && engine != null && !busy && (results.firstOrNull()?.let { it.tier > Tier.SAME_SERIES } ?: true) || webParts.isNotEmpty()) {
+                    item { Spacer(Modifier.height(8.dp)); OnlineLookupCard(vm, text) { webParts = it }; Spacer(Modifier.height(8.dp)) }
+                }
                 items(results) { m ->
                     val catLabel = m.category.label()
                     MatchRow(m) {
