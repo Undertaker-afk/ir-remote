@@ -19,6 +19,11 @@ An open-source Android universal IR remote in the style of Mi Remote, driven by 
    state frames like a real A/C remote. The wizard tries the protocols that fit the brand first, then recorded keys.
    Frame layouts follow [IRremoteESP8266](https://github.com/crankyoldgit/IRremoteESP8266) and the unit tests check them
    against its test vectors. Not yet: Daikin, Mitsubishi, Samsung, Fujitsu, Panasonic A/C.
+7a. **Find nearby device**: the Cast icon on *Add device* searches for TVs and casting targets the way the screen-mirroring
+   list does: mDNS (Google Cast, AirPlay), SSDP/UPnP (Smart View, DLNA, DIAL, Roku) and Wi-Fi Direct (Miracast peers, asks for
+   the nearby-devices permission). Pick a device and the app reads its brand/model, shows the best matching remotes and
+   offers the brand wizard. Phone and TV must be on the same Wi-Fi; devices that don't announce a model fall back to the
+   brand from their name.
 8. **Find my code**: photograph a model sticker (or pick a photo); text is read on-device with ML Kit and matched against
    the database, model codes outranking brand names. The recognised text is editable.
 9. **Custom layout**: per remote, choose any buttons, rename and order them ("Edit my layout" in the remote menu).

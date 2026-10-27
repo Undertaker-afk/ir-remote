@@ -125,6 +125,7 @@ fun CategoriesScreen(vm: AppViewModel) {
         containerColor = MaterialTheme.colorScheme.background,
         topBar = {
             TopBar(stringResource(R.string.add_device), onBack = { vm.pop() }) {
+                IconButton(onClick = { vm.push(Screen.Discover) }) { Icon(Icons.Filled.Cast, stringResource(R.string.find_nearby)) }
                 IconButton(onClick = { vm.push(Screen.Search) }) { Icon(Icons.Filled.Search, stringResource(R.string.search_models)) }
             }
         },

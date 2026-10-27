@@ -77,4 +77,9 @@
     <string name="pick_photo">Foto wählen</string>
     <string name="scan_recognized">Erkannter Text (bearbeitbar)</string>
     <string name="scan_failed">Das Foto konnte nicht gelesen werden.</string>
+    <string name="find_nearby">Gerät in der Nähe finden</string>
+    <string name="discover_hint">Suche läuft… Telefon und Gerät müssen im selben WLAN sein. Fernseher einschalten.</string>
+    <string name="device_no_match">Keine Fernbedienung in der Datenbank passt zu diesem Gerät. „Code finden“ oder Marke manuell wählen.</string>
+    <string name="device_try_wizard">Erkannte Marke: mit dem Assistenten testen</string>
+    <string name="device_best_matches">Beste Treffer</string>
 </resources>

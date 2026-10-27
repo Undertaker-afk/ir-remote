@@ -22,6 +22,8 @@ sealed interface Screen {
     data object Categories : Screen
     data object Search : Screen
     data object Scan : Screen
+    data object Discover : Screen
+    data class DeviceMatch(val device: FoundDevice) : Screen
     data class Brands(val category: Category) : Screen
     data class Wizard(val category: Category, val brand: String) : Screen
     data class Remote(val id: String) : Screen

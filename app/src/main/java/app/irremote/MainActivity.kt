@@ -43,6 +43,8 @@ class MainActivity : ComponentActivity() {
                     Screen.Categories -> CategoriesScreen(vm)
                     Screen.Search -> SearchScreen(vm)
                     Screen.Scan -> ScanScreen(vm)
+                    Screen.Discover -> DiscoverScreen(vm)
+                    is Screen.DeviceMatch -> DeviceMatchScreen(vm, s.device)
                     is Screen.Brands -> BrandsScreen(vm, s.category)
                     is Screen.Wizard -> WizardScreen(vm, s.category, s.brand)
                     is Screen.Remote -> RemoteScreen(vm, s.id)

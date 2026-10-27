@@ -77,4 +77,9 @@
     <string name="pick_photo">Pick photo</string>
     <string name="scan_recognized">Recognised text (editable)</string>
     <string name="scan_failed">Could not read the photo.</string>
+    <string name="find_nearby">Find nearby device</string>
+    <string name="discover_hint">Searching… phone and device must be on the same Wi-Fi. Turn the TV on.</string>
+    <string name="device_no_match">No remote in the database matches this device. Try Find my code or pick the brand manually.</string>
+    <string name="device_try_wizard">Detected brand: test with the wizard</string>
+    <string name="device_best_matches">Best matches</string>
 </resources>
