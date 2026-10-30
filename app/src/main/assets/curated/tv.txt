@@ -67,3 +67,60 @@ Netflix	P:Samsung32:7:f3
 Prime Video	P:Samsung32:7:f4
 Samsung TV Plus	P:Samsung32:7:b4
 Disney Plus	P:Samsung32:7:df
+@Panasonic	N2QAYB000572 K10704B VIERA remote (TX-L32DT30 TX-L42ETS51 TX-P42ST30 TX-P42GT30 TX-P50UT30; superseded by N2QAYB000752)
+Power	P:Kaseikyo:200280:3d0
+Input tv	P:Kaseikyo:200282:300
+Input av	P:Kaseikyo:200280:50
+Menu	P:Kaseikyo:1200280:120
+Option	P:Kaseikyo:2200289:270
+Viera tools	P:Kaseikyo:3200280:2f0
+Internet	P:Kaseikyo:2200289:130
+Guide	P:Kaseikyo:2200289:70
+Info	P:Kaseikyo:200280:390
+Up	P:Kaseikyo:1200280:a0
+Down	P:Kaseikyo:1200280:b0
+Left	P:Kaseikyo:1200280:e0
+Right	P:Kaseikyo:1200280:f0
+Ok	P:Kaseikyo:1200280:90
+Back	P:Kaseikyo:3200280:140
+Exit	P:Kaseikyo:3200280:130
+Vol up	P:Kaseikyo:200280:200
+Vol dn	P:Kaseikyo:200280:210
+Mute	P:Kaseikyo:200280:320
+Ch next	P:Kaseikyo:200280:340
+Ch prev	P:Kaseikyo:200280:350
+Last view	P:Kaseikyo:200280:370
+Red	P:Kaseikyo:1200280:300
+Green	P:Kaseikyo:1200280:310
+Yellow	P:Kaseikyo:1200280:320
+Blue	P:Kaseikyo:1200280:330
+Text	P:Kaseikyo:200281:30
+Sttl	P:Kaseikyo:200281:50
+Index	P:Kaseikyo:200281:80
+Hold	P:Kaseikyo:200281:90
+1	P:Kaseikyo:200280:100
+2	P:Kaseikyo:200280:110
+3	P:Kaseikyo:200280:120
+4	P:Kaseikyo:200280:130
+5	P:Kaseikyo:200280:140
+6	P:Kaseikyo:200280:150
+7	P:Kaseikyo:200280:160
+8	P:Kaseikyo:200280:170
+9	P:Kaseikyo:200280:180
+0	P:Kaseikyo:200280:190
+Aspect	P:Kaseikyo:3200284:1e0
+Surround	P:Kaseikyo:200280:310
+Sap	P:Kaseikyo:200280:330
+Cc	P:Kaseikyo:2200280:1d0
+Sleep	P:Kaseikyo:200280:f0
+3D	P:Kaseikyo:2200289:370
+Sd usb	P:Kaseikyo:2200289:2b0
+Favorite	P:Kaseikyo:2200289:2e0
+N	P:Kaseikyo:200280:c0
+Play	P:Kaseikyo:3200289:0
+Pause	P:Kaseikyo:3200289:10
+Stop	P:Kaseikyo:3200289:20
+Forward	P:Kaseikyo:3200289:30
+Reverse	P:Kaseikyo:3200289:40
+Skip fwd	P:Kaseikyo:3200289:1d0
+Skip bk	P:Kaseikyo:3200289:1c0

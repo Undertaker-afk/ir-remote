@@ -146,4 +146,19 @@ class MatchEngineTest {
         // the same TV typed with its full model number and region suffix
         assertTrue(e.match("UE43CU7000UXZG", limit = 3).first().remote.model.contains("BN59-01388"))
     }
+
+    /** The Panasonic and MagentaTV remotes added as curated entries are found by part number / name. */
+    @Test fun curatedPanasonicAndMagentaRemotesAreFindable() {
+        val tv = File("src/main/assets/curated/tv.txt"); val st = File("src/main/assets/curated/settop.txt")
+        org.junit.Assume.assumeTrue(tv.exists() && st.exists())
+        val e = MatchEngine((loadRemotes("src/main/assets/db/tv.txt", "src/main/assets/curated/tv.txt").map { Category.TV to it }) +
+            loadRemotes("src/main/assets/db/settop.txt", "src/main/assets/curated/settop.txt").map { Category.SETTOP to it })
+        val pan = e.match("Panasonic N2QAYB000572 10704B", limit = 3).first()
+        assertTrue(pan.remote.model.contains("N2QAYB000572")); assertEquals(Tier.EXACT, pan.tier)
+        assertEquals("P:Kaseikyo:200280:3d0", pan.remote.find(Slot.POWER)!!.encoded)
+        val mag = e.match("Telekom MagentaTV MR401", limit = 3).first()
+        assertTrue(mag.remote.model.contains("MagentaTV"))
+        assertTrue(mag.remote.find(Slot.OK) != null)                       // OK is present, unlike the old raw capture
+        assertEquals(3, mag.remote.buttons.count { it.name in setOf("Up", "Down", "Left") })
+    }
 }
