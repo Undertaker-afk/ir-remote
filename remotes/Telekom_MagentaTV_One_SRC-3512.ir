@@ -1,0 +1,188 @@
+Filetype: IR signals file
+Version: 1
+# Telekom MagentaTV One (2nd generation) remote, model SRC-3512 (rev 1-A/1-B). Controls the MagentaTV One box over IR.
+# The One's IR receiver uses the same codes as the Media Receiver MR200/201/400/401/601 remotes (iptv.blog); 38 kHz,
+# 18-bit Manchester frame = constant 11-bit prefix + 7-bit command, half-bit 316 us. Codes decoded from two independent
+# Flipper-IRDB captures of Telekom remotes and checked against a Global Cache MR303 power code.
+# Not captured from an SRC-3512. The real remote uses Bluetooth for most functions; over IR the box accepts a limited set.
+# Not included: Google Assistant / Magenta voice keys (Bluetooth only), colour keys (ignored by the One), TV/last-channel key (IR code unknown).
+#
+name: Power
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 316 316 632 632 632 316 316 632 316
+#
+name: Home
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 632 632 632 316 316 632 632 632 316
+#
+name: Back
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 632 316 316 316 316 632 632 632 316
+#
+name: Epg
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 632 316 316 316 316 316 316 316 316 632 316
+#
+name: Options
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 632 632 632 632 632 316 316 632 316
+#
+name: Info
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 632 632 632 316 316 316 316 632 316
+#
+name: Up
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 316 316 632 316 316 632 316 316 632 316
+#
+name: Down
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 316 316 632 316 316 632 632 632 316
+#
+name: Left
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 316 316 632 316 316 316 316 632 632 316
+#
+name: Right
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 632 632 316 316 316 316 316 316 632 316
+#
+name: Ok
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 316 316 632 316 316 316 316 316 316 632 316
+#
+name: Vol_up
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 632 632 316 316 632 316 316 632 316
+#
+name: Vol_dn
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 632 632 632 632 632 632 316
+#
+name: Mute
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 632 632 632 632 316 316 632 632 316
+#
+name: Ch_next
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 632 632 632 632 316 316 632 316
+#
+name: Ch_prev
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 632 632 632 316 316 632 632 316
+#
+name: Play_pause
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 632 316 316 632 632 316 316 632 316
+#
+name: Rewind
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 632 632 316 316 316 316 632 632 632 316
+#
+name: Forward
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 632 632 316 316 316 316 632 316 316 632 316
+#
+name: Record
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 632 316 316 316 316 632 316 316 632 316
+#
+name: 1
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 316 316 316 316 316 316 316 316 632 632 316
+#
+name: 2
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 316 316 316 316 316 316 632 632 632 316
+#
+name: 3
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 316 316 316 316 316 316 632 316 316 632 316
+#
+name: 4
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 316 316 316 316 632 632 316 316 632 316
+#
+name: 5
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 316 316 316 316 632 632 632 632 316
+#
+name: 6
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 316 316 316 316 632 316 316 632 632 316
+#
+name: 7
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 316 316 316 316 632 316 316 316 316 632 316
+#
+name: 8
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 316 316 632 632 316 316 316 316 632 316
+#
+name: 9
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 316 316 632 632 316 316 632 632 316
+#
+name: 0
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 316 632 316 316 632 316 316 632 316 316 632 632 632 632 316 316 316 316 632 632 632 632 632 316

@@ -161,4 +161,14 @@ class MatchEngineTest {
         assertTrue(mag.remote.find(Slot.OK) != null)                       // OK is present, unlike the old raw capture
         assertEquals(3, mag.remote.buttons.count { it.name in setOf("Up", "Down", "Left") })
     }
+
+    /** The label inside the user's MagentaTV remote ("SRC-3512 1-B") resolves to the MagentaTV One remote entry. */
+    @Test fun magentaTvOneRemoteIsFoundBySrc3512() {
+        val st = File("src/main/assets/curated/settop.txt")
+        org.junit.Assume.assumeTrue(st.exists())
+        val e = MatchEngine(loadRemotes("src/main/assets/db/settop.txt", "src/main/assets/curated/settop.txt").map { Category.SETTOP to it })
+        val top = e.match("SRC-3512 1-B", limit = 3).first()
+        assertTrue(top.remote.model.contains("SRC-3512")); assertEquals(Tier.EXACT, top.tier)
+        assertTrue(top.remote.find(Slot.OK) != null && top.remote.find(Slot.POWER) != null)
+    }
 }
